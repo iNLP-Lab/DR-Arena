@@ -2,6 +2,9 @@
 **Paper Link:** [https://arxiv.org/abs/2601.10504](https://arxiv.org/abs/2601.10504)
 **Project Website:** [https://even0304.github.io/DR-Arena-Web/](https://even0304.github.io/DR-Arena-Web/)
 
+**Project Website:** [https://even0304.github.io/DR-Arena-Web/](https://even0304.github.io/DR-Arena-Web/)
+
+
 **DR-Arena** is a dynamic, automated benchmarking framework designed to evaluate the limits of **Deep Research (DR) Agents**. Unlike static benchmarks, DR-Arena constructs real-time **Information Trees** from live web trends and employs an **Adaptive Evolvement Loop** to dynamically escalate task complexity, testing agents on both **Deep Reasoning** (deduction depth) and **Wide Coverage** (information aggregation).
 
 ![Framework Overview](figures/flowchart.png)
