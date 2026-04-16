@@ -1,0 +1,91 @@
+{
+  "id": "R1_Kimi-k2_grok-4-search_tree_0008",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_Kimi-k2_grok-4-search_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "Kimi-k2",
+  "model_b": "grok-4-search",
+  "winner": "grok-4-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the non-profit organization responsible for the 'State Health Facts' database and 'KFF Health News'. Within their resources dedicated to 'Women's Health Policy', locate and summarize the key focus of the following four specific publications: (1) the factsheet reviewing major sources of insurance coverage and the ACA's impact on women; (2) the data note detailing the current state of Medicaid regarding eligibility and reproductive health; (3) the analysis concerning the implications of the Dobbs decision for racial disparities; and (4) the report discussing the distortion of science in a new study linking breast cancer and birth control."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "NONE",
+  "total_tokens": 202451,
+  "estimated_cost": 2.0245,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Other Health"
+      ],
+      "question": "Identify the non-profit organization responsible for the 'State Health Facts' database and 'KFF Health News'. Within their resources dedicated to 'Women's Health Policy', locate and summarize the key focus of the following four specific publications: (1) the factsheet reviewing major sources of insurance coverage and the ACA's impact on women; (2) the data note detailing the current state of Medicaid regarding eligibility and reproductive health; (3) the analysis concerning the implications of the Dobbs decision for racial disparities; and (4) the report discussing the distortion of science in a new study linking breast cancer and birth control.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies the factsheet covering major sources of coverage for women and the ACA's impact.",
+        "Identifies the data note covering Medicaid eligibility, reproductive health, and chronic conditions for women.",
+        "Identifies the analysis examining the Dobbs decision's implications for racial disparities in access to care.",
+        "Identifies the report/article discussing how science was distorted regarding a study on breast cancer and birth control."
+      ],
+      "checklist_depth": [
+        "Target Entity: KFF (Kaiser Family Foundation) identified as the organization.",
+        "Logic Proof: KFF is the publisher of 'State Health Facts' and 'KFF Health News'.",
+        "Context: Correctly locates the specified articles within the 'Women's Health Policy' topic/filter."
+      ],
+      "rationale": "The question uses deep logic by masking the primary entity (KFF) behind its well-known sub-products ('State Health Facts', 'KFF Health News'). It enforces wide aggregation by requiring the retrieval and synthesis of four distinct content pieces (a factsheet, a data note, a policy analysis, and a specific news report) found within the source text list.",
+      "source_nodes": [
+        "Other Health - Research and Data from KFF",
+        "Women's Health Policy - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Filter List Grid 1 - 10 of 823 Results [Wide Logic - Target 1]: Home Topics Women's Health Policy Women’s Health Insurance Coverage This factsheet reviews major so",
+      "judge_max_limit": 300,
+      "answer_a": "The Kaiser Family Foundation (KFF), a non-profit organization, maintains the \"State Health Facts\" database and \"KFF Health News\" [1]. Within its Women's Health Policy resources, four key publications address critical issues:\n\n**(1) Insurance Coverage Factsheet:** This factsheet examines women's health coverage, analyzing employer-sponsored insurance, Medicaid, Medicare, and individual market sources. It details the Affordable Care Act's (ACA) impact on reducing uninsured rates among women, particularly its Medicaid expansion and marketplace subsidies that improved access to reproductive and preventive care [2].\n\n**(2) Medicaid Data Note:** This analysis outlines Medicaid's current role as the largest payer of reproductive health services in the U.S. It delineates state-by-state income eligibility thresholds for pregnant and postpartum women, family planning services, and mandatory versus optional benefits, highlighting coverage gaps in states that haven't expanded Medicaid [3].\n\n**(3) Dobbs Decision Racial Disparities Analysis:** This report investigates how state abortion restrictions following the Dobbs v. Jackson decision disproportionately affect women of color. It documents that Black and Hispanic women face compounded barriers due to higher uninsured rates, limited provider access, and systemic inequities, potentially widening maternal health disparities [4].\n\n**(4) Breast Cancer and Birth Control Report:** This publication critiques a 2023 study claiming hormonal contraception significantly increases breast cancer risk. It identifies methodological flaws and misinterpretations, demonstrating how selective data presentation can distort scientific findings and create unnecessary public alarm, ultimately undermining evidence-based reproductive health policy [5].",
+      "answer_b": "The non-profit organization responsible for the 'State Health Facts' database and 'KFF Health News' is the Kaiser Family Foundation (KFF), a leading health policy research entity that provides data-driven insights on U.S. health issues [1].\n\nIn KFF's Women's Health Policy resources, the four specified publications focus on critical aspects of women's health access and equity. \n\n(1) The factsheet \"Women's Health Insurance Coverage\" reviews major sources of insurance for women, including employer-sponsored plans, Medicaid, and marketplace coverage, while examining the Affordable Care Act's (ACA) impact [2]. It highlights how the ACA expanded coverage for 11 million women, reduced uninsured rates (from 17% in 2013 to 10% in 2022), improved access to preventive services like contraception without cost-sharing, and addressed gender-based disparities in premiums and benefits [2].\n\n(2) The data note \"Medicaid's Role in Covering Reproductive Health Services\" details the current state of Medicaid eligibility and its coverage of reproductive health [3]. It emphasizes Medicaid's significance for low-income women, covering over 40% of U.S. births, with expanded eligibility post-ACA reaching more pregnant and postpartum individuals. Key focuses include variations in state policies on family planning, abortion restrictions, and challenges in accessing services amid eligibility redeterminations [3].\n\n(3) The analysis \"The Potential Implications of the Dobbs Decision on Racial Disparities in Abortion Access\" explores how the 2022 Supreme Court ruling overturning Roe v. Wade exacerbates racial inequities [4]. It notes that Black and Hispanic women, already facing higher unintended pregnancy rates and barriers, could see widened disparities in states with bans, potentially increasing maternal mortality risks and economic burdens [4].\n\n(4) The report \"Distortion of Science: New Study Linking Breast Cancer and Birth Control\" critiques a study claiming hormonal contraceptives raise breast cancer risk, arguing it distorts evidence by cherry-picking data [5]. It focuses on debunking misinformation, affirming that overall cancer risks from birth control are minimal and benefits outweigh harms, amid broader anti-contraception narratives [5].\n\nThese publications underscore KFF's emphasis on policy impacts, equity, and evidence-based health information for women.\n\n## References\n[1] KFF.org - About Us. https://www.kff.org/about-us/\n\n[2] KFF Women's Health Policy - Women's Health Insurance Coverage Factsheet. https://www.kff.org/womens-health-policy/fact-sheet/womens-health-insurance-coverage/\n\n[3] KFF Women's Health Policy - Medicaid's Role in Covering Reproductive Health Services Data Note. https://www.kff.org/womens-health-policy/issue-brief/medicaids-role-in-covering-reproductive-health-services/\n\n[4] KFF Women's Health Policy - Implications of Dobbs on Racial Disparities Analysis. https://www.kff.org/racial-equity-and-health-policy/issue-brief/implications-of-the-dobbs-decision-for-racial-disparities-in-maternal-and-infant-health/\n\n[5] KFF Women's Health Policy - Distortion of Science in Breast Cancer and Birth Control Report. https://www.kff.org/womens-health-policy/issue-brief/distortion-of-science-new-study-linking-breast-cancer-and-birth-control/",
+      "duration_a_seconds": 58.1,
+      "duration_b_seconds": 26.1,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the entity (KFF) and the relevant topics. However, Agent B is much better because it provides a complete Reference list with URLs, whereas Agent A includes bracketed numbers (e.g., [1]) but fails to provide the actual citations/links at the bottom, rendering them useless. Agent B also includes specific titles of the reports and concrete data points (statistics), making the summary more authoritative and useful.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_Kimik2_vs_grok4sea_427"
+}

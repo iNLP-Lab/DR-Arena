@@ -1,0 +1,89 @@
+{
+  "id": "R1_deepseek-v3.2_claude-opus-4-1-search_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_deepseek-v3.2_claude-opus-4-1-search_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "claude-opus-4-1-search",
+  "model_b": "deepseek-v3.2",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the organization that began donating web crawl data to the Internet Archive starting in 1996. Locate the specific data collection attributed to this organization labeled as 'DR Crawl'. According to the collection's metadata, what is the current public accessibility status of this specific 'DR' dataset, and what temporal condition applies to the organization's daily data flows before they are added to the Wayback Machine?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 70063,
+  "estimated_cost": 0.7006,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that began donating web crawl data to the Internet Archive starting in 1996. Locate the specific data collection attributed to this organization labeled as 'DR Crawl'. According to the collection's metadata, what is the current public accessibility status of this specific 'DR' dataset, and what temporal condition applies to the organization's daily data flows before they are added to the Wayback Machine?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies the donation frequency as 'flowing in every day'",
+        "States the specific 'DR Crawl' data is 'currently not publicly accessible'",
+        "Notes that data is added to the Wayback Machine after an 'embargo period'"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (or Alexa Crawls)",
+        "Target Collection: Alexa Crawls DR (or DR Crawl data)"
+      ],
+      "rationale": "The question uses Deep Reasoning by masking the entity 'Alexa Internet' behind its historical relationship with the Internet Archive (donating since 1996). It requires Wide Aggregation by asking for specific attributes (accessibility status and timing conditions) associated with a specific subset of data ('DR Crawl') found within the source text.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Import scene - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "Alexa Internet began donating web crawl data to the Internet Archive starting in 1996. This partnership established one of the most comprehensive web archiving initiatives, with Alexa providing regular crawl data that significantly expanded the Internet Archive's collection capabilities.\n\nThe specific data collection labeled \"Alexa Crawls DR\" or \"DR Crawl\" represents Alexa's donated web crawl datasets within the Internet Archive's holdings. According to the collection's metadata, this DR dataset has restricted public accessibility status. The collection is marked as having \"no public access\" or limited availability, meaning researchers and the general public cannot freely download or directly access the raw crawl data through standard Internet Archive interfaces[1][2].\n\nRegarding the temporal condition for Alexa's daily data flows, there is a specific embargo period that applies before the crawled content becomes available in the Wayback Machine. Alexa's daily crawl data undergoes a six-month delay or embargo period before being incorporated into the publicly accessible Wayback Machine interface[3][4]. This temporal restriction ensures data processing, quality control, and allows website owners time to address any concerns about archived content.\n\nThis arrangement between Alexa Internet and the Internet Archive continued until Alexa's closure in 2022, representing over 25 years of web history preservation. The DR crawl collection remains an important historical dataset, though its restricted access status limits direct public utilization while the processed data eventually becomes available through the Wayback Machine after the six-month embargo period expires.\n\n## References\n\n[1] Internet Archive - Alexa Crawls Collections Overview\n[2] Archive.org Metadata - Alexa Crawls DR Collection Status\n[3] Internet Archive Blog - Alexa Internet Partnership Details\n[4] Wayback Machine Documentation - Data Processing Timeline",
+      "answer_b": "The Alexa Internet dataset, beginning in 1996, is the organization's web crawl data donated to the Internet Archive. The specific data collection derived from Alexa's crawls is labeled the **'Alexa Web Crawl' (DR Crawl)**. According to its metadata on the Internet Archive's `archive-it.org` pages, the public accessibility status of this DR dataset is **\"Public\"**. This means the raw crawl data (WARC files) are publicly accessible for download and research. The collection's description explicitly states its availability: \"All data in the Alexa Web Crawl is public and available for anyone to download.\" \n\nRegarding the temporal condition for the organization's daily data flows before addition to the Wayback Machine, the metadata specifies a **three-month embargo or waiting period**. This means the data crawled by Alexa Internet undergoes a delay of approximately three months before it is processed and integrated into the public Wayback Machine archive. This condition allows for data processing and provides a buffer before public access. The Alexa Web Crawl was a foundational source for building the Wayback Machine's archives from 1996 until Alexa's own web search service was discontinued.\n\n## References\n[1] Internet Archive, \"Alexa Web Crawl (DR Crawl),\" Archive-It Collections. Available: https://archive-it.org/collections/2326\n[2] Internet Archive Blogs, \"Alexa Crawl Donations to Internet Archive,\" October 2020. Available: https://blog.archive.org/2020/10/02/alexa-crawl-donations-to-internet-archive/\n[3] Common Crawl Foundation, \"Internet Archive's Alexa Web Crawl,\" Common Crawl Forums. Available: https://commoncrawl.org/2018/03/alexa-web-crawl-dataset-available/",
+      "duration_a_seconds": 25.2,
+      "duration_b_seconds": 23.9,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A correctly identified the specific metadata details found in the Internet Archive's 'Alexa Crawls' collection description. It correctly stated the '6-month embargo' and the fact that the raw data is 'currently not publicly accessible'. Agent B hallucinated both the accessibility status (claiming it is public/downloadable) and the embargo period (claiming 3 months), leading to a significant failure in accuracy.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_claudeopu_vs_deepseekv_512"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "R4_M0_ppl-sonar-pro-high_vs_gemini-2.5-pro-grounding_tree_0005",
+  "source_group": "round4",
+  "source_log": "round4/R4_M0_ppl-sonar-pro-high_vs_gemini-2.5-pro-grounding_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "gemini-2.5-pro-grounding",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 4,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the organization that established a partnership to donate crawl data to the Internet Archive starting in 1996. regarding the specific data collection designated as 'Alexa Crawls DR' sourced from this entity, determine its current public accessibility status and explain the timing condition applied to the daily data flows before they are visible in the Wayback Machine."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 12899,
+  "estimated_cost": 0.129,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that established a partnership to donate crawl data to the Internet Archive starting in 1996. regarding the specific data collection designated as 'Alexa Crawls DR' sourced from this entity, determine its current public accessibility status and explain the timing condition applied to the daily data flows before they are visible in the Wayback Machine.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Current accessibility status of 'Alexa Crawls DR': Currently not publicly accessible",
+        "Timing condition for Wayback Machine availability: Added after an embargo period"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (Logic: Identified as the organization donating crawl data to Internet Archive since 1996)"
+      ],
+      "rationale": "The question requires Deep reasoning to identify 'Alexa Internet' based solely on the historical context of its 1996 partnership with the Internet Archive, without naming the company directly. It then applies Wide aggregation by requesting two distinct, scattered facts from the source text: the specific accessibility status of the 'DR' collection and the general embargo policy for daily data flows.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Sitcom - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The organization is **Alexa Internet, Inc.**, which began donating its web crawl data to the Internet Archive starting in 1996.[4][9][10]\n\nThe specific collection labeled **“Alexa Crawls DR”** in the Internet Archive’s web data holdings is described in the Archive’s collection metadata as material sourced from Alexa’s crawl streams; it is currently **not openly accessible as raw data files for general public download**, but instead is incorporated into the Wayback Machine as part of the broader web archive.[4][10] In other words, users access pages captured by these crawls through normal Wayback URL lookups rather than by browsing or bulk-downloading “Alexa Crawls DR” as a distinct, public dataset.\n\nRegarding timing, Internet Archive documentation and technical notes for its crawl ingest pipelines state that **new daily crawl data flows are subject to a delay before appearing in the Wayback Machine interface**; typical practice is that captures only become visible **after they have passed through processing, indexing, and quality-control steps, which generally means a lag on the order of hours to days rather than true real‑time exposure**.[9][10] This processing window functions as the effective “timing condition”: daily flows from Alexa-derived or similar crawls are not visible until they complete that ingest cycle and the associated indices are deployed.\n\n## References\n\n[1] 19: “The Internet Archive: An Interview with Brewster Kahle”  \n[2] TechRadar: “The story of the fight to archive the internet”  \n[3] Wikipedia: “Alexa Internet”  \n[4] Data Horde: “Pulling Rank: The Legacy of Alexa Internet”  \n[5] Wikipedia: “Internet Archive”  \n[9] Internet Archive Help Center: “Wayback Machine General Information”  \n[10] InternetArchive.ArchiveTeam.org: “Wayback Machine”",
+      "answer_b": "The organization that established a partnership to donate its web crawl data to the Internet Archive beginning in 1996 was **Alexa Internet** [1]. Founded by Brewster Kahle, who also founded the Internet Archive, Alexa Internet's daily crawls provided the foundational data set used to build and populate the Wayback Machine for over two decades [2].\n\nThe data collection designated \"Alexa Crawls DR\" is sourced from this entity. However, the flow of new data has ceased. Alexa Internet, which was acquired by Amazon, was officially shut down on May 1, 2022 [3, 4]. As a result, new crawls are no longer being donated. The historical data contributed by Alexa Internet from 1996 to 2022 remains a core part of the Internet Archive's holdings and is publicly accessible through the Wayback Machine's interface. While the data collection is no longer growing from this source, the vast historical archive it represents is still available to the public [2].\n\nA specific timing condition was consistently applied to the data before it became public. Throughout the 26-year partnership, there was a **six-month delay** for all daily data flows. This means that web pages and other data collected by Alexa's crawlers on any given day would only become visible and browsable in the Wayback Machine after a six-month period had elapsed [2]. This delay was a standard operational procedure for integrating the crawls into the public-facing archive.\n\n## References\n\n[1] Internet Archive. (1998). *Alexa donates cache to the Internet Archive*. Internet Archive Blog. Retrieved from web.archive.org/web/20230326090940/https://archive.org/post/193233/alexa-donates-cache-to-the-internet-archive.\n\n[2] Graham, M. (2022, May 2). *Farewell to Alexa.com*. Internet Archive Blogs. Retrieved from blog.archive.org/2022/05/02/farewell-to-alexa-com/.\n\n[3] Amazon. (2022). *Alexa.com Site Info*. Alexa Internet. Archived from the original on May 2, 2022. Retrieved from web.archive.org/web/20220502120401/https://www.alexa.com/siteinfo/.\n\n[4] Staton, D. (2022, May 2). *Web-ranking site Alexa.com is officially retired*. The Verge. Retrieved from www.theverge.com/2022/5/2/23053428/alexa-com-web-ranking-site-officially-retired-amazon.",
+      "duration_a_seconds": 14.2,
+      "duration_b_seconds": 18.1,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B correctly identifies the specific historical timing condition associated with Alexa Internet's data donation: a six-month embargo (delay). Agent A provides a generic answer about processing times (hours to days) which is incorrect for the specific 'Alexa Crawls' historical dataset requested. Agent B's accuracy on this specific detail makes it the clear winner.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_gemini25_vs_pplsonar_242"
+}

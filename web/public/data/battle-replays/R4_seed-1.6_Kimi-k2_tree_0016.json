@@ -1,0 +1,92 @@
+{
+  "id": "R4_seed-1.6_Kimi-k2_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_seed-1.6_Kimi-k2_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "Kimi-k2",
+  "model_b": "seed-1.6",
+  "winner": "Kimi-k2",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "According to the U.S. Bureau of Labor Statistics' 2024 Occupational Outlook Handbook data, identify the specific computer-related occupation that lists a Master's degree as its typical entry-level education. Compare this with the management role in the same sector that requires 5 years or more of related work experience, and the high-growth occupational group (projected to add over 280,000 new jobs) that typically requires no prior work experience. For each of these three identified categories, report the 2024 Median Annual Pay. Additionally, for the management role and the high-growth group, provide the specific projected numeric Employment Change for the 2024–34 decade."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 3684013,
+  "estimated_cost": 36.8401,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics' 2024 Occupational Outlook Handbook data, identify the specific computer-related occupation that lists a Master's degree as its typical entry-level education. Compare this with the management role in the same sector that requires 5 years or more of related work experience, and the high-growth occupational group (projected to add over 280,000 new jobs) that typically requires no prior work experience. For each of these three identified categories, report the 2024 Median Annual Pay. Additionally, for the management role and the high-growth group, provide the specific projected numeric Employment Change for the 2024–34 decade.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Master's Occupation Pay: $140,910",
+        "Management Role Pay: $171,200",
+        "Management Role Employment Change: 101,600",
+        "High-Growth Group Pay: $131,450",
+        "High-Growth Group Employment Change: 287,900"
+      ],
+      "checklist_depth": [
+        "Entity 1: Computer and Information Research Scientists (Identified via Master's degree requirement)",
+        "Entity 2: Computer and Information Systems Managers (Identified via 5+ years experience)",
+        "Entity 3: Software Developers, Quality Assurance Analysts, and Testers (Identified via >280k growth and no experience)"
+      ],
+      "rationale": "The question masks the target entities using specific attributes found in the source text (Education, Experience, and Numeric Growth projections). To answer, the agent must aggregate data from the summary table (for the Scientist's pay and education logic) and the detailed Quick Facts sections of two separate occupational profiles (Managers and Developers) to retrieve the specific pay and employment change figures.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "The U.S. Bureau of Labor Statistics' 2024 Occupational Outlook Handbook identifies three distinct computer-sector categories based on education and experience thresholds. **Computer and Information Research Scientists** uniquely requires a Master's degree as typical entry-level education, commanding a 2024 median annual pay of $145,080. These professionals advance computing innovation through theoretical research and experimental development in fields like artificial intelligence and robotics [1].\n\nThe management role is **Computer and Information Systems Managers**, typically demanding five years or more of related work experience beyond a bachelor's degree. This leadership position earns a 2024 median annual salary of $169,510 and is projected to expand by 86,600 jobs during the 2024–34 decade, reflecting growing organizational demand for IT strategic planning and cybersecurity oversight [2].\n\nThe high-growth occupational group is **Software Developers, Quality Assurance Analysts, and Testers**, projected to surge by 307,400 positions from 2024–34—substantially surpassing the 280,000 benchmark. Entry-level roles typically require no prior work experience, with employers emphasizing coding proficiency over tenure. The 2024 median annual wage reaches $130,160, driven by enterprise digital transformation and cloud adoption initiatives across all economic sectors [3].\n\n## References\n[1] https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm\n[2] https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm\n[3] https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "answer_b": "The computer-related occupation with typical entry-level master’s degree per the 2024 U.S. BLS Occupational Outlook Handbook (OOH) is Computer and Information Research Scientists, with 2024 median annual pay of $136,620 [1]. The same sector’s management role requiring 5+ years of related work experience is Computer and Information Systems Managers, which has 2024 median pay of $164,070 and a 2024–34 projected employment change of +37,400 jobs [1]. The high-growth computer occupational group (projected to add over 280,000 new jobs 2024–34) with no typical prior work experience is Software Developers, Quality Assurance Analysts, and Testers, boasting 2024 median pay of $124,200 and a projected employment change of +284,100 jobs [1]. These roles reflect sector-specific trends: research scientists advance core computing innovation, systems managers steer organizational tech strategy, and the software-focused group addresses global demand for digital solutions, driving its exceptional growth trajectory [1].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Occupational Outlook Handbook: Computer and Information Technology Occupations. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/home.htm",
+      "duration_a_seconds": 52.3,
+      "duration_b_seconds": 20.9,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "First, both agents passed the Deep Logic check by correctly identifying the three specific entities (Computer and Information Research Scientists, Computer and Information Systems Managers, and Software Developers). \n\nHowever, Agent A is the clear winner on both **Accuracy** and **Presentation**.\n\n1. **Data Currency (Accuracy):** Agent A used the most current available data (reflecting the 2024 OOH update with 2023 wages), whereas Agent B relied on outdated data (2022 wages from the previous year's handbook). Agent A's figures were significantly closer to the provided Ground Truth and real-world current data than Agent B's.\n2. **User Experience (Formatting):** Agent A structured the response into three clear, readable paragraphs with bolded terms for the entities. Agent B provided a single, dense 'wall of text' that was difficult to scan and lacked visual hierarchy.\n\nAgent B failed on the 'Wide' criteria by providing outdated details and poor formatting.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_Kimik2_vs_seed16_714"
+}

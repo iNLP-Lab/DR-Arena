@@ -1,0 +1,158 @@
+{
+  "id": "R3_deepseek-v3.2_Kimi-k2_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_deepseek-v3.2_Kimi-k2_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "Kimi-k2",
+  "model_b": "deepseek-v3.2",
+  "winner": "Kimi-k2",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "Using the 2024-2034 data from the U.S. Bureau of Labor Statistics Occupational Outlook Handbook, compare the employment metrics for the occupation that primarily involves designing computer applications and identifying program defects against the occupation responsible for planning and directing computer-related activities. For each of these two distinct roles, report the exact 2024 median annual pay, the projected numeric employment change over the decade, and the requirement for work experience in a related occupation.",
+    "Using the 2024 data from the U.S. Bureau of Labor Statistics Occupational Outlook Handbook, first determine the median annual wage for the broad occupational group 'Software Developers, Quality Assurance Analysts, and Testers'. \n\nNext, identifying from the same handbook data, find the two specific computer-related occupations (looking within both the Computer and Information Technology occupations list and related Computer Management profiles) that have a higher 2024 median annual wage than the Software Developers group.\n\nFor these two high-earning occupations, provide the following details:\n1. The exact 2024 median annual pay.\n2. The typical entry-level education required.\n3. A brief summary of their job duties as described in the handbook.\n4. For the occupation among the two that explicitly lists a requirement for work experience in a related occupation, specify the duration of experience needed."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 774135,
+  "estimated_cost": 7.7414,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Using the 2024-2034 data from the U.S. Bureau of Labor Statistics Occupational Outlook Handbook, compare the employment metrics for the occupation that primarily involves designing computer applications and identifying program defects against the occupation responsible for planning and directing computer-related activities. For each of these two distinct roles, report the exact 2024 median annual pay, the projected numeric employment change over the decade, and the requirement for work experience in a related occupation.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Software Developers/QA: 2024 Median Pay is $131,450",
+        "Software Developers/QA: Projected Employment Change is 287,900",
+        "Software Developers/QA: Work Experience requirement is 'None'",
+        "Computer and Information Systems Managers: 2024 Median Pay is $171,200",
+        "Computer and Information Systems Managers: Projected Employment Change is 101,600",
+        "Computer and Information Systems Managers: Work Experience requirement is '5 years or more'"
+      ],
+      "checklist_depth": [
+        "Identify Entity 1: Software Developers, Quality Assurance Analysts, and Testers (based on 'designing apps/identifying defects')",
+        "Identify Entity 2: Computer and Information Systems Managers (based on 'planning and directing computer-related activities')"
+      ],
+      "rationale": "The query uses 'Deep' logic by describing the job functions (Source A and Target 0 summaries) rather than naming the roles, forcing the agent to infer the correct OOH profiles. It utilizes 'Wide' aggregation by requesting specific data points (Employment Change numeric values) that are typically found on the detailed individual profile pages (Source A and Target 0) rather than just the summary group table (Target 1), ensuring the agent must visit and synthesize data from multiple distinct documents.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "**Software Developers (including QA testers)** earned a 2024 median annual salary of $132,930. The field is projected to add 303,800 jobs from 2024-2034. This role typically requires **no prior work experience** in a related occupation for entry-level positions [1][2].\n\n**Computer and Information Systems Managers** received a 2024 median annual wage of $175,980. The occupation expects a numeric growth of 65,700 positions over the decade. This managerial role **requires five or more years** of experience in a related computer occupation [3][4].\n\nThe software development role shows substantially higher numeric growth (303,800 vs 65,700 jobs), reflecting stronger demand for application designers and defect identifiers compared to leadership positions. Conversely, computer systems managers command significantly higher median pay ($175,980 vs $132,930), consistent with their senior-level responsibilities and experience requirements.\n\n## References\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Software Developers, Quality Assurance Analysts, and Testers, \"Pay\" (2024)\n[2] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Software Developers, Quality Assurance Analysts, and Testers, \"Job Outlook\" (2024-2034 Projections)\n[3] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Computer and Information Systems Managers, \"Pay\" (2024)\n[4] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Computer and Information Systems Managers, \"How to Become One\" and \"Job Outlook\" (2024-2034 Projections)",
+      "answer_b": "Software developers, who design computer applications and identify defects, had a 2024 median annual pay of $113,990. The occupation is projected to add 316,000 jobs from 2022 to 2032, representing growth driven by demand for new software. Work experience in a related occupation is typically not required for entry [1][2].\n\nComputer and information systems managers, responsible for planning and directing computer-related activities, had a significantly higher 2024 median annual pay of $176,150. This occupation is projected to add 77,000 jobs over the same decade. Unlike developers, this role almost always requires more than five years of work experience in a related occupation, often in a technical role such as software development, before advancing to management [1][3].\n\nThe key differences are substantial. Managers earn over 60% more median pay but require extensive prior experience. Their projected numeric job growth, while robust, is about one-quarter of that for developers, reflecting the larger base and faster expansion of the developer workforce. Both occupations are in high demand, but the pathways differ: software development is largely an entry-point profession, while IT management is a senior-level position attained after years of experience.\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024, April 17). *Occupational Outlook Handbook: Software Developers*. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm\n[2] U.S. Bureau of Labor Statistics. (2024, April 17). *Occupational Outlook Handbook: Computer and Information Systems Managers*. Retrieved from https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm\n[3] U.S. Bureau of Labor Statistics. (2024, September 4). *Occupational Employment and Wage Statistics: Occupational Profiles*. Retrieved from https://www.bls.gov/oes/current/oes_stru.htm for wage data verification.",
+      "duration_a_seconds": 22.5,
+      "duration_b_seconds": 31.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents failed to retrieve the exact numbers specified in the Ground Truth (GT) checklist, likely due to the specific '2024-2034' constraint which corresponds to a data cycle not yet fully standardized or available (the GT uses the 2023-2033 data released in 2024). However, Agent A is the clear winner for two reasons: \n\n1. **Data Freshness & Accuracy**: Agent A provided salary figures ($132k) that are very close to the current GT ($131k), reflecting the most recent BLS data. Agent B explicitly used outdated 2022-2032 data, resulting in a salary figure ($113k) that is significantly lower than the current reality.\n2. **Formatting**: Agent A followed the 'Markdown Mastery' criteria by using bolding for key constraints (pay, experience) and a clear structure. Agent B used a wall-of-text narrative that is harder to scan.\n\nAgent A is capped at 'BETTER' rather than 'MUCH BETTER' because it did not match the GT numbers exactly and hallucinated the specific '2024-2034' label (though prompted to do so), whereas the GT numbers were specific.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Using the 2024 data from the U.S. Bureau of Labor Statistics Occupational Outlook Handbook, first determine the median annual wage for the broad occupational group 'Software Developers, Quality Assurance Analysts, and Testers'. \n\nNext, identifying from the same handbook data, find the two specific computer-related occupations (looking within both the Computer and Information Technology occupations list and related Computer Management profiles) that have a higher 2024 median annual wage than the Software Developers group.\n\nFor these two high-earning occupations, provide the following details:\n1. The exact 2024 median annual pay.\n2. The typical entry-level education required.\n3. A brief summary of their job duties as described in the handbook.\n4. For the occupation among the two that explicitly lists a requirement for work experience in a related occupation, specify the duration of experience needed.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Computer and Information Systems Managers: $171,200 Median Pay",
+        "Computer and Information Systems Managers: Bachelor's degree Education",
+        "Computer and Information Systems Managers Duties: Plan, coordinate, and direct computer-related activities",
+        "Computer and Information Systems Managers Experience: 5 years or more",
+        "Computer and Information Research Scientists: $140,910 Median Pay",
+        "Computer and Information Research Scientists: Master's degree Education",
+        "Computer and Information Research Scientists Duties: Design innovative uses for new and existing computing technology"
+      ],
+      "checklist_depth": [
+        "Anchor Logic: Identified Software Developer Group Median Pay as $131,450",
+        "Comparison Logic: Filtered for occupations > $131,450",
+        "Entity 1: Computer and Information Systems Managers ($171,200 > $131,450)",
+        "Entity 2: Computer and Information Research Scientists ($140,910 > $131,450)",
+        "Exclusion: Correctly excluded Network Architects ($130,390) and Information Security Analysts ($124,910) as they are lower than the anchor."
+      ],
+      "rationale": "This question requires 'Deep' reasoning because the agent cannot simply lookup a name; it must first extract a numerical anchor ($131,450) and then perform a comparative analysis across a table and a separate profile to identify the only two entities that exceed that number. It is 'Wide' because the details for the resulting entities (Duties, Education, Experience) are scattered across a summary table and a distinct profile page, requiring aggregation of disparate text segments.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 330,
+      "answer_a": "The broad occupational group \"Software Developers, Quality Assurance Analysts, and Testers\" commanded a median annual wage of $130,160 in 2024, according to the Bureau of Labor Statistics Occupational Outlook Handbook [1].\n\nTwo specific computer-related occupations exceeding this compensation level are Computer and Information Systems Managers and Computer and Information Research Scientists.\n\nComputer and Information Systems Managers topped the earnings hierarchy with a median annual wage of $169,510 [2]. The typical entry-level education requirement is a bachelor's degree, often in computer or information science, though many employers prefer candidates with a graduate degree such as an MBA with technology concentration [3]. These senior professionals plan, coordinate, and direct all computer-related activities within organizations, analyzing technology needs, overseeing software and hardware installation, managing IT security, directing the work of systems analysts and software developers, and implementing strategies to meet organizational objectives [3]. This leadership role explicitly mandates five or more years of work experience in a related computer occupation [3].\n\nComputer and Information Research Scientists earned a median annual wage of $145,080 [4]. The typical entry-level education is a master's degree in computer science, information systems, or a closely related technical field [5]. These research specialists invent and design new computing technologies, develop innovative applications for existing systems, conduct pioneering research on fundamental computational challenges, and solve complex problems across business, science, medicine, and engineering domains [5]. Unlike the managerial position, this occupation does not require work experience in a related field for entry-level roles, though certain specialized research positions may value prior practical experience [5].\n\n## References\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Software Developers, Quality Assurance Analysts, and Testers, \"Pay\" (2024)\n[2] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Computer and Information Systems Managers, \"Pay\" (2024)\n[3] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Computer and Information Systems Managers, \"How to Become One\" and \"What They Do\" (2024)\n[4] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Computer and Information Research Scientists, \"Pay\" (2024)\n[5] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, Computer and Information Research Scientists, \"How to Become One\" and \"What They Do\" (2024)",
+      "answer_b": "The median annual wage for the broad occupational group \"Software Developers, Quality Assurance Analysts, and Testers\" in 2024 was $105,490 [1].\n\nTwo specific computer-related occupations with a higher 2024 median annual wage are **Computer and Information Research Scientists** and **Computer Network Architects**[2][3].\n\n**Computer and Information Research Scientists** had a 2024 median annual pay of **$151,100**. The typical entry-level education required is a master's degree. Their job duties involve inventing and designing new computing technologies, improving software systems, and discovering innovative uses for existing technology to solve complex problems in various fields [2]. This occupation does not specify a duration of required work experience, often focusing on advanced education.\n\n**Computer Network Architects** had a 2024 median annual pay of **$133,420**. The typical entry-level education required is a bachelor's degree. Their primary duties include designing and building data communication networks, such as local area networks (LANs), wide area networks (WANs), and intranets [3]. This occupation explicitly lists a requirement for work experience in a related occupation. The needed duration is **5 years or more** of experience in a related role, such as network and computer systems administration [3].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024, April 17). *Occupational Outlook Handbook: Software Developers, Quality Assurance Analysts, and Testers*. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers-quality-assurance-analysts-and-testers.htm\n[2] U.S. Bureau of Labor Statistics. (2024, April 17). *Occupational Outlook Handbook: Computer and Information Research Scientists*. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm\n[3] U.S. Bureau of Labor Statistics. (2024, April 17). *Occupational Outlook Handbook: Computer Network Architects*. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm",
+      "duration_a_seconds": 154.9,
+      "duration_b_seconds": 13.7,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the anchor wage (approx $130k) and the two correct occupations that earn more (Managers and Research Scientists). It also correctly identified the experience requirement for Managers. Agent B failed significantly on the anchor wage ($105k is the median for the broad 'Computer and Information Technology' group, not the specific 'Software Developers' group). Because of this low anchor, Agent B incorrectly selected 'Computer Network Architects' as a higher-earning occupation; in reality (and in the provided ground truth), Network Architects earn less than Software Developers. Agent A wins on accuracy and logic.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_Kimik2_vs_deepseekv_614"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "R1_Kimi-k2_grok-4-search_tree_0021",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_Kimi-k2_grok-4-search_tree_0021.log",
+  "tree_id": "tree_0021",
+  "tree_title": "Comparison of Internet forum software",
+  "tree_topic": "Online Communities",
+  "tree_subtopic": "Forum & Chat Providers",
+  "tree_crawled_at": "2025-11-21T16:17:25.090410",
+  "tree_url": "https://en.wikipedia.org/wiki/Comparison_of_Internet_forum_software",
+  "model_a": "grok-4-search",
+  "model_b": "Kimi-k2",
+  "winner": "grok-4-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Comparison of Internet forum software",
+  "questions": [
+    "Identify the open-source forum software that employed the LGPL3 license for its 1.8 series and GPL3 for earlier iterations, but decided to release its 2.0 version and associated libraries under the BSD 3-Clause license. What specific basic limitations did the project outline regarding the use of trademarks, liability for damages, and copyright retention under this new license?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 293524,
+  "estimated_cost": 2.9352,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Comparison of Internet forum software",
+        "Change of license for MyBB 2.0"
+      ],
+      "question": "Identify the open-source forum software that employed the LGPL3 license for its 1.8 series and GPL3 for earlier iterations, but decided to release its 2.0 version and associated libraries under the BSD 3-Clause license. What specific basic limitations did the project outline regarding the use of trademarks, liability for damages, and copyright retention under this new license?",
+      "word_limit_instruction": "Answer length: approximately 100-150 words.",
+      "checklist_width": [
+        "Limitation 1: Users cannot use the project Group's trademarks, names, or logos (or those of contributors).",
+        "Limitation 2: The project Group cannot be held liable for any damages caused by the software.",
+        "Limitation 3: The original copyright must be retained."
+      ],
+      "checklist_depth": [
+        "Target Entity: MyBB (or MyBulletinBoard)",
+        "Logic Proof: Matches history of LGPL3 (v1.8), GPL3 (older), and the specific switch to BSD 3-Clause for the planned 2.0 version."
+      ],
+      "rationale": "The question uses 'Deep' reasoning by masking the entity 'MyBB' behind a specific chronological pattern of software licenses (GPL3 -> LGPL3 -> BSD-3) associated with specific version numbers. It uses 'Wide' aggregation by requiring the retrieval of three distinct limitations (trademarks, liability, copyright) defined in the specific context of the 2.0 licensing announcement.",
+      "source_nodes": [
+        "Change of license for MyBB 2.0 | MyBB Blog",
+        "MySQL - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: MyBB has historically used the Lesser GNU Public License Version 3 (LGPL3) for the MyBB 1.8 series, and the GNU Public License Version 3 (GPL3) in earlier releases. Both of th",
+      "judge_max_limit": 300,
+      "answer_a": "The open-source forum software is MyBB. Its earlier versions (e.g., 1.6 series) used the GPL3 license, while the 1.8 series adopted LGPL3. For MyBB 2.0 and its associated libraries, the project switched to the BSD 3-Clause license to facilitate broader adoption and commercial use [1][2].\n\nUnder this new BSD 3-Clause license, the project outlines specific limitations: Regarding trademarks, users cannot use the names of the original authors or organization to endorse or promote derived products without prior written permission, preventing implied affiliation [3]. For liability, there is no warranty, and the software is provided \"as is,\" disclaiming all liability for any damages, including direct, indirect, incidental, or consequential harms arising from its use [3]. On copyright retention, all redistributions in source or binary form must retain the original copyright notice, list of conditions, and disclaimer, ensuring attribution to the original developers [3].\n\n## References\n[1] https://docs.mybb.com/1.8/introduction/license/  \n[2] https://blog.mybb.com/2017/03/13/mybb-2-0-development-update/  \n[3] https://github.com/mybb/mybb/blob/feature/LICENSE",
+      "answer_b": "Flarum is the open-source forum software that migrated from LGPL3/GPL3 licensing for its 1.8 series to the BSD 3-Clause license for version 2.0 and its libraries. The project specified three fundamental limitations under this new license. **Trademark use**: The BSD license explicitly does not convey trademark permissions; users cannot utilize the Flarum name, logos, or branding without separate authorization, with all trademark rights reserved by the Flarum Foundation. **Liability for damages**: The license contains a comprehensive disclaimer stating copyright holders and contributors bear no liability for any direct, indirect, incidental, or consequential damages arising from software usage. **Copyright retention**: Redistributions must preserve all original copyright notices, the license text, and disclaimer in both source and binary forms, ensuring proper attribution and legal protection.\n\n## References\n[1] Flarum Framework GitHub Repository. \"LICENSE.\" Accessed 2024. https://github.com/flarum/framework/blob/main/LICENSE\n[2] Flarum Foundation. \"Trademark Policy.\" Accessed 2024. https://flarum.org/trademark\n[3] Clark W. \"Flarum 2.0 is Going BSD.\" Flarum Blog, 2023. https://flarum.org/blog/2023-02-20-flarum-2-bsd-license",
+      "duration_a_seconds": 29.4,
+      "duration_b_seconds": 49.6,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the target entity (MyBB) and accurately described its unique licensing history (GPL3 to LGPL3 for 1.8, then the planned switch to BSD for 2.0). Agent B failed the Deep Logic check by misidentifying the software as 'Flarum' and hallucinating a licensing history and citations to match the prompt constraints (Flarum is MIT licensed). Agent A is the only accurate response.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0021_grok4sea_vs_Kimik2_440"
+}

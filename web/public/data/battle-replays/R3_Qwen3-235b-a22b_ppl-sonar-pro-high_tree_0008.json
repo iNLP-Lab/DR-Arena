@@ -1,0 +1,89 @@
+{
+  "id": "R3_Qwen3-235b-a22b_ppl-sonar-pro-high_tree_0008",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_Qwen3-235b-a22b_ppl-sonar-pro-high_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the health policy research organization that reports that 55% of uninsured adults delay or forgo health care due to cost and that 38% of uninsured adults lack a usual source of care. Using this organization's data profile on coverage populations, report the specific percentage of uninsured adults who have difficulty paying medical bills. Additionally, from their analysis of Medicaid demographics, provide the approximate proportion of working-age adults enrolled in Medicaid who have at least one chronic condition, and the percentage of the total population of people with disabilities that is covered by Medicaid."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 959086,
+  "estimated_cost": 9.5909,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Uninsured"
+      ],
+      "question": "Identify the health policy research organization that reports that 55% of uninsured adults delay or forgo health care due to cost and that 38% of uninsured adults lack a usual source of care. Using this organization's data profile on coverage populations, report the specific percentage of uninsured adults who have difficulty paying medical bills. Additionally, from their analysis of Medicaid demographics, provide the approximate proportion of working-age adults enrolled in Medicaid who have at least one chronic condition, and the percentage of the total population of people with disabilities that is covered by Medicaid.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "19% of uninsured adults report difficulty paying medical bills",
+        "Approximately three-quarters (75%) of working-age adults on Medicaid have one or more chronic conditions",
+        "35% (or more than 1 in 3) of people with disabilities are covered by Medicaid"
+      ],
+      "checklist_depth": [
+        "Identifies the source organization as KFF (Kaiser Family Foundation)",
+        "Validates the entity via the anchor statistics (55% delay care and 38% no usual source of care)"
+      ],
+      "rationale": "The query employs Deep Logic by masking the source (KFF) behind specific statistical fingerprints (55% delay care, 38% no usual source of care) found in the text. It requires Wide Information Aggregation by demanding the retrieval of three distinct data points (bill payment difficulty, chronic condition prevalence, and disability coverage rates) that reside in separate topic sections (Uninsured vs. Medicaid) of the source material.",
+      "source_nodes": [
+        "Uninsured - Research and Data from KFF",
+        "Medicaid - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Uninsured 8% Percent of adults who reported not having health insurance 55% Percent of uninsured adults who reported delaying or forgoing some form of health care ",
+      "judge_max_limit": 300,
+      "answer_a": "**Kaiser Family Foundation (KFF)** reports that 55% of uninsured adults delay or forgo health care due to cost and 38% lack a usual source of care[2]. From KFF's data profile on coverage populations, **26%** of uninsured adults have difficulty paying medical bills, compared to 16% of those with private insurance[2]. From KFF's analysis of Medicaid demographics, approximately **75%** of working-age adults (ages 19-64) enrolled in Medicaid have at least one chronic condition, with nearly one-third reporting three or more[2]. Additionally, **Medicaid covers about 50%** of the total population of people with disabilities, making it the largest single payer for this group[2].\n\nKFF's research highlights stark access disparities for the uninsured, driven primarily by affordability barriers. Their Medicaid analyses emphasize the program's critical role for high-need populations, including those with chronic conditions (e.g., hypertension, obesity, mental health issues) and disabilities, which drive higher spending—$20,000 annually for enrollees with three or more conditions versus $5,000 for those without[2]. These figures underscore Medicaid's coverage of vulnerable working-age adults facing health barriers to employment.\n\n(Word count: 178)\n\n## References\n[1] https://www.hmpgloballearningnetwork.com/site/frmc/news/medicaid-work-requirements-under-hr-1-could-affect-5-million-adults-many-chronic  \n[2] https://www.kff.org/medicaid/5-key-facts-about-medicaid-coverage-for-adults-with-chronic-conditions/  \n[3] https://pmc.ncbi.nlm.nih.gov/articles/PMC10794544/  \n[4] https://www.healthcaredive.com/news/medicaid-work-requirements-disenrollment-multiple-chronic-conditions-jama/801853/  \n[5] https://laborcenter.berkeley.edu/medicaid-cuts-including-work-documentation-requirements-harm-older-adults/  \n[6] https://www.kff.org/medicaid/understanding-the-intersection-of-medicaid-and-work-an-update/  \n[7] https://www.commonwealthfund.org/publications/explainer/2025/sep/work-requirements-medicaid-enrollees",
+      "answer_b": "The health policy research organization reporting these statistics is the Kaiser Family Foundation (KFF). According to KFF’s data profile on coverage populations, 68% of uninsured adults report difficulty paying medical bills [1]. KFF’s analysis of Medicaid demographics indicates that approximately 70% of working-age adults enrolled in Medicaid have at least one chronic condition [2]. Furthermore, Medicaid covers about 60% of the total population of people with disabilities in the United States [3]. These findings highlight the critical role Medicaid plays in supporting vulnerable populations, particularly those with chronic health conditions and disabilities. The high percentage of uninsured adults delaying care due to cost and lacking a usual source of care underscores the financial and access barriers faced by this group, with cost-related challenges extending to difficulties in paying medical bills. As a leading source of health policy analysis, KFF’s data consistently informs policymakers and researchers on coverage gaps and healthcare disparities, particularly among low-income and high-need populations. The organization’s detailed profiles and state-level data provide valuable insights into insurance coverage, access to care, and the demographic and health characteristics of Medicaid beneficiaries, contributing significantly to national health policy discussions.\n\n## References  \n[1] Kaiser Family Foundation. (2023). \"Key Facts About the Uninsured Population.\" https://www.kff.org/uninsured/issue-brief/key-facts-about-the-uninsured-population/  \n[2] Kaiser Family Foundation. (2022). \"Chronic Conditions Among Medicaid Adults.\" https://www.kff.org/medicaid/issue-brief/chronic-conditions-among-medicaid-adults/  \n[3] Kaiser Family Foundation. (2023). \"Medicaid’s Role for People with Disabilities.\" https://www.kff.org/medicaid/issue-brief/medicaids-role-for-people-with-disabilities/",
+      "duration_a_seconds": 5.7,
+      "duration_b_seconds": 28.4,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the Kaiser Family Foundation (KFF) as the entity. However, Agent A demonstrated significantly higher accuracy on the specific data points requested. Agent A correctly identified that 75% of working-age adults on Medicaid have at least one chronic condition (matching the ground truth), whereas Agent B missed this. For the other statistics, Agent A's figures (26% for bills, 50% for disabilities) were closer to the ground truth (19% and 35%) or reflected older/different KFF datasets, whereas Agent B's figures (68%, 60%) were far off and likely hallucinations or conflations with other metrics (e.g., 'worry' vs 'difficulty'). Agent A also used superior formatting with bolding to make the data points scannable.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_pplsonar_vs_Qwen3235b_397"
+}

@@ -1,0 +1,209 @@
+{
+  "id": "R3_glm-4.7_deepseek-v3.2_tree_0008",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_glm-4.7_deepseek-v3.2_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "glm-4.7",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the prominent U.S. non-profit health policy organization that manages the 'State Health Facts' database. Navigate to the 'Women's Health Policy' and 'Private Insurance' topic sections on its website to answer the following:\n\n1. What is the specific headline of the 'What the Health?' podcast episode that appears in the recent content lists for *both* of these topic sections?\n2. In the 'Private Insurance' section, summarize the specific 'surprise bill' story regarding a walk-in patient and a tick bite.\n3. In the 'Women's Health Policy' section, summarize the headline regarding a 'huge new study' involving breast cancer, specifically mentioning the study's implication about science.",
+    "In the context of comparative health systems studied in Health Policy 101, identify the two major healthcare models that are eponymously named after a 19th-century Prussian Chancellor and a 20th-century British social reformer. For the model associated with the Prussian Chancellor, describe the primary mechanism of financing (specifically regarding who contributes) and the predominant ownership status of doctors and hospitals. For the model associated with the British reformer, describe the primary source of funding and the entity that typically owns the hospitals and employs the medical staff.",
+    "Identify the health policy research organization that reported data indicating 55% of uninsured adults delayed or went without care due to cost, while 38% of uninsured adults lacked a usual source of care. Using this organization's specific resources on Women's Health Policy, provide a summary of their analysis in three key areas: (1) the major sources of health insurance coverage for women and the ACA's impact, (2) the current state of Medicaid coverage for women regarding eligibility and reproductive health, and (3) the specific implications of the Dobbs decision on racial disparities in access to care."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "NONE",
+  "total_tokens": 2655798,
+  "estimated_cost": 26.558,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Women's Health Policy"
+      ],
+      "question": "Identify the prominent U.S. non-profit health policy organization that manages the 'State Health Facts' database. Navigate to the 'Women's Health Policy' and 'Private Insurance' topic sections on its website to answer the following:\n\n1. What is the specific headline of the 'What the Health?' podcast episode that appears in the recent content lists for *both* of these topic sections?\n2. In the 'Private Insurance' section, summarize the specific 'surprise bill' story regarding a walk-in patient and a tick bite.\n3. In the 'Women's Health Policy' section, summarize the headline regarding a 'huge new study' involving breast cancer, specifically mentioning the study's implication about science.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Shared Podcast Headline: 'The GOP Circles the Wagons on ACA'",
+        "Private Insurance Story Detail: Patient avoided Lyme disease (tick bite) but received a surprise bill",
+        "Private Insurance Story Detail: Issue related to 'Preauthorization' (Ticked Off Over Preauthorization)",
+        "Women's Health Story Detail: Topic is 'Breast Cancer and Birth Control'",
+        "Women's Health Story Detail: Headline mentions 'How Science Can Be Distorted'"
+      ],
+      "checklist_depth": [
+        "Target Entity: KFF (Kaiser Family Foundation)",
+        "Logic Proof: Organization identified via 'State Health Facts' and topic sections"
+      ],
+      "rationale": "The question masks the entity (KFF) by referencing its well-known database 'State Health Facts' (Deep). It then requires the agent to perform a Wide search by navigating to two distinct sections of the site ('Women's Health Policy' and 'Private Insurance') to identify a specific overlapping content piece (the podcast) and distinct unique articles (Lyme disease bill vs. Breast cancer study).",
+      "source_nodes": [
+        "Women's Health Policy - Research and Data from KFF",
+        "Private Insurance - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Women's Health Policy Women’s Health Insurance Coverage This factsheet reviews major sources of coverage for women residing in the U.S., discusses the ACA's impact",
+      "judge_max_limit": 300,
+      "answer_a": "I'll perform searches to find the information you're looking for about the U.S. non-profit health policy organization that manages the 'State Health Facts' database and the specific questions about their Women's Health Policy and Private Insurance sections.\n\nSearch for:\n1. The organization that manages \"State Health Facts\" database\n2. Information about their \"What the Health?\" podcast\n3. The \"surprise bill\" story about a walk-in patient and tick bite\n4. The breast cancer study in their Women's Health Policy section## Direct Answer\n\nThe Kaiser Family Foundation (KFF) manages the 'State Health Facts' database. The 'What the Health?' podcast episode appearing in both Women's Health Policy and Private Insurance sections is titled \"What the Health? The Supreme Court Weighs Abortion Pill Access.\" [1]\n\nIn the Private Insurance section, a surprise bill story describes a patient who visited a walk-in clinic for a tick bite and removal, only to later receive a bill for over $600 because the clinic was out-of-network, despite being located in an in-network hospital building. This highlights how patients can face unexpected costs even when seeking care at facilities they believe are covered by their insurance. [2]\n\nIn the Women's Health Policy section, a headline refers to a \"huge new study\" on breast cancer which found that over 90% of women with breast cancer could potentially avoid chemotherapy. The study suggests that science is advancing to more personalized treatment approaches, allowing many patients to safely skip grueling chemotherapy regimens based on genetic testing of their tumors. [3]\n\n## References\n[1] KFF - Kaiser Family Foundation, Women's Health Policy section, https://www.kff.org/womens-health-policy/\n[2] KFF - Kaiser Family Foundation, Private Insurance section, https://www.kff.org/private-insurance/\n[3] KFF - Kaiser Family Foundation, State Health Facts, https://www.kff.org/state-health-facts/",
+      "answer_b": "The KFF (Kaiser Family Foundation) manages the 'State Health Facts' database. The recent content lists in both the 'Women's Health Policy' and 'Private Insurance' topic sections feature the \"What the Health?\" podcast episode titled \"An Election-Year Supreme Court Showdown\" [1].  \n\nWithin the Private Insurance section, the story details a surprise medical bill incident where a patient with a tick bite visited an in-network urgent care clinic. The clinic sent the tick to an out-of-network lab for testing without the patient's knowledge, resulting in a bill for nearly $300 from the lab. The patient was unaware of the separate lab arrangement and had no opportunity to consent to the out-of-network service, which highlights the common issue of \"surprise\" bills from third-party providers even at in-network facilities [2].  \n\nIn the Women's Health Policy section, the headline regarding a 'huge new study' is: “Huge New Study Finds No Amount of Drinking is Safe for Breast Cancer.” The summary notes that the study’s implication about science is that it \"underscores how science continues to evolve,\" indicating that medical guidance is updated as new, large-scale research provides more definitive evidence on health risks [3].\n\n## References\n[1] KFF. (n.d.). What the Health? An Election-Year Supreme Court Showdown. Retrieved from https://www.kff.org/podcast/what-the-health-an-election-year-supreme-court-showdown/\n[2] KFF. (n.d.). A Surprise Bill Goes to Washington. Retrieved from https://www.kff.org/private-insurance/story/a-surprise-bill-goes-to-washington/\n[3] KFF. (n.d.). Huge New Study Finds No Amount of Drinking is Safe for Breast Cancer. Retrieved from https://www.kff.org/womens-health-policy/story/huge-new-study-finds-no-amount-of-drinking-is-safe-for-breast-cancer/",
+      "duration_a_seconds": 26.7,
+      "duration_b_seconds": 10.6,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents correctly identified the core entity (KFF) but failed significantly on the 'Wide' accuracy checklist. The prompt requests specific details corresponding to identifiable, albeit likely older, stories (e.g., the 'Ticked Off Over Preauthorization' story and the 'How Science Can Be Distorted' headline). Both agents failed to retrieve these specific articles, instead substituting different stories that did not match the prompt's detailed constraints (e.g., Agent A cited a chemotherapy study and Agent B cited an alcohol study, neither of which matched the 'Science Distorted' constraint). Since both agents failed to find the correct information requested by the specific constraints, it is a Low Quality Tie, despite Agent A having superior formatting.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction"
+      ],
+      "question": "In the context of comparative health systems studied in Health Policy 101, identify the two major healthcare models that are eponymously named after a 19th-century Prussian Chancellor and a 20th-century British social reformer. For the model associated with the Prussian Chancellor, describe the primary mechanism of financing (specifically regarding who contributes) and the predominant ownership status of doctors and hospitals. For the model associated with the British reformer, describe the primary source of funding and the entity that typically owns the hospitals and employs the medical staff.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Bismarck Model Financing: Jointly financed by employers and employees through payroll deduction (sickness funds).",
+        "Bismarck Model Delivery: Providers/Hospitals are essentially private.",
+        "Beveridge Model Financing: Financed by the government through general tax payments.",
+        "Beveridge Model Delivery: Many hospitals/clinics are owned by the government; some doctors are government employees."
+      ],
+      "checklist_depth": [
+        "Identity 1: The Bismarck Model (derived from 'Prussian Chancellor' Otto von Bismarck).",
+        "Identity 2: The Beveridge Model (derived from 'British social reformer' William Beveridge)."
+      ],
+      "rationale": "The question uses **Deep Reasoning** by masking the specific model names behind the historical figures (Bismarck and Beveridge) who created them, requiring the agent to bridge history and health policy. It requires **Wide Aggregation** by demanding a side-by-side comparison of two distinct attributes (Financing and Delivery/Ownership) for both identified models.",
+      "source_nodes": [
+        "Health Policy 101 Introduction | KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 280,
+      "answer_a": "In comparative health systems analysis, the two major models named after historical figures are the Bismarck model and the Beveridge model. The Bismarck model, named after 19th-century Prussian Chancellor Otto von Bismarck, features a financing system based on social health insurance where employees and employers jointly contribute through payroll deductions to \"sickness funds.\" This model typically maintains private ownership of hospitals, with physicians generally operating as independent practitioners or in private group practices [1][2].\n\nThe Beveridge model, named after 20th-century British social reformer William Beveridge, is primarily funded through government taxation. In this system, the government owns and operates hospitals while employing medical staff directly. The National Health Service (NHS) in the United Kingdom exemplifies this model, where healthcare is provided as a public service free at the point of delivery [2][3].\n\nThese models represent distinct approaches to healthcare financing and delivery, with Bismarck emphasizing insurance-based solidarity and Beveridge focusing on state-provided universal care. The Bismarck model maintains healthcare as a social responsibility shared through insurance contributions, while the Beveridge model treats healthcare as a fundamental government responsibility [1][3].\n\n## References\n[1] https://www.commonwealthfund.org/blog/2020/health-care-systems-four-basic-models\n[2] https://www.pbs.org/wgbh/pages/frontline/sickaroundtheworld/countries/models.html\n[3] https://www.health.org.uk/our-work/briefings/history-of-the-nhs",
+      "answer_b": "The two major healthcare models are the Bismarck model, named after 19th-century Prussian Chancellor Otto von Bismarck, and the Beveridge model, named after 20th-century British social reformer William Beveridge.\n\nIn the Bismarck model, the primary mechanism of financing is through non-profit **sickness funds**. Funding comes from mandatory, employment-based payroll contributions shared between employers and employees [1][2]. This is a social insurance model where contributions are based on income, not risk. The system relies on private-sector provision: physicians predominantly work in **private practice**, and hospitals are often **privately owned** (though they can be public or non-profit) [1][2][3]. Doctors are typically self-employed or work for private entities, not directly for the state.\n\nThe Beveridge model is primarily funded through **general tax revenues** collected by the government [1][2]. The government acts as the single payer. The hospitals are usually **publicly owned**, and the medical staff (doctors, nurses) are most commonly **government employees**[1][2][3]. While some doctors may have private practices that contract with the public system, the core infrastructure is state-run. This model aims to provide universal coverage funded by taxation and managed by the government [2].\n\n## References\n[1] Commonwealth Fund. (n.d.). International Health Care System Profiles. Retrieved from https://www.commonwealthfund.org/international-health-policy-center/system-profiles\n[2] Tikkanen, R., et al. (2020). International Health Care System Profiles. In *Health Policy*. Retrieved from https://www.healthsystemtracker.org/\n[3] Reid, T. R. (2009). *The Healing of America: A Global Quest for Better, Cheaper, and Fairer Health Care*. Penguin Press.",
+      "duration_a_seconds": 29.2,
+      "duration_b_seconds": 10.0,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents provided factually perfect answers that correctly identified the models (Bismarck and Beveridge) and accurately described the financing and delivery mechanisms for each. Agent B is rated better solely on presentation and user experience. It utilized bold text to highlight the specific answers to the constraints (e.g., **sickness funds**, **private practice**, **general tax revenues**), making the response significantly more scannable and useful for a quick lookup compared to Agent A's standard paragraph format.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Uninsured'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Uninsured"
+      ],
+      "question": "Identify the health policy research organization that reported data indicating 55% of uninsured adults delayed or went without care due to cost, while 38% of uninsured adults lacked a usual source of care. Using this organization's specific resources on Women's Health Policy, provide a summary of their analysis in three key areas: (1) the major sources of health insurance coverage for women and the ACA's impact, (2) the current state of Medicaid coverage for women regarding eligibility and reproductive health, and (3) the specific implications of the Dobbs decision on racial disparities in access to care.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Detail regarding 'Women’s Health Insurance Coverage': Reviews major sources of coverage and the ACA's impact.",
+        "Detail regarding 'Medicaid Coverage for Women': Covers eligibility, reproductive health, and chronic conditions.",
+        "Detail regarding 'Dobbs' analysis: Examines implications of state restrictions/abortion coverage on racial disparities in access to care and health outcomes.",
+        "Confirmation of Uninsured Stats: 55% delayed care due to cost and 38% no usual source of care."
+      ],
+      "checklist_depth": [
+        "Target Entity: Kaiser Family Foundation (KFF).",
+        "Logic Proof: The specific statistics (55% delayed care, 38% no usual source) are signature data points from KFF's analysis of the uninsured population."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the source organization (KFF) using specific statistical fingerprints (55% and 38%) provided in the 'Uninsured' text. It then requires Wide aggregation by forcing the agent to retrieve and summarize three distinct analysis topics (Coverage sources, Medicaid, and Dobbs/Racial Disparities) found within the organization's 'Women's Health Policy' domain.",
+      "source_nodes": [
+        "Uninsured - Research and Data from KFF",
+        "Other Health - Research and Data from KFF",
+        "Women's Health Policy - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Uninsured 8% Percent of adults who reported not having health insurance 55% Percent of uninsured adults who reported delaying or forgoing some form of health care ",
+      "judge_max_limit": 330,
+      "answer_a": "The Kaiser Family Foundation (KFF) reported that 55% of uninsured adults delayed care and 38% lacked a usual source of care due to cost. KFF’s Women’s Health Policy analysis highlights that employment-based coverage remains the primary source of insurance for women, though Medicaid and Marketplace coverage expanded significantly under the ACA, reducing the uninsured rate among women to historic lows [1].\n\nRegarding Medicaid, KFF notes that eligibility for non-pregnant adults remains limited in many states, creating coverage gaps. While the ACA expanded Medicaid, women in non-expansion states often fall into a \"coverage cliff\" where they earn too much to qualify but too little to afford Marketplace plans. Furthermore, Medicaid plays a critical role in reproductive health, covering nearly half of all births in the U.S., yet access to services varies by state due to differing federal waivers and restrictions [2].\n\nConcerning the Dobbs decision, KFF emphasizes its exacerbation of existing racial and ethnic disparities in maternal and reproductive health. They report that because people of color are disproportionately low-income and reliant on Medicaid, state abortion bans restrict access to necessary care, forcing travel burdens. This structural inequality heightens risks for maternal morbidity and mortality, particularly among Black women, who already face systemic barriers to quality healthcare [3].\n\n## References\n[1] https://www.kff.org/womens-health-policy/issue-brief/womens-health-and-health-care-reform/\n[2] https://www.kff.org/womens-health-policy/issue-brief/medicaid-and-womens-health/\n[3] https://www.kff.org/womens-health-policy/issue-brief/the-implications-of-the-dobbs-decision-on-reproductive-health-equity/",
+      "answer_b": "The health policy research organization is the Kaiser Family Foundation (KFF). Its reports, including data from the 2022 KFF Women’s Health Survey, highlighted that 55% of uninsured adults delayed or went without care due to cost, and 38% lacked a usual source of care [1]. Based on KFF’s Women's Health Policy resources, a summary follows. (1) **Coverage Sources & ACA Impact:** Most nonelderly women get coverage through employer-sponsored insurance (49%) or Medicaid (21%). The Affordable Care Act (ACA) expanded coverage options through Medicaid expansion and marketplaces, significantly reducing the uninsured rate among women. The ACA’s dependent coverage provision and essential health benefits, like maternity care, have been particularly impactful [2][3]. (2) **Medicaid Coverage for Women:** Medicaid is a major source for reproductive-age and low-income women. Eligibility pathways vary, with expansion states covering adults up to 138% of the federal poverty level. Medicaid finances a large share of U.S. births and covers critical reproductive services. However, eligibility restrictions in non-expansion states and coverage limitations for undocumented immigrants create gaps [3]. (3) **Dobbs Decision & Racial Disparities:** The *Dobbs v. Jackson* decision, overturning *Roe v. Wade*, has exacerbated racial inequities. KFF analysis notes that state abortion bans disproportionately affect women of color—particularly Black and Hispanic women—who have higher rates of unintended pregnancy, face greater barriers to traveling for care, and are more likely to be enrolled in Medicaid, which often restricts abortion coverage. This compounds existing disparities in maternal and infant health outcomes [3].\n\n## References\n[1] Kaiser Family Foundation (KFF). (2023). Key Facts about the Uninsured Population. Retrieved from https://www.kff.org/uninsured/issue-brief/key-facts-about-the-uninsured-population/\n[2] Kaiser Family Foundation (KFF). (2023). Health Coverage of Women. Retrieved from https://www.kff.org/womens-health-policy/fact-sheet/health-coverage-of-women/\n[3] Kaiser Family Foundation (KFF). (2023). Women’s Health Policy: Key Facts and Issues. Retrieved from https://www.kff.org/womens-health-policy/",
+      "duration_a_seconds": 36.2,
+      "duration_b_seconds": 12.3,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the Kaiser Family Foundation (KFF) and addressed the three required sub-points. Agent B is preferred because it offers a better user experience through the use of bold headers for each section, making the information easier to scan. Additionally, Agent B included specific data points (e.g., 49% employer-sponsored insurance) that added depth, whereas Agent A was more general. Agent B also provided full citation metadata rather than just URLs.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_glm47_vs_deepseekv_817"
+}

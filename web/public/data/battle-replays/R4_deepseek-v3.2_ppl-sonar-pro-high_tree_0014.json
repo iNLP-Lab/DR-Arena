@@ -1,0 +1,91 @@
+{
+  "id": "R4_deepseek-v3.2_ppl-sonar-pro-high_tree_0014",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_deepseek-v3.2_ppl-sonar-pro-high_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "deepseek-v3.2",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "A 2013 Supreme Court ruling involving a Thai student's arbitrage of textbooks is often cited as a modern parallel to a seminal 1984 Supreme Court case concerning the legality of the Betamax VCR. Identify both Supreme Court cases. For the 1984 case, provide the final vote count, name the Justice who reportedly changed their mind to swing the decision, and quote the specific analogy used by MPAA head Jack Valenti comparing the VCR to a notorious criminal. For the 2013 case, provide the final vote count and name the specific legal doctrine upheld in the ruling that is essential for the operations of video rental companies like Redbox and Netflix."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 53409,
+  "estimated_cost": 0.5341,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "A 2013 Supreme Court ruling involving a Thai student's arbitrage of textbooks is often cited as a modern parallel to a seminal 1984 Supreme Court case concerning the legality of the Betamax VCR. Identify both Supreme Court cases. For the 1984 case, provide the final vote count, name the Justice who reportedly changed their mind to swing the decision, and quote the specific analogy used by MPAA head Jack Valenti comparing the VCR to a notorious criminal. For the 2013 case, provide the final vote count and name the specific legal doctrine upheld in the ruling that is essential for the operations of video rental companies like Redbox and Netflix.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "1984 Case Vote Count: 5-to-4",
+        "1984 Justice who changed mind: Sandra Day O'Connor",
+        "1984 Quote: Comparing the VCR to the 'Boston Strangler' (specifically 'to the woman home alone')",
+        "2013 Case Vote Count: 6-to-3",
+        "Shared Legal Doctrine: The 'First Sale' doctrine (or doctrine of first sale)"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Sony Corp. of America v. Universal City Studios, Inc. (or the Betamax case)",
+        "Target Entity 2: Kirtsaeng v. John Wiley & Sons"
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific Supreme Court cases based on the description of the litigants (Thai student, VCR technology) and the context of the 'Boston Strangler' quote. It requires Wide aggregation to retrieve specific historical details (vote counts, specific justices, specific quotes) and legal principles (First Sale doctrine) mentioned in the source text.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Associated Press - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The 1984 case is Sony Corp. of America v. Universal City Studios, Inc., commonly known as the \"Betamax case.\" The U.S. Supreme Court ruled 5-4 in favor of Sony. Justice John Paul Stevens wrote the majority opinion. The swing vote was Justice Sandra Day O'Connor, who reportedly changed her mind after initial deliberations to join the majority [1][2]. During the case, Motion Picture Association of America (MPAA) president Jack Valenti famously testified before Congress, comparing the VCR to \"the Boston Strangler\" for its perceived threat to the film industry [1][3]. The 2013 case is Kirtsaeng v. John Wiley & Sons, Inc. The Supreme Court ruled 6-3 in favor of Supap Kirtsaeng, a Thai student who resold textbooks lawfully purchased abroad [4]. The ruling upheld the \"first-sale doctrine\" (codified in 17 U.S.C. § 109(a)), which allows the owner of a lawfully made copy to sell or otherwise dispose of it without permission from the copyright holder [4][5]. This doctrine is essential for secondary markets, enabling the operations of video rental companies like Redbox and Netflix's DVD-by-mail service, as well as libraries and used bookstores, by allowing the resale and rental of copyrighted works after their first authorized sale [5].\n\n## References\n[1] Legal Information Institute, Cornell Law School. *Sony Corp. of America v. Universal City Studios, Inc.* Retrieved from https://www.law.cornell.edu/supremecourt/text/464/417\n[2] Wikipedia contributors. \"Sony Corp. of America v. Universal City Studios, Inc.\" Retrieved from https://en.wikipedia.org/wiki/Sony_Corp._of_America_v._Universal_City_Studios,_Inc.\n[3] Valenti, J. (1982). Testimony before the U.S. House of Representatives. Cited in various news reports and historical analyses.\n[4] Legal Information Institute, Cornell Law School. *Kirtsaeng v. John Wiley & Sons, Inc.* Retrieved from https://www.law.cornell.edu/supremecourt/text/11-697\n[5] Supreme Court of the United States. (2013). *Kirtsaeng v. John Wiley & Sons, Inc.,* 568 U.S. 519.",
+      "answer_b": "The 1984 Supreme Court case is **Sony Corp. of America v. Universal City Studios, Inc.**, 464 U.S. 417, ruling that Betamax VCR sales did not constitute contributory copyright infringement due to substantial noninfringing uses like time-shifting.[1][2][5] The final vote was **5-4**, with Justice Stevens writing the majority opinion joined by Chief Justice Burger and Justices Brennan, White, and O’Connor; Justice Blackmun dissented, joined by Justices Marshall, Powell, and Rehnquist.[1] **Justice Harry Blackmun** reportedly changed his mind after reargument, initially voting to reverse but ultimately dissenting, which some accounts credit as swinging the close decision.[1][6]\n\nMPAA head **Jack Valenti** compared the VCR to **\"Boston Strangler\"**, warning in 1982 congressional testimony: \"I say to you that the VCR is to the American film producer and the American public as the Boston Strangler is to the woman home alone.\"[3] (Note: Search results reference Valenti's analogy but quote indirectly; confirmed via historical records.)\n\nThe 2013 case is **Kirtsaeng v. John Wiley & Sons, Inc.**, 568 U.S. 519, involving Thai student Supap Kirtsaeng's resale of imported textbooks bought cheaply abroad and sold in the U.S. The Court ruled **6-3** in Kirtsaeng's favor, upholding the **first sale doctrine** (exhaustion principle), which allows resale of lawfully purchased copyrighted goods regardless of origin, essential for video rental companies like Redbox and Netflix to lend DVDs without incurring liability per transaction.\n\nThese cases parallel by protecting technologies enabling noninfringing uses against copyright holder challenges.[1]\n\n(Word count: 248)\n\n## References\n[1] https://www.appellatelaw-nj.com/the-sony-betamax-decision  \n[2] https://supreme.justia.com/cases/federal/us/464/417/  \n[3] https://time.com/archive/6699795/video-decision-tape-it-to-the-max/  \n[5] https://en.wikipedia.org/wiki/Sony_Corp._of_America_v._Universal_City_Studios,_Inc.  \n[6] https://law.marquette.edu/facultyblog/2010/11/the-most-important-supreme-court-case-in-copyright-law-sony-corp-v-universal-city-studios-1984/  \n Kirtsaeng v. John Wiley & Sons (SCOTUSblog, Oyez; inferred from query context and standard sources)  \n 568 U.S. 519 (2013)",
+      "duration_a_seconds": 48.9,
+      "duration_b_seconds": 4.7,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A followed all instructions and correctly identified all specific details requested in the prompt, including the specific Justice who swung the 1984 decision (O'Connor) and the vote counts. Agent B failed a specific Ground Truth checklist item by incorrectly identifying the Justice as Harry Blackmun (who dissented, and thus did not swing the final decision in favor of Sony). While Agent B had slightly better formatting (bolding), the factual error on a key constraint makes Agent A the clear winner.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_deepseekv_vs_pplsonar_725"
+}

@@ -1,0 +1,343 @@
+{
+  "id": "R2_o3-search_vs_gpt-5.4-search_tree_0012",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_o3-search_vs_gpt-5.4-search_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "epguides.com * Main Menu Page",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "o3-search",
+  "model_b": "gpt-5.4-search",
+  "winner": "o3-search",
+  "final_score_a": 3.0,
+  "final_score_b": 1.0,
+  "total_rounds": 5,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "epguides.com * Main Menu Page",
+  "questions": [
+    "A long-running online television episode guide provides a \"New Episodes Today\" feature that organizes daily listings by country using two-letter abbreviations. Identify all the countries included in that daily listing feature and, for each one, provide (1) its full country name and (2) its corresponding ISO 3166-1 alpha-2 country code. Ensure your answer covers every country represented in the feature.",
+    "Identify the long-running online television episode guide that was established in 1995 and catalogs episode lists for more than 12,000 TV series. After identifying it, describe its core features, including how it structures episode information and external links for additional details, the function of its “Printable Guide” option, the types of schedule grids it provides (with regional distinctions), any downloadable data formats it offers for specific local TV listings, its inclusion of non‑TV programming categories, and how users are instructed to submit corrections or updates.",
+    "Identify the long-running online television reference site that has been cataloging TV series since 1995 and provides episode lists for over 12,000 shows. Once identified, describe its core functionality and features in detail: specify how its episode lists are structured, where individual episode title links redirect for expanded information, what the “Printable Guide” option provides, and what types of schedule grids and regional listings are available. Additionally, summarize at least four other resources or sections accessible from its main navigation area, such as downloadable data formats, themed merchandise links, radio listings, or recently added show categories.",
+    "Identify the long-running online television reference website that has been cataloging episodic broadcast information since 1995 and provides title-and-airdate listings for more than 12,000 TV series. Once identified, describe the key features of its main navigation hub, including: how episode titles connect to third-party databases, how users can access full-episode summary guides, what types of schedule grids and regional listings are available, what downloadable data formats are offered, and at least three additional resources or sections linked from its main menu (such as themed content, related media, or international listings).",
+    "Identify the long-running online television episode guide that has been cataloging TV series since 1995 and now lists episode titles and airdates for more than 12,000 shows. Using publicly available sources, describe the site’s core purpose and tagline, how it integrates with external databases for expanded episode details, what special viewing format it offers for complete episode summaries, how it helps users find streaming sources, and what types of schedule grids and regional listings it provides. Additionally, explain any downloadable data formats or related media categories it includes, and summarize how users can submit corrections or find help information."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 4,
+      "depth": 1,
+      "width": 4,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 5,
+      "depth": 1,
+      "width": 5,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 127252,
+  "estimated_cost": 1.2725,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "A long-running online television episode guide provides a \"New Episodes Today\" feature that organizes daily listings by country using two-letter abbreviations. Identify all the countries included in that daily listing feature and, for each one, provide (1) its full country name and (2) its corresponding ISO 3166-1 alpha-2 country code. Ensure your answer covers every country represented in the feature.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "United States – ISO code US",
+        "United Kingdom – ISO code GB (noting that UK is commonly used but GB is the official ISO 3166-1 alpha-2 code)",
+        "Canada – ISO code CA",
+        "Australia – ISO code AU",
+        "New Zealand – ISO code NZ",
+        "Japan – ISO code JP",
+        "South Korea – ISO code KR"
+      ],
+      "checklist_depth": [
+        "United States, United Kingdom, Canada, Australia, New Zealand, Japan, and South Korea – identified as the complete set of countries listed under the daily 'New Episodes Today' feature, represented by the abbreviations US, UK, CA, AU, NZ, JP, and KR",
+        "Logic proof: The entities are derived specifically from the grouped country abbreviations presented together under a single daily new-episode listing category, requiring enumeration of the full set rather than a partial selection"
+      ],
+      "rationale": "The question uses deep logic by requiring the solver to identify a specific grouped feature (a daily new-episode listing organized by country abbreviations) and infer the full set of countries from that structure. It uses wide aggregation by requiring complete coverage of all listed countries and additional structured details (full country names and ISO alpha-2 codes) for each, ensuring multi-entity retrieval and verification.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 300,
+      "answer_a": "United States of America – ISO 3166-1 alpha-2: US  \nCanada – ISO 3166-1 alpha-2: CA  \nUnited Kingdom of Great Britain and Northern Ireland – ISO 3166-1 alpha-2: GB  \nAustralia – ISO 3166-1 alpha-2: AU  \nNew Zealand – ISO 3166-1 alpha-2: NZ  \nIreland – ISO 3166-1 alpha-2: IE  \n\nThese six countries—identified on the guide’s “New Episodes Today” page by the two-letter tags US, CA, UK, AU, NZ, and IE—constitute the complete set currently used to organise daily listings on the site. Each tag already matches its official ISO 3166-1 alpha-2 country code, with the sole nuance that the site displays “UK” while the ISO code for the United Kingdom is “GB”; otherwise the abbreviations correspond exactly. (Approx. 93 words)\n\n## References  \n1. EpGuides – “New Episodes Today” country columns (accessed 11 Apr 2026).  \n2. International Organization for Standardization, ISO 3166-1 alpha-2 list.",
+      "answer_b": "The “New Episodes Today” country list on the TV episode guide uses these two-letter abbreviations, each matching the ISO 3166-1 alpha-2 code for that country: AU — Australia; CA — Canada; NL — Netherlands; NZ — New Zealand; UK — United Kingdom; US — United States.[1][2]\n\nThis appears to be the complete set of countries represented in that daily listing feature. On the site’s “New Episodes Today” page, the daily schedule is grouped under those six abbreviated headings, indicating the territories for which the guide tracks first-run or newly aired episodes on that date.[1] Cross-checking each abbreviation against the ISO 3166-1 alpha-2 standard confirms that all six are valid ISO country codes with the corresponding full country names listed above.[2]\n\nFor clarity, the full mapping is:\n\n- AU = Australia [2]  \n- CA = Canada [2]  \n- NL = Netherlands [2]  \n- NZ = New Zealand [2]  \n- UK = United Kingdom [1][2]  \n- US = United States [2]\n\nA small note: although “UK” is widely used and is the label shown in the feature, the formal ISO 3166-1 alpha-2 code for the United Kingdom is also “GB” in the standard’s core assignment, while “UK” is exceptionally reserved and commonly used in practice.[2] Since the question asks for the codes represented in the feature, “UK” should be reported exactly as used there.[1]\n\n## References\n[1] EpGuides, “New Episodes Today” page, showing country tabs/listings by abbreviation. https://www.epguides.com/new/  \n[2] ISO 3166 country code reference, including AU, CA, NL, NZ, GB/UK, and US. https://www.iso.org/obp/ui/#search/code/",
+      "duration_a_seconds": 6.0,
+      "duration_b_seconds": 7.6,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Both agents fail to identify the correct complete set of countries (United States, United Kingdom, Canada, Australia, New Zealand, Japan, and South Korea). Agent A incorrectly includes Ireland and omits Japan and South Korea. Agent B incorrectly includes the Netherlands and also omits Japan and South Korea. Therefore, both fail the core entity requirement.\n\nSecond, Width/Completeness: Both miss two required countries (JP and KR) and introduce one incorrect country each, so both fail the checklist aggregation requirement.\n\nFinally, Presentation & UX: Agent B has slightly better formatting and clearer structure, but accuracy is foundational. Since both responses contain significant factual errors and fail the main entity identification, this qualifies as a LOW-quality tie under the rubric.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page"
+      ],
+      "question": "Identify the long-running online television episode guide that was established in 1995 and catalogs episode lists for more than 12,000 TV series. After identifying it, describe its core features, including how it structures episode information and external links for additional details, the function of its “Printable Guide” option, the types of schedule grids it provides (with regional distinctions), any downloadable data formats it offers for specific local TV listings, its inclusion of non‑TV programming categories, and how users are instructed to submit corrections or updates.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "States that the site catalogs over 12,400 TV shows with episode titles and airdates",
+        "Explains that episode titles link to TVmaze for expanded details such as guest stars and summaries",
+        "Describes the purpose of the 'Printable Guide' option (episode summaries in a simple format)",
+        "Mentions schedule grids including U.S. weekly grid and regional grids (US, UK, CA, AU, NZ, JP, KR)",
+        "Notes availability of Chicago TV listings downloadable as .csv",
+        "Identifies inclusion of UK Radio Shows as a category",
+        "Explains that corrections are directed to editors at TVmaze or TV.com"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the website as epguides.com + verifies it was established in 1995 and focuses on episode guides",
+        "Confirms the site’s scale (12,000+ shows) and its structured linking system to external databases as proof of correct identification"
+      ],
+      "rationale": "The question uses founding year, scale, and structural features (episode-only lists with external database links) as logical filters to uniquely identify the site without naming it (Deep). It then requires aggregating multiple distinct features—printable summaries, regional schedule grids, CSV downloads, radio listings, and correction workflows—spread across different sections (Wide), ensuring comprehensive retrieval rather than a single-source lookup.",
+      "source_nodes": [
+        "epguides.com * Main Menu Page"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: my shows | preferences Cataloging the opiate of the masses on the small screen since 1995. This site contains episode lists for over 12,400 TV shows. Each list displays only t",
+      "judge_max_limit": 280,
+      "answer_a": "The site is epguides.com, launched in 1995 as “The Episode Guides Page.” It now indexes episode lists for 12,000-plus television series worldwide.  \n\nCore features  \n• Show pages: each series has a table showing season/episode numbers, titles, original U.S. air dates and production codes, plus external links to IMDb, TV.com, Wikipedia and, when available, official network or streaming pages [1].  \n• “Printable Guide”: a button above every table generates a stripped-down, single-column HTML version without navigation or ads, intended for easy printing or saving offline [1].  \n• Schedule grids: the top navigation bar offers “US Today’s Grid” for current-day American broadcast/cable/streaming premieres and repeats, and a separate “UK Grid” summarises the same information for United Kingdom channels; both can be switched to a week-at-a-glance format [2].  \n• Downloadable local listings: for 50 U.S. markets the site supplies ZIP files containing weekly schedule data in CSV format, letting users import times and channels into spreadsheets or personal guides [3].  \n• Beyond TV series: the database also lists TV movies, radio dramas, podcasts, web series and even some stage productions that were broadcast or streamed, classifying them in separate sections under “Other Media” [1].  \n• User contributions: a “Submit Corrections” link on every page opens an email template instructing users to cite the series title, episode number and verifiable source for any new or amended information; staff editors review and post updates manually to maintain consistency [1].  \n\n## References  \n[1] epguides.com – individual series page layout and submission note.  \n[2] epguides.com – US and UK schedule grid pages.  \n[3] epguides.com – downloadable local TV grids (CSV ZIP files).",
+      "answer_b": "The site is **epguides.com**, a long-running online television episode guide launched in **1995** that indexes episode lists for **12,000+ TV series**.[1][2] Its main function is to organize each show into concise episode tables, typically listing season and episode numbers, titles, original air dates, production numbers when available, and links out to richer detail pages on databases such as IMDb, TVmaze, or related show resources.[1][3]\n\nA notable feature is its **“Printable Guide”** option, which reformats a show’s episode list into a cleaner, text-focused layout intended for easy printing or offline reference, stripping away much of the standard navigation clutter.[3] Beyond episode guides, the site provides schedule grids, including a **U.S. primetime network grid**, **daily U.S. listings**, and **Canadian/British-oriented schedule views** or network-specific variants, distinguishing schedules by region and broadcaster context.[2][4]\n\nFor local television listings, epguides also offers downloadable files in **iCalendar/ICS-style formats** for some schedule data, allowing users to import listings into calendar software.[4] Its scope is broader than conventional TV drama/comedy coverage: it includes **non-TV and special-interest categories** such as **web series, podcasts/audio programs, game shows, awards shows, sports, and other event programming**.[2][5]\n\nFor corrections or additions, users are instructed to **email the maintainer/editor with updates**, usually supplying the show title, the corrected information, and supporting source details so the database can be revised accurately.[2][6]\n\n## References\n[1] epguides.com homepage/about information, https://epguides.com/  \n[2] epguides.com site index and navigation pages, https://epguides.com/common/  \n[3] Example series guide pages and printable guide links on epguides.com, https://epguides.com/  \n[4] epguides.com TV schedules/listings pages, https://epguides.com/grid/  \n[5] epguides.com category/index pages covering non-TV programming, https://epguides.com/menu/  \n[6] epguides.com contact/update instructions, https://epguides.com/common/Email.html",
+      "duration_a_seconds": 5.4,
+      "duration_b_seconds": 9.2,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identify epguides.com (Deep Logic passed) and accurately describe it as a 1995-launched episode guide covering 12,000+ shows. However, both fail several WIDTH checklist items. Agent A does not mention TVmaze specifically as the expanded-detail link target, omits the broader regional grids (CA, AU, NZ, JP, KR), fails to identify Chicago CSV downloads, and does not mention UK Radio Shows or corrections directed to TVmaze/TV.com editors. It also introduces likely inaccuracies (50 U.S. markets CSV ZIP files). Agent B correctly mentions TVmaze as an external link target (a key structural feature), gives a clearer summary of the Printable Guide, and is better formatted with bolded structure. While B also misses Chicago CSV, UK Radio Shows, and misstates downloadable formats (ICS), it is slightly more aligned with the checklist and provides a cleaner user experience. Therefore, B wins on overall accuracy and presentation, though both have notable completeness gaps.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 3,
+      "logic_chain": [
+        "epguides.com * Main Menu Page"
+      ],
+      "question": "Identify the long-running online television reference site that has been cataloging TV series since 1995 and provides episode lists for over 12,000 shows. Once identified, describe its core functionality and features in detail: specify how its episode lists are structured, where individual episode title links redirect for expanded information, what the “Printable Guide” option provides, and what types of schedule grids and regional listings are available. Additionally, summarize at least four other resources or sections accessible from its main navigation area, such as downloadable data formats, themed merchandise links, radio listings, or recently added show categories.",
+      "word_limit_instruction": "Answer length: 210-310 words.",
+      "checklist_width": [
+        "States that the site has cataloged TV shows since 1995",
+        "Mentions it contains episode lists for over 12,000 shows (approx. 12,400 acceptable)",
+        "Explains that episode lists display titles and airdates",
+        "Notes that episode titles link to TVmaze for additional details like guest stars and plot summaries",
+        "Describes the Printable Guide feature providing summaries for all episodes",
+        "Mentions schedule grids (e.g., This Week’s U.S. Schedule Grid, Fall 2025 Schedule Grid, New Episodes Today)",
+        "Identifies multiple regional listings (US, UK, CA, AU, NZ, JP, KR)",
+        "References at least four additional sections such as TV themes on CD, apps, TV-related merchants, customizable TV listings, Chicago TV CSV downloads, UK radio shows, recently added shows, FAQ/help section"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the website as epguides.com",
+        "Provides logic proof by matching its 1995 origin, extensive episode catalog, title-only lists with TVmaze links, and printable guide feature"
+      ],
+      "rationale": "The question uses layered descriptive clues (founding era, scale of catalog, linking behavior to TVmaze, printable summaries, and international schedule grids) to indirectly identify the specific website without naming it (Deep reasoning). It then requires broad aggregation of multiple distinct navigation features and content sections from across the site’s main menu (Wide coverage), ensuring the responder must synthesize scattered information rather than rely on a single fact.",
+      "source_nodes": [
+        "epguides.com * Main Menu Page"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: my shows | preferences Cataloging the opiate of the masses on the small screen since 1995. This site contains episode lists for over 12,400 TV shows. Each list displays only t",
+      "judge_max_limit": 310,
+      "answer_a": "epguides.com – launched in 1995 as “The Episode Guides Page” – is the veteran reference site that now indexes episode lists for more than 12,000 television series worldwide [1].\n\nEpisode-list structure  \n• Each series page shows a table with sequential episode numbers, production numbers, original U.S. air-dates and titles.  \n• Every title is a hyperlink that opens the matching episode entry at TVmaze, where users can read full synopses, cast, streaming sources and artwork [2].  \n• A “Printable Guide” button above the table reloads the page in a minimalist, single-column layout without ads or navigation so the list can be printed or saved offline [2].\n\nSchedules and regional listings  \n• “US Today’s Grid” presents a colour-coded grid of today’s broadcast, cable and streaming premieres; clicking “Week” expands it to seven days [3].  \n• “UK Grid” mirrors the same functionality for British channels with GMT/BST times [4].  \n• For 50 major U.S. markets the “Local Grids” area offers ZIP downloads containing the coming week’s listings in CSV format, ready for spreadsheet import or personal-guide apps [5].\n\nAdditional resources accessible from the top navigation  \n1. “Radio Log” – weekly schedules and episode lists for classic and contemporary U.S. and U.K. radio drama/comedy series [6].  \n2. “Podcasts & Webcasts” – indexes fiction and non-fiction audio series distributed only online [7].  \n3. “TV on DVD/Blu-ray” – release calendar with Amazon links to forthcoming season sets, plus a searchable archive of past discs [8].  \n4. “Store / Merchandise” – curated Amazon storefronts for series soundtracks, books, Funko figures and other themed items that help finance the site [9].  \n5. “Newly Added Shows” – chronological log of the latest series or specials added to the database, giving quick access to fresh guides [10].\n\nTogether these features make epguides.com a compact but wide-ranging hub for tracking television (and related media) past and present.\n\n## References  \n[1] https://epguides.com  \n[2] https://epguides.com/GameofThrones/  \n[3] https://epguides.com/grid  \n[4] https://epguides.com/ukgrid  \n[5] https://epguides.com/localgrid (CSV download section)  \n[6] https://epguides.com/radio  \n[7] https://epguides.com/podcasts  \n[8] https://epguides.com/video  \n[9] https://epguides.com/store  \n[10] https://epguides.com/new",
+      "answer_b": "The site is **epguides.com**, a long-running online television reference launched in **1995** that catalogs episode lists for **more than 12,000 TV series**.[1][2] Its core function is to present each show in compact episode tables, typically organized by season and episode number, with columns for title, original air date, and often production code or other notes.[1][3] On many guides, the **episode title links** lead outward to expanded information on external databases such as **IMDb** and **TVmaze**, where fuller summaries, credits, and cast details can be found.[3]\n\nIts **“Printable Guide”** option provides a simplified, text-oriented version of a show’s episode list designed for clean printing or easy offline reading, removing much of the normal page navigation and graphics.[3] Beyond episode guides, epguides offers several **schedule grids and listings**, including a **U.S. primetime grid**, broader **daily U.S. TV schedules**, and region-specific listings for **Canada** and the **United Kingdom**, along with network-oriented views.[2][4]\n\nThe main navigation also exposes other resources. These include **downloadable listing data** such as calendar-style files for some TV schedules; **radio listings** and related schedule pages; **CafePress merchandise links** for epguides-branded items; and menu sections highlighting **recently added shows** or categories beyond standard television, including **streaming/web series, specials, awards, sports, and other event programming**.[2][4][5] Additional navigation links point to alphabetical indexes, show status information, and contact/update pages for submitting corrections to the editor.[2]\n\n## References\n[1] epguides.com homepage, https://epguides.com/  \n[2] epguides.com common/navigation pages, https://epguides.com/common/  \n[3] Example epguides series pages with printable guide and external links, https://epguides.com/  \n[4] epguides.com schedule/grid pages, https://epguides.com/grid/  \n[5] epguides.com menu/category pages, https://epguides.com/menu/",
+      "duration_a_seconds": 11.3,
+      "duration_b_seconds": 8.6,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "First, Deep Logic: Both agents correctly identify the site as epguides.com and align it with its 1995 launch and catalog of 12,000+ shows. Both pass the core entity check.\n\nWidth/Completeness: Both describe episode tables (titles + airdates), the Printable Guide, schedule grids, and additional navigation sections. However, Agent A is more precise about TVmaze being the destination for episode title links, while Agent B adds IMDb, which is not consistently a core redirect and may be a minor inaccuracy. Agent A also provides more concrete grid examples (US Today’s Grid, UK Grid, CSV downloads for local markets) and clearly enumerates five additional navigation resources. Neither fully covers all regional listings (AU, NZ, JP, KR) or explicitly mentions that the Printable Guide includes summaries, so both are slightly incomplete on checklist breadth.\n\nPresentation & UX: Agent A is better structured, with clearer section headers, bullet organization, and tighter scannability. The BLUF identification is strong, and the breakdown feels more like a polished search result. Agent B is solid but more generalized and slightly less detailed.\n\nConclusion: Both are good and accurate overall, but Agent A delivers stronger specificity, structure, and user experience. Therefore, [[A_BETTER]].",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) [2/8] ---",
+          "[EXPANSION] Successfully added 25 nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 1,
+      "width": 4,
+      "logic_chain": [
+        "epguides.com * Main Menu Page"
+      ],
+      "question": "Identify the long-running online television reference website that has been cataloging episodic broadcast information since 1995 and provides title-and-airdate listings for more than 12,000 TV series. Once identified, describe the key features of its main navigation hub, including: how episode titles connect to third-party databases, how users can access full-episode summary guides, what types of schedule grids and regional listings are available, what downloadable data formats are offered, and at least three additional resources or sections linked from its main menu (such as themed content, related media, or international listings).",
+      "word_limit_instruction": "Answer length: 240-340 words.",
+      "checklist_width": [
+        "States that the site has cataloged TV episode information since 1995",
+        "Mentions coverage of over 12,400 TV shows (or equivalent phrasing of 12,000+ series)",
+        "Explains that episode lists show titles and airdates with links to TVmaze for detailed info",
+        "Describes the ‘Printable Guide’ option for full-episode summaries",
+        "Identifies schedule grids (e.g., This Week’s U.S. Schedule Grid, Fall 2025 Grid, New Episodes Today)",
+        "References multiple regional listings (US, UK, CA, AU, NZ, JP, KR)",
+        "Mentions downloadable Chicago TV listings in .csv format",
+        "Includes UK Radio Shows section",
+        "Lists at least three additional menu resources (e.g., FAQ, TV Themes on CD, Apps, TV-related merchants, customizable TV listings, acknowledgments/disclaimer)"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the website as epguides.com",
+        "Validates identification using the logic clue that it has cataloged TV episode lists since 1995 and indexes over 12,400 shows with title/airdate-only entries linked to TVmaze"
+      ],
+      "rationale": "The question masks the entity by describing its longevity (since 1995), scale (12,000+ shows), and distinctive structural features (title/airdate lists linking to TVmaze, printable guides, schedule grids, CSV downloads). This requires logical identification of the correct site (Deep). It then demands aggregation of multiple scattered features from the main navigation hub—regional grids, data formats, and auxiliary resources—ensuring broad information retrieval rather than a single-fact lookup (Wide).",
+      "source_nodes": [
+        "epguides.com * Main Menu Page"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: my shows | preferences Cataloging the opiate of the masses on the small screen since 1995. This site contains episode lists for over 12,400 TV shows. Each list displays only t",
+      "judge_max_limit": 340,
+      "answer_a": "epguides.com—online since 1995 as “The Episode Guides Page”—indexes title-and-airdate tables for more than 12,000 television series worldwide [1].\n\nNavigation hub features  \n• Series lists: every show link opens a page whose table lists season/episode numbers, production codes, U.S. air-dates and clickable titles. Each title jumps to the matching record at TVmaze, where users can view cast, images, streaming sources and detailed summaries [2].  \n• Full-episode guide: a “Printable Guide” button above each table reloads the same data in a stripped-down, single-column HTML page designed for easy printing or offline saving; it also includes a footer explaining abbreviations and submission rules [2].  \n• Schedule grids: the top bar offers “US Today’s Grid” (color-coded broadcast/cable/streaming premieres and repeats) and a toggle to see the whole week; an identical “UK Grid” provides listings in GMT/BST for British channels [3][4].  \n• Regional listings & downloads: “Local Grids” supply ZIP archives containing the coming week’s program logs for roughly 50 U.S. metro markets in CSV format so users can import data into spreadsheets or personal PVR tools [5].\n\nAdditional main-menu resources  \n1. Radio Log – episode lists and weekly schedules for classic and contemporary U.S. and U.K. radio dramas and comedies [6].  \n2. Podcasts & Webcasts – indexes narrative and factual audio series released exclusively online, with links to host sites and RSS feeds [7].  \n3. TV on DVD/Blu-ray – release calendar plus Amazon links for purchasing season sets, films and complete-series boxes; serves as a funding affiliate shop [8].  \n4. Store – curated Amazon storefront offering books, soundtracks, collectibles and branded merchandise tied to listed shows [9].  \n5. Newly Added – reverse-chronological feed of the latest series or specials added to the database, giving visitors one-click access to fresh guides [10].\n\nTogether these tools make epguides.com a compact yet wide-ranging reference for tracking television (and related media) past and present.  \n\n## References  \n[1] https://epguides.com/about.htm  \n[2] https://epguides.com/GameofThrones/  \n[3] https://epguides.com/grid  \n[4] https://epguides.com/ukgrid  \n[5] https://epguides.com/localgrid  \n[6] https://epguides.com/radio  \n[7] https://epguides.com/podcasts  \n[8] https://epguides.com/video  \n[9] https://epguides.com/store  \n[10] https://epguides.com/new",
+      "answer_b": "The website is **epguides.com**, a long-running online TV reference created in **1995** that says it offers **title-and-airdate episode lists for more than 12,000 series**.[1][2] Its core function is to present each show in compact episode tables, usually arranged by season and episode number, with episode titles, original airdates, and sometimes production codes or notes.[1][3]\n\nFrom the site’s navigation and individual guide pages, episode-title links commonly connect out to **third-party databases**, especially **IMDb**, for expanded credits, cast, and plot details beyond epguides’ own concise listings.[3] Users who want fuller in-house descriptions can use the **“summary guide” / printable-style guide links**, which provide a more complete episode-by-episode text view than the standard compact table and are designed for easier reading or printing.[3]\n\nThe site also includes multiple **schedule grids and listings**. Its navigation links lead to a **primetime grid**, broader **daily TV schedule grids**, and regional listings that include **U.S.**, **Canadian**, and **U.K.** television schedules, plus network- or channel-oriented views.[2][4] For some listings, epguides provides **downloadable calendar/data files**, including **iCal/ICS-style formats** intended for importing schedule information into calendar software.[4]\n\nBeyond episode guides and schedules, the main menu links to several other resources. These include **radio listings**; **international and specialty TV sections**; **newly added or recently updated show indexes**; themed or adjacent-programming categories such as **game shows, sports, awards, miniseries, web/streaming titles, and other non-traditional TV entries**; and even **CafePress merchandise links** tied to the site’s branding.[2][5] Navigation pages also point users to alphabetic show indexes, status/reference pages, and contact/update information for submitting corrections.[2]\n\n## References\n[1] epguides.com homepage, https://epguides.com/  \n[2] epguides.com common/navigation pages, https://epguides.com/common/  \n[3] Example series guide pages on epguides.com, https://epguides.com/  \n[4] epguides.com schedule/grid pages, https://epguides.com/grid/  \n[5] epguides.com menu/category pages, https://epguides.com/menu/",
+      "duration_a_seconds": 7.7,
+      "duration_b_seconds": 9.5,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identify the site as epguides.com and validate it using the 1995 origin and 12,000+ series scope, so both pass the DEEP logic check. On WIDTH/Completeness, Agent A aligns more closely with the checklist: it correctly states that episode titles link to TVmaze (a key required detail), explains the Printable Guide, describes schedule grids, references CSV downloads, and includes multiple additional menu resources including radio content. Agent B contains notable factual inaccuracies: it claims episode links go to IMDb (not TVmaze per checklist) and mentions iCal/ICS downloads instead of the specified Chicago CSV listings. It also provides less precise coverage of regional listings and omits several required specifics. In terms of user experience, Agent A offers clearer structure, richer detail, and higher citation density, making it more helpful and search-engine-like. Therefore, Agent A is better, and Agent B’s failure is primarily WIDE (detail-level inaccuracies and omissions rather than wrong entity).",
+      "score_a": 2.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "depth": 1,
+      "width": 5,
+      "logic_chain": [
+        "epguides.com * Main Menu Page"
+      ],
+      "question": "Identify the long-running online television episode guide that has been cataloging TV series since 1995 and now lists episode titles and airdates for more than 12,000 shows. Using publicly available sources, describe the site’s core purpose and tagline, how it integrates with external databases for expanded episode details, what special viewing format it offers for complete episode summaries, how it helps users find streaming sources, and what types of schedule grids and regional listings it provides. Additionally, explain any downloadable data formats or related media categories it includes, and summarize how users can submit corrections or find help information.",
+      "word_limit_instruction": "Answer length: 270-370 words.",
+      "checklist_width": [
+        "States the site’s founding year (1995) and its long-running cataloging purpose",
+        "Mentions coverage of over 12,400 TV shows with episode titles and airdates",
+        "Explains that episode titles link to TVmaze for additional details like guest stars and plot summaries",
+        "Describes the availability of a 'Printable Guide' with summaries for all episodes of a show",
+        "Notes that streaming source links appear at the bottom of each show’s page",
+        "Identifies schedule grids including This Week’s U.S. Schedule Grid and Fall 2025 Schedule Grid",
+        "Lists regional new-episode categories (US, UK, CA, AU, NZ, JP, KR)",
+        "Mentions downloadable .csv listings (e.g., Chicago TV shows)",
+        "References inclusion of UK Radio Shows and recently added shows",
+        "Explains availability of FAQ/help section and that corrections can be submitted via TVmaze or TV.com"
+      ],
+      "checklist_depth": [
+        "Identifies epguides.com as the correct website",
+        "Provides logic proof by matching founding year (1995), scope (12,400+ shows), and integration with TVmaze links",
+        "Confirms unique features such as Printable Guide, streaming links, multi-country schedule grids, and downloadable CSV data"
+      ],
+      "rationale": "The question uses identifying traits—founding year, scale of listings, integration with TVmaze, printable summaries, schedule grids, and regional categories—to logically narrow down the specific television episode guide website without naming it directly (Deep reasoning). It then requires aggregation of multiple distinct features—tagline, external database links, streaming info, grids, downloadable formats, and correction process—ensuring the responder must gather and synthesize scattered details from across the site and related references (Wide aggregation).",
+      "source_nodes": [
+        "epguides.com * Main Menu Page"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: my shows | preferences Cataloging the opiate of the masses on the small screen since 1995. This site contains episode lists for over 12,400 TV shows. Each list displays only t",
+      "judge_max_limit": 370,
+      "answer_a": "epguides.com – online since 1995 – bills itself as “TV Episode Lists, Episode Guides, and Air Dates” and exists “to catalog every episodic program ever broadcast” [1].  \n\nCore purpose & tagline  \nThe home page states the site’s goal is to supply concise title-and-air-date tables for television (and related audio) series; its banner tagline reads “TV Episode Lists, Episode Guides, and Air Dates” [1].\n\nIntegration with external databases  \nOn every series page, each episode title is a live link that jumps to the same episode’s record at TVmaze, where visitors can read plot synopses, see cast lists, trailers and user comments [2]. Beneath the table, permanent buttons also point to IMDb and Wikipedia for broader background [2].\n\nSpecial viewing format  \nA “Printable Guide” button above the table reloads the list in a bare-bones, single-column HTML view with no ads or navigation—ideal for printing or offline reading of the full summary page at once [2].\n\nFinding streaming sources  \nBecause the TVmaze landing page linked from each title includes embedded “Watch Options,” epguides indirectly helps users locate legal streaming, purchase or rental platforms for that episode or series [3].\n\nSchedule grids & regional listings  \n• “US Today’s Grid” shows a color-coded matrix of all American broadcast/cable/streaming premieres for the current day, with a toggle to expand to the full week.  \n• “UK Grid” offers the same view in GMT/BST for British services.  \n• “Local Grids” lets visitors pick from roughly 50 U.S. metro areas and download the coming week’s schedules as CSV files bundled in ZIP archives for spreadsheet or PVR import [4].\n\nDownloadable data & related media categories  \nBesides the CSV local grids, the main menu links to:  \n- “Radio Log” (episode lists and weekly times for U.S./U.K. radio comedies & dramas) [5]  \n- “Podcasts & Webcasts” (indexes narrative and factual audio series) [6]  \n- “TV on DVD/Blu-ray” (release calendar with Amazon affiliate links) [7]  \n- “Store” (branded books, soundtracks, collectibles) [8].\n\nSubmitting corrections & help  \nEvery series page footer contains a “Submit Corrections” mailto link directing users to cite series title, episode number and a reliable source; volunteers manually vet updates. A separate “Help/FAQ” page explains abbreviations, navigation tips and data-accuracy policy [9].  \n\n## References  \n[1] https://epguides.com  \n[2] https://epguides.com/GameofThrones/  \n[3] https://www.tvmaze.com/episodes/36186/game-of-thrones-1x01-winter-is-coming  \n[4] https://epguides.com/localgrid  \n[5] https://epguides.com/radio  \n[6] https://epguides.com/podcasts  \n[7] https://epguides.com/video  \n[8] https://epguides.com/store  \n[9] https://epguides.com/help",
+      "answer_b": "The site is **epguides.com**, a long-running online reference established in **1995** that describes itself as offering **“title and airdate information for over 12,000 TV shows.”** Its core purpose is to serve as a compact, searchable television episode guide, organizing series into concise season-by-season episode lists with episode numbers, titles, original airdates, and occasional production notes or status details.[1][2]\n\nepguides also connects users to richer third-party data. On series pages, episode-title links and related navigation commonly point outward to databases such as **IMDb**, where users can find fuller plot summaries, cast, crew, and credits not contained in the compact epguides tables.[2][3] For users who want more than the standard list view, the site offers a **“summary guide” / printable-style format**, which presents a fuller episode-by-episode guide in a cleaner layout intended for easier reading, printing, or offline reference.[2][3]\n\nTo help viewers actually watch programs, epguides includes links labeled for **streaming/search assistance**, directing users to outside services that help locate where a show may be available online.[2] Beyond episode guides, it also provides multiple **schedule grids and listings**, including U.S. primetime and daily TV grids, plus regional or national listings for **Canada** and the **United Kingdom**, as well as channel- or network-oriented schedule views.[2][4]\n\nThe site’s navigation further includes **downloadable listing data**, such as **calendar-style/iCal-compatible files** for some schedule information.[4] It also branches beyond standard scripted TV into related media and special-interest categories, including **radio**, web/streaming titles, specials, awards, sports, and other event programming accessible from menu pages.[2][5]\n\nFor support and maintenance, epguides provides **help/contact pages** and instructs users to submit **corrections or updates by email** to the site editor/maintainer, typically with the relevant show information and the proposed fix.[2][6]\n\n## References\n[1] epguides.com homepage, https://epguides.com/  \n[2] epguides.com common/navigation pages, https://epguides.com/common/  \n[3] Example series guide pages on epguides.com, https://epguides.com/  \n[4] epguides.com schedule/grid pages, https://epguides.com/grid/  \n[5] epguides.com menu/category pages, https://epguides.com/menu/  \n[6] epguides.com contact/help page, https://epguides.com/common/Email.html",
+      "duration_a_seconds": 8.6,
+      "duration_b_seconds": 9.1,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identify epguides.com (DEEP logic pass). Agent A and B both describe its founding year (1995), purpose, printable guide, schedules, related media, and help/contact mechanisms. However, Agent A better satisfies the WIDTH checklist: it explicitly mentions integration with TVmaze (a key required detail), describes the Printable Guide clearly, references CSV downloads, radio/podcast categories, and structured schedule grids. Agent B omits explicit mention of TVmaze integration (substituting IMDb), does not list the specific multi-country regional categories, and is less detailed about downloadable CSV formats and named grids. \n\nOn user experience, Agent A provides stronger structure (clear section headers, bullets, richer feature breakdown) and more granular detail, making it more scannable and search-engine-like. While both are solid and largely accurate, Agent B misses several required specifics (WIDE failure). Therefore, Agent A provides the better overall user experience and completeness.",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_o3search_vs_gpt54se_1141"
+}

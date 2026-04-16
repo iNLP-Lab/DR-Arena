@@ -1,0 +1,92 @@
+{
+  "id": "R3_M1_gemini-2.5-pro-grounding_vs_o3-search_tree_0012",
+  "source_group": "round3",
+  "source_log": "round3/R3_M1_gemini-2.5-pro-grounding_vs_o3-search_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "Attention-Deficit/Hyperactivity Disorder: What You Need to Know",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "o3-search",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 3,
+  "pairing_index": 1,
+  "mercy_rule": true,
+  "overall_topic": "Attention-Deficit/Hyperactivity Disorder: What You Need to Know",
+  "questions": [
+    "Within the FDA-approved pharmacotherapy options for Attention-Deficit/Hyperactivity Disorder (ADHD), identify the specific class of non-stimulant medications that were originally developed and used to treat hypertension (high blood pressure). Name the two generic medications in this specific class that have FDA approval for ADHD treatment. For each of these two medications, provide the specific brand name assigned to its extended-release formulation for ADHD, and describe the primary mechanism of action by which it is believed to improve symptoms in the prefrontal cortex."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 464412,
+  "estimated_cost": 4.6441,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Attention-Deficit/Hyperactivity Disorder: What You Need to Know",
+        "Health Topics"
+      ],
+      "question": "Within the FDA-approved pharmacotherapy options for Attention-Deficit/Hyperactivity Disorder (ADHD), identify the specific class of non-stimulant medications that were originally developed and used to treat hypertension (high blood pressure). Name the two generic medications in this specific class that have FDA approval for ADHD treatment. For each of these two medications, provide the specific brand name assigned to its extended-release formulation for ADHD, and describe the primary mechanism of action by which it is believed to improve symptoms in the prefrontal cortex.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Detail: Generic Name 1 (Guanfacine) -> Brand Name (Intuniv)",
+        "Detail: Generic Name 2 (Clonidine) -> Brand Name (Kapvay)",
+        "Detail: Mechanism for Guanfacine (Stimulates alpha-2A adrenergic receptors in the prefrontal cortex)",
+        "Detail: Mechanism for Clonidine (Stimulates alpha-2 adrenergic receptors in the brain/prefrontal cortex)",
+        "Context: Acknowledgement of their origin as antihypertensive/blood pressure medications"
+      ],
+      "checklist_depth": [
+        "Entity Logic: Must identify Guanfacine and Clonidine as the targets.",
+        "Exclusion Logic: Must NOT include Atomoxetine (Strattera) or Viloxazine (Qelbree), as they are SNRIs/NRIs, not alpha-2 agonists/antihypertensives.",
+        "Entity Logic: Must specify the Extended-Release formulations (Intuniv/Kapvay) rather than the immediate-release versions (Tenex/Catapres) which are off-label or not the primary ADHD indication."
+      ],
+      "rationale": "This question uses Deep Logic by filtering the broad category of 'ADHD medications' down to 'Non-stimulants', and then applying a second filter: 'originally for hypertension' (Alpha-2 Agonists). This forces the agent to exclude common answers like Strattera. The Wide Logic requires the agent to aggregate specific details (Brand names and Mechanism of Action) for both identified entities to form a complete answer.",
+      "source_nodes": [
+        "Health Topics - National Institute of Mental Health (NIMH)",
+        "FindTreatment.gov"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The class of non-stimulant ADHD medications originally developed to treat hypertension is the **alpha-2 adrenergic agonists** [1]. This class targets the adrenergic system, which is involved in regulating blood pressure as well as attention and arousal.\n\nThe two generic medications in this class with FDA approval for the treatment of ADHD are **guanfacine** and **clonidine** [2].\n\n1.  **Guanfacine:** The extended-release formulation approved specifically for ADHD is marketed under the brand name **Intuniv** [3].\n    *   **Mechanism of Action:** Intuniv's therapeutic effect is attributed to its function as a selective alpha-2A adrenergic receptor agonist. The prefrontal cortex (PFC), a brain region crucial for regulating attention, behavior, and impulse control, has a high density of these receptors on postsynaptic neurons. Guanfacine is believed to strengthen synaptic connections and enhance signaling in the PFC by binding to these alpha-2A receptors. This action mimics the beneficial effects of norepinephrine on neuronal firing, which helps improve working memory, reduce distractibility, and enhance executive function [1, 4].\n\n2.  **Clonidine:** The extended-release formulation approved for ADHD is sold under the brand name **Kapvay** [5].\n    *   **Mechanism of Action:** Kapvay is also an alpha-2 adrenergic agonist, though it is less selective than guanfacine, acting on alpha-2A, -2B, and -2C receptor subtypes. Its benefit in ADHD is primarily linked to its activity at alpha-2A receptors in the prefrontal cortex. By modulating norepinephrine neurotransmission, clonidine helps to stabilize neuronal firing and regulate arousal and attention networks. This process is thought to decrease hyperactivity and impulsivity while improving focus by optimizing signal transmission within the PFC [2, 5].\n\n## References\n\n1.  Arnsten, A. F. (2011). The Emerging Neurobiology of Attention Deficit Hyperactivity Disorder: The Key Role of the Prefrontal Association Cortex. *The Journal of Pediatrics*, 158(1), I–S43.\n2.  Childress, A. C., & Berry, S. A. (2012). Pharmacotherapy of attention-deficit hyperactivity disorder in adolescents. *Drugs*, 72(3), 309–325.\n3.  U.S. Food and Drug Administration. (2022). *Intuniv (guanfacine) Extended-Release Tablets Label*. Retrieved from FDA.gov.\n4.  Wang, M., Ramos, B. P., Paspalas, C. D., et al. (2007). Alpha2A-adrenoceptors strengthen working memory networks by inhibiting cAMP-HCN channel signaling in prefrontal cortex. *Cell*, 129(2), 397–410.\n5.  U.S. Food and Drug Administration. (2021). *Kapvay (clonidine hydrochloride) Extended-Release Tablets Label*. Retrieved from FDA.gov.",
+      "answer_b": "The class is the centrally acting α2-adrenergic receptor agonists, first marketed as antihypertensives.  \n\n1. Clonidine (generic)  \n   • ADHD extended-release brand: Kapvay.  \n   • Mechanism: As a selective α2A-adrenergic agonist, clonidine stimulates post-synaptic α2A receptors on dendritic spines of prefrontal cortex (PFC) pyramidal neurons. This lowers intracellular cAMP, closes hyperpolarization-activated cyclic nucleotide–gated (HCN) and certain K⁺ channels, thereby strengthening recurrent cortical network firing that underlies attention regulation and behavioral inhibition. The net effect is enhanced signal-to-noise in PFC circuits, reducing hyperactivity and impulsivity while improving working memory and sustained attention [1][2].\n\n2. Guanfacine (generic)  \n   • ADHD extended-release brand: Intuniv.  \n   • Mechanism: Guanfacine is more selective than clonidine for the α2A subtype. It engages the same post-synaptic α2A receptors in the PFC, producing cAMP reduction and HCN/K⁺ channel closure. This improves the persistent neuronal firing required for top-down control of attention and emotion, and also dampens noradrenergic outflow from the locus coeruleus, contributing to reductions in distractibility and impulsivity [2][3].\n\nBoth agents differ from stimulants; they modulate noradrenergic tone rather than directly increasing dopamine or norepinephrine release. Their blood-pressure–lowering heritage accounts for common adverse effects such as bradycardia or hypotension, so gradual dose titration and blood-pressure monitoring are recommended when used for ADHD.",
+      "duration_a_seconds": 18.9,
+      "duration_b_seconds": 11.5,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A followed all instructions, provided accurate pharmacological details (correctly noting Clonidine is less selective than Guanfacine), and included a full reference list. Agent B failed to provide the actual references for its citation markers (rendering them useless) and contained a factual error regarding Clonidine's selectivity (labeling it 'selective' when it is generally classified as a non-selective alpha-2 agonist compared to Guanfacine).",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_gemini25_vs_o3search_218"
+}

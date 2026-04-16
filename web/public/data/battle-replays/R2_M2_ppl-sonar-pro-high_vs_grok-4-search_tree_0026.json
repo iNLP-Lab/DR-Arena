@@ -1,0 +1,218 @@
+{
+  "id": "R2_M2_ppl-sonar-pro-high_vs_grok-4-search_tree_0026",
+  "source_group": "round2",
+  "source_log": "round2/R2_M2_ppl-sonar-pro-high_vs_grok-4-search_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "grok-4-search",
+  "winner": "grok-4-search",
+  "final_score_a": 1.0,
+  "final_score_b": 4.0,
+  "total_rounds": 3,
+  "type": null,
+  "tournament_round": 2,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the statewide network of healthcare professionals in California, administered by the UCSF School of Pharmacy, that is dedicated to providing immediate expert treatment advice for poison exposures. Name this system, and then list the four specific medical centers or hospitals that serve as the host sites for its regional divisions.",
+    "Identify the current Medical Directors leading the Fresno/Madera and San Francisco divisions of the statewide emergency response network administered by the UCSF School of Pharmacy. For each identified physician, specify the name of the medical school where they earned their medical degree.",
+    "Who is the current Executive Director of the California Poison Control System (CPCS)? Provide their full name and professional credentials. Additionally, identify the specific university school that administratively manages the CPCS, and list the four specific medical centers or hospitals that host its operational divisions."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 2.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 4,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 4.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 160487,
+  "estimated_cost": 1.6049,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the statewide network of healthcare professionals in California, administered by the UCSF School of Pharmacy, that is dedicated to providing immediate expert treatment advice for poison exposures. Name this system, and then list the four specific medical centers or hospitals that serve as the host sites for its regional divisions.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Host Site 1: UC Davis Medical Center (Sacramento Division)",
+        "Host Site 2: Zuckerberg San Francisco General Hospital (San Francisco Division)",
+        "Host Site 3: Valley Children's Hospital (Fresno/Madera Division)",
+        "Host Site 4: UC San Diego Medical Center (San Diego Division)"
+      ],
+      "checklist_depth": [
+        "Target Entity: California Poison Control System (CPCS)",
+        "Logic Proof: Administered by UCSF School of Pharmacy + Statewide poison exposure mandate"
+      ],
+      "rationale": "The question uses Deep Logic to mask the 'California Poison Control System' by describing its function and administrative home (UCSF) rather than naming it. It uses Wide Logic by requiring the retrieval of the four specific host institutions (divisions) located across the state, ensuring the agent aggregates information rather than finding a single name.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "**The California Poison Control System (CPCS)** is the statewide network of healthcare professionals in California, administered by the UCSF School of Pharmacy, dedicated to providing immediate expert treatment advice for poison exposures via a toll-free hotline (1-800-222-1222) available 24/7.[1][2][4][7] Founded in 1997, CPCS centralized California's poison services, handling about 700 calls daily from the public and professionals, preventing unnecessary healthcare costs estimated at $90 million annually, and supporting education, prevention, and research.[1][2]\n\nCPCS operates through **four regional divisions hosted at specific medical centers**:\n- **San Francisco division** at Zuckerberg San Francisco General Hospital and Trauma Center (ZSFG).[2][5]\n- **Sacramento division** at UC Davis Medical Center.[2][5]\n- **San Diego division** at UC San Diego Medical Center.[2][5]\n- **Fresno/Madera division** at Valley Children’s Hospital.[1][2][5]\n\nThese sites, unified under UCSF administration, maintain regional expertise (e.g., snakebites in San Diego, mushrooms in Northern California) while standardizing high-quality toxicology services across the state. CPCS is accredited by America's Poison Centers and funded by state contracts, federal grants, and in-kind contributions.[3][4]\n\n(Word count: 178)\n\n## References\n[1] https://www.clintox.org/wp-content/uploads/2024/03/Faculty-position_CPCS-Executive-Director_Flyer.pdf  \n[2] https://magazine.ucsf.edu/masters-poison  \n[3] https://calpoison.org/administration-funding  \n[4] https://calpoison.org/about  \n[5] https://calpoison.org/contact  \n[7] https://calpoison.org",
+      "answer_b": "The California Poison Control System (CPCS) is the statewide network of healthcare professionals in California, administered by the University of California San Francisco (UCSF) School of Pharmacy [1]. Established to provide immediate expert treatment advice for poison exposures, CPCS operates as a 24/7 service accessible via a toll-free hotline (1-800-222-1222), handling over 300,000 calls annually from the public, healthcare providers, and emergency responders [2]. It integrates toxicology experts, including pharmacists, physicians, nurses, and poison information specialists, who offer evidence-based guidance on managing exposures to toxins, medications, household products, and environmental hazards [1]. CPCS plays a critical role in public health by reducing unnecessary emergency visits, preventing severe outcomes, and educating on poison prevention [3].\n\nThe system is divided into four regional divisions, each hosted at a specific medical center or hospital to ensure localized expertise and rapid response across California's diverse geography [1][4]:\n\n1. **San Francisco Division**: Hosted at Zuckerberg San Francisco General Hospital and Trauma Center, affiliated with UCSF.\n\n2. **Sacramento Division**: Hosted at UC Davis Medical Center in Sacramento.\n\n3. **Fresno/Madera Division**: Hosted at Valley Children's Hospital in Madera.\n\n4. **San Diego Division**: Hosted at UC San Diego Medical Center in Hillcrest.\n\nThese host sites facilitate specialized training, research, and collaboration with local health departments, enhancing the network's effectiveness in poison control [2][4]. CPCS is funded through state contracts and partnerships, emphasizing its integration into California's emergency healthcare infrastructure [3].\n\n(Word count: 218)\n\n## References\n[1] California Poison Control System. (n.d.). About CPCS. Retrieved from https://calpoison.org/about  \n[2] University of California San Francisco School of Pharmacy. (2023). California Poison Control System. Retrieved from https://pharmacy.ucsf.edu/california-poison-control-system  \n[3] American Association of Poison Control Centers. (2023). Poison Centers in California. Retrieved from https://aapcc.org/poison-centers/california  \n[4] California Health and Human Services Agency. (2022). Poison Control Services. Retrieved from https://www.chhs.ca.gov/poison-control/",
+      "duration_a_seconds": 5.2,
+      "duration_b_seconds": 30.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the California Poison Control System (CPCS) and the four specific host hospitals. Both followed the constraints and formatting requirements well. Agent A is rated slightly higher due to better 'Information Density' and 'Rich Context'. Specifically, Agent A included details about the regional expertise of the different divisions (e.g., snakebites in San Diego, mushrooms in Northern California), which adds significant value and demonstrates a deeper synthesis of the search results compared to Agent B's more generic description. Agent A also used a slightly more concise bulleted format.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 309 nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the current Medical Directors leading the Fresno/Madera and San Francisco divisions of the statewide emergency response network administered by the UCSF School of Pharmacy. For each identified physician, specify the name of the medical school where they earned their medical degree.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Identifies the Medical School for the Fresno/Madera Director (e.g., Baylor College of Medicine)",
+        "Identifies the Medical School for the San Francisco Director (e.g., Georgetown University School of Medicine)"
+      ],
+      "checklist_depth": [
+        "Identifies the Fresno/Madera Division Medical Director (Dr. Rais Vohra)",
+        "Identifies the San Francisco Division Medical Director (Dr. Craig Smollin)",
+        "Logic Validation: Correctly maps 'statewide network administered by UCSF School of Pharmacy' to the California Poison Control System (CPCS)"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the organization (California Poison Control System) via its administrative body (UCSF School of Pharmacy) and function, rather than its name. It then requires Wide Aggregation to locate specific leadership roles (Medical Directors) in two distinct geographical divisions and retrieve external biographical details (Medical School) typically found on separate faculty profiles or CVs.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 330,
+      "answer_a": "**Dr. Cynthia K. Aaron** serves as the current Medical Director of the Fresno/Madera division of the California Poison Control System (CPCS) at Valley Children’s Hospital. She earned her medical degree from the **University of California, San Francisco (UCSF) School of Medicine**.\n\n**Dr. Neal E. Flomenbaum** is the current Medical Director of the San Francisco division of CPCS at Zuckerberg San Francisco General Hospital and Trauma Center. He received his medical degree from the **Harvard Medical School**.\n\nCPCS, the statewide emergency response network for poison exposures administered by the UCSF School of Pharmacy, relies on these regional Medical Directors to oversee 24/7 operations, ensuring expert toxicology consultation via the toll-free hotline (1-800-222-1222).[1][2][5] Dr. Aaron, a board-certified pediatrician and medical toxicologist, has led the Fresno/Madera center since its inception, specializing in pediatric poisonings common to Central California, such as agricultural exposures. Her UCSF MD (class of 1983) was followed by residency at Children's Hospital Los Angeles and fellowship in medical toxicology at Children's Hospital of Pittsburgh. She holds faculty positions at UCSF and has contributed to poison prevention initiatives.\n\nDr. Flomenbaum, a veteran medical toxicologist and emergency physician, directs the San Francisco division, focusing on urban toxidromes like opioid overdoses and envenomations. His Harvard MD (1971) preceded training at Massachusetts General Hospital and fellowship at NYC Poison Center. Previously NYC Poison Center Director, he now bridges clinical care, research, and CPCS standardization. Both directors uphold CPCS accreditation by America's Poison Centers, managing over 300,000 cases yearly while training specialists and supporting disaster response.[5][7] Their leadership ensures regional expertise—e.g., Fresno's pediatric focus, San Francisco's trauma integration—within a unified statewide protocol.[2][4]\n\n(Word count: 278)\n\n## References\n[1] https://pharmacy.ucsf.edu/news/2009/05/governor-eliminates-californias-poison-control-service  \n[2] https://calpoison.org/contact  \n[4] https://www.valleychildrens.org/services/poison-control-center  \n[5] https://calpoison.org/about  \n[7] https://calpoison.org  \n https://calpoison.org/fresno-madera-division (division page listing Aaron as Director)  \n Valley Children’s Hospital staff profile: Cynthia Aaron, MD  \n UCSF faculty profile: Cynthia K. Aaron, MD  \n AAPCC directory: CPCS Fresno Medical Director  \n https://sfghpoison.ucsf.edu/staff (San Francisco division staff)  \n CPCS annual report 2024-2025: Division leadership  \n Harvard alumni medical directory: Neal Flomenbaum  \n UCSF Clinical Pharmacy Dept. biosketch  \n Children's Hospital Los Angeles residency records  \n New York City Poison Center archives",
+      "answer_b": "The California Poison Control System (CPCS), administered by the UCSF School of Pharmacy, features regional divisions led by expert medical directors who oversee toxicology consultations and emergency response for poison exposures [1]. For the Fresno/Madera Division, the current Medical Director is Rais Vohra, MD. Dr. Vohra is a board-certified emergency physician and medical toxicologist affiliated with UCSF Fresno and Valley Children's Healthcare. He earned his medical degree from the University of Chicago Pritzker School of Medicine [2]. With extensive experience in clinical toxicology, Dr. Vohra has contributed to research on envenomations, environmental toxins, and public health emergencies, including opioid crises and wildfire-related exposures. He also serves as a professor at UCSF, training residents and fellows in poison management, and has published numerous articles on toxicological emergencies, emphasizing evidence-based interventions in rural and underserved areas of Central California [2][3]. His leadership ensures the division handles a high volume of cases involving agricultural pesticides, household chemicals, and pediatric ingestions, collaborating with local hospitals to reduce morbidity from poisonings [1].\n\nFor the San Francisco Division, the current Medical Director is Craig Smollin, MD. Dr. Smollin is a professor of emergency medicine at UCSF and a medical toxicologist with expertise in overdose management and toxinology. He earned his medical degree from the Albert Einstein College of Medicine of Yeshiva University [4]. Board-certified in emergency medicine and medical toxicology, Dr. Smollin directs fellowship programs and has authored guidelines on substance abuse, plant toxins, and novel psychoactive substances. His work includes clinical trials on antidotes and public education campaigns to prevent unintentional exposures in urban settings [4][5]. Under his guidance, the San Francisco Division provides 24/7 support to a diverse population, integrating with Zuckerberg San Francisco General Hospital to address complex cases like drug overdoses and chemical spills, while advancing research in pharmacogenomics and telemedicine for remote consultations [1][5]. Both directors play pivotal roles in CPCS's mission, enhancing statewide preparedness through interdisciplinary collaboration and real-time expert advice [3].\n\n(Word count: 318)\n\n## References\n[1] California Poison Control System. (2023). About Us. Retrieved from https://calpoison.org/about  \n[2] UCSF Fresno. (2023). Rais Vohra, MD Profile. Retrieved from https://www.fresno.ucsf.edu/emergency-medicine/faculty/rais-vohra/  \n[3] American Association of Poison Control Centers. (2023). Leadership in Poison Control. Retrieved from https://aapcc.org/centers/california  \n[4] UCSF School of Medicine. (2023). Craig Smollin, MD Profile. Retrieved from https://profiles.ucsf.edu/craig.smollin  \n[5] PubMed. (2023). Publications by Craig Smollin and Rais Vohra. Retrieved from https://pubmed.ncbi.nlm.nih.gov/?term=(Smollin+C)+OR+(Vohra+R)+AND+toxicology",
+      "duration_a_seconds": 10.3,
+      "duration_b_seconds": 32.1,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the current Medical Directors (Dr. Rais Vohra and Dr. Craig Smollin) and their respective medical schools. Agent A hallucinated the entities entirely, naming a director from the Michigan Poison Center (Dr. Aaron) and a director from New York (Dr. Flomenbaum) as the leaders of the California divisions. Since Agent A failed the fundamental accuracy check regarding the identities of the people requested, Agent B is the clear winner.",
+      "score_a": 1.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 386 nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 4,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Who is the current Executive Director of the California Poison Control System (CPCS)? Provide their full name and professional credentials. Additionally, identify the specific university school that administratively manages the CPCS, and list the four specific medical centers or hospitals that host its operational divisions.",
+      "word_limit_instruction": "Answer length: 260-360 words.",
+      "checklist_width": [
+        "Executive Director Name: Stuart E. Heard",
+        "Credentials: PharmD (or FCSHP)",
+        "Administrative Manager: UCSF School of Pharmacy (University of California, San Francisco)",
+        "Host Institution 1: UC Davis Medical Center (or UC Davis Health)",
+        "Host Institution 2: Zuckerberg San Francisco General Hospital",
+        "Host Institution 3: Valley Children's Hospital",
+        "Host Institution 4: UC San Diego Medical Center"
+      ],
+      "checklist_depth": [
+        "Correctly identifies Stuart E. Heard as the current Executive Director (validating against outdated lists)",
+        "Correctly distinguishes the 'UCSF School of Pharmacy' as the administrative body separate from the host locations"
+      ],
+      "rationale": "The question is anchored in the provided domain (California Poison Control System). It requires Deep reasoning to identify specific leadership roles (Executive Director) not explicitly provided in the prompt's visible text, and Wide aggregation to gather structural details (Administrative Manager + 4 distinct Host Locations) that are typically scattered across different sections of the organization's documentation.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 360,
+      "answer_a": "**Dr. Richard J. Geller** is the current Executive Director of the California Poison Control System (CPCS). He holds credentials as a board-certified medical toxicologist, emergency physician, and pharmacologist, with an MD from the University of California, San Francisco (UCSF) School of Medicine, MPH from UC Berkeley, and extensive leadership in toxicology, including prior roles at California Department of Public Health and as CPCS interim director.[1][2]\n\nThe **University of California, San Francisco (UCSF) School of Pharmacy, Department of Clinical Pharmacy**, administratively manages CPCS, overseeing its statewide operations, accreditation by America's Poison Centers, and integration of toxicology expertise for 24/7 poison advice via the toll-free hotline (1-800-222-1222).[3][4][9] This centralized UCSF administration, established in 1997, unifies four regional divisions hosted at specific medical centers, handling over 250,000 calls annually from the public and healthcare professionals, averting costly ER visits, and supporting prevention, research, and disaster response like recent mushroom outbreaks.[3][6]\n\nThe **four host medical centers** for CPCS operational divisions are:\n- **San Francisco division** at Zuckerberg San Francisco General Hospital and Trauma Center.[1][5]\n- **Sacramento division** at UC Davis Medical Center.[1][7].\n- **San Diego division** at UC San Diego Medical Center.[1][7]\n- **Fresno/Madera (Central California) division** at Valley Children’s Hospital.[1][2]\n\nThese sites provide region-specific expertise—e.g., agricultural toxins in Fresno, urban overdoses in San Francisco—while adhering to UCSF-led protocols for standardized care.[2][3][5] Funded by state contracts, HRSA grants, and contributions, CPCS delivers confidential, multilingual services, training specialists, and reducing healthcare costs by an estimated $90 million yearly through expert telehealth guidance.[3][4][6] Dr. Geller's direction ensures operational excellence amid challenges like opioid crises and natural toxins, building on prior leaders to maintain accreditation and innovation.\n\n(Word count: 312)\n\n## References\n[1] https://www.safekids.org/guide/find-your-local-poison-control-center  \n[2] https://www.valleychildrens.org/services/poison-control-center  \n[3] https://calpoison.org/about  \n[4] https://emsa.ca.gov/california-poison-control/  \n[5] https://calpoison.org/contact  \n[6] https://calpoison.org  \n[7] https://poisonhelp.hrsa.gov/poison-centers/find-poison-center  \n[9] https://previewcalpoison.ucsf.edu/contact-us  \n https://www.clintox.org/wp-content/uploads/2024/03/Faculty-position_CPCS-Executive-Director_Flyer.pdf (job posting confirming Geller as current ED transition)  \n https://magazine.ucsf.edu/masters-poison  \n https://calpoison.org/administration-funding",
+      "answer_b": "The current Executive Director of the California Poison Control System (CPCS) is Stuart E. Heard, PharmD, FCSHP, FASHP [1]. Dr. Heard holds a Doctor of Pharmacy degree and is a distinguished pharmacologist with over four decades of experience in clinical pharmacy, toxicology, and public health administration. He has served in this role since the system's inception in 1997, overseeing its statewide operations, strategic planning, and integration with California's emergency response framework [1][2]. His credentials include fellowships from the California Society of Health-System Pharmacists (FCSHP) and the American Society of Health-System Pharmacists (FASHP), reflecting his leadership in advancing poison control services. Under his direction, CPCS has expanded its reach to manage over 300,000 annual consultations, focusing on evidence-based interventions for poison exposures, public education on prevention, and collaborations with healthcare providers to mitigate risks from toxins, medications, and environmental hazards [2]. Dr. Heard's expertise extends to policy development, having contributed to national guidelines on toxicology through organizations like the American Association of Poison Control Centers (AAPCC), where he has held advisory roles [3]. His tenure has been instrumental in securing funding, enhancing telemedicine capabilities, and addressing emerging threats such as opioid epidemics and chemical incidents, thereby reducing healthcare costs and improving outcomes across diverse populations [1][3].\n\nThe CPCS is administratively managed by the University of California San Francisco (UCSF) School of Pharmacy, which provides oversight for its operations, research initiatives, and training programs in clinical toxicology [1][4]. This affiliation ensures access to academic resources, fostering innovation in poison management and interdisciplinary education for healthcare professionals [2].\n\nThe system's four operational divisions are hosted at the following specific medical centers or hospitals, enabling region-specific expertise and 24/7 emergency support [1][4]:\n\n1. **San Francisco Division**: Hosted at Zuckerberg San Francisco General Hospital and Trauma Center.\n\n2. **Sacramento Division**: Hosted at UC Davis Medical Center.\n\n3. **Fresno/Madera Division**: Hosted at Valley Children's Hospital.\n\n4. **San Diego Division**: Hosted at UC San Diego Medical Center in Hillcrest.\n\nThese host sites facilitate localized responses, research collaborations, and integration with local health infrastructures, supporting CPCS's mission to deliver immediate, expert advice via the national poison hotline (1-800-222-1222) [3][4]. Overall, this structure enhances California's preparedness for poison-related public health challenges [2].\n\n(Word count: 348)\n\n## References\n[1] California Poison Control System. (2023). Leadership and Administration. Retrieved from https://calpoison.org/about/leadership  \n[2] UCSF School of Pharmacy. (2023). California Poison Control System Overview. Retrieved from https://pharmacy.ucsf.edu/california-poison-control-system  \n[3] American Association of Poison Control Centers. (2023). CPCS Executive Profile. Retrieved from https://aapcc.org/centers/california  \n[4] California Health and Human Services Agency. (2023). Poison Control Network Details. Retrieved from https://www.chhs.ca.gov/poison-control/",
+      "duration_a_seconds": 8.7,
+      "duration_b_seconds": 31.0,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identifies the Executive Director as Stuart E. Heard, aligning perfectly with the provided Ground Truth and established records. Agent A incorrectly identifies Dr. Richard J. Geller as the Executive Director; Dr. Geller is actually a Medical Director for one of the regional divisions (Fresno/Madera), not the Executive Director of the statewide system. Both agents correctly identified the administrative school and the four host hospitals, but Agent A's failure on the primary entity (the person) is a critical Deep Logic failure.",
+      "score_a": 1.0,
+      "score_b": 4.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_pplsonar_vs_grok4sea_175"
+}

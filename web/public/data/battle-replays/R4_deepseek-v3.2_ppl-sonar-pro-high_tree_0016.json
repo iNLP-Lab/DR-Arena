@@ -1,0 +1,219 @@
+{
+  "id": "R4_deepseek-v3.2_ppl-sonar-pro-high_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_deepseek-v3.2_ppl-sonar-pro-high_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "deepseek-v3.2",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 3.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "According to the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period, identify the two specific computer-related occupational categories that are explicitly projected to grow by exactly 15%. For each of these two identified categories, report the 2024 median annual pay, the typical entry-level education required, and the stated requirement for work experience in a related occupation.",
+    "According to the U.S. Bureau of Labor Statistics' 2024-2034 employment projections found in the 'Data for Occupations Not Covered in Detail' section of the Occupational Outlook Handbook, identify the specific 'Computer and mathematical' occupational category that reported a May 2024 median annual wage of exactly $108,970. Provide the full title of this occupation, its 2024 employment count, and the projected numeric change in jobs over the decade. Finally, list five specific job titles or specializations (from the O*NET links provided for this entry) that fall under this classification.",
+    "Referencing the U.S. Bureau of Labor Statistics Occupational Outlook Handbook for the 2024–2034 projection period, identify the two computer-related occupations that list a 2024 median annual wage greater than $130,000 and a projected employment growth rate of exactly 15%. For each of these two roles, explicitly state the median annual wage, the projected number of average annual openings, and the typical entry-level education required."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 157856,
+  "estimated_cost": 1.5786,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period, identify the two specific computer-related occupational categories that are explicitly projected to grow by exactly 15%. For each of these two identified categories, report the 2024 median annual pay, the typical entry-level education required, and the stated requirement for work experience in a related occupation.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Software Developers/QA Category: 2024 Median Pay is $131,450",
+        "Software Developers/QA Category: Typical Entry-Level Education is Bachelor's degree",
+        "Software Developers/QA Category: Work Experience requirement is None",
+        "Computer and Information Systems Managers Category: 2024 Median Pay is $171,200",
+        "Computer and Information Systems Managers Category: Typical Entry-Level Education is Bachelor's degree",
+        "Computer and Information Systems Managers Category: Work Experience requirement is 5 years or more"
+      ],
+      "checklist_depth": [
+        "Identify Entity 1: Software Developers, Quality Assurance Analysts, and Testers",
+        "Identify Entity 2: Computer and Information Systems Managers",
+        "Logic Validation: Both entities specifically list a '15% (Much faster than average)' Job Outlook for the 2024–34 period."
+      ],
+      "rationale": "The question relies on Deep Logic by requiring the agent to filter multiple occupational profiles based on a specific numerical attribute (15% growth rate) found in the 'Job Outlook' section, rather than searching by name. It is Wide because the agent must then aggregate and contrast specific data points (Pay, Education, Experience) from two distinct documents (the Developer profile and the Manager profile) to provide a complete answer.",
+      "source_nodes": [
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Occupational Outlook Handbook > Computer and Information Technology > Computer and Information Technology Occupations PRINTER-FRIENDLY These workers create or support computer",
+      "judge_max_limit": 300,
+      "answer_a": "According to the U.S. Bureau of Labor Statistics (BLS) projections for 2024–2034, the two computer-related occupational categories projected to grow by exactly 15% are **Computer and Information Research Scientists** and **Data Scientists**[1][2].\n\n**Computer and Information Research Scientists** are projected to have 15% growth. The 2024 median annual pay for this group is $156,570. The typical entry-level education requirement is a master's degree. The BLS states that work experience in a related occupation is typically **none** required for entry[1].\n\n**Data Scientists** are also projected to have 15% growth. Their 2024 median annual pay is $121,610. The typical entry-level education requirement is a bachelor's degree. For work experience in a related occupation, the BLS states that typically **none** is required for entry[2].\n\nThese figures and projections come directly from the detailed BLS Occupational Outlook Handbook profiles for these two specific occupations, which are categorized under \"Computer and Information Technology Occupations.\" Both occupations are expected to see much faster than average growth over the decade, driven by demand in areas like data analysis, artificial intelligence, and information security[1][2].\n\n## References\n[1] U.S. Bureau of Labor Statistics. \"Computer and Information Research Scientists.\" *Occupational Outlook Handbook*, updated April 17, 2024.\n[2] U.S. Bureau of Labor Statistics. \"Data Scientists.\" *Occupational Outlook Handbook*, updated April 17, 2024.",
+      "answer_b": "Based on the U.S. Bureau of Labor Statistics' 2024–2034 employment projections, **software developers, quality assurance analysts, and testers** is the primary computer-related occupational category explicitly projected to grow by exactly 15 percent.[5]\n\nThe 2024 median annual wage for software developers was **$133,080**.[3] However, the search results do not provide specific information about typical entry-level education requirements or work experience requirements for this occupational category within the provided documents.\n\nWhile the search results mention other fast-growing computer occupations—including data scientists (34% growth), information security analysts (29% growth), and computer and information research scientists (20% growth)—none of these match the exact 15% growth rate specified in your query.[3][6][7]\n\nThe available BLS projections indicate that computer and information technology occupations overall will see about 317,700 job openings annually through 2034, with the median annual wage for the entire group at $105,990 in May 2024.[2] The employment growth is driven by demand for AI development, data analysis, and cybersecurity expertise.[1]\n\nUnfortunately, the search results do not identify a **second** computer-related occupational category with exactly 15% projected growth, nor do they provide the complete educational and experience requirements requested for detailed occupational analysis.\n\n## References\n\n[1] U.S. Bureau of Labor Statistics. Employment Projections 2024–2034\n[2] U.S. Bureau of Labor Statistics. Computer and Information Technology Occupations\n[3] Stevens Institute of Technology. Computer Scientist Salary and Job Outlook in 2025\n[5] U.S. Bureau of Labor Statistics. Software Developers—Quality Assurance Analysts and Testers\n[6] U.S. Bureau of Labor Statistics. Computer and Information Research Scientists\n[7] U.S. Bureau of Labor Statistics. Fastest Growing Occupations",
+      "duration_a_seconds": 16.3,
+      "duration_b_seconds": 5.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B is the winner because it correctly identified one of the two specific entities ('Software Developers...') mandated by the Ground Truth Checklist, whereas Agent A identified two incorrect entities ('Data Scientists' and 'Research Scientists') and hallucinated their growth rates to match the 15% constraint (in reality, and in the checklist, these occupations have different growth rates). Although Agent B failed to retrieve the requested sub-details (Education/Experience) and missed the second entity (CIS Managers), its partial accuracy is preferred over Agent A's complete fabrication of data to fit the prompt.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'OOH FAQs :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "OOH FAQs :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics' 2024-2034 employment projections found in the 'Data for Occupations Not Covered in Detail' section of the Occupational Outlook Handbook, identify the specific 'Computer and mathematical' occupational category that reported a May 2024 median annual wage of exactly $108,970. Provide the full title of this occupation, its 2024 employment count, and the projected numeric change in jobs over the decade. Finally, list five specific job titles or specializations (from the O*NET links provided for this entry) that fall under this classification.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "2024 Employment: 472,000",
+        "Projected Numeric Change: 38,500 (new jobs)",
+        "O*NET Example 1 (e.g., Web Administrators)",
+        "O*NET Example 2 (e.g., Penetration Testers)",
+        "O*NET Example 3 (e.g., Blockchain Engineers)",
+        "O*NET Example 4 (e.g., Digital Forensics Analysts)",
+        "O*NET Example 5 (e.g., Information Technology Project Managers)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Computer occupations, all other",
+        "Logic Validation: Correctly identifies the entity within the 'Data for Occupations Not Covered in Detail' page based on the specific wage ($108,970) and category."
+      ],
+      "rationale": "The question requires the agent to navigate away from the main OOH profiles to the specific 'Data for Occupations Not Covered in Detail' page (Deep Search). It then requires filtering by specific wage and category logic to find the 'Computer occupations, all other' entity. Finally, it demands the aggregation of specific statistical data and a list of associated O*NET job titles found within that specific entry (Wide Aggregation).",
+      "source_nodes": [
+        "OOH FAQs :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Data for Occupations Not Covered in Detail :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Occupational Outlook Handbook > About > OOH FAQs PRINTER-FRIENDLY Career information | Employment estimates and growth | How does BLS prepare projections? | Information includ",
+      "judge_max_limit": 320,
+      "answer_a": "The specific occupational category within the 'Computer and mathematical' group that reported a May 2024 median annual wage of exactly $108,970 is **Software Quality Assurance Analysts and Testers**[1]. The 2024 employment count for this occupation is projected at **154,700 jobs**. Over the 2024–2034 decade, the BLS projects a numeric change of **+18,600 jobs** for this field, representing an overall growth rate of 12%[1].\n\nAccording to the O*NET resource links provided within this specific BLS profile, five detailed job titles or specializations that fall under this classification are:\n1. Software Quality Assurance (QA) Engineer\n2. Software Tester\n3. Quality Control Analyst\n4. Software Test Engineer\n5. Performance Test Analyst[2]\n\nThis occupational data is found in the \"Data for Occupations Not Covered in Detail\" section, indicating that while detailed projections are available, the BLS does not publish the full suite of OOH information for this category. The reported median wage and employment figures highlight its significant role within the technology sector. The list of specializations, sourced from O*NET, illustrates the varied functions within the profession, which focuses on creating and executing software tests to identify problems and ensure applications meet design specifications and quality standards before release.\n\n## References\n[1] U.S. Bureau of Labor Statistics. \"Software Quality Assurance Analysts and Testers.\" *Occupational Outlook Handbook, Data for Occupations Not Covered in Detail*, accessed April 17, 2024.\n[2] O*NET OnLine. \"Software Quality Assurance Analysts and Testers.\" *O*NET-SOC 15-1252.00*, linked from BLS profile.",
+      "answer_b": "**Computer systems analysts** is the specific \"Computer and mathematical\" occupational category in the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook \"Data for Occupations Not Covered in Detail\" section with a May 2024 median annual wage of exactly $108,970[2].\n\nThis occupation falls under computer and information technology, studying organizations' current computer systems and designing improvements for efficiency[2]. Its 2024 employment count is approximately 344,300, with a projected numeric change of +50,200 jobs over the 2024–2034 decade (reflecting about 15% growth, though exact percentage not specified in the queried section)[2].\n\nFive specific job titles or specializations from the O*NET links for this entry include:\n- **Computer Systems Analysts** (core role, SOC 15-1211.00)\n- **Health Informatics Specialists** (15-1211.01)\n- **Business Intelligence Analysts** (15-1211.02)\n- **Business Process Analysts** (15-1211.03)\n- **ERP Systems Analysts** (15-1211.04)[2].\n\nThese details align with BLS projections for computer occupations, driven by AI, data analysis, and cybersecurity demands, contributing to 317,700 annual openings group-wide[1][2]. The wage exceeds the all-occupations median of $49,500, reflecting specialized skills[2]. While primary profiles like software developers ($131,450) and database administrators ($123,100) appear in detailed sections, systems analysts match the exact wage in the \"not covered in detail\" data[2].\n\n(Word count: 248)\n\n## References\n[1] U.S. Bureau of Labor Statistics. Employment Projections - 2024-2034 (https://www.bls.gov/news.release/pdf/ecopro.pdf)  \n[2] U.S. Bureau of Labor Statistics. Computer and Information Technology Occupations (https://www.bls.gov/ooh/computer-and-information-technology/)",
+      "duration_a_seconds": 12.0,
+      "duration_b_seconds": 3.7,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the 'Deep Logic' check by identifying the wrong occupational entity. The prompt specifically requested an entry from the 'Data for Occupations Not Covered in Detail' section of the Occupational Outlook Handbook. The Ground Truth identifies this entity as 'Computer occupations, all other' (SOC 15-1299), which corresponds to the specific wage ($108,970) and O*NET examples (e.g., Blockchain Engineers, Digital Forensics Analysts) provided in the checklist.\n\nAgent A incorrectly identified the entity as 'Software Quality Assurance Analysts and Testers' and provided employment figures (154,700) that did not match the target (472,000). Agent B incorrectly identified the entity as 'Computer systems analysts' and also provided incorrect employment figures (344,300). Both occupations chosen by the agents typically have their own detailed profiles and do not reside in the 'Not Covered in Detail' section. Since both agents hallucinated the entity and failed to retrieve the correct data associated with the specific OOH section, it is a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Referencing the U.S. Bureau of Labor Statistics Occupational Outlook Handbook for the 2024–2034 projection period, identify the two computer-related occupations that list a 2024 median annual wage greater than $130,000 and a projected employment growth rate of exactly 15%. For each of these two roles, explicitly state the median annual wage, the projected number of average annual openings, and the typical entry-level education required.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Software Developers, QA Analysts, and Testers: 2024 Median Pay ($131,450)",
+        "Software Developers, QA Analysts, and Testers: Projected Annual Openings (129,200)",
+        "Software Developers, QA Analysts, and Testers: Entry-Level Education (Bachelor's degree)",
+        "Computer and Information Systems Managers: 2024 Median Pay ($171,200)",
+        "Computer and Information Systems Managers: Projected Annual Openings (55,600)",
+        "Computer and Information Systems Managers: Entry-Level Education (Bachelor's degree)"
+      ],
+      "checklist_depth": [
+        "Identification of 'Software Developers, Quality Assurance Analysts, and Testers' (Matches >$130k and 15% growth)",
+        "Identification of 'Computer and Information Systems Managers' (Matches >$130k and 15% growth)",
+        "Exclusion of 'Computer and Information Research Scientists' (Pay >$130k but growth rate not specified as exactly 15% in source text)"
+      ],
+      "rationale": "The query applies 'Deep' logic by requiring the agent to filter a broad list of occupations using specific numerical criteria (15% growth, >$130k pay) found in the source text. It enforces 'Wide' aggregation by compelling the retrieval of scattered attributes (openings, education) for the multiple entities that satisfy the filter.",
+      "source_nodes": [
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Occupational Outlook Handbook > Computer and Information Technology > Computer and Information Technology Occupations PRINTER-FRIENDLY These workers create or support computer",
+      "judge_max_limit": 300,
+      "answer_a": "The two computer-related occupations listed in the U.S. Bureau of Labor Statistics (BLS) Occupational Outlook Handbook with a median annual wage greater than $130,000 and a projected growth rate of exactly 15% for 2024–2034 are **Computer and Information Research Scientists** and **Software Developers**[1][2].\n\nFor **Computer and Information Research Scientists**, the 2024 median annual wage is $156,570. The BLS projects an average of 1,900 annual openings for this occupation over the decade. The typical entry-level education required is a master's degree[1].\n\nFor **Software Developers**, the 2024 median annual wage is $138,110. The BLS projects an average of 147,000 annual openings for this occupation, which is a high number driven by both growth and replacement needs. The typical entry-level education required is a bachelor's degree[2].\n\nBoth occupations are projected to grow by 15%, which is much faster than the average for all occupations, and both have median wages exceeding the $130,000 threshold. The substantial difference in the number of projected annual openings reflects the larger overall size of the software developer workforce compared to the more specialized research scientist role[1][2].\n\n## References\n[1] U.S. Bureau of Labor Statistics. \"Computer and Information Research Scientists.\" *Occupational Outlook Handbook*, last modified April 17, 2024.\n[2] U.S. Bureau of Labor Statistics. \"Software Developers.\" *Occupational Outlook Handbook*, last modified April 17, 2024.",
+      "answer_b": "**Computer and information systems managers** and **software developers, quality assurance analysts, and testers** are the two computer-related occupations in the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook for 2024–2034 with a median annual wage over $130,000 and exactly 15% projected employment growth.[2][3][5]\n\nFor **computer and information systems managers**:\n- Median annual wage: **$171,200** in 2024.[2]\n- Projected average annual openings: **55,600**.[2]\n- Typical entry-level education: **Bachelor's degree**.[2]\n\nFor **software developers, quality assurance analysts, and testers**:\n- Median annual wage: **$131,450** (or $133,080 in some BLS-aligned reports) in 2024.[3][5]\n- Projected average annual openings: **129,200**.[5]\n- Typical entry-level education: **Bachelor's degree**.[3]\n\nThese occupations reflect strong demand in IT, driven by AI, cybersecurity, and software needs, outpacing the 3.1% average growth across all jobs. No other computer/IT roles match both the exact 15% growth and >$130,000 wage threshold; for example, computer and information research scientists have a $140,910 wage but 20% growth.[3][6]\n\n(Word count: 218)\n\n## References\n[1] BLS Employment Projections 2024–2034 (ecopro.pdf)  \n[2] BLS OOH: Computer and Information Systems Managers  \n[3] BLS OOH: Computer and Information Technology Occupations  \n[4] Acara Solutions IT Salary Guide  \n[5] Stevens Institute: Computer Science Salary Outlook 2025  \n[6] BLS OOH: Computer and Information Research Scientists",
+      "duration_a_seconds": 13.2,
+      "duration_b_seconds": 4.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B followed the Ground Truth checklist perfectly, identifying the correct two occupations ('Computer and Information Systems Managers' and 'Software Developers...') that meet the specific wage and growth criteria for the 2024-2034 period. It also provided the exact data points requested. Agent A failed the Deep Logic check by selecting 'Computer and Information Research Scientists' (which typically has a higher growth rate than 15%) and missing the IT Managers role. Agent A also provided inaccurate data for the Software Developers role (e.g., 147,000 openings vs the correct 129,200). Agent B also had superior formatting.",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_deepseekv_vs_pplsonar_729"
+}

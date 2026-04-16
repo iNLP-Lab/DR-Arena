@@ -1,0 +1,163 @@
+{
+  "id": "R2_gpt-5.1-search_vs_claude-opus-4.6-search_tree_0012",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_gpt-5.1-search_vs_claude-opus-4.6-search_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "epguides.com * Main Menu Page",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "gpt-5.1-search",
+  "model_b": "claude-opus-4.6-search",
+  "winner": "claude-opus-4.6-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "epguides.com * Main Menu Page",
+  "questions": [
+    "A long-running online television episode guide, active since the mid-1990s, provides title-and-airdate listings for thousands of shows and links each episode title to external databases for expanded details. It also features a \"New Episodes Today\" section with separate country-specific listings. Identify the two external television databases it links to for expanded episode information and corrections, describing what kind of additional details users can find there and where corrections should be directed. Then, list all the country-specific versions of the \"New Episodes Today\" feature, expanding each abbreviation to its full country name and explaining the context in which these country listings are presented.",
+    "A long-running online TV episode guide links each episode title to a third-party television database that offers a free public REST API for accessing show, episode, cast, crew, and schedule data in JSON format. Identify this API and provide a comprehensive overview of its architecture and usage. Your answer must: (1) compare the regular show search endpoint with the single-search endpoint, including their fuzzy matching behavior and use cases; (2) distinguish between the country-based schedule endpoint, the web/streaming schedule endpoint, and the full schedule endpoint, including differences in scope and caching; (3) explain how embedding related resources works under its hypermedia design principles; (4) summarize its rate limiting and caching policies; and (5) state its licensing model and any enterprise-level offering. Do not reference any specific episode guide website in your response."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 130464,
+  "estimated_cost": 1.3046,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "A long-running online television episode guide, active since the mid-1990s, provides title-and-airdate listings for thousands of shows and links each episode title to external databases for expanded details. It also features a \"New Episodes Today\" section with separate country-specific listings. Identify the two external television databases it links to for expanded episode information and corrections, describing what kind of additional details users can find there and where corrections should be directed. Then, list all the country-specific versions of the \"New Episodes Today\" feature, expanding each abbreviation to its full country name and explaining the context in which these country listings are presented.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "TVmaze identified as an external database with additional details such as guest stars and plot summaries",
+        "TV.com identified as an external database where corrections and updates can be sent",
+        "Explanation that corrections to individual episodes can be sent to editors at TVmaze or TV.com",
+        "United States (US) listed as one of the New Episodes Today country listings",
+        "United Kingdom (UK) listed as one of the New Episodes Today country listings",
+        "Canada (CA) listed as one of the New Episodes Today country listings",
+        "Australia (AU) listed as one of the New Episodes Today country listings",
+        "New Zealand (NZ) listed as one of the New Episodes Today country listings",
+        "Japan (JP) listed as one of the New Episodes Today country listings",
+        "South Korea (KR) listed as one of the New Episodes Today country listings",
+        "Explanation that these countries appear as separate links under a 'New Episodes Today' schedule feature"
+      ],
+      "checklist_depth": [
+        "TVmaze + identified as the linked episode-detail site providing guest stars and plot summaries for episodes on a long-running TV episode guide active since 1995",
+        "TV.com + identified as the linked site where users can submit corrections and updates to episode information",
+        "US, UK, CA, AU, NZ, JP, KR + correctly identified as the full set of country-specific 'New Episodes Today' listings associated with the same television episode guide platform"
+      ],
+      "rationale": "The question uses deep logic by referring to a long-running TV episode guide from the mid-1990s that links episode titles to external databases, masking the specific site name. It then requires wide aggregation by asking for both external databases and all country-specific schedule listings, including expanded country names and contextual explanation. This ensures the responder must identify the correct platform and comprehensively gather multiple scattered details.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The site described is epguides.com, which links each episode entry to two external television databases: the Internet Movie Database (IMDb) and TheTVDB. IMDb provides expanded details such as full cast and crew credits, episode summaries, runtimes, user ratings, trivia, and external reviews for each episode.[1] TheTVDB supplies structured series and episode metadata including episode images, detailed descriptions, alternate titles, season/episode numbering across regions, and airing information.[2] epguides notes that corrections or additions to episode information should be submitted directly to these external databases (primarily via TheTVDB or IMDb), since epguides imports and mirrors their data rather than maintaining its own authoritative database.[1][2]\n\nThe “New Episodes Today” feature on epguides offers country-specific daily listings of upcoming broadcasts. The abbreviations and their full forms are:\n\n- US – United States  \n- CA – Canada  \n- UK – United Kingdom  \n- AU – Australia  \n\nThese four are typically grouped together at the top of the “New Episodes Today” page as selectable filters for which country’s TV schedule to display.[1]  \n\nA second set of country codes is sometimes shown for international airings of US-origin series:\n\n- DE – Germany  \n- FR – France  \n- IT – Italy  \n- ES – Spain  \n\nThese appear in the context of listing when US shows premiere or air in major European markets, separate from the primary US/CA/UK/AU domestic schedules.[1]\n\n## References\n[1] https://epguides.com  \n[2] https://thetvdb.com",
+      "answer_b": "The website described is **epguides.com**, a long-running online television episode guide that has been active since the mid-1990s, providing title and airdate listings for thousands of TV shows [1][2].\n\n**Two External Television Databases:**\n\nEpguides links each episode title to two external databases for expanded episode information:\n\n1. **TVmaze** – Users can find additional details such as episode summaries, cast information, images, and comprehensive show metadata. TVmaze serves as a primary source for episode data and corrections [1][3].\n\n2. **TheTVDB (The TV Database)** – This community-driven database provides detailed episode descriptions, season information, artwork, cast and crew details, and fan-contributed content. Users seeking to correct episode information (such as titles, airdates, or other metadata) are directed to submit corrections at TheTVDB, as epguides pulls its data from these external sources rather than maintaining its own editorial database [1][2].\n\nBoth databases allow users to access richer information beyond the basic title-and-airdate format that epguides provides, and any errors or omissions should be corrected at these source databases rather than at epguides itself.\n\n**Country-Specific \"New Episodes Today\" Listings:**\n\nThe \"New Episodes Today\" feature on epguides is presented with separate country-specific versions, allowing users to see which episodes are airing based on their region. The country-specific listings include [1][2]:\n\n- **US** – United States\n- **UK** – United Kingdom\n- **CA** – Canada\n- **AU** – Australia\n\nThese country listings are presented as selectable tabs or links on the epguides homepage, enabling visitors to filter the day's new episode schedule by their specific country. This reflects the fact that television scheduling varies significantly across English-speaking markets, with different premiere dates and broadcasting schedules for the same or different programs.\n\n## References\n[1] Epguides.com – http://www.epguides.com/\n[2] Epguides - Wikipedia – https://en.wikipedia.org/wiki/Epguides\n[3] TVmaze.com – https://www.tvmaze.com/",
+      "duration_a_seconds": 4.5,
+      "duration_b_seconds": 12.6,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A incorrectly identifies the external databases as IMDb and TheTVDB, failing the core entity requirement (should be TVmaze and TV.com). Agent B correctly identifies TVmaze but incorrectly substitutes TheTVDB for TV.com, so B partially fails Deep Logic but is closer to the ground truth than A.\n\nNext, Width/Completeness: Both agents fail to list the full set of required country-specific listings (US, UK, CA, AU, NZ, JP, KR). Both only list four countries (US, UK, CA, AU). Agent A further adds incorrect European countries (DE, FR, IT, ES), introducing additional hallucinations. Neither mentions TV.com as the corrections site (B misidentifies it as TheTVDB), and neither fully explains corrections directed specifically to TVmaze or TV.com as required.\n\nFinally, User Experience & Presentation: Both are clearly structured and readable. However, Agent B is cleaner, more focused, and avoids introducing extra incorrect country listings. While still flawed, B is factually closer to the ground truth and more aligned with the expected entity (TVmaze).\n\nTherefore, Agent B is better, but not by a wide margin due to shared factual gaps.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'TV API'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com",
+        "TV API"
+      ],
+      "question": "A long-running online TV episode guide links each episode title to a third-party television database that offers a free public REST API for accessing show, episode, cast, crew, and schedule data in JSON format. Identify this API and provide a comprehensive overview of its architecture and usage. Your answer must: (1) compare the regular show search endpoint with the single-search endpoint, including their fuzzy matching behavior and use cases; (2) distinguish between the country-based schedule endpoint, the web/streaming schedule endpoint, and the full schedule endpoint, including differences in scope and caching; (3) explain how embedding related resources works under its hypermedia design principles; (4) summarize its rate limiting and caching policies; and (5) state its licensing model and any enterprise-level offering. Do not reference any specific episode guide website in your response.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Correct comparison of /search/shows vs /singlesearch/shows including fuzziness levels (2 vs 1) and result behavior (multiple vs single result)",
+        "Explanation of schedule endpoint with country/date parameters and exclusion of global web channels",
+        "Explanation of web/streaming schedule endpoint including handling of local vs global web channels",
+        "Description of full schedule endpoint including large payload and 24-hour caching",
+        "Accurate description of embedding via HAL/HATEOAS and use of embed query parameter (including multiple embeds)",
+        "Statement of 60-minute general caching policy",
+        "Statement of rate limiting policy (at least 20 calls per 10 seconds per IP and HTTP 429 handling)",
+        "Correct identification of CC BY-SA licensing and mention of enterprise API option"
+      ],
+      "checklist_depth": [
+        "TVmaze REST API correctly identified as the television database API linked from episode guides for expanded show and episode data",
+        "Logical connection that the API provides show, episode, cast, crew, people, and schedule endpoints consistent with a TV episode database"
+      ],
+      "rationale": "The question uses the contextual clue of an episode guide linking to a third-party TV database (Deep logic) to indirectly identify the TVmaze API without naming it. It then requires aggregating technical details scattered across multiple sections of the API documentation—search behavior, scheduling variations, embedding mechanics, caching, rate limits, licensing, and enterprise options (Wide scope). Answering fully demands synthesizing information from across the API’s publicly documented features rather than relying on a single endpoint description.",
+      "source_nodes": [
+        "TV API | TVmaze - Add TV information to your website or app.",
+        "TomSouthwell | TVmaze",
+        "CostaDax | TVmaze"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: We provide a free, fast and clean REST API that's easy to use, returns JSON and conforms to the HATEOAS and HAL principles. The root url is https://api.tvmaze.com and the avai",
+      "judge_max_limit": 350,
+      "answer_a": "The API is the TVmaze REST API, which exposes TV show, episode, cast/crew, and schedule data in JSON. It is organized around simple resource URLs (e.g., `/shows`, `/episodes`, `/people`) and uses standard HTTP verbs and status codes.[1]\n\n1. **Search vs. Single-Search**  \n   - `/search/shows?q=` returns an array of results with a `score` and `show` object for each match, using fuzzy matching on titles; it’s suited for building search UIs and showing multiple candidates.[1]  \n   - `/singlesearch/shows?q=` returns only the best fuzzy match (single `show` object), optionally with `?embed=` parameters; it’s meant for quickly resolving one canonical show from user input (e.g., “office us”).[1]\n\n2. **Schedule Endpoints**  \n   - **Country-based schedule**: `/schedule?country=&date=` lists episodes airing on a given calendar date on broadcast/cable in that country; heavily cached because content changes daily.[1]  \n   - **Web/streaming schedule**: `/schedule/web?country=&date=` covers web/streaming premieres only; narrower scope, similar daily cadence and caching.[1]  \n   - **Full schedule**: `/schedule/full` returns all upcoming episodes for all shows, much larger and more expensive; the docs recommend strong client-side caching and sparing use.[1]\n\n3. **Embedding & Hypermedia**  \n   The API supports embedding related resources via `?embed=` or `?embed[]=` (e.g., `?embed=episodes&embed=cast`), nesting those resources directly in the JSON. This follows hypermedia principles by allowing clients to traverse relationships (show → episodes, cast, crew, images, seasons) in one request instead of multiple round trips.[1]\n\n4. **Rate Limiting & Caching**  \n   Anonymous use is limited (documented soft limit ~20 requests every 10 seconds), with higher and more stable limits for registered users; responses are cacheable and designed for client/proxy caching, especially schedule and full-show data.[1][2]\n\n5. **Licensing & Enterprise**  \n   TVmaze provides the API free for non-commercial and light commercial use under its own terms, with attribution required. For large-scale, commercial, or SLA-backed usage, it offers paid “enterprise” / commercial licensing and bulk data access.[2]\n\n## References\n[1] https://www.tvmaze.com/api  \n[2] https://www.tvmaze.com/enterprise",
+      "answer_b": "The API is the **TVmaze API**, a free public REST API providing show, episode, cast, crew, and schedule data in JSON format [1][2].\n\n## 1. Show Search Endpoints\n\nThe **regular search endpoint** (`/search/shows?q=`) returns multiple results ranked by relevance, using fuzzy matching to tolerate typos and partial queries. It is ideal when users want to browse several possible matches [1]. The **single search endpoint** (`/singlesearch/shows?q=`) returns only the single best-matching result, also using fuzzy matching but optimized for programmatic lookups where exactly one result is needed. If no confident match exists, it returns a 404 rather than a list [1][2].\n\n## 2. Schedule Endpoints\n\nThe **country-based schedule endpoint** (`/schedule?country=&date=`) returns broadcast TV episodes airing in a specific country on a given date, covering traditional networks [1]. The **web/streaming schedule endpoint** (`/schedule/web?date=`) covers streaming and web-based releases, filling a gap left by the broadcast-only endpoint [1][2]. The **full schedule endpoint** (`/schedule/full`) returns every future episode across all shows in a single response, designed for bulk ingestion. This endpoint is heavily cached and updated less frequently, making it suitable for periodic syncing rather than real-time queries [1].\n\n## 3. Hypermedia Design and Embedding\n\nTVmaze follows HAL hypermedia principles, including `_links` in responses to related resources. Rather than requiring separate requests, users can append `?embed=` parameters (e.g., `?embed=episodes` or `?embed=cast`) to embed related resources directly within the response, reducing API calls [1][2].\n\n## 4. Rate Limiting and Caching\n\nThe free tier enforces a rate limit of approximately 20 calls per 10 seconds per IP address. Responses include standard HTTP caching headers, and clients are encouraged to respect `Cache-Control` values. Heavy endpoints like the full schedule are cached more aggressively server-side [1][2].\n\n## 5. Licensing and Enterprise Offering\n\nThe API is free for non-commercial and limited commercial use under TVmaze's terms. For higher-volume or enterprise needs, TVmaze offers a **premium tier** providing increased rate limits, additional endpoints, and priority support [1][2].\n\n## References\n[1] TVmaze API Documentation – https://www.tvmaze.com/api\n[2] TVmaze API Overview – https://api.tvmaze.com/",
+      "duration_a_seconds": 5.4,
+      "duration_b_seconds": 16.1,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identify the TVmaze REST API (passes DEEP logic) and logically connect it to show, episode, cast, crew, and schedule endpoints. However, both miss several required checklist specifics: neither mentions the fuzzy matching levels (2 vs 1), the 60-minute general caching policy, the 24-hour caching of /schedule/full, or the CC BY-SA license explicitly. Agent A additionally states the API is under TVmaze’s “own terms,” which is inaccurate (it is CC BY-SA), making this a factual error rather than just an omission. Agent B, while also omitting CC BY-SA and some caching details, avoids introducing incorrect claims and adds a useful detail about 404 behavior for /singlesearch. In formatting and structure, both are clear and well-organized, but B is slightly more precise in endpoint behavior explanations. Therefore, B is more accurate overall, and A loses primarily due to WIDE detail failures and a licensing inaccuracy.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_gpt51se_vs_claudeopu_882"
+}

@@ -1,0 +1,219 @@
+{
+  "id": "R3_gemini-2.5-pro-grounding_vs_gpt-5.4-search_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_gemini-2.5-pro-grounding_vs_gpt-5.4-search_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "gpt-5.4-search",
+  "winner": "gpt-5.4-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "Within the broad category of computer and information technology occupations in the United States, identify all occupations that (1) typically require a bachelor’s degree for entry and (2) had a 2024 median annual wage higher than the overall median wage for this occupational group (which was $105,990). For each qualifying occupation, provide its official occupation title, a brief summary of its primary job duties, and its 2024 median annual pay.",
+    "Identify the group of technology occupations that focus on creating computer applications and programs as well as evaluating them for defects, typically require a bachelor’s degree for entry, do not require prior related work experience or on-the-job training, and are projected to grow much faster than average from 2024 to 2034. For each distinct role within this group, provide: (1) the 2024 median annual pay, (2) the typical entry-level education requirement, (3) whether prior related work experience or on-the-job training is required, (4) the total number of jobs in 2024, (5) the projected percentage employment growth from 2024 to 2034, and (6) the average number of projected annual openings over the decade. Additionally, summarize their primary job duties and typical work environments.",
+    "Identify the U.S. occupations that (1) primarily design and build computer applications or programs and (2) primarily identify problems in those applications and report defects before release. For this combined occupational group, provide the following: the 2024 median annual pay for each role, the typical entry-level education required, the total number of jobs in 2024, the projected employment growth rate for 2024–2034, the projected numeric employment change over that decade, and the average number of annual openings expected each year. Present the data clearly and attribute each figure to the correct role where applicable."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 281867,
+  "estimated_cost": 2.8187,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Within the broad category of computer and information technology occupations in the United States, identify all occupations that (1) typically require a bachelor’s degree for entry and (2) had a 2024 median annual wage higher than the overall median wage for this occupational group (which was $105,990). For each qualifying occupation, provide its official occupation title, a brief summary of its primary job duties, and its 2024 median annual pay.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Computer Network Architects – brief job summary included",
+        "Computer Network Architects – 2024 median pay of $130,390",
+        "Database Administrators and Architects – brief job summary included",
+        "Database Administrators and Architects – 2024 median pay of $123,100",
+        "Information Security Analysts – brief job summary included",
+        "Information Security Analysts – 2024 median pay of $124,910",
+        "Software Developers, Quality Assurance Analysts, and Testers – brief job summary included",
+        "Software Developers, Quality Assurance Analysts, and Testers – 2024 median pay of $131,450"
+      ],
+      "checklist_depth": [
+        "Computer Network Architects – requires bachelor’s degree and median pay exceeds $105,990 group median",
+        "Database Administrators and Architects – requires bachelor’s degree and median pay exceeds $105,990 group median",
+        "Information Security Analysts – requires bachelor’s degree and median pay exceeds $105,990 group median",
+        "Software Developers, Quality Assurance Analysts, and Testers – requires bachelor’s degree and median pay exceeds $105,990 group median"
+      ],
+      "rationale": "The question uses logical filtering (Deep) by requiring identification of occupations within a broader technology category that simultaneously meet two criteria: a specific education level and a wage threshold relative to the group median. This forces the agent to interpret comparative wage data and entry-level education requirements. It then requires aggregation (Wide) by asking for job summaries and median wages for every qualifying occupation, ensuring the responder compiles details across multiple distinct occupation profiles rather than relying on a single source entry.",
+      "source_nodes": [
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Occupational Outlook Handbook > Computer and Information Technology > Computer and Information Technology Occupations PRINTER-FRIENDLY These workers create or support computer",
+      "judge_max_limit": 300,
+      "answer_a": "Based on May 2023 data from the U.S. Bureau of Labor Statistics, several occupations within the computer and information technology sector require a bachelor’s degree and have a median pay higher than the group's median of $105,990 [1].\n\n*   **Computer and Information Systems Managers:** These professionals, often called IT managers, plan, coordinate, and direct all computer-related activities within an organization. They are crucial for implementing and maintaining a company's technological goals.\n    *   **Median Annual Pay:** $174,740 [2]\n\n*   **Software Developers:** They are the creative minds behind computer programs and applications. Their duties involve designing, developing, and testing software and systems to meet user needs. This category also includes quality assurance analysts and testers.\n    *   **Median Annual Pay:** $137,920 [3]\n\n*   **Computer Network Architects:** These individuals design and build data communication networks, including local area networks (LANs), wide area networks (WANs), and intranets. Their work ensures that company networks can support business operations.\n    *   **Median Annual Pay:** $132,040 [4]\n\n*   **Information Security Analysts:** Tasked with protecting an organization's computer networks and systems, they plan and carry out security measures, monitor for breaches, and investigate violations when they occur.\n    *   **Median Annual Pay:** $124,740 [5]\n\n*   **Database Administrators and Architects:** These professionals use specialized software to store, organize, manage, and secure data such as customer information and financial records. They ensure data integrity and availability.\n    *   **Median Annual Pay:** $120,430 [6]\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024, April 9). *Occupational Employment and Wages Summary - Computer and Information Technology Occupations*. Occupational Employment and Wage Statistics. Retrieved from https://www.bls.gov/oes/current/oes_15-1200.htm\n[2] U.S. Bureau of Labor Statistics. (2024, September 4). *Occupational Outlook Handbook, Computer and Information Systems Managers*. Retrieved from https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm\n[3] U.S. Bureau of Labor Statistics. (2024, September 4). *Occupational Outlook Handbook, Software Developers, Quality Assurance Analysts, and Testers*. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm\n[4] U.S. Bureau of Labor Statistics. (2024, September 4). *Occupational Outlook Handbook, Computer Network Architects*. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm\n[5] U.S. Bureau of Labor Statistics. (2024, September 4). *Occupational Outlook Handbook, Information Security Analysts*. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm\n[6] U.S. Bureau of Labor Statistics. (2024, September 4). *Occupational Outlook Handbook, Database Administrators and Architects*. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/database-administrators-and-architects.htm",
+      "answer_b": "Qualifying computer and information technology occupations that both typically require a bachelor’s degree for entry and exceeded the 2024 occupational-group median annual wage of $105,990 are:[1]\n\n- **Computer and Information Research Scientists** — Conduct research to solve complex computing problems; invent and improve computing technologies; and develop new uses for hardware and software.[2] **Median annual pay (2024): $149,550**.[2]  \n- **Computer Network Architects** — Design and build data communication networks, including local area networks, wide area networks, and cloud infrastructure; assess organizational networking needs and plan upgrades.[3] **Median annual pay (2024): $135,800**.[3]  \n- **Computer Programmers** — Write, modify, and test code and scripts that allow software applications and systems to function properly; maintain and debug existing programs.[4] **Median annual pay (2024): $103,490** — this does **not** exceed the group median, so it is excluded.[4]  \n- **Software Developers** — Research, design, build, and test computer and network software or specialized utility programs; analyze user needs and recommend software solutions.[5] **Median annual pay (2024): $133,080**.[5]  \n- **Information Security Analysts** — Plan and carry out security measures to protect computer systems and networks; monitor for breaches, assess vulnerabilities, and recommend safeguards.[6] **Median annual pay (2024): $124,910**.[6]\n\nThus, the occupations meeting both criteria are **Computer and Information Research Scientists, Computer Network Architects, Software Developers, and Information Security Analysts**.[1][2][3][5][6]\n\n## References\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer and Information Technology Occupations,” showing overall median annual wage of $105,990 and typical entry-level education. https://www.bls.gov/ooh/computer-and-information-technology/home.htm  \n[2] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer and Information Research Scientists.” https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm  \n[3] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer Network Architects.” https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm  \n[4] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer Programmers.” https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm  \n[5] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Software Developers.” https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm  \n[6] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Information Security Analysts.” https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm",
+      "duration_a_seconds": 29.3,
+      "duration_b_seconds": 9.8,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Both agents fail. The correct qualifying occupations (per checklist) are: Computer Network Architects; Database Administrators and Architects; Information Security Analysts; and Software Developers, Quality Assurance Analysts, and Testers (with specific 2024 median wages). Agent A includes an incorrect occupation (Computer and Information Systems Managers), uses May 2023 data instead of 2024 medians, and provides incorrect wage figures. Agent B omits Database Administrators and Architects entirely and instead includes Computer and Information Research Scientists (not on the checklist), with multiple incorrect 2024 wage values. \n\nSecond, Width/Completeness: Agent A at least mentions Database Administrators and Architects and all four core categories conceptually, but uses wrong wage figures and incorrect year. Agent B completely misses one required occupation and provides incorrect wage data for others. Both therefore fail the WIDTH checklist significantly.\n\nFinally, Presentation & UX: Both are well-formatted, scannable, and clearly structured with citations. However, since both contain major factual inaccuracies (wrong entities and wrong median pay values), accuracy failures outweigh formatting strengths.\n\nBecause both responses substantially fail the Deep Logic and Wide detail requirements, this is a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Identify the group of technology occupations that focus on creating computer applications and programs as well as evaluating them for defects, typically require a bachelor’s degree for entry, do not require prior related work experience or on-the-job training, and are projected to grow much faster than average from 2024 to 2034. For each distinct role within this group, provide: (1) the 2024 median annual pay, (2) the typical entry-level education requirement, (3) whether prior related work experience or on-the-job training is required, (4) the total number of jobs in 2024, (5) the projected percentage employment growth from 2024 to 2034, and (6) the average number of projected annual openings over the decade. Additionally, summarize their primary job duties and typical work environments.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "2024 median annual wage for Software Developers ($133,080)",
+        "2024 median annual wage for Software Quality Assurance Analysts and Testers ($102,610)",
+        "Typical entry-level education: Bachelor's degree (for the group)",
+        "Work experience in a related occupation: None",
+        "On-the-job training: None",
+        "Number of jobs in 2024: 1,895,500",
+        "Projected growth 2024–2034: 15%",
+        "Projected annual openings: about 129,200 per year",
+        "Primary duties: developers design applications/programs; QA analysts and testers identify problems and report defects",
+        "Typical work environment: computer systems design, manufacturing, software publishers; office settings; team-based work"
+      ],
+      "checklist_depth": [
+        "Software Developers + Identified as the occupation that designs computer applications/programs within the defined high-growth tech group",
+        "Software Quality Assurance Analysts and Testers + Identified as the occupation that tests applications/programs for defects within the same defined group"
+      ],
+      "rationale": "The question uses logical filters—job duties (designing vs. testing software), education requirements, lack of prior experience, and specific growth projections—to indirectly identify the correct occupations without naming them (Deep). It then requires aggregating multiple data points (pay, education, training, employment numbers, growth rate, openings, duties, and work environment) across all roles in the group (Wide), ensuring comprehensive retrieval rather than a single fact lookup.",
+      "source_nodes": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=_WQ_VV4pXPc. Quick Facts: Software Developers, Quality Assur",
+      "judge_max_limit": 280,
+      "answer_a": "The group of technology occupations that designs, creates, and tests computer applications is **Software Developers, Quality Assurance Analysts, and Testers** [1].\n\nSoftware developers are the creative force behind programs and applications, responsible for designing, building, and maintaining software tailored to user requirements. In contrast, quality assurance (QA) analysts and testers methodically evaluate software for defects. They create and execute test plans to identify bugs and ensure the program functions correctly before its public release. Both roles collaborate extensively to produce high-quality software products. Their typical work environment is an office setting within industries such as computer systems design, software publishing, finance, and insurance. Many professionals in this group work full-time, and flexible schedules with remote or hybrid options are common [1].\n\nThe median annual pay for this group was $132,270 as of May 2023. Entry into the field typically requires a bachelor’s degree in a computer-related discipline, with no prior work experience or on-the-job training necessary for entry-level positions. In 2022, there were 1,833,300 jobs. Employment is projected to grow 26% from 2022 to 2032, a rate considered much faster than the average for all occupations. This growth is anticipated to generate an average of 153,900 job openings each year throughout the decade [1].\n\n## References\n\n[1] U.S. Bureau of Labor Statistics. (2024, April 17). *Software Developers, Quality Assurance Analysts, and Testers*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "answer_b": "The group is **Software Developers, Quality Assurance Analysts, and Testers** in the U.S. Bureau of Labor Statistics Occupational Outlook Handbook, a category centered on building software applications/programs and testing them for defects. It typically requires a **bachelor’s degree**, with **no prior related work experience** and **no on-the-job training**, and is projected to grow **much faster than average** from **2024–2034** [1].\n\n**Software developers**: **$133,080** median annual pay (2024); **bachelor’s degree**; **none** for related work experience and on-the-job training; **1,847,900** jobs in 2024; **17%** projected growth, adding strong demand; **140,100** average annual openings [1]. They design and create computer applications or systems software, analyze user needs, develop upgrades, and collaborate with programmers and other specialists. They commonly work in computer systems design, software publishing, and finance/insurance, usually in offices or remote settings [1].\n\n**Quality assurance analysts and testers**: **$102,610** median annual pay (2024); **bachelor’s degree**; **none** for related work experience and on-the-job training; **209,800** jobs in 2024; **17%** projected growth; **12,300** average annual openings [1]. They develop and execute tests, identify bugs and performance issues, document results, and help ensure software meets quality standards before release. They often work on software teams in office-based or remote environments across technology, finance, and related industries [1].\n\n## References\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Software Developers, Quality Assurance Analysts, and Testers.” https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "duration_a_seconds": 29.6,
+      "duration_b_seconds": 8.1,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the core entity (Software Developers, Quality Assurance Analysts, and Testers), so both pass the DEEP logic check. However, Agent A fails the WIDE completeness test significantly: it uses outdated 2022–2032 projections, incorrect job counts, incorrect growth rates, incorrect annual openings, and an outdated median wage figure—missing the required 2024–2034 data. Agent B provides the correct 2024 median wages and correctly states education, experience, and job duties, but its growth rate, job totals, and annual openings figures do not match the ground truth. Despite these inaccuracies, Agent B is substantially closer to the required dataset and provides clearer role-by-role breakdowns in a structured, scannable format. Therefore, B offers a better user experience, though not perfect—so the verdict is B_BETTER (not MUCH_BETTER due to factual errors).",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Identify the U.S. occupations that (1) primarily design and build computer applications or programs and (2) primarily identify problems in those applications and report defects before release. For this combined occupational group, provide the following: the 2024 median annual pay for each role, the typical entry-level education required, the total number of jobs in 2024, the projected employment growth rate for 2024–2034, the projected numeric employment change over that decade, and the average number of annual openings expected each year. Present the data clearly and attribute each figure to the correct role where applicable.",
+      "word_limit_instruction": "Answer length: 210-310 words.",
+      "checklist_width": [
+        "2024 median annual pay for the occupation that designs computer applications or programs ($133,080)",
+        "2024 median annual pay for the occupation that identifies problems and reports defects in applications ($102,610)",
+        "Typical entry-level education for these occupations (Bachelor’s degree)",
+        "Total number of jobs in 2024 (1,895,500)",
+        "Projected growth rate for 2024–2034 (15%)",
+        "Projected employment change from 2024 to 2034 (287,900)",
+        "Average annual openings projected each year over the decade (129,200)"
+      ],
+      "checklist_depth": [
+        "Software Developers + Identified as the occupation that designs and builds computer applications or programs",
+        "Software Quality Assurance Analysts and Testers + Identified as the occupation that tests applications, identifies problems, and reports defects"
+      ],
+      "rationale": "The question uses functional descriptions (designing applications; identifying and reporting software defects) to indirectly reference the two specific occupations, requiring logical identification (Deep). It then asks for multiple labor market statistics—pay for each role, education, employment levels, growth rate, employment change, and annual openings—forcing broad aggregation of scattered occupational data (Wide).",
+      "source_nodes": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=_WQ_VV4pXPc. Quick Facts: Software Developers, Quality Assur",
+      "judge_max_limit": 310,
+      "answer_a": "The U.S. Bureau of Labor Statistics (BLS) combines the roles that design applications and those that test them into a single occupational group: **Software Developers, Quality Assurance Analysts, and Testers** [1]. Software developers are responsible for designing, developing, and building computer applications and programs. Quality assurance analysts and testers focus on identifying problems, reporting defects, and ensuring software quality before its release [1].\n\nWhile the BLS provides data for this group as a whole, it does not offer separate figures for each distinct role. The combined data for the group is as follows:\n\n*   **Median Annual Pay:** The median annual wage for software developers, quality assurance analysts, and testers was $132,270 as of May 2023 [1].\n*   **Typical Entry-Level Education:** A bachelor’s degree in computer science or a related field is the typical requirement for entry-level positions [1].\n*   **Total Number of Jobs:** There were 1,833,300 jobs in this occupation in 2022 [1].\n*   **Projected Employment Growth (2022–2032):** Employment is projected to grow 26 percent from 2022 to 2032, a rate considered much faster than the average for all occupations [1].\n*   **Projected Numeric Change (2022–2032):** This growth translates to a projected increase of 471,000 jobs over the decade [1].\n*   **Average Annual Openings:** An average of 153,900 openings for this occupational group are projected each year from 2022 to 2032. These openings are expected to result from both employment growth and the need to replace workers who transfer to different occupations or exit the labor force [1].\n\n## References\n\n[1] U.S. Bureau of Labor Statistics. (2024, April 17). *Software Developers, Quality Assurance Analysts, and Testers*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "answer_b": "The relevant combined U.S. occupational group is **Software Developers, Quality Assurance Analysts, and Testers**. Within it, the role that primarily **designs and builds computer applications or programs** is **software developers**, while the role that primarily **identifies problems and reports defects before release** is **quality assurance analysts and testers** [1].\n\n**Software developers:** 2024 median annual pay **$133,080**; typical entry-level education **bachelor’s degree**; **1,847,900** jobs in 2024; projected employment growth **17%** from 2024 to 2034; projected numeric employment change **+303,700**; and **140,100** average annual openings over the decade [1]. Their core work is creating applications or systems software, analyzing user needs, designing solutions, and updating or improving existing programs [1].\n\n**Quality assurance analysts and testers:** 2024 median annual pay **$102,610**; typical entry-level education **bachelor’s degree**; **209,800** jobs in 2024; projected employment growth **17%** from 2024 to 2034; projected numeric employment change **+35,400**; and **12,300** average annual openings each year over the decade [1]. Their primary work is testing software, finding bugs or performance issues, documenting results, and helping ensure products meet quality standards before release [1].\n\nThese two roles are reported together by the U.S. Bureau of Labor Statistics because they are closely linked in the software development lifecycle, but the figures above are attributed to the distinct roles where BLS provides separate estimates [1]. The occupation page also notes that this broader group typically requires a bachelor’s degree for entry and is projected to grow much faster than average [1].\n\n## References\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Software Developers, Quality Assurance Analysts, and Testers.” https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "duration_a_seconds": 20.2,
+      "duration_b_seconds": 7.7,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "First, Deep Logic: Both agents correctly identified the relevant occupational group (Software Developers, Quality Assurance Analysts, and Testers) and correctly mapped developers to designing/building applications and QA analysts/testers to identifying defects. Both pass the core entity check.\n\nWidth/Completeness: Agent A fails significantly. It provides outdated data (2022–2023 figures), uses the wrong projection window (2022–2032 instead of 2024–2034), and does not supply the required 2024-specific figures. Nearly all quantitative details conflict with the ground truth checklist. Agent B, while not perfectly aligned with the checklist (growth rate, total jobs, projected change, and annual openings differ), correctly provides the 2024 median pay for each distinct role ($133,080 and $102,610) and clearly attributes all requested fields separately to each role. Its structure directly answers every required sub-point.\n\nUser Experience & Presentation: Agent B is more scannable and clearly segmented by role, making it easy to attribute each statistic correctly. Agent A presents only combined data and explicitly states that separate figures are unavailable, which does not fulfill the user’s request.\n\nConclusion: Although Agent B contains some numerical discrepancies relative to the checklist, it is substantially more complete, role-specific, and aligned with the 2024 framing of the query. Therefore, B is better on both completeness and user utility, while Agent A fails primarily on WIDE detail aggregation.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_gemini25_vs_gpt54se_1202"
+}

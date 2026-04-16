@@ -1,0 +1,154 @@
+{
+  "id": "R4_M0_gemini-2.5-pro-grounding_vs_ppl-sonar-pro-high_tree_0016",
+  "source_group": "round4",
+  "source_log": "round4/R4_M0_gemini-2.5-pro-grounding_vs_ppl-sonar-pro-high_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": null,
+  "tournament_round": 4,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "According to the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook (using 2024–34 projection data), identify the specific management occupation that reported a 2024 median annual wage of $171,200 and the software-focused occupation that reported a 2024 median annual wage of $131,450. For both identified roles, specify the exact 'Work Experience in a Related Occupation' requirement listed in their Quick Facts. Additionally, name the specific 'Field of Degree' profile available in the Handbook that aggregates workforce data for the academic major primarily associated with these careers.",
+    "Using the 2024–2034 projections from the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook, identify two specific occupational profiles within the Computer and Information Technology sector based on the following criteria:\n\n1.  **Profile A**: The specific management-level occupation that lists '5 years or more' of work experience in a related occupation as a typical entry requirement.\n2.  **Profile B**: The combined occupational group responsible for designing computer applications and identifying/reporting defects, which held approximately 1.89 million jobs in 2024.\n\nFor both Profile A and Profile B, provide a detailed comparison including:\n*   The specific **2024 Median Annual Pay**.\n*   The **Job Outlook (Projected Growth Rate)** percentage for 2024–2034.\n*   The projected numerical **Employment Change** (number of new jobs added) for the 2024–2034 period.\n*   The typical **Entry-Level Education** required."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 203692,
+  "estimated_cost": 2.0369,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook (using 2024–34 projection data), identify the specific management occupation that reported a 2024 median annual wage of $171,200 and the software-focused occupation that reported a 2024 median annual wage of $131,450. For both identified roles, specify the exact 'Work Experience in a Related Occupation' requirement listed in their Quick Facts. Additionally, name the specific 'Field of Degree' profile available in the Handbook that aggregates workforce data for the academic major primarily associated with these careers.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Work Experience for Management Role: 5 years or more",
+        "Work Experience for Software Role: None",
+        "Field of Degree Profile Name: Computer and information technology"
+      ],
+      "checklist_depth": [
+        "Management Entity: Computer and Information Systems Managers (Identified via $171,200 pay)",
+        "Software Entity: Software Developers, Quality Assurance Analysts, and Testers (Identified via $131,450 pay)",
+        "Field of Degree Logic: Matches the 'Computer and information technology' major/field linked to these roles"
+      ],
+      "rationale": "The question uses specific, unique numerical identifiers (2024 median wages) to mask the target entities, forcing the agent to perform 'Deep' reasoning to identify the correct OOH profiles. It then requires 'Wide' information aggregation by demanding specific attributes (Work Experience) from two separate occupation pages and linking them to a third distinct page (Field of Degree) based on the shared subject matter.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "According to the U.S. Bureau of Labor Statistics' (BLS) Occupational Outlook Handbook, the management occupation with a median annual wage of $171,200 is **Computer and Information Systems Managers** [1]. The \"Work Experience in a Related Occupation\" requirement specified in the Quick Facts for this role is “5 years or more” [1]. This position involves planning, coordinating, and directing computer-related activities within an organization. Responsibilities include determining the information technology goals of an organization and are responsible for implementing computer systems to meet those goals.\n\nThe software-focused occupation with a median annual wage of $131,450 is **Software Developers, Quality Assurance Analysts, and Testers** [2]. For this role, the listed \"Work Experience in a Related Occupation\" requirement is “None” [2]. These professionals are the creative minds behind computer programs and applications. Software developers design, create, and modify general computer applications software or specialized utility programs, while quality assurance analysts and testers identify problems with applications and report defects.\n\nFor both of these professions, the primary academic path involves degrees such as computer science or information systems. The BLS aggregates workforce data for these majors in a specific profile within its \"Field of Degree\" section. The name of this profile is **Computer and information sciences** [3]. This resource provides detailed statistics, including a list of occupations commonly held by graduates with degrees in this field, along with their associated wage and employment projection data.\n\n## References\n\n1.  U.S. Bureau of Labor Statistics. (2024, April 17). *Computer and Information Systems Managers*. Occupational Outlook Handbook. Retrieved from [https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm](https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm)\n2.  U.S. Bureau of Labor Statistics. (2024, April 17). *Software Developers, Quality Assurance Analysts, and Testers*. Occupational Outlook Handbook. Retrieved from [https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm)\n3.  U.S. Bureau of Labor Statistics. (2024, April 17). *Computer and information sciences*. Field of Degree, Occupational Outlook Handbook. Retrieved from [https://www.bls.gov/ooh/field-of-degree/computer-and-information-sciences/computer-and-information-sciences-field-of-degree.htm](https://www.bls.gov/ooh/field-of-degree/computer-and-information-sciences/computer-and-information-sciences-field-of-degree.htm)",
+      "answer_b": "The **management occupation** with a **2024 median annual wage of $171,200** in the Occupational Outlook Handbook is **Computer and information systems managers** (often titled “IT managers” or “information systems managers”).[5][9] In the Quick Facts for this occupation, the **“Work experience in a related occupation”** requirement is listed as **“5 years or more.”**[5]\n\nThe **software-focused occupation** with a **2024 median annual wage of $131,450** is **Software developers** (the primary OOH profile that covers software developers, often grouped with software quality assurance analysts and testers in earlier projection vintages, but listed with its own 2024–34 wage and outlook information). In that profile’s Quick Facts, the **“Work experience in a related occupation”** requirement is **“None.”**[5][9]\n\nFor the “Field of Degree” profiles, the Occupational Outlook Handbook provides major-based workforce data pages that aggregate outcomes across multiple occupations.[1][5] The specific **Field of Degree** page that aligns with the dominant academic major feeding both computer and information systems managers and software developers is **“Computer and information technology”** (sometimes titled **“Computer and information systems”** in the Field of Degree section). This profile summarizes employment, earnings, and occupational distribution for workers whose highest degree is in this computing-related field and is explicitly linked from the Employment Projections/OOH “field of degree” pages.[1][5]\n\n## References  \n[1] U.S. Bureau of Labor Statistics, Employment Projections 2024–34 summary and OOH field-of-degree pages  \n[5] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook home and linked occupation/field-of-degree profiles  \n[9] U.S. Bureau of Labor Statistics, OOH Occupation Finder and Quick Facts for detailed occupations",
+      "duration_a_seconds": 29.7,
+      "duration_b_seconds": 6.4,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the core occupations based on the provided wage data. However, Agent B followed the Ground Truth Checklist more accurately regarding the 'Field of Degree' profile name. The checklist specifies 'Computer and information technology', which Agent B provided correctly. Agent A incorrectly named it 'Computer and information sciences' (which is the CIP family name, not the specific OOH profile title). Additionally, Agent B utilized superior formatting by bolding all key constraints (wages, experience requirements, and profile names), making the response significantly more scannable and user-friendly compared to Agent A's standard paragraph format.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Using the 2024–2034 projections from the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook, identify two specific occupational profiles within the Computer and Information Technology sector based on the following criteria:\n\n1.  **Profile A**: The specific management-level occupation that lists '5 years or more' of work experience in a related occupation as a typical entry requirement.\n2.  **Profile B**: The combined occupational group responsible for designing computer applications and identifying/reporting defects, which held approximately 1.89 million jobs in 2024.\n\nFor both Profile A and Profile B, provide a detailed comparison including:\n*   The specific **2024 Median Annual Pay**.\n*   The **Job Outlook (Projected Growth Rate)** percentage for 2024–2034.\n*   The projected numerical **Employment Change** (number of new jobs added) for the 2024–2034 period.\n*   The typical **Entry-Level Education** required.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Profile A 2024 Median Pay: $171,200",
+        "Profile A Job Outlook: 15% (Much faster than average)",
+        "Profile A Employment Change: 101,600",
+        "Profile A Entry Education: Bachelor's degree (plus 5 years experience)",
+        "Profile B 2024 Median Pay: $131,450",
+        "Profile B Job Outlook: 15% (Much faster than average)",
+        "Profile B Employment Change: 287,900",
+        "Profile B Entry Education: Bachelor's degree"
+      ],
+      "checklist_depth": [
+        "Profile A Identity: Computer and Information Systems Managers (identified via '5 years or more' experience)",
+        "Profile B Identity: Software Developers, Quality Assurance Analysts, and Testers (identified via duties and ~1.89m jobs)"
+      ],
+      "rationale": "The question requires Deep logic to identify the specific occupations based on work experience requirements and job volume/duties rather than names. It requires Wide aggregation to retrieve and align four specific data points (Pay, Outlook, Change, Education) for both identified entities from the source material.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 330,
+      "answer_a": "Based on the U.S. Bureau of Labor Statistics' 2024–2034 projections, the two specified occupations within the Computer and Information Technology sector present distinct career trajectories and outlooks.\n\n**Profile A** is identified as **Computer and Information Systems Managers** [1]. This management role, which typically requires a bachelor’s degree and the stipulated five or more years of related work experience, reported a 2024 median annual pay of $171,200. The job outlook for these managers is strong, with a projected growth rate of 10% between 2024 and 2034. This \"faster than average\" growth is expected to add approximately 55,100 new jobs to the economy over the decade, reflecting the continued need for experienced leaders to direct an organization's technology strategies and implementation [1].\n\n**Profile B**, the combined group responsible for designing and testing applications that held nearly 1.89 million jobs in 2024, is **Software Developers, Quality Assurance Analysts, and Testers** [2]. While this role also typically requires a bachelor's degree for entry, it has no formal work experience requirement, making it an accessible career path directly after graduation. The 2024 median annual pay for this group was $131,450. The most significant contrast to the management role lies in its growth projection. This occupational group is forecasted to expand by an exceptional 25% from 2024 to 2034, a rate classified as \"much faster than average.\" This explosive growth translates to a projected employment change of 478,500 new jobs, highlighting the immense and ongoing demand for professionals who create and ensure the quality of software and applications [2].\n\nIn comparison, both roles typically require a bachelor’s degree, but the management path commands a higher median salary, commensurate with its requirement for extensive prior experience. Conversely, the developer and tester role offers a much higher projected growth rate and a vastly greater numerical increase in job openings.\n\n## References\n\n1.  U.S. Bureau of Labor Statistics. (2024, September 4). *Computer and Information Systems Managers*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm\n2.  U.S. Bureau of Labor Statistics. (2024, September 4). *Software Developers, Quality Assurance Analysts, and Testers*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "answer_b": "**Profile A – Management occupation**\n\n- **Occupation:** Computer and information systems managers (management-level role in the Computer and Information Technology group).[5][10]  \n- **2024 median annual pay:** **$171,200**.[5]  \n- **Job outlook, 2024–2034:** **15%** growth (classified as “Much faster than average”).[5]  \n- **Employment change, 2024–2034:** **101,600** new jobs projected.[1][5]  \n- **Typical entry-level education:** **Bachelor’s degree**.[5]  \n- **Work experience in a related occupation:** **5 years or more** (listed in Quick Facts).[5]  \n\n**Profile B – Software design and testing group**\n\n- **Occupation:** Software developers, quality assurance analysts, and testers (combined group that “design computer applications or programs” and “identify problems with applications or programs and report defects”).[1][10]  \n- **Employment level in 2024:** About **1.89 million** jobs (approximate total reported for this combined occupation in the OOH Employment section).[1]  \n- **2024 median annual pay:** **$133,080** for software developers; this median is used as the headline pay measure for the combined group in OOH “Most new jobs” and related tables.[1]  \n- **Job outlook, 2024–2034:** **25%** growth (much faster than average) for software developers, which represents the primary component of the group and is cited as the growth rate for the combined applications-design/defect-testing category.[1]  \n- **Employment change, 2024–2034:** **267,700** new jobs projected (listed for software developers and used by BLS as the projected gain for this combined occupational cluster).[1]  \n- **Typical entry-level education:** **Bachelor’s degree** in computer science, software engineering, or a related field is indicated as typical preparation in the OOH profile.[1][10]  \n\n## References  \n\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – “Most New Jobs” and software developers / QA analysts and testers profile (2024–34 projections).  \n[5] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – Computer and information systems managers, Quick Facts and projections.  \n[10] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook home and Computer and Information Technology occupational group index.",
+      "duration_a_seconds": 28.5,
+      "duration_b_seconds": 8.4,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the two occupational profiles (Computer and Information Systems Managers; Software Developers, QA Analysts, and Testers). However, Agent B is superior in two key areas:\n\n1. **Data Accuracy (Relative to Ground Truth)**: Agent B matched the Ground Truth checklist for Profile A almost perfectly (15% Outlook, 101,600 Employment Change), whereas Agent A provided significantly different numbers (10%, 55,100), likely citing an older dataset. While both struggled to match the specific Ground Truth numbers for Profile B's outlook/change (which appear to be from a specific or different slice of data than the standard OOH headline), Agent B's alignment on Profile A makes it more reliable.\n\n2. **Formatting & User Experience**: Agent B used clear bullet points and bold headers, making the comparison of salaries, outlooks, and education requirements instant and scannable. Agent A used dense narrative paragraphs, which forces the user to hunt for the specific data points requested.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_gemini25_vs_pplsonar_261"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "R1_gemini-3.1-pro-grounding_vs_ppl-sonar-pro-high_tree_0008",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_gemini-3.1-pro-grounding_vs_ppl-sonar-pro-high_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "gemini-3.1-pro-grounding",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "gemini-3.1-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Within major U.S.-focused health policy research organizations, there are separate topic hubs dedicated to (1) women’s health policy and (2) private health insurance. Drawing from publicly available materials under each of these two topic areas, identify at least three distinct subject areas covered in the women-focused section (such as types of coverage, major court decisions, or reproductive health data) and at least three distinct issue areas covered in the private insurance section (such as network adequacy, billing disputes, or Affordable Care Act–related political debates). In your response, name specific reports, data briefs, or news analysis pieces that exemplify each subject area and explain how, taken together, they illustrate the broader scope of U.S. health policy concerns addressed in these two categories."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 117658,
+  "estimated_cost": 1.1766,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Women's Health Policy"
+      ],
+      "question": "Within major U.S.-focused health policy research organizations, there are separate topic hubs dedicated to (1) women’s health policy and (2) private health insurance. Drawing from publicly available materials under each of these two topic areas, identify at least three distinct subject areas covered in the women-focused section (such as types of coverage, major court decisions, or reproductive health data) and at least three distinct issue areas covered in the private insurance section (such as network adequacy, billing disputes, or Affordable Care Act–related political debates). In your response, name specific reports, data briefs, or news analysis pieces that exemplify each subject area and explain how, taken together, they illustrate the broader scope of U.S. health policy concerns addressed in these two categories.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Discussion of women’s health insurance coverage and ACA-related impacts",
+        "Discussion of Medicaid coverage for women, including eligibility or reproductive health",
+        "Discussion of abortion policy, including the impact of the Dobbs decision or pre-Roe data",
+        "Reference to women’s health indicators (e.g., coverage, family planning, childbirth statistics)",
+        "Discussion of Medicare Advantage network complaints and limited federal enforcement",
+        "Discussion of surprise medical billing (e.g., walk-in patient or Lyme disease billing case)",
+        "Discussion of ACA-related political analysis (e.g., GOP positioning on the ACA)"
+      ],
+      "checklist_depth": [
+        "Women’s Health Insurance Coverage factsheet + correctly identified as part of a women’s health policy topic hub",
+        "Medicaid Coverage for Women data brief + correctly identified as addressing women-specific Medicaid policy",
+        "Analysis of Dobbs decision and racial disparities OR Key Facts on Abortion in the United States + correctly tied to abortion policy",
+        "Medicare Advantage network complaints report + correctly identified under private insurance topic",
+        "Surprise billing/Lyme disease case report + correctly identified under private insurance topic",
+        "Political news analysis on the ACA (e.g., GOP Circles the Wagons on ACA) + correctly identified as private insurance/ACA-focused coverage"
+      ],
+      "rationale": "The question uses a categorical filter (separate topic hubs on women’s health policy and private insurance) to mask the specific source while requiring identification of the correct materials (Deep). It then demands aggregation of multiple distinct reports and news analyses from both sections, ensuring the respondent synthesizes scattered information across issue areas such as Medicaid, abortion, Medicare Advantage, surprise billing, and ACA politics (Wide).",
+      "source_nodes": [
+        "Women's Health Policy - Research and Data from KFF",
+        "Private Insurance - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Women's Health Policy Women’s Health Insurance Coverage This factsheet reviews major sources of coverage for women residing in the U.S., discusses the ACA's impact",
+      "judge_max_limit": 300,
+      "answer_a": "At KFF, a leading U.S. health policy research organization, the Women’s Health Policy and Private Insurance hubs tackle distinct aspects of the American health care system.\n\nWithin the Women’s Health Policy hub, three prominent subject areas include:\n1. **Reproductive Rights and Court Decisions:** Navigating the post-*Roe* landscape is heavily tracked through briefs like \"The Availability and Use of Medication Abortion,\" which analyzes abortion access and efficacy under evolving state legal restrictions [1].\n2. **Maternal Health Outcomes:** Reports such as \"Racial Disparities in Maternal and Infant Health\" examine coverage gaps and systemic inequities driving disproportionately high U.S. maternal mortality rates for women of color [2].\n3. **Preventive Services:** \"Employer Coverage of Contraceptives\" investigates compliance, out-of-pocket costs, and continuous legal challenges surrounding the Affordable Care Act's preventive service mandates for birth control [3].\n\nThe Private Insurance hub focuses on market regulations and consumer protections, emphasizing:\n1. **Billing Disputes:** The brief \"Implementation of the No Surprises Act\" evaluates federal regulatory efforts to shield patients from unexpected out-of-network emergency medical bills and tracks arbitration dispute volumes [4].\n2. **Network Adequacy:** Reports like \"Mental Health Parity and Network Adequacy\" analyze how narrow insurer networks limit patient access to psychiatric and substance use disorder treatments [5].\n3. **ACA Market Stabilization:** Briefs such as \"ACA Marketplace Premiums and Plan Choices\" detail annual premium fluctuations, the impact of advanced premium tax credits, and shifts in carrier competition [6].\n\nTogether, these publications illustrate the dual nature of U.S. health policy concerns. The women’s health publications highlight the intersection of clinical care, civil rights, and demographic disparities, while private insurance reports underscore administrative struggles with consumer cost-sharing, affordability, and corporate accountability. Ultimately, they reveal a fragmented system requiring both robust market regulations and targeted interventions to protect vulnerable populations.\n\n## References\n\n[1] Kaiser Family Foundation (KFF). \"The Availability and Use of Medication Abortion.\" Women's Health Policy, Feb. 2024. Available: https://www.kff.org/womens-health-policy/fact-sheet/the-availability-and-use-of-medication-abortion/\n[2] Kaiser Family Foundation (KFF). \"Racial Disparities in Maternal and Infant Health: An Overview.\" Women's Health Policy, Nov. 2020. Available: https://www.kff.org/report-section/racial-disparities-in-maternal-and-infant-health-an-overview-issue-brief/\n[3] Kaiser Family Foundation (KFF). \"Employer Coverage of Contraceptives.\" Women's Health Policy, 2022. Available: https://www.kff.org/womens-health-policy/fact-sheet/employer-coverage-of-contraceptives/\n[4] Kaiser Family Foundation (KFF). \"Implementation of the No Surprises Act.\" Private Insurance, April 2023. Available: https://www.kff.org/private-insurance/issue-brief/implementation-of-the-no-surprises-act/\n[5] Kaiser Family Foundation (KFF). \"Mental Health Parity and Network Adequacy in Private Insurance.\" Private Insurance, 2024. Available: https://www.kff.org/private-insurance/issue-brief/mental-health-and-substance-use-network-adequacy-examining-the-impacts-of-new-standards/\n[6] Kaiser Family Foundation (KFF). \"ACA Marketplace Premiums and Plan Choices.\" Private Insurance, Oct. 2023. Available: https://www.kff.org/affordable-care-act/issue-brief/aca-marketplace-premiums-and-plan-choices/",
+      "answer_b": "Major U.S. health policy research organizations like KFF (Kaiser Family Foundation) maintain dedicated hubs on **women’s health policy** and **private health insurance**, addressing interconnected yet distinct concerns.\n\nIn the **women’s health policy** section, three distinct subject areas include:\n\n- **Reproductive health and abortion access**: KFF's brief \"Abortion in the U.S.\" analyzes state efforts to counter federal Medicaid restrictions on Planned Parenthood under the 2025 budget reconciliation law[8].\n- **Public financing for family planning**: The brief \"Major Sources of Public Financing for Family Planning Care\" details policies funding services for low-income women amid rising uninsured rates[8].\n- **Reproductive health safety net impacts**: \"Medina v. Planned Parenthood\" analysis examines court decisions and Title X fund withholding effects on uninsured access[8].\n\nIn the **private health insurance** section (drawing from KFF's broader health insurance hub, overlapping with women's topics), three distinct issue areas include:\n\n- **Affordable Care Act (ACA)–related debates**: Reports track political challenges to ACA marketplaces, including premium subsidies and enrollment amid policy shifts[8].\n- **Coverage for reproductive services**: Briefs assess how private plans cover family planning under ACA mandates versus state restrictions[8].\n- **Medicaid-private insurance intersections**: Analyses cover funding gaps for reproductive care providers, blending public and private insurer roles[8].\n\nTogether, these exemplify U.S. health policy's scope: women's hub emphasizes equity in reproductive access and financing amid legal battles, while private insurance focuses on market dynamics, political volatility, and coverage adequacy, highlighting how gender-specific needs intersect with insurer accountability.\n\n(Word count: 248)\n\n## References\n[1] https://www.physiology.org/career/major-initiatives/womens-health-research-initiative  \n[8] https://www.kff.org/topic/womens-health-policy/",
+      "duration_a_seconds": 22.5,
+      "duration_b_seconds": 5.1,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies KFF and clearly distinguishes between its Women’s Health Policy and Private Insurance topic hubs, citing specific, real reports under each. Agent B also names KFF but fails to meaningfully distinguish the private insurance hub from women’s health content and includes questionable or vague references (e.g., a 2025 reconciliation law and \"Medina v. Planned Parenthood\" analysis without clear grounding in KFF materials). Thus, B partially fails Deep Logic.\n\nSecond, Width/Completeness: Agent A provides three concrete subject areas for each hub, with named reports (e.g., medication abortion, maternal disparities, contraceptive coverage; No Surprises Act, network adequacy, ACA premiums). While not perfectly aligned with every checklist example (e.g., no Medicare Advantage complaint report), it substantively covers both domains. Agent B, by contrast, repeats overlapping themes, lacks clear private-insurance–specific examples (e.g., no surprise billing or Medicare Advantage discussion), and relies on minimal citation support. This is a major WIDE failure.\n\nFinally, User Experience: Agent A is well-structured, uses clear bullet points, provides six citations, and synthesizes how the topics illustrate broader U.S. health policy concerns. Agent B is thinner, less concrete, and less well-supported.\n\nTherefore, Agent A is MUCH_BETTER due to stronger accuracy, breadth, sourcing, and overall usability, while Agent B fails both in depth and coverage.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_gemini31_vs_pplsonar_1020"
+}

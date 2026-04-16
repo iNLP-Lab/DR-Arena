@@ -1,0 +1,89 @@
+{
+  "id": "R3_M0_grok-4-search_vs_gpt-5.1-search_tree_0005",
+  "source_group": "round3",
+  "source_log": "round3/R3_M0_grok-4-search_vs_gpt-5.1-search_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "grok-4-search",
+  "model_b": "gpt-5.1-search",
+  "winner": "gpt-5.1-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 3,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the organization that established a partnership to donate crawl data to the Internet Archive starting in 1996. While much of their data flows into the Wayback Machine after an embargo, investigate the specific collection designated as 'Alexa Crawls DR' originating from this entity and report its current public accessibility status."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 37552,
+  "estimated_cost": 0.3755,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that established a partnership to donate crawl data to the Internet Archive starting in 1996. While much of their data flows into the Wayback Machine after an embargo, investigate the specific collection designated as 'Alexa Crawls DR' originating from this entity and report its current public accessibility status.",
+      "word_limit_instruction": "Answer length: 100-200 words.",
+      "checklist_width": [
+        "Identifies the organization as Alexa Internet (or Alexa Crawls).",
+        "Mentions the donation relationship started in 1996.",
+        "Identifies the specific collection as 'Alexa Crawls DR' (or DR Crawl data).",
+        "States that the 'Alexa Crawls DR' data is currently not publicly accessible."
+      ],
+      "checklist_depth": [
+        "Correctly identifies Alexa Internet as the entity donating data since 1996."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific organization based on the historical context of the 1996 partnership with the Internet Archive. It then requires Wide aggregation to drill down into a specific subset of that data ('Alexa Crawls DR') to retrieve a specific, non-obvious fact about its accessibility status, rather than general information about the organization.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Import scene - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The organization that established a partnership with the Internet Archive in 1996 to donate web crawl data is Alexa Internet, a subsidiary of Amazon founded that year [1]. Alexa began systematically crawling the web and donating snapshots to the Internet Archive, with much of the data embargoed for six months before integration into the Wayback Machine, enabling historical web preservation and access [2]. This collaboration has contributed billions of archived web pages, supporting research and digital heritage efforts.\n\nThe specific collection \"Alexa Crawls DR\" refers to a subset of these donations, likely denoting a particular crawl series or dataset (with \"DR\" possibly indicating a crawl identifier or format) originating from Alexa Internet [3]. As of current records, this collection is publicly accessible through the Internet Archive's platform, allowing users to explore and download items without restrictions, though bulk access may require tools like the IA's API or researcher accounts for comprehensive data extraction [4]. Researchers often use it for web history analysis, with no reported embargoes on public viewing [3][4].\n\n## References\n[1] https://en.wikipedia.org/wiki/Alexa_Internet  \n[2] https://archive.org/about/  \n[3] https://archive.org/details/alexa_crawls  \n[4] https://blog.archive.org/2023/05/01/internet-archive-updates-crawl-data-access/",
+      "answer_b": "The organization is **Alexa Internet, Inc.**, a web‑crawling company co‑founded by Brewster Kahle that began donating its crawl data to the Internet Archive in 1996 under a formal partnership agreement.[1][2] Those crawls form a major input to the Internet Archive’s web collections and, after an embargo period, large portions feed into the public Wayback Machine.[1]\n\nWithin the Internet Archive’s collection structure, one of the datasets sourced from this partnership is labeled **“Alexa Crawls DR”** (often indexed as `alexa_crawls_dr`). This collection is currently **not publicly accessible**: it is held in the Archive’s “dark” or restricted storage and cannot be browsed or downloaded by general users, with access limited to internal or specially authorized use.[3] While derivative captures may surface in the Wayback Machine over time, the **Alexa Crawls DR collection itself remains non‑public** on archive.org as of now.[3]\n\n## References\n\n[1] Internet Archive – About / History  \n[2] Alexa Internet & Internet Archive partnership descriptions  \n[3] Internet Archive collection page for “Alexa Crawls DR” (alexa_crawls_dr)",
+      "duration_a_seconds": 24.8,
+      "duration_b_seconds": 12.4,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the organization as Alexa Internet. However, Agent A failed significantly on the specific sub-point regarding the 'Alexa Crawls DR' collection. Agent A hallucinated that the collection is publicly accessible, whereas Agent B correctly identified that this specific collection is restricted ('dark') and not accessible to the public. Agent B also used better formatting (bolding) to make the answer scannable.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_gpt51se_vs_grok4sea_183"
+}

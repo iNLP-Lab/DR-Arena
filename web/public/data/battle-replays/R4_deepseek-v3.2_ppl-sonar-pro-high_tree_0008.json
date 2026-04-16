@@ -1,0 +1,91 @@
+{
+  "id": "R4_deepseek-v3.2_ppl-sonar-pro-high_tree_0008",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_deepseek-v3.2_ppl-sonar-pro-high_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "deepseek-v3.2",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the health policy organization that conducts the 'Health Information and Trust Initiative' and reports that Medicare accounts for 12 percent of the federal budget and 21 percent of national health spending. Using their public opinion insights from October and November 2025, explain how a specific change in CDC website language regarding vaccines may contribute to public uncertainty, how election results illuminate the connection between economic and health care cost concerns, and what the support for extending enhanced ACA tax credits signifies regarding broader public sentiment."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 1522773,
+  "estimated_cost": 15.2277,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Medicare"
+      ],
+      "question": "Identify the health policy organization that conducts the 'Health Information and Trust Initiative' and reports that Medicare accounts for 12 percent of the federal budget and 21 percent of national health spending. Using their public opinion insights from October and November 2025, explain how a specific change in CDC website language regarding vaccines may contribute to public uncertainty, how election results illuminate the connection between economic and health care cost concerns, and what the support for extending enhanced ACA tax credits signifies regarding broader public sentiment.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "CDC Website Change: The language falsely asserted that a link between vaccines and autism cannot be ruled out.",
+        "CDC Impact: This change introduces ambiguity that online narratives can exploit.",
+        "Election Insight: It is becoming increasingly difficult to disentangle concerns about the economy from concerns about health care.",
+        "Election Context: Health care costs have become the most pressing health care issue for voters.",
+        "ACA Tax Credits: The debate/support for extending these credits is a proxy for broader public concerns about health care affordability."
+      ],
+      "checklist_depth": [
+        "Target Entity: KFF (Kaiser Family Foundation)",
+        "Logic Proof: The entity is identified by its specific Medicare spending statistics (12% federal budget, 21% national spending) and its management of the 'Health Information and Trust Initiative'."
+      ],
+      "rationale": "The question employs 'Deep' logic by masking the organization's name (KFF) behind its specific statistical reporting and initiative names. It enforces 'Wide' aggregation by requiring the retrieval and synthesis of three distinct analytical findings (Vaccine language, Election/Economy links, and ACA sentiment) that are scattered across different dates and topics within the source text.",
+      "source_nodes": [
+        "Medicare - Research and Data from KFF",
+        "Public Opinion - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Medicare This list of Frequently Asked Questions (FAQs) about the Medicare Open Enrollment period covers a range of topics related to enrollment, including Medicar",
+      "judge_max_limit": 300,
+      "answer_a": "The organization is the Kaiser Family Foundation (KFF) through its KFF Health Tracking Poll [1]. In October-November 2025, KFF data shows the CDC updated its vaccine guidance website, removing the phrase \"safe and effective\" and replacing it with a statement emphasizing the agency's \"confidence\" in vaccines based on science [2]. This subtle change in authoritative language, while perhaps intended to reflect nuance, may contribute to public uncertainty by deviating from a long-standing, clear, and reassuring message, potentially fueling perceptions of shifting recommendations and eroding trust [2]. The November poll, following the 2025 elections, found the economy and inflation were the top voter issues, with health care costs a major sub-concern [2]. This result illuminates how economic and health care cost anxieties are deeply connected in the public mind, as voters see high medical prices as a direct financial threat to their household budgets [2]. Furthermore, strong public support for extending the enhanced Affordable Care Act (ACA) premium tax credits—which make coverage more affordable—signifies a broader sentiment favoring federal action to address health care costs and maintain access, even amid partisan divides on other health issues [2].\n\n## References\n[1] KFF. (2025). Health Information and Trust Initiative. Retrieved from https://www.kff.org/health-information-and-trust-initiative/\n[2] KFF. (2025, November). KFF Health Tracking Poll: Health Issues in the 2025 Election. Retrieved from https://www.kff.org/report-section/kff-health-tracking-poll-november-2025-health-issues-in-the-2025-election/",
+      "answer_b": "**KFF (Kaiser Family Foundation)** conducts the Health Information and Trust Initiative and reports that Medicare accounts for 12 percent of the federal budget and 21 percent of national health spending.[1][6][7][8]\n\nKFF's October and November 2025 public opinion insights from the Health Information and Trust Tracking Poll reveal how a specific change in CDC website language—from explicit statements like \"vaccines do not cause autism\" to more neutral phrasing emphasizing \"no link found\"—contributes to public uncertainty. This shift, perceived as softening assurances, heightened doubts among 28% of adults who noticed it, amplifying vaccine hesitancy by eroding perceived scientific consensus and fueling misinformation narratives.[7]\n\nElection results in November 2025 illuminated the connection between economic and health care cost concerns, with exit polls showing 62% of voters prioritizing affordability; those citing health costs as a top issue broke 55-45 for candidates promising relief, underscoring how inflation fears intertwined with rising premiums and drug prices, driving support for cost-control policies.[7]\n\nStrong support for extending enhanced Affordable Care Act (ACA) tax credits—76% overall, including 62% of Republicans—signifies broader public sentiment favoring accessible coverage amid economic pressures. This bipartisan backing reflects frustration with uninsured rates and premium hikes, positioning ACA enhancements as a pragmatic solution linking health security to financial stability, even post-election shifts.[7]\n\n(Word count: 248)\n\n## References\n[1] https://en.wikipedia.org/wiki/Kaiser_Family_Foundation  \n[6] https://www.kff.org/series/the-monitor/  \n[7] https://www.kff.org/series/health-information-and-trust-tracking-poll/  \n[8] https://www.kff.org/topic/health-information-trust/",
+      "duration_a_seconds": 21.7,
+      "duration_b_seconds": 5.6,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "First, both agents correctly identified the entity as KFF (Deep Logic). \n\nSecond, regarding the 'Wide' checklist (specific details): The Ground Truth explicitly states the CDC website change was about the 'link between vaccines and autism' and that the new language introduced ambiguity. Agent B correctly identified the 'autism' context. Agent A failed this completely, discussing a generic change regarding 'safe and effective' language (likely hallucinating based on past real-world events). \n\nThird, regarding User Experience: Agent B followed the formatting constraints much better, using bold headers and clear spacing, whereas Agent A provided a single wall of text. Agent B also included specific statistics (e.g., 62%, 76%) that added to the information density.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_deepseekv_vs_pplsonar_654"
+}

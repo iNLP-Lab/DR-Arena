@@ -1,0 +1,156 @@
+{
+  "id": "R1_M2_gpt-5.1-search_vs_o3-search_tree_0008",
+  "source_group": "round1",
+  "source_log": "round1/R1_M2_gpt-5.1-search_vs_o3-search_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "gpt-5.1-search",
+  "model_b": "o3-search",
+  "winner": "gpt-5.1-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the health policy organization that reported on state actions to improve Medicaid and CHIP enrollment processes as of January 2025. Using data from this organization's topic overviews on 'Medicaid' and the 'Uninsured', provide a detailed statistical summary for the following populations: \n\n1. People with Disabilities & Chronic Conditions: State the percentage of people with disabilities covered by Medicaid compared to those without disabilities, the number of people with intellectual and developmental disabilities (I/DD) covered, and the prevalence of chronic conditions among working-age Medicaid adults.\n\n2. The Uninsured: List the overall percentage of adults without health insurance, and the specific percentages of uninsured adults who reported delaying care due to cost, having difficulty paying medical bills, and lacking a usual source of care.",
+    "Analyze key metrics regarding healthcare access and coverage vulnerabilities in the United States by identifying and detailing three specific categories based on the following statistical profiles found in health policy literature:\n\nFirst, identify the public health coverage program that covers more than one in three people with disabilities (approximately 15 million individuals). Within this program, quantify the prevalence of multiple chronic conditions (specifically three or more) among working-age adults.\n\nSecond, for the specific segment of the adult population that is currently uninsured (cited as 8%), provide the precise percentage that reports delaying or forgoing care due to cost. Additionally, contrast the percentage of this group that lacks a usual source of care against the comparable percentage for insured adults.\n\nThird, regarding women's health policy, summarize the articulated implications of the Dobbs decision specifically on racial disparities in access to care. Furthermore, identify the specific medical subject matter where recent studies have highlighted how science can be 'distorted' in relation to cancer risks."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 870068,
+  "estimated_cost": 8.7007,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Medicaid"
+      ],
+      "question": "Identify the health policy organization that reported on state actions to improve Medicaid and CHIP enrollment processes as of January 2025. Using data from this organization's topic overviews on 'Medicaid' and the 'Uninsured', provide a detailed statistical summary for the following populations: \n\n1. People with Disabilities & Chronic Conditions: State the percentage of people with disabilities covered by Medicaid compared to those without disabilities, the number of people with intellectual and developmental disabilities (I/DD) covered, and the prevalence of chronic conditions among working-age Medicaid adults.\n\n2. The Uninsured: List the overall percentage of adults without health insurance, and the specific percentages of uninsured adults who reported delaying care due to cost, having difficulty paying medical bills, and lacking a usual source of care.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Medicaid coverage for people with disabilities: 35% (15 million)",
+        "Medicaid coverage for people without disabilities: 19%",
+        "Medicaid coverage for I/DD: Over 3 million",
+        "Chronic conditions in working-age Medicaid adults: Approx. 3/4 have one or more; nearly 1/3 have three or more",
+        "Percentage of adults without health insurance: 8%",
+        "Uninsured delaying care due to cost: 55%",
+        "Uninsured with difficulty paying medical bills: 19%",
+        "Uninsured lacking a usual source of care: 38% (vs 8% of insured)"
+      ],
+      "checklist_depth": [
+        "Identified Organization: KFF (Kaiser Family Foundation)",
+        "Logic Proof: Connected 'January 2025' findings on Medicaid/CHIP enrollment processes to KFF data."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the source organization (KFF) based on the specific context of a January 2025 report on enrollment processes. It then requires Wide aggregation by demanding the retrieval of precise statistics across two distinct topic areas (Medicaid demographics and Uninsured barriers) that are treated as separate entities in the source text.",
+      "source_nodes": [
+        "Medicaid - Research and Data from KFF",
+        "Uninsured - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Medicaid Eligibility, Enrollment, and Renewal Policies KFF's survey findings capture state actions that seek to improve the accuracy and efficiency of Medicaid and",
+      "judge_max_limit": 300,
+      "answer_a": "The organization is KFF (KFF, formerly the Kaiser Family Foundation), which issued a January 2025 report tracking state actions to improve Medicaid and CHIP enrollment and renewal processes during the unwinding period.[1]  \n\n**1. People with Disabilities & Chronic Conditions (Medicaid Overview)**  \nKFF reports that among nonelderly adults, roughly 4 in 10 people with disabilities are covered by Medicaid (about 40–42%), compared with about 1 in 10–1 in 8 (around 10–12%) among adults without disabilities, underscoring Medicaid’s disproportionate role for this group.[1] Medicaid is also the primary payer for long‑term services and supports for people with intellectual and developmental disabilities (I/DD), covering roughly 1.5 million individuals with I/DD nationwide.[1] Among working‑age adults enrolled in Medicaid, chronic illness is common: over three‑quarters (around 75–80%) have at least one chronic condition, and more than half have two or more, reflecting Medicaid’s central role in financing care for high‑need adults.[1]  \n\n**2. The Uninsured (Uninsured Topic Overview)**  \nKFF’s uninsured overview estimates that about 10–11% of nonelderly adults in the U.S. lack health insurance coverage.[2] Among uninsured adults, nearly half (around 45–50%) report delaying or forgoing needed care because of cost.[2] Roughly 4 in 10 (about 40–42%) say they have had problems paying medical bills.[2] About one‑third (around 35%) report that they do not have a usual source of care, such as a regular doctor or clinic, highlighting the access barriers associated with being uninsured.[2]  \n\n## References  \n[1] KFF. “Medicaid” topic overview and related materials on Medicaid’s role for people with disabilities and chronic conditions; KFF issue brief on state actions to improve Medicaid and CHIP enrollment/renewal processes, Jan. 2025.  \n[2] KFF. “Key Facts About the Uninsured Population” / “Uninsured” topic overview (latest update through 2023–2024 data).",
+      "answer_b": "Kaiser Family Foundation (KFF) — the group that released the January 2025 update “State Actions to Improve Medicaid and CHIP Enrollment Processes” — reports:\n\nPeople with Disabilities & Chronic Conditions  \n• Coverage gap: 47 % of non-elderly adults with disabilities are covered by Medicaid versus 17 % of adults without disabilities [1].  \n• I/DD population: Medicaid finances health care and long-term services for about 7.3 million children and adults with intellectual and developmental disabilities (I/DD) [1].  \n• Chronic illness: 72 % of working-age (18-64) Medicaid enrollees have at least one chronic condition and 38 % have two or more; the most common include hypertension (31 %), depression (28 %), and asthma/COPD (19 %) [1].\n\nThe Uninsured  \n• Overall lack of coverage: 12.2 % of U.S. adults aged 19-64 were uninsured in 2022 [2].  \nAmong uninsured adults:  \n  – 48 % postponed or went without a doctor visit in the past year because of cost [2].  \n  – 38 % had difficulty paying medical bills during the year [2].  \n  – 51 % do not have a usual source of care [2].\n\nThese statistics underline Medicaid’s outsized role for people with disabilities and high disease burden, while illustrating the persistent financial and access barriers facing millions of uninsured adults.",
+      "duration_a_seconds": 39.3,
+      "duration_b_seconds": 21.0,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the organization (KFF). However, Agent A is the winner for two main reasons: \n\n1. **Accuracy Alignment**: Agent A's statistics were closer to the provided Ground Truth checklist. For example, on 'Usual Source of Care', Agent A cited 35% (Ground Truth: 38%), whereas Agent B cited 51%. On 'Chronic Conditions', Agent A correctly used the 'three-quarters' phrasing found in the checklist. On 'Uninsured Percentage', Agent A (10-11%) was closer to the Ground Truth (8%) than Agent B (12.2%).\n\n2. **Citations & Formatting**: Agent A provided a proper Reference list at the bottom, which is essential for a search agent. Agent B used inline brackets [1] but failed to list the actual sources, rendering the citations useless. \n\nBoth agents missed the specific '19%' statistic regarding medical bills (both citing ~40%), likely referencing a different KFF metric, but Agent A's overall accuracy and formatting were superior.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Medicaid"
+      ],
+      "question": "Analyze key metrics regarding healthcare access and coverage vulnerabilities in the United States by identifying and detailing three specific categories based on the following statistical profiles found in health policy literature:\n\nFirst, identify the public health coverage program that covers more than one in three people with disabilities (approximately 15 million individuals). Within this program, quantify the prevalence of multiple chronic conditions (specifically three or more) among working-age adults.\n\nSecond, for the specific segment of the adult population that is currently uninsured (cited as 8%), provide the precise percentage that reports delaying or forgoing care due to cost. Additionally, contrast the percentage of this group that lacks a usual source of care against the comparable percentage for insured adults.\n\nThird, regarding women's health policy, summarize the articulated implications of the Dobbs decision specifically on racial disparities in access to care. Furthermore, identify the specific medical subject matter where recent studies have highlighted how science can be 'distorted' in relation to cancer risks.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Medicaid (Entity 1): Nearly one-third of working-age adults have three or more chronic conditions.",
+        "Uninsured (Entity 2): 55% report delaying or forgoing care due to cost.",
+        "Uninsured (Entity 2): 38% lack a usual source of care vs 8% of insured adults.",
+        "Women's Health (Entity 3): Dobbs implications focus on racial disparities in access to care and health outcomes.",
+        "Women's Health (Entity 3): Science distortion topic identified as 'Breast Cancer and Birth Control'."
+      ],
+      "checklist_depth": [
+        "Entity 1: Medicaid (Identified via 15 million/35% of people with disabilities statistic).",
+        "Entity 2: Uninsured Adults (Identified via 8% prevalence and cost barrier stats).",
+        "Entity 3: Women's Health Policy (Identified via Dobbs context and specific study title)."
+      ],
+      "rationale": "The question utilizes 'Deep' reasoning by masking the specific entities (Medicaid, Uninsured, Women's Health) behind statistical fingerprints (e.g., '15 million people with disabilities', '8% of adults', 'Science distortion'). It requires 'Wide' aggregation by demanding specific data points (chronic condition prevalence, cost delay percentages, specific study topics) that are scattered across different topic sections in the source text.",
+      "source_nodes": [
+        "Medicaid - Research and Data from KFF",
+        "Uninsured - Research and Data from KFF",
+        "Women's Health Policy - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Medicaid Eligibility, Enrollment, and Renewal Policies KFF's survey findings capture state actions that seek to improve the accuracy and efficiency of Medicaid and",
+      "judge_max_limit": 330,
+      "answer_a": "The public health coverage program is Medicaid. KFF estimates that Medicaid covers “more than one in three” nonelderly people with disabilities—about 15 million individuals—making it the single largest source of coverage for this group.[1] Among working‑age (21–64) nondual Medicaid adults, roughly 46% have three or more chronic conditions, underscoring how concentrated medical need is within the program.[1]\n\nKFF’s uninsured profile reports that 8.0% of the nonelderly U.S. population lacked health insurance in 2022.[2] Among uninsured nonelderly adults, 64% said they delayed or went without needed medical care in the past 12 months because of cost.[2] Access to a usual source of care also diverges sharply by coverage: 41% of uninsured adults reported having no usual source of care, compared with 9% of adults with private or public coverage.[2] This gap highlights how lack of insurance compounds access barriers beyond affordability alone.\n\nIn women’s health policy, KFF’s post‑Dobbs analyses emphasize that abortion bans and severe restrictions disproportionately affect Black, Hispanic, Indigenous, and low‑income women, who are more likely to live in states with restrictive laws, have higher unintended pregnancy rates, and rely on Medicaid or safety‑net providers.[3] Dobbs is therefore expected to widen existing racial disparities in timely abortion care, maternal morbidity and mortality, and financial hardship from pregnancy‑related care.[3]\n\nKFF also flags how scientific evidence has been “distorted” in the abortion debate, particularly regarding cancer risks. It notes that high‑quality epidemiologic research finds no causal link between abortion and breast cancer, yet some advocates and policymakers continue to misrepresent or selectively cite studies to suggest that abortion increases breast cancer risk, using this distorted science to justify restrictive policies and misleading informed‑consent materials.[4]\n\n## References  \n[1] KFF, “Medicaid’s Role for People with Disabilities and Chronic Conditions,” topic overview and issue briefs.  \n[2] KFF, “Key Facts About the Uninsured Population,” most recent update with 2022 data.  \n[3] KFF, “The Implications of the Dobbs Decision for Women of Color and Low-Income Women,” women’s health policy analyses.  \n[4] KFF, “Abortion, Breast Cancer, and the Distortion of Science,” women’s health policy/resources on abortion and cancer risk.",
+      "answer_b": "Medicaid—the nation’s largest public health coverage program—insures more than one-third of non-elderly people with disabilities, roughly 15 million individuals [1].  Among working-age (18-64) Medicaid adults, 44 % live with three or more chronic conditions, underscoring the program’s concentration of medically complex beneficiaries [1].\n\nEight percent of U.S. adults remain uninsured [2].  Within this group, 48 % report delaying or forgoing needed care because of cost, while 51 % lack a usual source of care—compared with just 12 % of insured adults who report having no usual source of care [2].\n\nWomen’s health policy analyses note that the Supreme Court’s Dobbs decision is expected to widen racial disparities in access to reproductive and broader health services: Black and Hispanic women, who already face higher rates of maternal mortality and financial barriers, are more likely to live in states with current or pending abortion bans, heightening risks of delayed care and adverse health outcomes [3].  Recent literature also highlights how scientific evidence regarding breast cancer risks associated with abortion has been “distorted” in some policy debates—emphasizing the need for rigorous, unbiased research communication in the post-Dobbs environment [3].\n\n## References\n[1] KFF. “Medicaid’s Role for People with Disabilities.” Topic Overview, 2024.  \n[2] KFF. “Key Facts about the Uninsured Population.” Topic Overview, 2024.  \n[3] KFF Women’s Health Policy. “The Implications of the Dobbs Decision for Women of Color” and “Distortion of Science on Abortion and Cancer Risk,” 2024.",
+      "duration_a_seconds": 21.8,
+      "duration_b_seconds": 9.0,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the three core entities (Medicaid, Uninsured, Women's Health/Dobbs). \n\nHowever, Agent A is superior in data currency and accuracy for the 'Uninsured' category. Agent A provides statistics (64% delayed care, 41% no usual source) that align perfectly with the most recent KFF report (Dec 2023, based on 2022 data), whereas Agent B provides older or less accurate figures (48%, 51%) while citing them as '2024'. Although the Ground Truth checklist reflects older data (55%), Agent A is rewarded for providing the most up-to-date information available.\n\nBoth agents failed the specific sub-point regarding the prevalence of 3+ chronic conditions in Medicaid (reporting ~44-46% instead of the correct ~30%). Since this error was shared, Agent A wins on the strength of the Uninsured section.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_gpt51se_vs_o3search_42"
+}

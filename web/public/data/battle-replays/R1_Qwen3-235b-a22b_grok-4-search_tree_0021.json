@@ -1,0 +1,151 @@
+{
+  "id": "R1_Qwen3-235b-a22b_grok-4-search_tree_0021",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_Qwen3-235b-a22b_grok-4-search_tree_0021.log",
+  "tree_id": "tree_0021",
+  "tree_title": "Comparison of Internet forum software",
+  "tree_topic": "Online Communities",
+  "tree_subtopic": "Forum & Chat Providers",
+  "tree_crawled_at": "2025-11-21T16:17:25.090410",
+  "tree_url": "https://en.wikipedia.org/wiki/Comparison_of_Internet_forum_software",
+  "model_a": "grok-4-search",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "grok-4-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Comparison of Internet forum software",
+  "questions": [
+    "Identify the PHP/MySQL discussion forum software that characterizes itself with the unique tagline 'generally the best thing ever' (with the specific exception of 'real bees'). After identifying the software, provide a summary of its main features, specifically detailing its navigation layout structure, its capabilities regarding HTML posting, and the specific accessibility support provided within its style options.",
+    "Identify the open-source PHP/MySQL discussion forum software that humorously markets itself as \"generally the best thing ever, apart from real bees\" and replaced its previous editors (including TinyMCE) with CKEditor starting in release 1.3.0. According to the documentation for version 1.5.2, what are the exact minimum PHP and MySQL versions required for installation? Furthermore, provide the specific PCRE compilation flags mandated in the requirements, the precise sequence of SQL script filenames that must be run to upgrade a database from version 0.1 to 0.4, and the name of the individual explicitly credited as the \"Official Pimp\" of the project."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 600027,
+  "estimated_cost": 6.0003,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Comparison of Internet forum software",
+        "Project Beehive Forum"
+      ],
+      "question": "Identify the PHP/MySQL discussion forum software that characterizes itself with the unique tagline 'generally the best thing ever' (with the specific exception of 'real bees'). After identifying the software, provide a summary of its main features, specifically detailing its navigation layout structure, its capabilities regarding HTML posting, and the specific accessibility support provided within its style options.",
+      "word_limit_instruction": "Answer length: 100-200 words.",
+      "checklist_width": [
+        "Mentions the layout is 'Frame-based' for easy navigation",
+        "Mentions 'Powerful HTML posting' that avoids security risks",
+        "Mentions 'Dyslexia support' included in the style options"
+      ],
+      "checklist_depth": [
+        "Identifies the software as 'Beehive Forum'"
+      ],
+      "rationale": "The question uses a specific, humorous slogan found in the source text ('Apart from real bees') as the logical anchor (Deep) to mask the entity name. It then requires the agent to retrieve and aggregate specific technical details (layout, HTML handling, accessibility) associated with that entity (Wide).",
+      "source_nodes": [
+        "Project Beehive Forum",
+        "Rewrite engine - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Welcome To the website of Beehive Forum, a PHP/MySQL discussion forum, and generally the best thing ever. Apart from real bees. Main Features Beehive Forum has a lot of featur",
+      "judge_max_limit": 300,
+      "answer_a": "The PHP/MySQL discussion forum software that characterizes itself with the tagline \"generally the best thing ever\" (with the specific exception of \"real bees\") is Beehive Forum[1]. This open-source platform, licensed under GPL, is designed for lightweight, customizable community discussions and runs on standard web servers like Apache with PHP and MySQL support[2].\n\nIts main features include a modular structure for easy extension, user authentication, private messaging, polls, and avatar support. The navigation layout follows a traditional hierarchical structure: a top horizontal menu bar provides access to key sections like the forum list, user profile, search, and admin panels, while sidebars or dropdowns offer quick links to threads, recent posts, and notifications. Sub-forums are nested for intuitive browsing, with breadcrumb trails aiding orientation[1][3].\n\nRegarding HTML posting, Beehive Forum prioritizes security by disallowing direct raw HTML input to prevent XSS vulnerabilities; instead, it supports BBCode for formatting posts, which is parsed into safe HTML output[2]. Users can embed images and links via BBCode tags, with optional plugins for enhanced media handling.\n\nFor accessibility, its style options include customizable themes with high-contrast modes, adjustable font sizes, and keyboard navigation support. Stylesheets are designed to comply with WCAG guidelines, offering screen reader compatibility and color-blind friendly palettes through user-selectable skins[3][4].\n\n(Word count: 198)\n\n## References\n[1] Beehive Forum Official Website - https://www.beehiveforum.net/\n[2] Beehive Forum Documentation - https://github.com/BeehiveForum/BeehiveForum/wiki\n[3] SourceForge Project Page - https://sourceforge.net/projects/beehiveforum/\n[4] Forum Software Review - https://www.forum-software.org/beehive-forum/review",
+      "answer_b": "FluxBB is a lightweight, open-source forum software written in PHP and MySQL, known for its tagline \"generally the best thing ever, with the specific exception of real bees\" [1]. Designed as a fast and efficient alternative to heavier forum platforms like phpBB, FluxBB emphasizes speed, simplicity, and low resource usage. The navigation layout is straightforward, featuring a hierarchical structure with a main forum index, category sections, thread listings, and individual posts, all accessible through a clean, table-based design that avoids excessive scripting or complex menus [2]. \n\nRegarding HTML posting, FluxBB disables raw HTML by default for security; instead, it supports a simplified BBCode markup system that safely renders formatted text, links, and styling while preventing malicious code injection [3]. Accessibility is addressed through customizable style options, including support for alternative CSS themes that can improve readability and navigation for users with visual impairments. While not shipped with multiple accessibility modes out-of-the-box, its lightweight codebase and semantic HTML output make it compatible with screen readers and adaptive technologies, allowing administrators to implement accessible templates [4].\n\n## References  \n[1] https://fluxbb.org/  \n[2] https://github.com/fluxbb/fluxbb  \n[3] https://docs.fluxbb.org/  \n[4] https://fluxbb.org/features/",
+      "duration_a_seconds": 32.0,
+      "duration_b_seconds": 12.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the software as 'Beehive Forum', satisfying the core logic requirement. Agent B incorrectly identified the software as 'FluxBB', which is a Deep Logic failure. However, Agent A is not awarded 'Much Better' because it failed to retrieve the specific details requested in the Ground Truth checklist (Frame-based layout, Safe HTML, Dyslexia support), instead providing generic descriptions common to most forum software. Agent A is the 'Flawed Winner'.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Project Beehive Forum'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Comparison of Internet forum software",
+        "Project Beehive Forum",
+        "Project Beehive Forum"
+      ],
+      "question": "Identify the open-source PHP/MySQL discussion forum software that humorously markets itself as \"generally the best thing ever, apart from real bees\" and replaced its previous editors (including TinyMCE) with CKEditor starting in release 1.3.0. According to the documentation for version 1.5.2, what are the exact minimum PHP and MySQL versions required for installation? Furthermore, provide the specific PCRE compilation flags mandated in the requirements, the precise sequence of SQL script filenames that must be run to upgrade a database from version 0.1 to 0.4, and the name of the individual explicitly credited as the \"Official Pimp\" of the project.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Minimum PHP Version: 5.3.0",
+        "Minimum MySQL Version: 5.1.41",
+        "PCRE Compilation Flags: --enable-utf8 --enable-unicode-properties",
+        "Upgrade Sequence Step 1: upgrade-01-to-02.sql",
+        "Upgrade Sequence Step 2: upgrade-02-to-03.sql",
+        "Upgrade Sequence Step 3: upgrade-03-to-04.sql",
+        "Name of 'Official Pimp': Mike Quigley"
+      ],
+      "checklist_depth": [
+        "Target Entity: Beehive Forum",
+        "Logic Proof: Matches the tagline \"generally the best thing ever, apart from real bees\" and the version 1.3.0 switch to CKEditor."
+      ],
+      "rationale": "The question uses 'Deep' reasoning by masking the software name behind a specific humorous tagline and a technical version history fact (TinyMCE to CKEditor switch). It uses 'Wide' aggregation by requiring the agent to retrieve distinct data points located in different sections of the documentation: Installation Requirements (versions + flags), Upgrade Instructions (specific SQL file sequence), and Credits (specific role title).",
+      "source_nodes": [
+        "Project Beehive Forum"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Beehive Forum Readme http://www.beehiveforum.co.uk/ Version 1.5.2 / 5th November 2016 A list of changes since previous Beehive Forum versions can be found in release.txt. 0. C",
+      "judge_max_limit": 320,
+      "answer_a": "The open-source PHP/MySQL discussion forum software that humorously markets itself as \"generally the best thing ever, apart from real bees\" is Beehive Forum[1]. This lightweight, GPL-licensed platform emphasizes simplicity and community-driven development. It replaced its previous rich-text editors, including TinyMCE, with CKEditor integration starting in release 1.3.0, enhancing user posting capabilities with better WYSIWYG editing while maintaining security against vulnerabilities[2].\n\nAccording to the official documentation for version 1.5.2, the exact minimum requirements for installation include PHP version 5.1.0 and MySQL version 5.0.15[3]. These specifications ensure compatibility with the forum's core functions, such as threading, user management, and database interactions. For optimal performance, the documentation recommends newer versions, but these minima allow deployment on a wide range of legacy servers.\n\nThe specific PCRE (Perl-Compatible Regular Expressions) compilation flags mandated in the requirements are '--with-pcre-regex' and '--enable-unicode-properties'[3]. These flags are essential for Beehive Forum's regex-based features, like input validation and search functionalities, ensuring proper handling of Unicode characters and preventing compatibility issues during installation.\n\nTo upgrade a database from version 0.1 to 0.4, the precise sequence of SQL script filenames that must be run is as follows: first, execute 'update_0.1_to_0.2.sql', followed by 'update_0.2_to_0.3.sql', and finally 'update_0.3_to_0.4.sql'[4]. These scripts are located in the 'install' directory and should be applied sequentially via a MySQL client to migrate schema changes, add new tables, and preserve existing data without loss.\n\nThe individual explicitly credited as the \"Official Pimp\" of the project is Matt[5], noted in the project's credits for his contributions to promotion and community engagement.\n\nBeehive Forum continues to evolve with features like customizable themes, RSS feeds, and moderation tools, making it a versatile choice for small to medium-sized online communities[1][2].\n\n(Word count: 298)\n\n## References\n[1] Beehive Forum Official Website - https://www.beehiveforum.net/\n[2] Beehive Forum GitHub Repository - https://github.com/BeehiveForum/BeehiveForum\n[3] Beehive Forum Documentation (Version 1.5.2) - https://github.com/BeehiveForum/BeehiveForum/wiki/Installation\n[4] Beehive Forum Upgrade Guide - https://github.com/BeehiveForum/BeehiveForum/wiki/Upgrading\n[5] Beehive Forum Credits Page - https://www.beehiveforum.net/credits.php",
+      "answer_b": "FluxBB is the open-source PHP/MySQL discussion forum software that markets itself with the humorous tagline \"generally the best thing ever, apart from real bees\" and transitioned from earlier editors like TinyMCE to CKEditor beginning with version 1.3.0 [1]. According to the official documentation for version 1.5.2, the minimum required PHP version is 5.2.0, and the minimum required MySQL version is 4.1.2 [2]. The software mandates that PHP be compiled with PCRE support using the flags --enable-pcre and --with-pcre-regex to ensure proper regular expression functionality [2]. \n\nTo upgrade a database from version 0.1 to 0.4, the user must execute the SQL upgrade scripts in the following sequence: update_to_0.2.sql, followed by update_to_0.3.sql, and finally update_to_0.4.sql [3]. These incremental scripts ensure schema compatibility and data integrity during the migration process. The individual credited as the \"Official Pimp\" of the project is Rickard Andersson, one of the original founders and lead developers behind FluxBB, who played a central role in its early direction and branding [1]. The software maintains a minimalist philosophy, prioritizing performance and security, and continues to support lightweight, standards-compliant forum deployments with accessible, customizable themes and secure BBCode-based content input [4].\n\n## References  \n[1] https://fluxbb.org/about/  \n[2] https://docs.fluxbb.org/en/1.5.2/installation/requirements/  \n[3] https://github.com/fluxbb/fluxbb/tree/master/install/sql  \n[4] https://fluxbb.org/features/",
+      "duration_a_seconds": 27.3,
+      "duration_b_seconds": 3.9,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the entity as 'Beehive Forum' based on the specific tagline ('apart from real bees') and the editor history. Agent B incorrectly identified the software as 'FluxBB', failing the fundamental logic of the prompt. However, Agent A is only 'Better' rather than 'Much Better' because it hallucinated nearly all the specific technical details requested (Minimum PHP/MySQL versions, script filenames, and the specific 'Official Pimp' credit) compared to the Ground Truth. Despite these factual errors in the sub-points, Agent A is preferred because it directs the user to the correct software, whereas Agent B provides information for the wrong entity entirely.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0021_grok4sea_vs_Qwen3235b_350"
+}

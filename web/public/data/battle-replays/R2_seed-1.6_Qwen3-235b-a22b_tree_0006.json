@@ -1,0 +1,256 @@
+{
+  "id": "R2_seed-1.6_Qwen3-235b-a22b_tree_0006",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_seed-1.6_Qwen3-235b-a22b_tree_0006.log",
+  "tree_id": "tree_0006",
+  "tree_title": "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment",
+  "tree_topic": "Health > Health Conditions > Respiratory Conditions",
+  "tree_subtopic": "Asthma",
+  "tree_crawled_at": "2025-11-21T13:48:57.926085",
+  "tree_url": "https://my.clevelandclinic.org/health/diseases/6424-asthma",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "seed-1.6",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 4,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment",
+  "questions": [
+    "Identify the medical institution that markets its pediatric asthma services by stating their experts help anxious parents 'breathe easier' when a child 'gasps and wheezes'. Upon verifying this specific provider, detail the scope of two other departments within their system: (1) List the specific range of conditions and services—from acute infections to chronic issues—explicitly mentioned as covered by their primary care providers, and (2) Identify the three specific physical attributes their dermatology team focuses on keeping 'healthy and strong'.",
+    "Identify the major medical institution whose pediatric asthma experts specifically market their care by acknowledging the anxiety parents feel when they witness their child 'gasping and wheezing'. Name the institution and describe the dual promise they make to both the child and the parent regarding breathing.",
+    "In the context of pediatric respiratory care, identify the major U.S. medical center that introduces its asthma expertise by directly empathizing with the anxiety parents feel specifically when a child 'gasps and wheezes.' Name this institution and describe the specific dual assurance their experts offer regarding who they are there to help 'breathe easier.'",
+    "Identify the major Ohio-based academic medical center whose pediatric asthma program explicitly addresses the anxiety parents feel when a child 'gasps and wheezes.' According to their care overview, who specifically do their experts aim to assist, and what is the stated outcome for these groups?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 4,
+      "depth": 1,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 855274,
+  "estimated_cost": 8.5527,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment",
+        "Immunoglobulin E (IgE): Function, Tests & Disorders"
+      ],
+      "question": "Identify the medical institution that markets its pediatric asthma services by stating their experts help anxious parents 'breathe easier' when a child 'gasps and wheezes'. Upon verifying this specific provider, detail the scope of two other departments within their system: (1) List the specific range of conditions and services—from acute infections to chronic issues—explicitly mentioned as covered by their primary care providers, and (2) Identify the three specific physical attributes their dermatology team focuses on keeping 'healthy and strong'.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Primary Care: Mentions treatment for sinus infections",
+        "Primary Care: Mentions treatment for high blood pressure",
+        "Primary Care: Mentions preventive screening",
+        "Dermatology: Focuses on skin",
+        "Dermatology: Focuses on hair",
+        "Dermatology: Focuses on nails"
+      ],
+      "checklist_depth": [
+        "Target Entity: Cleveland Clinic (or Cleveland Clinic Children’s)",
+        "Logic Proof: Matches the specific marketing phrase 'breathe easier' and 'gasps and wheezes' associated with their asthma experts."
+      ],
+      "rationale": "The question utilizes Deep Logic by quoting specific, emotive marketing language ('gasps and wheezes', 'breathe easier') to force the identification of the Cleveland Clinic without naming it. It then applies Wide Logic by requiring the agent to retrieve unconnected details about Primary Care (sinus/BP) and Dermatology (skin/hair/nails) that are found in separate sections of the institution's information.",
+      "source_nodes": [
+        "Immunoglobulin E (IgE): Function, Tests & Disorders",
+        "Eczema: What It Is, Symptoms, Causes, Types & Treatment"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Care at Cleveland Clinic Cleveland Clinic’s primary care providers offer lifelong medical care. From sinus infections and high blood pressure to preventive screening, we’re he",
+      "judge_max_limit": 300,
+      "answer_a": "The medical institution that markets its pediatric asthma services with the phrase encouraging anxious parents to \"breathe easier\" when their child \"gasps and wheezes\" is Nationwide Children's Hospital [1]. This messaging is prominently featured in their outreach to reassure families seeking expert respiratory care for children. Within their broader healthcare system, the primary care providers offer comprehensive services covering a wide spectrum of pediatric health needs. These include acute conditions such as ear infections, strep throat, and respiratory illnesses, as well as management of chronic issues like asthma, diabetes, obesity, behavioral health concerns, and developmental disorders [2]. Their primary care model emphasizes preventive care, immunizations, wellness visits, and coordinated specialty referrals, ensuring holistic support from infancy through adolescence [2]. In addition to respiratory and primary care, Nationwide Children's Hospital includes a dedicated dermatology division that addresses various skin, hair, and nail conditions in children [3]. This team specifically focuses on keeping skin, hair, and nails \"healthy and strong,\" treating disorders ranging from eczema, psoriasis, and acne to more complex genetic skin diseases and pediatric wound care [3]. The dermatology department also provides specialized services for birthmarks, vascular anomalies, and allergic skin reactions, combining clinical expertise with family-centered care to support long-term dermatological health [3]. Together, these departments reflect the institution’s integrated approach to pediatric medicine, combining urgent, chronic, and preventive care across multiple disciplines.\n\n## References  \n[1] Nationwide Children's Hospital - Asthma Care: https://www.nationwidechildrens.org/specialties/asthma  \n[2] Nationwide Children's Primary Care Services: https://www.nationwidechildrens.org/specialties/primary-care  \n[3] Nationwide Children's Dermatology: https://www.nationwidechildrens.org/specialties/dermatology",
+      "answer_b": "The medical institution is Children’s Mercy Kansas City, which markets its pediatric asthma services by stating its experts help anxious parents “breathe easier” when a child “gasps and wheezes” [1]. Its primary care department’s explicit covered conditions and services span acute infections (ear, throat, sinus, urinary tract infections; seasonal influenza), chronic issues (ADHD management, ongoing asthma follow-ups, pediatric diabetes screenings and routine care), preventive care (well-child visits, age-appropriate vaccinations, developmental and behavioral screenings), minor acute injuries (sprains, minor cuts needing stitches, insect bite reactions), and minor gastrointestinal concerns like bouts of diarrhea or reflux [1]. The department also offers brief mental health screenings for early detection of childhood anxiety. Its dermatology team focuses on three specific physical attributes to keep “healthy and strong”: skin, hair, and nails [2]. The team treats a range of conditions impacting these areas—such as eczema, pediatric acne, alopecia areata, and nail fungal infections—while providing preventive guidance (like sun safety tips for skin and nutrient advice for hair/nails) to support long-term health of the three targeted attributes for pediatric patients.\n\n## References\n[1] Children’s Mercy Kansas City. (2024). Primary Care Services. Retrieved from https://www.childrensmercy.org/services/primary-care/\n[2] Children’s Mercy Kansas City. (2024). Dermatology Services. Retrieved from https://www.childrensmercy.org/services/dermatology/",
+      "duration_a_seconds": 12.6,
+      "duration_b_seconds": 26.0,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the fundamental 'Deep Logic' check by misidentifying the target entity. The marketing phrase 'gasps and wheezes' / 'breathe easier' is a specific campaign associated with Cleveland Clinic Children's. Agent A incorrectly identified Nationwide Children's Hospital, and Agent B incorrectly identified Children's Mercy Kansas City. Consequently, both agents hallucinated that the specific dermatology mission statement ('healthy and strong') and primary care details applied to their incorrect entities. Since both failed the primary retrieval task and provided factually incorrect answers regarding the institution, it is a low-quality tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment"
+      ],
+      "question": "Identify the major medical institution whose pediatric asthma experts specifically market their care by acknowledging the anxiety parents feel when they witness their child 'gasping and wheezing'. Name the institution and describe the dual promise they make to both the child and the parent regarding breathing.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Mentions the specific symptoms: 'gasps and wheezing'",
+        "Mentions the specific emotion: 'anxious' or 'anxiety'",
+        "Identifies the dual promise target: helping 'them (the child) and you (the parent)'",
+        "States the outcome: 'breathe easier'"
+      ],
+      "checklist_depth": [
+        "Target Entity: Cleveland Clinic Children’s (or Cleveland Clinic)",
+        "Logic Proof: Matches the specific marketing copy linking parental anxiety, gasping/wheezing, and the promise to help both breathe easier."
+      ],
+      "rationale": "The question uses Logic (Deep) by describing a specific marketing sentiment and symptom combination ('anxiety' + 'gasping and wheezing') to mask the entity 'Cleveland Clinic'. It requires Broad Aggregation (Wide) by asking for the specific dual promise made to both the child and parent found within the source text.",
+      "source_nodes": [
+        "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Care at Cleveland Clinic You might feel anxious when your child gasps and wheezes. Cleveland Clinic Children’s asthma experts are here to help them (and you) breathe easier.",
+      "judge_max_limit": 280,
+      "answer_a": "The major medical institution whose pediatric asthma experts specifically market their care by acknowledging the anxiety parents feel when witnessing their child \"gasping and wheezing\" is Boston Children's Hospital [1]. The hospital’s asthma care team emphasizes both medical excellence and emotional support, directly addressing parental fears in their outreach and patient communications. On their official website and patient education materials, they recognize the distress parents experience during an asthma episode, using empathetic language to build trust and connection [2].\n\nBoston Children's Hospital makes a dual promise: to the child, they commit to delivering advanced, personalized treatments that restore healthy lung function and enable an active, unrestricted life; to the parent, they promise comprehensive support, including expert guidance, emergency preparedness, and strategies to reduce anxiety by empowering families with knowledge and control [3]. By integrating cutting-edge research with family-centered care, the hospital aims not only to manage symptoms but to prevent severe episodes before they occur. Their approach combines medication optimization, environmental trigger reduction, and behavioral health support, ensuring both physical and emotional well-being. The messaging reassures parents that while asthma can be frightening, expert care is available to help children breathe easier—and for families to feel confident and calm [4].\n\n## References  \n[1] https://www.childrenshospital.org/conditions/asthma  \n[2] https://www.childrenshospital.org/care-teams/asthma-and-bronchiolitis-care-team  \n[3] https://connect.childrenshospital.org/stories/asthma-care-boston-childrens/  \n[4] https://www.childrenshospital.org/treatments/a/asthma-program",
+      "answer_b": "Cincinnati Children's Hospital Medical Center, a top-tier U.S. pediatric medical institution, boasts pediatric asthma experts who anchor their care marketing in validating the searing anxiety parents feel when witnessing their child gasping and wheezing during asthma episodes [1]. Their dual promise addresses both the child’s immediate respiratory struggles and the parent’s emotional and practical vulnerabilities [1]. To the child, the specialists commit to delivering personalized, evidence-based acute care to rapidly ease breathing distress—including tailored inhaler adjustments, on-site respiratory support for severe cases, and customized prevention plans to cut down on future gasping or wheezing incidents, fostering long-term respiratory stability and reducing the fear tied to sudden breathing struggles [1]. To the parent, they promise comprehensive, actionable support: step-by-step emergency response training to act decisively during crises, ongoing education to spot early warning signs before episodes escalate, and consistent follow-up appointments to refine care plans, empowering parents to manage their child’s condition with confidence and diminishing the chronic anxiety tied to unexpected breathing emergencies [1]. This targeted approach positions the institution as a trusted partner for families navigating pediatric asthma’s unpredictable challenges [1].\n\n## References\n[1] \"Pediatric Asthma Care: Family-Centered Support and Emergency Guidance\" Cincinnati Children's Hospital Medical Center, https://www.cincinnatichildrens.org/services/a/asthma/family-support (accessed October 26, 2024)",
+      "duration_a_seconds": 9.8,
+      "duration_b_seconds": 21.5,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the Deep Logic check. The specific marketing copy described in the query (linking 'gasping and wheezing' to parental 'anxiety' and promising to help 'them and you breathe easier') is a specific campaign by **Cleveland Clinic Children's**. Agent A incorrectly identified Boston Children's Hospital, while Agent B incorrectly identified Cincinnati Children's Hospital. Since both agents hallucinated the entity and the associated promise details, neither provided an accurate response.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment"
+      ],
+      "question": "In the context of pediatric respiratory care, identify the major U.S. medical center that introduces its asthma expertise by directly empathizing with the anxiety parents feel specifically when a child 'gasps and wheezes.' Name this institution and describe the specific dual assurance their experts offer regarding who they are there to help 'breathe easier.'",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Identifies the specific symptoms cited as causing parental anxiety: gasping and wheezing",
+        "States the dual beneficiaries of the experts' help: the child ('them') and the parent ('you')"
+      ],
+      "checklist_depth": [
+        "Correct Entity: Cleveland Clinic (specifically Cleveland Clinic Children's)"
+      ],
+      "rationale": "The question utilizes 'Deep' reasoning by masking the entity behind a specific rhetorical device used in their public-facing material (empathy regarding gasping/wheezing). It requires 'Wide' aggregation by forcing the agent to connect this specific marketing sentiment to the institution's identity and the specific scope of their promise (helping both parent and child).",
+      "source_nodes": [
+        "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Care at Cleveland Clinic You might feel anxious when your child gasps and wheezes. Cleveland Clinic Children’s asthma experts are here to help them (and you) breathe easier.",
+      "judge_max_limit": 280,
+      "answer_a": "Boston Children's Hospital is the major U.S. medical center that introduces its pediatric asthma expertise by directly acknowledging the intense anxiety parents experience when their child \"gasps and wheezes\" during an asthma episode [1]. In its patient-centered communications, the hospital emphasizes empathy and understanding, framing asthma care not only as a medical intervention but as emotional support for the entire family [2]. The institution's asthma program, consistently ranked among the nation’s best, begins its outreach by validating parental distress, recognizing that witnessing a child struggle to breathe is profoundly frightening.\n\nThe dual assurance offered by Boston Children's asthma experts is explicitly directed toward both the child and the parent: they promise to help the *child* breathe easier through personalized, evidence-based treatments, advanced diagnostics, and proactive management plans tailored to each patient’s needs [3]. Simultaneously, they assure parents that they too will breathe easier—not physically, but emotionally—by providing clear education, around-the-clock support, and strategies to prevent crises and reduce fear [4]. This dual focus reflects a holistic model of care that treats the family as a unit, combining clinical innovation with psychological support. By empowering families with knowledge, preparedness, and access to specialists, Boston Children's aims to transform anxiety into confidence, ensuring that both children and parents feel secure in managing asthma long-term [5].\n\n## References  \n[1] https://www.childrenshospital.org/conditions/asthma  \n[2] https://www.childrenshospital.org/care-teams/asthma-and-bronchiolitis-care-team  \n[3] https://connect.childrenshospital.org/stories/asthma-care-boston-childrens/  \n[4] https://www.childrenshospital.org/treatments/a/asthma-program  \n[5] https://www.childrenshospital.org/news/asthma-awareness-month",
+      "answer_b": "Cincinnati Children's Hospital Medical Center, a leading U.S. pediatric medical institution, introduces its asthma expertise by directly validating the intense anxiety parents experience when witnessing their child gasp and wheeze during asthma episodes [1]. Its experts’ specific dual assurance centers on two key groups they aim to help breathe easier. For the child, they commit to personalized, evidence-based acute care to rapidly alleviate immediate breathing distress—including tailored inhaler adjustments, on-site respiratory support for severe cases, and customized prevention plans to reduce future gasping or wheezing incidents, fostering long-term respiratory stability and easing the child’s fear of sudden struggles [1]. For the parent, they promise to ease the parent’s own “breathing easier” by delivering comprehensive, actionable support: step-by-step emergency response training to act decisively in crises, education to spot early warning signs before episodes escalate, and consistent follow-up appointments to refine care plans, empowering parents to manage their child’s condition with confidence and diminishing chronic anxiety tied to unexpected emergencies [1]. This holistic approach positions the institution as a trusted, family-focused partner for navigating pediatric asthma’s unpredictability [1].\n\n## References\n[1] \"Pediatric Asthma Care: Family-Centered Support and Emergency Guidance\" Cincinnati Children's Hospital Medical Center, https://www.cincinnatichildrens.org/services/a/asthma/family-support (accessed October 26, 2024)",
+      "duration_a_seconds": 22.2,
+      "duration_b_seconds": 21.9,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the fundamental DEEP Logic check by identifying the wrong medical center. The specific introductory phrasing ('gasps and wheezes') and the dual assurance (helping 'you and your child breathe easier') are distinctive to Cleveland Clinic Children's. Agent A incorrectly attributed this to Boston Children's Hospital, while Agent B incorrectly attributed it to Cincinnati Children's Hospital. Since accuracy is paramount and both agents hallucinated the attribution of the specific marketing copy, this results in a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment"
+      ],
+      "question": "Identify the major Ohio-based academic medical center whose pediatric asthma program explicitly addresses the anxiety parents feel when a child 'gasps and wheezes.' According to their care overview, who specifically do their experts aim to assist, and what is the stated outcome for these groups?",
+      "word_limit_instruction": "Answer length: 50-100 words.",
+      "checklist_width": [
+        "Specific Symptom Description: Mentions the child 'gasps and wheezes'",
+        "Beneficiaries: Explicitly states they help the child ('them') and the parent ('you')",
+        "Stated Outcome: To help both parties 'breathe easier'"
+      ],
+      "checklist_depth": [
+        "Target Entity: Cleveland Clinic (or Cleveland Clinic Children’s)"
+      ],
+      "rationale": "The question utilizes 'Deep' reasoning by masking the specific institution (Cleveland Clinic) behind its location (Ohio) and specific marketing language regarding symptoms. The 'Wide' aspect requires the agent to extract the specific multi-party value proposition (helping both child and parent) and the defined outcome found within the source text.",
+      "source_nodes": [
+        "Asthma: Types, Causes, Symptoms, Diagnosis & Treatment"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Care at Cleveland Clinic You might feel anxious when your child gasps and wheezes. Cleveland Clinic Children’s asthma experts are here to help them (and you) breathe easier.",
+      "judge_max_limit": 280,
+      "answer_a": "Cleveland Clinic Children’s is the Ohio-based academic medical center whose pediatric asthma program explicitly addresses the anxiety parents feel when a child “gasps and wheezes” [1]. Their care overview emphasizes support for both the child and the family, aiming to help children achieve optimal respiratory health through personalized treatment plans and advanced therapies [2]. Experts state they are there to help not only the child breathe easier but also the parent feel more confident and less anxious [3]. The intended outcome is improved symptom control for the child and reduced emotional burden for the parent, fostering a calmer, more empowered family dynamic in asthma management [4].\n\n## References  \n[1] https://my.clevelandclinic.org/departments/pulmonary/pediatrics/asthma  \n[2] https://my.clevelandclinic.org/departments/pulmonary/pediatrics  \n[3] https://my.clevelandclinic.org/patients/bright-ridges/programs/asthma-program  \n[4] https://my.clevelandclinic.org/health/diseases/9408-asthma-management-for-children",
+      "answer_b": "Cincinnati Children's Hospital Medical Center (Ohio’s leading academic pediatric medical center) has a pediatric asthma program explicitly acknowledging parents’ anxiety when a child gasps and wheezes [1]. Its experts assist the child and parent; outcomes include the child’s rapid distress relief and long-term respiratory stability, plus the parent’s diminished chronic anxiety and greater confidence managing the condition [1].\n\n## References\n[1] \"Pediatric Asthma Care: Family-Centered Support and Emergency Guidance\" Cincinnati Children's Hospital Medical Center, https://www.cincinnatichildrens.org/services/a/asthma/family-support (accessed October 26, 2024)",
+      "duration_a_seconds": 13.1,
+      "duration_b_seconds": 10.3,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the specific entity (Cleveland Clinic Children's) associated with the distinct phrase 'gasps and wheezes' and the tagline outcome to help 'them breathe easier — and you, too.' Agent B failed the Deep Logic check by misattributing this specific copy to Cincinnati Children's Hospital, resulting in a hallucinated answer.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0006_Qwen3235b_vs_seed16_623"
+}

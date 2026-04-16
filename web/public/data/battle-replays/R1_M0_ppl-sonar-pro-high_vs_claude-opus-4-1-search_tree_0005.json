@@ -1,0 +1,88 @@
+{
+  "id": "R1_M0_ppl-sonar-pro-high_vs_claude-opus-4-1-search_tree_0005",
+  "source_group": "round1",
+  "source_log": "round1/R1_M0_ppl-sonar-pro-high_vs_claude-opus-4-1-search_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "claude-opus-4-1-search",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the web analytics organization that began donating its crawl data to the Internet Archive in 1996. According to the collection details for the 'DR' crawl data contributed by this entity, what is the current public accessibility status of this specific dataset? Furthermore, what temporal condition applies to this donor's daily data flows before they are added to the Wayback Machine?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 42515,
+  "estimated_cost": 0.4251,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the web analytics organization that began donating its crawl data to the Internet Archive in 1996. According to the collection details for the 'DR' crawl data contributed by this entity, what is the current public accessibility status of this specific dataset? Furthermore, what temporal condition applies to this donor's daily data flows before they are added to the Wayback Machine?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Specific Detail: The 'DR' crawl data is currently not publicly accessible.",
+        "Specific Detail: Daily data flows are added to the Wayback Machine after an 'embargo period'."
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (or Alexa Crawls)",
+        "Logic Proof: Identified via the 1996 start date of data donation to the Internet Archive."
+      ],
+      "rationale": "The question utilizes Deep Logic by masking the entity name ('Alexa Internet'), requiring the agent to identify it based on the specific historical fact (1996 donation start). It employs Wide Scope by requiring the retrieval of two distinct, unconnected facts (accessibility status of the 'DR' subset vs. the general embargo policy) contained within the source knowledge.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Import scene - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "**Alexa Internet** is the web analytics organization that began donating its crawl data to the Internet Archive in 1996. Founded by Brewster Kahle around the same time as the Internet Archive, Alexa Internet compiled website traffic and user behavior data through web crawling and contributed early crawls, including those from its operations before being sold to Amazon in 1999[3][6][7].\n\nThe **'DR' crawl data**, contributed by Alexa, refers to a specific dataset from their crawls (likely denoting \"Daily Runs\" or similar periodic captures). According to Internet Archive collection details, this dataset is **currently publicly accessible** via the Wayback Machine, where it has been integrated and indexed for search and replay, consistent with Alexa's donated crawls available since the late 1990s[2][4].\n\nAlexa Internet's donated data flows are subject to a **temporal condition**: daily crawls are held for **seven days** before being added to the Wayback Machine. This delay allows for processing, indexing, and quality checks, after which they become searchable and publicly replayable, ensuring reliable preservation[3][2].\n\nThese contributions helped bootstrap the Wayback Machine, with Alexa's crawls forming part of the earliest snapshots (e.g., 1996 crawls totaling 2.5 terabytes), alongside others like Sloan Foundation data. The Internet Archive continues to ingest such partner donations, now exceeding 1 trillion pages[1][5][8].\n\n(Word count: 248)\n\n## References\n[1] https://blog.archive.org/2014/10/27/archive-it-crawling-the-web-together/  \n[2] https://en.wikipedia.org/wiki/Wayback_Machine  \n[3] https://en.wikipedia.org/wiki/Internet_Archive  \n[4] https://archive.org/details/wayback-machine-1996  \n[5] https://blog.archive.org/2025/09/02/looking-back-on-preserving-the-internet-from-1996/  \n[6] https://www.laphamsquarterly.org/memory/document-not-found  \n[7] https://ultimatepopculture.fandom.com/wiki/Internet_Archive  \n[8] https://thehustle.co/inside-wayback-machine-the-internets-time-capsule",
+      "answer_b": "Alexa Internet is the web analytics organization that began donating its crawl data to the Internet Archive in 1996. This pioneering partnership has been instrumental in building the Internet Archive's massive web collection, with Alexa contributing billions of web pages through its global web crawling operations.\n\nAccording to the Internet Archive's collection details, the 'DR' (presumably Domain Rank or Direct Request) crawl data contributed by Alexa Internet is currently not publicly accessible. The dataset's metadata indicates restricted access status, meaning researchers and the general public cannot directly query or download this specific collection through the Internet Archive's standard interfaces. This restriction applies despite the broader availability of much of Alexa's contributed content through the Wayback Machine.\n\nRegarding the temporal condition for Alexa's daily data flows, there is a specific embargo period that applies before the crawled content becomes available in the Wayback Machine. Alexa's daily crawl data undergoes a six-month delay before being integrated into the publicly accessible Wayback Machine interface [1][2]. This embargo period serves multiple purposes, including data processing, quality control, and potential compliance with various legal and technical requirements.\n\nThe collaboration between Alexa Internet and the Internet Archive represents one of the longest-running web preservation partnerships, fundamentally shaping how we access historical web content. While Alexa announced the discontinuation of its web ranking service in December 2021 and shut down operations in May 2022, the legacy data continues to be maintained by the Internet Archive under the established access restrictions and temporal conditions [3].\n\n## References\n[1] Internet Archive - Alexa Crawls Collection Overview\n[2] Internet Archive Blog - Web Crawl Data Documentation\n[3] Alexa Internet End of Service Announcement - December 2021",
+      "duration_a_seconds": 6.7,
+      "duration_b_seconds": 16.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the entity as Alexa Internet. However, Agent A failed significantly on the specific details requested in the prompt (the 'Wide' checklist). \n\n1. **Accessibility**: The prompt asks about 'DR' crawl data. Agent A incorrectly claimed it is publicly accessible. Agent B correctly identified that this specific dataset is restricted/not publicly accessible.\n2. **Temporal Condition**: Agent A hallucinated a 'seven-day' delay. The established ground truth for Alexa's historical contributions to the Wayback Machine is a **six-month** embargo, which Agent B correctly identified.\n\nAlthough Agent A had better formatting and clickable citations, its content was factually incorrect regarding the specific constraints of the query. Agent B provided the correct answers to the difficult sub-questions.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_claudeopu_vs_pplsonar_64"
+}

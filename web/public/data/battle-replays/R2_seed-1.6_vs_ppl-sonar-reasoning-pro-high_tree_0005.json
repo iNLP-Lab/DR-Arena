@@ -1,0 +1,215 @@
+{
+  "id": "R2_seed-1.6_vs_ppl-sonar-reasoning-pro-high_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_seed-1.6_vs_ppl-sonar-reasoning-pro-high_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "seed-1.6",
+  "model_b": "ppl-sonar-reasoning-pro-high",
+  "winner": "seed-1.6",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "A development team working on a historical racing game is researching defunct official websites of classic racing titles using the Wayback Machine. They discover that a major web traffic analytics company has been donating its large-scale web crawl data to the Internet Archive since 1996, with the data added to the Wayback Machine after an embargo period. Identify this organization, name the specific crawl data collection it donates, and explain the public accessibility status of that collection.",
+    "A company founded in 1996 is known for donating its web crawl data to the Internet Archive’s Wayback Machine. Its name is also shared with the voice assistant integrated into modern gaming ecosystems, including platforms where players can use voice commands while playing racing games. Identify this company and, focusing on its associated voice assistant’s premium upgrade, explain all the publicly advertised ways a user can obtain Early Access to the upgraded “Plus” version of the service.",
+    "Many early fan sites and promotional pages for 1990s racing games can still be viewed today thanks to large-scale web archiving efforts. Identify the private web analytics company that, beginning in 1996, donated its large-scale web crawl data to the Internet Archive for inclusion in the Wayback Machine. Additionally, name the specific crawl data collection associated with this donation and state whether this dataset is currently publicly accessible."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 546892,
+  "estimated_cost": 5.4689,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "A development team working on a historical racing game is researching defunct official websites of classic racing titles using the Wayback Machine. They discover that a major web traffic analytics company has been donating its large-scale web crawl data to the Internet Archive since 1996, with the data added to the Wayback Machine after an embargo period. Identify this organization, name the specific crawl data collection it donates, and explain the public accessibility status of that collection.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Organization name: Alexa Internet",
+        "Donation start timeframe: Since 1996",
+        "Recipient: Internet Archive (Wayback Machine)",
+        "Collection name: Alexa Crawls DR Crawl data",
+        "Access status: Data is currently not publicly accessible",
+        "Detail that data is added after an embargo period"
+      ],
+      "checklist_depth": [
+        "Alexa Internet + Identified as the web traffic analytics company donating crawl data to the Internet Archive since 1996"
+      ],
+      "rationale": "The question uses a racing game development scenario (Deep context) to indirectly point to the Wayback Machine and archived web data research, requiring logical identification of the organization known for donating crawl data since 1996. It does not name the entity directly, masking it through functional description. The Wide component requires aggregation of multiple distinct facts: the organization’s name, start date of donations, the specific crawl collection name, the embargo detail, and the public accessibility status of the data.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Kart racing game - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The organization is Alexa Internet, a prominent web traffic analytics company [1]. The specific crawl data collection it donates is the Alexa Internet Archive Crawl [2]. Launched in 1996, this collection comprises large-scale, regular crawls of global web content, capturing snapshots of websites (including defunct classic racing game official sites) that complement the Wayback Machine’s existing archives [2]. The data is added to the Wayback Machine following a 10-year embargo period, during which it is restricted from public access to balance preservation goals with potential privacy and commercial considerations [1]. Post-embargo, the collection is publicly accessible through the Wayback Machine’s user-friendly interface, allowing teams like the historical racing game developers to explore archived web pages for research into past game promotions, community features, and updates [2]. However, access to unprocessed raw crawl data may require formal requests to the Internet Archive or use of its designated technical tools, as the public interface prioritizes navigable, human-readable web page snapshots over unstructured data files [1].\n\n## References\n[1] Internet Archive. \"Alexa Internet Archive Crawl.\" Accessed October 26, 2024. https://archive.org/details/alexacrawl\n[2] Alexa Internet. \"Historical Donation of Crawl Data to the Internet Archive.\" Accessed October 26, 2024. https://web.archive.org/web/20230512101522/https://www.alexa.com/about/press-releases/1996-08-01-alexa-donates-crawl-data-to-internet-archive",
+      "answer_b": "The provided search results do not contain sufficient information to fully answer this query. While the search results reference **Web Archive 96** as one of the first web collections created by the Internet Archive[4], they do not identify the specific web traffic analytics company that has been donating crawl data since 1996, nor do they name the particular crawl data collection being donated.\n\nResult [4] states that \"the two institutions launched Web Archive 96\" and describes it as capturing early campaign webpages from the 1996 U.S. presidential election, now available through the Wayback Machine for public access[4]. However, the search results do not clearly specify which of these \"two institutions\" is the web traffic analytics company in question, nor do they provide details about an ongoing data donation arrangement or embargo period.\n\nTo properly answer this query—identifying the analytics company, its specific crawl data collection name, and the public accessibility status—additional sources would be needed that explicitly discuss partnerships between the Internet Archive and web analytics firms regarding data donations and their integration into the Wayback Machine.\n\nThe search results demonstrate that the Internet Archive has been preserving web content since 1996 and now maintains over 1 trillion web pages[4], but they lack the specific details about the analytics company partnership that the query requests.\n\n## References\n\n[4] https://blog.archive.org/category/wayback-machine/page/2/ - Internet Archive Blogs: Wayback Machine",
+      "duration_a_seconds": 11.0,
+      "duration_b_seconds": 8.8,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies **Alexa Internet** as the organization donating crawl data since 1996. Agent B fails to identify the organization at all, explicitly stating insufficient information—this is a clear DEEP failure. \n\nNext, Width/Completeness: Agent A covers most required elements (organization, timeframe, recipient, embargo detail). However, it slightly misnames the collection (\"Alexa Internet Archive Crawl\" instead of \"Alexa Crawls DR Crawl data\") and incorrectly states the data becomes publicly accessible post-embargo, whereas the checklist specifies the collection is currently not publicly accessible. So Agent A has sub-point inaccuracies (WIDE issues). Agent B, meanwhile, provides none of the required checklist elements—failing both DEEP and WIDE.\n\nFinally, User Experience: Agent A provides a structured, direct answer with citations and contextual explanation, making it helpful and scannable. Agent B delivers a refusal-style response with minimal utility and no attempt at synthesis. Even though Agent A contains minor factual inaccuracies, it substantially answers the query and offers meaningful context.\n\nBecause Agent A has factual errors, it cannot receive MUCH_BETTER. However, since Agent B fails the core entity and provides no substantive answer, Agent A is clearly BETTER.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Alexa+'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine",
+        "Alexa+"
+      ],
+      "question": "A company founded in 1996 is known for donating its web crawl data to the Internet Archive’s Wayback Machine. Its name is also shared with the voice assistant integrated into modern gaming ecosystems, including platforms where players can use voice commands while playing racing games. Identify this company and, focusing on its associated voice assistant’s premium upgrade, explain all the publicly advertised ways a user can obtain Early Access to the upgraded “Plus” version of the service.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Mentions that users can try the upgraded Alexa+ service for free",
+        "Explains that buying an eligible device grants Early Access to Alexa+",
+        "States that users who already own an eligible device can ask Alexa directly for access to Alexa+",
+        "Notes that users can request Early Access to Alexa+ through an official request process/page",
+        "References that users can learn more through official Alexa+ Early Access information resources"
+      ],
+      "checklist_depth": [
+        "Identifies Alexa Internet as the company founded in 1996 that donates crawl data to the Internet Archive’s Wayback Machine",
+        "Correctly connects the shared name to Amazon’s Alexa voice assistant used on gaming platforms (including in contexts such as racing games via console ecosystems)",
+        "Correctly identifies the premium upgrade service as Alexa+ (Alexa Plus) Early Access"
+      ],
+      "rationale": "The question uses the 1996 founding date and the web crawl data donation to the Internet Archive as a logical filter to identify Alexa Internet (Deep reasoning). It then bridges to the shared ‘Alexa’ brand used in gaming ecosystems, including racing game contexts, without explicitly naming the entity in the question. The Wide component requires aggregating multiple distinct publicly listed methods for obtaining Alexa+ Early Access (free trial, eligible device purchase, direct voice request, formal request process, and learning resources), which are typically presented across promotional and support pages rather than in a single short reference.",
+      "source_nodes": [
+        "Alexa+",
+        "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+        "Wayback Machine"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Try Alexa+ for free Buy an eligible device to get Early Access 1 . Already have an eligible device? Just ask Alexa for access to Alexa+ or request it below. Learn more about A",
+      "judge_max_limit": 350,
+      "answer_a": "The company is Alexa Internet, a 1996-founded web traffic analytics firm that donates its Alexa Internet Archive Crawl data to the Internet Archive’s Wayback Machine—its name shared with Amazon’s Alexa voice assistant, which is integrated into gaming ecosystems (e.g., Amazon Luna, smart TV gaming hubs) where racing game players use voice commands to adjust settings, launch matches, or access game guides [1]. The voice assistant’s premium upgrade is Alexa Plus, a paid service offering ad-free interactions, personalized gaming recommendation algorithms, and priority customer support [2]. Publicly advertised Early Access pathways for Alexa Plus include three distinct options: first, enrolling in Amazon’s official Alexa Beta Program via the Alexa app’s “Device Settings > Beta Options” menu, where users opt in to test pre-release features and are selected for Early Access based on device compatibility, gaming usage frequency, and geographic location [2]. Second, purchasing eligible new Amazon Echo devices (e.g., Echo Show 15, Echo Studio (2nd Gen)) launched with a limited-time Early Access bundle, which auto-enrolls buyers in Alexa Plus Early Access upon device activation and includes a 30-day free trial of the full service [3]. Third, participating in targeted email campaigns sent to Amazon Prime members with a documented history of using Alexa for gaming or smart home integration, which contain unique, time-sensitive sign-up links for Early Access [1]. These pathways are availability-limited, with enrollment caps to manage user feedback volume, and Early Access users must submit monthly feedback surveys to Amazon to retain their pre-release access [3].\n\n## References\n[1] Amazon. \"Alexa Voice Assistant Gaming Ecosystem Integration Details.\" Accessed October 26, 2024. https://www.amazon.com/gp/help/customer/display.html/ref=hp_left_v4_sib?ie=UTF8&nodeId=G203205660\n[2] Amazon. \"Alexa Plus Early Access Program Official Guidelines.\" Accessed October 26, 2024. https://www.amazon.com/gp/help/customer/display.html/ref=hp_left_v4_sib?ie=UTF8&nodeId=G203205670\n[3] Amazon. \"Echo Device Alexa Plus Early Access Bundle Offer.\" Accessed October 26, 2024. https://www.amazon.com/gp/help/customer/display.html/ref=hp_left_v4_sib?ie=UTF8&nodeId=G203205680",
+      "answer_b": "The company is **Alexa Internet**, founded in 1996, which has donated its web crawl data to the Internet Archive's Wayback Machine since its inception[1][2]. The name \"Alexa\" is now shared with Amazon's **Alexa voice assistant**, which is integrated into gaming ecosystems including Xbox, where players can use voice commands during gameplay[3].\n\nRegarding Alexa's premium voice assistant upgrade (\"Alexa Plus\" or \"Alexa Premium\"), the publicly advertised methods to obtain Early Access include:\n\n**Official Early Access Program:** Users can join Amazon's Early Access or beta testing programs by registering through official Amazon channels, typically announced via email to existing Alexa users or promoted on the Alexa app[4].\n\n**Developer or Prime Member Benefits:** Amazon sometimes offers Early Access to premium features through its Prime membership program or to users enrolled in Amazon's developer programs[5].\n\n**Waitlist Registration:** Amazon maintains public waitlists on the Alexa app and companion websites where interested users can register to receive invitations as the service expands access[4].\n\n**Regional Rollout Participation:** Early Access is frequently granted to users in specific geographic regions during staged rollout phases before wider availability[6].\n\n**Trade-In or Upgrade Programs:** Amazon occasionally bundles Early Access to premium Alexa features with hardware upgrades or device trade-in promotions[5].\n\n**Feedback Program Enrollment:** Power users and frequent Alexa app users may receive invitations through Amazon's user feedback and research programs[4].\n\nThe specific mechanisms and availability vary by region and service iteration. Access typically requires an active Amazon account and participation through official Amazon portals rather than third-party channels.\n\n## References\n\n[1] https://archive.org/details/hot-wheels-world-race - Internet Archive documentation of web preservation initiatives\n[2] https://blog.archive.org/category/wayback-machine/page/2/ - Internet Archive Blogs on Wayback Machine history\n[3] Xbox Alexa integration documentation for gaming voice commands\n[4] Amazon Alexa official app and registration portals for Early Access programs\n[5] Amazon Prime member benefits and Alexa Premium offerings\n[6] Amazon regional technology rollout strategies",
+      "duration_a_seconds": 21.4,
+      "duration_b_seconds": 11.6,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Both Agent A and Agent B correctly identify **Alexa Internet (founded in 1996)** as the company that donated crawl data to the Wayback Machine, and correctly connect the shared name to **Amazon’s Alexa voice assistant**, identifying the premium upgrade as **Alexa+ (Alexa Plus)**. So both pass the core entity check.\n\nSecond, Width/Completeness: Both agents significantly fail the required checklist. Neither clearly states the publicly advertised Early Access paths such as: trying Alexa+ for free, buying an eligible device to gain Early Access, asking Alexa directly if you already own an eligible device, requesting access through an official Early Access page, or consulting official Alexa+ Early Access information resources. Instead, both introduce largely unsupported or fabricated mechanisms (e.g., beta menus, targeted Prime gaming emails, trade-in programs, developer benefits, mandatory feedback surveys). These are not aligned with the known public pathways and represent major hallucinations. Therefore, both fail WIDTH and contain factual inaccuracies.\n\nThird, Presentation & UX: Agent B uses clearer bullet formatting and is slightly more scannable. Agent A provides more concrete (though fabricated) detail. However, since both contain substantial inaccuracies about the Early Access mechanisms, neither provides a trustworthy or high-quality user experience.\n\nBecause both agents pass Deep Logic but substantially hallucinate key sub-points and miss the required checklist items, this is a LOW-QUALITY TIE.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Many early fan sites and promotional pages for 1990s racing games can still be viewed today thanks to large-scale web archiving efforts. Identify the private web analytics company that, beginning in 1996, donated its large-scale web crawl data to the Internet Archive for inclusion in the Wayback Machine. Additionally, name the specific crawl data collection associated with this donation and state whether this dataset is currently publicly accessible.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "States that the company began donating crawl data in 1996",
+        "Explains that the data was donated to the Internet Archive for inclusion in the Wayback Machine",
+        "Correctly names the specific collection: Alexa Crawls DR Crawl",
+        "Clearly states that the dataset is currently not publicly accessible",
+        "Mentions the embargo period before data is added to the Wayback Machine"
+      ],
+      "checklist_depth": [
+        "Identifies Alexa Internet as the private web analytics company that began donating crawl data in 1996 to the Internet Archive",
+        "Correctly links Alexa Internet’s crawl data donation to preservation of historical websites (e.g., early racing game sites) via the Wayback Machine"
+      ],
+      "rationale": "The question uses the context of preserving early racing game websites as a logical anchor (Deep), requiring the solver to infer that large-scale web crawl donations enabled such preservation. It does not name Alexa Internet directly, forcing identification through reasoning about web archiving history. It then requires aggregation of multiple distinct facts (Wide): the organization’s name, the start year (1996), the recipient (Internet Archive/Wayback Machine), the specific crawl collection (Alexa Crawls DR Crawl), the embargo detail, and the dataset’s current public accessibility status.",
+      "source_nodes": [
+        "Wayback Machine",
+        "1984 in video games - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The private web analytics company that began donating its large-scale web crawl data to the Internet Archive for inclusion in the Wayback Machine in 1996 is Alexa Internet [1]. The specific crawl data collection associated with this donation is the Alexa Internet Archive Crawl [2]. Launched alongside the 1996 donation, this collection comprises extensive, recurring crawls of global web content, including the early fan sites and promotional pages for 1990s racing games that remain viewable today [2]. The collection follows a 10-year embargo period, during which data is restricted to balance long-term preservation goals with potential privacy and commercial considerations for the crawled content [3]. Post-embargo, the processed, human-readable web page snapshots from the collection are publicly accessible through the Wayback Machine’s user-friendly interface, allowing users to explore the 1990s racing game-related content for research, nostalgia, or documentation purposes [3]. However, unprocessed raw crawl data—unstructured files that lack navigable formatting—isn’t directly available via the public interface; access to this raw data may require formal requests to the Internet Archive or utilization of its designated technical tools for advanced research initiatives [1]. This donation has been a pivotal resource for preserving ephemeral 1990s racing game web content that would otherwise have been lost to time.\n\n## References\n[1] Internet Archive. \"Alexa Internet Archive Crawl Collection Overview.\" Accessed October 26, 2024. https://archive.org/details/alexacrawl\n[2] Internet Archive. \"Historical Donations of Crawl Data to the Wayback Machine.\" Accessed October 26, 2024. https://archive.org/about/historical-donations\n[3] Wayback Machine Help Center. \"Accessing Processed and Raw Alexa Crawl Data.\" Accessed October 26, 2024. https://help.archive.org/help/accessing-alexa-crawl-data/",
+      "answer_b": "The provided search results do not contain sufficient information to identify the specific private web analytics company, the name of its crawl data collection, or the public accessibility status of that dataset.\n\nWhile the search results confirm that the Internet Archive has been preserving web content since 1996 and mention **Web Archive 96** as one of the first web collections created[2], they do not specify which organization is the web analytics company referenced in your query. The results reference the Wayback Machine's preservation efforts and its extensive digital library, but lack explicit details about a formal data donation arrangement from a web analytics firm or the specific crawl dataset collection name[2][4].\n\nThe search results demonstrate the Internet Archive's archiving capabilities and note that the Wayback Machine now preserves over one trillion web pages[2], but they do not clarify partnerships with web analytics companies or details about embargoed data donations beginning in 1996.\n\nTo fully answer this question—identifying the analytics company by name, specifying its crawl data collection designation, and confirming public accessibility status—additional sources would be required that explicitly discuss such partnerships and data integration arrangements with the Internet Archive.\n\nThe context from your previous query suggests this information exists in specialized documentation about Internet Archive partnerships, but it is not present in the current search results provided.\n\n## References\n\n[2] https://blog.archive.org/category/wayback-machine/page/2/ - Internet Archive Blogs: Wayback Machine\n\n[4] http://wayback.archive.org - Wayback Machine",
+      "duration_a_seconds": 11.8,
+      "duration_b_seconds": 9.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies **Alexa Internet** as the company that began donating crawl data in 1996 to the Internet Archive. Agent B fails to identify any company, so it fails the core entity requirement (DEEP failure).\n\nSecond, Width/Completeness: Agent A mentions the 1996 donation, ties it to the Wayback Machine, and discusses an embargo period. However, it incorrectly names the collection (\"Alexa Internet Archive Crawl\" instead of **Alexa Crawls DR Crawl**) and does not clearly state that the dataset is currently not publicly accessible—implying processed data is available. Thus, Agent A has WIDE inaccuracies. Agent B provides none of the required details, failing both DEEP and WIDE criteria.\n\nFinally, User Experience: Agent A delivers a structured, citation-supported, explanatory response that attempts to address all aspects of the query. Agent B is a refusal-style answer that provides no substantive solution, offering poor utility to the user.\n\nBecause Agent A has factual sub-point errors, it cannot receive MUCH_BETTER. However, since Agent B fails both core identification and detail aggregation, Agent A is clearly superior overall.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_seed16_vs_pplsonar_1160"
+}

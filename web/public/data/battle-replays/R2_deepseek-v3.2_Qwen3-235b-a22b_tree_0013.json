@@ -1,0 +1,91 @@
+{
+  "id": "R2_deepseek-v3.2_Qwen3-235b-a22b_tree_0013",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_deepseek-v3.2_Qwen3-235b-a22b_tree_0013.log",
+  "tree_id": "tree_0013",
+  "tree_title": "History of swimwear",
+  "tree_topic": "Shopping > Apparel",
+  "tree_subtopic": "Swimwear",
+  "tree_crawled_at": "2025-11-21T14:23:33.700598",
+  "tree_url": "https://en.wikipedia.org/wiki/History_of_swimwear",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "History of swimwear",
+  "questions": [
+    "Identify the web analytics organization, established in 1996 and known for its traffic ranking system, that has historically served as a primary donor of crawl data to the Internet Archive. Regarding the specific collection titled 'Alexa Web 2008 Crawl' provided by this entity, what is its current public accessibility status, and what is the general protocol regarding the timing of when such daily data flows are made available on the Wayback Machine?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 166258,
+  "estimated_cost": 1.6626,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "History of swimwear",
+        "Little wonder that bikinis have fit in almost from the start"
+      ],
+      "question": "Identify the web analytics organization, established in 1996 and known for its traffic ranking system, that has historically served as a primary donor of crawl data to the Internet Archive. Regarding the specific collection titled 'Alexa Web 2008 Crawl' provided by this entity, what is its current public accessibility status, and what is the general protocol regarding the timing of when such daily data flows are made available on the Wayback Machine?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Donation Start Year: 1996",
+        "Specific Collection: Alexa Web 2008 Crawl",
+        "Accessibility Status: Not publicly accessible (or currently not accessible)",
+        "Ingestion Timing: Added to the Wayback Machine after an embargo period",
+        "Donor Organization: Alexa Internet"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet",
+        "Logic Proof: Identified as the organization donating data since 1996 and associated with the 2008 Crawl collection."
+      ],
+      "rationale": "The provided Hidden Knowledge text contained information exclusively about Alexa Internet and the Internet Archive, with no factual relation to the requested 'History of swimwear' topic. To strictly adhere to the 'Absolute Grounding' rule (Rule 1) which requires the question to be based ONLY on the provided entities, and to ensure the Checklists are valid, the question focuses on the Alexa Internet/Internet Archive facts, disregarding the likely erroneous Topic label.",
+      "source_nodes": [
+        "Little wonder that bikinis have fit in almost from the start | The San Diego Union-Tribune",
+        "Spandex - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The web analytics organization established in 1996, known for its traffic ranking system and historically serving as a primary donor of crawl data to the Internet Archive, is Alexa Internet, founded by Brewster Kahle and Bruce Gilliat [1]. Alexa Internet was instrumental in collecting web data and provided large-scale crawls to the Internet Archive, powering research and historical preservation of the web. Regarding the 'Alex游戏副本 Web 2008 Crawl', the collection is not independently cataloged as a standalone, publicly accessible dataset within the Internet Archive’s main interface [2]. However, content from Alexa’s broader crawls during that period is integrated into the Wayback Machine, meaning snapshots from 2008 are accessible, but not necessarily attributed specifically to the “Web 2008 Crawl” as a discrete collection. The Wayback Machine follows a general protocol where crawl data is made publicly available after a processing and indexing delay, typically ranging from a few weeks to several months, depending on the volume and format [3]. This means daily data flows from Alexa were not published in real time but ingested and released incrementally. As Alexa ceased active web crawling in 2021 and was shut down by Amazon in May 2022, access to new crawl data from Alexa has ended, but legacy data remains preserved and accessible through ongoing Internet Archive efforts [4]. Researchers can explore historical web snapshots from that era via https://archive.org/web/, though specific metadata on subset collections like the 2008 crawl may be limited.\n\n## References  \n[1] https://archive.org/details/alexa  \n[2] https://archive.org/details/heritrix  \n[3] https://archive.org/web/researchers  \n[4] https://blog.alexa.com/retiring-alexa-internet/",
+      "answer_b": "The organization is Alexa Internet, founded in 1996. A subsidiary of Amazon.com, it was best known for its Alexa Toolbar and global website traffic ranking system. From 1996 until its shutdown in 2022, Alexa Internet was a major donor of web crawl data to the Internet Archive, contributing data used to populate the Wayback Machine's vast index [1][2].\n\nRegarding the specific 'Alexa Web 2008 Crawl' collection, it is not directly and immediately accessible to the general public for browsing or searching like the main Wayback Machine interface. The raw crawl data is archived as a specialized collection within the Internet Archive's broader repository. Access typically requires technical expertise to work with the large-scale, structured data formats (like ARC or WAT files) and may involve using specific APIs or data analysis tools provided by the Internet Archive for researchers [3].\n\nConcerning the general protocol for daily data flows, donated crawl data from entities like Alexa was historically integrated into the Wayback Machine with a significant time lag. This embargo period was traditionally six months or more [4]. This delay served multiple purposes: it protected the commercial or strategic value of the fresh crawl data for the donor organization, provided time for data processing and quality assurance by the Internet Archive, and addressed potential privacy concerns by allowing recent user data to age before permanent public archiving. The specific timeline for any given crawl's public availability would have been governed by the donation agreement between Alexa Internet and the Internet Archive.\n\n## References\n[1] Internet Archive. \"About the Internet Archive.\" Retrieved October 2023.\n[2] Wikipedia. \"Alexa Internet.\" Retrieved October 2023.\n[3] Internet Archive Blogs. \"Analyzing Web Archives with the CDX Indexing System.\" Retrieved October 2023.\n[4] Internet Archive. \"FAQ on Web Archiving and Data Donations.\" Retrieved October 2023.",
+      "duration_a_seconds": 5.5,
+      "duration_b_seconds": 12.9,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B is superior in both accuracy and presentation. \n\n1. **Accuracy**: Agent B correctly identifies the historical '6-month embargo' protocol for Alexa data donations, whereas Agent A provides a vague and less accurate timeline ('weeks to several months'). \n\n2. **Quality Control**: Agent A contains a severe text hallucination/corruption in the second sentence ('Alex游戏副本'), inserting Chinese characters into the entity name. \n\n3. **Completeness**: Agent B provides a better explanation of the restricted nature of the 2008 crawl, whereas Agent A incorrectly claims it is not cataloged as a standalone collection (it is cataloged, just restricted).",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0013_Qwen3235b_vs_deepseekv_552"
+}

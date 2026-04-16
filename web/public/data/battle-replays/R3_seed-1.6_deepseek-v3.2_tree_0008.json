@@ -1,0 +1,157 @@
+{
+  "id": "R3_seed-1.6_deepseek-v3.2_tree_0008",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_seed-1.6_deepseek-v3.2_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "deepseek-v3.2",
+  "model_b": "seed-1.6",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Based on KFF Health News reporting and their 'Facts About Medicare Spending', answer the following three-part inquiry: First, what specific percentages of the federal budget and national health spending does Medicare currently account for? Second, regarding the article about a walk-in patient who avoided Lyme disease, identify the specific administrative hurdle that resulted in a 'surprise bill'. Third, contrast the reported frequency of complaints regarding gaps in Medicare Advantage networks with the observed level of federal enforcement.",
+    "Identify the U.S. health policy organization that produces the 'What the Health?' podcast and maintains the 'State Health Facts' database. Using their topic summaries, locate the 'Key Facts' and 'FAQs' for two specific policy areas: (1) the federal program explicitly noted as serving 67 million people and accounting for 21% of national health spending, and (2) the demographic-specific policy category that reviews 'implications of the Dobbs decision' and 'Medicaid Coverage'. \n\nFor the federal program, summarize the specific financial metrics highlighted, including the components of spending trends, the comparison to private insurance, and the specific trust fund solvency challenge mentioned. For the demographic policy category, detail the scope of the 'Medicaid Coverage' data note (specifically what it describes regarding eligibility and health conditions) and identify the specific medical subject of the 'new study' cited as an example of how science can be distorted."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 2446981,
+  "estimated_cost": 24.4698,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Medicare"
+      ],
+      "question": "Based on KFF Health News reporting and their 'Facts About Medicare Spending', answer the following three-part inquiry: First, what specific percentages of the federal budget and national health spending does Medicare currently account for? Second, regarding the article about a walk-in patient who avoided Lyme disease, identify the specific administrative hurdle that resulted in a 'surprise bill'. Third, contrast the reported frequency of complaints regarding gaps in Medicare Advantage networks with the observed level of federal enforcement.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Medicare Federal Budget share: 12 percent",
+        "Medicare National Health Spending share: 21 percent",
+        "Administrative hurdle: Preauthorization (or prior authorization) issue",
+        "Disease avoided: Lyme disease",
+        "Frequency of Medicare Advantage network complaints: Common",
+        "Level of Federal Enforcement: Rare"
+      ],
+      "checklist_depth": [
+        "Identified the specific financial statistics for Medicare from KFF data",
+        "Identified the specific patient story: 'Ticked Off Over Preauthorization' / Lyme disease case",
+        "Identified the specific report on Medicare Advantage: 'Complaints About Gaps... Federal Enforcement Is Rare'"
+      ],
+      "rationale": "The question uses 'KFF Health News' as the logical anchor (Deep) to connect three disparate pieces of information found in the source text: hard statistical data on Medicare spending, a specific narrative about a patient's surprise bill, and a systemic critique of Medicare Advantage oversight (Wide).",
+      "source_nodes": [
+        "Medicare - Research and Data from KFF",
+        "Private Insurance - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Medicare This list of Frequently Asked Questions (FAQs) about the Medicare Open Enrollment period covers a range of topics related to enrollment, including Medicar",
+      "judge_max_limit": 300,
+      "answer_a": "Medicare spending accounts for 12% of the federal budget and 21% of national health spending, based on KFF's analysis of 2022 data [1]. In the reported case of a walk-in patient avoiding Lyme disease, the administrative hurdle was that the in-network urgent care clinic sent the blood sample to an out-of-network laboratory, resulting in a surprise bill due to lack of transparency and network restrictions [2]. Contrasting Medicare Advantage network gaps, complaints regarding inadequate provider networks and denied care are frequent and rising, but federal enforcement—including audits, penalties, and corrective actions—has been observed to be low and declining, indicating a significant mismatch between beneficiary complaints and regulatory response [3].\n\n## References\n[1] KFF, \"Medicare Spending and Financing,\" November 2023. https://www.kff.org/medicare/issue-brief/medicare-spending-and-financing/\n[2] KFF Health News, \"A Walk-In Patient Avoided Lyme Disease but Got a Surprise Bill,\" October 2023. https://kffhealthnews.org/news/article/walk-in-patient-avoided-lyme-disease-surprise-bill/\n[3] KFF Health News, \"Complaints About Medicare Advantage Are Up. But Federal Enforcement Is Down,\" September 2023. https://kffhealthnews.org/news/article/medicare-advantage-complaints-up-enforcement-down/",
+      "answer_b": "Medicare currently accounts for roughly 15% of the total federal budget and 20% of national health spending, according to KFF’s “Facts About Medicare Spending” [1]. Regarding the Lyme disease walk-in patient’s surprise bill, the critical administrative hurdle was the patient’s insurer’s outdated online directory, which incorrectly listed the clinic as in-network despite the clinic having recently switched to an out-of-network status, leaving the patient with unexpected, costly charges [2]. Frequent complaints plague Medicare Advantage network gaps—KFF research found that roughly 1 in 5 enrollees encounter access issues (like hard-to-find specialists) that lead to formal complaints—yet federal enforcement remains notably low; in 2023, only 3% of Medicare Advantage plans faced penalties for network non-compliance, as CMS’s routine audits often fail to identify and address these gaps effectively [3].\n\n## References\n1. KFF. (2024). Facts About Medicare Spending. https://www.kff.org/medicare/fact-sheet/facts-about-medicare-spending/\n2. KFF Health News. (2024). Lyme Disease Walk-In Patient Surprise Bill Investigation. https://kffhealthnews.org/news/article/lyme-disease-surprise-bill-directory-hurdle/\n3. KFF. (2024). Medicare Advantage Network Compliance and Enforcement Report. https://www.kff.org/medicare/report/medicare-advantage-network-gaps-complaints-and-enforcement/",
+      "duration_a_seconds": 51.2,
+      "duration_b_seconds": 27.8,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A is the winner primarily due to accuracy on the statistical portion of the query. Agent A correctly cited the Medicare spending statistics (12% of federal budget, 21% of national health spending) as per the Ground Truth. Agent B provided incorrect statistics (15% and 20%). \n\nHowever, both agents failed the specific detail regarding the 'Lyme disease' story. The Ground Truth identifies the administrative hurdle as a 'Preauthorization' issue. Agent A incorrectly attributed it to an out-of-network lab, and Agent B incorrectly attributed it to a directory error. Because the winner (Agent A) contains a factual error on a sub-point, it receives a 'Better' rating rather than 'Much Better'.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Medicare"
+      ],
+      "question": "Identify the U.S. health policy organization that produces the 'What the Health?' podcast and maintains the 'State Health Facts' database. Using their topic summaries, locate the 'Key Facts' and 'FAQs' for two specific policy areas: (1) the federal program explicitly noted as serving 67 million people and accounting for 21% of national health spending, and (2) the demographic-specific policy category that reviews 'implications of the Dobbs decision' and 'Medicaid Coverage'. \n\nFor the federal program, summarize the specific financial metrics highlighted, including the components of spending trends, the comparison to private insurance, and the specific trust fund solvency challenge mentioned. For the demographic policy category, detail the scope of the 'Medicaid Coverage' data note (specifically what it describes regarding eligibility and health conditions) and identify the specific medical subject of the 'new study' cited as an example of how science can be distorted.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Federal Program: Identified as serving 67 million people and 12% of federal budget / 21% of national health spending.",
+        "Federal Program Spending: Trends overall and per person.",
+        "Federal Program Spending: Growth relative to private insurance.",
+        "Federal Program Solvency: Part A trust fund solvency challenges.",
+        "Demographic Category: Medicaid data note covers eligibility, reproductive health, and chronic conditions.",
+        "Demographic Category: Dobbs analysis focuses on racial disparities in access/outcomes.",
+        "Demographic Category: The 'distorted science' study relates to 'Breast Cancer and Birth Control'."
+      ],
+      "checklist_depth": [
+        "Target Organization: KFF (Kaiser Family Foundation).",
+        "Target Entity 1: Medicare (identified via population count and spending stats).",
+        "Target Entity 2: Women's Health Policy (identified via Dobbs/Medicaid context)."
+      ],
+      "rationale": "The question uses Deep logic by masking the organization (KFF) behind its media outputs ('What the Health?', 'State Health Facts') and masking the specific topics (Medicare, Women's Health) behind statistical fingerprints (67 million, 21% spending) and policy contexts (Dobbs). The Wide component requires aggregating specific details about spending metrics, solvency, and specific studies (Breast Cancer/Birth Control) from different sections of the source text.",
+      "source_nodes": [
+        "Medicare - Research and Data from KFF",
+        "Women's Health Policy - Research and Data from KFF",
+        "Other Health - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Medicare This list of Frequently Asked Questions (FAQs) about the Medicare Open Enrollment period covers a range of topics related to enrollment, including Medicar",
+      "judge_max_limit": 330,
+      "answer_a": "The organization is KFF (KFF), formerly the Kaiser Family Foundation. It produces the 'What the Health?' podcast and maintains the 'State Health Facts' database [1].\n\nFor the federal program (Medicare), the Key Facts note it covers 67 million people and accounts for 21% of national health spending. Key financial metrics include Medicare spending growth of 5.9% in 2022, with average annual per enrollee spending growth (4.4%) outpacing private insurance (3.6%) over 2010-2022. A primary solvency challenge is that the Medicare Hospital Insurance (Part A) trust fund is projected to be depleted in 2031, when incoming revenues would only cover 89% of scheduled benefits [2].\n\nFor the demographic policy category (Women’s Health), the topic includes summaries on the implications of the Dobbs decision and a \"Medicaid Coverage of Women\" data note. This note describes how Medicaid is a key source of coverage for millions of women of reproductive age (15-49), detailing eligibility pathways and highlighting that over one-third of adult women enrolled have a chronic health condition or disability [3]. The category also cites a 'new study' on medication abortion (mifepristone), which is used as an example of how scientific evidence on safety and efficacy can be distorted in policy debates [3].\n\n## References\n[1] KFF, \"About KFF,\" https://www.kff.org/about-kff/\n[2] KFF, \"Medicare: Key Facts,\" https://www.kff.org/medicare/\n[3] KFF, \"Women’s Health Policy,\" https://www.kff.org/womens-health-policy/",
+      "answer_b": "The U.S. health policy organization is KFF, which produces the “What the Health?” podcast and maintains the “State Health Facts” database [1]. For the federal program Medicare (67 million enrollees, 21% of national health spending [2]), its Key Facts/FAQs outline key financial metrics: 2023 spending breaks down into hospital care (Part A, 47%), physician services (Part B, 39%), and prescription drugs (Part D, 14%), with spending growth outpacing inflation by 2.1 percentage points [2]. Per-capita Medicare spending ($15,870 in 2023) is 12% higher than private insurance’s per-capita expenditure [2]. The critical trust fund solvency challenge is Part A’s Hospital Insurance Fund’s projected 2031 insolvency, where incoming payroll taxes will only cover 89% of scheduled beneficiary benefits [2]. The demographic policy category is Women’s Health, which includes Dobbs decision implications and Medicaid Coverage analyses [3]. Its Medicaid Coverage data note details that 12 non-expansion states leave 70% of low-income uninsured eligible women without Medicaid access to reproductive, chronic (diabetes, hypertension), and maternal health care [3]. The new study cited exemplifies science distortion by focusing on mifepristone, documenting how political interference misrepresented its long-term safety and efficacy data in congressional and state policy debates [3].\n\n## References\n1. KFF. (2024). \"What the Health?\" Podcast. https://www.kff.org/podcast/what-the-health/\n2. KFF. (2024). Medicare Key Facts and FAQs. https://www.kff.org/medicare/fact-sheet/medicare-key-facts-and-faqs/\n3. KFF. (2024). Women’s Health Policy Topic Summary. https://www.kff.org/womens-health-policy/topic-summary/",
+      "duration_a_seconds": 24.4,
+      "duration_b_seconds": 45.6,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A followed the formatting constraints much better, using clear paragraph breaks to separate the complex multi-part answer. Agent B provided a single 'wall of text' which is poor user experience. \n\nIn terms of accuracy, Agent A correctly retrieved the specific Medicare spending growth comparison (4.4% vs 3.6%) found in the KFF Key Facts, whereas Agent B provided a mix of other statistics (absolute cost difference) that were less responsive to the 'spending trends' constraint. \n\nBoth agents identified 'Mifepristone' as the distorted science example, missing the Checklist's 'Breast Cancer and Birth Control'. This is likely due to the dynamic nature of the KFF website where Mifepristone is currently a prominent topic in that section. Since both missed this specific checklist item, the decision rests on the superior formatting and the precision of the Medicare financial metrics, where Agent A was flawless.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_deepseekv_vs_seed16_676"
+}

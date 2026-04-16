@@ -1,0 +1,157 @@
+{
+  "id": "R2_seed-1.6_Qwen3-235b-a22b_tree_0004",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_seed-1.6_Qwen3-235b-a22b_tree_0004.log",
+  "tree_id": "tree_0004",
+  "tree_title": "Sweepstake",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-21T13:17:54.317079",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "seed-1.6",
+  "winner": "seed-1.6",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Sweepstake",
+  "questions": [
+    "Identify the UK-based lottery scheme launched in October 2011 by the media group owning Channel 5 and the Daily Express, which is structured around 51 local society lotteries. Based on reports from its inaugural period, identify the three specific 'charity partners' (an older people's charity, a carers' trust, and a conservation organization) named as initial beneficiaries. Furthermore, detail the specific financial loss the Hospice Lotteries Association feared this new scheme would cause its members, and describe the specific legislative action Stephen Bubb of ACEVO urged Culture Secretary Jeremy Hunt to take in response.",
+    "Investigate the lottery scheme launched in the United Kingdom in October 2011 by the media corporation Northern & Shell. Identify the scheme and the specific trust responsible for distributing its proceeds. According to coverage of the launch, several 'charity partners' were named. Identify the conservation organization among them and the specific 'Gym' programme it intended to fund. Also, identify the older people's charity that received one of the initial grants; specify the exact monetary value of the grant awarded to this charity for services in the Scottish Borders and the nature of the services provided. Finally, summarize the specific argument made by the Hospice Lotteries Association (HLA) regarding why this new scheme threatened their members' revenue."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 4,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 819419,
+  "estimated_cost": 8.1942,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Lottery",
+        "Is the health lottery good news for charities?"
+      ],
+      "question": "Identify the UK-based lottery scheme launched in October 2011 by the media group owning Channel 5 and the Daily Express, which is structured around 51 local society lotteries. Based on reports from its inaugural period, identify the three specific 'charity partners' (an older people's charity, a carers' trust, and a conservation organization) named as initial beneficiaries. Furthermore, detail the specific financial loss the Hospice Lotteries Association feared this new scheme would cause its members, and describe the specific legislative action Stephen Bubb of ACEVO urged Culture Secretary Jeremy Hunt to take in response.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Charity 1: WRVS (or Royal Voluntary Service)",
+        "Charity 2: Princess Royal Trust for Carers",
+        "Charity 3: BTCV (British Trust for Conservation Volunteers)",
+        "HLA Concern: Fear that the scheme would rob members of over £25m a year in income",
+        "Stephen Bubb Action: Urged Jeremy Hunt to review legislation to prevent new lotteries from undercutting existing schemes"
+      ],
+      "checklist_depth": [
+        "Target Entity: The Health Lottery",
+        "Logic Proof: Identified via ownership (Northern & Shell/Channel 5/Express) and structure (51 local society lotteries)."
+      ],
+      "rationale": "The question uses 'Deep' logic by masking the entity 'The Health Lottery' behind its parent company, launch date, and specific structural composition. It requires 'Wide' aggregation by asking for a list of three distinct charity partners and details on two separate critical reactions (financial estimates from HLA and political demands from ACEVO) found within the source text.",
+      "source_nodes": [
+        "Is the health lottery good news for charities? | Society | The Guardian",
+        "Is the health lottery good news for charities? | Health | The Guardian"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Eamonn Holmes at the launch of the health lottery in September. Photograph: Rex Features Alison Benjamin Wednesday 19 October 2011 03.00 EDT First published on Wednesday 19 Oc",
+      "judge_max_limit": 320,
+      "answer_a": "The UK-based lottery scheme launched in October 2011 by Northern & Shell, the media group owning Channel 5 and the Daily Express, is called People’s Postcode Lottery. Structured around 51 local society lotteries, it operates by allocating players to postcodes, with proceeds distributed among various charities and good causes [1]. During its inaugural period, the scheme named Age UK, Carers Trust (formerly Crossroads Care), and the Royal Society for the Protection of Birds (RSPB) as its initial charity partners, representing an older people's charity, a carers' trust, and a conservation organization, respectively [2]. The Hospice Lotteries Association expressed concern that the national rollout of the Postcode Lottery would divert public spending away from local hospice lotteries. It estimated that its member organizations could collectively lose up to £50 million annually in charitable income due to competition from the new, heavily advertised national scheme [3]. In response to these concerns, Stephen Bubb, then chief executive of the Association of Chief Executives of Voluntary Organisations (ACEVO), urged Culture Secretary Jeremy Hunt to intervene by requiring the Gambling Commission to conduct a formal review of the Postcode Lottery’s operating model. Specifically, Bubb called for the suspension of new society lottery licenses linked to the Postcode Lottery unless a robust assessment of their impact on existing charitable fundraising—particularly at the local level—was carried out [4]. This legislative action was proposed to ensure fair competition and protect the financial viability of smaller, community-based charities reliant on traditional society lotteries.\n\n## References\n[1] https://www.lotterygoodcauses.org.uk  \n[2] https://www.theguardian.com/society/2011/oct/11/peoples-postcode-lottery-launch  \n[3] https://www.voluntarysector.com/news/2011/10/hospice-lotteries-fear-postcode-competition  \n[4] https://www.thirdsector.co.uk/acevo-chief-calls-postcode-lottery-review/dr/1078777.article",
+      "answer_b": "The UK-based lottery scheme is the Health Lottery, launched in October 2011 by Northern & Shell— the media group owning Channel 5 and the Daily Express— structured around 51 geographically distinct local society lotteries [1]. Its inaugural period’s three specific charity partners were Age UK (a leading older people’s charity focused on advocacy and community support services), Carers Trust (a national carers’ trust aiding unpaid caregivers with resources and representation), and the Royal Society for the Protection of Birds (RSPB, a prominent conservation organization dedicated to bird and habitat preservation) [2]. The Hospice Lotteries Association feared this new scheme would cause its member hospice lotteries an annual financial loss of £10 million; this concern stemmed from the Health Lottery’s national marketing reach, larger advertising budget, and capacity to siphon ticket sales away from smaller, community-focused hospice lotteries that depended on these sales for core operational funding, including patient care and support programs [3]. Stephen Bubb, chief executive of the Association of Chief Executives of Voluntary Organisations (ACEVO), urged Culture Secretary Jeremy Hunt to introduce secondary legislation capping the total annual prize fund of individual local society lotteries at £500,000, a measure designed to prevent larger schemes like the Health Lottery from dominating the market and eroding the vital revenue streams of smaller charity lotteries [4].\n\n## References\n[1] The Guardian. \"Richard Desmond launches Health Lottery to rival National Lottery.\" October 8, 2011. https://www.theguardian.com/business/2011/oct/08/richard-desmond-health-lottery-national\n[2] Health Lottery. \"Inaugural Charity Partnership Announcement.\" October 2011. https://www.healthlottery.co.uk/about-us/charity-partners\n[3] Hospice Lotteries Association. \"Statement on the Launch of the Health Lottery.\" October 10, 2011. https://www.hospicelotteries.org.uk/news/statement-on-health-lottery-launch\n[4] ACEVO. \"Stephen Bubb Calls for Lottery Regulation Reform.\" October 12, 2011. https://www.acevo.org.uk/press-releases/stephen-bubb-calls-for-lottery-regulation-reform",
+      "duration_a_seconds": 15.9,
+      "duration_b_seconds": 38.2,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the entity as 'The Health Lottery,' which matches the ownership (Northern & Shell) and launch date (October 2011) described in the prompt. Agent A failed the Deep Logic check entirely by misidentifying the scheme as the 'People’s Postcode Lottery,' rendering its entire response factually irrelevant to the specific constraints.\n\nHowever, Agent B is capped at 'BETTER' rather than 'MUCH_BETTER' because it failed the Wide Accuracy check on the specific details. It hallucinated the charity partners (listing Age UK and RSPB instead of WRVS and BTCV) and the financial loss figure (stating £10m instead of the reported £25m). Despite these detail errors, Agent B is the winner for finding the correct subject, whereas Agent A discussed a completely different lottery.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Soccer news, match reports and fixtures'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 4,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Lottery",
+        "Is the health lottery good news for charities?",
+        "Soccer news, match reports and fixtures"
+      ],
+      "question": "Investigate the lottery scheme launched in the United Kingdom in October 2011 by the media corporation Northern & Shell. Identify the scheme and the specific trust responsible for distributing its proceeds. According to coverage of the launch, several 'charity partners' were named. Identify the conservation organization among them and the specific 'Gym' programme it intended to fund. Also, identify the older people's charity that received one of the initial grants; specify the exact monetary value of the grant awarded to this charity for services in the Scottish Borders and the nature of the services provided. Finally, summarize the specific argument made by the Hospice Lotteries Association (HLA) regarding why this new scheme threatened their members' revenue.",
+      "word_limit_instruction": "Answer length: 240-340 words.",
+      "checklist_width": [
+        "Distributing Trust: People's Health Trust (PHT)",
+        "Conservation Organization: BTCV (British Trust for Conservation Volunteers)",
+        "Conservation Program: Green Gym",
+        "Older People's Charity: WRVS",
+        "WRVS Grant Amount: £37,500",
+        "WRVS Grant Purpose: Transport and shopping services for isolated older residents",
+        "HLA Argument: Fear of losing over £25m/year due to public confusion/competition"
+      ],
+      "checklist_depth": [
+        "Target Entity: The Health Lottery",
+        "Logic Proof: Launched Oct 2011 by Northern & Shell (owners of Channel 5/Express)"
+      ],
+      "rationale": "The question forces 'Deep' reasoning by masking the main entity (The Health Lottery) behind its parent company and launch date. It enforces 'Wide' aggregation by requiring specific, scattered details about three different organizations (BTCV, WRVS, HLA) mentioned in the source text, including exact financial figures and program names.",
+      "source_nodes": [
+        "Soccer news, match reports and fixtures | The Guardian",
+        "Support the Guardian | Contribute today"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Soccer news, match reports and fixtures | The Guardian [Wide Logic - Target 1]: Support the Guardian’s quality journalism and independent voice Make a one-off contribution tod",
+      "judge_max_limit": 340,
+      "answer_a": "The lottery scheme launched in the United Kingdom in October 2011 by the media corporation Northern & Shell is the People’s Postcode Lottery. It is operated through 51 local society lotteries under the People’s Postcode Lottery Trust, which is responsible for distributing its proceeds to various charities and good causes across Great Britain [1]. At launch, the scheme announced several charity partners, including the Royal Society for the Protection of Birds (RSPB), a major conservation organization [2]. The RSPB intended to use its share of funding to support the \"Nature on the Doorstep\" programme, later described as a community conservation initiative including local habitat restoration and public engagement activities often referred to as \"Gym for the Soul\" [3]. Among the other initial beneficiaries was the older people’s charity Age UK. One of its branches, Age UK Scottish Borders, received an initial grant of £40,000 [4]. This grant was specifically allocated to support its “Telecare and Alarm Services,” which provide emergency response systems and remote monitoring to help older people live independently and safely in their own homes [5]. The Hospice Lotteries Association (HLA) strongly opposed the launch of the People’s Postcode Lottery, arguing that its national-scale marketing and centralized structure would unfairly compete with smaller, locally run hospice lotteries. The HLA contended that these hospices, which rely heavily on lottery income, would suffer substantial financial losses as public spending is diverted to the high-profile Postcode Lottery. They estimated potential annual losses of up to £50 million across their network, warning that this could jeopardize frontline care services and undermine decades of community-based fundraising efforts [6]. The HLA’s core argument emphasized the imbalance between large commercial-backed lotteries and grassroots charities, calling for regulatory scrutiny to protect vulnerable local fundraising initiatives.\n\n## References\n[1] https://www.postcodelottery.co.uk/about-us  \n[2] https://www.theguardian.com/society/2011/oct/11/peoples-postcode-lottery-launch  \n[3] https://www.rspb.org.uk/about-the-rspb/media-centre/press-releases/2011/peoples-postcode-lottery  \n[4] https://www.ageuk.org.uk/scottish-borders  \n[5] https://www.ageuk.org.uk/global-assets/documents/local-ages/age-uk-scottish-borders/annual-reports/annual-report-2012.pdf  \n[6] https://www.voluntarysector.com/news/2011/10/hospice-lotteries-fear-postcode-competition",
+      "answer_b": "The UK lottery scheme launched by Northern & Shell in October 2011 is the Health Lottery, with its proceeds distributed by the Health Lottery Charities Trust [1]. Its inaugural conservation partner is the Royal Society for the Protection of Birds (RSPB), which intended to use the scheme’s funding for its “Gym for the Birds” programme—an initiative focused on targeted habitat restoration and management (including creating wildflower meadows and wetland refuges) to enhance the physical resilience and breeding success of at-risk bird species across the UK [2]. The older people’s charity receiving an initial grant is Age UK, which was awarded a £50,000 grant for services in the Scottish Borders [3]. These services included free home safety assessments for frail seniors to prevent falls, regular befriending sessions for socially isolated older people to reduce loneliness, and subsidized access to mobility aids (such as walking frames and stairlifts) to support long-term independent living in their homes [3]. The Hospice Lotteries Association (HLA) argued the Health Lottery posed a unique threat to its members’ revenue because of its national reach, Northern & Shell’s substantial advertising budget (leveraging its Channel 5 and Daily Express assets for widespread promotion), and capacity to offer larger prizes that overshadowed smaller hospice lotteries [4]. HLA noted its members’ lotteries were locally focused, with no major advertising resources, and relied exclusively on local ticket sales for core patient care (palliative support, pain management) and operational costs, warning the scheme’s dominance would erode these vital, sustainable funding streams and risk service cuts for vulnerable patients [4].\n\n## References\n[1] The Independent. \"Health Lottery’s charity distribution trust announced alongside launch.\" October 9, 2011. https://www.independent.co.uk/news/business/news/richard-desmonds-health-lottery-launches-amid-rivalry-fears-2364127.html\n[2] RSPB. \"RSPB partners with Health Lottery for Gym for the Birds initiative.\" October 10, 2011. https://www.rspb.org.uk/about-us/media-centre/press-releases/2011/october/rspb-health-lottery-partnership/\n[3] Age UK Annual Report 2011-2012. \"Initial Health Lottery grant for Scottish Borders services.\" https://www.ageuk.org.uk/globalassets/age-uk/documents/reports-and-publications/annual_reports/age_uk_annual_report_2011-12.pdf\n[4] Hospice Lotteries Association. \"Statement on Health Lottery’s impact on hospice funding.\" October 10, 2011. https://www.hospicelotteries.org.uk/news/statement-on-health-lottery-launch",
+      "duration_a_seconds": 8.6,
+      "duration_b_seconds": 31.0,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A fails the fundamental Deep Logic check by identifying the wrong lottery scheme entirely (People's Postcode Lottery instead of The Health Lottery). Agent B correctly identifies the Health Lottery launched by Northern & Shell. However, Agent B is only a 'Flawed Winner' because it hallucinates the specific details requested in the prompt (identifying RSPB/Age UK instead of the correct partners BTCV/WRVS, and inventing the 'Gym for the Birds' program instead of 'Green Gym'). Despite these factual errors in the sub-points, Agent B is better than Agent A, which provides a response about a completely unrelated entity. Both agents failed to use effective formatting (bolding, lists) to improve readability.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0004_Qwen3235b_vs_seed16_621"
+}

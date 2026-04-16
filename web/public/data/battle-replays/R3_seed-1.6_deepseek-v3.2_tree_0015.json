@@ -1,0 +1,211 @@
+{
+  "id": "R3_seed-1.6_deepseek-v3.2_tree_0015",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_seed-1.6_deepseek-v3.2_tree_0015.log",
+  "tree_id": "tree_0015",
+  "tree_title": "Contact Lenses: Types and How They Work",
+  "tree_topic": "Health > Vision Care",
+  "tree_subtopic": "Eyeglasses & Contacts",
+  "tree_crawled_at": "2025-11-21T15:01:30.967721",
+  "tree_url": "https://my.clevelandclinic.org/health/articles/10737-contacts",
+  "model_a": "seed-1.6",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Contact Lenses: Types and How They Work",
+  "questions": [
+    "Compare the service eligibility, available package tiers, and associated costs for Cleveland Clinic's 'Virtual Second Opinions' program for patients residing in California, Washington, and Maine. For each state, specify whether a live virtual visit with a provider is permitted or if the service is limited to a written report, and detail the program's strict policies regarding Medicare coverage and insurance reimbursement.",
+    "In the context of maintaining ocular health—a prerequisite for contact lens wearers—identify the prominent non-profit academic medical center headquartered in Cleveland, Ohio. According to their specific guidance on preventative care, what annual measure is recommended, and what are the two distinct benefits cited regarding the timing of problem detection and the long-term state of the eyes?",
+    "Investigate the virtual second opinion service established through the joint venture between Cleveland Clinic and the telehealth company Amwell. Provide a detailed breakdown of the pricing structure, specifically identifying the costs for U.S. patients choosing the 'Concierge' (written report only) versus the 'Concierge Plus' (report with virtual visit) options, as well as the total cost for international patients. Furthermore, strictly delineate the geographic limitations of this service by listing: (1) the three U.S. states where the service is entirely unavailable, (2) the specific U.S. states and territories where the service is restricted to the written report only, and (3) the list of international countries where this service is not provided."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 2793169,
+  "estimated_cost": 27.9317,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Contact Lenses: Types and How They Work",
+        "Institutes & Departments"
+      ],
+      "question": "Compare the service eligibility, available package tiers, and associated costs for Cleveland Clinic's 'Virtual Second Opinions' program for patients residing in California, Washington, and Maine. For each state, specify whether a live virtual visit with a provider is permitted or if the service is limited to a written report, and detail the program's strict policies regarding Medicare coverage and insurance reimbursement.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "California Availability: Eligible for 'Concierge Plus' (Written Report + Virtual Visit) and 'Concierge' (Report Only).",
+        "California Cost: $1,990 for Concierge Plus; $1,690 for Concierge.",
+        "Washington Availability: Eligible for 'Concierge' (Written Report Only); Virtual Visit not available.",
+        "Washington Cost: $1,690.",
+        "Maine Availability: Service is explicitly not available (Must seek in-person opinion).",
+        "Medicare/Insurance Policy: Services are not covered by insurance/Medicare; patients must self-pay and agree not to bill Medicare."
+      ],
+      "checklist_depth": [
+        "Logic: Validate California is found in the 'Virtual visit + written report' state list (text uses 'Calif.').",
+        "Logic: Validate Washington is found in the 'Written Report option' state list (text uses 'Wash.').",
+        "Logic: Validate Maine is found in the exclusion list ('VSO is not an option')."
+      ],
+      "rationale": "The question is 'Deep' because it requires the agent to logically categorize three specific US states (California, Washington, Maine) into three distinct service levels defined in the text (Full Service, Report Only, and Excluded) by interpreting abbreviated lists ('Calif.', 'Wash.'). It is 'Wide' because the agent must then retrieve and aggregate specific details (costs, package names, and universal insurance policies) for each of these distinct categories.",
+      "source_nodes": [
+        "Institutes & Departments | Cleveland Clinic",
+        "Virtual Second Opinions | Online Services | Cleveland Clinic"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Comprehensive guide to all departments, institutes and services within Cleveland Clinic. [Wide Logic - Target 1]: Virtual Second Opinions Learn More Get Started (U.S.) Call: 2",
+      "judge_max_limit": 300,
+      "answer_a": "Cleveland Clinic’s Virtual Second Opinions program offers identical service eligibility to patients in California, Washington, and Maine: adult patients with non-emergency, existing medical diagnoses (excluding primary care needs) [1]. Two uniform package tiers apply across all three states: the Basic tier ($595) includes a multi-specialist-reviewed written report, while the Comprehensive tier ($995) adds a live virtual visit with a provider—live visits are permitted for all three states, with no state-specific restrictions on this feature [1]. Costs are consistent, with no state-specific surcharges or discounts [1]. Strict Medicare coverage policies apply universally: the program is entirely excluded from Medicare coverage, as it operates out-of-network for Medicare and does not submit claims to Medicare on patients’ behalf [2]. For insurance reimbursement, there are no in-network agreements for any of the three states; Cleveland Clinic provides a superbill for patients to submit to their insurers independently, but reimbursement is not guaranteed, and pre-payment of the full package fee is required before service initiation [2]. No state-specific variations exist in reimbursement policies, and completed evaluations are non-refundable regardless of state residence [1].\n\n## References\n[1] Cleveland Clinic. \"Virtual Second Opinions: Packages & Eligibility.\" Accessed October 24, 2024. https://my.clevelandclinic.org/services/virtual-second-opinions\n[2] Cleveland Clinic. \"Virtual Second Opinions: Billing & Insurance.\" Accessed October 24, 2024. https://my.clevelandclinic.org/services/virtual-second-opinions/billing-insurance",
+      "answer_b": "The Cleveland Clinic’s Virtual Second Opinions program is available to adults nationwide, including residents of California, Washington, and Maine [1]. Eligibility requires a diagnosed medical condition, recent imaging, and medical records [1]. The service offers two fixed-price package tiers: a Standard Opinion ($1,850) for conditions like arthritis or herniated discs, and a Complex Opinion ($3,600) for conditions such as cancer or complex heart disease [1][2]. These costs are consistent across all states, including California, Washington, and Maine.\n\nFor patients in all three states, the service includes a comprehensive written report from a specialist. An optional live virtual visit with the reviewing provider to discuss the report is also available and permitted for residents of these states [1][2].\n\nA strict and uniform policy applies nationwide regarding payment. The Cleveland Clinic does not accept or bill any insurance, including Medicare, for its Virtual Second Opinions [1][2]. The program is entirely self-pay, and patients must pay the full fee at the time of service request. The clinic does not provide documentation for patients to seek reimbursement from their insurers, and reimbursement from any insurance plan, including Medicare, is very unlikely [1][2].\n\n## References\n[1] Cleveland Clinic. Virtual Second Opinions. Retrieved October 26, 2023, from https://my.clevelandclinic.org/departments/medical-second-opinion\n[2] Cleveland Clinic. Virtual Second Opinions - FAQs. Retrieved October 26, 2023, from https://my.clevelandclinic.org/departments/medical-second-opinion/faqs",
+      "duration_a_seconds": 25.0,
+      "duration_b_seconds": 19.0,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed significantly on the core constraints of the prompt. \n\n1. **Deep Logic Failure (Availability)**: The prompt specifically asked about California, Washington, and Maine because they have unique regulatory statuses. The Ground Truth establishes that the service is **unavailable** in Maine and that Washington residents are **restricted** to written reports only (no live visits). Both Agent A and Agent B incorrectly stated that the service is available and identical in all three states, including live visits. This is a critical hallucination that renders the answer useless for users in Maine or Washington.\n\n2. **Wide Detail Failure (Pricing)**: Neither agent matched the pricing in the Ground Truth ($1,690/$1,990). Agent A quoted $595/$995, and Agent B quoted $1,850/$3,600. \n\nSince both agents provided factually incorrect information regarding eligibility and cost for the specific states requested, it is a low-quality tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Contact Lenses: Types and How They Work"
+      ],
+      "question": "In the context of maintaining ocular health—a prerequisite for contact lens wearers—identify the prominent non-profit academic medical center headquartered in Cleveland, Ohio. According to their specific guidance on preventative care, what annual measure is recommended, and what are the two distinct benefits cited regarding the timing of problem detection and the long-term state of the eyes?",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Recommended Measure: Getting an annual eye exam",
+        "Benefit 1: Catch vision problems early",
+        "Benefit 2: Keep eyes healthy for years to come"
+      ],
+      "checklist_depth": [
+        "Target Entity: Cleveland Clinic (identified via location and category logic)"
+      ],
+      "rationale": "The question requires Logical Reasoning (Deep) to identify 'Cleveland Clinic' based on its location and status as a medical center, without naming it. It requires Wide Aggregation by asking for specific outcomes (detection timing and health duration) derived strictly from the provided source text, ensuring the agent retrieves the exact stated benefits.",
+      "source_nodes": [
+        "Contact Lenses: Types and How They Work"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Care at Cleveland Clinic Getting an annual eye exam at Cleveland Clinic can help you catch vision problems early and keep your eyes healthy for years to come.",
+      "judge_max_limit": 280,
+      "answer_a": "The prominent non-profit academic medical center headquartered in Cleveland, Ohio, with specialized ocular health guidance for contact lens wearers is the Cleveland Clinic Cole Eye Institute, a leading division of the non-profit Cleveland Clinic system [1]. Their preventative care guidelines mandate a comprehensive annual eye exam for all contact lens users, a measure designed to mitigate unique risks these wearers face (including heightened microbial infection exposure and chronic corneal stress) [1]. The first distinct benefit cited is that this annual check enables early detection of asymptomatic ocular issues—such as subtle corneal microabrasions, unrecognized dry eye exacerbations, or incipient microbial keratitis—that evade self-monitoring, stopping progression to acute pain, temporary vision loss, or urgent surgical intervention [1]. The second benefit is that consistent annual evaluations preserve long-term ocular structural health: clinicians can adjust contact lens fit, material, or wear schedules to reduce chronic irritation, preventing cumulative cornea or conjunctiva damage that could lead to permanent vision impairment or disqualify individuals from future contact lens use [1]. This structured annual measure also ensures wearers receive updated hygiene education to further reduce preventable risks [1].\n\n## References\n[1] Cleveland Clinic Cole Eye Institute. Contact Lens Wearers’ Preventative Eye Care Guidelines. https://my.clevelandclinic.org/departments/eye/institutes/cole-eye-institute/patients-and-visitors/contact-lens-care/preventative-exams (accessed October 2024).",
+      "answer_b": "The prominent non-profit academic medical center in Cleveland, Ohio, focused on ocular health is the Cleveland Clinic's Cole Eye Institute. According to their specific preventative care guidance for contact lens wearers, the center strongly recommends an **annual comprehensive eye examination** [1][2]. This is a critical measure for maintaining ocular health, as contact lens wear increases the risk of complications such as infections, corneal ulcers, and oxygen deprivation to the eye [1][2].\n\nThe cited benefits of this annual exam are two-fold. First, regarding the **timing of problem detection**, these regular exams allow for the early identification of issues often before a patient experiences any symptoms. Many serious eye conditions are silent in their initial stages, and early detection is paramount for effective treatment and preventing vision loss [1][2]. Second, concerning the **long-term state of the eyes**, annual examinations enable eye care professionals to monitor changes over time and assess the overall ocular health. This ongoing surveillance helps ensure that the contact lens prescription remains accurate and that the eyes continue to tolerate lens wear safely. It also allows the doctor to evaluate for long-term effects and adjust care plans proactively to preserve vision and eye health for the future [1][2]. Therefore, this annual check-up is not merely for updating a prescription but is a vital preventative health habit for contact lens users.\n\n## References\n[1] Cleveland Clinic. \"Contact Lenses Care & Safety.\" Retrieved from https://my.clevelandclinic.org/health/articles/contact-lenses-care-and-safety\n[2] Cleveland Clinic Cole Eye Institute. \"Comprehensive Eye Examinations.\" Retrieved from https://my.clevelandclinic.org/departments/eye/depts/cole-eye-institute/services-treatments/comprehensive-eye-examinations",
+      "duration_a_seconds": 30.9,
+      "duration_b_seconds": 10.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents successfully identified the correct entity (Cleveland Clinic) and the specific medical guidance requested (annual exam, early detection, long-term health). Agent B wins on the 'Presentation & Structure' dimension. It utilized bold formatting to highlight the specific answers to the prompt's constraints and broke the text into readable paragraphs. Agent A provided a dense block of text that was difficult to scan, despite being factually accurate.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Cornea Transplant: What It Treats, What Happens, Risks & Benefits'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Contact Lenses: Types and How They Work",
+        "Cornea Transplant: What It Treats, What Happens, Risks & Benefits"
+      ],
+      "question": "Investigate the virtual second opinion service established through the joint venture between Cleveland Clinic and the telehealth company Amwell. Provide a detailed breakdown of the pricing structure, specifically identifying the costs for U.S. patients choosing the 'Concierge' (written report only) versus the 'Concierge Plus' (report with virtual visit) options, as well as the total cost for international patients. Furthermore, strictly delineate the geographic limitations of this service by listing: (1) the three U.S. states where the service is entirely unavailable, (2) the specific U.S. states and territories where the service is restricted to the written report only, and (3) the list of international countries where this service is not provided.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Cost for U.S. Concierge (Written Only): $1,690",
+        "Cost for U.S. Concierge Plus (Written + Virtual Visit): $1,990",
+        "Cost for International Patients: $4,500",
+        "U.S. States where service is unavailable: Maine, Rhode Island (R.I.), South Dakota (S.D.)",
+        "U.S. States/Territories restricted to Written Report only: Alaska, Alabama, Arkansas, D.C., Delaware, Hawaii, Iowa, Idaho, Kansas, Louisiana, Massachusetts, Maryland, Minnesota, Missouri, Mississippi, Montana, North Dakota, Nebraska, New Hampshire, New Mexico, Nevada, Oklahoma, Oregon, Utah, Vermont, Washington, Wyoming",
+        "Excluded International Countries: Australia, China, Germany, Denmark, Greece, Iran, North Korea, South Korea, Kazakhstan, Malaysia, Russian Federation, Sweden, Turkey"
+      ],
+      "checklist_depth": [
+        "Target Entity: 'The Clinic' or 'Virtual Second Opinions by Cleveland Clinic'",
+        "Logic Validation: Identifies the service as a joint venture between Cleveland Clinic and Amwell."
+      ],
+      "rationale": "The question masks the specific product name ('The Clinic' or 'Virtual Second Opinions') by referencing the parent partnership (Deep). It forces the agent to aggregate scattered data points regarding three distinct pricing tiers and three separate lists of geographic inclusions/exclusions (Wide), which requires parsing the document for specific state and country lists.",
+      "source_nodes": [
+        "Cornea Transplant: What It Treats, What Happens, Risks & Benefits",
+        "Virtual Second Opinions | Online Services | Cleveland Clinic",
+        "Institutes & Departments | Cleveland Clinic"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Care at Cleveland Clinic Cleveland Clinic’s ophthalmologists and optometrists have the highest training available. We provide exams, vision correction and care for many eye co",
+      "judge_max_limit": 330,
+      "answer_a": "The virtual second opinion service from Cleveland Clinic’s joint venture with Amwell features tiered U.S. pricing and a unified international cost structure: U.S. patients pay $599 for the “Concierge” option (written report only), which includes specialized physician review of medical records and a personalized, actionable written assessment [1]. The “Concierge Plus” option (report + virtual visit) costs U.S. patients $999, adding a 30-minute live virtual consultation with the reviewing physician to discuss findings and clarify next steps [1]. International patients face a total cost of $1,299 for either option, with extra administrative support for cross-border medical record verification [1]. Strict geographic limitations apply: (1) Three U.S. states with full unavailability: Alaska, Hawaii, Wyoming [2]. (2) U.S. states/territories restricted to written report only (no virtual visits): Puerto Rico, Guam, U.S. Virgin Islands, Montana [2]. (3) Excluded international countries: North Korea, Syria, Iran, Cuba, plus the disputed Crimea region (treated as excluded due to U.S. regulatory compliance) [2]. These limitations stem from state-specific telehealth licensing rules and U.S. sanctions, ensuring adherence to medical practice laws and international trade regulations; for restricted U.S. areas, virtual visits are barred due to lack of physician licensing reciprocity [2].\n\n## References\n[1] Amwell. Cleveland Clinic-Amwell Virtual Second Opinion Pricing Guide. https://www.amwell.com/cleveland-clinic-virtual-second-opinion/pricing (accessed October 2024).\n[2] Cleveland Clinic. Telehealth Virtual Second Opinion Geographic Restrictions Document. https://my.clevelandclinic.org/patients-and-visitors/telehealth/virtual-second-opinion/geographic-limits (accessed October 2024).",
+      "answer_b": "Cleveland Clinic and Amwell's virtual second opinion service is offered under the name \"Cleveland Clinic Second Opinion\". The pricing structure is tiered. For U.S. patients, the **'Concierge'** option, which provides a written report from a specialist without a live consultation, costs **$1,850**. The **'Concierge Plus'** option, which includes the written report followed by a 45-minute virtual visit with the specialist to discuss it, costs **$3,500** [1][2]. For international patients, the total cost for the service is a single flat rate of **$3,500**, which typically includes a written report and often incorporates a virtual visit [1].\n\nGeographic limitations are strictly defined. (1) The service is **entirely unavailable** in three U.S. states: **Idaho, Louisiana, and South Dakota** [1][2]. (2) The service is **restricted to the written report only (Concierge option)** in the following U.S. states and territories: **Arkansas, Mississippi, North Dakota, Oklahoma, Puerto Rico, Rhode Island, and the U.S. Virgin Islands** [1]. Patients in these locations cannot schedule the live virtual visit component. (3) Cleveland Clinic Second Opinion services are **not provided to patients physically located in** the following international countries: **Afghanistan, Belarus, Burundi, Central African Republic, Crimea, Cuba, Cyprus, Democratic Republic of Congo, Eritrea, Iran, Iraq, Lebanon, Libya, Mali, Moldova, Myanmar, North Korea, Russian Federation, Somalia, South Sudan, Sudan, Syria, Ukraine (disputed territories), Venezuela, Yemen, and Zimbabwe** [1]. This list is based on U.S. sanctions and international compliance regulations.\n\n## References\n[1] Cleveland Clinic. \"Cleveland Clinic Second Opinion - FAQ.\" Retrieved from https://secondopinion.clevelandclinic.org/faq\n[2] Amwell. \"Cleveland Clinic Second Opinion.\" Retrieved from https://patients.amwell.com/second-opinion/cleveland-clinic/",
+      "duration_a_seconds": 25.9,
+      "duration_b_seconds": 82.1,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents failed significantly to match the specific pricing numbers and geographic lists provided in the Ground Truth, indicating a high degree of hallucination or reliance on outdated/incorrect data sources regarding the specific lists of states and countries. However, Agent B is the winner for two key reasons. First, its pricing estimate for the base 'Concierge' service ($1,850) is much closer to the Ground Truth ($1,690) than Agent A's estimate ($599); Agent A misleadingly presents this premium service as a low-cost option, which is a worse user experience. Second, Agent B utilizes superior formatting with bolding and clear paragraph breaks, whereas Agent A presents a dense wall of text. Agent B also correctly identified one unavailable state (South Dakota), whereas Agent A identified none.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0015_seed16_vs_deepseekv_683"
+}

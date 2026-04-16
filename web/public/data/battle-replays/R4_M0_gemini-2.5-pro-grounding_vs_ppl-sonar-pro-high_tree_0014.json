@@ -1,0 +1,155 @@
+{
+  "id": "R4_M0_gemini-2.5-pro-grounding_vs_ppl-sonar-pro-high_tree_0014",
+  "source_group": "round4",
+  "source_log": "round4/R4_M0_gemini-2.5-pro-grounding_vs_ppl-sonar-pro-high_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": null,
+  "tournament_round": 4,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Identify the 2013 Supreme Court case involving a Thai math student receiving textbooks from abroad, which legal analysts compared to the landmark 1984 Sony Betamax ruling that established the legal groundwork for the video rental industry (such as Blockbuster and Redbox). Provide the full name of the student defendant and the specific copyright doctrine upheld in this decision. Furthermore, quote the famous metaphor used by MPAA head Jack Valenti during the 1980s to describe the threat the VCR posed to the American film producer, and name the specific Massachusetts-based startup mentioned in 2013 analyses as a 'secondhand market for digital content' that was facing a lawsuit from Capitol Records despite this legal precedent.",
+    "Trace the legal and technological evolution of the 'First Sale' doctrine from the era of physical video rentals (the Betamax decision) to the digital economy of early 2013. Identify the Massachusetts-based startup that attempted to create a 'used' marketplace for iTunes tracks—triggering a lawsuit from Capitol Records—and the two major technology corporations that simultaneously secured or applied for patents to legitimize similar 'digital swap meets.'\n\nFor the startup, specify the unique financial restriction imposed on how sellers could utilize the proceeds from their sales. For the two tech giants, describe the specific technical mechanism each proposed to ensure digital scarcity (specifically regarding 'data stores' and file transfer methods). Finally, summarize the opposing arguments regarding the economic impact and public access implications of these technologies as presented by the president of the Authors Guild and the representative from the Association of Research Libraries."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 51184,
+  "estimated_cost": 0.5118,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Identify the 2013 Supreme Court case involving a Thai math student receiving textbooks from abroad, which legal analysts compared to the landmark 1984 Sony Betamax ruling that established the legal groundwork for the video rental industry (such as Blockbuster and Redbox). Provide the full name of the student defendant and the specific copyright doctrine upheld in this decision. Furthermore, quote the famous metaphor used by MPAA head Jack Valenti during the 1980s to describe the threat the VCR posed to the American film producer, and name the specific Massachusetts-based startup mentioned in 2013 analyses as a 'secondhand market for digital content' that was facing a lawsuit from Capitol Records despite this legal precedent.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Student Name: Supap Kirtsaeng (or Kirtsaeng)",
+        "Legal Doctrine: The 'First Sale' doctrine (or Right of First Sale)",
+        "Jack Valenti Quote: 'The VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone.'",
+        "Digital Startup: ReDigi"
+      ],
+      "checklist_depth": [
+        "Target Case: Kirtsaeng v. John Wiley & Sons",
+        "Logic Validation: Intersects the 2013 textbook import case with the 1984 Betamax video rental case precedent."
+      ],
+      "rationale": "The question requires Deep reasoning to identify a specific 2013 Supreme Court case (Kirtsaeng) based on its description and its analogical relationship to the 1984 Betamax case found in the source text. It requires Wide aggregation to retrieve specific unconnected details: the student's name, the legal doctrine ('First Sale'), a specific historical quote by Jack Valenti regarding VCRs, and the name of a specific digital startup (ReDigi) mentioned in the context of these legal arguments.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Associated Press - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The 2013 Supreme Court case was *Kirtsaeng v. John Wiley & Sons, Inc.* [1]. Legal analysts drew parallels to the 1984 *Sony Corp. of America v. Universal City Studios, Inc.* (the \"Betamax case\") because both rulings affirmed consumer rights and enabled new markets despite opposition from copyright holders [2, 3].\n\nThe student defendant in the 2013 case was **Supap Kirtsaeng**, a Thai citizen who came to the U.S. for a mathematics Ph.D. at Cornell University. He imported and resold cheaper, foreign-made editions of textbooks to help finance his education [4]. The specific copyright doctrine upheld by the Supreme Court in its 6-3 decision was the **first-sale doctrine**. This principle states that once a copyright owner lawfully sells a copy of their work, they cannot control its subsequent sale or distribution. The Court clarified that this doctrine applies to goods manufactured and legally purchased abroad, not just those made domestically [1, 5].\n\nDuring the 1980s Betamax debate, MPAA head Jack Valenti famously described the threat of the VCR to the film industry with the metaphor: **\"I say to you that the VCR is to the American film producer and the American public as the Boston Strangler is to the woman home alone\"** [6].\n\nFollowing the *Kirtsaeng* decision, legal attention turned to a Massachusetts-based startup named **ReDigi**. Billed as a \"secondhand market for digital content,\" the company allowed users to sell their \"used\" digital music files. Despite the precedent set by *Kirtsaeng* for physical goods, ReDigi lost a lawsuit brought by Capitol Records in 2013, with a court ruling that its digital resale service infringed on copyrights [3, 7].\n\n## References\n\n[1] *Kirtsaeng v. John Wiley & Sons, Inc.*, 568 U.S. 519 (2013). supremecourt.gov.\n\n[2] Denison, D.C. (2013, March 19). Supreme Court backs right to resell goods from abroad. *The Boston Globe*.\n\n[3] Raustiala, K. (2013, April 1). Digital music’s cloudy future. *The New York Times*.\n\n[4] Liptak, A. (2013, March 4). Supreme Court gives victory to student in copyright case. *The New York Times*.\n\n[5] Samuelson, P. (2013). The Supreme Court's Kirtsaeng decision. *Communications of the ACM*, 56(6), 26-28.\n\n[6] Rosen, R. J. (2012, October 12). The long, tortured life of the VCR. *The Atlantic*.\n\n[7] Sisario, B. (2013, March 31). Ruling turns up the volume in a digital music war. *The New York Times*.",
+      "answer_b": "The 2013 Supreme Court case was **Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013)**, involving Thai math student **Supap Kirtsaeng**.[2][6] Kirtsaeng had family and friends in Thailand buy low-priced foreign edition textbooks and ship them to him in the United States, where he resold them for profit.[2][6]  \n\nThe Court held, in a 6–3 decision, that the **copyright “first sale” doctrine** in 17 U.S.C. §109(a) applies to copies **lawfully made abroad**, thereby allowing owners of such copies to import and resell them in the U.S. without the copyright holder’s permission.[1][2][6] This doctrine—also central to the 1984 **Sony Corp. of America v. Universal City Studios, Inc.** (“Betamax”) decision—limits a copyright owner’s control after the initial authorized sale and underpins secondary markets like video rentals.[1][6]  \n\nDuring the earlier VCR battles, MPAA president **Jack Valenti** famously warned Congress that “**the VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone**,” a metaphor frequently cited in later analyses of disruptive copying technologies.[6]  \n\nIn 2013 commentary connecting Kirtsaeng and Sony to emerging digital resale issues, legal analysts pointed to **ReDigi**, a **Massachusetts-based startup** described as a “secondhand market for digital content,” which enabled users to resell “used” iTunes music files and was sued by **Capitol Records** despite these first-sale precedents.[6]  \n\n## References  \n[1] LNG Patent – Supreme Court Rules Against Publisher in Textbook Copyright Case  \n[2] Flagler Law Group – Supreme Court Rules Against Publishers On First Sale Issue  \n[6] Wikipedia – Kirtsaeng v. John Wiley & Sons, Inc.",
+      "duration_a_seconds": 14.5,
+      "duration_b_seconds": 7.9,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified all the entities requested: the case (Kirtsaeng v. John Wiley & Sons), the student (Supap Kirtsaeng), the doctrine (First Sale), the Valenti quote, and the startup (ReDigi). \n\nAgent A is preferred primarily due to the quality of its citations and narrative flow. Agent A cites specific newspaper articles (NYT, Boston Globe) and the Supreme Court reporter, whereas Agent B cites Wikipedia and generic legal blogs. Agent A also provides slightly more context regarding the student's background (Cornell Ph.D.) which enhances the answer's depth without violating the word count constraint.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Revolution in Resale of Digital Books and Music'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax",
+        "Revolution in Resale of Digital Books and Music"
+      ],
+      "question": "Trace the legal and technological evolution of the 'First Sale' doctrine from the era of physical video rentals (the Betamax decision) to the digital economy of early 2013. Identify the Massachusetts-based startup that attempted to create a 'used' marketplace for iTunes tracks—triggering a lawsuit from Capitol Records—and the two major technology corporations that simultaneously secured or applied for patents to legitimize similar 'digital swap meets.'\n\nFor the startup, specify the unique financial restriction imposed on how sellers could utilize the proceeds from their sales. For the two tech giants, describe the specific technical mechanism each proposed to ensure digital scarcity (specifically regarding 'data stores' and file transfer methods). Finally, summarize the opposing arguments regarding the economic impact and public access implications of these technologies as presented by the president of the Authors Guild and the representative from the Association of Research Libraries.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "ReDigi Restriction: Proceeds from sales must be spent on purchasing new songs.",
+        "Amazon Mechanism: Items kept in personalized 'data stores'; resale triggers automatic deletion from the seller's store.",
+        "Apple Mechanism: System transfers files between users rather than reproducing them; ensures only one user holds the copy.",
+        "Authors Guild (Scott Turow) Stance: Digital resale would crash the price of new books and devalue creative work.",
+        "ARL (Brandon Butler) Stance: Current licensing models restrict libraries from lending and preserving content; ownership rights are necessary."
+      ],
+      "checklist_depth": [
+        "Target Entity 1: ReDigi (Identified as the startup sued by Capitol Records).",
+        "Target Entity 2: Amazon (Identified via early 2013 patent for digital exchange/data store).",
+        "Target Entity 3: Apple (Identified via early 2013 patent application for digital marketplace/file transfer).",
+        "Logic Proof: Connects the 1984 Betamax 'First Sale' precedent to the specific 2013 digital goods controversy involving these three entities."
+      ],
+      "rationale": "The question uses Deep Logic by anchoring the search in the historical legal context of the 'Video rental' industry (Betamax) to identify a specific cluster of entities (ReDigi, Amazon, Apple) active in 2013. It requires Wide Information Aggregation by demanding specific technical details (patent mechanisms) and distinct stakeholder opinions (Authors Guild vs. Libraries) that are scattered across different aspects of the source text.",
+      "source_nodes": [
+        "Revolution in Resale of Digital Books and Music - The New York Times",
+        "Costco v. Omega - SCOTUSblog",
+        "History of Copyright: Statute of Anne, 1710"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Technology | Imagining a Swap Meet for E-Books and Music https://www.nytimes.com/2013/03/08/technology/revolution-in-the-resale-of-digital-books-and-music.html Advertisement C",
+      "judge_max_limit": 350,
+      "answer_a": "The legal principle of the \"first-sale doctrine,\" which underpinned the physical video rental market legitimized by the *Sony Betamax* decision, faced a crisis in the digital era. As physical media gave way to licensed files, the ability to resell owned content was challenged. This tension culminated in early 2013 with the Supreme Court's *Kirtsaeng* decision affirming first sale for physical goods, even as lower courts grappled with its digital application [1].\n\nAt the center of this conflict was **ReDigi**, a Massachusetts-based startup that created a marketplace for \"used\" iTunes tracks. Sued by Capitol Records, ReDigi’s system attempted to ensure only one copy of a file existed by verifying a seller's track was deleted before transferring it to a buyer. A unique financial restriction mandated that sellers received credits that could only be used to purchase other digital content on ReDigi's platform; they could not be cashed out [1, 2].\n\nSimultaneously, two technology giants sought to legitimize such \"digital swap meets\" on their own terms. **Amazon** secured a patent for a mechanism to transfer digital content from a seller’s personalized \"data store\" to a buyer's, deleting it from the former. **Apple** applied for a similar patent where its servers would authorize the transfer of a file, like an iTunes song, and then disable the original owner’s access to it, thereby maintaining digital scarcity [2, 3].\n\nThese developments sparked fierce debate. Scott Turow, then-president of the **Authors Guild**, argued that a digital resale market would be \"catastrophic\" for creators, as pristine \"used\" copies would completely supplant new sales [4]. In contrast, Carol Pitts Diedrichs, speaking for the **Association of Research Libraries**, contended that applying first sale to digital items was essential. Without it, she argued, the ability of libraries to lend, preserve, and provide long-term access to knowledge would be fundamentally undermined [5].\n\n## References\n\n[1] Raustiala, K. (2013, April 1). Digital music’s cloudy future. *The New York Times*.\n[2] Denison, D.C. (2013, March 19). Supreme Court backs right to resell goods from abroad. *The Boston Globe*.\n[3] Love, J. (2013, March 7). Apple patent application for trading used digital content. *Knowledge Ecology International*.\n[4] Turow, S. (2013, April 16). You can't sell your new e-book. *The New York Times*.\n[5] Diedrichs, C. P. (2013, February 19). Lending and first sale: The library is the original 'used' book store. *Association of Research Libraries*.",
+      "answer_b": "The **first sale doctrine**, codified in 17 U.S.C. §109(a), originated in physical media markets with the 1984 **Sony Corp. of America v. Universal City Studios, Inc.** (Betamax case), which upheld consumers' rights to resell VCR tapes, enabling video rental giants like Blockbuster by exhausting copyright owners' distribution rights post-initial sale[7]. This built on earlier precedents like *Bobbs-Merrill v. Straus* (1908), affirming resale without permission[1].\n\nBy early 2013, the doctrine faced digital challenges amid **Kirtsaeng v. John Wiley & Sons** (decided March 19), where the Supreme Court (6-3) extended it to foreign-made copies, allowing resale of imported textbooks and signaling applicability to digital equivalents[1][2][7].\n\nThe **Massachusetts-based startup**, **ReDigi**, launched a \"used\" iTunes marketplace in 2011, enabling resale of digital tracks via cloud verification that original files were deleted post-transfer; it faced a lawsuit from **Capitol Records** in 2012 for direct infringement, claiming digital copies during upload/download violated reproduction rights[7]. ReDigi imposed a unique financial restriction: sellers received **85% of proceeds** (15% to ReDigi), but could only withdraw after earning $100 total[7].\n\nSimultaneously, **Apple** secured U.S. Patent No. 8,046,721 (2011) for a **\"digital swap meet\"** using **centralized data stores** to verify file deletion before transferring tokens to buyers, ensuring scarcity[7]. **Amazon** applied for a similar patent (filed 2013, published as US 2013/0103459) proposing **\"locker\" data stores** with atomic file transfers—complete destruction of seller's copy before buyer's receipt—to mimic physical scarcity[7].\n\n**Authors Guild** president Roxanne Petroski argued these technologies undermine creators' incentives, flooding markets with cheap resales and eroding new work funding[7]. Conversely, **Association of Research Libraries** representative James Neal emphasized expanded public access, lower costs for education/preservation, and innovation without harming upstream markets[7].\n\n(Word count: 312)\n\n## References  \n[1] LNG Patent – Supreme Court Rules Against Publisher in Textbook Copyright Case  \n[2] LA Times – Supreme Court sides with book reseller in copyright ruling  \n[7] Wikipedia – Kirtsaeng v. John Wiley & Sons, Inc.",
+      "duration_a_seconds": 22.5,
+      "duration_b_seconds": 12.5,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A followed the prompt's timeline and constraints perfectly. It correctly identified the specific patent statuses in early 2013 (Amazon secured, Apple applied), whereas Agent B relied on an older Apple patent and failed to note Amazon's grant. Crucially, Agent A correctly identified Scott Turow as the Authors Guild president; Agent B hallucinated a name ('Roxanne Petroski'). Agent A also provided the correct context regarding ReDigi's 'closed loop' financial restriction, which was central to their legal argument, unlike the withdrawal threshold mentioned by Agent B.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_gemini25_vs_pplsonar_246"
+}

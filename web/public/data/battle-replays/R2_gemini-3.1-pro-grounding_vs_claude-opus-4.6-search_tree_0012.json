@@ -1,0 +1,431 @@
+{
+  "id": "R2_gemini-3.1-pro-grounding_vs_claude-opus-4.6-search_tree_0012",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_gemini-3.1-pro-grounding_vs_claude-opus-4.6-search_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "epguides.com * Main Menu Page",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "gemini-3.1-pro-grounding",
+  "model_b": "claude-opus-4.6-search",
+  "winner": "claude-opus-4.6-search",
+  "final_score_a": 1.0,
+  "final_score_b": 3.0,
+  "total_rounds": 5,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "epguides.com * Main Menu Page",
+  "questions": [
+    "Identify the long-running online television episode catalog that has operated since the mid-1990s and indexes over 12,000 TV series by listing episode titles and original airdates, typically linking each episode to an external database for expanded details. Based on publicly available information about this platform, name the third-party episode database it primarily links to for guest stars and plot summaries, and indicate where users are directed to submit episode corrections. Additionally, enumerate all the countries for which it provides dedicated schedule grids, describe the special \"printable\" feature available for individual series, and list any non-U.S. or non-standard television-related data offerings (such as city-specific exports or radio listings) that the platform makes accessible.",
+    "Identify the long-running online television episode catalog that was founded in 1995 and is known for maintaining episode lists for over 12,000 TV series. This platform primarily displays episode titles and original airdates, but links individual episode titles to an external database for expanded details such as guest stars and plot summaries. It also offers a “printable guide” option for full-episode summaries and provides links to streaming sources at the bottom of each show’s page. Describe the history and purpose of this site, explain how it structures its episode information and external links, and outline its additional features such as schedule grids, international coverage, downloadable data options, and related media resources.",
+    "A widely used free television metadata service offers a RESTful API whose root endpoint is https://api.tvmaze.com and whose responses follow HATEOAS and HAL principles. Identify this service and explain its core technical characteristics, including its data format, embedding capability, caching policy, rate limiting rules, HTTPS support, CORS status, and licensing model. Then, using its U.S. schedule functionality, compile a complete list of every program airing on Friday, November 21, 2025 in the United States. For each program, provide the network/channel, the show title, and the season/episode notation (or date-based notation where applicable).",
+    "Identify the television data platform that provides a free REST API conforming to HATEOAS and HAL principles, applies rate limiting of at least 20 calls per 10 seconds per IP, and licenses its public API data under the Creative Commons Attribution-ShareAlike 4.0 license. Based on authoritative sources about this platform: (1) summarize the key permissions and obligations of the CC BY-SA 4.0 license it uses, including sharing, adaptation, attribution, share-alike, and restrictions; (2) describe the main benefits included in its paid premium membership tier (such as pricing structure and feature set); and (3) explain the purpose and rules of its \"Alternate Episode List\" system, including the different supported list types and how alternate episodes may be linked to original episodes (e.g., 1:1, merged, split, or cases that cannot be represented).",
+    "A well-known online TV database provides a free REST API rooted at https://api.tvmaze.com, returns JSON, and follows HATEOAS and HAL principles. Using that service’s publicly documented schedule data for U.S. television, answer the following multi-part query:\n\n1) Identify the late-night talk show that aired new episodes on four consecutive days from Monday, October 27 through Thursday, October 30, 2025. List the show’s name and the exact air dates of those four episodes as presented in the schedule.\n\n2) For Friday, November 21, 2025, compile a complete list of all programs whose episode title is formatted solely as the calendar date “2025-11-21” (i.e., the title itself is just the date). For each of these programs, provide:\n   - The program’s name\n   - The network on which it aired\n   - The season and episode number if one is provided in the schedule (or indicate if none is shown)\n\nEnsure your answer clearly separates Part 1 and Part 2 and covers every qualifying program for November 21, 2025."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 4,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 2.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 4,
+      "depth": 4,
+      "width": 5,
+      "verdict": "Tie",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 2.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 5,
+      "depth": 3,
+      "width": 4,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": null,
+  "estimated_cost": null,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "Identify the long-running online television episode catalog that has operated since the mid-1990s and indexes over 12,000 TV series by listing episode titles and original airdates, typically linking each episode to an external database for expanded details. Based on publicly available information about this platform, name the third-party episode database it primarily links to for guest stars and plot summaries, and indicate where users are directed to submit episode corrections. Additionally, enumerate all the countries for which it provides dedicated schedule grids, describe the special \"printable\" feature available for individual series, and list any non-U.S. or non-standard television-related data offerings (such as city-specific exports or radio listings) that the platform makes accessible.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies TVmaze as the primary external database for expanded episode details",
+        "Mentions that corrections can be sent to editors at TVmaze or TV.com",
+        "Lists all schedule grid countries: United States, United Kingdom, Canada, Australia, New Zealand, Japan, and South Korea",
+        "Describes the 'Printable Guide' feature that compiles summaries for all episodes of a show",
+        "Notes availability of streaming video source links on individual show pages",
+        "Mentions Chicago TV listings available as a .csv export",
+        "Mentions UK Radio Shows listings"
+      ],
+      "checklist_depth": [
+        "Correctly identifies epguides.com + proof: founded in 1995 and catalogs over 12,400 TV shows with episode titles and airdates",
+        "Explains that the site links episode titles to TVmaze for additional details, matching the described functionality"
+      ],
+      "rationale": "The question uses identifying traits (mid-1990s origin, 12,000+ indexed series, title/airdate listings, external episode database links) to indirectly point to the correct platform without naming it (Deep logic). It then requires aggregating multiple categories of information—external databases, correction destinations, international schedule grids, special features, and unique data exports—ensuring the respondent must synthesize details from across the platform’s publicly available materials (Wide scope).",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 300,
+      "answer_a": "Epguides (epguides.com) is the long-running online television episode catalog established in the mid-1990s that currently indexes over 12,000 TV series [1]. Epguides primarily focuses on compiling episode titles and original airdates, relying on an external partnership for deeper episode information. For expanded details such as guest stars and comprehensive plot summaries, Epguides links its episode pages directly to TVmaze (and historically to TV.com before its obsolescence) [1] [2]. Because Epguides draws its detailed episode descriptions from TVmaze, users who notice errors are explicitly directed to submit their episode corrections directly to the TVmaze database rather than Epguides [2]. \n\nFor its schedule offerings, Epguides features dedicated daily schedule grids specifically for the United States, the United Kingdom, Canada, and Australia [3]. Epguides also provides a distinct \"printable\" option for individual series: clicking the \"Printable Guide\" link strips away the site's standard navigation menus, banners, and external hyperlink coding to generate a clean, text-only chronological list of episodes and airdates specifically optimized for printing [4]. \n\nIn addition to standard television metrics, Epguides offers various non-U.S. and non-standard entertainment listings. Notably, Epguides hosts an extensive catalog of historical Old Time Radio (OTR) shows, documenting episode titles and broadcast dates for classic radio history [5]. The platform also historically featured city-specific TV listings or links, and it currently hosts distinct sections for UK and US fall schedules, alphabetical indexes of shows, and specific pages dedicated to anime and documentaries not easily categorized under standard US networks [1] [3]. \n\n## References\n[1] Epguides. \"Epguides Main Page / FAQ.\" *Epguides.com*, 2023. Available: http://epguides.com/\n[2] Epguides. \"How to Submit Updates and Corrections.\" *Epguides.com*, 2023. Available: http://epguides.com/updates/\n[3] Epguides. \"TV Schedule Grids.\" *Epguides.com*, 2023. Available: http://epguides.com/grid/\n[4] Epguides. \"About the Printable Guides.\" *Epguides.com*, 2023. Available: http://epguides.com/common/printable.shtml\n[5] Epguides. \"Old Time Radio Episode Guides.\" *Epguides.com*, 2023. Available: http://epguides.com/menu/radio.shtml",
+      "answer_b": "The long-running online television episode catalog operating since the mid-1990s and indexing over 12,000 TV series is **epguides.com**, which has been a staple resource for TV fans since approximately 1995 [1][2].\n\n**Third-Party Episode Database Linked:** epguides.com primarily links individual episodes to **TV.com** (formerly TV Tome) and **IMDb** (Internet Movie Database) for expanded details such as guest stars, crew information, and plot summaries. IMDb serves as the principal external database for detailed episode information [1][3].\n\n**Where to Submit Corrections:** Users seeking to submit episode corrections are directed to **TVmaze.com**, which serves as epguides.com's primary data source for episode information. Correction submissions are handled through TVmaze's own editing and contribution system rather than directly on epguides.com itself [2][3].\n\n**Dedicated Schedule Grids by Country:** epguides.com provides dedicated television schedule grids for the following countries: **United States, United Kingdom, Canada, and Australia** [1][4].\n\n**Printable Feature:** For individual series, epguides.com offers a special \"printable\" version of each episode listing page. This is a stripped-down, printer-friendly format that presents the episode guide in a clean, plain-text layout without navigation elements, advertisements, or extraneous formatting—ideal for printing as a compact reference sheet or checklist [1][2].\n\n**Non-U.S./Non-Standard Television-Related Data Offerings:** Beyond standard U.S. TV listings, epguides.com makes accessible several specialized offerings, including: **UK television schedules**, **Canadian and Australian TV grids**, **city-specific schedule exports** for various metropolitan areas, and notably **radio listings** for select programming. These additional resources extend the platform's utility beyond conventional American primetime television cataloging [1][4].\n\n## References\n[1] epguides.com - Main site, https://epguides.com/\n[2] \"About epguides\" - epguides.com, https://epguides.com/common/about.shtml\n[3] TVmaze API and data sourcing documentation, https://www.tvmaze.com/\n[4] epguides.com menu and schedule grid pages, https://epguides.com/grid/",
+      "duration_a_seconds": 64.2,
+      "duration_b_seconds": 13.3,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identify epguides.com as the entity (passes DEEP logic). However, Agent B incorrectly states that IMDb/TV.com are the primary external databases for expanded details, contradicting the ground truth that TVmaze is the primary link target. That is a major checklist miss. Both agents fail WIDTH completeness: neither lists all required schedule grid countries (missing New Zealand, Japan, South Korea), neither mentions streaming video source links, Chicago .csv exports, or specifically UK Radio Shows listings. Agent A correctly identifies TVmaze as the primary database and explains the correction workflow more accurately, though still incomplete. In presentation, both are well-structured, but Agent A is slightly clearer and more precise about the core linkage behavior. Because Agent A has fewer factual errors while Agent B contains a key incorrect claim, Agent A is BETTER (not MUCH_BETTER, since A still misses several required checklist items).",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "Identify the long-running online television episode catalog that was founded in 1995 and is known for maintaining episode lists for over 12,000 TV series. This platform primarily displays episode titles and original airdates, but links individual episode titles to an external database for expanded details such as guest stars and plot summaries. It also offers a “printable guide” option for full-episode summaries and provides links to streaming sources at the bottom of each show’s page. Describe the history and purpose of this site, explain how it structures its episode information and external links, and outline its additional features such as schedule grids, international coverage, downloadable data options, and related media resources.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Founded in 1995 and long-running history",
+        "Catalogs over 12,000 television series",
+        "Lists episode titles and original airdates",
+        "Links episode titles to TVmaze (or similar external database) for details like guest stars and plot summaries",
+        "Offers a printable guide option with full summaries",
+        "Provides streaming source links at the bottom of show pages",
+        "Includes U.S. schedule grids and listings for other countries (e.g., UK, Canada, Australia, etc.)",
+        "Mentions downloadable data options such as CSV files",
+        "References related resources such as TV themes, apps, merchandise, FAQ, or related websites"
+      ],
+      "checklist_depth": [
+        "Correct identification of epguides.com + proof it was founded in 1995 and serves as a comprehensive TV episode catalog",
+        "Explanation that the site links episode titles to TVmaze (or equivalent) and provides printable guides and streaming links as described"
+      ],
+      "rationale": "The question uses deep logic by describing the site’s founding year, scale, and distinctive structural features (external episode links, printable guides, streaming links) without naming it directly. This forces the agent to correctly identify the specific platform. It uses wide aggregation by requiring a comprehensive summary of multiple scattered features: episode formatting, external databases, streaming resources, international schedule grids, downloadable files, and related media links. Answering fully requires synthesizing information from across the platform’s publicly available pages.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 330,
+      "answer_a": "Epguides (epguides.com) is the long-running online television episode catalog established in 1995 to track and document broadcast histories [1]. Serving as a minimalist and highly efficient repository, the site maintains active episode lists for over 12,000 television series. Epguides is specifically designed to provide essential broadcast data—primarily season numbers, overall episode numbers, production codes, original airdates, and episode titles [2]. \n\nTo keep its interface fast and ad-light, Epguides does not host extensive cast lists or detailed plot summaries on its own servers. Instead, it structures its data by hyperlinking individual episode titles directly to TVmaze, an external crowdsourced database where users can find expanded information, including guest stars, full plot synopses, and crew details [1] [3]. Below the primary episode list for each show, Epguides typically provides external links to streaming sources (such as JustWatch) and DVD purchase options, helping users locate where to watch the series legally [2].\n\nFor users who prefer offline or text-based reading, the platform offers a \"printable guide\" option. This feature removes standard site navigation elements, banners, and external hyperlink code to generate a clean, chronological full-episode summary optimized for printing [4]. \n\nEpguides extends its utility beyond simple lists by featuring comprehensive daily schedule grids detailing prime-time lineups for the United States, the United Kingdom, Canada, and Australia [5]. Its international coverage ensures users can track multi-region airdates. Furthermore, the platform accommodates broader entertainment research by supplying downloadable data options, allowing users to export certain show lists as CSV files for personal databases [2]. Beyond typical television programming, Epguides hosts related media resources, most notably an extensive archive of Old Time Radio (OTR) broadcast histories, catering to a wide range of audio and visual media enthusiasts [1] [5].\n\n## References\n[1] Epguides. \"Epguides Main Page.\" *Epguides.com*, 2023. Available: http://epguides.com/\n[2] Epguides. \"FAQ.\" *Epguides.com*, 2023. Available: http://epguides.com/common/faq.shtml\n[3] TVmaze. \"TVmaze and Epguides Integration.\" *TVmaze.com*, 2023. Available: https://www.tvmaze.com/\n[4] Epguides. \"About the Printable Guides.\" *Epguides.com*, 2023. Available: http://epguides.com/common/printable.shtml\n[5] Epguides. \"TV Schedule Grids & Radio Lists.\" *Epguides.com*, 2023. Available: http://epguides.com/grid/",
+      "answer_b": "**epguides.com** is a long-running online television episode catalog founded in 1995 by Eric Gardiner. It has served as a comprehensive reference for TV enthusiasts for nearly three decades, maintaining episode lists for over 12,000 television series [1][2]. The site's core purpose is to provide a clean, fast-loading, and easily navigable catalog of television episode information without excessive clutter or advertising.\n\n**Structure of Episode Information:** Each show's page on epguides.com presents episodes in a simple tabular format listing season number, episode number, production code, episode title, and original airdate [1]. Individual episode titles are hyperlinked to **TVmaze**, which serves as the primary external database providing expanded details such as guest stars, plot summaries, and crew information [2][3]. Previously, the site linked to TV.com (formerly TV Tome) and IMDb, but TVmaze has become the principal data source and linked database. Users wishing to submit corrections to episode data are directed to TVmaze's editing system [2].\n\n**Printable Guide Feature:** Each series page includes a \"printable guide\" option that generates a streamlined, printer-friendly version containing full episode summaries sourced from TVmaze, suitable for offline reference or as a checklist [1][2].\n\n**Streaming Links:** At the bottom of each show's page, epguides.com provides links to streaming sources where viewers can watch episodes, enhancing the platform's utility beyond mere cataloging [1].\n\n**Schedule Grids and International Coverage:** The site offers dedicated television schedule grids for the **United States, United Kingdom, Canada, and Australia**, allowing users to track upcoming broadcasts across multiple countries [1][4].\n\n**Downloadable Data and Related Media Resources:** epguides.com provides downloadable CSV-format episode data for programmatic use. Beyond standard television listings, the platform offers city-specific schedule exports for various metropolitan areas and includes **radio listings** as a non-standard media resource, extending its scope beyond conventional TV cataloging [1][4]. The site also maintains a menu system linking to curated lists of new, returning, and canceled shows each season.\n\n## References\n[1] epguides.com - Main site, https://epguides.com/\n[2] epguides.com - About page, https://epguides.com/common/about.shtml\n[3] TVmaze, https://www.tvmaze.com/\n[4] epguides.com - Menu and schedule grids, https://epguides.com/grid/",
+      "duration_a_seconds": 32.6,
+      "duration_b_seconds": 19.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "First, Deep Logic: Both Agent A and Agent B correctly identify the platform as epguides.com and accurately describe its founding in 1995 and its role as a comprehensive TV episode catalog. Both pass the core entity check.\n\nWidth/Completeness: Both responses cover nearly all checklist items: 12,000+ series, episode titles and original airdates, TVmaze external linking for expanded details, printable guide option, streaming links, international schedule grids (U.S., UK, Canada, Australia), downloadable CSV data, and related media resources. Agent B adds extra useful context (founder Eric Gardiner, historical linking to TV.com/IMDb, curated seasonal lists, city-specific exports), making it slightly more comprehensive.\n\nUser Experience & Presentation: Agent B is more scannable and structured, with clear bold section headers (Structure, Printable Guide, Streaming Links, etc.), making it easier for a user to extract specific information quickly. Agent A is accurate and well-cited but reads more like a research report, with denser paragraphs and a reference block that adds less practical value for a general user.\n\nConclusion: Both are high-quality and factually sound, but Agent B provides a superior user experience through clearer formatting, slightly richer contextual detail, and better scannability. Hence, B_BETTER.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'TV API'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 4,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com",
+        "TV API"
+      ],
+      "question": "A widely used free television metadata service offers a RESTful API whose root endpoint is https://api.tvmaze.com and whose responses follow HATEOAS and HAL principles. Identify this service and explain its core technical characteristics, including its data format, embedding capability, caching policy, rate limiting rules, HTTPS support, CORS status, and licensing model. Then, using its U.S. schedule functionality, compile a complete list of every program airing on Friday, November 21, 2025 in the United States. For each program, provide the network/channel, the show title, and the season/episode notation (or date-based notation where applicable).",
+      "word_limit_instruction": "Answer length: 280-380 words.",
+      "checklist_width": [
+        "Service identified as TVmaze API",
+        "REST API returning JSON",
+        "Conforms to HATEOAS and HAL principles",
+        "Root URL https://api.tvmaze.com",
+        "Embedding supported via embed parameter (including multiple embeds)",
+        "HTTP caching (60 minutes general cache; 24 hours for certain endpoints like full schedule/show index)",
+        "Rate limit of at least 20 calls per 10 seconds per IP with HTTP 429 handling",
+        "HTTPS supported (HTTP also accessible)",
+        "CORS enabled",
+        "Licensed under CC BY-SA",
+        "HBO – Real Time with Bill Maher – 23x35",
+        "CBS – Sheriff Country – 1x06",
+        "CBS – Fire Country – 4x06",
+        "CBS – Boston Blue – 1x06",
+        "The CW – Penn & Teller: Fool Us – 11x19",
+        "The CW – Masters of Illusion – 11x16",
+        "NBC – Happy's Place – 2x03",
+        "NBC – Stumble – 1x03",
+        "TBS – Friday Night Vibes – 2025-11-21",
+        "STARZ – Power Book IV: Force – 3x03",
+        "History – The UnBelievable with Dan Aykroyd – 3x03",
+        "History – The Proof Is Out There – 5x17",
+        "PBS – Firing Line with Margaret Hoover – 2025-11-21",
+        "Discovery – Gold Rush – 16x03",
+        "Discovery – The Last Woodsmen – 2x02",
+        "USA – WWE Friday Night SmackDown – 26x47",
+        "USA – Everything on the Menu with Braun Strowman – 1x06",
+        "CMT – The Last Cowboy – 6x03",
+        "REELZ – On Patrol: First Shift – 4x33",
+        "REELZ – On Patrol: Live – 4x33",
+        "A&E – Murder on Trial – 1x04",
+        "A&E – Murder at the Motel – 2x04",
+        "MSNBC – All In with Chris Hayes – 2025-11-21",
+        "MSNBC – The Briefing with Jen Psaki – 2025-11-21",
+        "MSNBC – The Last Word with Lawrence O'Donnell – 2025-11-21",
+        "HGTV – My Lottery Dream Home – 18x12",
+        "Food Network – Diners, Drive-Ins and Dives – 2025-11-21",
+        "CNN – Anderson Cooper 360° – 2025-11-21",
+        "CNN – The Source with Kaitlan Collins – 2025-11-21",
+        "CNN – CNN NewsNight with Abby Phillip – 2025-11-21",
+        "NewsNation – Cuomo – 2025-11-21",
+        "NewsNation – On Balance with Leland Vittert – 2025-11-21",
+        "NewsNation – Banfield – 2025-11-21",
+        "Fox News – Jesse Watters Primetime – 2025-11-21",
+        "Fox News – Hannity – 2025-11-21",
+        "Fox News – Gutfeld! – 2025-11-21",
+        "OWN – Belle Collective – 6x08",
+        "OWN – Ready to Love – 11x03",
+        "WE tv – The Braxtons – 2x07",
+        "WE tv – The Braxtons – 2x08",
+        "Newsmax – Finnerty – 2025-11-21",
+        "Newsmax – Greg Kelly Reports – 2025-11-21",
+        "Newsmax – Chris Plante: The Right Squad – 2025-11-21",
+        "Hallmark+ – Mistletoe Murders – 2x05",
+        "Hallmark+ – Mistletoe Murders – 2x06"
+      ],
+      "checklist_depth": [
+        "TVmaze API identified by root URL https://api.tvmaze.com and description as free REST TV metadata service",
+        "Correct use of U.S. schedule endpoint logic to retrieve all programs airing on Friday, November 21, 2025",
+        "All listed programs correspond specifically to that date’s U.S. schedule"
+      ],
+      "rationale": "The question first requires identifying the API solely through its technical traits and root URL (Deep reasoning), without initially naming it. It then requires aggregating dispersed technical policies (format, embedding, caching, rate limits, licensing) across documentation sections. Finally, it demands a comprehensive compilation of every U.S. program airing on a specific date, requiring wide extraction and comparison across the full schedule listing (Wide aggregation).",
+      "source_nodes": [
+        "TV API | TVmaze - Add TV information to your website or app.",
+        "CostaDax | TVmaze",
+        "TV Schedule | TVmaze - The most comprehensive and accurate TV schedule. Find out what’s on TV tonight.",
+        "TomSouthwell | TVmaze"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: We provide a free, fast and clean REST API that's easy to use, returns JSON and conforms to the HATEOAS and HAL principles. The root url is https://api.tvmaze.com and the avai",
+      "judge_max_limit": 380,
+      "answer_a": "Error: No response from API.",
+      "answer_b": "**TVmaze** is a widely used free television metadata service offering a RESTful API rooted at `https://api.tvmaze.com` [1][2].\n\n## Core Technical Characteristics\n\n**Data Format:** All responses are returned in JSON format [1]. **HATEOAS/HAL:** The API follows HATEOAS principles using the HAL standard, meaning responses include `_links` and optionally `_embedded` objects for navigating related resources [1]. **Embedding:** Clients can request embedded resources (e.g., episodes within a show) via the `?embed=` query parameter, reducing the need for multiple round-trips [1][2]. **Caching:** API responses include HTTP caching headers; most endpoints are cached for approximately 60 minutes, though schedule endpoints may refresh more frequently [1]. **Rate Limiting:** For unauthenticated requests, the API enforces a rate limit of approximately 20 calls per 10 seconds. Premium/authenticated users receive higher limits [1][2]. **HTTPS:** Fully supported; HTTPS is available and recommended for all endpoints [1]. **CORS:** Enabled, allowing direct browser-based JavaScript requests [1]. **Licensing:** TVmaze API data is available under a **CC BY-SA** license for non-commercial use, while commercial use requires a premium API subscription [1][2].\n\n## U.S. Schedule for Friday, November 21, 2025\n\nUsing the endpoint `https://api.tvmaze.com/schedule?country=US&date=2025-11-21`, the schedule depends on real-time data. Since this date is in the future and TVmaze populates schedules closer to airdate, a complete verified listing is not yet fully available [3]. However, based on typical Friday programming patterns and currently confirmed schedules, expected entries include:\n\n| Network | Show | Episode |\n|---------|------|---------|\n| CBS | S.W.A.T. | S09E__ |\n| CBS | Fire Country | S03E__ |\n| NBC | Dateline NBC | 2025-11-21 |\n| ABC | Shark Tank | S17E__ |\n| ABC | 20/20 | 2025-11-21 |\n| FOX | WWE Friday Night SmackDown | 2025-11-21 |\n| The CW | Penn & Teller: Fool Us | S11E__ |\n| Hallmark Channel | Holiday programming | TBD |\n| HGTV | House Hunters | date-based |\n\nNote: Exact season/episode numbers and the full comprehensive listing will only be confirmed once TVmaze's database is populated closer to the airdate. Querying the live endpoint on or near November 21, 2025 will yield the definitive complete schedule [3].\n\n## References\n[1] TVmaze API Documentation, https://www.tvmaze.com/api\n[2] TVmaze API Overview, https://api.tvmaze.com\n[3] TVmaze U.S. Schedule Endpoint, https://api.tvmaze.com/schedule?country=US&date=2025-11-21",
+      "duration_a_seconds": 143.1,
+      "duration_b_seconds": 16.4,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A provides no response, so it completely fails to identify the TVmaze API. Agent B correctly identifies TVmaze, its root URL (https://api.tvmaze.com), and its REST/HATEOAS/HAL nature. Thus, only B passes the core entity check.\n\nSecond, Width/Completeness: Agent B covers many required technical characteristics (JSON format, HAL-style _links/_embedded, embed parameter, caching, rate limits, HTTPS, CORS, CC BY-SA). However, it omits key specifics (e.g., 24-hour caching for full schedule/show index) and provides an incorrect/incomplete U.S. schedule list, failing to enumerate the required programs from November 21, 2025. This is a major WIDE failure. Agent A, by contrast, fails entirely on both technical details and the schedule.\n\nFinally, User Experience & Presentation: Agent B is well-structured, uses headers and a table, and attempts to explain limitations. Even though the schedule is wrong and incomplete, it delivers meaningful content. Agent A provides no usable output.\n\nBecause Agent B has factual and completeness errors, it cannot receive MUCH_BETTER. However, since Agent A failed both Deep and Wide criteria entirely, Agent B is clearly better overall.",
+      "score_a": 1.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Deed'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 4,
+      "width": 5,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com",
+        "TV API",
+        "Deed"
+      ],
+      "question": "Identify the television data platform that provides a free REST API conforming to HATEOAS and HAL principles, applies rate limiting of at least 20 calls per 10 seconds per IP, and licenses its public API data under the Creative Commons Attribution-ShareAlike 4.0 license. Based on authoritative sources about this platform: (1) summarize the key permissions and obligations of the CC BY-SA 4.0 license it uses, including sharing, adaptation, attribution, share-alike, and restrictions; (2) describe the main benefits included in its paid premium membership tier (such as pricing structure and feature set); and (3) explain the purpose and rules of its \"Alternate Episode List\" system, including the different supported list types and how alternate episodes may be linked to original episodes (e.g., 1:1, merged, split, or cases that cannot be represented).",
+      "word_limit_instruction": "Answer length: 300-400 words.",
+      "checklist_width": [
+        "CC BY-SA 4.0 permission to share (copy and redistribute) for any purpose, including commercial",
+        "CC BY-SA 4.0 permission to adapt (remix, transform, build upon) for any purpose, including commercial",
+        "Attribution requirement (credit, link to license, indicate changes)",
+        "ShareAlike requirement (derivatives under same license)",
+        "No additional restrictions clause",
+        "Disclaimer of warranties / notice summary nature of deed",
+        "Premium pricing structure (monthly price billed yearly)",
+        "Premium features: no advertising",
+        "Premium features: no tracking",
+        "Premium features: weekly and advanced calendar",
+        "Premium features: personalized schedule",
+        "Premium features: bulk episode marking",
+        "Premium features: User API access",
+        "Premium features: alternate airdates in schedule/calendar",
+        "Premium features: early access to new features and Bronze achievement",
+        "Explanation that episode properties follow original world premiere policy",
+        "Description of at least four Alternate List types (e.g., DVD release, Verbatim order, Streaming premiere, Broadcast premiere, Country premiere, Language premiere)",
+        "Rules for assigning season/episode numbers and dates in alternate lists",
+        "Explanation of 1:1, merged, and split alternate episode linking scenarios",
+        "Recognition that random recuts (e.g., heavily re-edited versions) cannot be properly expressed"
+      ],
+      "checklist_depth": [
+        "TVmaze identified as the platform (free REST API with HATEOAS/HAL, 20 calls per 10 seconds rate limit, CC BY-SA 4.0 licensing)",
+        "Correct identification of Creative Commons Attribution-ShareAlike 4.0 as the governing license",
+        "Correct identification of TVmaze Premium (Bronze tier) as the paid membership offering the listed features",
+        "Correct identification of the Alternate Episode List system as part of TVmaze’s episode data policy"
+      ],
+      "rationale": "The question uses technical characteristics (HATEOAS/HAL API, specific rate limits, CC BY-SA 4.0 licensing) to indirectly identify TVmaze without naming it (Deep reasoning). It then requires aggregating information from three distinct areas: Creative Commons license terms, the platform’s premium subscription benefits, and its detailed alternate episode list policy (Wide aggregation). Answering fully demands consulting multiple independent primary sources and synthesizing their details.",
+      "source_nodes": [
+        "Deed - Attribution-ShareAlike 4.0 International\n - Creative Commons",
+        "Premium TV Show Tracker | TVmaze",
+        "Alternate Episodes | TVmaze",
+        "ISO 3166-1 - Wikipedia",
+        "ISO 8601 - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Canonical URL https://creativecommons.org/licenses/by-sa/4.0/ See the legal code You are free to: Share — copy and redistribute the material in any medium or format for any pu",
+      "judge_max_limit": 400,
+      "answer_a": "**TVmaze** is the television data platform that provides a free REST API rooted in HATEOAS and HAL principles, limits access to at least 20 calls per 10 seconds per IP address, and licenses its publicly contributed data under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license [1].\n\nUnder the CC BY-SA 4.0 license, users are granted two primary permissions: **Sharing** (copying and redistributing the television data in any format or medium) and **Adaptation** (remixing, transforming, or building upon the material for any purpose, including commercial use). In exchange, users must adhere to specific obligations. **Attribution** requires users to give appropriate credit to TVmaze, provide a link to the license, and explicitly indicate if any changes were made to the original data. Under the **Share-Alike** clause, anyone who adapts or builds upon the original data must distribute their new contributions under this exact same license. The **Restrictions** clause prohibits users from applying new legal terms or technological measures (such as DRM) that restrict others from doing anything the standard license permits [2].\n\nTo financially support the platform, TVmaze offers a **Premium Membership** tier. Its pricing structure consists of recurring monthly plans or heavily discounted annual subscriptions. The feature set substantially upgrades the user experience by delivering completely ad-free browsing, a site-wide dark mode theme, the ability to leave private notes on shows, exclusive premium forum access, and a VIP profile badge. For developers, premium membership unlocks dedicated API keys that eliminate standard rate limits and provide more reliable or elevated API access [3].\n\nBecause TVmaze strictly indexes primary episodes by their original network broadcast order, the platform utilizes an **Alternate Episode List** system to document non-standard viewing sequences. The purpose of this system is to track recognized alternative formats, supporting distinct list types such as DVD Order, Absolute Order, Streaming Order, and specific Story Arcs. These alternate episodes must be mapped back to the primary broadcast episodes using designated linkage rules. A **1:1** mapping occurs when one alternate episode precisely mirrors one original episode. A **Merged** link occurs when multiple separate broadcast episodes are combined into a single alternate broadcast. A **Split** link divides one continuous original broadcast into multiple alternate episodes. Finally, an alternate episode falls into the **cannot be represented** category if it is composed of scattered scenes from various original broadcasts that cannot logically map to whole episodes [4].\n\n## References\n[1] TVmaze. \"TVmaze API Documentation.\" *TVmaze.com*, 2023. Available: https://www.tvmaze.com/api\n[2] Creative Commons. \"Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).\" *Creativecommons.org*, 2023. Available: https://creativecommons.org/licenses/by-sa/4.0/\n[3] TVmaze. \"TVmaze Premium.\" *TVmaze.com*, 2023. Available: https://www.tvmaze.com/premium\n[4] TVmaze. \"Data Policies: Alternate Episodes.\" *TVmaze.com*, 2023. Available: https://www.tvmaze.com/about/policies",
+      "answer_b": "**TVmaze** is the television data platform that provides a free REST API conforming to HATEOAS and HAL principles, enforces rate limiting of at least 20 calls per 10 seconds per IP address, and licenses its public API data under the Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0) license [1][2].\n\n## (1) CC BY-SA 4.0 License: Key Permissions and Obligations\n\nThe CC BY-SA 4.0 license grants the following permissions and imposes specific obligations [3][4]:\n\n- **Sharing:** Users may copy and redistribute the material in any medium or format, including commercially.\n- **Adaptation:** Users may remix, transform, and build upon the material for any purpose.\n- **Attribution:** Users must give appropriate credit to the original creator, provide a link to the license, and indicate if changes were made. Attribution must be reasonable and not suggest endorsement.\n- **ShareAlike:** If users remix, transform, or build upon the material, they must distribute contributions under the same CC BY-SA 4.0 license or a compatible one.\n- **Restrictions:** No additional legal terms or technological measures may be applied that legally restrict others from doing anything the license permits. The licensor cannot revoke freedoms as long as license terms are followed.\n\n## (2) Premium Membership Tier\n\nTVmaze offers a paid premium tier with tiered pricing starting at approximately $5/month, scaling based on usage needs [2][5]. Premium benefits include: a significantly higher API rate limit (beyond the free 20 calls/10 seconds), access to premium-only API endpoints (such as episode-level guest cast and crew data), removal of advertisements on the website, priority customer support, bulk data access options, and commercial use licensing that goes beyond the CC BY-SA restrictions of the free tier [2][5].\n\n## (3) Alternate Episode List System\n\nTVmaze's Alternate Episode List system allows contributors to define alternative orderings or groupings of a show's episodes beyond the default/official list [6]. Supported list types include **DVD order**, **alternate broadcast order**, **absolute order**, and **regional variations**. Each alternate episode can be linked to original episodes in several ways: **1:1 mapping** (one alternate episode corresponds to one original), **merged** (multiple original episodes combined into one alternate entry), and **split** (one original episode divided into multiple alternate entries). Some complex cases, such as partial overlaps or episodes with no direct correspondence, **cannot be represented** within the system's constraints and are noted as unsupported edge cases [6].\n\n## References\n[1] TVmaze API Documentation, https://www.tvmaze.com/api\n[2] TVmaze Premium, https://www.tvmaze.com/premium\n[3] Creative Commons CC BY-SA 4.0 Legal Code, https://creativecommons.org/licenses/by-sa/4.0/legalcode\n[4] Creative Commons CC BY-SA 4.0 Deed, https://creativecommons.org/licenses/by-sa/4.0/\n[5] TVmaze API Pricing, https://www.tvmaze.com/api#pricing\n[6] TVmaze API - Alternate Episode Lists, https://www.tvmaze.com/api#show-alternate-lists",
+      "duration_a_seconds": 37.9,
+      "duration_b_seconds": 15.6,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "NONE",
+      "judge_reasoning": "First, Deep Logic: Both agents correctly identify TVmaze as the platform (free REST API, HATEOAS/HAL, 20 calls per 10 seconds rate limit, CC BY-SA 4.0 licensing). Both pass the core entity check.\n\nWidth/Completeness: Both fail significant checklist items. On CC BY-SA 4.0, both cover sharing, adaptation, attribution, ShareAlike, and no additional restrictions, but neither clearly mentions the disclaimer-of-warranties / deed-summary limitation. On Premium membership, both substantially diverge from the ground truth. Agent A lists features such as dark mode, private notes, VIP badge, and API key removal of rate limits—missing required items like no tracking, advanced/weekly calendar, personalized schedule, bulk episode marking, alternate airdates, early access/Bronze tier. Agent B invents tiered pricing (~$5/month), premium API endpoints, commercial relicensing, and priority support—also omitting the required feature set. On the Alternate Episode List system, both describe 1:1, merged, split, and unrepresentable cases, but neither explains the world premiere policy, detailed season/episode/date assignment rules, nor sufficiently enumerates the specific supported list types (e.g., Verbatim, Streaming premiere, Country, Language premiere). Thus, both fail the WIDE aggregation requirement.\n\nPresentation & UX: Agent B has slightly cleaner structure, clearer sectioning, and higher citation density. However, both contain major factual gaps and likely hallucinations in the premium section, which outweigh stylistic advantages.\n\nConclusion: Both responses correctly identify the entity but miss multiple required checklist elements and include inaccuracies. This is a LOW-quality tie.",
+      "score_a": 1.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "depth": 3,
+      "width": 4,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com",
+        "TV API"
+      ],
+      "question": "A well-known online TV database provides a free REST API rooted at https://api.tvmaze.com, returns JSON, and follows HATEOAS and HAL principles. Using that service’s publicly documented schedule data for U.S. television, answer the following multi-part query:\n\n1) Identify the late-night talk show that aired new episodes on four consecutive days from Monday, October 27 through Thursday, October 30, 2025. List the show’s name and the exact air dates of those four episodes as presented in the schedule.\n\n2) For Friday, November 21, 2025, compile a complete list of all programs whose episode title is formatted solely as the calendar date “2025-11-21” (i.e., the title itself is just the date). For each of these programs, provide:\n   - The program’s name\n   - The network on which it aired\n   - The season and episode number if one is provided in the schedule (or indicate if none is shown)\n\nEnsure your answer clearly separates Part 1 and Part 2 and covers every qualifying program for November 21, 2025.",
+      "word_limit_instruction": "Answer length: 280-380 words.",
+      "checklist_width": [
+        "Correct identification of the late-night talk show airing October 27, 28, 29, and 30, 2025",
+        "All four specific air dates (2025-10-27, 2025-10-28, 2025-10-29, 2025-10-30)",
+        "Friday Night Vibes — Network: TBS — Episode titled 2025-11-21 (no season/episode number shown)",
+        "Firing Line with Margaret Hoover — Network: PBS — Episode titled 2025-11-21",
+        "Diners, Drive-Ins and Dives — Network: Food — Episode titled 2025-11-21",
+        "Anderson Cooper 360° — Network: CNN — Episode titled 2025-11-21",
+        "The Source with Kaitlan Collins — Network: CNN — Episode titled 2025-11-21",
+        "CNN NewsNight with Abby Phillip — Network: CNN — Episode titled 2025-11-21",
+        "Cuomo — Network: NewsNation — Episode titled 2025-11-21",
+        "On Balance with Leland Vittert — Network: NewsNation — Episode titled 2025-11-21",
+        "Banfield — Network: NewsNation — Episode titled 2025-11-21",
+        "Jesse Watters Primetime — Network: Fox News — Episode titled 2025-11-21",
+        "Hannity — Network: Fox News — Episode titled 2025-11-21",
+        "Gutfeld! — Network: Fox News — Episode titled 2025-11-21",
+        "All In with Chris Hayes — Network: MSNBC (MS NOW listing) — Episode titled 2025-11-21",
+        "The Briefing with Jen Psaki — Network: MSNBC (MS NOW listing) — Episode titled 2025-11-21",
+        "The Last Word with Lawrence O'Donnell — Network: MSNBC (MS NOW listing) — Episode titled 2025-11-21",
+        "Finnerty — Network: Newsmax — Episode titled 2025-11-21",
+        "Greg Kelly Reports — Network: Newsmax — Episode titled 2025-11-21",
+        "Chris Plante: The Right Squad — Network: Newsmax — Episode titled 2025-11-21"
+      ],
+      "checklist_depth": [
+        "The Late Show with Stephen Colbert — Verified as the only late-night talk show airing consecutively on October 27–30, 2025",
+        "All listed November 21, 2025 programs confirmed to have episode titles formatted exactly as the date “2025-11-21,” matching the schedule convention from the same TV database service"
+      ],
+      "rationale": "The question first requires identifying the specific TV database via its API description (deep reasoning anchor), then using its schedule data to isolate a qualifying talk show across four consecutive dates. It further demands broad aggregation by compiling every program on a separate date whose episode title follows a strict date-only format, along with networks and season/episode metadata. This forces both correct entity identification (depth) and exhaustive cross-referencing of multiple schedule entries (width).",
+      "source_nodes": [
+        "TV API | TVmaze - Add TV information to your website or app.",
+        "TV Calendar - Track this month's new episode releases | TVmaze",
+        "TomSouthwell | TVmaze",
+        "TV Schedule | TVmaze - The most comprehensive and accurate TV schedule. Find out what’s on TV tonight."
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: We provide a free, fast and clean REST API that's easy to use, returns JSON and conforms to the HATEOAS and HAL principles. The root url is https://api.tvmaze.com and the avai",
+      "judge_max_limit": 380,
+      "answer_a": "**Part 1**\nThe late-night talk show scheduled to air new episodes on four consecutive days from Monday, October 27 through Thursday, October 30, 2025, is *The Daily Show*. According to the TVmaze API schedule data for U.S. television, this program traditionally reserves its regular broadcasting block exclusively from Monday to Thursday, making it accurately fit the requested scheduling parameter. The exact air dates for these four episodes, as presented directly in the service’s schedule database, are:\n- Monday, October 27, 2025 (formatted as 2025-10-27)\n- Tuesday, October 28, 2025 (formatted as 2025-10-28)\n- Wednesday, October 29, 2025 (formatted as 2025-10-29)\n- Thursday, October 30, 2025 (formatted as 2025-10-30)\n\n**Part 2**\nFor the date of Friday, November 21, 2025, the TVmaze API schedule actively returns a specific subset of daily U.S. broadcasts whose episode titles are strictly formatted as the calendar date \"2025-11-21\". Due to the high-frequency nature of daily news cycles, the service catalogs these without standard creative episode names [1]. The complete list of qualifying programs airing on that specific Friday includes:\n\n- *ABC World News Tonight with David Muir* (Network: ABC) — Season and episode number: none shown.\n- *CBS Evening News* (Network: CBS) — Season and episode number: none shown.\n- *NBC Nightly News with Lester Holt* (Network: NBC) — Season and episode number: none shown.\n- *PBS NewsHour* (Network: PBS) — Season and episode number: none shown.\n- *Washington Week with The Atlantic* (Network: PBS) — Season and episode number: none shown.\n- *Good Morning America* (Network: ABC) — Season and episode number: none shown.\n- *Today* (Network: NBC) — Season and episode number: none shown.\n- *CBS Mornings* (Network: CBS) — Season and episode number: none shown.\n\nWithin the JSON REST API interface, these flagship morning and evening journalism programs systematically bypass both standard seasonal demarcations and sequential episodic numbering. Instead, any client hitting the `https://api.tvmaze.com/schedule` endpoint for November 21, 2025, will inherently observe these specific attributes as strictly null or purposefully omitted, substituting all title string parameters precisely with the \"YYYY-MM-DD\" format to guarantee unified historical accessibility [2].\n\n## References\n[1] TVmaze. \"TVmaze API Documentation - Episode Naming Conventions.\" *TVmaze.com*, 2024. Available: https://www.tvmaze.com/api\n[2] TVmaze Schedule. \"U.S. Television JSON Schedule Endpoints.\" *TVmaze.com REST API*, 2024. Available: https://api.tvmaze.com/schedule?country=US",
+      "answer_b": "## Part 1: Late-Night Talk Show Airing Four Consecutive Days (October 27–30, 2025)\n\nUsing the TVmaze REST API schedule endpoint for U.S. television (`https://api.tvmaze.com/schedule?country=US&date=YYYY-MM-DD`), querying each date from Monday, October 27 through Thursday, October 30, 2025 reveals:\n\n**The Late Show with Stephen Colbert** aired new episodes on all four consecutive days [1][2][3][4]:\n\n- **Monday, October 27, 2025**\n- **Tuesday, October 28, 2025**\n- **Wednesday, October 29, 2025**\n- **Thursday, October 30, 2025**\n\nThis is consistent with the show's typical Monday-through-Thursday late-night broadcast schedule on CBS.\n\n## Part 2: Programs with Episode Title \"2025-11-21\" on Friday, November 21, 2025\n\nQuerying the TVmaze schedule API for November 21, 2025 (`https://api.tvmaze.com/schedule?country=US&date=2025-11-21`) and filtering for episodes whose title is formatted solely as the calendar date string \"2025-11-21\" yields the following complete list [5]:\n\n| # | Program Name | Network | Season & Episode |\n|---|---|---|---|\n| 1 | **The View** | ABC | S29E51 |\n| 2 | **The Talk** | CBS | S15E51 |\n| 3 | **General Hospital** | ABC | S63E51 |\n| 4 | **The Bold and the Beautiful** | CBS | S38E51 |\n| 5 | **The Young and the Restless** | CBS | S53E51 |\n| 6 | **Days of Our Lives** | Peacock | S60E51 |\n| 7 | **Live with Kelly and Mark** | Syndication | S37E51 |\n| 8 | **Sherri** | Syndication | S3E51 |\n| 9 | **Today** | NBC | S73E51 |\n| 10 | **Good Morning America** | ABC | S50E51 |\n| 11 | **CBS Mornings** | CBS | S16E51 |\n| 12 | **Tamron Hall** | Syndication | S6E51 |\n| 13 | **The Jennifer Hudson Show** | Syndication | S3E51 |\n\nThese programs—predominantly daytime talk shows, morning programs, and soap operas—use the airdate as their episode title because they lack unique episode names in the schedule data. All entries include season and episode numbers as shown above [5].\n\n## References\n[1] TVmaze API Schedule, October 27, 2025 — https://api.tvmaze.com/schedule?country=US&date=2025-10-27\n[2] TVmaze API Schedule, October 28, 2025 — https://api.tvmaze.com/schedule?country=US&date=2025-10-28\n[3] TVmaze API Schedule, October 29, 2025 — https://api.tvmaze.com/schedule?country=US&date=2025-10-29\n[4] TVmaze API Schedule, October 30, 2025 — https://api.tvmaze.com/schedule?country=US&date=2025-10-30\n[5] TVmaze API Schedule, November 21, 2025 — https://api.tvmaze.com/schedule?country=US&date=2025-11-21",
+      "duration_a_seconds": 155.2,
+      "duration_b_seconds": 17.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A incorrectly identifies *The Daily Show* as the late-night program airing October 27–30, 2025, which fails the core entity check. Agent B correctly identifies *The Late Show with Stephen Colbert*, satisfying the primary requirement. \n\nSecond, Width/Completeness: Both agents fail Part 2. Neither provides the correct set of programs whose episode title is exactly \"2025-11-21\" (e.g., Anderson Cooper 360°, Hannity, Gutfeld!, etc.). Agent A lists major broadcast news programs (ABC, CBS, NBC) that do not match the ground truth. Agent B lists daytime talk shows and soap operas, which also do not match the required checklist. Thus, both fail the WIDE aggregation requirement for Part 2.\n\nSince Agent B gets the main entity correct (Deep Logic pass) while Agent A fails both Part 1 (DEEP) and Part 2 (WIDE), Agent B is the stronger answer. However, because Agent B still contains major factual errors in Part 2, the verdict is capped at BETTER rather than MUCH_BETTER.",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_gemini31_vs_claudeopu_1002"
+}

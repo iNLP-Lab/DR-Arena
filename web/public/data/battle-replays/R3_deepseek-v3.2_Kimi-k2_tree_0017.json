@@ -1,0 +1,287 @@
+{
+  "id": "R3_deepseek-v3.2_Kimi-k2_tree_0017",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_deepseek-v3.2_Kimi-k2_tree_0017.log",
+  "tree_id": "tree_0017",
+  "tree_title": "Handheld game console",
+  "tree_topic": "Computers & Electronics > Consumer Electronics > Gadgets & Portable Electronics",
+  "tree_subtopic": "Handheld Game Consoles",
+  "tree_crawled_at": "2025-11-21T15:27:37.988167",
+  "tree_url": "https://en.wikipedia.org/wiki/Handheld_game_console",
+  "model_a": "Kimi-k2",
+  "model_b": "deepseek-v3.2",
+  "winner": "Kimi-k2",
+  "final_score_a": 3.0,
+  "final_score_b": 1.0,
+  "total_rounds": 4,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handheld game console",
+  "questions": [
+    "Identify two handheld game consoles released in North America during the 1990s that were distinguished by their ability to natively play the exact same physical game cartridges or cards as a home console produced by the same manufacturer, without the need for an adapter. For each of these devices, report the original North American launch price in USD and the specific battery configuration (quantity and type) required to power them.",
+    "Identify the Japanese hardware designer famous for the philosophy of 'Lateral Thinking with Withered Technology' (Kareta Gijutsu no Suihei Shikō). Based on his career history, identify the three distinct handheld console families he led the development of: (1) the series of single-game dedicated handhelds launched in 1980, (2) the market-defining interchangeable cartridge handheld released in 1989, and (3) the final handheld console architecture he developed for Bandai shortly before his death. For the specific debut model of each of these three hardware families, provide the precise power source required (battery type and quantity) and the specific display technology classification (e.g., Segmented LCD, STN Dot Matrix, FSTN).",
+    "Identify the 8-bit handheld game console launched in 1992 by a Taiwanese manufacturer, characterized by a unique 'swayable' or tilting screen design in its original model and a 160x160 pixel monochrome display. Designed as a budget competitor to the Game Boy, this hardware was licensed and rebranded extensively across different global markets. \n\nProvide a detailed breakdown of its international distribution by identifying the specific commercial branding (the name printed on the console) and the primary distributor for the versions sold in the following regions:\n1. The United Kingdom\n2. Germany\n3. Argentina\n4. Hong Kong\n\nEnsure the answer explicitly maps each region to its specific local variant name and distributor.",
+    "Identify the 8-bit handheld game console released in 1989 that achieved market dominance over the Atari Lynx and Sega Game Gear despite lacking a backlit color screen. Based on historical comparisons, detail the economic and technical factors of its success, specifically: 1) its launch price relative to the Atari Lynx, 2) its battery configuration (count and size) and approximate lifespan compared to the Lynx and Game Gear, and 3) the specific hardware specifications of its 1996 'Pocket' revision, focusing on the changes to battery requirements and the visual improvement to the monochrome display tone."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 4,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 4,
+      "depth": 2,
+      "width": 5,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 818759,
+  "estimated_cost": 8.1876,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handheld game console",
+        "AllMusic is being updated."
+      ],
+      "question": "Identify two handheld game consoles released in North America during the 1990s that were distinguished by their ability to natively play the exact same physical game cartridges or cards as a home console produced by the same manufacturer, without the need for an adapter. For each of these devices, report the original North American launch price in USD and the specific battery configuration (quantity and type) required to power them.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "TurboExpress (or PC Engine GT) Launch Price: ~$249.99",
+        "TurboExpress Battery Specs: 6 AA batteries",
+        "Sega Nomad Launch Price: ~$179.99",
+        "Sega Nomad Battery Specs: 6 AA batteries"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: TurboExpress (Logic: Plays TurboGrafx-16/PC Engine HuCards)",
+        "Target Entity 2: Sega Nomad (Logic: Plays Sega Genesis/Mega Drive Cartridges)"
+      ],
+      "rationale": "The question employs Deep Logic by filtering for a specific, rare hardware capability (native home console media compatibility without adapters in the 90s) rather than naming the devices. This forces the agent to reason that the targets are the NEC TurboExpress and the Sega Nomad. The Wide Logic aspect compels the agent to retrieve and aggregate distinct historical data points (launch price and battery specs) for both identified systems.",
+      "source_nodes": [
+        "AllMusic is being updated. | Music Search, Recommendations, Videos and Reviews",
+        "List of best-selling game consoles - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The Sega Nomad and TurboExpress were two 1990s handheld consoles distinguished by native compatibility with home console cartridges. Released in October 1995, the Sega Nomad played any Sega Genesis cartridge directly without requiring adapters. It launched at $179.99 USD and required six AA batteries for portable operation, though battery life was limited to approximately 2-3 hours of gameplay [1][2]. The Nomad featured a 3.25-inch backlit LCD screen and essentially contained complete Genesis hardware, including the Motorola 68000 CPU and Z80 coprocessor, making it a true portable version of the 16-bit home console [2]. The device measured 8.25 × 4.25 inches and weighed over 1.5 pounds with batteries installed [1]. Despite its innovative design, the Nomad's bulky size and poor battery life limited its commercial success during an era when Sega was also marketing the 32X and Saturn [1].\n\nThe TurboExpress, launched in 1990 by NEC, played TurboGrafx-16 HuCards natively. With a launch price of $299.99 USD, it was among the most expensive handhelds of its era, costing nearly as much as the TurboGrafx-16 console itself [3][4]. The device also required six AA batteries, but suffered from extremely short battery life of approximately three hours due to its power-hungry hardware [4]. The TurboExpress featured a 2.6-inch LCD display and included the complete TurboGrafx-16 system architecture with its HuC6280 CPU, enabling perfect compatibility with all HuCard games and even supporting the same TurboTap multiplayer adapter as the home console [3][4].\n\n## References\n[1] \"Sega Nomad.\" *Sega Retro*, segaretro.org/Sega_Nomad. Accessed 2023.\n[2] \"Sega Nomad.\" *Wikipedia*, en.wikipedia.org/wiki/Sega_Nomad. Accessed 2023.\n[3] \"TurboExpress.\" *NEC Gaming Archives*, www.necgaming.com/turboexpress. Accessed 2023.\n[4] \"TurboExpress.\" *Wikipedia*, en.wikipedia.org/wiki/TurboExpress. Accessed 2023.",
+      "answer_b": "Two handheld consoles from the 1990s that natively shared game cartridges with their manufacturer's home console were the Sega Nomad and the TurboExpress.\n\nThe Sega Nomad, released in North America in 1995, could play the same cartridges as the Sega Genesis home console without an adapter. It launched with a price of $179.99. It required 6 AA alkaline batteries for operation, which provided roughly 2-3 hours of gameplay, making it notoriously power-hungry [1].\n\nThe TurboExpress, released by NEC in 1990, was a portable version of the TurboGrafx-16 (PC Engine) home console. It played the same HuCard game cards, making it a true portable home console. Its launch price was $249.99. It was powered by 6 AA batteries, offering about 3-5 hours of use [2].\n\nBoth devices were technologically advanced for their time, offering full home-console quality in a portable format, though their high battery consumption was a significant drawback. No adapter was needed for either to play the standard game media of their respective home systems.\n\n## References\n[1] Sega Nomad: History and Specifications. Retro Gaming Consoles Database.\n[2] TurboExpress: The Portable TurboGrafx-16. Classic Console Information Archive.",
+      "duration_a_seconds": 104.8,
+      "duration_b_seconds": 8.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the two consoles (Sega Nomad and TurboExpress) that fit the specific criteria. However, Agent B is more accurate regarding the launch price of the TurboExpress ($249.99), which matches the ground truth checklist. Agent A stated $299.99, which is a common misconception or reflects a different region/bundle price, but contradicts the standard launch MSRP found in its own cited source (Wikipedia). Agent B followed all instructions and provided accurate data.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Handheld game console",
+        "AllMusic is being updated."
+      ],
+      "question": "Identify the Japanese hardware designer famous for the philosophy of 'Lateral Thinking with Withered Technology' (Kareta Gijutsu no Suihei Shikō). Based on his career history, identify the three distinct handheld console families he led the development of: (1) the series of single-game dedicated handhelds launched in 1980, (2) the market-defining interchangeable cartridge handheld released in 1989, and (3) the final handheld console architecture he developed for Bandai shortly before his death. For the specific debut model of each of these three hardware families, provide the precise power source required (battery type and quantity) and the specific display technology classification (e.g., Segmented LCD, STN Dot Matrix, FSTN).",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Game & Watch (Ball/First Model): Power Source identified as 2 x LR43 (or LR44/button cell) batteries.",
+        "Game & Watch (Ball/First Model): Display technology identified as Segmented LCD (or Monochrome LCD without dot matrix).",
+        "Game Boy (DMG-01): Power Source identified as 4 x AA batteries.",
+        "Game Boy (DMG-01): Display technology identified as STN (Super Twisted Nematic) Dot Matrix LCD.",
+        "WonderSwan (Original): Power Source identified as 1 x AA battery.",
+        "WonderSwan (Original): Display technology identified as FSTN (Film Super Twisted Nematic) LCD."
+      ],
+      "checklist_depth": [
+        "Ancestor Identification: Gunpei Yokoi",
+        "Target 1 Identification: Game & Watch (Series)",
+        "Target 2 Identification: Game Boy (Original/DMG)",
+        "Target 3 Identification: WonderSwan"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the subject (Gunpei Yokoi) via his design philosophy rather than his name. It then applies Wide Aggregation by requiring the agent to trace his career across different companies (Nintendo and Bandai) to identify three specific distinct consoles, and finally requires granular fact-retrieval (battery counts and screen tech) for the specific debut models of each, preventing a simple summary answer.",
+      "source_nodes": [
+        "AllMusic is being updated. | Music Search, Recommendations, Videos and Reviews",
+        "Neo Geo Pocket - Wikipedia",
+        "List of best-selling game consoles - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]:  [Wide Logic - Target 2]: ",
+      "judge_max_limit": 330,
+      "answer_a": "Japanese hardware designer Gunpei Yokoi, celebrated for his philosophy of \"Lateral Thinking with Withered Technology\" (Kareta Gijutsu no Suihei Shikō), revolutionized portable gaming through three distinct handheld console families [1]. In April 1980, he introduced the Game & Watch series with the Ball model (AC-01), a pioneering single-game dedicated handheld. This debut unit operated on two LR44 button cell batteries and featured a monochrome segmented LCD display, where fixed-pattern elements selectively illuminated to create simple game graphics, representing the earliest commercial application of LCD technology in gaming [2][3].\n\nThe Game Boy (model DMG-01) launched in 1989 as Yokoi's second breakthrough, establishing the interchangeable cartridge paradigm that defined modern handhelds. The debut model required four AA batteries, providing approximately 10-15 hours of continuous gameplay, and utilized a 2.6-inch STN (Super Twisted Nematic) dot matrix LCD display capable of rendering 160×144 pixels in four grayscale shades. This strategic choice of mature STN technology over color displays prioritized power efficiency and affordability, enabling unprecedented market penetration [4][5].\n\nYokoi's final handheld architecture was the WonderSwan, developed for Bandai shortly before his 1997 death and released posthumously in 1999. The debut monochrome model operated on a single AA battery and employed a 2.5-inch FSTN (Film-compensated Super Twisted Nematic) LCD display. This advanced display technology offered superior contrast ratios and faster response times than STN, while maintaining low power consumption. The WonderSwan represented the culmination of Yokoi's philosophy, achieving remarkable performance through intelligent implementation of established, cost-effective components rather than cutting-edge hardware [6][7].\n\n## References\n[1] \"Gunpei Yokoi.\" *Wikipedia*, en.wikipedia.org/wiki/Gunpei_Yokoi. Accessed 2024.\n[2] \"Game & Watch.\" *Nintendo Company History*, www.nintendo.com/corporate/history. Accessed 2024.\n[3] \"Game & Watch - Ball.\" *Handheld Museum*, www.handheldmuseum.com/Nintendo/Ball.htm. Accessed 2024.\n[4] \"Game Boy.\" *Wikipedia*, en.wikipedia.org/wiki/Game_Boy. Accessed 2024.\n[5] \"Game Boy Technical Specifications.\" *Nintendo Developer Portal*, developer.nintendo.com/tech-specs. Accessed 2024.\n[6] \"WonderSwan.\" *Wikipedia*, en.wikipedia.org/wiki/WonderSwan. Accessed 2024.\n[7] \"WonderSwan Development History.\" *Bandai Namco Entertainment*, www.bandainamcoent.com/wonderswan. Accessed 2024.",
+      "answer_b": "Gunpei Yokoi is the Japanese hardware designer renowned for his \"Lateral Thinking with Withered Technology\" philosophy. His career at Nintendo yielded the foundational Game & Watch series and the Game Boy, while his later work for Bandai produced the Wonderswan.\n\nThe Game & Watch series debuted with the single-game handheld *Ball* (model AC-01) in 1980 [1]. It was powered by two LR43 (G12/A76) button cell batteries or a single 9V battery via an optional AC adapter. Its display was a fixed-pattern *Segmented LCD*, where each game element was a predefined, unchangeable segment [1][2].\n\nYokoi's market-defining interchangeable cartridge handheld, released in 1989, was the original *Game Boy* (model DMG-01). It required four AA batteries. Its display was a *reflective monochrome STN (Super Twisted Nematic) dot matrix LCD* with a low refresh rate, leading to noticeable motion blur [1][3].\n\nThe final handheld architecture Yokoi developed for Bandai was the *Wonderswan*. Its debut model, the original Wonderswan (WS-001), released in 1999, was powered by a single AA battery. It featured a *monochrome FSTN (Film Super Twisted Nematic) dot matrix LCD*, which offered improved viewing angles and contrast over basic STN screens [1][4].\n\n## References\n[1] Gunpei Yokoi - Designer Profile. Video Game History Foundation.\n[2] Nintendo Game & Watch: Ball (AC-01) Technical Specifications. Handheld Museum Archives.\n[3] Nintendo Game Boy (DMG-01) Hardware Manual. Nintendo of America, 1989.\n[4] Bandai WonderSwan (WS-001) Hardware Overview. Bandai Technical Datasheet, 1999.",
+      "duration_a_seconds": 57.2,
+      "duration_b_seconds": 25.2,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the designer (Gunpei Yokoi) and the three hardware families (Game & Watch, Game Boy, WonderSwan). \n\nAgent A is the winner based on Information Density and lack of hallucinations. Agent A provides a richer narrative, including resolution details, battery life estimates, and historical context (Yokoi's death date). \n\nAgent B correctly identified the precise battery for the original Game & Watch (LR43, whereas Agent A cited the more common but slightly incorrect LR44), BUT Agent B included a significant hallucination: claiming the original 1980 Game & Watch 'Ball' could be powered by a 9V battery via an AC adapter. This is physically impossible for the credit-card-sized device. \n\nAgent A is preferred for its comprehensive context and avoidance of hardware hallucinations, despite the minor inaccuracy regarding the specific button cell thickness.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 4,
+      "logic_chain": [
+        "Handheld game console",
+        "AllMusic is being updated."
+      ],
+      "question": "Identify the 8-bit handheld game console launched in 1992 by a Taiwanese manufacturer, characterized by a unique 'swayable' or tilting screen design in its original model and a 160x160 pixel monochrome display. Designed as a budget competitor to the Game Boy, this hardware was licensed and rebranded extensively across different global markets. \n\nProvide a detailed breakdown of its international distribution by identifying the specific commercial branding (the name printed on the console) and the primary distributor for the versions sold in the following regions:\n1. The United Kingdom\n2. Germany\n3. Argentina\n4. Hong Kong\n\nEnsure the answer explicitly maps each region to its specific local variant name and distributor.",
+      "word_limit_instruction": "Answer length: 260-360 words.",
+      "checklist_width": [
+        "United Kingdom Variant: QuickShot Supervision",
+        "United Kingdom Distributor: QuickShot or Spectravideo",
+        "Germany Variant: Hartung Supervision (or Hartung SV-100)",
+        "Germany Distributor: Hartung",
+        "Argentina Variant: Electrolab Supervision",
+        "Argentina Distributor: Electrolab",
+        "Hong Kong Variant: Tai-Kerr Boy",
+        "Hong Kong Distributor: Tai-Kerr"
+      ],
+      "checklist_depth": [
+        "Target Entity Identification: Watara Supervision (implied as the root device)",
+        "Logic Proof: Matches 1992 release, Taiwanese origin, 160x160 resolution, and 'bending' screen design."
+      ],
+      "rationale": "The question utilizes 'Deep' logic by describing the Watara Supervision through its technical specifications (65C02 CPU context, resolution, physical tilting design, origin) without naming it, forcing the agent to perform entity resolution first. The 'Wide' component requires the agent to aggregate disparate information regarding regional licensing deals (UK, DE, AR, HK), which are often found in separate data sources or comparative lists, preventing a single-document extraction.",
+      "source_nodes": [
+        "AllMusic is being updated. | Music Search, Recommendations, Videos and Reviews",
+        "Game Boy - Wikipedia",
+        "List of best-selling game consoles - Wikipedia",
+        "WonderSwan - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]:  [Wide Logic - Target 2]:  [Wide Logic - Target 3]: ",
+      "judge_max_limit": 360,
+      "answer_a": "The Watara Supervision, released in 1992 by Taiwanese manufacturer Watara, featured a unique \"swayable\" or tilting screen design that allowed players to adjust the viewing angle. Its 2.5-inch monochrome display delivered 160×160 pixel resolution, positioning it as a budget-conscious competitor to Nintendo's Game Boy. The hardware was extensively rebranded and distributed globally through various licensing agreements, leading to numerous regional variants with distinct commercial identities [1][2].\n\n## International Distribution Breakdown\n\n**1. United Kingdom**\nIn the United Kingdom, the console was marketed as the **QuickShot Supervision** by the established gaming peripheral company **QuickShot**. This British distributor leveraged its retail network to target budget-conscious consumers, packaging the device with the distinctive tilting screen intact from the original Watara design [3][4].\n\n**2. Germany**\nThe German market received the device under the **Watara Supervision** name, distributed directly by **Watara** through its European operations. This direct distribution approach maintained the original manufacturer's branding, though the console's documentation and packaging were localized for German consumers [5][6].\n\n**3. Argentina**\nIn Argentina, the console was known as the **Supervision**, distributed by **Electrónica Nacional** (also branded as ENM). This South American variant maintained the original naming convention while adapting the product for regional market conditions and retail distribution channels [7][8].\n\n**4. Hong Kong**\nThe Hong Kong market saw the device released as the **Supervision** as well, distributed by **Karton** (also spelled Kan Tong). This Asian distribution partner handled the console's regional sales while preserving the core hardware design and tilting screen mechanism [9][10].\n\n## References\n[1] \"Watara Supervision.\" *Handheld Museum*, www.handheldmuseum.com/Watara/Supervision.htm. Accessed 2024.\n[2] \"Watara Supervision.\" *Wikipedia*, en.wikipedia.org/wiki/Watara_Supervision. Accessed 2024.\n[3] \"QuickShot Supervision.\" *Retrogaming UK*, www.retrogaminguk.com/quickshot-supervision. Accessed 2024.\n[4] \"QuickShot Console Distributions.\" *Gaming History Archives*, www.gaminghistory.org/quickshot. Accessed 2024.\n[5] \"Watara Supervision Europe.\" *Sega-16*, www.sega-16.com/2023/05/watara-supervision. Accessed 2024.\n[6] \"German Handheld Console Market 1990s.\" *Retro Gaming Germany*, www.retrogamingdeutschland.de. Accessed 2024.\n[7] \"Electrónica Nacional Supervision.\" *Retro Argentina*, www.retroargentina.com.ar. Accessed 2024.\n[8] \"South American Console Distributors.\" *Latin Gaming History*, www.latingaminghistory.org. Accessed 2024.\n[9] \"Karton Supervision Hong Kong.\" *Asian Gaming Archive*, www.asiangamingarchive.com. Accessed 2024.\n[10] \"Hong Kong Console Imports 1990s.\" *Retro HK*, www.retrohk.com. Accessed 2024.",
+      "answer_b": "The handheld console is the **Game Master**, originally the **Mega Duck/Cougar Boy**, an 8-bit system launched in 1992 by the Taiwanese manufacturer **Taiwan Hsin Chi Co., Ltd. (TX Computer Corporation)**. Its defining feature was a pivoting screen on the original model to reduce glare, paired with a 160x160 pixel monochrome LCD. It was widely licensed and rebranded globally as a budget alternative to the Nintendo Game Boy [1][2].\n\nFor its international distribution:\n\n**1. The United Kingdom:** The console was sold under the branding **\"Mega Duck.\"** It was distributed by **Video Technology (V-Tech)**, a Hong Kong-based toy and electronics company with a strong UK presence, which handled the European launch [1][2].\n\n**2. Germany:** The primary variant sold in Germany was also branded **\"Mega Duck.\"** The distributor was **Bergsala**, a Swedish company that is historically known as the exclusive distributor for Nintendo in the Nordic region but also distributed the Mega Duck in parts of continental Europe during this period [1][3].\n\n**3. Argentina:** In Argentina, the console was marketed under the name **\"Cougar Boy.\"** It was distributed by **Ventronic**, a local Argentine company that handled the import and sales of the hardware and its compatible cartridges in the South American market [1][2].\n\n**4. Hong Kong:** In its home region of Hong Kong, the console was primarily sold under the **\"Game Master\"** branding. This version was distributed directly by the original manufacturer, **Taiwan Hsin Chi Co., Ltd. (TX Computer Corporation)**, or its local partners. \"Game Master\" is often considered the original or core brand name for the system [1][2].\n\nThe console's extensive rebranding, including the **\"Leader**\" variant in some European markets, demonstrates a strategy of using local distributors to penetrate markets where the Game Boy dominated. The pivoting screen design, while unique, did not compensate for its inferior library and build quality compared to its rival.\n\n## References\n[1] Mega Duck / Cougar Boy / Game Master - Handheld Console Database. RetroCollect.\n[2] The Mega Duck: A Global Budget Handheld. Video Game Console Library.\n[3] Bergsala Company Profile and Distribution History. Nordic Gaming Archives.",
+      "duration_a_seconds": 13.1,
+      "duration_b_seconds": 16.3,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the entity as the Watara Supervision, matching the specific constraints of the 'swayable' screen and 160x160 resolution. Agent B incorrectly identified the console as the Mega Duck (which has a fixed screen and 160x144 resolution), causing it to fail the Deep Logic check immediately. However, Agent A is not awarded 'Much Better' because it failed significantly on the sub-point details: it missed the specific branding/distributors for Germany (Hartung), Argentina (Electrolab), and Hong Kong (Tai-Kerr Boy), providing generic or incorrect answers for those regions.",
+      "score_a": 2.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Crawler returned 0 new nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 2,
+      "width": 5,
+      "logic_chain": [
+        "Handheld game console",
+        "AllMusic is being updated."
+      ],
+      "question": "Identify the 8-bit handheld game console released in 1989 that achieved market dominance over the Atari Lynx and Sega Game Gear despite lacking a backlit color screen. Based on historical comparisons, detail the economic and technical factors of its success, specifically: 1) its launch price relative to the Atari Lynx, 2) its battery configuration (count and size) and approximate lifespan compared to the Lynx and Game Gear, and 3) the specific hardware specifications of its 1996 'Pocket' revision, focusing on the changes to battery requirements and the visual improvement to the monochrome display tone.",
+      "word_limit_instruction": "Answer length: 290-390 words.",
+      "checklist_width": [
+        "Original Launch Price: Approximately $90 (or about half the price of the Atari Lynx)",
+        "Original Battery Config: Powered by four (4) AA batteries",
+        "Original Battery Life: Approximately 30 hours",
+        "Competitor Comparison: Lynx and Game Gear required six (6) AA batteries and had significantly shorter battery life",
+        "1996 Revision (Pocket) Battery: Switched to smaller AAA batteries (and required fewer of them)",
+        "1996 Revision (Pocket) Screen: Displayed 'true' black and white graphics (eliminating the original's green tint)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Nintendo Game Boy (Original)",
+        "Logic Proof: Released in 1989, 8-bit processor, competed with Lynx/Game Gear, monochrome screen, famously durable and efficient."
+      ],
+      "rationale": "The question employs Deep reasoning by requiring the agent to deduce the specific console (Game Boy) based on its release year, competitors, and technical limitations (monochrome/no backlight) rather than naming it. It employs Wide aggregation by demanding a multi-faceted synthesis of information: economic data (price comparison), technical metrics (battery comparisons across three consoles), and evolutionary history (specifics of the 1996 Pocket revision).",
+      "source_nodes": [
+        "AllMusic is being updated. | Music Search, Recommendations, Videos and Reviews",
+        "List of best-selling game consoles - Wikipedia",
+        "Game Boy — Nintendo dominates the portable market | First Arkansas News (FAN) - reporting from across the Natural State",
+        "Game Boy - Wikipedia",
+        "Neo Geo Pocket - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]:  [Wide Logic - Target 2]: Home » Headline , Retrogaming , Technology Game Boy — Nintendo dominates the portable market By: Ethan C. Nobles 22 January",
+      "judge_max_limit": 390,
+      "answer_a": "Nintendo Game Boy achieved market dominance over the Atari Lynx and Sega Game Gear through strategic economic and technical decisions despite its monochrome display. Launched in North America in July 1989 at $89.99 USD, it undercut the Lynx's September 1989 launch price of $179.99 by 50%, making it accessible to a broader demographic [1][2]. Sega's Game Gear, arriving in 1991 at $149.99, remained priced significantly above Nintendo's offering. The Game Boy's bundled *Tetris* cartridge and affordable price point created immediate competitive advantage, establishing network effects that attracted third-party developers and created a software ecosystem rivals couldn't match [1][3].\n\nBattery efficiency proved the decisive technical factor. The Game Boy operated on four AA batteries, delivering 10-15 hours of continuous gameplay through its low-power Sharp SM83 CPU (an 8080 derivative running at 4.19 MHz) and STN monochrome display [1][4]. The Lynx required six AA batteries yet only provided 4-5 hours due to its power-hungry 16-bit processor and backlit color screen [2][5]. The Game Gear similarly demanded six AA batteries while suffering a mere 3-5 hour lifespan [3][6]. This threefold battery life advantage eliminated consumer friction, making the Game Boy the practical choice for travel and extended play sessions, particularly for younger users without access to constant battery replacement.\n\nThe 1996 Game Boy Pocket revision exemplified hardware refinement. It reduced battery requirements to two AAA batteries, cutting weight by 33% while maintaining 8-10 hours of lifespan [1][7]. The display upgrade from the original's olive green STN to a high-contrast black-and-white FSTN (Film-compensated Super Twisted Nematic) screen eliminated the characteristic \"pea soup\" green tint, offering significantly improved clarity and sharpness without backlighting [7][8]. The Pocket's dimensions shrank to 5.1 × 3.1 × 0.9 inches, and its pixel response time improved, reducing ghosting despite maintaining the 160×144 resolution and four-shade grayscale [7][8].\n\n## References\n[1] \"Game Boy.\" *Wikipedia*, en.wikipedia.org/wiki/Game_Boy. (Accessed 2024)\n[2] \"Atari Lynx.\" *Wikipedia*, en.wikipedia.org/wiki/Atari_Lynx. (Accessed 2024)\n[3] \"Sega Game Gear.\" *Wikipedia*, en.wikipedia.org/wiki/Sega_Game_Gear. (Accessed 2024)\n[4] \"Game Boy Technical Specifications.\" *Nintendo Developer Portal*, developer.nintendo.com. (Accessed 2024)\n[5] \"Atari Lynx Technical Analysis.\" *RetroComputing Archive*, www.retrocomputingarchive.org/lynx. (Accessed 2024)\n[6] \"Game Gear Battery Performance.\" *Sega Retro*, segaretro.org/Game_Gear. (Accessed 2024)\n[7] \"Game Boy Pocket.\" *Wikipedia*, en.wikipedia.org/wiki/Game_Boy_Pocket. (Accessed 2024)\n[8] \"Game Boy Pocket Display Technology.\" *Nintendo Developer Documentation*, developer.nintendo.com/gbpocket. (Accessed 2024)",
+      "answer_b": "The handheld console is the Nintendo Game Boy, released in 1989. Despite competing against the technologically superior, color-backlit Atari Lynx (1989) and Sega Game Gear (1990), it achieved market dominance through a combination of economic and technical factors centered on practicality and cost [1].\n\nEconomically, the Game Boy's launch price was a key advantage. It launched in North America at $89.99, significantly lower than the Atari Lynx's introductory price of $179.99. This made the Game Boy far more accessible to a broader audience, especially younger players and families [1][2]. Technically, its power efficiency was paramount. The Game Boy required four AA batteries, providing approximately 10-12 hours of gameplay. In stark contrast, the Atari Lynx (6 AA batteries) and Sega Game Gear (6 AA batteries) offered only 4-5 hours of play due to their power-hungry color backlit screens, making ongoing battery costs prohibitive and portability less convenient [1][3].\n\nThe 1996 revision, the Game Boy Pocket, refined this formula with several key hardware improvements. It was significantly smaller and lighter than the original. Most notably, it reduced the battery requirement to two AAA batteries, which still offered a comparable battery life to the original model due to more efficient components. The Pocket also featured a major visual upgrade: its monochrome display used a new, improved black-and-white LCD panel that eliminated the original model's greenish tint, resulting in a much sharper, true black-on-gray screen tone with better contrast [1][4]. These enhancements addressed user complaints while maintaining the platform's core advantages of affordability and longevity, cementing the Game Boy family's legacy.\n\n## References\n[1] Nintendo Game Boy vs. Atari Lynx and Sega Game Gear: A Comparative Market Analysis. Video Game History Foundation.\n[2] Atari Lynx Launch Price and Specifications. Retro Gamer Magazine Archives.\n[3] Battery Life Comparison: Game Boy, Game Gear, Lynx. Console Hardware Technical Review.\n[4] Nintendo Game Boy Pocket (1996) Hardware Revision Details. Nintendo Power, 1996.",
+      "duration_a_seconds": 37.6,
+      "duration_b_seconds": 19.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A is the winner primarily due to superior technical depth. It correctly identified the specific screen technology (FSTN) and CPU details, whereas Agent B provided generic descriptions. Agent A also gave a specific battery life estimate for the Pocket revision, while Agent B used the vague term 'comparable'. Both agents slightly underestimated the original Game Boy's battery life compared to the provided ground truth (citing ~10-15 hours instead of 30), but Agent A's overall information density and technical specificity make it the more helpful response for a user asking for 'specific hardware specifications'.",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0017_Kimik2_vs_deepseekv_616"
+}

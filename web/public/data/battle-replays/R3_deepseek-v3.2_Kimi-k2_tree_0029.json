@@ -1,0 +1,156 @@
+{
+  "id": "R3_deepseek-v3.2_Kimi-k2_tree_0029",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_deepseek-v3.2_Kimi-k2_tree_0029.log",
+  "tree_id": "tree_0029",
+  "tree_title": "Handball",
+  "tree_topic": "Sports > Team Sports",
+  "tree_subtopic": "Handball",
+  "tree_crawled_at": "2025-11-22T00:49:21.808008",
+  "tree_url": "https://en.wikipedia.org/wiki/Handball",
+  "model_a": "Kimi-k2",
+  "model_b": "deepseek-v3.2",
+  "winner": "Kimi-k2",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handball",
+  "questions": [
+    "Identify the men's handball club that holds the record for the most championship titles during the Soviet Union's '7x7' era and the club that holds the record for the most titles in the history of the Russian championship (post-1992). Provide the specific number of titles won by each club in those respective eras. Furthermore, based on the official regulations for the Russian championship, specify the exact numerical limits imposed on foreign players (legionnaires) regarding both the team's overall squad list and the number allowed on the court simultaneously, and explain the procedure used to determine the winner if a match in the final playoff stage ends in a draw.",
+    "Identify the Russian city that is home to the handball club that won the inaugural Russian Men's Handball Championship in the 1992/1993 season. After identifying the city, provide a detailed profile covering the following four aspects: 1) The specific date of its foundation and the founder; 2) A chronological list of its official name changes (including the years of each change); 3) Its specific hydrological characteristics, including the historical and current number of islands in its delta and the primary engineering solution used to prevent floods; and 4) Its status regarding international heritage protection."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 1273246,
+  "estimated_cost": 12.7325,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Identify the men's handball club that holds the record for the most championship titles during the Soviet Union's '7x7' era and the club that holds the record for the most titles in the history of the Russian championship (post-1992). Provide the specific number of titles won by each club in those respective eras. Furthermore, based on the official regulations for the Russian championship, specify the exact numerical limits imposed on foreign players (legionnaires) regarding both the team's overall squad list and the number allowed on the court simultaneously, and explain the procedure used to determine the winner if a match in the final playoff stage ends in a draw.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Soviet '7x7' Era Record Holder: CSKA (Moscow) with 9 titles",
+        "Russian Era Record Holder: Chekhovskie Medvedi with 21 titles (or 23 citing specific sources/infobox)",
+        "Foreign Player Limit (Squad/Application): Maximum of 5",
+        "Foreign Player Limit (On Court): Maximum of 3",
+        "Playoff Draw Procedure: Additional playing time (Overtime)",
+        "Playoff Draw Procedure (if still tied): Series of 7-meter throws (Penalty shoot-out)"
+      ],
+      "checklist_depth": [
+        "Correctly filters out the 11x11 Soviet era (where Moscow Region won) to identify CSKA as the 7x7 leader.",
+        "Identifies Chekhovskie Medvedi as the dominant Russian club based on the historical title count provided."
+      ],
+      "rationale": "The question requires 'Deep' reasoning to distinguish between different historical eras (Soviet 7x7 vs 11x11) to find the correct entity (CSKA). It requires 'Wide' aggregation by forcing the agent to combine historical statistics with specific regulatory details (foreign player quotas and playoff tie-breakers) located in a separate section of the source text.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Penalty card - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "CSKA Moscow holds the record for the most Soviet men's handball championships during the 7x7 era, with 22 titles won between 1953 and 1990 [1]. Following the dissolution of the Soviet Union, Chekhovskiye Medvedi has become the most successful club in the Russian championship era (post-1992), accumulating 16 titles as of 2024 [2].\n\nRegarding foreign player regulations in the Russian Handball Super League, the official rules stipulate strict limitations. Each club may register a maximum of **four** legionnaires (foreign players) in their overall squad list for the season [3]. During matches, no more than **two** foreign players may be on the court simultaneously for any team [3].\n\nFor playoff finals ending in a draw, the Russian championship employs a specific tie-breaking procedure. If a match concludes with a tied score, it proceeds directly to a **seven-meter throw shootout** without any overtime period [4]. The shootout follows standard IHF rules, where teams alternate five initial throws, followed by sudden-death rounds if necessary, to determine the winner [4].\n\n## References\n[1] Handball History Archive - Soviet Union Championships (7x7 era)\n[2] Russian Handball Federation - Super League Records (2024)\n[3] Russian Handball Super League Official Regulations, Article 12.3 (2023/24 season)\n[4] Russian Handball Federation Competition Rules, Section 8.2 (Playoff Procedures)",
+      "answer_b": "During the Soviet '7x7' era (11-a-side outdoor handball), the men's club **Burevestnik (later SKA Minsk)** won the most championship titles, securing 12 national championships [1]. In the history of the post-1992 Russian Championship (indoor 7-a-side), **Chekhovskiye Medvedi** holds the record with 23 national titles [2].\n\nThe official regulations for the Russian Super League limit foreign players (legionnaires) in two ways. First, no more than seven foreign athletes can be included in the application (squad list) for the championship. Second, during a match, no more than three foreign players are permitted to be on the court simultaneously [3].\n\nIf a match in the final playoff stage ends in a draw after regular time, the winner is determined by a series of 7-meter throws. The procedure involves each team nominating five different players to take throws. If the tie persists, it continues with sudden-death throws, with the same players taking additional throws until a winner is determined. Players who have been disqualified or excluded are not permitted to participate in the shootout [4].\n\n## References\n[1] Soviet Handball Champions. Retrieved from https://handball.fandom.com/wiki/Soviet_Union_men%27s_handball_champions\n[2] Chekhovskiye Medvedi Championship Record. Retrieved from https://en.wikipedia.org/wiki/Chekhovskiye_Medvedi\n[3] Russian Handball Federation Regulations on Foreign Players. Retrieved from https://rushandball.ru/uploads/docs/2024/reglament_superliga_m_2024-2025.pdf\n[4] Russian Championship Playoff Match Rules. Retrieved from https://rushandball.ru/uploads/docs/2024/reglament_superliga_m_2024-2025.pdf",
+      "duration_a_seconds": 3.4,
+      "duration_b_seconds": 10.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A is the winner because it correctly identified the core entity for the Soviet '7x7' era (CSKA Moscow). Agent B failed this 'Deep Logic' check by identifying Burevestnik (the 11-a-side champion) and explicitly confusing the 7x7 era with the 11-a-side format, which violated the prompt's constraints. \n\nHowever, Agent A is not 'Much Better' because it suffered from significant 'Wide' failures: it hallucinated the specific number of titles for CSKA (claiming 22 instead of the historical 9) and provided incorrect numbers for the foreign player regulations. Agent B was actually more accurate on the Russian era statistics and correctly identified the on-court player limit. Nevertheless, Agent A's correct identification of both main clubs (Soviet and Russian) combined with superior formatting (headers vs. wall of text) makes it the more useful response for the primary intent.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Санкт-Петербург — Википедия'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Санкт-Петербург — Википедия"
+      ],
+      "question": "Identify the Russian city that is home to the handball club that won the inaugural Russian Men's Handball Championship in the 1992/1993 season. After identifying the city, provide a detailed profile covering the following four aspects: 1) The specific date of its foundation and the founder; 2) A chronological list of its official name changes (including the years of each change); 3) Its specific hydrological characteristics, including the historical and current number of islands in its delta and the primary engineering solution used to prevent floods; and 4) Its status regarding international heritage protection.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Foundation: May 27, 1703 by Peter I",
+        "Name Change 1: Petrograd (1914-1924)",
+        "Name Change 2: Leningrad (1924-1991)",
+        "Name Change 3: Returned to Saint Petersburg (1991)",
+        "Hydrography: Delta of the Neva River, historically ~101 islands, currently ~42 islands",
+        "Flood Defense: The Saint Petersburg Dam (Complex of Flood Protection Structures) in the Gulf of Finland",
+        "Heritage: Historic Centre and Related Groups of Monuments are a UNESCO World Heritage Site"
+      ],
+      "checklist_depth": [
+        "Target Entity: Saint Petersburg",
+        "Logic Proof: The first Russian Men's Handball Championship (1992/93) was won by the club 'Neva' (now associated with Zenit/University Lesgafta-Neva), which is based in Saint Petersburg."
+      ],
+      "rationale": "The question uses a deep reasoning anchor based on the history of Russian Handball (specifically the 1992/93 champion 'Neva') to mask the target entity (Saint Petersburg). The agent must first perform a specific domain search to identify the city, then broaden the search to aggregate geographical, historical, and cultural details (Wide) as requested.",
+      "source_nodes": [
+        "Санкт-Петербург — Википедия",
+        "Категории — Википедия"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: 59°57′ с. ш. 30°19′ в. д. H G Я O Санкт-Петербург Материал из Википедии — свободной энциклопедии Стабильная версия , проверенная 20 ноября 2025. Изменения шаблонов на этой стр",
+      "judge_max_limit": 320,
+      "answer_a": "St. Petersburg is home to Dynamo St. Petersburg, which captured the inaugural Russian Men's Handball Championship title in the 1992/1993 season [1].\n\nThe city was officially founded on May 27, 1703, by Tsar Peter I (Peter the Great), who established it as Russia's imperial capital on the marshlands of the Neva River delta [2]. Construction began on Zayachy Island, marking the strategic establishment of a Baltic port city.\n\nSt. Petersburg has undergone three official name changes during its history. It was designated St. Petersburg from 1703 until 1914, when it was renamed Petrograd (1914-1924) during World War I to eliminate Germanic connotations [3]. Following Vladimir Lenin's death, it became Leningrad (1924-1991), serving as the Soviet Union's second capital, before residents democratically restored the original name in September 1991 after the Soviet collapse [3].\n\nHydrologically, the city is situated on the Neva River delta, which historically comprised approximately 100 islands of varying dimensions [4]. Modern urbanization has reduced the islands within municipal boundaries to about 42, though the broader delta region still contains over 300 islands [5]. The primary engineering solution for flood prevention is the St. Petersburg Flood Prevention Facility Complex (the \"St. Petersburg Dam\"), a 25.4-kilometer movable barrier across the Gulf of Finland, completed in 2011 after 30 years of construction [6]. This sophisticated system protects against storm surges that previously devastated the city, most catastrophically in 1824 when floods killed hundreds.\n\nRegarding international heritage protection, St. Petersburg's historic center and related palace ensembles were inscribed as a UNESCO World Heritage Site in 1990, recognized under criteria i, ii, iv, and vi for its architectural significance and role in Russian history [7].\n\n## References\n[1] Russian Handball Federation. (2024). *Championship History Archive: Inaugural 1992/1993 Season Results*.\n[2] St. Petersburg City Administration, Historical Department. (2023). *Foundation Decree of St. Petersburg by Peter I*.\n[3] Russian State Historical Archive. (2022). *Official Renaming Acts: Petrograd (1914), Leningrad (1924), St. Petersburg Restoration (1991)*.\n[4] Institute of Hydrology, Russian Academy of Sciences. (2021). *Historical Morphology of the Neva River Delta*.\n[5] St. Petersburg Committee for City Planning. (2023). *Municipal Cartography: Current Island Inventory*.\n[6] Federal Water Resources Agency. (2011). *St. Petersburg Flood Prevention Facility Complex: Technical Specifications and Completion Report*.\n[7] UNESCO World Heritage Committee. (1990). *Inscription: Historic Centre of Saint Petersburg and Related Groups of Monuments (No. 540)*.",
+      "answer_b": "The Russian city is Volgograd, home to the handball club Kaustik Volgograd, which won the inaugural 1992/1993 Russian Men's Handball Championship [1]. \n\n1. Volgograd was founded on July 2, 1589, as the fortress of Tsaritsyn. It was established by decree of Tsar Fyodor I of Russia, with construction supervised by military commander Grigory Zasekin to secure the Volga River frontier [2]. \n\n2. The city has undergone two official name changes: Tsaritsyn (1589–1925), renamed Stalingrad in 1925 to honor Joseph Stalin, and Volgograd in 1961 following de-Stalinization, a name derived from the Volga River [3]. \n\n3. Hydrologically, Volgograd lies on the Volga River, whose delta is among Europe's largest. Historically, the delta contained over 500 islands; current estimates range from 500 to 600 islands due to sedimentation and water management projects. The primary engineering solution for flood prevention is the Volgograd Dam, part of the Volgograd Hydroelectric Station completed in 1961. This dam regulates flow, reduces flood peaks, and supports irrigation and hydropower [4]. \n\n4. For international heritage protection, the \"Historical and Cultural Complex of the Volgograd Battle,\" including the Motherland Calls statue on Mamayev Kurgan, was inscribed on UNESCO's tentative World Heritage list in 2014, acknowledging its historical significance as a World War II memorial site [5].\n\n## References  \n[1] Kaustik Volgograd 1992/1993 Championship Win. Retrieved from https://www.rushandball.ru/news/istoriya-chempionata-rossii-po-gandbolu  \n[2] Foundation of Volgograd. Retrieved from https://en.wikipedia.org/wiki/Volgograd#History  \n[3] Name Changes of Volgograd. Retrieved from https://www.britannica.com/place/Volgograd  \n[4] Volga Delta Hydrological Characteristics and Flood Prevention. Retrieved from https://en.wikipedia.org/wiki/Volga_Delta and https://en.wikipedia.org/wiki/Volgograd_Dam  \n[5] UNESCO Tentative List Entry for Volgograd. Retrieved from https://whc.unesco.org/en/tentativelists/5937/",
+      "duration_a_seconds": 103.7,
+      "duration_b_seconds": 69.8,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "First, the Deep Logic check reveals that Agent A correctly identified the target city as Saint Petersburg. The inaugural Russian Men's Handball Championship (1992/93) was won by the club 'Neva' (Saint Petersburg). Agent B failed this step completely, incorrectly identifying the city as Volgograd (claiming the club Kaustik won, though they did not win until 1996). Because Agent B profiled the wrong city, its entire response is irrelevant to the user's intent. Agent A provided a highly accurate profile of Saint Petersburg, matching the ground truth for the foundation date, name changes, and specific hydrological details (island counts and the flood dam).",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0029_Kimik2_vs_deepseekv_641"
+}

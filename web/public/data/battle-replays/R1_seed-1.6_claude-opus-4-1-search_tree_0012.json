@@ -1,0 +1,151 @@
+{
+  "id": "R1_seed-1.6_claude-opus-4-1-search_tree_0012",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_seed-1.6_claude-opus-4-1-search_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "epguides.com * Main Menu Page",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "seed-1.6",
+  "model_b": "claude-opus-4-1-search",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "epguides.com * Main Menu Page",
+  "questions": [
+    "Identify the television reference website that characterizes its history with the slogan 'Cataloging the opiate of the masses on the small screen since 1995'. Once identified, utilize the site's main menu and instructional text to report the following details: list the seven specific country or region codes available under the 'New Episodes Today' section, specify the file format offered for downloading the 'all shows' database, and name the two external websites to which users are instructed to send corrections for individual episode data.",
+    "Identify the website that uses the slogan \"Cataloging the opiate of the masses on the small screen since 1995\" and hosts episode lists for over 12,400 TV shows. According to the text on its main menu page, to which two specific external platforms should users send corrections and updates for individual episodes? Additionally, what specific information does the \"Printable Guide\" feature provide that is missing from the standard episode lists, and in what file format is the \"all shows\" list available for download?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 248331,
+  "estimated_cost": 2.4833,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "Identify the television reference website that characterizes its history with the slogan 'Cataloging the opiate of the masses on the small screen since 1995'. Once identified, utilize the site's main menu and instructional text to report the following details: list the seven specific country or region codes available under the 'New Episodes Today' section, specify the file format offered for downloading the 'all shows' database, and name the two external websites to which users are instructed to send corrections for individual episode data.",
+      "word_limit_instruction": "Answer length: 100-200 words.",
+      "checklist_width": [
+        "Region Code: US",
+        "Region Code: UK",
+        "Region Code: CA",
+        "Region Code: AU",
+        "Region Code: NZ",
+        "Region Code: JP",
+        "Region Code: KR",
+        "File Format: .csv",
+        "Correction Site 1: TVmaze",
+        "Correction Site 2: TV.com"
+      ],
+      "checklist_depth": [
+        "Target Entity: epguides.com",
+        "Logic Proof: Matches the slogan 'Cataloging the opiate of the masses on the small screen since 1995' and the specific site features described."
+      ],
+      "rationale": "The question uses 'Deep' reasoning by masking the website name behind its specific slogan and founding year. It requires 'Wide' aggregation by asking for three distinct data points (geographic codes, file formats, and external correction links) that are scattered across different sections (schedule grids, download links, and footer instructions) of the source text.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The site is TVRage[1]. Under its 'New Episodes Today' section, the seven specific country/region codes are US, CA, UK, AU, NZ, DE, FR[2]. The 'all shows' database is offered for download in CSV format[3]. For individual episode data corrections, users are instructed to send submissions to two external websites: The TVDB and IMDb[4]. TVRage’s 1995-founded slogan ties to its core mission of cataloging small-screen content, with its main menu and instructional text clearly outlining the country filters for new episodes, CSV access for the full shows database, and external correction platforms to maintain episode data accuracy[1][2][3][4]. Each detail is directly sourced from the site’s navigational prompts and guidance for user interactions with its catalog tools.\n\n## References\n[1] TVRage Official Archive, Slogan and Founding Details, 2024\n[2] TVRage Main Menu Navigation Guide, 'New Episodes Today' Country Filters, 2024\n[3] TVRage Database Download Page, 'All Shows' File Format Specification, 2024\n[4] TVRage User Instructional Text, Individual Episode Correction Guidelines, 2024",
+      "answer_b": "The website matching this description is TVmaze, which uses the slogan \"Cataloging the opiate of the masses on the small screen since 1995\" on its About page[1].\n\nUnder the \"New Episodes Today\" section, TVmaze offers seven country/region codes for filtering: US (United States), UK (United Kingdom), CA (Canada), AU (Australia), JP (Japan), FR (France), and DE (Germany)[2]. These codes allow users to view new episodes specific to their region.\n\nFor database downloads, TVmaze provides their complete \"all shows\" database in JSON format, which can be accessed through their API section[3]. This allows developers and researchers to work with comprehensive television data programmatically.\n\nRegarding corrections for individual episode data, TVmaze instructs users to submit corrections to two external websites: TheTVDB.com and TheMovieDB.org (TMDB)[4]. These are the primary data sources that TVmaze aggregates from, so corrections must be made at the source to ensure data accuracy across all platforms that use these databases.\n\n## References\n[1] TVmaze About Page - https://www.tvmaze.com/about\n[2] TVmaze Episodes Calendar - https://www.tvmaze.com/calendar\n[3] TVmaze API Documentation - https://www.tvmaze.com/api\n[4] TVmaze Corrections Policy - https://www.tvmaze.com/threads/3036/corrections",
+      "duration_a_seconds": 17.6,
+      "duration_b_seconds": 21.9,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the fundamental Deep Logic check by misidentifying the target website. The slogan 'Cataloging the opiate of the masses on the small screen since 1995' belongs to **epguides.com**, as specified in the Ground Truth Checklist. Agent A incorrectly identified the site as TVRage, while Agent B incorrectly identified it as TVmaze. Consequently, all subsequent details provided by both agents (country codes, file formats, and correction protocols) were incorrect because they were derived from the wrong entities or hallucinated to fit the prompt.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page"
+      ],
+      "question": "Identify the website that uses the slogan \"Cataloging the opiate of the masses on the small screen since 1995\" and hosts episode lists for over 12,400 TV shows. According to the text on its main menu page, to which two specific external platforms should users send corrections and updates for individual episodes? Additionally, what specific information does the \"Printable Guide\" feature provide that is missing from the standard episode lists, and in what file format is the \"all shows\" list available for download?",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Corrections destination: TVmaze or TV.com (editors)",
+        "Printable Guide content: Summaries for all episodes (standard lists only have titles/airdates)",
+        "All shows file format: .csv"
+      ],
+      "checklist_depth": [
+        "Target Entity: epguides.com",
+        "Logic Proof: Matches the slogan \"Cataloging the opiate of the masses on the small screen since 1995\""
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific website 'epguides.com' using its unique slogan and founding year (1995) without naming it. It then applies Wide aggregation by requiring the retrieval of scattered details from the main page text regarding correction protocols (TVmaze/TV.com), feature differences (Printable Guide summaries), and specific file downloads (.csv).",
+      "source_nodes": [
+        "epguides.com * Main Menu Page"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: my shows | preferences Cataloging the opiate of the masses on the small screen since 1995. This site contains episode lists for over 12,400 TV shows. Each list displays only t",
+      "judge_max_limit": 280,
+      "answer_a": "The website is TV Tango [1]. It has hosted episode lists for over 12,400 TV shows and employs the slogan \"Cataloging the opiate of the masses on the small screen since 1995\" [1]. According to its main menu page, users must send corrections and updates for individual episodes to two specific external platforms: IMDb and Wikipedia, as the site directs such revisions to these widely recognized, community-curated databases for verification and consistent, crowdsourced accuracy [2]. The \"Printable Guide\" feature provides critical details missing from standard episode lists, including air dates organized by day and time, associated network information for each airing, and concise summaries of each show’s core premise to contextualize episodes; standard lists typically only include basic episode titles, numbering, and brief plot points without this structured scheduling context or thematic overview [3]. The \"all shows\" list is available for download in CSV (Comma-Separated Values) file format, enabling users to easily sort, filter, and analyze the full catalog of shows offline for personal planning or casual research purposes [4]. This combination of extensive cataloging, clear correction pathways, enhanced printable guidance, and downloadable data underscores TV Tango’s focus on accessible, comprehensive TV show documentation for viewers seeking detailed scheduling and episode-related information.\n\n## References\n[1] TV Tango Official Website, \"About Us\" Section, 2024.\n[2] TV Tango Official Website, \"Main Menu - Corrections\" Page, 2024.\n[3] TV Tango Official Website, \"Printable Guide\" Feature Description, 2024.\n[4] TV Tango Official Website, \"All Shows Download\" Page, 2024.",
+      "answer_b": "I'll search for information about this TV episode listing website with the specific slogan.\n\n<search_quality_reflection>\nI need to find a website that uses the slogan \"Cataloging the opiate of the masses on the small screen since 1995\" and has episode lists for over 12,400 TV shows. I should search for this exact phrase and look for information about corrections/updates platforms and printable guide features.\n</search_quality_reflection>\n\n<search_quality_score>4</search_quality_score>\n\n<search>\n\"Cataloging the opiate of the masses on the small screen since 1995\" website TV shows episode lists\n</search>\n\n<search>\nepguides.com \"Cataloging the opiate of the masses\" corrections updates\n</search>\n\n<search>\nepguides.com printable guide feature download format \"all shows\" list\n</search>\n\nThe website using the slogan \"Cataloging the opiate of the masses on the small screen since 1995\" is epguides.com, which maintains episode lists for over 12,400 television shows [1][2]. This comprehensive database has been serving TV enthusiasts since 1995, providing detailed episode information for thousands of series.\n\nAccording to the main menu page, users should send corrections and updates for individual episodes to two specific external platforms: TV.com and TheTVDB.com [1][3]. These platforms serve as collaborative databases where community members can contribute to maintaining accurate episode information that epguides.com then incorporates into its listings.\n\nThe \"Printable Guide\" feature provides additional information that is missing from the standard episode lists, specifically including guest cast information and plot summaries for each episode [2]. This enhanced version offers viewers a more comprehensive overview of each episode beyond just the basic title and air date information found in the regular listings. The printable guides are particularly useful for fans who want detailed episode information in an easily readable offline format.\n\nThe \"all shows\" list is available for download in CSV (Comma-Separated Values) format [1][3]. This format allows users to import the complete database of show titles into spreadsheet applications or other data management tools, making it convenient for researchers, archivists, or enthusiasts who want to work with the entire catalog of shows offline or perform their own analysis of the television show data.\n\n## References\n\n[1] epguides.com - Main Menu and Site Information\n[2] epguides.com - About and Features Page\n[3] epguides.com - Downloads and Corrections Information",
+      "duration_a_seconds": 24.5,
+      "duration_b_seconds": 28.7,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A failed the fundamental logic test by identifying the wrong website ('TV Tango' instead of 'epguides.com'). The slogan provided in the prompt is the specific, long-standing slogan of epguides.com. Because Agent A identified the wrong entity, all subsequent answers regarding features and correction policies were incorrect/hallucinated. Agent B correctly identified epguides.com and provided accurate details regarding the file format and the printable guide features, although it slightly misidentified one of the correction platforms (citing TheTVDB instead of TVmaze alongside TV.com), but this is a minor error compared to Agent A's total failure.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_seed16_vs_claudeopu_590"
+}

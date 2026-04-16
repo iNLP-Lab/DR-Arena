@@ -1,0 +1,156 @@
+{
+  "id": "R3_glm-4.7_deepseek-v3.2_tree_0001",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_glm-4.7_deepseek-v3.2_tree_0001.log",
+  "tree_id": "tree_0001",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Arts & Entertainment > Movies > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T00:04:13.514767",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "deepseek-v3.2",
+  "model_b": "glm-4.7",
+  "winner": "glm-4.7",
+  "final_score_a": 0.0,
+  "final_score_b": 3.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Analyze the cultural history of the video rental shop by identifying two distinct subjects: a filmmaker and a social phenomenon. First, identify the American director who famously used his time working in a video rental shop to 'educate himself about the medium' and subsequently secured financing for his 1992 debut film specifically from LIVE Entertainment. Second, identify the controversial two-word term used to describe the violent horror films that sparked a media-driven panic about 'unsupervised children' renting them, a phenomenon often linked to 'anti-film propaganda' and discussed in texts such as 'Cannibal Error'. Provide the director's name, the specific financing company mentioned, and the two-word term for the controversial videos.",
+    "Identify the authors associated with two specific non-fiction texts that utilize the 'video rental shop' as a case study or anecdotal reference. \n\n1. The first text, a study on 'Anti-Film Propaganda' and 'Video Nasties' (often titled 'Cannibal Error' or 'See No Evil'), contains an anecdote where the authors recall visiting a video rental shop and feeling that certain films were 'devaluing horror'. \n2. The second text, a guide to 'Professional Issues in Software Engineering', uses the video rental shop model to illustrate a copyright scenario where the owner receives no further royalties after the shop purchases a copy.\n\nIdentify the writing duo responsible for the first text and the female legal scholar who co-authored the second. Then, provide a bibliography for the duo that lists their other collaborative works focusing on 'death films', 'banned films', or 'video nasties'. Additionally, provide a list of the female scholar's other books specifically addressing 'Trade Secrets', 'Copyright Exceptions', or 'Intellectual Property'."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 2343779,
+  "estimated_cost": 23.4378,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "\"Video rental shop\" -wikipedia"
+      ],
+      "question": "Analyze the cultural history of the video rental shop by identifying two distinct subjects: a filmmaker and a social phenomenon. First, identify the American director who famously used his time working in a video rental shop to 'educate himself about the medium' and subsequently secured financing for his 1992 debut film specifically from LIVE Entertainment. Second, identify the controversial two-word term used to describe the violent horror films that sparked a media-driven panic about 'unsupervised children' renting them, a phenomenon often linked to 'anti-film propaganda' and discussed in texts such as 'Cannibal Error'. Provide the director's name, the specific financing company mentioned, and the two-word term for the controversial videos.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Director Name: Quentin Tarantino",
+        "Financing Company: LIVE Entertainment",
+        "Controversial Term: Video Nasties (or Video Nasty)",
+        "Context: Mention of 'unsupervised children' or 'anti-film propaganda' in relation to the panic"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Quentin Tarantino (Logic: Linked via 1992 debut + Video store background + LIVE Entertainment financing)",
+        "Target Entity 2: Video Nasties (Logic: Linked via 'Cannibal Error', 'Anti-film propaganda', and 'unsupervised children' panic)"
+      ],
+      "rationale": "The question uses Deep Logic by masking the director's name and requiring the specific (and less commonly cited) fact of 'LIVE Entertainment' financing to confirm identity. It achieves Wide Aggregation by forcing the agent to combine this biographical fact with a separate sociological fact (the 'Video Nasties' panic) found in a different section of the source text, requiring synthesis of disparate search results under the common domain of video rental shops.",
+      "source_nodes": [
+        "\"Video rental shop\" -wikipedia - Google Search",
+        "Blockbuster (retailer) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: AI Mode All Images Videos News Shopping Maps More Search Results Veni, Vidi, Video: The Hollywood Empire and the VCR - Page 198 books.google.com.sg › books books.google.com.sg",
+      "judge_max_limit": 300,
+      "answer_a": "The American director who famously educated himself about cinema while working at a video rental store and secured financing from LIVE Entertainment for his 1992 debut is Quentin Tarantino. Before achieving fame, Tarantino worked at the Video Archives store in Manhattan Beach, California, where he immersed himself in a vast array of films, an experience he has often cited as his film school [1]. His directorial debut, *Reservoir Dogs* (1992), was financed specifically by LIVE Entertainment, which later became Artisan Entertainment [2].\n\nThe controversial two-word term for the violent horror films that sparked a media panic about children's access is \"video nasties.\" This term originated in the United Kingdom during the early 1980s and refers to a list of low-budget horror and exploitation films distributed on videocassette that became the focus of a major moral panic [3]. The concern centered on the ease with which unsupervised children could rent or purchase these graphically violent videos, leading to significant media hysteria, claims of \"anti-film propaganda,\" and eventual government legislation in the form of the Video Recordings Act 1984. The phenomenon and its cultural impact are analyzed in texts like *Cannibal Error: Anti-Film Propaganda and the 'Video Nasty' Scare* [4].\n\n## References\n[1] Biography of Quentin Tarantino highlighting his work at Video Archives and cinematic education. Various reputable biographical sources.\n[2] Production and financing details for *Reservoir Dogs*, confirming LIVE Entertainment as the financing and distribution company. Film industry histories and studio profiles.\n[3] Definition and historical context of the \"video nasty\" phenomenon and the associated moral panic in the UK. Cultural studies and media history sources.\n[4] Reference to the text *Cannibal Error: Anti-Film Propaganda and the 'Video Nasty' Scare* discussing the media-driven panic. Academic publications on film censorship and media studies.",
+      "answer_b": "The American director who utilized his time working in a video rental shop to educate himself about cinema is Quentin Tarantino. Before his directorial debut, Tarantino worked at Video Archives in Manhattan Beach, California, where he immersed himself in film history. This self-education heavily influenced his style. For his 1992 debut feature, *Reservoir Dogs*, Tarantino secured financing specifically from LIVE Entertainment, a distribution company known for handling home video content [1].\n\nThe controversial two-word term used to describe the violent horror films that caused a media panic regarding unsupervised children is \"video nasties.\" This phenomenon emerged in the United Kingdom during the early 1980s, where a moral panic led to the prosecution of distributors and the banning of numerous films. The term is associated with \"anti-film propaganda\" campaigns that argued these tapes were corrupting youth. This history is frequently analyzed in film studies texts, including *Cannibal Error*, which discusses the censorship and cultural hysteria surrounding these films [2].\n\n## References\n[1] https://www.bfi.org.uk/news-opinion/news-bfi/features/quentin-tarantino-video-archives\n[2] https://www.tandfonline.com/doi/abs/10.1080/01439685.2019.1635632",
+      "duration_a_seconds": 20.3,
+      "duration_b_seconds": 3.4,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified all the required entities (Quentin Tarantino, LIVE Entertainment, Video Nasties) and adhered to the constraints. Agent A provided slightly more historical detail by mentioning the Video Recordings Act. However, Agent B is the clear winner in terms of User Utility for a search agent because it provided specific, verifiable URL citations. Agent A provided generic, descriptive placeholders for references (e.g., 'Various reputable biographical sources'), which offers no way for the user to verify the information. In a search context, actual links are significantly more valuable than descriptive placeholders.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'inauthor:\"Allison Coleman\"'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Video rental shop",
+        "\"Video rental shop\" -wikipedia",
+        "inauthor:\"Allison Coleman\""
+      ],
+      "question": "Identify the authors associated with two specific non-fiction texts that utilize the 'video rental shop' as a case study or anecdotal reference. \n\n1. The first text, a study on 'Anti-Film Propaganda' and 'Video Nasties' (often titled 'Cannibal Error' or 'See No Evil'), contains an anecdote where the authors recall visiting a video rental shop and feeling that certain films were 'devaluing horror'. \n2. The second text, a guide to 'Professional Issues in Software Engineering', uses the video rental shop model to illustrate a copyright scenario where the owner receives no further royalties after the shop purchases a copy.\n\nIdentify the writing duo responsible for the first text and the female legal scholar who co-authored the second. Then, provide a bibliography for the duo that lists their other collaborative works focusing on 'death films', 'banned films', or 'video nasties'. Additionally, provide a list of the female scholar's other books specifically addressing 'Trade Secrets', 'Copyright Exceptions', or 'Intellectual Property'.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Work (Duo): Killing for Culture (From Edison to ISIS / Illustrated History of Death Film)",
+        "Work (Duo): Last Orgy by the Cemetery",
+        "Work (Duo): See No Evil: Banned Films and Video Controversy",
+        "Work (Scholar): The Legal Protection of Trade Secrets",
+        "Work (Scholar): Copyright Exceptions: The Digital Impact",
+        "Work (Scholar): Intellectual Property Law",
+        "Work (Scholar): Character Merchandising and Fictitious Characters"
+      ],
+      "checklist_depth": [
+        "Target Duo: David Kerekes and David Slater",
+        "Target Scholar: Allison Coleman",
+        "Logic Proof: Linked 'devaluing horror' quote to Kerekes/Slater and 'software engineering/royalties' quote to Coleman."
+      ],
+      "rationale": "The question requires Deep reasoning to identify specific authors based on how they contextually reference 'video rental shops' in their respective obscure texts (one on film censorship, one on software law). It then requires Wide aggregation to retrieve and list their distinct bibliographies across different legal and cultural topics.",
+      "source_nodes": [
+        "inauthor:\"Allison Coleman\" - Google Search",
+        "inauthor:\"David Kerekes\" - Google Search",
+        "inauthor:\"David Slater\" - Google Search"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Filters and topics AI Mode All Images Videos News Shopping Books More Search Results Search Results Professional Issues in Software Engineering books.google.com › books books.",
+      "judge_max_limit": 350,
+      "answer_a": "The writing duo responsible for the first text, *Cannibal Error: Anti-Film Propaganda and the 'Video Nasty' Scare* (also published under the title *See No Evil: Banned Films and Video Controversy*), is Martin Barker and Julian Petley. This academic study analyzes the moral panic, and they recount an anecdote about visiting a video shop and feeling horror was being \"devalued\" by certain titles [1]. The female legal scholar who co-authored the second text, *Professional Issues in Software Engineering* (4th ed.), which uses a video rental shop example to discuss copyright exhaustion (the \"first sale doctrine\"), is Jennifer Davis [2].\n\n**Collaborative Works by Barker and Petley:** Their collaborative output focuses heavily on media censorship, moral panics, and controversial film. Key works include: *Ill Effects: The Media/Violence Debate* (multiple editions) [3]; *The 'Video Nasties': Freedom and Censorship in the Media* [4]; and *The Battle for the Bs: 1950s Hollywood and the Rebirth of Low-Budget Cinema* [5]. Their research consistently engages with topics like banned films, \"death films,\" and the societal reaction to the \"video nasties\" phenomenon.\n\n**Other Books by Jennifer Davis on Relevant IP Topics:** Professor Jennifer Davis's scholarship specializes in intellectual property law. Other notable books she has authored or co-authored include: *Intellectual Property Law* (Core Text Series) [6]; *Intellectual Property Law: Text, Cases, and Materials* [7]; and *Copyright Exceptions: The Digital Impact*, co-authored with Tanya Aplin [8]. While her work broadly covers IP, it directly addresses the core areas of copyright, its exceptions, and trade secrets within the UK and European context.\n\n## References\n[1] Barker, M., & Petley, J. (2001). *Ill Effects: The Media/Violence Debate* (2nd ed.). Routledge. Description references their work *Cannibal Error/See No Evil*.\n[2] Bott, F., et al. (2014). *Professional Issues in Software Engineering* (4th ed.). CRC Press. Confirms Jennifer Davis as a co-author and the video rental copyright example.\n[3] Barker, M., & Petley, J. (Eds.). (1997, 2001). *Ill Effects: The Media/Violence Debate*. Routledge.\n[4] Barker, M., & Petley, J. (Eds.). (2001). *The 'Video Nasties': Freedom and Censorship in the Media*. Pluto Press.\n[5] Barker, M., & Petley, J. (Eds.). (2012). *The Battle for the Bs: 1950s Hollywood and the Rebirth of Low-Budget Cinema*. Rutgers University Press.\n[6] Davis, J. (2022). *Intellectual Property Law* (9th ed.). Oxford University Press.\n[7] Davis, J. (2019). *Intellectual Property Law: Text, Cases, and Materials*. Oxford University Press.\n[8] Aplin, T., & Davis, J. (2019). *Copyright Exceptions: The Digital Impact*. Cambridge University Press.",
+      "answer_b": "The writing duo responsible for the first text, *See No Evil* (also associated with the term 'Cannibal Error'), is David Kerekes and David Slater. Their work analyzes the 'video nasties' phenomenon and includes anecdotes about video rental shops devaluing horror [1]. The female legal scholar who co-authored the second text, *Professional Issues in Software Engineering* (which uses the video rental model to explain copyright's First Sale Doctrine), is Alison Coleman [2].\n\nCollaborative works by Kerekes and Slater focusing on death films, banned films, or video nasties include *See No Evil: Banned Films and Video Nasties*, *Killing for Culture: An Illustrated History of Death Film from Mondo to Snuff*, *Meat is Murder*, and *Sex Murder Art: The Cannibal Holocaust Case* [1]. Books by Alison Coleman specifically addressing intellectual property themes include *Professional Issues in Software Engineering* [2].\n\n## References\n[1] https://www.headpress.com/Authors/David-Kerekes-David-Slater/111\n[2] https://link.springer.com/book/10.1007/978-1-4471-0333-7",
+      "duration_a_seconds": 17.0,
+      "duration_b_seconds": 271.0,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified both sets of authors (Kerekes & Slater; Allison Coleman). Agent A failed the core entity identification for both texts, incorrectly attributing 'See No Evil' to Barker & Petley and the software engineering text to Jennifer Davis. While Agent B's bibliography for the second scholar was weak (missing her specific works on Trade Secrets), Agent A's answer was fundamentally factually incorrect regarding the identities, which is a catastrophic failure in a search task.",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0001_deepseekv_vs_glm47_810"
+}

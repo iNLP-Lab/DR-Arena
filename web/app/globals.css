@@ -1,0 +1,333 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   DR-Arena design tokens
+   Warm editorial light theme. Research-led, museum-catalog surfaces.
+   Reference: DASHBOARD_DESIGN.md §9
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  /* Base surfaces — warm paper */
+  --bg: #f6f1e8;
+  --bg-elevated: #fff9f1;
+  --bg-raised: #ede4d6;
+  --bg-overlay: rgba(246, 241, 232, 0.82);
+
+  /* Text — ink-toned neutrals */
+  --fg: #1f1a17;
+  --fg-muted: #6e665e;
+  --fg-dim: #91877b;
+  --fg-disabled: #b8aea2;
+  --fg-inverse: #1a1714;
+
+  /* Borders & dividers — warm undertone */
+  --border: #d8ccbc;
+  --border-strong: #bdaf9b;
+  --border-subtle: #e7ddcf;
+
+  /* Accent — warm gold, the primary interactive color */
+  --accent: #d4a04a;
+  --accent-hover: #e0b35e;
+  --accent-subtle: rgba(212, 160, 74, 0.12);
+  --accent-ring: rgba(212, 160, 74, 0.35);
+
+  /* Secondary accent — cool teal for data & visualizations */
+  --accent-2: #2dd4bf;
+  --accent-2-hover: #5eead4;
+  --accent-2-subtle: rgba(45, 212, 191, 0.12);
+
+  /* Verdict colors */
+  --verdict-much-better: #22c55e;
+  --verdict-better: #eab308;
+  --verdict-tie: #71717a;
+  --verdict-failure: #ef4444;
+
+  /* Failure taxonomy — DEEP / WIDE / BOTH / NONE */
+  --tag-deep: #ef4444;
+  --tag-wide: #f59e0b;
+  --tag-both: #d946ef;
+  --tag-none: #71717a;
+
+  /* Data palette — 6 models, muted but distinguishable.
+     Consistent per-model color across every chart on the site. */
+  --data-1: #d4a04a; /* gold   — gpt-5.1 */
+  --data-2: #5ad8a6; /* green  — gemini */
+  --data-3: #f6bd16; /* yellow — o3 */
+  --data-4: #e86452; /* coral  — grok */
+  --data-5: #6dc8ec; /* cyan   — ppl-sonar */
+  --data-6: #945fb9; /* purple — claude */
+}
+
+/* Expose tokens as Tailwind utilities via @theme inline.
+   bg-accent, text-fg-muted, border-border-strong, etc. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-raised: var(--bg-raised);
+  --color-bg-overlay: var(--bg-overlay);
+
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-dim: var(--fg-dim);
+  --color-fg-disabled: var(--fg-disabled);
+  --color-fg-inverse: var(--fg-inverse);
+
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-border-subtle: var(--border-subtle);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-subtle: var(--accent-subtle);
+
+  --color-accent-2: var(--accent-2);
+  --color-accent-2-hover: var(--accent-2-hover);
+  --color-accent-2-subtle: var(--accent-2-subtle);
+
+  --color-verdict-much-better: var(--verdict-much-better);
+  --color-verdict-better: var(--verdict-better);
+  --color-verdict-tie: var(--verdict-tie);
+  --color-verdict-failure: var(--verdict-failure);
+
+  --color-tag-deep: var(--tag-deep);
+  --color-tag-wide: var(--tag-wide);
+  --color-tag-both: var(--tag-both);
+  --color-tag-none: var(--tag-none);
+
+  --color-data-1: var(--data-1);
+  --color-data-2: var(--data-2);
+  --color-data-3: var(--data-3);
+  --color-data-4: var(--data-4);
+  --color-data-5: var(--data-5);
+  --color-data-6: var(--data-6);
+
+  --font-sans: var(--font-public-sans);
+  --font-mono: var(--font-ibm-plex-mono);
+  --font-display: var(--font-instrument-serif);
+}
+
+/* Base element styles — warm editorial light */
+html {
+  background: var(--bg);
+  color: var(--fg);
+  color-scheme: light;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "salt", "ss01";
+}
+
+/* Tabular numbers — non-negotiable for the leaderboard */
+.tabular,
+table,
+.font-mono,
+[data-numeric] {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Thin scrollbar, warm neutral */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent-subtle);
+  color: var(--fg);
+}
+
+/* Focus ring — accent-colored, subtle but precise */
+:focus-visible {
+  outline: 2px solid var(--accent-ring);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Display headlines — editorial serif */
+.font-display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-feature-settings: "ss01", "liga";
+  letter-spacing: -0.02em;
+}
+
+.app-kicker {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+
+.app-title {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.surface-ledger {
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255, 249, 241, 0.86), rgba(255, 249, 241, 0.74));
+  backdrop-filter: blur(14px);
+}
+
+.section-divider {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.row-ledger {
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.row-ledger:hover {
+  background: rgba(212, 160, 74, 0.045);
+}
+
+/* Headline sizing scale: 12 / 14 / 16 / 20 / 28 / 40 / 64 */
+.text-xs { font-size: 0.75rem; line-height: 1rem; }      /* 12 */
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }  /* 14 */
+.text-base { font-size: 1rem; line-height: 1.5rem; }     /* 16 */
+.text-lg { font-size: 1.25rem; line-height: 1.75rem; }   /* 20 */
+.text-xl { font-size: 1.75rem; line-height: 2.125rem; }  /* 28 */
+.text-2xl { font-size: 2.5rem; line-height: 2.75rem; }   /* 40 */
+.text-3xl { font-size: 4rem; line-height: 4.25rem; }     /* 64 */
+
+/* ─── Entrance animations ─── */
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-node {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ─── Hero tree visualization ─── */
+
+.tree-node {
+  animation: pulse-node 4s ease-in-out infinite;
+}
+
+.tree-edge {
+  stroke-dasharray: 6 4;
+  animation: shimmer 8s linear infinite;
+}
+
+/* ─── Card interactions ─── */
+
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px -12px rgba(212, 160, 74, 0.2);
+  border-color: rgba(212, 160, 74, 0.2);
+}
+
+/* Per-card themed hover — uses --card-glow and --card-line-color custom props */
+.feature-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px -12px var(--card-glow, rgba(212, 160, 74, 0.2));
+  border-color: color-mix(in srgb, var(--card-line-color, var(--accent)) 25%, transparent);
+}
+
+/* Gradient accent line — appears on hover */
+.accent-line-top {
+  position: relative;
+  overflow: hidden;
+}
+.accent-line-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--card-line-color, var(--accent)), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.accent-line-top:hover::before {
+  opacity: 0.8;
+}
+
+/* ─── Stat hover glow ─── */
+
+.stat-cell {
+  position: relative;
+  transition: background 0.3s;
+}
+.stat-cell::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, var(--accent-subtle) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+.stat-cell:hover::after {
+  opacity: 1;
+}
+
+/* ─── Film grain overlay ─── */
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.022;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}

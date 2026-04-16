@@ -1,0 +1,99 @@
+{
+  "id": "R2_gemini-3.1-pro-grounding_vs_claude-opus-4.6-search_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_gemini-3.1-pro-grounding_vs_claude-opus-4.6-search_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "gemini-3.1-pro-grounding",
+  "model_b": "claude-opus-4.6-search",
+  "winner": "gemini-3.1-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Within the statewide network that operates California’s poison control services, several regional divisions are led by senior physician healthcare professionals. Identify the physician leaders (medical directors) of each regional division within this statewide poison control system, and for each individual, describe (1) their primary medical specialty, (2) their academic or hospital faculty affiliation, and (3) a notable aspect of their clinical or research focus related to toxicology or poison management. Ensure your answer covers all regional divisions within the system."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 601875,
+  "estimated_cost": 6.0188,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Within the statewide network that operates California’s poison control services, several regional divisions are led by senior physician healthcare professionals. Identify the physician leaders (medical directors) of each regional division within this statewide poison control system, and for each individual, describe (1) their primary medical specialty, (2) their academic or hospital faculty affiliation, and (3) a notable aspect of their clinical or research focus related to toxicology or poison management. Ensure your answer covers all regional divisions within the system.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Medical specialty of the Medical Director – Northern California division (e.g., emergency medicine, medical toxicology, pediatrics, etc.)",
+        "Academic or hospital affiliation of the Northern California division Medical Director",
+        "Notable clinical or research focus of the Northern California division Medical Director related to toxicology or poison management",
+        "Medical specialty of the Medical Director – Central California division",
+        "Academic or hospital affiliation of the Central California division Medical Director",
+        "Notable clinical or research focus of the Central California division Medical Director related to toxicology or poison management",
+        "Medical specialty of the Medical Director – Southern California division",
+        "Academic or hospital affiliation of the Southern California division Medical Director",
+        "Notable clinical or research focus of the Southern California division Medical Director related to toxicology or poison management",
+        "Medical specialty of the Medical Director – Additional regional division (if separately administered)",
+        "Academic or hospital affiliation of that division’s Medical Director",
+        "Notable clinical or research focus of that division’s Medical Director related to toxicology or poison management"
+      ],
+      "checklist_depth": [
+        "Correct name of each regional Medical Director + proof that they serve as a physician leader within the California statewide poison control system",
+        "Evidence that each identified individual is officially affiliated with a regional division of the California poison control network",
+        "Confirmation that all regional divisions within the statewide system are represented (no division omitted)"
+      ],
+      "rationale": "The question uses the logic of identifying physician leaders within a specific statewide healthcare system (Deep reasoning: Healthcare Professionals → California Poison Control System → Regional Medical Directors). It does not reveal names, forcing the search agent to determine the correct individuals through structured reasoning. It then requires broad aggregation (Wide) by asking for multiple attributes—specialty, affiliation, and research focus—for every regional division leader, ensuring information must be gathered and synthesized from multiple independent sources.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The California Poison Control System (CPCS) coordinates emergency poison management across four regional divisions, each medically directed by physician experts in emergency medicine and medical toxicology.\n\nAt the **San Francisco Division**, Craig Smollin, MD, serves as the Medical Director. He specializes in emergency medicine and medical toxicology [1]. He holds a primary faculty appointment at the University of California, San Francisco (UCSF) [2]. His clinical and research efforts primarily focus on toxicoepidemiology, evaluating public health poisoning trends, and the clinical application of novel antidotes [1][2].\n\nAt the **Sacramento Division**, James Chenoweth, MD, serves as a Medical Director [3]. Board-certified in emergency medicine and medical toxicology, he is a faculty member at UC Davis Health [3]. His prominent clinical and research focus highlights cardiovascular toxicology, the management of severe substance use disorders, and advancing emergency treatments for opioid overdose [3].\n\nThe **Fresno Division** is medically directed by Rais Vohra, MD [4]. He is an emergency physician and medical toxicologist on the faculty at UCSF Fresno [4]. Reflecting the region’s agricultural landscape, his specialized toxicology research and clinical priorities heavily feature pesticide poisonings, rural toxic exposures, and heavy metal toxicity [4][5]. \n\nAt the **San Diego Division**, Richard F. Clark, MD, serves as the Medical Director [6]. He is a specialist in emergency medicine and medical toxicology with a faculty affiliation at UC San Diego (UCSD) Health [6]. His highly recognized clinical and research focus involves snakebites, marine envenomations, and advancing the clinical evaluation of antivenom therapies [6].\n\n## References\n[1] UCSF Department of Emergency Medicine. \"Craig Smollin, MD.\" UCSF.\n[2] California Poison Control System. \"Leadership Directory & San Francisco Division.\" CalPoison.org.\n[3] UC Davis Health. \"James A. Chenoweth, M.D., M.A.S. - Emergency Medicine and Medical Toxicology.\" UC Davis.\n[4] UCSF Fresno. \"Rais Vohra, MD - Emergency Medicine and Medical Toxicology.\" UCSF Fresno.\n[5] California Poison Control System. \"Fresno/Madera Division Information.\" CalPoison.org.\n[6] UC San Diego Health. \"Richard Clark, MD - Emergency Medicine and Toxicology.\" UCSD.",
+      "answer_b": "The California Poison Control System (CPCS) operates as a statewide network managed by the University of California, San Francisco (UCSF), Division of Clinical Pharmacology and Toxicology. It is divided into four regional divisions, each led by a medical director who is a senior physician specialist in toxicology [1][2].\n\n**1. San Francisco Division**\nThe San Francisco division is led by **Dr. Craig Smollin**, who serves as medical director. Dr. Smollin is a board-certified medical toxicologist and emergency medicine physician affiliated with UCSF School of Medicine. His clinical and research focus includes acute poisoning management, drug overdose treatment, and antidote therapy protocols [1][3].\n\n**2. Sacramento Division**\n**Dr. Timothy Albertson** serves as medical director of the Sacramento division. He is a pulmonologist and medical toxicologist affiliated with UC Davis School of Medicine and UC Davis Medical Center. Dr. Albertson is notably recognized for his research on pesticide poisonings, drug-induced lung injury, and critical care toxicology [2][4].\n\n**3. San Diego Division**\nThe San Diego division is directed by **Dr. Lee Cantrell**, a clinical pharmacist and toxicologist affiliated with UC San Diego School of Pharmacy and the UC San Diego Health system. Dr. Cantrell's notable work includes research on medication safety, pharmaceutical degradation studies, and novel approaches to poison surveillance [2][5].\n\n**4. Fresno Division**\n**Dr. Rais Vohra** leads the Fresno division as medical director. He is an emergency medicine physician and medical toxicologist affiliated with UCSF Fresno. Dr. Vohra is recognized for his work on environmental toxicology, snakebite management, and community-based poison prevention education in California's Central Valley [2][6].\n\n## References\n[1] California Poison Control System. \"About CPCS.\" https://calpoison.org\n[2] University of California, San Francisco. \"California Poison Control System – Regional Centers.\" https://poisoncontrol.ucsf.edu\n[3] UCSF Department of Emergency Medicine. \"Craig Smollin, MD.\" https://emergency.ucsf.edu\n[4] UC Davis Health. \"Timothy Albertson, MD, PhD.\" https://health.ucdavis.edu\n[5] UC San Diego Health. \"Lee Cantrell, PharmD.\" https://health.ucsd.edu\n[6] UCSF Fresno. \"Rais Vohra, MD.\" https://www.fresno.ucsf.edu",
+      "duration_a_seconds": 48.4,
+      "duration_b_seconds": 18.7,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies the four CPCS regional divisions (San Francisco, Sacramento, Fresno, San Diego) and names physician medical directors consistent with the statewide system (Smollin, Chenoweth, Vohra, Clark). Agent B incorrectly names Dr. Timothy Albertson (instead of the Sacramento division’s physician medical director) and Dr. Lee Cantrell (a PharmD, not a physician medical director) for San Diego. This is a core entity error and violates the requirement that divisions are led by physician medical directors. Thus, Agent B fails DEEP logic.\n\nWidth/Completeness: Agent A provides all required elements for each division—medical specialty, academic/hospital affiliation, and a notable toxicology-related focus. Agent B also attempts all elements but does so for incorrect individuals in two divisions, making those subpoints inaccurate. Therefore, Agent B also fails WIDE aggregation.\n\nPresentation & UX: Both are clearly formatted with section headers and citations. However, since Agent B contains major factual inaccuracies about leadership identity, its otherwise solid formatting cannot compensate.\n\nConclusion: Agent A is factually correct and comprehensive. Agent B contains major leadership misidentifications. Therefore, A_MUCH_BETTER.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_gemini31_vs_claudeopu_1009"
+}

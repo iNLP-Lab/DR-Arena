@@ -1,0 +1,153 @@
+{
+  "id": "R1_gemini-3.1-pro-grounding_vs_ppl-sonar-pro-high_tree_0004",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_gemini-3.1-pro-grounding_vs_ppl-sonar-pro-high_tree_0004.log",
+  "tree_id": "tree_0004",
+  "tree_title": "Sweepstake",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-21T13:17:54.317079",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "gemini-3.1-pro-grounding",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "gemini-3.1-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Sweepstake",
+  "questions": [
+    "Researchers investigating the history of online sweepstakes promotions often rely on archived versions of promotional websites preserved by a well-known nonprofit digital library that operates the Wayback Machine. This archive has, since the mid-1990s, received daily web crawl data donations from a commercial web analytics company founded in 1996. Identify this company and explain its data donation relationship with the nonprofit archive, including when the donations began, how the data are incorporated into the Wayback Machine, and the name and current public accessibility status of one specific crawl collection associated with these donations.",
+    "In researching the historical infrastructure that has enabled large-scale online sweepstakes and digital promotional campaigns to remain publicly traceable over time, identify the web analytics company that, beginning in 1996, started donating its web crawl data to a nonprofit digital library responsible for preserving snapshots of the internet. Explain which archive receives the data, how the data are incorporated into its public access system, and name the specific crawl collection that is currently not publicly accessible."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 17666,
+  "estimated_cost": 0.1767,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "USPS defends junk mail"
+      ],
+      "question": "Researchers investigating the history of online sweepstakes promotions often rely on archived versions of promotional websites preserved by a well-known nonprofit digital library that operates the Wayback Machine. This archive has, since the mid-1990s, received daily web crawl data donations from a commercial web analytics company founded in 1996. Identify this company and explain its data donation relationship with the nonprofit archive, including when the donations began, how the data are incorporated into the Wayback Machine, and the name and current public accessibility status of one specific crawl collection associated with these donations.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "States that Alexa Internet began donating crawl data starting in 1996",
+        "Explains that the donated crawl data flow in daily and are added to the Wayback Machine after an embargo period",
+        "Identifies the nonprofit recipient as the Internet Archive, operator of the Wayback Machine",
+        "Names the specific collection '52_crawl' and notes that it is currently not publicly accessible"
+      ],
+      "checklist_depth": [
+        "Alexa Internet + Identified as the web analytics company founded in 1996 that donates crawl data",
+        "Internet Archive + Identified as the nonprofit digital library that operates the Wayback Machine and receives the crawl data"
+      ],
+      "rationale": "The question uses contextual logic (researching archived sweepstakes websites) to indirectly point to the Internet Archive and its data sources without naming them (Deep). It then requires the respondent to identify the donating company and aggregate multiple specific facts: the start year of donations, the daily flow and embargo process, and the specific '52_crawl' collection and its accessibility status (Wide).",
+      "source_nodes": [
+        "USPS defends junk mail",
+        "Loyalty marketing - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 320,
+      "answer_a": "The commercial web analytics company that has donated daily web crawl data to the Internet Archive is **Alexa Internet**. Founded in April 1996 by Brewster Kahle and Bruce Gilliat—who simultaneously established the Internet Archive—the company originally developed a web browser toolbar that provided site analytics, metadata, and automated recommendations [1]. \n\nTo power its commercial indexing and traffic-ranking services, Alexa continuously crawled the live internet. In 1996, the company established a synergistic data donation relationship with the nonprofit Internet Archive by beginning to transfer its daily web crawl data [2]. This donated Alexa data served as the primary foundational content for the Wayback Machine when it officially launched to the public in 2001 [2]. \n\nThe incorporation process dictates how this historical data is utilized. The Internet Archive receives the raw crawl files—traditionally packaged in ARC, and subsequently WARC, file formats—directly from Alexa. Following a standard embargo period, which historically lasted around six months, the Internet Archive processes the data by extracting and indexing all URL metadata [3]. These datasets are then seamlessly woven into the broader Wayback Machine index. This indexing ensures that the archived web pages can be retrieved instantaneously by researchers and users submitting targeted URL queries. \n\nOne primary archival grouping associated with these specific donations is the **\"Alexa Crawls\"** collection [3]. The current public accessibility status of the \"Alexa Crawls\" collection is bifurcated into two distinct layers. Bulk access to the raw dataset files within this specific collection is heavily restricted and unavailable for direct public download by default [4]. This restriction mitigates mass extraction burdens and protects raw data integrity. However, while the raw bulk collection is locked, the individual historical webpage snapshots preserved within it remain entirely publicly accessible. Any user can freely view and interact with these individual page snapshots by querying their URLs through the main Wayback Machine web interface [3][4].\n\n## References\n[1] \"Alexa Internet.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Alexa_Internet\n[2] \"Wayback Machine.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Wayback_Machine\n[3] Internet Archive. \"Alexa Crawls Collection.\" archive.org details page. https://archive.org/details/alexamc\n[4] Internet Archive Help Center. \"About the Wayback Machine & Collections.\" https://help.archive.org/help/wayback-machine-general-information/",
+      "answer_b": "The commercial web analytics company is **Alexa Internet**, founded in 1996. The nonprofit digital library is the **Internet Archive**, which operates the Wayback Machine.[3]\n\nAlexa Internet has donated its daily web crawl data to the Internet Archive since **1996**, when both organizations began operations. This partnership enabled the Wayback Machine to grow rapidly, archiving billions of web pages from the mid-1990s onward.[3]\n\nThe donated data—consisting of high-volume crawls capturing website snapshots, metadata, and link structures—are processed and incorporated into the Wayback Machine. Internet Archive engineers filter, deduplicate, and index this raw crawl data alongside their own crawls, creating time-stamped, publicly accessible archived versions of websites. These donations provided comprehensive coverage of the early commercial web, complementing the nonprofit's targeted crawls, and have been essential for historical research, including on online sweepstakes promotions preserved since the mid-1990s.[3]\n\nOne specific crawl collection is the **Alexa Crawls** (also referenced as the \"Alexa web crawl collection\"). It remains **publicly accessible** today via the Wayback Machine at `https://web.archive.org/web/*/`, where users can browse archived sites by URL and date. For example, the collection powers views of promotional sites from 1996 onward, queryable through the CDX server API at `http://web.archive.org/cdx/search/cdx?url=example.com&fl=timestamp,original&filter=statuscode:200&collapse=digest`, revealing sequential captures from Alexa's donations.[3]\n\nThis relationship has preserved over 500 billion web snapshots, supporting researchers studying ephemeral online promotions.[3]\n\n(Word count: 248)\n\n## References\n[1] YouTube: Sweepstakes, Contests, and Other Types of Giveaways in the Digital Era  \n[2] Internet Archive Blog: Boston Public Library Leads Once Again in Digital Lending  \n[3] NPTechForGood: 94 Free or Low-Cost Tools and Resources for Nonprofits",
+      "duration_a_seconds": 91.0,
+      "duration_b_seconds": 6.1,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "First, Deep Logic: Both agents correctly identify Alexa Internet (founded 1996) as the donating company and the Internet Archive as the nonprofit operating the Wayback Machine. So both pass the core entity check.\n\nNext, Width/Completeness: Both state donations began in 1996. Agent A explains the daily crawl flow, ARC/WARC formats, and specifically mentions an embargo period before incorporation into the Wayback Machine—this satisfies the checklist requirement about post-embargo integration. Agent B does not mention any embargo period, so it misses a required sub-point. Critically, both agents fail to name the required specific collection (“52_crawl”) and incorrectly describe accessibility (the checklist specifies it is not publicly accessible). Thus, both have factual gaps, but Agent B omits more required detail overall.\n\nFinally, Presentation & User Experience: Agent A is more comprehensive, better structured, and provides richer technical context about ingestion and indexing. Agent B is shorter and readable but less detailed and cites weak/irrelevant sources. Because both contain factual errors, the winner cannot receive MUCH_BETTER. However, Agent A provides stronger completeness and explanation, making it the better overall user experience.\n\nTherefore: A_BETTER, with Agent B failing on WIDE completeness.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "USPS defends junk mail"
+      ],
+      "question": "In researching the historical infrastructure that has enabled large-scale online sweepstakes and digital promotional campaigns to remain publicly traceable over time, identify the web analytics company that, beginning in 1996, started donating its web crawl data to a nonprofit digital library responsible for preserving snapshots of the internet. Explain which archive receives the data, how the data are incorporated into its public access system, and name the specific crawl collection that is currently not publicly accessible.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "States that crawl data donations began in 1996",
+        "Identifies the nonprofit digital library as the Internet Archive",
+        "Explains that the data are added to the Wayback Machine after an embargo period",
+        "Names the specific collection: 52_crawl",
+        "Clarifies that the 52_crawl collection is not currently publicly accessible"
+      ],
+      "checklist_depth": [
+        "Alexa Internet + Identified as the web analytics company that began donating crawl data in 1996",
+        "Internet Archive + Identified as the nonprofit digital library receiving and integrating the crawl data"
+      ],
+      "rationale": "The question uses the context of sweepstakes and digital promotional transparency as a logical entry point (Deep) to indirectly reference historical web archiving infrastructure. It avoids naming the entities directly, requiring the search agent to infer the company and archive based on the 1996 crawl data donation clue. It then requires aggregating multiple distinct facts—start date, recipient organization, integration method via embargo and Wayback Machine, and the specific restricted collection (Wide).",
+      "source_nodes": [
+        "USPS defends junk mail",
+        "Loyalty marketing - Wikipedia",
+        "Website promotes red dots to stop junk mail | CBC News"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 350,
+      "answer_a": "The web analytics company that began donating its massive web crawl data in 1996 to enable the long-term historical traceability of the internet—including large-scale sweepstakes and digital promotional campaigns—is Alexa Internet [1]. Founded by Brewster Kahle and Bruce Gilliat, the company continuously crawled live websites to build its traffic-ranking services and recommendation algorithms [2]. Recognizing the broader historical value of this data, Alexa Internet formed a foundational partnership with the Internet Archive, a nonprofit digital library established by the same founders [1].\n\nThe Internet Archive acts as the designated recipient of these frequent web data donations. To incorporate this staggering volume of information into its public access system, the Internet Archive receives raw file packages from Alexa, traditionally packaged and formatted as ARC and later WARC files [3]. Following a standard embargo period—which historically lasted around six months—the Archive's engineers process the raw data by extracting the associated URL metadata and systematically weaving it into a centralized index database [2]. Once successfully indexed, this web page information officially powers the Wayback Machine, directly allowing academic researchers and the general public to instantly retrieve and view historically preserved snapshots of defunct promotional websites simply by entering a specific URL into the search interface [3]. This seamless integration ensures individual sweeps pages continually remain globally visible over time.\n\nHowever, the underlying raw data files powering this preservation effort are categorized into a dedicated repository strictly known as the \"Alexa Crawls\" collection [4]. While the meticulously indexed individual promotional page snapshots invariably remain entirely and freely publicly accessible via the primary Wayback Machine portal, the overarching \"Alexa Crawls\" collection itself is currently not publicly accessible for general bulk downloading [4]. The Internet Archive deliberately restricts direct administrative access to these raw root files to stringently manage vast infrastructural bandwidth, efficiently prevent unauthorized external server scraping, and address any potential legal or copyright complications inherently associated with mass data dissemination [3][4].\n\n## References\n[1] \"Alexa Internet.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Alexa_Internet\n[2] \"Wayback Machine.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Wayback_Machine\n[3] Internet Archive. \"Alexa Crawls Collection.\" archive.org details page. https://archive.org/details/alexamc\n[4] Internet Archive Help Center. \"About the Wayback Machine & Collections.\" https://help.archive.org/help/wayback-machine-general-information/",
+      "answer_b": "Based on the search results provided, **Alexa Internet** is the web analytics company that began donating its web crawl data to the **Internet Archive** in 1996.[1] The Internet Archive operates the Wayback Machine, the nonprofit digital library responsible for preserving internet snapshots.\n\nAlexa Internet's crawl data are incorporated into the Wayback Machine through a systematic process. Internet Archive engineers process the donated raw crawl data—which includes website snapshots, metadata, and link structures—by filtering, deduplicating, and indexing them alongside the Archive's own independent crawls.[1] This integration enables the creation of time-stamped, publicly accessible archived versions of websites accessible through the Wayback Machine interface.\n\nThe partnership between Alexa Internet and the Internet Archive has been fundamental to the Wayback Machine's rapid growth and comprehensive coverage. Since 1996, these donations have enabled the preservation of billions of web pages, providing researchers with access to historical snapshots of promotional websites, sweepstakes campaigns, and other digital content from the mid-1990s onward.[1] The combined crawl efforts have created an extensive archive supporting historical research on ephemeral online phenomena.\n\nThe specific crawl collection associated with these donations is the **Alexa Crawls** (also referenced as the \"Alexa web crawl collection\").[1] However, regarding current public accessibility, the search results indicate that the Wayback Machine itself remains publicly accessible, with users able to browse archived sites by URL and date through the web interface at web.archive.org.[1] The results do not specify whether the Alexa Crawls collection as a distinct, labeled collection is currently publicly accessible as a separate entity or whether it has been fully integrated into the general Wayback Machine interface without separate public designation.\n\nThe Wayback Machine has archived billions of web pages from 1996 to the present and continues to be updated regularly, with full public accessibility maintained.[1]\n\n## References\n\n[1] https://guides.library.illinois.edu/primarysources/digitizedcollections - Open Access Digitized Primary Source Collections",
+      "duration_a_seconds": 92.7,
+      "duration_b_seconds": 7.2,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "First, Deep Logic: Both agents correctly identify **Alexa Internet** as the web analytics company and the **Internet Archive** as the nonprofit digital library. So both pass the core entity check.\n\nNext, Width/Completeness: Neither agent names the required specific collection **\"52_crawl\"**, nor do they clearly state that this collection is not publicly accessible. Agent A incorrectly substitutes \"Alexa Crawls\" for the required collection. Agent B also names \"Alexa Crawls\" and explicitly admits uncertainty about its accessibility. Additionally, Agent B omits the embargo detail entirely, while Agent A correctly explains that the crawl data are incorporated into the Wayback Machine after a processing/embargo period. Therefore, both fail the WIDE checklist, but Agent B misses more required elements (no embargo, no clear accessibility statement, weaker incorporation explanation).\n\nFinally, User Experience & Presentation: Agent A provides richer context (ARC/WARC files, indexing process, embargo period), clearer integration explanation, and stronger structural flow. Although somewhat verbose, it is comprehensive and helpful. Agent B is thinner, less specific, and hedges on a key requirement.\n\nBecause Agent A is more complete and helpful despite still missing the specific \"52_crawl\" requirement, A wins—but only at the BETTER level due to its factual omission.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0004_gemini31_vs_pplsonar_1016"
+}

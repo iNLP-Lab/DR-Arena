@@ -1,0 +1,93 @@
+{
+  "id": "R1_M1_gemini-2.5-pro-grounding_vs_grok-4-search_tree_0029",
+  "source_group": "round1",
+  "source_log": "round1/R1_M1_gemini-2.5-pro-grounding_vs_grok-4-search_tree_0029.log",
+  "tree_id": "tree_0029",
+  "tree_title": "Handball",
+  "tree_topic": "Sports > Team Sports",
+  "tree_subtopic": "Handball",
+  "tree_crawled_at": "2025-11-22T00:49:21.808008",
+  "tree_url": "https://en.wikipedia.org/wiki/Handball",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "grok-4-search",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 1,
+  "mercy_rule": true,
+  "overall_topic": "Handball",
+  "questions": [
+    "Trace the history of the Russian Men's Handball Championship to identify the clubs that won the titles in the inaugural 1992/93 season and the subsequent 1993/94 season. For the 1992/93 champion, determine its current official team name as of 2024. Regarding the 1993/94 champion, clarify whether official historical statistics classify it as the same entity as the Moscow-based club that won the championship in the 2022/23 season, or if they are treated as distinct organizations. Finally, identify the club that holds the record for the longest consecutive winning streak in the tournament's history and state the exact number of consecutive titles achieved."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 266014,
+  "estimated_cost": 2.6601,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Trace the history of the Russian Men's Handball Championship to identify the clubs that won the titles in the inaugural 1992/93 season and the subsequent 1993/94 season. For the 1992/93 champion, determine its current official team name as of 2024. Regarding the 1993/94 champion, clarify whether official historical statistics classify it as the same entity as the Moscow-based club that won the championship in the 2022/23 season, or if they are treated as distinct organizations. Finally, identify the club that holds the record for the longest consecutive winning streak in the tournament's history and state the exact number of consecutive titles achieved.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identify the 1992/93 champion as Neva (St. Petersburg)",
+        "Identify the current name of the 1992/93 champion as Zenit (St. Petersburg)",
+        "Identify the 1993/94 champion as CSKA (Moscow)",
+        "Clarify that the 1993/94 CSKA and the 2022/23 CSKA are treated as separate entities/clubs in statistics",
+        "Identify Chekhovskie Medvedi as the record holder for the longest winning streak",
+        "State the streak length as 21 consecutive titles"
+      ],
+      "checklist_depth": [
+        "Correctly links 'Neva' to 'Zenit' via the rebranding/renaming logic mentioned in the text or external history.",
+        "Distinguishes between the historical CSKA (1969–1998) and the modern CSKA (founded 2017) despite the shared name.",
+        "Validates the winning streak by aggregating the continuous victories of Chekhovskie Medvedi from 2001/02 through 2021/22."
+      ],
+      "rationale": "The query requires Deep Reasoning to resolve entity identities that have changed over time (Neva to Zenit) or share similar names but are distinct (Old CSKA vs. New CSKA). It forces Wide Aggregation by requesting information from the very start of the league (1992), the middle period (Chekhovskie Medvedi's streak), and the modern era (2023/24 status), preventing the agent from relying on a single paragraph or year.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Penalty card - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "The inaugural Russian Men's Handball Championship in the 1992/93 season was won by Neva St. Petersburg [1, 2]. As of 2024, this club's official team name is Zenit Saint Petersburg, following its integration into the Zenit sports club structure and subsequent rebranding in 2022 [3].\n\nThe champion of the following 1993/94 season was CSKA Moscow [1, 2]. Official historical records classify this club as a distinct entity from the CSKA Moscow that won the championship in the 2022/23 season. The original CSKA handball club, a powerhouse of the Soviet era, was disbanded in 2001, with its place and legacy being transferred to the newly formed Chekhovskiye Medvedi [4]. The current CSKA Moscow club is a new organization, founded in 2017 as Spartak Moscow and rebranded as CSKA in 2020 [5]. Therefore, the 1994 champion and the 2023 champion are considered two separate clubs [4, 5].\n\nThe record for the longest consecutive winning streak in the tournament's history is held by Chekhovskiye Medvedi. The club achieved an unprecedented run of 21 consecutive titles, beginning in the 2001/02 season and concluding after its victory in the 2021/22 season [1, 6].\n\n## References\n1. European Handball Federation. (n.d.). *SEHA-Gazprom League - Russian Super League Parimatch*. Retrieved October 11, 2023.\n2. Sports123. (n.d.). *Handball: Men: Russia: Championship*. Archived from the original on May 6, 2021.\n3. Zenit Saint Petersburg Handball Club. (n.d.). *History of the Club*. Official website. Retrieved October 11, 2023.\n4. Ignatov, V. (2019, July 3). \"Спартак\" — ЦСКА. Теперь и в гандболе [\"Spartak\" - CSKA. Now in handball]. *Sport-Express*. Retrieved October 11, 2023.\n5. Handballfast.com. (2020, January 8). Профессиональный гандбольный клуб ЦСКА [Professional handball club CSKA]. Retrieved October 11, 2023.\n6. rushandball.ru. (2022, May 29). «Чеховские медведи» — 21-кратные чемпионы России! [Chekhovskiye Medvedi are 21-time champions of Russia!]. *Russian Handball Federation*. Retrieved October 11, 2023.",
+      "answer_b": "The Russian Men's Handball Championship, officially the Super League, began in the 1992/93 season following the Soviet Union's dissolution. The inaugural champion was Polyot Chelyabinsk, which defeated MAI Moscow in the finals [1]. In the subsequent 1993/94 season, MAI Moscow claimed the title, marking a shift in dominance [2].\n\nAs of 2024, the 1992/93 champion, Polyot Chelyabinsk, has evolved through relocations and renamings. Originally based in Chelyabinsk, the club moved to Snezhinsk in 1999 and is now officially known as Handball Club Sungul Snezhinsk (HC Sungul Snezhinsk), competing in the Super League [3].\n\nRegarding the 1993/94 champion, MAI Moscow, official historical statistics from the Handball Federation of Russia and sources like the European Handball Federation classify it as the same entity as the Moscow-based club that won the 2022/23 championship, Chekhovskiye Medvedi. MAI Moscow was reorganized as CSKA Moscow in 1993, and in 2001, the team relocated to Chekhov while retaining its core structure, players, and coaching staff. This continuity is reflected in records that attribute pre-2001 titles to the club's heritage, treating them as a single organization despite name changes and relocation [4][5].\n\nThe club with the longest consecutive winning streak is Chekhovskiye Medvedi, who achieved 22 straight titles from the 2001/02 season to the 2022/23 season, a record unmatched in the league's history [6].\n\n(Word count: 248)\n\n## References\n[1] Wikipedia: Russian Handball Super League  \n[2] Handball Federation of Russia official archives  \n[3] HC Sungul Snezhinsk official website  \n[4] European Handball Federation club profiles  \n[5] Sports-Reference: Russian Handball Championship history  \n[6] Guinness World Records: Handball streaks (verified via sports databases)",
+      "duration_a_seconds": 21.6,
+      "duration_b_seconds": 53.0,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A is factually accurate on every point. It correctly identifies the inaugural champion (Neva/Zenit), the 1993/94 champion (CSKA), and correctly explains the complex distinction between the 'old' CSKA (which became Chekhovskie Medvedi) and the 'new' CSKA (which won the 2022/23 title). It also correctly identifies the winning streak as 21 titles. Agent B hallucinates almost every fact: it names the wrong inaugural champion (Polyot), the wrong 1993/94 champion (MAI), incorrectly claims Chekhovskie Medvedi won the 2022/23 title (it was the new CSKA), and consequently gets the streak number wrong.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0029_grok4sea_vs_gemini25_13"
+}

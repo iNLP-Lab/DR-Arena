@@ -1,0 +1,229 @@
+{
+  "id": "R1_Kimi-k2_grok-4-search_tree_0029",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_Kimi-k2_grok-4-search_tree_0029.log",
+  "tree_id": "tree_0029",
+  "tree_title": "Handball",
+  "tree_topic": "Sports > Team Sports",
+  "tree_subtopic": "Handball",
+  "tree_crawled_at": "2025-11-22T00:49:21.808008",
+  "tree_url": "https://en.wikipedia.org/wiki/Handball",
+  "model_a": "Kimi-k2",
+  "model_b": "grok-4-search",
+  "winner": "grok-4-search",
+  "final_score_a": 1.0,
+  "final_score_b": 3.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handball",
+  "questions": [
+    "Analyze the history of the Russian Men's Handball Championship (Super League) to identify the distinct Moscow-based club entities affiliated with the 'Army' (CSKA) brand that have won the gold medal. According to detailed club statistics, there are three separate administrative entities fitting this description: the original Soviet-era club, the transitional 'Sportakadem' entity, and the modern club established in 2017. Name these three specific entities and provide the exact seasons in which each secured the championship title.",
+    "In the history of Russian men's handball, identify the specific club that holds the unique distinction of winning the USSR Championship exactly once (in 1990) but has never won the Russian Championship gold, despite setting a record by finishing as the runner-up (silver medalist) nine times. Once you have identified this club, provide a detailed answer covering the following points based on its history:\n\n1. List the specific official names the club operated under during the exact seasons it won those nine Russian silver medals.\n2. State the club's highest achievement in the EHF Cup (not the Champions League) and the year this result was obtained.\n3. List the full names of the Olympic champions who are historically credited as having been trained by or emerged from this club.",
+    "Analyze the historical records of the Russian Men's Handball Championship (Super League) from its founding in 1992 through the 2024/2025 season. Identify the four distinct club entities that are statistically credited with exactly two championship titles each. Note that this requires distinguishing between different historical iterations of clubs from the same city and treating clubs that underwent official renaming but retained their history as a single entity, while separating those listed as distinct historical entries in federation records. For each of these four identified clubs, provide the specific seasons in which they won their two titles and the name of the club that finished as the runner-up (silver medalist) in each of those specific winning seasons."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 3,
+      "depth": 4,
+      "width": 3,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 497703,
+  "estimated_cost": 4.977,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Analyze the history of the Russian Men's Handball Championship (Super League) to identify the distinct Moscow-based club entities affiliated with the 'Army' (CSKA) brand that have won the gold medal. According to detailed club statistics, there are three separate administrative entities fitting this description: the original Soviet-era club, the transitional 'Sportakadem' entity, and the modern club established in 2017. Name these three specific entities and provide the exact seasons in which each secured the championship title.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Seasons 1993/94 and 1994/95 (or 1994, 1995) for the original CSKA",
+        "Seasons 1999/00 and 2000/01 (or 2000, 2001) for CSKA-Sportakadem",
+        "Seasons 2022/23 and 2023/24 (or 2023, 2024) for the modern CSKA"
+      ],
+      "checklist_depth": [
+        "Identification of CSKA (1969-1998) / Original CSKA",
+        "Identification of CSKA-Sportakadem (distinct from the later Chekhovskie Medvedi)",
+        "Identification of CSKA (est. 2017) / Modern CSKA"
+      ],
+      "rationale": "The question requires 'Deep' reasoning to disambiguate the 'CSKA' brand into three historically distinct entities (Old, Sportakadem, New) as defined in the source text, rather than treating them as a single continuous club. It requires 'Wide' aggregation to retrieve and assign the correct winning seasons to each specific entity.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Denmark - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "The three distinct Moscow-based \"Army\" (CSKA) club entities that have won the Russian Men's Handball Championship are: (1) HC CSKA Moscow, the original Soviet-era successor club; (2) HC Sportakadem, the transitional entity; and (3) HBC CSKA Moscow, the modern reestablished club. The original HC CSKA Moscow claimed five championship titles during the 1990s: 1992-93, 1993-94, 1995-96, 1998-99, and 1999-00 before experiencing financial difficulties. Following a period of reorganization, HC Sportakadem emerged as the CSKA-affiliated entity under a new legal structure, winning four championships in the early 2000s: 2002-03, 2003-04, 2004-05, and 2006-07. After a decade-long title drought, the CSKA brand was revitalized when HBC CSKA Moscow was officially founded in 2017, proceeding to win seven consecutive gold medals: 2017-18, 2018-19, 2019-20, 2020-21, 2021-22, 2022-23, and 2023-24. Each entity represents a separate administrative structure within the CSKA sports society framework, maintaining the Army club's handball tradition across different eras of Russian sports governance. The Russian Handball Federation recognizes these as distinct organizational winners despite their shared CSKA affiliation and location at the Moscow CSKA sports complex.\n\n## References\n1. Russian Handball Federation. (n.d.). *Championship winners archive*. handball.ru\n2. CSKA Moscow Official. (n.d.). *Handball club history*. cska.ru\n3. Wikipedia. (2024). *Russian Handball Super League*. en.wikipedia.org/wiki/Russian_Handball_Super_League\n4. European Handball Federation. (n.d.). *Russian Super League statistics*. eurohandball.com",
+      "answer_b": "The history of the Russian Men's Handball Championship (Super League), which began in the 1992-93 season following the dissolution of the Soviet Union, highlights three distinct Moscow-based club entities affiliated with the 'Army' (CSKA) brand that have won gold medals. These entities reflect administrative changes, sponsorship shifts, and reforms within the CSKA sports society, often linked to the Russian military's Central Sports Club of the Army. Detailed club statistics and historical records confirm their separation, with each operating under different organizational structures despite shared branding and player overlaps [1][2].\n\nThe first is the original Soviet-era club, CSKA Moscow, founded in 1973 as part of the army's sports system. It dominated the Soviet Handball Championship multiple times and transitioned into the Russian league, securing titles in the 1993-94 and 1994-95 seasons. This entity also won in 1999-00 and 2000-01 after a period of restructuring, before disbanding in 2001 due to financial issues [1][3].\n\nThe second is the transitional 'Sportakadem' entity, known as Sportakademklub Moscow, which emerged in the mid-1990s amid administrative transitions and sponsorship from the Russian State Academy of Physical Culture. Affiliated with the CSKA brand through shared army ties, personnel, and infrastructure, it operated as a separate entity and claimed championships in the 1996-97, 1997-98, and 1998-99 seasons [2][4].\n\nThe third is the modern club, CSKA Moscow, established in 2017 as a revived independent entity under the CSKA sports society to promote army sports. It quickly rose to prominence, winning titles in the 2020-21, 2021-22, and 2022-23 seasons, marking a new era of success [3][5].\n\nThese entities illustrate the evolution of army-affiliated handball in Moscow, influenced by post-Soviet economic challenges and revivals, with a total of 10 gold medals across them [1][2].\n\n(Word count: 298)\n\n## References\n[1] Wikipedia: Russian Handball Super League. https://en.wikipedia.org/wiki/Russian_Handball_Super_League  \n[2] Russian Handball Federation Official Site: Championship History. https://rushandball.ru/  \n[3] CSKA Moscow Official Website: Handball Section History. https://cska.ru/handball/  \n[4] Sports.ru: Historical Overview of Russian Handball Clubs. https://www.sports.ru/handball/  \n[5] EHF (European Handball Federation): Club Profiles and Titles. https://www.eurohandball.com/",
+      "duration_a_seconds": 150.8,
+      "duration_b_seconds": 148.8,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed significantly on the 'Wide Aggregation' of specific years, hallucinating championship seasons for the transitional and modern entities. For example, Agent A claimed the modern CSKA won 7 consecutive gold medals (completely false; Chekhovskie Medvedi dominated this era), while Agent B incorrectly assigned titles won by Kaustik Volgograd to the Sportakadem entity. \n\nHowever, Agent B is the winner for two reasons:\n1. **Accuracy**: Agent B correctly identified the specific winning seasons for the *first* entity (1993-94, 1994-95), whereas Agent A included incorrect years (1992-93, 1995-96). Agent B was 'less wrong' overall.\n2. **Presentation**: Agent B used clear paragraph breaks and structure, making it easy to scan. Agent A presented a dense 'wall of text' that was difficult to read.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Категории — Википедия'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Категории — Википедия"
+      ],
+      "question": "In the history of Russian men's handball, identify the specific club that holds the unique distinction of winning the USSR Championship exactly once (in 1990) but has never won the Russian Championship gold, despite setting a record by finishing as the runner-up (silver medalist) nine times. Once you have identified this club, provide a detailed answer covering the following points based on its history:\n\n1. List the specific official names the club operated under during the exact seasons it won those nine Russian silver medals.\n2. State the club's highest achievement in the EHF Cup (not the Champions League) and the year this result was obtained.\n3. List the full names of the Olympic champions who are historically credited as having been trained by or emerged from this club.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Official Name 1: Lukoil-Dynamo (associated with silver medals between 1999 and 2007)",
+        "Official Name 2: Zarya Kaspiya (associated with the silver medal in 2008)",
+        "EHF Cup Achievement: Finalist (or Silver Medalist)",
+        "EHF Cup Year: 2003",
+        "Olympic Champion: Vyacheslav Atavin",
+        "Olympic Champion: Andrey Tyumentsev",
+        "Olympic Champion: Vasily Kudinov",
+        "Olympic Champion: Oleg Kiselev",
+        "Olympic Champion: Igor Chumak",
+        "Olympic Champion: Lev Voronin"
+      ],
+      "checklist_depth": [
+        "Target Entity: Dynamo Astrakhan (also accepted as Zarya Kaspiya or Lukoil-Dynamo)",
+        "Logic Proof: Won USSR Championship in 1990",
+        "Logic Proof: Won 9 Russian Championship Silver medals (1999, 2001-2008)",
+        "Logic Proof: Never won the Russian Championship Gold (unlike Chekhovskie Medvedi, Kaustik, etc.)"
+      ],
+      "rationale": "The question requires 'Deep' reasoning to identify 'Dynamo Astrakhan' without it being named, relying on a unique statistical fingerprint (1 USSR Gold vs. 9 Russian Silvers). The 'Wide' aspect forces the agent to correlate specific historical years with changing club names (Lukoil-Dynamo vs. Zarya Kaspiya), pinpoint a specific European tournament result (EHF Cup 2003), and aggregate a list of notable alumni (Olympic champions) found in the club's detailed history.",
+      "source_nodes": [
+        "Категории — Википедия",
+        "Динамо (гандбольный клуб, Астрахань) — Википедия",
+        "Error"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Справка Категории Перейти к навигации Перейти к поиску Это алфавитный список всех категорий Википедии. Он содержит десятки тысяч категорий, поэтому для навигации лучше использ",
+      "judge_max_limit": 350,
+      "answer_a": "The club is **Dynamo Astrakhan**, which won its sole USSR Championship in 1990 before becoming the Russian Super League's perennial runner-up. The nine Russian silver medals were achieved under evolving official names: **Dynamo Astrakhan** (1994-95, 1995-96, 1996-97), **Dynamo Guinness Astrakhan** (1997-98), **Dynamo Astrakhan** again (1998-99, 1999-00, 2000-01), **Dynamo-Red Star Astrakhan** (2001-02), and **Dynamo Astrakhan** once more (2002-03, 2003-04) [1][2].\n\nIn European competition, Dynamo Astrakhan reached the **EHF Cup semifinals** in **2000**, representing its best continental performance [3]. This was achieved during the club's peak era when it consistently challenged CSKA and other Moscow powerhouses domestically while making inroads in European tournaments.\n\nThe club's development system produced several Olympic champions. Notable alumni include **Alexey Kamanin** (gold medalist at the 2000 Sydney Olympics) and **Oleg Kiselyov** (2000 Sydney gold medalist), both of whom developed through Dynamo's youth ranks during the 1990s [4][5]. Additionally, **Andrey Lavrov**, a three-time Olympic champion (1992, 1996, 2000), began his professional career at Dynamo Astrakhan in the early 1990s, though he is also strongly associated with SKA Khabarovsk and later international clubs [6]. The club's training legacy extends to **Eduard Gershkovich**, an Olympic gold medalist from 1992, who also emerged from its academy system [7]. These players formed the core of Russia's handball dominance in the late 1990s and early 2000s.\n\n## References\n1. Russian Handball Federation. \"Super League Championship Archive.\" handball.ru\n2. European Handball Federation. \"Russian Club History Database.\" eurohandball.com\n3. EHF Cup Records. \"2000 EHF Cup Semifinal Results.\" ehf.euro\n4. Olympic Handball Database. \"Russian Olympic Champions Biographies.\" olympic.org/handball\n5. Russian Handball Legends Archive. \"Alexey Kamanin Career Profile.\" handball.ru\n6. International Handball Federation. \"Andrey Lavrov Player History.\" ihf.info\n7. Dynamo Astrakhan Historical Society. \"Olympic Alumni Records.\" dynamo-astrakhan.ru",
+      "answer_b": "Universitet-Neva St. Petersburg holds the unique distinction of winning the USSR Championship exactly once in 1990 but has never won the Russian Championship gold, despite tying the record for the most silver medals with nine runner-up finishes in the Super League [1][2]. This club, based at the P.F. Lesgaft National State University of Physical Education, Sport and Health, has been a mainstay in Russian men's handball since its founding in 2000, consistently challenging for the title but falling short to powerhouses like Chekhovskiye Medvedi. Its history connects to the St. Petersburg handball legacy, which includes key contributions to Soviet-era successes. The team's persistence is evident in its nine silvers, reflecting resilience amid post-Soviet economic and administrative challenges in the sport [1][3].\n\n1. The club operated under the official name \"Universitet Lesgaft-Neva St. Petersburg\" during all nine seasons it secured Russian silver medals: 2006-07, 2007-08, 2008-09, 2009-10, 2010-11, 2011-12, 2012-13, 2015-16, and 2017-18, with no significant name changes noted in historical records [1][2].\n\n2. The club's highest achievement in the EHF Cup is reaching the group stage (equivalent to the last 16), obtained in the 2012-13 season, where it competed in Group D but did not advance to the knockout rounds [3][4].\n\n3. The Olympic champions historically credited as having been trained by or emerged from this club include Yuri Viktorovich Gavrilov (1988 gold with the Soviet Union), Alexander Vladimirovich Karshakevich (1988 gold with the Soviet Union), Dmitri Nikolaevich Torgovanov (1992 gold with the United Team), and Oleg Vladimirovich Grebnev (1992 gold with the United Team) [4][5].\n\nDespite its inability to claim a Russian title, Universitet-Neva has played a vital role in developing talent and sustaining competitive handball in St. Petersburg, with European campaigns highlighting its potential [2][3].\n\n(Word count: 306)\n\n## References\n[1] Wikipedia: Russian Handball Super League. https://en.wikipedia.org/wiki/Russian_Handball_Super_League  \n[2] Russian Handball Federation Official Site: Championship History. https://rushandball.ru/  \n[3] EHF (European Handball Federation): Club Profiles and Titles. https://www.eurohandball.com/  \n[4] Wikipedia: Handball at the Summer Olympics. https://en.wikipedia.org/wiki/Handball_at_the_Summer_Olympics  \n[5] Sports.ru: Historical Overview of Russian Handball Clubs and Players. https://www.sports.ru/handball/",
+      "duration_a_seconds": 30.9,
+      "duration_b_seconds": 724.0,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the target entity as **Dynamo Astrakhan**, which is the only club fitting the specific constraints (won USSR Championship in 1990, never won Russian Gold, and holds the record for silver medals). However, Agent A is capped at 'Better' because it hallucinated significant details in the sub-points: it listed incorrect years for the silver medals (citing the mid-90s instead of the 2000s), missed the primary official name during the silver era ('Lukoil-Dynamo'), and understated the EHF Cup achievement (claiming Semifinals 2000 instead of the correct Finals 2003). \n\nAgent B failed the fundamental logic check ('Deep Failure') by identifying Universitet-Neva St. Petersburg. This is factually incorrect as Neva did not win the 1990 USSR title and *did* win a Russian Gold (1993), violating the prompt's negative constraint. Agent A wins for finding the correct entity despite the factual errors in the supporting details.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Википедия:Поиск по категориям — Википедия'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 4,
+      "width": 3,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Категории — Википедия",
+        "Википедия:Поиск по категориям — Википедия"
+      ],
+      "question": "Analyze the historical records of the Russian Men's Handball Championship (Super League) from its founding in 1992 through the 2024/2025 season. Identify the four distinct club entities that are statistically credited with exactly two championship titles each. Note that this requires distinguishing between different historical iterations of clubs from the same city and treating clubs that underwent official renaming but retained their history as a single entity, while separating those listed as distinct historical entries in federation records. For each of these four identified clubs, provide the specific seasons in which they won their two titles and the name of the club that finished as the runner-up (silver medalist) in each of those specific winning seasons.",
+      "word_limit_instruction": "Answer length: 270-370 words.",
+      "checklist_width": [
+        "Zenit (or Neva) Season 1: 1992/93, Silver: Polyot (Chelyabinsk)",
+        "Zenit (or Neva) Season 2: 2024/25, Silver: CSKA (Moscow)",
+        "CSKA (Historical/Old) Season 1: 1993/94, Silver: Kaustik (Volgograd)",
+        "CSKA (Historical/Old) Season 2: 1994/95, Silver: Kaustik (Volgograd)",
+        "CSKA-Sportakadem Season 1: 1999/00, Silver: Kaustik (or Kaustik-SK ZhDV)",
+        "CSKA-Sportakadem Season 2: 2000/01, Silver: Lukoil-Dynamo (Astrakhan)",
+        "CSKA (Modern/New) Season 1: 2022/23, Silver: Permskie Medvedi",
+        "CSKA (Modern/New) Season 2: 2023/24, Silver: Chekhovskie Medvedi"
+      ],
+      "checklist_depth": [
+        "Identify Zenit (St. Petersburg) [also known as Neva] as having exactly 2 titles.",
+        "Identify CSKA (Moscow, 1969-1998) [Old CSKA] as having exactly 2 titles.",
+        "Identify CSKA-Sportakadem (Moscow) as having exactly 2 titles (distinct from Chekhovskie Medvedi for this stat).",
+        "Identify CSKA (Moscow, est. 2017) [New CSKA] as having exactly 2 titles."
+      ],
+      "rationale": "The question utilizes Deep Logic by requiring the agent to filter clubs based on a specific statistical count ('exactly two titles') which forces the disambiguation of three different entities sharing the 'CSKA' name (Old, New, and Sportakadem) and the aggregation of 'Zenit' with its former name 'Neva'. The Wide Aggregation is tested by requesting specific historical data points (seasons and runners-up) which are scattered across a 30-year timeline.",
+      "source_nodes": [
+        "Википедия:Поиск по категориям — Википедия",
+        "Пустые категории — Википедия",
+        "Википедия:Категория — Википедия"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Википедия : Поиск по категориям Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Здесь представлена система рубрикации страниц русской Викип",
+      "judge_max_limit": 370,
+      "answer_a": "The four Russian handball clubs with exactly two championship titles each are **Chekhovskiye Medvedi**, **Permskie Medvedi**, **HC Kaustik Volgograd**, and **Dynamo Viktor Stavropol**.\n\n**Chekhovskiye Medvedi** (Chekhov Bears) won consecutive titles in **2005-06** and **2006-07**. The runner-up in 2005-06 was HBC CSKA Moscow, while in 2006-07, Dynamo Astrakhan finished second [1][3].\n\n**Permskie Medvedi** (Perm Bears) secured their championships in **2013-14** and **2014-15**. In 2013-14, they defeated Chekhovskiye Medvedi as runners-up, and in 2014-15, Saint Petersburg HC took the silver position [1][2].\n\n**HC Kaustik Volgograd** achieved victory in **2007-08** and **2008-09** under its current name. Chekhovskiye Medvedi placed second in 2007-08, while Dynamo Astrakhan finished runner-up in 2008-09 [1][3].\n\n**Dynamo Viktor Stavropol** (formerly Dynamo Stavropol) won titles in **1999-00** and **2000-01**. The club finished ahead of Dynamo Astrakhan in both seasons, with the Astrakhan club consistently earning silver [1][4].\n\nEach club represents a distinct administrative entity recognized separately by federation records, despite some bearing similar \"Medvedi\" (Bears) names in different regions. Their title runs were separated by periods of CSKA dominance, with no club achieving more than two championships in the league's history [1].\n\n## References\n1. Russian Handball Federation Official Championship Archive, handball.ru\n2. European Handball Federation Russian Super League Statistics, eurohandball.com\n3. International Handball Federation Club Competition Database, ihf.info\n4. Russian Handball Super League Historical Records, wikipedia.org/wiki/Russian_Handball_Super_League",
+      "answer_b": "The historical records of the Russian Men's Handball Championship (Super League) from its founding in the 1992-93 season through the ongoing 2024/2025 season, based on federation statistics and club histories, identify four distinct club entities credited with exactly two championship titles each. These distinctions account for administrative restructurings, ownership changes, and federation records that separate historical iterations even within the same city, while consolidating renamed clubs that retain continuous history [1][2]. The dominant Chekhovskiye Medvedi hold 21 titles, Sportakademklub Moscow has 3 as a single entity, and single-title clubs like Poliot Chelyabinsk, Lukoil-Dynamo Astrakhan, and others fill the rest, but the following four stand out with precisely two each [1][3].\n\n1. CSKA Moscow (original Soviet-era iteration), a Moscow-based army-affiliated club transitioning from the Soviet system, won titles in the 1993-94 and 1994-95 seasons. In 1993-94, the runner-up was Poliot Chelyabinsk; in 1994-95, the runner-up was Universitet-Neva St. Petersburg [1][2].\n\n2. CSKA Moscow (restructured transitional iteration), emerging after financial and administrative reforms in the late 1990s, won titles in the 1999-00 and 2000-01 seasons. In 1999-00, the runner-up was Sportakademklub Moscow; in 2000-01, the runner-up was Chekhovskiye Medvedi [1][3].\n\n3. CSKA Moscow (modern iteration established in 2017), a revived Moscow-based entity under the CSKA sports society, won titles in the 2020-21 and 2021-22 seasons. In 2020-21, the runner-up was Chekhovskiye Medvedi; in 2021-22, the runner-up was Chekhovskiye Medvedi [3][4].\n\n4. Viktor Stavropol, a Stavropol-based club with roots in the post-Soviet era and recent professional restructuring, won titles in the 2022-23 and 2023-24 seasons. In 2022-23, the runner-up was CSKA Moscow; in 2023-24, the runner-up was Chekhovskiye Medvedi [4][5].\n\nThis analysis highlights the league's evolution, with early post-Soviet instability leading to multiple CSKA iterations treated as distinct in records due to disbandments and revivals, while Viktor Stavropol's recent back-to-back wins signal emerging parity amid declining dominance by traditional giants like Chekhovskiye Medvedi [2][5]. Federation data confirms no other entities meet the exact two-title criterion without violating the distinction rules [1][4].\n\n(Word count: 346)\n\n## References\n[1] Wikipedia: Russian Handball Super League. https://en.wikipedia.org/wiki/Russian_Handball_Super_League  \n[2] Russian Handball Federation Official Site: Championship History. https://rushandball.ru/  \n[3] CSKA Moscow Official Website: Handball Section History. https://cska.ru/handball/  \n[4] Sports.ru: Historical Overview of Russian Handball Clubs. https://www.sports.ru/handball/  \n[5] EHF (European Handball Federation): Club Profiles and Titles. https://www.eurohandball.com/",
+      "duration_a_seconds": 3.9,
+      "duration_b_seconds": 389.6,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A failed catastrophically on the core logic. It claimed that Chekhovskie Medvedi (a 21-time champion dynasty) has 'exactly two' titles and stated that 'no club achieving more than two championships in the league's history', which is a complete fabrication of the sport's history. It also listed two other clubs (Permskie, Viktor) as winners when they have never won the Super League. \n\nAgent B, while imperfect, correctly identified the complex historical nuance requested in the prompt: distinguishing between the different iterations of CSKA (Old CSKA and CSKA-Sportakadem) which actually do have exactly two titles each in historical records. Agent B hallucinated the recent years (inserting Viktor Stavropol and shifting CSKA Modern's dates), but its grasp of the historical entities was far superior to Agent A's total hallucination. Agent B followed the 'Deep Logic' of the prompt regarding club entities, whereas Agent A failed to identify the league's reality.",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0029_Kimik2_vs_grok4sea_448"
+}

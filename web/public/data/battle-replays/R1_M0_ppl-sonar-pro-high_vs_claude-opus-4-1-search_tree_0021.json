@@ -1,0 +1,90 @@
+{
+  "id": "R1_M0_ppl-sonar-pro-high_vs_claude-opus-4-1-search_tree_0021",
+  "source_group": "round1",
+  "source_log": "round1/R1_M0_ppl-sonar-pro-high_vs_claude-opus-4-1-search_tree_0021.log",
+  "tree_id": "tree_0021",
+  "tree_title": "Comparison of Internet forum software",
+  "tree_topic": "Online Communities",
+  "tree_subtopic": "Forum & Chat Providers",
+  "tree_crawled_at": "2025-11-21T16:17:25.090410",
+  "tree_url": "https://en.wikipedia.org/wiki/Comparison_of_Internet_forum_software",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "claude-opus-4-1-search",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Comparison of Internet forum software",
+  "questions": [
+    "Identify the open-source internet forum software that historically utilized the LGPL3 for its 1.8 series and GPL3 for earlier versions, but selected the BSD 3-Clause license for its 2.0 release to achieve a simpler licensing model. What other \"extremely open\" license was explicitly considered but rejected during this decision process? Furthermore, list the three specific conditions required for redistribution (both source and binary) and the restriction on endorsements as stipulated by the chosen BSD 3-Clause license text."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 131515,
+  "estimated_cost": 1.3152,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Comparison of Internet forum software",
+        "Change of license for MyBB 2.0"
+      ],
+      "question": "Identify the open-source internet forum software that historically utilized the LGPL3 for its 1.8 series and GPL3 for earlier versions, but selected the BSD 3-Clause license for its 2.0 release to achieve a simpler licensing model. What other \"extremely open\" license was explicitly considered but rejected during this decision process? Furthermore, list the three specific conditions required for redistribution (both source and binary) and the restriction on endorsements as stipulated by the chosen BSD 3-Clause license text.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Earlier releases (pre-1.8) used the GNU Public License Version 3 (GPL3)",
+        "The alternative license considered but rejected was the MIT license",
+        "Condition 1: Source redistributions must retain the copyright notice, list of conditions, and disclaimer",
+        "Condition 2: Binary redistributions must reproduce the copyright notice, conditions, and disclaimer in the documentation",
+        "Condition 3: Neither the name of the copyright holder nor contributors may be used to endorse/promote derived products without specific permission"
+      ],
+      "checklist_depth": [
+        "Target Entity: MyBB (or MyBulletinBoard)"
+      ],
+      "rationale": "The question uses specific version-to-license mappings (1.8/LGPL3, 2.0/BSD-3) to mask the entity name \"MyBB,\" requiring logical identification (Deep). It then demands wide aggregation by asking for historical context (earlier versions), specific internal decision-making details (rejected MIT license), and legal text specifics (the 3 clauses).",
+      "source_nodes": [
+        "Change of license for MyBB 2.0 | MyBB Blog",
+        "Rewrite engine - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: MyBB has historically used the Lesser GNU Public License Version 3 (LGPL3) for the MyBB 1.8 series, and the GNU Public License Version 3 (GPL3) in earlier releases. Both of th",
+      "judge_max_limit": 300,
+      "answer_a": "**FluxBB** is the open-source internet forum software that used LGPLv3 for its 1.8 series, GPLv3 for earlier versions, and switched to BSD 3-Clause for the 2.0 release to simplify licensing and boost adoption. During this process, the team explicitly considered but rejected the **Unlicense** as an \"extremely open\" alternative, citing concerns over lacking explicit warranty disclaimers and potential legal ambiguities despite its public-domain intent.\n\nThe BSD 3-Clause license permits redistribution in **source** and **binary** forms, with or without modification, under these three specific conditions[4][3]:\n\n1. Redistributions of source code must retain the copyright notice, the list of conditions, and the disclaimer.\n2. Redistributions in binary form must reproduce the copyright notice, list of conditions, and disclaimer in documentation or other materials provided with the distribution.\n3. Neither the copyright holder's name nor contributors' names may be used to **endorse or promote** derived products without specific prior written permission.[4]\n\nThis non-endorsement restriction (Clause 3) differentiates it from more permissive variants like BSD 2-Clause.[3][1] The change aimed for maximal compatibility in commercial and derivative works.\n\n(Word count: 198)\n\n## References\n[1] interoperable-europe.ec.europa.eu/licence/bsd-3-clause-new-or-revised-license  \n[3] fossa.com/blog/open-source-software-licenses-101-bsd-3-clause-license/  \n[4] opensource.org/license/bsd-3-clause  \n fluxbb.org/forum/viewtopic.php?id=2487 (licensing announcement thread)  \n fluxbb.org/docs/rel-2.0/licensing.html (2.0 license rationale)  \n fluxbb.org/forum/viewtopic.php?id=2501 (Unlicense discussion)",
+      "answer_b": "The open-source internet forum software is **MyBB** (MyBulletin Board), which made this licensing transition for its 2.0 release. MyBB historically used LGPL3 for its 1.8 series and GPL3 for earlier versions, but switched to the BSD 3-Clause license for version 2.0 to simplify its licensing model and reduce complexity for developers and users [1][2].\n\nDuring the decision process, the **MIT License** was explicitly considered as another \"extremely open\" alternative but was ultimately rejected in favor of BSD 3-Clause [1][2]. The MyBB team chose BSD 3-Clause after extensive community discussion and evaluation of various permissive licenses.\n\nThe BSD 3-Clause license requires these three specific conditions for redistribution [3][4]:\n\n1. **Source code redistributions** must retain the original copyright notice, the list of conditions, and the disclaimer\n2. **Binary redistributions** must reproduce the copyright notice, list of conditions, and disclaimer in the documentation and/or other materials provided with the distribution\n3. **Name restriction**: Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from the software without specific prior written permission\n\nThe third condition explicitly establishes the **restriction on endorsements**, preventing unauthorized use of the project's or contributors' names for promotional purposes without written consent [3][4].\n\n## References\n[1] MyBB 2.0 License Discussion - MyBB Community Forums\n[2] MyBB GitHub Repository - License Documentation\n[3] Open Source Initiative - BSD 3-Clause License\n[4] SPDX License List - BSD-3-Clause",
+      "duration_a_seconds": 4.0,
+      "duration_b_seconds": 11.7,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the entity as MyBB (MyBulletinBoard). The specific version history provided in the query (1.8 series using LGPL3, earlier versions using GPL3, and a 2.0 release switching to BSD 3-Clause) is unique to MyBB's development history. Agent B also correctly identified the MIT license as the alternative considered. Agent A incorrectly identified the software as FluxBB, which does not match the specific versioning and licensing history described (FluxBB is primarily GPLv2 and its versioning differs). Agent B followed all instructions and provided accurate details.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0021_claudeopu_vs_pplsonar_72"
+}

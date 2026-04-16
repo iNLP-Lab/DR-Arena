@@ -1,0 +1,156 @@
+{
+  "id": "R2_M2_ppl-sonar-pro-high_vs_grok-4-search_tree_0008",
+  "source_group": "round2",
+  "source_log": "round2/R2_M2_ppl-sonar-pro-high_vs_grok-4-search_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "grok-4-search",
+  "winner": "grok-4-search",
+  "final_score_a": 0.0,
+  "final_score_b": 3.0,
+  "total_rounds": 2,
+  "type": null,
+  "tournament_round": 2,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Consulting the analysis from the prominent health policy organization that tracks 'state actions that seek to improve the accuracy and efficiency of Medicaid and CHIP enrollment' (specifically referencing findings as of early 2025), provide the detailed statistical profile for the following vulnerable groups: 1) What is the Medicaid coverage rate for people with disabilities compared to those without? 2) How many individuals with intellectual and developmental disabilities (I/DD) are reported to have Medicaid coverage? 3) What proportion of working-age adults on Medicaid have three or more chronic conditions? 4) What are the specific counts for federally certified nursing facilities and their residents mentioned in relation to potential reconciliation bill savings?",
+    "Identify the health policy organization that analyzed state actions regarding Medicaid eligibility and enrollment efficiency as of January 2025, and also reported that approximately 15 million people with disabilities have Medicaid coverage. According to this organization's administrative guidelines, it operates two conference centers available free of charge to nonprofits. What are the official names and maximum lecture-style guest capacities for each of these two locations? Additionally, provide the organization's Federal Tax ID number (EIN) and the specific mailing address designated for sending employer matching donation checks."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 34197,
+  "estimated_cost": 0.342,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Medicaid"
+      ],
+      "question": "Consulting the analysis from the prominent health policy organization that tracks 'state actions that seek to improve the accuracy and efficiency of Medicaid and CHIP enrollment' (specifically referencing findings as of early 2025), provide the detailed statistical profile for the following vulnerable groups: 1) What is the Medicaid coverage rate for people with disabilities compared to those without? 2) How many individuals with intellectual and developmental disabilities (I/DD) are reported to have Medicaid coverage? 3) What proportion of working-age adults on Medicaid have three or more chronic conditions? 4) What are the specific counts for federally certified nursing facilities and their residents mentioned in relation to potential reconciliation bill savings?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "People with disabilities: 35% (or >1 in 3) covered vs 19% of those without disabilities.",
+        "People with I/DD: Over 3 million have Medicaid coverage (out of ~8 million total).",
+        "Adults with chronic conditions: Nearly one-third of working-age adults on Medicaid have three or more conditions.",
+        "Nursing Facilities: Approximately 15,000 federally certified facilities and 1.2 million residents."
+      ],
+      "checklist_depth": [
+        "Source Identification: Kaiser Family Foundation (KFF) (identified via the specific description of the 2025 enrollment/renewal survey).",
+        "Context Validation: Statistics must match the specific 'Health Policy 101' / '5 Facts' summaries provided in the source text."
+      ],
+      "rationale": "The question uses deep logic by describing the specific scope of a survey ('state actions that seek to improve...') to identify the source (KFF) without naming it. It then applies wide logic by requiring the agent to aggregate four distinct statistical data points (Disabilities, I/DD, Chronic Conditions, Nursing Facilities) that are scattered across different topic briefs within the source text.",
+      "source_nodes": [
+        "Medicaid - Research and Data from KFF",
+        "Public Opinion - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Medicaid Eligibility, Enrollment, and Renewal Policies KFF's survey findings capture state actions that seek to improve the accuracy and efficiency of Medicaid and",
+      "judge_max_limit": 300,
+      "answer_a": "Medicaid coverage rates for people with disabilities are substantially higher than for those without, with disabled individuals comprising a key enrollment group historically over half of enrollees alongside aged and children, though recent data shows adults (including expansion groups) nearing 25% of 88.1 million total FY2024 enrollment.[3] Specific coverage rate comparisons are not detailed in early 2025 snapshots.[1][2]\n\nNo exact count for individuals with intellectual and developmental disabilities (I/DD) on Medicaid is reported; however, disabled enrollees remain a significant vulnerable cohort tracked amid post-unwinding declines.[3]\n\nAmong working-age adults on Medicaid, the proportion with three or more chronic conditions lacks precise early 2025 figures, though 78% of non-institutionalized adults received wellness visits in CY2023, comparable to private coverage.[3]\n\nFederally certified nursing facilities and resident counts tied to potential reconciliation bill savings (e.g., OBBBA P.L. 119-21) are not specified; projections note up to 7.5 million total Medicaid/CHIP enrollment drop by 2034 from eligibility changes, but no facility-specific numbers.[5]\n\nTotal Medicaid/CHIP enrollment stood at 77.6 million in July 2025 (70.4 million Medicaid), down slightly monthly but 8-10% above pre-pandemic baselines, with 40.6 million adults and 36.9 million children/CHIP enrollees.[1][2]\n\n## References\n[1] Medicaid.gov, July 2025 Medicaid/CHIP Eligibility Operations & Enrollment Snapshot  \n[2] KFF.org, Medicaid Enrollment and Unwinding Tracker (Aug 2025 data)  \n[3] MACPAC.gov, Medicaid in Context: Key Statistics and Trends (Apr 2025)  \n[5] Healthmanagement.com, HMA Enrollment Update (June 2025)",
+      "answer_b": "Medicaid plays a critical role in covering vulnerable populations, with data from the Kaiser Family Foundation (KFF) highlighting disparities and needs as of early 2025. According to KFF's analysis of state actions to enhance Medicaid and CHIP enrollment accuracy and efficiency, people with disabilities have significantly higher Medicaid coverage rates. Specifically, 42% of nonelderly adults with disabilities are enrolled in Medicaid, compared to just 18% of those without disabilities [1]. This gap underscores Medicaid's importance for this group, often facing barriers to private insurance.\n\nFor individuals with intellectual and developmental disabilities (I/DD), KFF reports that approximately 1.5 million such individuals have Medicaid coverage, representing about 80% of the I/DD population relying on the program for essential services like home- and community-based supports [2]. This high reliance stems from Medicaid's tailored waivers and long-term care options.\n\nAmong working-age adults (ages 19-64) on Medicaid, 28% have three or more chronic conditions, a rate notably higher than in the privately insured population (around 10%) [3]. These enrollees often manage complex health needs, contributing to higher program costs and the push for integrated care models.\n\nRegarding federally certified nursing facilities, KFF's findings in the context of potential reconciliation bill savings note there are about 15,000 such facilities nationwide, serving roughly 1.3 million residents [4]. Proposed reforms could yield savings by shifting more care to community settings, potentially reducing federal spending by billions while improving outcomes for residents.\n\nThese statistics emphasize Medicaid's role in supporting vulnerable groups amid ongoing enrollment reforms.\n\n(Word count: 248)\n\n## References\n[1] Kaiser Family Foundation. \"Medicaid's Role for People with Disabilities.\" January 2025. https://www.kff.org/medicaid/issue-brief/medicaids-role-for-people-with-disabilities/  \n[2] Kaiser Family Foundation. \"Medicaid and People with Intellectual and Developmental Disabilities.\" February 2025. https://www.kff.org/medicaid/issue-brief/medicaid-and-people-with-idd/  \n[3] Kaiser Family Foundation. \"Chronic Conditions Among Medicaid Enrollees.\" Early 2025 Update. https://www.kff.org/medicaid/report/chronic-conditions-medicaid/  \n[4] Kaiser Family Foundation. \"Nursing Facilities and Reconciliation Bill Analysis.\" March 2025. https://www.kff.org/medicaid/issue-brief/nursing-facilities-reconciliation-savings/",
+      "duration_a_seconds": 6.4,
+      "duration_b_seconds": 22.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B is the winner because it correctly identified the 'prominent health policy organization' as the Kaiser Family Foundation (KFF) and attempted to answer all four specific statistical questions based on KFF data. Agent A failed the Deep Logic check; while it cited a KFF tracker, it failed to locate the specific analysis requested, resulting in a response that stated the data was 'not detailed' or 'not specified' for every single point. \n\nHowever, Agent B is capped at 'BETTER' rather than 'MUCH BETTER' because its specific statistics deviated significantly from the provided Ground Truth (e.g., stating 1.5 million people with I/DD vs the Ground Truth's >3 million; stating 42% coverage for disabilities vs the Ground Truth's 35%). Despite these accuracy errors, Agent B provided a structured, helpful response that addressed the user's intent, whereas Agent A provided a 'lazy refusal' with zero utility.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 3 nodes.",
+          "[EVOLUTION] Descended to: 'Conference Centers'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Medicaid",
+        "Conference Centers"
+      ],
+      "question": "Identify the health policy organization that analyzed state actions regarding Medicaid eligibility and enrollment efficiency as of January 2025, and also reported that approximately 15 million people with disabilities have Medicaid coverage. According to this organization's administrative guidelines, it operates two conference centers available free of charge to nonprofits. What are the official names and maximum lecture-style guest capacities for each of these two locations? Additionally, provide the organization's Federal Tax ID number (EIN) and the specific mailing address designated for sending employer matching donation checks.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Conference Center 1 Name: KFF San Francisco Conference Center",
+        "Conference Center 1 Capacity: 100 guests (lecture-style)",
+        "Conference Center 2 Name: Barbara Jordan Conference Center (Washington, DC)",
+        "Conference Center 2 Capacity: 190 guests (lecture-style)",
+        "Organization EIN: 94-6064808",
+        "Matching Donation Address: 185 Berry Street, Lobby 1, Suite 2000, San Francisco, CA 94107"
+      ],
+      "checklist_depth": [
+        "Target Entity: KFF (Kaiser Family Foundation)",
+        "Logic Proof: The organization is identified by its January 2025 findings on Medicaid enrollment and disability coverage statistics (15 million/35%) provided in the background context."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the subject organization (KFF) based on specific health policy statistics and report dates (Deep Logic). It then requires Wide aggregation to retrieve distinct administrative details (conference center capacities and specific donation financial data) located in separate sections of the organization's 'About Us' and facility information pages.",
+      "source_nodes": [
+        "Conference Centers | KFF",
+        "Support Our Work | KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home About Us Conference Centers Conference Centers Come Meet in KFF’s Conference Space KFF operates public meeting spaces in San Francisco and Washington D.C . that are avail",
+      "judge_max_limit": 320,
+      "answer_a": "**KFF (Kaiser Family Foundation)** is the health policy organization that analyzed state actions on Medicaid and CHIP enrollment efficiency as of early 2025 and reported that more than 1 in 3 people with disabilities—approximately **15 million**—have Medicaid coverage, compared to 19% of those without disabilities.[1] KFF tracks these trends through its Medicaid Enrollment and Unwinding Tracker, highlighting state efforts to improve accuracy and efficiency post-unwinding.[1]\n\nPer KFF's administrative guidelines, it operates **two conference centers** available free of charge to qualifying nonprofits for events promoting health policy education. The official names and maximum lecture-style guest capacities are:\n\n- **Kaiser Permanente Conference Center (Oakland, CA)**: 250 guests.\n- **KFF Conference Center (Washington, DC)**: 150 guests.\n\nThese venues support nonprofit missions aligned with KFF's focus on health access and equity, with bookings managed via their facilities request portal.[1]\n\nKFF's **Federal Tax ID (EIN)** is **94-3090626**.[1] The specific **mailing address** for employer matching donation checks is:\n\nKaiser Family Foundation  \n2400 Sand Hill Road  \nMenlo Park, CA 94025.[1]\n\n(Word count: 248)\n\n## References\n[1] KFF.org, Medicaid Coverage for People with Disabilities & Organizational Details (2025)[1]",
+      "answer_b": "The health policy organization is the Henry J. Kaiser Family Foundation (KFF), a nonprofit focused on health policy analysis and journalism [1]. KFF tracked and analyzed state actions to improve the accuracy and efficiency of Medicaid eligibility and enrollment processes as of January 2025, including efforts to streamline renewals and reduce administrative barriers amid post-pandemic unwinding [2]. In its reports, KFF highlighted that approximately 15 million people with disabilities rely on Medicaid for coverage, emphasizing the program's critical role in providing access to long-term services, supports, and healthcare for this vulnerable population, which faces higher rates of uninsurance without such public options [3].\n\nAccording to KFF's administrative guidelines and facilities policies, the organization operates two conference centers that are made available free of charge to qualifying nonprofit organizations for meetings, events, and convenings related to public interest work [4]. The first is the Barbara Jordan Conference Center, located at KFF's Washington, DC office (1330 G Street NW, Washington, DC 20005), which honors the late Congresswoman Barbara Jordan and features modern audiovisual equipment; its maximum lecture-style guest capacity is 146 people [5]. The second is the KFF Conference Center at the organization's San Francisco headquarters (185 Berry Street, Suite 2000, San Francisco, CA 94107), designed for collaborative sessions with Bay Area views; it has a maximum lecture-style guest capacity of 80 people [6]. These facilities support KFF's mission by fostering dialogue among nonprofits on health policy and equity issues, with booking requires advance reservation and alignment with nonpartisan, educational purposes.\n\nKFF's Federal Tax ID number (EIN) is 94-6064808, as registered with the IRS for its charitable operations [7]. The specific mailing address designated for sending employer matching donation checks is: Henry J. Kaiser Family Foundation, Attn: Development – Matching Gifts, 185 Berry Street, Suite 2000, San Francisco, CA 94107 [8]. Donors are encouraged to include relevant employer forms for processing.\n\n(Word count: 312)\n\n## References\n[1] Kaiser Family Foundation. \"About Us.\" Accessed October 2023. https://www.kff.org/about-us/  \n[2] Kaiser Family Foundation. \"State Actions on Medicaid Enrollment Efficiency.\" January 2025. https://www.kff.org/medicaid/issue-brief/state-actions-medicaid-enrollment/  \n[3] Kaiser Family Foundation. \"Medicaid Coverage for People with Disabilities.\" January 2025. https://www.kff.org/medicaid/report/medicaid-disabilities-coverage/  \n[4] Kaiser Family Foundation. \"Conference Center Guidelines.\" https://www.kff.org/conference-centers/guidelines/  \n[5] Kaiser Family Foundation. \"Barbara Jordan Conference Center Details.\" https://www.kff.org/barbara-jordan-center/  \n[6] Kaiser Family Foundation. \"San Francisco Conference Center.\" https://www.kff.org/san-francisco-center/  \n[7] IRS. \"Tax Exempt Organization Search: Henry J. Kaiser Family Foundation.\" https://apps.irs.gov/app/eos/  \n[8] Kaiser Family Foundation. \"Donate – Matching Gifts.\" https://www.kff.org/donate/matching-gifts/",
+      "duration_a_seconds": 3.8,
+      "duration_b_seconds": 51.0,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B followed the instructions and retrieved the correct specific details, including the correct EIN and the specific mailing address for matching gifts. Agent A, while well-formatted, hallucinated significantly by conflating KFF (Kaiser Family Foundation) with Kaiser Permanente (a separate entity). Agent A provided the EIN for Kaiser Hospitals, listed a Kaiser Permanente conference center in Oakland (which is not KFF's), and gave a general HQ address rather than the requested specific address. Agent B is the only accurate response.",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_pplsonar_vs_grok4sea_151"
+}

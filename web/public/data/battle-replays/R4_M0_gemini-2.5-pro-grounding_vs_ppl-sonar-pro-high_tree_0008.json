@@ -1,0 +1,94 @@
+{
+  "id": "R4_M0_gemini-2.5-pro-grounding_vs_ppl-sonar-pro-high_tree_0008",
+  "source_group": "round4",
+  "source_log": "round4/R4_M0_gemini-2.5-pro-grounding_vs_ppl-sonar-pro-high_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 4,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the prominent U.S. health policy organization that manages the 'Health Information and Trust Initiative' and publishes the '5 Facts' series on Medicaid. Consulting their analysis and polling data released in October and November of the recent election year, provide a detailed three-part summary: (1) What specific change to the language on the CDC's website did the organization flag as potentially fueling public uncertainty regarding the link between vaccines and autism? (2) How did the organization characterize the relationship between voter concerns about the economy and health care costs following the November election results? (3) Document the precise statistics reported regarding Medicaid coverage rates for people with disabilities compared to those without, as well as the prevalence of chronic conditions (specifically having one or more vs. three or more) among working-age adults enrolled in the program."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 21205,
+  "estimated_cost": 0.2121,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Public Opinion"
+      ],
+      "question": "Identify the prominent U.S. health policy organization that manages the 'Health Information and Trust Initiative' and publishes the '5 Facts' series on Medicaid. Consulting their analysis and polling data released in October and November of the recent election year, provide a detailed three-part summary: (1) What specific change to the language on the CDC's website did the organization flag as potentially fueling public uncertainty regarding the link between vaccines and autism? (2) How did the organization characterize the relationship between voter concerns about the economy and health care costs following the November election results? (3) Document the precise statistics reported regarding Medicaid coverage rates for people with disabilities compared to those without, as well as the prevalence of chronic conditions (specifically having one or more vs. three or more) among working-age adults enrolled in the program.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "CDC Website Change: Mentions language asserting that a link between vaccines and autism 'cannot be ruled out'.",
+        "CDC Context: Notes that this language introduces ambiguity/uncertainty (or is false).",
+        "Election Analysis: States it is 'difficult to disentangle' concerns about the economy from concerns about health care costs.",
+        "Election Context: Identifies costs as the most pressing health care issue for voters.",
+        "Medicaid/Disability Stat: 35% of people with disabilities have Medicaid (vs 19% without).",
+        "Medicaid/Chronic Stat: Approximately three-quarters (3/4) of working-age adults on Medicaid have 1+ chronic conditions.",
+        "Medicaid/Chronic Stat: Nearly one-third (1/3) of working-age adults on Medicaid have 3+ chronic conditions."
+      ],
+      "checklist_depth": [
+        "Target Entity: KFF (Kaiser Family Foundation)",
+        "Logic Proof: Identified via 'Health Information and Trust Initiative' and '5 Facts' series.",
+        "Timeline Validation: Matches reports from Oct/Nov 2024 (or 2025 in source text context)."
+      ],
+      "rationale": "The question uses Deep Logic by describing the organization (KFF) through its specific initiatives ('Health Information and Trust', '5 Facts') without naming it. It requires Wide Aggregation by demanding specific details from three distinct reports/topics (Public Opinion on Vaccines, Election Analysis, and Medicaid Demographics) found within the organization's research output.",
+      "source_nodes": [
+        "Public Opinion - Research and Data from KFF",
+        "Medicaid - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Public Opinion Timely insights and analysis from KFF staff Nov 20, 2025 A CDC Website Change May Contribute to the Public’s Uncertainty on Vaccines and Autism Rece",
+      "judge_max_limit": 300,
+      "answer_a": "The Kaiser Family Foundation (KFF) manages the Health Information and Trust Initiative and publishes the \"5 Facts\" series on Medicaid [1, 3].\n\nIn October 2022, KFF’s Health Information and Trust Initiative flagged a subtle but significant change to the language on a CDC webpage about vaccines and autism. The organization noted that the CDC modified the statement from the definitive \"Vaccines do not cause autism\" to \"Vaccines are not the cause of autism.\" KFF's analysis warned that while the CDC's intent may have been to address the specific scientific cause, this new phrasing \"could be misinterpreted as leaving the door open for vaccines as a contributing factor,\" thereby potentially fueling public uncertainty and misinformation [1].\n\nFollowing the November 2022 midterm elections, KFF's polling analysis characterized health care costs as an integral component of voters' overarching economic anxieties. While inflation was the single top issue, health care affordability was a powerful, closely related concern. KFF reported that voters did not see health costs as a separate issue but rather as a primary driver of their personal financial strain and a significant factor in their overall perception of the economy [2].\n\nRegarding enrollee characteristics, KFF data documents that people with disabilities are disproportionately represented in Medicaid. Among non-elderly adults, 35% of Medicaid enrollees have a disability, compared to 11% of uninsured adults and 9% of adults with private coverage. For working-age adults enrolled in the program, the prevalence of chronic conditions is high: 43% have one or more chronic conditions, and 19% have three or more chronic conditions [3].\n\n## References\n1. KFF. “Small Wording Change on CDC Website Could Have Big Implications for Public Trust in Vaccines.” KFF.org, October 20, 2022.\n2. Hamel, L., Lopes, L., & Montero, A. “KFF Post-Election Health Tracking Poll: Voters’ Health Care Priorities and Views on the Future of Abortion Access.” KFF.org, November 29, 2022.\n3. KFF. “10 Things to Know About the Unwinding of the Medicaid Continuous Enrollment Provision.” KFF.org, March 8, 2023.",
+      "answer_b": "The organization is **KFF (KFF – the Kaiser Family Foundation)**, which runs the **Health Information and Trust Initiative** and produces the **“5 Key Facts”** Medicaid series.[5][6][8]\n\n1. In an October election-year Monitor brief, KFF highlighted that CDC had altered its vaccine-autism language from more direct statements that “vaccines do not cause autism” to softer wording emphasizing that studies “do not show a link” between vaccines and autism.[6][8] KFF argued that this shift from categorical language to more qualified phrasing could be interpreted as uncertainty and risked reinforcing doubts among already-hesitant audiences.[6][8]\n\n2. Analyzing post–November-election polling, KFF reported that voters continued to rank the **economy and inflation** as their top concern, but also saw **health care costs**—especially prescription drugs and out-of-pocket expenses—as tightly intertwined with economic stress.[6][8] KFF characterized health costs as a “core pocketbook issue,” not separate from economic anxiety, noting broad, bipartisan worry about affordability even among insured voters.[6][8]\n\n3. In its Medicaid “5 Key Facts” work, KFF reported that **people with disabilities are substantially more likely to be covered by Medicaid than those without disabilities**: roughly **half of non‑institutionalized adults with disabilities** have Medicaid coverage versus about **1 in 10 adults without disabilities**.[2][4] Among working‑age adult Medicaid enrollees, KFF found **over 3 in 4 (about 75–80%) have at least one chronic condition**, and **roughly 1 in 3 have three or more chronic conditions**, underscoring the program’s role for people with complex health needs.[2][4]\n\n## References\n[2] Paradise J. 10 Things to Know about Medicaid: Setting the Facts Straight. KFF.  \n[4] KFF. 5 Key Facts About Medicaid Coverage for People Ages 50 and Older.  \n[5] KFF. 5 Key Facts About Medicaid and Hospitals.  \n[6] KFF. The Monitor – Health Information and Trust Initiative.  \n[8] KFF. Health Information and Trust – topic hub and related polling/analysis.",
+      "duration_a_seconds": 16.2,
+      "duration_b_seconds": 9.8,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the relevant timeline and context (the 2024 CDC language change regarding 'studies do not show a link'), whereas Agent A hallucinated a 2022 event with a trivial and incorrect language change ('do not cause' to 'are not the cause'). Agent B also correctly retrieved the specific chronic condition statistics (3/4 and 1/3) requested in the Ground Truth, while Agent A provided significantly lower, incorrect figures. Agent B's formatting was also superior.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_gemini25_vs_pplsonar_244"
+}

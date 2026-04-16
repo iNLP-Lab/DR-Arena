@@ -1,0 +1,145 @@
+{
+  "id": "R2_deepseek-v3.2_Qwen3-235b-a22b_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_deepseek-v3.2_Qwen3-235b-a22b_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "deepseek-v3.2",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the Executive Director of the statewide emergency response organization in California that is administratively managed by the UCSF School of Pharmacy. In addition to providing the full name of this director, list the four specific medical centers or hospitals that currently host the organization's operational divisions.",
+    "Identify the official emergency service system dedicated to managing poison-related inquiries and treatment advice for the most populous state in the United States. Locate the specific section of their official website tailored for clinical practitioners. Provide the full name of this organization and the exact title of the navigational menu item or section header designated for this specific professional audience."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 836765,
+  "estimated_cost": 8.3676,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the Executive Director of the statewide emergency response organization in California that is administratively managed by the UCSF School of Pharmacy. In addition to providing the full name of this director, list the four specific medical centers or hospitals that currently host the organization's operational divisions.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Host Hospital 1: Zuckerberg San Francisco General Hospital (or SFGH)",
+        "Host Hospital 2: UC Davis Medical Center",
+        "Host Hospital 3: Valley Children’s Hospital",
+        "Host Hospital 4: UC San Diego Medical Center"
+      ],
+      "checklist_depth": [
+        "Target Entity: Stuart E. Heard (or current Executive Director)",
+        "Logic Proof: Correctly identifies the California Poison Control System (CPCS) based on the UCSF School of Pharmacy administration connection."
+      ],
+      "rationale": "The question uses Deep Logic by describing the organization via its administrative body (UCSF School of Pharmacy) rather than naming the 'California Poison Control System' directly. It requires Wide Aggregation by asking for the specific names of the four host hospitals, which requires traversing the organization's structural details.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The Executive Director of the California Poison Control System (CPCS)—the statewide emergency response organization for toxic exposures and poisonings that is administratively managed by the UCSF School of Pharmacy—is Robert G. Geller, MD [1][2]. The CPCS operates as a unified system with four regional divisions hosted at major medical centers across the state [1][3].\n\nThe four specific medical centers or hospitals currently hosting the CPCS operational divisions are:\n1.  **UC San Diego Health** – Hosts the San Diego Division, which serves San Diego, Imperial, and Riverside counties [1][3].\n2.  **UCSF Fresno** – Hosts the Fresno/Madera Division, serving California’s Central Valley, including Fresno, Madera, Kings, and Tulare counties [1][3].\n3.  **UC Davis Medical Center** – Hosts the Sacramento Division, covering a vast area from Sacramento north to the Oregon border [1][3].\n4.  **Children's Hospital Los Angeles** – Hosts the Los Angeles Division, providing service for Los Angeles, Orange, San Bernardino, Ventura, Santa Barbara, and San Luis Obispo counties [1][3].\n\nThe system is a critical public health resource, providing 24/7 free, expert advice via a single hotline (1-800-222-1222). Its administration through the UCSF School of Pharmacy ensures centralized management of its clinical, educational, and prevention services [1][2].\n\n## References\n[1] California Poison Control System. (n.d.). *About CPCS*. Retrieved October 27, 2023, from https://calpoison.org/about\n[2] UCSF School of Pharmacy. (n.d.). *California Poison Control System*. Retrieved October 27, 2023, from https://pharmacy.ucsf.edu/cpcs\n[3] California Poison Control System. (n.d.). *Contact Us / Centers*. Retrieved October 27, 2023, from https://calpoison.org/contact",
+      "answer_b": "The Executive Director of the California Poison Control System (CPCS), the statewide emergency response organization administratively managed by the UCSF School of Pharmacy, is Dr. David Olson [1]. As a key leader in public health toxicology, Dr. Olson oversees the system’s mission to provide immediate, evidence-based medical guidance for poison exposures across California. The CPCS operates through four regional divisions, each hosted at a separate academic medical center strategically positioned to serve different geographic areas of the state [2]. The division serving Northern California is based at the University of California, San Francisco Medical Center. The California Poison Control Center at San Diego, affiliated with UC San Diego Health, serves the southern coastal region. The California Poison Control Center at the University of California, Davis, partners with UC Davis Health to cover the northern and central parts of the state. Lastly, the California Poison Control Center at Los Angeles operates out of the Ronald Reagan UCLA Medical Center, serving residents in Los Angeles and surrounding counties [3]. These centers collaborate under the administrative umbrella of the UCSF School of Pharmacy, ensuring consistent protocols, training, and response standards across the state. Each center provides 24/7 access to toxicology specialists, including pharmacists, physicians, and nurses, supporting emergency departments, healthcare providers, and the public [4].\n\n## References  \n[1] https://pharmacy.ucsf.edu/pcs/staff  \n[2] https://cpcs.ucsf.edu/about-us  \n[3] https://www.capoison.org/  \n[4] https://calpoison.ucsd.edu/about-us/history-and-structure",
+      "duration_a_seconds": 19.8,
+      "duration_b_seconds": 16.1,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed significantly on both the Deep Logic (Entity Identity) and Wide Aggregation (Sub-point details). \n\n1. **Executive Director**: The correct entity is Stuart E. Heard. Agent A incorrectly identified Robert G. Geller (who is the Medical Director, not Executive Director). Agent B incorrectly identified Dr. David Olson (who is a Division Medical Director).\n\n2. **Host Hospitals**: The CPCS has four divisions hosted at: Zuckerberg San Francisco General Hospital (SF), UC Davis Medical Center (Sacramento), Valley Children's Hospital (Fresno), and UC San Diego Medical Center (San Diego). \n- **Agent A** missed the San Francisco division entirely and hallucinated a 'Los Angeles Division' at Children's Hospital Los Angeles (which does not currently exist).\n- **Agent B** missed the Fresno division entirely and hallucinated a 'Los Angeles' center at UCLA.\n\nWhile Agent A has superior formatting, the factual hallucinations regarding the operational divisions and the failure to identify the correct Executive Director make it impossible to declare a winner. Both provided outdated or fabricated structural information.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals"
+      ],
+      "question": "Identify the official emergency service system dedicated to managing poison-related inquiries and treatment advice for the most populous state in the United States. Locate the specific section of their official website tailored for clinical practitioners. Provide the full name of this organization and the exact title of the navigational menu item or section header designated for this specific professional audience.",
+      "word_limit_instruction": "Answer length: 50-100 words.",
+      "checklist_width": [
+        "Identified Section Title: 'Healthcare Professionals'",
+        "Context: Confirmed section is for clinical/medical practitioners"
+      ],
+      "checklist_depth": [
+        "Target Entity: California Poison Control System (CPCS)",
+        "Logic Proof: The most populous US state is California; the specific agency for poison control there is CPCS."
+      ],
+      "rationale": "The question uses deep reasoning by masking 'California' as 'the most populous state' and 'California Poison Control System' as 'official emergency service system...'. It requires wide navigation to locate a specific audience section ('Healthcare Professionals') within the target entity's web structure.",
+      "source_nodes": [
+        "Healthcare Professionals | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Healthcare Professionals | California Poison Control System",
+      "judge_max_limit": 280,
+      "answer_a": "The California Poison Control System (CPCS) is the dedicated emergency service for poison management in California. The section for clinical practitioners is titled \"For Medical Professionals\" and is a main navigation menu item on their website. This section provides toxicology management resources, consultation, and treatment guidelines specifically for healthcare providers [1][2].\n\n## References\n[1] California Poison Control System. (n.d.). *For Medical Professionals*. Retrieved from https://calpoison.org/medical-professionals\n[2] California Poison Control System. (n.d.). *Homepage*. Retrieved from https://calpoison.org/",
+      "answer_b": "The official emergency service for poison-related inquiries in California, the most populous U.S. state, is the California Poison Control System (CPCS). The section of their website designated for clinical practitioners is titled \"For Healthcare Professionals\" [1]. This portal provides medical management resources, treatment guidelines, and clinical consultation tools tailored to healthcare providers managing poisoning cases [2].\n\n## References  \n[1] https://www.calpoison.org/  \n[2] https://www.calpoison.org/healthcare-professionals",
+      "duration_a_seconds": 5.3,
+      "duration_b_seconds": 4.3,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the core entity (CPCS) based on the logic that California is the most populous state. However, Agent B wins decisively on the 'Wide' accuracy criteria. The prompt explicitly requested the 'exact title' of the section for clinical practitioners. Agent B correctly identified this as 'Healthcare Professionals' (matching the Ground Truth checklist and the actual URL slug). Agent A hallucinated the title 'For Medical Professionals' and provided a non-existent URL. Agent B provided the correct specific information requested.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_deepseekv_vs_Qwen3235b_565"
+}

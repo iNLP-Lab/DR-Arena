@@ -1,0 +1,207 @@
+{
+  "id": "R4_M2_o3-search_vs_grok-4-search_tree_0008",
+  "source_group": "round4",
+  "source_log": "round4/R4_M2_o3-search_vs_grok-4-search_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "o3-search",
+  "model_b": "grok-4-search",
+  "winner": "o3-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 3,
+  "type": null,
+  "tournament_round": 4,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the two major U.S. government health programs based on the following statistical profiles found in health policy literature: Program A serves 67 million people and accounts for 12 percent of the federal budget. Program B covers more than 15 million people with disabilities (representing roughly 1 in 3 people with disabilities). For Program A, specify its percentage share of national health spending. For Program B, report the approximate proportion of working-age adult enrollees who have one or more chronic conditions, as well as the number of beneficiaries with intellectual and developmental disabilities (I/DD) that it covers.",
+    "In the context of comparative health systems often discussed in introductory policy coursework, two foundational models are distinguished by their specific funding and delivery mechanisms. The first model is characterized by government ownership of healthcare facilities and financing through general taxation, treating healthcare as a public service. The second model relies on private providers and is financed through mandatory payroll deductions into non-profit 'sickness funds'. Identify these two specific health care models. Then, for each model, provide the full name of the historical figure for whom it is named, and cite one specific country located in either Asia or the Caribbean that currently operates primarily under that framework.",
+    "Consulting KFF (Kaiser Family Foundation) resources on health policy, distinguish between the two major public health programs described as follows: Program A is noted to provide coverage to over three million people with intellectual and developmental disabilities (I/DD), while Program B is reported to account for 12 percent of the federal budget. Once these programs are identified, provide the following data points based on recent reporting: For Program A, specify the proportion of working-age adult enrollees who have three or more chronic conditions, and detail the comparative coverage rates for people with disabilities versus those without disabilities. For Program B, state the total number of people served and the specific percentage of national health spending it represents."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 803823,
+  "estimated_cost": 8.0382,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Medicare"
+      ],
+      "question": "Identify the two major U.S. government health programs based on the following statistical profiles found in health policy literature: Program A serves 67 million people and accounts for 12 percent of the federal budget. Program B covers more than 15 million people with disabilities (representing roughly 1 in 3 people with disabilities). For Program A, specify its percentage share of national health spending. For Program B, report the approximate proportion of working-age adult enrollees who have one or more chronic conditions, as well as the number of beneficiaries with intellectual and developmental disabilities (I/DD) that it covers.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Program A (Medicare) share of national health spending: 21 percent",
+        "Program B (Medicaid) working-age adults with chronic conditions: Approximately three quarters (or 75%)",
+        "Program B (Medicaid) beneficiaries with I/DD: Over three million"
+      ],
+      "checklist_depth": [
+        "Identify Program A as Medicare (based on 67 million served/12% budget)",
+        "Identify Program B as Medicaid (based on 15 million disabled/1 in 3 coverage)"
+      ],
+      "rationale": "The question requires Deep Reasoning to map specific statistical 'fingerprints' (enrollment numbers and budget percentages) to the correct entities (Medicare and Medicaid) without them being named. It then requires Wide Aggregation to retrieve three distinct, unrelated facts (spending share, chronic condition prevalence, and I/DD counts) located in separate sections of the source text.",
+      "source_nodes": [
+        "Medicare - Research and Data from KFF",
+        "Medicaid - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Medicare This list of Frequently Asked Questions (FAQs) about the Medicare Open Enrollment period covers a range of topics related to enrollment, including Medicar",
+      "judge_max_limit": 300,
+      "answer_a": "Medicare (Program A) currently insures roughly 67 million older adults and younger people with disabilities and represents about 12 percent of total federal outlays [1]. It also accounts for roughly 21 percent of all national health spending [1]. These figures come from recent federal budget and health expenditure reports. Medicare spending totaled about $900 billion in 2021, while national health expenditures were approximately $4.3 trillion, yielding the 21 percent share [2].\n\nMedicaid (Program B) covers more than 15 million children, adults and seniors with disabilities—about one-third of all Americans with a disability [3]. Among Medicaid’s working-age adult enrollees, close to four-in-five (around 77 percent) live with at least one chronic health condition [4], and the program finances care for approximately 1.4 million beneficiaries who have intellectual and developmental disabilities (I/DD) [5]. Medicaid’s disability enrollment includes people who qualify through Supplemental Security Income or related pathways; the bulk of its chronic-condition burden is driven by diabetes, cardiovascular disease, mental illness, and substance use disorders. Medicaid’s long-term services and supports (LTSS) are the dominant payer for I/DD beneficiaries, covering both home- and community-based services (HCBS) and institutional care that private insurance rarely finances.\n\n## References  \n[1] Kaiser Family Foundation. “10 Things to Know About Medicare Spending and Financing.” Aug 2023.  \n[2] Kaiser Family Foundation. “An Overview of Medicare.” July 2023.  \n[3] Center on Budget and Policy Priorities. “Medicaid Works for People with Disabilities.” Feb 2023.  \n[4] Kaiser Family Foundation. “Medicaid’s Role for Adults with Chronic Conditions.” Apr 2021.  \n[5] Kaiser Family Foundation. “Medicaid Is a Lifeline for People with Intellectual and Developmental Disabilities.” Mar 2023.",
+      "answer_b": "Program A is Medicare, which serves approximately 67 million people, primarily older adults and some with disabilities, and accounts for about 12 percent of the federal budget [1]. It represents roughly 21 percent of national health spending, funding a significant portion of hospital care, physician services, and prescription drugs for enrollees [2].\n\nProgram B is Medicaid, a joint federal-state program that covers more than 15 million people with disabilities, equating to about one in three individuals with disabilities in the U.S. [3]. Among working-age adult enrollees in Medicaid, approximately 78 percent have one or more chronic conditions, such as diabetes, heart disease, or mental health disorders, highlighting the program's role in addressing complex health needs [4]. Additionally, Medicaid covers around 1.2 million beneficiaries with intellectual and developmental disabilities (I/DD), providing essential long-term services and supports like home and community-based care to promote independence and community integration [5].\n\nThese programs are cornerstones of U.S. health policy, with Medicare focusing on seniors and Medicaid emphasizing low-income and disabled populations. Together, they address gaps in private insurance and support vulnerable groups amid rising healthcare costs.\n\n## References\n[1] Kaiser Family Foundation (KFF). \"Medicare Enrollment Dashboard.\" 2023.  \n[2] Centers for Medicare & Medicaid Services (CMS). \"National Health Expenditure Data.\" 2022.  \n[3] Medicaid and CHIP Payment and Access Commission (MACPAC). \"People with Disabilities.\" 2023.  \n[4] KFF. \"Medicaid Enrollees with Chronic Conditions.\" 2022.  \n[5] Administration for Community Living (ACL). \"Medicaid Services for Individuals with I/DD.\" 2023.",
+      "duration_a_seconds": 53.1,
+      "duration_b_seconds": 26.6,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents correctly identified the programs (Medicare and Medicaid) and accurately reported the Medicare share of national health spending (21%) and the approximate rate of chronic conditions among working-age Medicaid enrollees. However, both agents significantly failed the specific data retrieval constraint regarding the number of Medicaid beneficiaries with Intellectual and Developmental Disabilities (I/DD). The Ground Truth specifies 'Over three million', whereas Agent A reported 1.4 million and Agent B reported 1.2 million. Both likely conflated total enrollment with the smaller subset of beneficiaries receiving specific Long-Term Services and Supports (LTSS). As both failed a major factual checklist item, this is a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction"
+      ],
+      "question": "In the context of comparative health systems often discussed in introductory policy coursework, two foundational models are distinguished by their specific funding and delivery mechanisms. The first model is characterized by government ownership of healthcare facilities and financing through general taxation, treating healthcare as a public service. The second model relies on private providers and is financed through mandatory payroll deductions into non-profit 'sickness funds'. Identify these two specific health care models. Then, for each model, provide the full name of the historical figure for whom it is named, and cite one specific country located in either Asia or the Caribbean that currently operates primarily under that framework.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Historical Figure for Model 1: William Beveridge",
+        "Non-European Example for Model 1: Cuba (Caribbean) or New Zealand (often accepted, though question specifies Asia/Caribbean implies Cuba is the target)",
+        "Historical Figure for Model 2: Otto von Bismarck",
+        "Non-European Example for Model 2: Japan (Asia) or South Korea (Asia)"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: The Beveridge Model (Logic: Government ownership + Tax financing)",
+        "Target Entity 2: The Bismarck Model (Logic: Private providers + Payroll/Sickness funds)"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the 'Beveridge' and 'Bismarck' models solely from their functional descriptions (funding/delivery structures). It then demands Wide Aggregation by requiring the retrieval of specific, scattered facts (historical namesakes and specific regional examples) for both identified entities.",
+      "source_nodes": [
+        "Health Policy 101 Introduction | KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 280,
+      "answer_a": "Beveridge Model – officially the National Health Service model conceived by British social reformer Sir William Henry Beveridge (1879-1963). Government owns or heavily controls hospitals and clinics, and care is paid for from general tax revenue, treating health as a public good. Cuba exemplifies this approach in the Caribbean: the Ministerio de Salud Pública operates virtually all medical facilities, financing them with nationwide taxation so that services are provided to citizens free at the point of delivery [1].\n\nBismarck Model – named for German Chancellor Prince Otto Eduard Leopold von Bismarck (1815-1898), who introduced compulsory social health insurance in the 1880s. Funding comes from obligatory payroll deductions shared by employers and employees into hundreds of non-profit “sickness funds”; providers are predominantly private and are reimbursed by those funds. Japan, in Asia, follows this template: its Statutory Health Insurance System requires every resident to enroll in one of over 3,400 employment-based or community-based funds, which pay private hospitals and physicians according to a uniform national fee schedule [2][3].\n\n## References  \n[1] Pan American Health Organization/World Health Organization. “Cuba: Health System Review.” Health Systems in Transition, 2018.  \n[2] The Commonwealth Fund. “International Health Care System Profiles: Japan.” Updated June 2020.  \n[3] Reid, T. R. “The Four Models of Health Care,” PBS Frontline, 2021.",
+      "answer_b": "The two foundational health care models discussed in comparative health systems are the Beveridge Model and the Bismarck Model[1].\n\nThe Beveridge Model features government ownership of healthcare facilities and financing through general taxation, treating healthcare as a public service akin to education or policing. It is named after William Beveridge, a British economist and social reformer who outlined the framework in his 1942 report on social insurance[2]. A specific country in the Caribbean that primarily operates under this model is Cuba, where the government provides universal, tax-funded healthcare through state-owned clinics and hospitals, emphasizing preventive care and achieving high health outcomes despite economic constraints[3].\n\nThe Bismarck Model relies on private providers and is financed through mandatory payroll deductions into non-profit sickness funds, often involving employer-employee contributions and regulated insurance plans. It is named after Otto von Bismarck, the German chancellor who introduced social insurance laws in the 1880s to unify the nation and counter socialist movements[4]. A specific country in Asia that primarily operates under this framework is Japan, where universal coverage is achieved via employment-based health insurance societies and national health insurance for the self-employed, with private hospitals dominating delivery and costs shared through premiums[5].\n\nThese models influence global health policy discussions, highlighting trade-offs between equity and efficiency.\n\n(Word count: 218)\n\n## References\n[1] World Health Organization. (2023). Health systems in transition: Comparative analysis. Retrieved from https://www.who.int/health-topics/health-systems  \n[2] Beveridge, W. (1942). Social Insurance and Allied Services. UK Government Report.  \n[3] Pan American Health Organization. (2022). Health in the Americas: Cuba profile. Retrieved from https://www.paho.org/en/health-americas  \n[4] Busse, R., et al. (2019). Bismarck vs. Beveridge: A comparison of health systems. Health Policy Journal.  \n[5] Ikegami, N. (2023). Japan's health care system: Lessons for universal coverage. New England Journal of Medicine.",
+      "duration_a_seconds": 28.9,
+      "duration_b_seconds": 21.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the models (Beveridge and Bismarck) and selected appropriate countries based on the geographic constraints (Cuba for Caribbean, Japan for Asia). However, Agent A followed the specific instruction to provide the 'full name' of the historical figures more rigorously (providing middle names and titles: 'Sir William Henry Beveridge' and 'Prince Otto Eduard Leopold von Bismarck') compared to Agent B's standard names. Additionally, Agent A's formatting—using bold terms at the start of paragraphs—makes the answer more scannable and user-friendly than Agent B's essay-style block text.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Other Health'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Other Health"
+      ],
+      "question": "Consulting KFF (Kaiser Family Foundation) resources on health policy, distinguish between the two major public health programs described as follows: Program A is noted to provide coverage to over three million people with intellectual and developmental disabilities (I/DD), while Program B is reported to account for 12 percent of the federal budget. Once these programs are identified, provide the following data points based on recent reporting: For Program A, specify the proportion of working-age adult enrollees who have three or more chronic conditions, and detail the comparative coverage rates for people with disabilities versus those without disabilities. For Program B, state the total number of people served and the specific percentage of national health spending it represents.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Program A (Medicaid) chronic condition stat: Nearly one-third of working-age adults have three or more chronic conditions.",
+        "Program A (Medicaid) disability coverage comparison: 35% (or 1 in 3) for people with disabilities vs 19% for those without.",
+        "Program B (Medicare) total enrollment: 67 million people.",
+        "Program B (Medicare) national health spending share: 21 percent."
+      ],
+      "checklist_depth": [
+        "Entity 1: Medicaid (Identified via the statistic of covering >3 million people with I/DD).",
+        "Entity 2: Medicare (Identified via the statistic of accounting for 12% of the federal budget)."
+      ],
+      "rationale": "The question utilizes specific statistical 'fingerprints' found in the source text (3 million I/DD coverage vs 12% federal budget) to force the agent to logically distinguish between Medicaid and Medicare without the prompt naming them (Deep). To answer fully, the agent must then aggregate disparate facts regarding demographics (chronic conditions, disability rates) and financing (enrollment numbers, national spending share) located in separate sections of the source material (Wide).",
+      "source_nodes": [
+        "Other Health - Research and Data from KFF",
+        "Medicaid - Research and Data from KFF",
+        "Medicare - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Filter List Grid 1 - 10 of 823 Results [Wide Logic - Target 1]: Home Topics Medicaid Eligibility, Enrollment, and Renewal Policies KFF's survey findings capture st",
+      "judge_max_limit": 330,
+      "answer_a": "Program A: Medicaid  \n• Scope: Medicaid covers “over three million people with intellectual and developmental disabilities (I/DD)” who rely on the program for health and long-term-services supports [1].  \n• Health profile: Among working-age (19-64) adult Medicaid enrollees, 17 percent have three or more chronic conditions, reflecting a far higher burden of illness than the privately-insured population [2].  \n• Coverage differential: Medicaid is the single largest source of insurance for non-elderly people with disabilities, covering 47 percent of that group compared with just 16 percent of non-elderly people without disabilities—a nearly three-to-one advantage in coverage likelihood [3].  \n\nProgram B: Medicare  \n• Fiscal footprint: Medicare consumes 12 percent of total federal spending and serves 65 million people (57 million older adults and 8 million younger people with disabilities) according to the most recent KFF “Medicare Primer” [4].  \n• Share of national health spending: Program outlays equaled 21 percent of all U.S. national health expenditures in 2021, underscoring its central role in the overall health-care economy [4].  \n\nTogether, the data highlight Medicaid’s outsized importance for Americans with disabilities—both in absolute enrollment and in addressing multiple chronic conditions—while Medicare’s broad senior-and-disability reach makes it one of the federal government’s costliest commitments and a fifth of all health spending nationwide.  \n\n## References  \n[1] KFF. “Medicaid and People with Intellectual or Developmental Disabilities.” Issue Brief, March 2023.  \n[2] KFF. “10 Things to Know About Medicaid: Setting the Facts Straight.” Updated April 2023.  \n[3] KFF. “Medicaid’s Role for People with Disabilities.” Fact Sheet, February 2023.  \n[4] KFF. “Medicare Primer: Key Facts About the Medicare Program and the People It Covers.” Updated July 2023.",
+      "answer_b": "Program A, which provides coverage to over three million people with intellectual and developmental disabilities (I/DD), is Medicaid, the joint federal-state program primarily serving low-income individuals, including those with disabilities[1]. Program B, accounting for 12 percent of the federal budget, is Medicare, the federal program offering health insurance mainly to people aged 65 and older, as well as younger individuals with disabilities or end-stage renal disease[2].\n\nFor Medicaid (Program A), recent KFF reporting indicates that 39 percent of working-age adult enrollees (ages 19-64) have three or more chronic conditions, reflecting the program's role in addressing complex health needs among vulnerable populations[3]. In terms of comparative coverage rates, Medicaid covers 42 percent of nonelderly adults with disabilities, compared to only 8 percent of nonelderly adults without disabilities, highlighting its disproportionate importance for those facing functional limitations or health challenges[4]. This disparity underscores Medicaid's function as a safety net, with enrollment often tied to eligibility criteria like income and disability status, enabling access to services such as long-term care and home- and community-based supports that are critical for the I/DD population[1][3].\n\nFor Medicare (Program B), it serves a total of 66 million people as of 2023, including approximately 58 million seniors and 8 million younger beneficiaries with disabilities[2][5]. Medicare represents 21 percent of national health spending, driven by expenditures on hospital care, physician services, and prescription drugs, though this share has remained relatively stable amid growing enrollment and rising costs[5]. These figures emphasize Medicare's scale and fiscal impact, with ongoing policy debates focusing on sustainability, such as through adjustments to benefits or financing mechanisms like payroll taxes and premiums[2]. Both programs are pivotal in the U.S. health landscape, with Medicaid emphasizing equity for low-income groups and Medicare focusing on age-based universality, though overlaps exist for dual-eligible beneficiaries[1][4].\n\n(Word count: 312)\n\n## References\n[1] KFF. (2023). Medicaid's Role in Covering People with Disabilities. Retrieved from https://www.kff.org/medicaid/issue-brief/medicaids-role-in-covering-people-with-disabilities/  \n[2] KFF. (2024). Medicare Spending and Financing: A Primer. Retrieved from https://www.kff.org/medicare/issue-brief/medicare-spending-and-financing-a-primer/  \n[3] KFF. (2022). Health and Health Coverage of Adults on Medicaid. Retrieved from https://www.kff.org/medicaid/issue-brief/health-and-health-coverage-of-adults-on-medicaid/  \n[4] KFF. (2023). 10 Things to Know About Medicaid. Retrieved from https://www.kff.org/medicaid/issue-brief/10-things-to-know-about-medicaid/  \n[5] KFF. (2024). Medicare at a Glance. Retrieved from https://www.kff.org/medicare/fact-sheet/medicare-at-a-glance-fact-sheet/",
+      "duration_a_seconds": 62.2,
+      "duration_b_seconds": 37.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the entities (Medicaid and Medicare) based on the provided clues. However, both agents struggled to match the specific statistics provided in the Ground Truth checklist, likely due to citing different KFF reports or years (e.g., Agent A cited 17% for chronic conditions while the Ground Truth specified 'nearly one-third'; Agent B cited 39%). \n\nAgent A wins primarily on **Presentation & Structure**. It used clear bold headers and bullet points (Markdown Mastery), making the data highly scannable and easy to digest. Agent B provided the information in dense, wall-of-text paragraphs, which is a poor user experience for data-heavy queries. Additionally, Agent A's statistic for Medicaid coverage of non-disabled adults (16%) was much closer to the Ground Truth (19%) than Agent B's figure (8%), which seemed significantly underestimated.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_o3search_vs_grok4sea_302"
+}

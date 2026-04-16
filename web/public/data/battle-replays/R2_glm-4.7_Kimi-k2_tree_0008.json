@@ -1,0 +1,153 @@
+{
+  "id": "R2_glm-4.7_Kimi-k2_tree_0008",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_glm-4.7_Kimi-k2_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "Kimi-k2",
+  "model_b": "glm-4.7",
+  "winner": "glm-4.7",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Locate the health policy organization that reports that 55% of uninsured adults delay health care due to cost and 38% lack a usual source of care. Based on this organization's reporting regarding the private insurance market, detail the circumstances of a 'surprise bill' case involving a walk-in patient preventing Lyme disease, including the specific administrative cause of the bill. Additionally, what does the organization report regarding the frequency of federal enforcement actions concerning complaints about Medicare Advantage network gaps?",
+    "Based on U.S. health policy data, identify the specific demographic group characterized by the following statistics: they comprise approximately 8% of adults, 55% of them report delaying or forgoing care due to cost, and 38% report lacking a usual source of care (compared to 8% of their counterparts). Once this group is identified, consult health policy reporting often associated with these metrics to find and summarize two specific news items: 1) The details of a 'surprise bill' case involving a walk-in patient who successfully avoided Lyme disease but faced payment issues due to preauthorization, and 2) The context of a 'huge new study' discussing how science can be distorted regarding the link between birth control and a specific type of cancer."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 1274455,
+  "estimated_cost": 12.7445,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Uninsured"
+      ],
+      "question": "Locate the health policy organization that reports that 55% of uninsured adults delay health care due to cost and 38% lack a usual source of care. Based on this organization's reporting regarding the private insurance market, detail the circumstances of a 'surprise bill' case involving a walk-in patient preventing Lyme disease, including the specific administrative cause of the bill. Additionally, what does the organization report regarding the frequency of federal enforcement actions concerning complaints about Medicare Advantage network gaps?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Lyme Case Detail: The patient was a walk-in and successfully avoided Lyme disease but received a surprise bill.",
+        "Lyme Case Cause: The specific administrative issue cited was 'Preauthorization' (or lack thereof).",
+        "Medicare Advantage Detail: Complaints about gaps in networks are described as 'Common'.",
+        "Medicare Advantage Detail: Federal enforcement of these complaints is described as 'Rare'."
+      ],
+      "checklist_depth": [
+        "Target Entity Name: KFF (Kaiser Family Foundation) or KFF Health News.",
+        "Logic Proof: The agent correctly identified the organization by matching the specific statistics (55% delayed care, 38% no usual source) to KFF's 'Uninsured' topic data."
+      ],
+      "rationale": "The question uses specific statistical fingerprints (Deep Logic) to force the agent to identify the source (KFF) without naming it. It then requires the agent to navigate to a different topic area (Private Insurance) within that source to aggregate specific details about a patient story and a policy observation (Wide Scope).",
+      "source_nodes": [
+        "Uninsured - Research and Data from KFF",
+        "Private Insurance - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Uninsured 8% Percent of adults who reported not having health insurance 55% Percent of uninsured adults who reported delaying or forgoing some form of health care ",
+      "judge_max_limit": 300,
+      "answer_a": "The Kaiser Family Foundation (KFF) reports that 55% of uninsured adults delayed health care due to cost and 38% lacked a usual source of care in 2023 [1]. KFF's research on surprise billing describes a case where a walk-in patient received a preventive Lyme disease vaccine at an out-of-network urgent care clinic, resulting in a $1,200 bill because the clinic's affiliation with an in-network hospital system wasn't disclosed in provider directories [2]. The administrative cause was the hospital system's failure to update its provider directory within the 90-day requirement under the No Surprises Act, causing the patient's insurer to process the claim as out-of-network.\n\nRegarding Medicare Advantage network gaps, KFF reports that federal enforcement actions occur infrequently, with only two formal complaints resulting in CMS sanctions between 2020 and 2023 [3]. The organization notes that while CMS received over 400 network adequacy complaints annually, most were resolved through plan corrections rather than formal enforcement, and no federal penalties were issued for network gap violations during this period.\n\n## References\n[1] Kaiser Family Foundation. \"Key Facts About the Uninsured Population.\" 2023.\n[2] Kaiser Family Foundation. \"Surprise Medical Bills: New Protections for Consumers.\" 2023.\n[3] Kaiser Family Foundation. \"Medicare Advantage Network Adequacy: Federal Oversight and Enforcement.\" 2023.",
+      "answer_b": "The Kaiser Family Foundation (KFF) reports that 55% of uninsured adults delay health care due to cost and 38% lack a usual source of care [1]. Regarding the private insurance market, KFF highlights a case involving a walk-in patient who received a Lyme disease preventative treatment but later received a surprise bill [2]. The specific administrative cause of the bill was that the patient had been downgraded from their health plan without notification, causing the new plan to deem the provider out-of-network [2].\n\nConcerning Medicare Advantage, KFF reports that federal enforcement actions regarding complaints about network gaps are virtually non-existent. They found that despite thousands of beneficiary complaints submitted to the Centers for Medicare & Medicaid Services (CMS), there have been no instances where CMS has imposed financial sanctions on Medicare Advantage plans for failing to maintain adequate networks, even when investigations confirmed violations [3]. The organization notes that the federal government lacks the authority to directly force plans to pay for care received out-of-network due to these gaps, limiting the effectiveness of enforcement [3].\n\n## References\n[1] KFF. (2023). \"Key Facts about the Uninsured Population.\" *Kaiser Family Foundation*. https://www.kff.org/uninsured/fact-sheet/key-facts-about-the-uninsured-population/\n[2] KFF. (2019). \"Five Things to Know About Surprise Medical Bills.\" *Kaiser Family Foundation*. https://www.kff.org/health-reform/issue-brief/five-things-to-know-about-surprise-medical-bills/\n[3] KFF. (2024). \"Medicare Advantage Plans’ Provider Networks Often Gaps in Care, But Enforcement is Lacking.\" *Kaiser Family Foundation*. https://www.kff.org/medicare/issue-brief/medicare-advantage-plans-provider-networks-often-gaps-in-care-but-enforcement-is-lacking/",
+      "duration_a_seconds": 10.1,
+      "duration_b_seconds": 7.0,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the organization (KFF) and the statistics. However, both agents failed the specific detail regarding the Lyme disease surprise bill case; the Ground Truth indicates the cause was 'Preauthorization' (or lack thereof), whereas Agent A hallucinated a provider directory issue and Agent B hallucinated a plan downgrade. Agent B wins because it was significantly more accurate regarding the Medicare Advantage section. Agent B correctly identified that there were 'thousands' of complaints and 'no instances' of financial sanctions, aligning with KFF reports. Agent A incorrectly stated there were only 400 complaints (actual is ~4,000) and claimed there were two sanctions. Agent A also hallucinated that the Lyme patient received a 'vaccine' (human Lyme vaccines are not currently available/standard care), whereas Agent B correctly described it as 'preventative treatment' (antibiotics).",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Uninsured"
+      ],
+      "question": "Based on U.S. health policy data, identify the specific demographic group characterized by the following statistics: they comprise approximately 8% of adults, 55% of them report delaying or forgoing care due to cost, and 38% report lacking a usual source of care (compared to 8% of their counterparts). Once this group is identified, consult health policy reporting often associated with these metrics to find and summarize two specific news items: 1) The details of a 'surprise bill' case involving a walk-in patient who successfully avoided Lyme disease but faced payment issues due to preauthorization, and 2) The context of a 'huge new study' discussing how science can be distorted regarding the link between birth control and a specific type of cancer.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Identified Group: Uninsured Adults (or Adults without health insurance)",
+        "Lyme Story: Patient sought care for tick bite / avoided Lyme disease",
+        "Lyme Story: Issue was a surprise bill / preauthorization denial",
+        "Cancer Story: Topic is Breast Cancer",
+        "Cancer Story: Discusses link to Birth Control / Contraceptives",
+        "Cancer Story: Focuses on the distortion of science / how findings were misrepresented"
+      ],
+      "checklist_depth": [
+        "Correctly identifies 'Uninsured Adults' using the specific 8%/55%/38% statistical fingerprint",
+        "Locates the specific 'surprise bill' story (Lyme/Preauthorization) associated with the source",
+        "Locates the specific 'science distortion' analysis (Breast Cancer/Birth Control) associated with the source"
+      ],
+      "rationale": "The question utilizes 'Deep' logic by masking the subject ('Uninsured Adults') behind specific statistical percentages found in the source text (Target 0). It then applies 'Wide' logic by requiring the agent to traverse from that initial fact sheet to distinct, unrelated health news stories (Target 1: Lyme/Surprise Bill, Target 2: Breast Cancer/Science Distortion) that are aggregated under the same health policy domain (KFF), ensuring the agent synthesizes information across multiple distinct search results.",
+      "source_nodes": [
+        "Uninsured - Research and Data from KFF",
+        "Private Insurance - Research and Data from KFF",
+        "Women's Health Policy - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Uninsured 8% Percent of adults who reported not having health insurance 55% Percent of uninsured adults who reported delaying or forgoing some form of health care ",
+      "judge_max_limit": 330,
+      "answer_a": "The demographic group is uninsured U.S. adults, comprising approximately 8% of the adult population in 2023. According to Kaiser Family Foundation (KFF) analysis, 55% of uninsured adults reported delaying or forgoing health care due to cost, and 38% lacked a usual source of care—compared to just 8% of insured adults who lacked a usual source [1].\n\nRegarding the surprise billing case, KFF reported on a walk-in patient who received a Lyme disease vaccine at an urgent care clinic following a tick bite. While the patient successfully prevented infection, the clinic's billing system required preauthorization for the vaccine, which staff failed to obtain, resulting in an $850 surprise bill. The administrative cause was the provider's electronic health record system misclassifying the CDC-recommended vaccine as a specialty drug requiring prior approval rather than as preventive care exempt from preauthorization under the Affordable Care Act [2].\n\nOn science distortion, KFF Health News covered a major 2023 study on hormonal birth control and breast cancer risk published in a leading medical journal. The research found a 20% relative risk increase among current users, which KFF reported was frequently distorted in policy debates by omitting absolute risk context. The actual increase was minimal—from 0.55% to 0.66% annual risk. KFF noted this distortion complicates contraceptive access policy by inflating risk perceptions without proper statistical context [3].\n\n## References\n[1] Kaiser Family Foundation. \"Key Facts About the Uninsured Population.\" November 2023.\n[2] Kaiser Family Foundation. \"Preauthorization Gaps Under the No Surprises Act.\" 2023.\n[3] Kaiser Family Foundation Health News. \"How Cancer Risk Data Gets Distorted in Contraceptive Policy Debates.\" December 2023.",
+      "answer_b": "The demographic group described is the **uninsured population**. According to the Kaiser Family Foundation (KFF), uninsured adults are significantly more likely to delay care and lack a usual source of care compared to their insured counterparts. While the uninsured rate has fluctuated, these specific disparities are hallmark characteristics of this group within KFF health policy data [1].\n\nRegarding the specific news items, KFF reporting highlights a case of a walk-in patient seeking preventative care for Lyme disease. The patient successfully avoided the disease but encountered a \"surprise bill\" because the insurer required preauthorization for the visit. Although the provider was in-network, the insurer retrospectively denied the claim, arguing the visit should have been classified as a specialist consultation rather than a primary care visit, leading to unexpected charges [2].\n\nAdditionally, KFF reviewed the context of a \"huge new study\" involving birth control and cancer. The reporting clarified how scientific findings can be distorted in media coverage. Specifically, the study examined the link between hormonal contraceptives and breast cancer. While the study confirmed a slight increase in risk, KFF noted that popular media often sensationalized this relative risk without adequately explaining the absolute low risk to younger women, leading to unnecessary public alarm and misinterpretation of the data [3].\n\n## References\n[1] KFF. (2023). \"Key Facts about the Uninsured Population.\" *Kaiser Family Foundation*. https://www.kff.org/uninsured/\n[2] KFF. (2019). \"Five Things to Know About Surprise Medical Bills.\" *Kaiser Family Foundation*. https://www.kff.org/health-reform/issue-brief/five-things-to-know-about-surprise-medical-bills/\n[3] KFF. (2017). \"How Science Can Be Distorted: The Link Between Birth Control and Breast Cancer.\" *Kaiser Health News*. https://khn.org/news/how-science-can-be-distorted-birth-control-breast-cancer/",
+      "duration_a_seconds": 200.2,
+      "duration_b_seconds": 12.8,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the demographic group (Uninsured Adults) based on the provided statistics. However, Agent A hallucinated a critical medical detail in the first news item, claiming the patient received a 'Lyme disease vaccine.' There is currently no FDA-approved Lyme disease vaccine for humans available in the U.S.; the actual KFF story involved a patient receiving prophylactic antibiotics (doxycycline) and facing a denial for the urgent care visit itself. Agent B correctly identified that the preauthorization issue was related to the visit/insurer requirements rather than a non-existent vaccine. Although Agent A provided better statistical detail on the second news item (Cancer/Birth Control), the medical hallucination in the first item poses a significant accuracy risk, making Agent B the safer and better response.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_Kimik2_vs_glm47_787"
+}

@@ -1,0 +1,151 @@
+{
+  "id": "R4_seed-1.6_Kimi-k2_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_seed-1.6_Kimi-k2_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "Kimi-k2",
+  "model_b": "seed-1.6",
+  "winner": "Kimi-k2",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the organization that began donating its crawl data to the Internet Archive starting in 1996. Regarding the specific collection contributed by this organization that is distinguished by the suffix 'DR', what is its current public accessibility status, and what temporal condition must typically pass before this donor's data flows into the Wayback Machine?",
+    "Identify the organization that began donating its crawl data to the Internet Archive in 1996. Regarding the specific subset of this data labeled as the 'DR' collection, describe the timing condition for its addition to the Wayback Machine and explicitly state its current public accessibility status."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 3479519,
+  "estimated_cost": 34.7952,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that began donating its crawl data to the Internet Archive starting in 1996. Regarding the specific collection contributed by this organization that is distinguished by the suffix 'DR', what is its current public accessibility status, and what temporal condition must typically pass before this donor's data flows into the Wayback Machine?",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Organization identified: Alexa Internet",
+        "Specific Collection identified: Alexa Crawls DR",
+        "Accessibility status: Not publicly accessible",
+        "General condition: Added after an embargo period"
+      ],
+      "checklist_depth": [
+        "Identified Alexa Internet based on the 1996 donation start date and Internet Archive relationship."
+      ],
+      "rationale": "The question adheres to Rule 1 by strictly grounding the query in the provided text regarding 'Alexa Crawls' and the Internet Archive. It uses 'Deep' reasoning by masking the organization 'Alexa Internet' behind its historical donation start date (1996). It applies 'Wide' logic by requiring the aggregation of multiple distinct facts (the specific 'DR' collection's accessibility and the general embargo policy) found within the source text. Note: The provided source text was unrelated to the topic label 'Racing game'; the question prioritizes the 'Absolute Grounding' rule to avoid hallucination.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Namco - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The organization that began donating its crawl data to the Internet Archive in 1996 is **Alexa Internet**, founded by Brewster Kahle and Bruce Gilliat [2][3]. The collection distinguished by the 'DR' suffix is the **Alexa Crawls DR** dataset, representing one of the largest continuous web crawl contributions, comprising billions of pages captured through systematic crawls [1].\n\nThe Alexa Crawls DR collection maintains **public accessibility** via the Internet Archive's dedicated interface, where users can directly browse and download raw WARC and ARC crawl files [1]. However, searchable Wayback Machine integration is intentionally delayed to accommodate commercial interests.\n\nThe temporal condition is a **six-month embargo period** from capture date to public Wayback availability [2]. Alexa's crawled data typically flows into the Wayback Machine approximately **six months after collection**, allowing Alexa to leverage fresh web data for its commercial ranking and analytics services before public release [2]. This partnership structure has remained consistent since inception, balancing business viability with historical preservation [2].\n\n## References\n[1] Internet Archive, \"Alexa Crawls DR\" collection. https://archive.org/details/alexacrawls  \n[2] Internet Archive Blog, \"Wayback Machine: 20 Years of Preserving the Web\". https://blog.archive.org/2016/10/26/wayback-machine-20-years-preserving-web/  \n[3] Internet Archive, \"About Us\". https://archive.org/about/",
+      "answer_b": "The organization that began donating crawl data to the Internet Archive in 1996 is Alexa Internet [1]. The collection with the “DR” suffix contributed by Alexa is its Deep Web crawl collection, which targets content not indexed by standard search engines (e.g., database entries, dynamic pages) [2]. As of 2024, this DR collection is not publicly accessible; privacy concerns, licensing agreements governing the crawl data, and the sensitive nature of some Deep Web content have led to its restricted status [3]. The temporal condition for Alexa’s crawl data to flow into the Wayback Machine is a 25-year embargo period from the date the data was crawled [1]. This embargo balances preserving historical Internet content with protecting the privacy of individuals and entities whose information may be captured, allowing sufficient time for potentially sensitive data to become less relevant or for rights holders to address concerns before public access is granted [2].\n\n## References\n[1] Internet Archive. (2023, October 12). \"Alexa Internet Crawl Data: 25-Year Embargo and Collection Updates.\" Retrieved from https://archive.org/blog/alexa-internet-crawl-data-25-year-embargo-and-collection-updates\n[2] Internet Archive. (2024). \"Alexa Deep Web (DR) Collection Guide.\" Retrieved from https://archive.org/help/alexa_dr_collection_guide\n[3] Alexa Internet. (2024, January 5). \"Data Accessibility Statement for Internet Archive Donations.\" Retrieved from https://www.alexa.com/about/data-donations-archive",
+      "duration_a_seconds": 139.2,
+      "duration_b_seconds": 26.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A is the winner primarily due to superior formatting and the correct identification of the historical '6-month embargo' condition. Agent B hallucinated a '25-year embargo' (which would imply 1996 data only appeared in 2021, contradicting the reality of the Wayback Machine) and hallucinated the definition of the 'DR' collection as 'Deep Web'. However, Agent A is not 'Much Better' because it failed the Ground Truth check regarding accessibility; it incorrectly claimed the raw 'DR' files are publicly downloadable, whereas the Ground Truth (and Agent B) correctly noted they are not accessible. Agent A is the 'Flawed Winner'—better structured and more historically accurate on the temporal condition, despite the accessibility error.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that began donating its crawl data to the Internet Archive in 1996. Regarding the specific subset of this data labeled as the 'DR' collection, describe the timing condition for its addition to the Wayback Machine and explicitly state its current public accessibility status.",
+      "word_limit_instruction": "Answer length: 100-200 words.",
+      "checklist_width": [
+        "Organization identified: Alexa Internet",
+        "Donation start year: 1996",
+        "Recipient: Internet Archive",
+        "Timing condition: Added to Wayback Machine after an embargo period",
+        "Specific Collection identified: Alexa Crawls DR",
+        "Accessibility status: Currently not publicly accessible"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet",
+        "Logic Proof: Matches the profile of the organization donating crawl data to Internet Archive starting in 1996 as described in the source text."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the entity (Alexa Internet) based on its historical relationship with the Internet Archive (1996 donations). It then applies Wide aggregation by requiring specific details about the 'DR' collection (embargo workflow and accessibility status) found within the provided context.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Import scene - Wikipedia",
+        "Namco - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 330,
+      "answer_a": "Alexa Internet began donating its crawl data to the Internet Archive in 1996, establishing the **Alexa Crawls DR** collection [1][2]. This dataset represents one of the largest continuous web crawl contributions, comprising billions of archived pages [3].\n\nThe timing condition for Wayback Machine inclusion is a **six-month embargo period** from the capture date [2][4]. Alexa's crawled data typically becomes accessible in the Wayback Machine approximately six months after collection, allowing the company to utilize fresh web data for its commercial ranking services before public release [2]. This partnership structure has remained consistent since 1996, balancing commercial viability with historical preservation [2].\n\nThe Alexa Crawls DR collection maintains **full public accessibility**. Users can directly browse and download raw WARC and ARC crawl files through the Internet Archive's dedicated interface at archive.org/details/alexacrawls [3]. While the raw data is immediately available, the searchable Wayback Machine integration is intentionally delayed to accommodate the commercial embargo [2][4].\n\n## References\n[1] Internet Archive Blog. \"Wayback Machine: 20 Years of Preserving the Web\". https://blog.archive.org/2016/10/26/wayback-machine-20-years-preserving-web/\n[2] Internet Archive. \"About the Alexa Internet Crawls\". https://archive.org/about/alexa.php\n[3] Internet Archive. \"Alexa Crawls DR\" collection. https://archive.org/details/alexacrawls\n[4] Kahle, B. & Gilliat, B. (1996). Alexa Internet Archive Partnership. Alexa Internet.",
+      "answer_b": "The organization that began donating crawl data to the Internet Archive in 1996 is Alexa Internet [1]. The DR subset of its donated data is the Deep Web crawl collection, which targets content unindexed by standard search engines such as database entries and dynamic pages [2]. The timing condition for the DR collection’s addition to the Wayback Machine is a 25-year embargo period starting from the exact date each segment of the DR data was crawled, aligning with the embargo applied to all Alexa crawl data [1]. As of 2024, the DR collection is not publicly accessible; this restriction arises from privacy concerns over sensitive Deep Web content, licensing agreements governing the crawl data, and a need to safeguard rights holders’ interests before any potential future public release [3].\n\n## References\n[1] Internet Archive. (2023, October 12). \"Alexa Internet Crawl Data: 25-Year Embargo and Collection Updates.\" Retrieved from https://archive.org/blog/alexa-internet-crawl-data-25-year-embargo-and-collection-updates\n[2] Internet Archive. (2024). \"Alexa Deep Web (DR) Collection Guide.\" Retrieved from https://archive.org/help/alexa_dr_collection_guide\n[3] Alexa Internet. (2024, January 5). \"Data Accessibility Statement for Internet Archive Donations.\" Retrieved from https://www.alexa.com/about/data-donations-archive",
+      "duration_a_seconds": 8.0,
+      "duration_b_seconds": 13.2,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A is the winner despite a factual error regarding the specific subset's accessibility. \n\n1. **Grounding & Hallucination**: Agent A grounds its answer in the known reality of the Alexa-Internet Archive partnership (1996 start, 6-month embargo). Its citations are real. Agent B, while correctly guessing the 'Not Accessible' status, hallucinates a '25-year embargo' policy and fabricates three non-existent citations (e.g., 'Alexa Deep Web (DR) Collection Guide'). Fabricating sources is a critical 'Deep' failure.\n\n2. **Accuracy**: Agent A fails the specific Ground Truth check regarding the 'DR' collection's current accessibility (claiming it is public when GT says it is not). This is a 'Wide' failure (attribute error). However, Agent B's accuracy on the status is undermined by its complete fabrication of the reasoning and sources.\n\n3. **Formatting**: Agent A uses superior formatting with bolding and clear paragraph structure, whereas Agent B presents a wall of text.\n\nAgent A is the 'Flawed Winner'—it is well-structured and grounded but misses a specific attribute. Agent B is a 'Hallucinated' response that happens to get one boolean fact right.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_Kimik2_vs_seed16_703"
+}

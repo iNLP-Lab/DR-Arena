@@ -1,0 +1,288 @@
+{
+  "id": "R2_claude-opus-4.6-search_vs_gemini-3.1-pro-grounding_tree_0010",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_claude-opus-4.6-search_vs_gemini-3.1-pro-grounding_tree_0010.log",
+  "tree_id": "tree_0010",
+  "tree_title": "Understanding Legal Services: A Comprehensive Guide",
+  "tree_topic": "Law & Government > Legal",
+  "tree_subtopic": "Legal Services",
+  "tree_crawled_at": "2025-11-21T13:55:25.326124",
+  "tree_url": "https://www.finduslawyers.org/understanding-legal-services-a-comprehensive-guide/",
+  "model_a": "claude-opus-4.6-search",
+  "model_b": "gemini-3.1-pro-grounding",
+  "winner": "claude-opus-4.6-search",
+  "final_score_a": 3.0,
+  "final_score_b": 1.0,
+  "total_rounds": 4,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Understanding Legal Services: A Comprehensive Guide",
+  "questions": [
+    "Insufficient data provided to generate a Deep & Wide search evaluation query. The Hidden Knowledge section does not contain any Reasoning Chain or Target Answers to ground the question.",
+    "Insufficient hidden knowledge provided to generate a grounded Deep & Wide search query.",
+    "In comprehensive guides designed to help the public understand legal services, three foundational components are typically addressed to provide a well-rounded overview: (1) the main categories of legal services available, (2) the primary types of legal professionals who deliver those services, and (3) the common fee structures clients may encounter. Identify these three components and, for each one, explain the key subtypes or examples commonly discussed in authoritative public resources. How do these components collectively help individuals make informed decisions when seeking legal assistance?",
+    "Comprehensive guides to legal services often distinguish between three major practice areas that serve very different client needs: one that represents individuals accused of crimes, one that handles disputes and arrangements within families, and one that advises businesses on regulatory compliance and commercial operations. Identify these three categories of legal services and compare them by explaining (1) the primary types of cases each typically handles, (2) the typical clients they represent, and (3) the kinds of legal procedures or documents most commonly involved in each area."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 5,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 5,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 3,
+      "depth": 5,
+      "width": 4,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 2.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 4,
+      "depth": 5,
+      "width": 5,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "NONE",
+  "total_tokens": 217898,
+  "estimated_cost": 2.179,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 5,
+      "width": 2,
+      "logic_chain": [
+        "Understanding Legal Services: A Comprehensive Guide",
+        "Divorce & Family Law",
+        "Lawyers Directory",
+        "Bankruptcy & Debt",
+        "Ware Law Firm, PLLC"
+      ],
+      "question": "Insufficient data provided to generate a Deep & Wide search evaluation query. The Hidden Knowledge section does not contain any Reasoning Chain or Target Answers to ground the question.",
+      "word_limit_instruction": "Answer length: 260-360 words.",
+      "checklist_width": [],
+      "checklist_depth": [],
+      "rationale": "The task requires strict grounding in the provided Hidden Knowledge (Reasoning Chain and Target Answers). Since no entities, facts, or logical conditions were supplied, generating a compliant Deep & Wide query would require fabricating information, which violates the ABSOLUTE GROUNDING rule.",
+      "source_nodes": [
+        "Ware Law Firm, PLLC - Find US Lawyers",
+        "Lawyers Directory - Find US Lawyers"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 360,
+      "answer_a": "The question as stated does not contain a specific research query but rather a meta-statement about insufficient data for generating a search evaluation query. This indicates a system-level error or placeholder message rather than an actual question requiring research. Nevertheless, this situation can be addressed constructively.\n\nIn information retrieval and search evaluation frameworks, a \"Deep & Wide\" search evaluation query requires several foundational components to function properly [1]. The \"Deep\" component refers to the depth of reasoning required—typically a multi-step reasoning chain that connects an initial premise to a final conclusion through intermediate logical steps [2]. The \"Wide\" component refers to the breadth of knowledge domains that must be consulted to arrive at a comprehensive answer. Together, these elements ensure that search systems are tested on both specificity and coverage.\n\nA \"Hidden Knowledge\" section in such frameworks typically contains the reasoning chain (the logical sequence of steps leading to an answer) and target answers (the verified correct responses against which system outputs are evaluated) [3]. Without these grounding elements, it becomes impossible to construct a meaningful evaluation query because there is no benchmark against which to measure the quality or accuracy of search results [4].\n\nThis type of structured evaluation is commonly used in benchmarking large language models and retrieval-augmented generation (RAG) systems. Frameworks such as RAGAS, TruLens, and DeepEval all rely on ground-truth reasoning chains and target answers to assess faithfulness, relevance, and correctness of generated responses [5]. When these foundational data points are missing, the evaluation pipeline cannot proceed, resulting in the error message observed here.\n\nTo resolve this issue, one would need to provide: (1) a concrete factual question, (2) an expected reasoning chain with intermediate steps, and (3) one or more verified target answers. These elements collectively enable the system to generate a properly grounded Deep & Wide search evaluation query that can meaningfully test a search system's capabilities across multiple dimensions of knowledge retrieval and logical reasoning [6].\n\n## References\n1. Manning, C.D., Raghavan, P., & Schütze, H. \"Introduction to Information Retrieval.\" Cambridge University Press, 2008.\n2. NIST TREC Evaluation Framework – https://trec.nist.gov/\n3. \"Benchmarking Retrieval-Augmented Generation\" – arXiv, 2024. https://arxiv.org/abs/2309.15217\n4. Voorhees, E.M. \"The Philosophy of Information Retrieval Evaluation.\" CLEF 2001 Workshop.\n5. RAGAS Documentation – https://docs.ragas.io/\n6. DeepEval Framework – https://docs.confident-ai.com/",
+      "answer_b": "Deep and Wide search evaluation queries are specialized tools used in the assessment of Information Retrieval (IR) systems, Retrieval-Augmented Generation (RAG) pipelines, and Large Language Model (LLM) architectures. These evaluation frameworks require comprehensive datasets designed to test both the breadth (\"Wide\") and the depth (\"Deep\") of an AI system's ability to fetch, synthesize, and reason over complex information [1]. \n\nTo effectively generate and evaluate such queries, specific structural components must be present within the testing dataset. The \"Hidden Knowledge\" section functions as the ground truth or the closed-book corpus that an evaluator uses to verify the model's output [2]. When an evaluation system reports \"insufficient data provided to generate a Deep & Wide search evaluation query,\" it indicates a structural failure in the prompt or dataset pipeline where the requisite context has been omitted [1].\n\nFor a rigorous evaluation to proceed, the Hidden Knowledge section must contain two critical elements. First, it requires a \"Reasoning Chain\" (or Chain-of-Thought pathway), which maps out the exact logical steps necessary to arrive at the correct conclusion from the provided premise [3]. This allows the evaluating framework to score not just the final output, but the intermediate cognitive or computational steps the model took to get there. Second, it must include \"Target Answers,\" which serve as the definitive benchmark against which the model's generated response is measured [3]. Without Target Answers, automated evaluation metrics—such as ROUGE, BLEU, or LLM-as-a-judge scoring protocols—cannot compute accuracy, recall, or precision [2].\n\nIn automated pipeline generation, if the scraper or dataset generator fails to extract the underlying text corpus, it triggers this specific error state. To resolve this, pipeline engineers must ensure that the source document ingestion phase correctly populates the database with multi-hop reasoning pathways and explicitly defined golden answers. Rectifying this data scarcity ensures the synthetic generation of evaluation questions can proceed, thereby enabling a robust assessment of the AI system's deep semantic retrieval and wide domain generalization capabilities [3].\n\n## References\n\n[1] Kamalloo, E., Dziri, N., Clarke, C. L., & Rafiei, D. (2023). Evaluating retrieval-augmented large language models. *arXiv preprint arXiv:2305.03153*.\n[2] Es, S., James, J., Espinosa-Anke, L., & Schockaert, S. (2023). RAGAS: Automated Evaluation of Retrieval Augmented Generation. *arXiv preprint arXiv:2309.15217*.\n[3] Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., ... & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. *Advances in Neural Information Processing Systems*, 35, 24824-24837.",
+      "duration_a_seconds": 16.0,
+      "duration_b_seconds": 23.6,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "First, Deep Logic: Both agents correctly recognized that the query is a meta-level error about missing grounding data rather than a substantive research question. Neither hallucinated a concrete entity or fabricated a specific evaluation query. So both pass the core logic check.\n\nNext, Width/Completeness: Both explain what a Deep & Wide evaluation requires (reasoning chains + target answers) and why missing Hidden Knowledge prevents evaluation. Agent A provides slightly more references (6 vs 3) and names multiple frameworks, but some citations feel generic and not tightly integrated into the explanation. Agent B, while citing fewer sources, more clearly connects reasoning chains, target answers, evaluation metrics (ROUGE, BLEU, LLM-as-judge), and pipeline failure modes in a cohesive way.\n\nUser Utility & Presentation: Neither response is highly structured (both are largely paragraph-based), but Agent B is more concise, logically sequenced, and directly explains the failure state and remediation steps in a way that feels more actionable. Agent A includes a numbered list near the end, which helps, but the earlier sections are more diffuse and slightly repetitive. Agent B maintains tighter conceptual flow and better integrates technical terminology with practical implications.\n\nSince both are factually sound and complete, the decision hinges on clarity, cohesion, and user experience. Agent B provides a cleaner, more focused explanation with stronger linkage between problem, evaluation mechanics, and resolution.\n\nTherefore, Agent B wins on overall usability and coherence, with no major factual failures from Agent A.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Crawler returned 0 new nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 5,
+      "width": 3,
+      "logic_chain": [
+        "Understanding Legal Services: A Comprehensive Guide",
+        "Divorce & Family Law",
+        "Lawyers Directory",
+        "Bankruptcy & Debt",
+        "Ware Law Firm, PLLC"
+      ],
+      "question": "Insufficient hidden knowledge provided to generate a grounded Deep & Wide search query.",
+      "word_limit_instruction": "Answer length: 290-390 words.",
+      "checklist_width": [
+        "No target details available from hidden knowledge."
+      ],
+      "checklist_depth": [
+        "No target entities or reasoning chain provided in hidden knowledge."
+      ],
+      "rationale": "The Hidden Knowledge section does not contain any reasoning chain or target entities. Because the instructions strictly prohibit fabricating entities or ignoring the provided source material, it is not possible to construct a grounded Deep & Wide query without hallucinating information. Therefore, a valid evaluation query cannot be generated.",
+      "source_nodes": [
+        "Ware Law Firm, PLLC - Find US Lawyers",
+        "Lawyers Directory - Find US Lawyers",
+        "Scheer Law Group, LLP - Find US Lawyers"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]:  [Wide Logic - Target 2]: ",
+      "judge_max_limit": 390,
+      "answer_a": "The message \"Insufficient hidden knowledge provided to generate a grounded Deep & Wide search query\" is a system-level diagnostic indicating that the structured evaluation framework lacks the necessary foundational data—specifically a reasoning chain and verified target answers—to produce a meaningful search evaluation query. This is not a research question but rather a pipeline error that occurs in advanced search evaluation and retrieval-augmented generation (RAG) benchmarking systems.\n\nIn modern search evaluation methodologies, \"Deep & Wide\" queries are designed to stress-test retrieval systems across two dimensions. The \"Deep\" axis measures multi-hop reasoning capability—whether a system can connect disparate pieces of information through a logical chain of intermediate steps to arrive at a correct conclusion [1]. The \"Wide\" axis evaluates cross-domain coverage, ensuring the system can pull relevant information from multiple knowledge areas simultaneously [2]. Both dimensions require pre-defined ground-truth data to function as benchmarks.\n\n\"Hidden knowledge\" in this context refers to the curated dataset containing the expected reasoning chain (step-by-step logical path) and target answers (verified correct responses) that serve as evaluation anchors [3]. Without these elements, no meaningful comparison between system output and expected output can occur, rendering the evaluation query ungrounded. This is analogous to administering an exam without an answer key—there is no standard against which to measure performance.\n\nContemporary RAG evaluation frameworks such as RAGAS, DeepEval, and ARES all depend on these grounding components. RAGAS uses ground-truth answers to compute metrics like faithfulness, answer relevancy, and context precision [4]. DeepEval employs similar reference-based scoring for hallucination detection and correctness assessment [5]. ARES automates evaluation using prediction-powered inference but still requires an initial annotated dataset for calibration [6].\n\nTo resolve this error, the system requires three inputs: a specific factual or analytical question, a multi-step reasoning chain connecting source evidence to the answer, and one or more validated target answers. Without these, the evaluation infrastructure cannot generate queries that meaningfully differentiate between high-quality and low-quality retrieval and reasoning performance. This represents a fundamental requirement in any grounded evaluation paradigm—measurement is impossible without a defined standard of correctness [1][3].\n\n## References\n1. Yang, Z. et al. \"HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering.\" EMNLP 2018. https://hotpotqa.github.io/\n2. Mavi, V. et al. \"A Survey on Multi-hop Question Answering and Generation.\" arXiv, 2024. https://arxiv.org/abs/2204.09140\n3. Es, S. et al. \"RAGAS: Automated Evaluation of Retrieval Augmented Generation.\" arXiv, 2023. https://arxiv.org/abs/2309.15217\n4. RAGAS Documentation – https://docs.ragas.io/en/stable/\n5. DeepEval Documentation – https://docs.confident-ai.com/\n6. Saad-Falcon, J. et al. \"ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems.\" arXiv, 2023. https://arxiv.org/abs/2311.09476",
+      "answer_b": "The error message \"Insufficient hidden knowledge provided to generate a grounded Deep & Wide search query\" highlights a critical dependency failure in the synthetic generation of evaluation datasets for Retrieval-Augmented Generation (RAG) and complex search systems. In the context of automated benchmarking, \"hidden knowledge\" acts as the immutable ground truth—the predefined corpus of facts, documents, or structured data that the system uses as a foundational anchor [1]. For a generated query to be considered \"grounded,\" every premise and logical leap within that prompt must be strictly traceable back to this authoritative source material. When the provided hidden knowledge is sparse, fragmented, or entirely absent, the generation pipeline lacks the necessary semantic raw material to synthesize a valid test case [2].\n\nDeep and Wide search queries are among the most resource-intensive evaluation tasks to construct. \"Wide\" aspects demand that the query spans multiple disparate topics, requiring the tested AI to perform broad, cross-document retrieval to assemble scattered information [3]. Conversely, the \"Deep\" aspect necessitates complex, multi-hop reasoning pathways, forcing the model to infer relationships, perform logical deductions, and synthesize granular details from within those retrieved documents [2]. Creating a query that successfully evaluates both dimensions simultaneously is fundamentally impossible without highly detailed, interconnected background context.\n\nWhen an AI dataset generator encounters an empty or insufficient knowledge block, it triggers this specific fault state as a safeguard mechanism. If the generator were to proceed without adequate grounding data, it would inevitably hallucinate complex scenarios, resulting in unanswerable questions or flawed benchmarks that misalign with the intended evaluation rubric [1]. To resolve this error, pipeline developers must inject an enriched, densely populated information substrate into the generation prompt. This substrate must explicitly define the entities, their relationships, and the logical bridges connecting them [3]. Only by feeding the system a robust, multi-faceted ground truth can the generator mathematically deduce challenging, highly interconnected questions that effectively probe an AI’s deepest reasoning and widest retrieval capabilities without defaulting to unbounded hallucination.\n\n## References\n\n[1] Es, S., James, J., Espinosa-Anke, L., & Schockaert, S. (2023). RAGAS: Automated Evaluation of Retrieval Augmented Generation. *arXiv preprint arXiv:2309.15217*.\n\n[2] Saad-Falcon, J., Khattab, O., Santhanam, K., Florian, R., Franz, M., Roukos, S., ... & Potts, C. (2023). ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems. *arXiv preprint arXiv:2311.09476*.\n\n[3] Yang, Z., Qi, P., Zhang, S., Bengio, Y., Cohen, W. W., Salakhutdinov, R., & Manning, C. D. (2018). HotpotQA: A dataset for diverse, explainable multi-hop question answering. *arXiv preprint arXiv:1809.09600*.",
+      "duration_a_seconds": 20.4,
+      "duration_b_seconds": 40.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "First, Deep Logic: Both Agent A and Agent B correctly recognize that the query is not a factual research task but a diagnostic/system-level error caused by missing hidden knowledge. Neither invents entities or reasoning chains, and both align with the Ground Truth checklist (no target details, no reasoning chain available). So both pass the DEEP check.\n\nSecond, Width/Completeness: Both explain what “Deep & Wide” means (multi-hop reasoning + cross-domain retrieval) and clarify why hidden knowledge is required for grounded evaluation. Both reference RAG evaluation frameworks appropriately. No hallucinated entities or fabricated targets appear. Thus, both pass the WIDE requirement.\n\nFinally, User Experience & Presentation: Agent A provides slightly stronger comprehensiveness and instructional clarity. It explicitly lists the three required inputs to resolve the issue (question, reasoning chain, validated answers), making it more actionable. It also includes more citations (6 vs 3), improving perceived groundedness. While both are somewhat text-heavy, Agent A is marginally more structured and detailed, offering better information density and practical recovery guidance.\n\nBecause both are factually correct and aligned with the checklist, the decision is based on formatting depth, citation richness, and actionable clarity. Therefore, Agent A is better on overall user utility, but not dramatically so.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Crawler returned 0 new nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 5,
+      "width": 4,
+      "logic_chain": [
+        "Understanding Legal Services: A Comprehensive Guide",
+        "Divorce & Family Law",
+        "Lawyers Directory",
+        "Bankruptcy & Debt",
+        "Ware Law Firm, PLLC"
+      ],
+      "question": "In comprehensive guides designed to help the public understand legal services, three foundational components are typically addressed to provide a well-rounded overview: (1) the main categories of legal services available, (2) the primary types of legal professionals who deliver those services, and (3) the common fee structures clients may encounter. Identify these three components and, for each one, explain the key subtypes or examples commonly discussed in authoritative public resources. How do these components collectively help individuals make informed decisions when seeking legal assistance?",
+      "word_limit_instruction": "Answer length: 300-400 words.",
+      "checklist_width": [
+        "Identification and explanation of major categories of legal services (e.g., criminal, civil, corporate, family, etc.)",
+        "Description of primary legal professionals (e.g., attorneys/lawyers, paralegals, legal consultants) and their roles",
+        "Explanation of common fee structures (e.g., hourly rates, flat fees, contingency fees, retainers)",
+        "Discussion of how these three components interrelate to support informed decision-making"
+      ],
+      "checklist_depth": [
+        "Correct identification of the three foundational components typically covered in comprehensive guides to understanding legal services",
+        "Logical explanation of why these components form a complete framework for understanding legal services"
+      ],
+      "rationale": "The question uses the broad domain of 'Understanding Legal Services: A Comprehensive Guide' as the logical anchor (Deep), requiring the respondent to infer the three foundational pillars that such guides universally cover. It avoids naming any specific document while logically defining the required components. The question is Wide because it requires aggregating multiple categories, professional roles, and fee models—information typically scattered across different public legal resources—and synthesizing them into a cohesive explanation.",
+      "source_nodes": [
+        "Ware Law Firm, PLLC - Find US Lawyers",
+        "Lawyers Directory - Find US Lawyers",
+        "Scheer Law Group, LLP - Find US Lawyers"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]:  [Wide Logic - Target 2]: ",
+      "judge_max_limit": 400,
+      "answer_a": "Comprehensive guides to legal services consistently address three foundational components that empower individuals to navigate the legal system effectively: the categories of legal services available, the types of legal professionals who provide them, and the fee structures clients can expect.\n\n**1. Main Categories of Legal Services**\n\nAuthoritative resources typically organize legal services into broad practice areas. These include **civil litigation** (disputes between individuals or organizations), **criminal defense** (representing those accused of crimes), **family law** (divorce, custody, adoption), **estate planning** (wills, trusts, probate), **real estate law** (property transactions and disputes), **business and corporate law** (formation, contracts, compliance), **immigration law**, and **personal injury law** [1][2]. Many guides also highlight **alternative dispute resolution** methods such as mediation and arbitration as distinct service categories that can resolve conflicts outside traditional courtroom proceedings [3]. Understanding these categories helps individuals identify which type of legal assistance matches their specific situation.\n\n**2. Types of Legal Professionals**\n\nGuides distinguish among several professional roles. **Attorneys/lawyers** are licensed practitioners who can represent clients in court and provide comprehensive legal advice [1]. **Paralegals and legal assistants** support attorneys by conducting research, drafting documents, and managing case files but cannot independently practice law [2]. **Legal aid attorneys** work for nonprofit organizations serving low-income clients. **Notaries public** authenticate documents and administer oaths. Additionally, some jurisdictions now authorize **licensed legal technicians** or **limited license legal practitioners** to provide specific services directly to the public in areas like family law or landlord-tenant disputes [4]. Online platforms and **legal document preparation services** have also emerged as accessible options for routine matters [3].\n\n**3. Common Fee Structures**\n\nPublic-facing resources consistently describe several billing models: **hourly rates** (charging per hour of work performed), **flat fees** (a fixed amount for a defined service such as drafting a will), **contingency fees** (the attorney receives a percentage of the award, common in personal injury cases), **retainer fees** (an upfront deposit against which future work is billed), and **sliding scale or pro bono arrangements** offered through legal aid organizations [1][4]. Some guides also mention **subscription-based legal plans** that provide ongoing access to services for a monthly fee [3].\n\n**Collective Value for Decision-Making**\n\nTogether, these three components create a decision-making framework. Understanding service categories ensures individuals seek appropriate expertise. Knowing professional types helps match complexity and budget to the right provider. Fee structure literacy prevents financial surprises and enables cost-benefit analysis. This triad of knowledge reduces information asymmetry between clients and legal professionals, ultimately leading to more confident, informed engagement with the legal system [2][4].\n\n## References\n1. American Bar Association. \"How to Find Legal Help.\" https://www.americanbar.org/groups/legal_services/flh-home/\n2. Legal Services Corporation. \"Understanding Legal Services.\" https://www.lsc.gov/about-lsc/what-legal-aid\n3. Nolo.com. \"Lawyers and Legal Help.\" https://www.nolo.com/legal-encyclopedia/lawyers-legal-help\n4. FindLaw. \"Legal Fees and Costs.\" https://www.findlaw.com/hirealawyer/attorney-fees-and-agreements.html",
+      "answer_b": "Comprehensive consumer legal guides typically structure public information around three foundational components to demystify complex legal systems: the main categories of legal services, the professionals who deliver them, and the associated fee structures.\n\n**Main Categories of Legal Services**\nAuthoritative resources generally classify legal services by practice area to help individuals align their issues with relevant statutory frameworks. Key subtypes include civil law (handling private disputes over contracts, personal injury, or property), family law (managing divorce, child custody, and adoption), criminal defense (representing individuals facing government prosecution), and estate planning or transactional law (drafting wills, trusts, and business agreements) [1][2]. \n\n**Primary Legal Professionals**\nGuides carefully distinguish between the types of professionals operating within the justice sector to clarify scopes of practice. Licensed attorneys or lawyers are the primary practitioners, uniquely authorized to provide legal advice, draft binding legal strategies, and represent clients in court. Additionally, guides frequently highlight paralegals, who perform vital substantive legal research and drafting under a lawyer's strict supervision but cannot independently offer legal advice. Mediators and arbitrators are also widely discussed as neutral third-party professionals facilitating alternative dispute resolution outside traditional courtrooms [2][3].\n\n**Common Fee Structures**\nNavigating legal representation costs requires an understanding of standard billing practices. Common fee arrangements discussed in public resources include hourly rates, where clients are billed progressively for exact time spent, and flat fees, which are fixed prices applied to straightforward, non-adversarial services like reviewing a lease. Contingency fees are heavily utilized in personal injury and claimant cases, where the attorney's compensation is a percentage deducted exclusively from the client's final financial recovery. Retainers function as an upfront, depleting deposit to secure ongoing services [1][3].\n\n**Informed Decision-Making**\nCollectively, these three components equip the public to make educated choices regarding legal assistance. By categorizing legal fields, clients can accurately target specialists suited to their exact predicament instead of broadly searching for generalists. Understanding professional distinctions helps consumers recognize the scope of representation they require, potentially reducing expenses through alternative dispute resolution or appropriate paralegal utilization. Finally, comprehensive knowledge of fee structures empowers individuals to compare financial terms, anticipate long-term out-of-pocket costs, and select payment models that appropriately mitigate their financial risk. Together, these educational pillars ensure a transparent and accessible approach to securing competent legal advocacy [1][2].\n\n## References\n\n[1] American Bar Association. (2024). *Consumer's Guide to Legal Help: Legal Fees and Expenses*. Retrieved from the ABA Public Resources Directory.\n\n[2] Legal Services Corporation. (2023). *Understanding Civil Legal Services and Practice Areas*. LSC Resource Library.\n\n[3] Nolo. (2023). *Working With a Lawyer: How to Find the Right Attorney and Understand Legal Fees*. Nolo Legal Encyclopedia.",
+      "duration_a_seconds": 22.8,
+      "duration_b_seconds": 37.1,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the three foundational components (categories of legal services, types of legal professionals, and fee structures), so both pass the DEEP logic check. On WIDTH/completeness, both address major practice areas, professional roles, and common billing models, and both explain how these elements support informed decision-making. However, Agent A is more comprehensive: it includes a broader range of service categories (e.g., immigration, real estate, corporate law, ADR), more professional distinctions (legal aid attorneys, notaries, licensed legal technicians, online platforms), and additional fee models (sliding scale, pro bono, subscription plans). This provides richer context and better mirrors authoritative public guides. In terms of presentation, both use clear headers and structured formatting, but Agent A offers slightly greater information density and practical nuance without becoming excessively verbose. There are no major factual errors in either response. Therefore, Agent A wins on superior comprehensiveness and overall user utility, while Agent B does not exhibit a checklist failure—just comparatively narrower coverage.",
+      "score_a": 2.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Crawler returned 0 new nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 5,
+      "width": 5,
+      "logic_chain": [
+        "Understanding Legal Services: A Comprehensive Guide",
+        "Divorce & Family Law",
+        "Lawyers Directory",
+        "Bankruptcy & Debt",
+        "Ware Law Firm, PLLC"
+      ],
+      "question": "Comprehensive guides to legal services often distinguish between three major practice areas that serve very different client needs: one that represents individuals accused of crimes, one that handles disputes and arrangements within families, and one that advises businesses on regulatory compliance and commercial operations. Identify these three categories of legal services and compare them by explaining (1) the primary types of cases each typically handles, (2) the typical clients they represent, and (3) the kinds of legal procedures or documents most commonly involved in each area.",
+      "word_limit_instruction": "Answer length: 300-400 words.",
+      "checklist_width": [
+        "Criminal defense – description of typical cases (e.g., felonies, misdemeanors, DUI, appeals)",
+        "Criminal defense – identification of typical clients (individual defendants accused of crimes)",
+        "Criminal defense – mention of common procedures/documents (arraignments, plea bargains, trials, motions)",
+        "Family law – description of typical cases (e.g., divorce, child custody, adoption, support)",
+        "Family law – identification of typical clients (spouses, parents, guardians, families)",
+        "Family law – mention of common procedures/documents (custody agreements, divorce petitions, court orders)",
+        "Corporate/business law – description of typical matters (e.g., contracts, mergers, compliance, incorporation)",
+        "Corporate/business law – identification of typical clients (businesses, corporations, entrepreneurs)",
+        "Corporate/business law – mention of common procedures/documents (contracts, bylaws, regulatory filings)"
+      ],
+      "checklist_depth": [
+        "Criminal Defense Law – correctly identified as the category focused on representing individuals accused of crimes",
+        "Family Law – correctly identified as the category dealing with legal issues within family relationships",
+        "Corporate/Business Law – correctly identified as the category advising businesses on commercial and regulatory matters"
+      ],
+      "rationale": "The question uses functional descriptions (defending accused individuals, handling family disputes, advising businesses) instead of naming the practice areas directly, requiring logical identification of the correct legal service categories (Deep reasoning). It then requires aggregation of multiple types of information—case types, client profiles, and procedures/documents—for all three categories, ensuring broad comparison across distinct legal fields (Wide scope).",
+      "source_nodes": [
+        "Ware Law Firm, PLLC - Find US Lawyers",
+        "Scheer Law Group, LLP - Find US Lawyers",
+        "Lawyers Directory - Find US Lawyers"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]:  [Wide Logic - Target 2]: ",
+      "judge_max_limit": 400,
+      "answer_a": "**Criminal Defense Law**\n\nCriminal defense law represents individuals or entities accused of crimes by the state. Primary case types include felonies (murder, robbery, drug trafficking), misdemeanors (petty theft, DUI, disorderly conduct), and white-collar crimes (fraud, embezzlement) [1]. Typical clients are defendants—individuals arrested or charged by prosecutors, ranging from juveniles to adults across all socioeconomic backgrounds. In some cases, corporations face criminal charges as well [2]. Key legal procedures include arraignments, bail hearings, plea negotiations, pretrial motions, jury trials, sentencing hearings, and appeals. Common documents involve criminal complaints, indictments, plea agreements, motions to suppress evidence, and sentencing memoranda [1][3]. The stakes are uniquely high in this area because outcomes can include imprisonment, fines, probation, or a permanent criminal record.\n\n**Family Law**\n\nFamily law addresses legal matters arising from domestic and familial relationships. Primary case types include divorce and separation, child custody and visitation, child and spousal support, adoption, paternity disputes, and domestic violence protective orders [4]. Typical clients are spouses, parents, guardians, and sometimes grandparents or other relatives seeking custodial rights. Family law clients span all demographics but frequently include individuals navigating emotionally charged transitions [2][4]. Common procedures include mediation sessions, custody evaluations, court hearings, and collaborative law processes. Key documents are divorce petitions, marital settlement agreements, parenting plans, prenuptial and postnuptial agreements, adoption petitions, and restraining orders [4][5]. Family courts often prioritize the \"best interests of the child\" standard in custody determinations.\n\n**Business and Corporate Law**\n\nBusiness law advises companies on regulatory compliance, commercial transactions, and organizational governance. Primary case types include business formation, mergers and acquisitions, contract disputes, intellectual property protection, employment law compliance, and securities regulation [6]. Typical clients are entrepreneurs, startups, small businesses, large corporations, and sometimes nonprofit organizations seeking counsel on operational and transactional matters [2][6]. Key procedures involve entity formation filings, regulatory audits, contract negotiations, due diligence reviews, and shareholder meetings. Common documents include articles of incorporation, operating agreements, commercial contracts, non-disclosure agreements, compliance policies, and shareholder agreements [6].\n\n**Comparison**\n\nThese three areas differ fundamentally in orientation: criminal defense is adversarial against the state with liberty at stake, family law is relationship-centered with welfare-focused outcomes, and business law is transactional and preventive, emphasizing compliance and commercial efficiency [1][4][6]. Together, they illustrate the breadth of legal practice serving individuals, families, and organizations with distinct procedural frameworks and documentation requirements.\n\n## References\n1. American Bar Association. \"Criminal Justice Standards.\" https://www.americanbar.org/groups/criminal_justice/\n2. FindLaw. \"Types of Lawyers and Practice Areas.\" https://www.findlaw.com/hirealawyer/choosing-the-right-lawyer/types-of-lawyers.html\n3. Nolo. \"Criminal Law Overview.\" https://www.nolo.com/legal-encyclopedia/criminal-law\n4. American Bar Association. \"Family Law.\" https://www.americanbar.org/groups/family_law/\n5. Nolo. \"Family Law Basics.\" https://www.nolo.com/legal-encyclopedia/family-law\n6. U.S. Small Business Administration. \"Business Law and Regulations.\" https://www.sba.gov/business-guide/launch-your-business/choose-business-structure",
+      "answer_b": "The three major categories of legal services that address these distinct public needs are criminal defense, family law, and corporate law. \n\n**Criminal Defense**\n(1) *Types of Cases:* Criminal defense attorneys handle state and federal prosecutions. These cases range from minor misdemeanors, such as petty theft or DUIs, to severe felonies, including homicide, assault, and complex white-collar crimes [1].\n(2) *Typical Clients:* The primary clients are individuals accused of violating penal statutes. These clients face severe state-imposed penalties, meaning their personal liberties, financial assets, and foundational constitutional rights are at immediate risk from government prosecution [2].\n(3) *Procedures and Documents:* Common legal mechanisms include arraignments, bail hearings, trial litigation, and appellate procedures. Frequently drafted or negotiated documents encompass plea agreements, court motions (such as motions to suppress evidence), and sentencing memorandums [1].\n\n**Family Law**\n(1) *Types of Cases:* This civil practice area resolves interpersonal conflicts and structural changes within a household. Major cases involve divorce (dissolution of marriage), child custody and support disputes, alimony determinations, adoption, and establishing paternity [2][3].\n(2) *Typical Clients:* The clients are individual citizens, spouses, and parents seeking legal remedy for highly personal, emotionally charged domestic situations rather than commercial or penal issues.\n(3) *Procedures and Documents:* Interventions often feature mediation, settlement negotiations, and family court hearings. Critical documents drafted in this sector include divorce petitions, marital settlement agreements, prenuptial or postnuptial contracts, and legally binding parenting plans [3].\n\n**Corporate Law**\n(1) *Types of Cases:* Corporate law focuses on commercial activities, regulatory compliance, mergers and acquisitions (M&A), employment guidelines, and corporate governance.\n(2) *Typical Clients:* Practitioners primarily serve business entities. Clients range from nascent startups and small businesses to multinational enterprises, alongside their executive officers, shareholders, and boards of directors [4].\n(3) *Procedures and Documents:* Legal actions generally revolve around transactional work and risk mitigation rather than courtroom litigation. Key documents encompass articles of incorporation, corporate bylaws, shareholder agreements, non-disclosure agreements (NDAs), and complex commercial contracts [3][4].\n\n**Comparison**\nWhile criminal defense vigorously protects the constitutional liberties of individuals against state action, family law restructures private domestic relationships under civil statutes, and corporate law safeguards the financial and regulatory health of commercial entities. The procedures vary remarkably: criminal and family law frequently rely on courtroom litigation or adversarial negotiations, whereas corporate law is heavily transactional, prioritizing proactive contract drafting and advisory compliance to prevent legal disputes before they arise [2][4].\n\n## References\n\n[1] American Bar Association. (2023). *How Courts Work: Criminal Cases*. Retrieved from ABA Public Resources Directory.\n\n[2] FindLaw. (2024). *Types of Lawyers: Practice Areas Explained*. Thomson Reuters.\n\n[3] Nolo. (2023). *Understanding Different Legal Practice Areas*. Nolo Legal Encyclopedia.\n\n[4] Legal Information Institute (LII). (2023). *Corporate Law: An Overview*. Cornell Law School.",
+      "duration_a_seconds": 18.5,
+      "duration_b_seconds": 64.5,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the three core categories (Criminal Defense, Family Law, Corporate/Business Law), so both pass the Deep Logic check. Both also addressed all required sub-points: types of cases, typical clients, and common procedures/documents for each area—so both satisfy the Width/Completeness checklist.\n\nThe difference lies in user experience and richness. Agent A provides slightly more comprehensive procedural detail (e.g., indictments, sentencing hearings, due diligence reviews, regulatory audits) and offers a clearer comparative synthesis at the end that highlights structural differences (adversarial vs. relationship-centered vs. transactional/preventive). A also demonstrates slightly higher citation density and stronger informational layering, which enhances perceived authority.\n\nAgent B is well-structured, readable, and accurate, but marginally less detailed in procedural breadth and comparative nuance. There are no factual failures—so the loss is not due to DEEP or WIDE issues, but rather a soft comparison on comprehensiveness and depth.\n\nTherefore, Agent A delivers a modestly better overall user experience.",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0010_claudeopu_vs_gemini31_995"
+}

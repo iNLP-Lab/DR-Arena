@@ -1,0 +1,216 @@
+{
+  "id": "R3_M1_gemini-2.5-pro-grounding_vs_o3-search_tree_0018",
+  "source_group": "round3",
+  "source_log": "round3/R3_M1_gemini-2.5-pro-grounding_vs_o3-search_tree_0018.log",
+  "tree_id": "tree_0018",
+  "tree_title": "UNIX / Linux Tutorial for Beginners",
+  "tree_topic": "Computers & Electronics > Software > Operating Systems",
+  "tree_subtopic": "Linux & Unix",
+  "tree_crawled_at": "2025-11-21T15:28:32.649618",
+  "tree_url": "https://info-ee.surrey.ac.uk/Teaching/Unix/",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "o3-search",
+  "winner": "o3-search",
+  "final_score_a": 1.0,
+  "final_score_b": 3.0,
+  "total_rounds": 3,
+  "type": null,
+  "tournament_round": 3,
+  "pairing_index": 1,
+  "mercy_rule": true,
+  "overall_topic": "UNIX / Linux Tutorial for Beginners",
+  "questions": [
+    "Identify the specific Creative Commons license version applied to the 'UNIX Tutorial for Beginners' authored by M. Stonebank (University of Surrey, October 2001). Based on the official deed for that specific license version, list the two primary 'freedoms' granted to the user and the three specific 'terms' or conditions that must be followed, particularly regarding commercial use and derivative works.",
+    "Locate the 'UNIX Tutorial for Beginners' authored by M. Stonebank (University of Surrey) and identify the specific open license under which it is distributed. The digital deed for this legacy license contains a notice strongly recommending the use of a newer, 'more internationally robust' version 4.0 suite instead. \n\nBased on the documentation for this recommended 4.0 version, provide a detailed explanation of the improvements it introduces regarding 'sui generis database rights', 'moral rights', and the 'cure period' for license violations. Furthermore, list the specific 'Freedoms' and 'Terms' (conditions) defined in the legal code of this recommended 4.0 license.",
+    "Identify the specific Creative Commons license version originally applied to M. Stonebank's 'UNIX Tutorial for Beginners' (published October 2001). Based on the licensing organization's documentation for the successor 'Version 4.0' suite, provide a detailed summary of the improvements introduced in this new version. Specifically, explain the 4.0 suite's approach to: (1) international jurisdiction and 'porting', (2) 'sui generis' database rights, (3) the mechanism and timeframe for correcting license violations (the 'cure period'), and (4) the flexibility regarding where attribution information can be provided."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 4,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 505558,
+  "estimated_cost": 5.0556,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "UNIX / Linux Tutorial for Beginners",
+        "Deed"
+      ],
+      "question": "Identify the specific Creative Commons license version applied to the 'UNIX Tutorial for Beginners' authored by M. Stonebank (University of Surrey, October 2001). Based on the official deed for that specific license version, list the two primary 'freedoms' granted to the user and the three specific 'terms' or conditions that must be followed, particularly regarding commercial use and derivative works.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Freedom 1: Share (copy and redistribute the material in any medium or format)",
+        "Freedom 2: Adapt (remix, transform, and build upon the material)",
+        "Term 1: Attribution (must give appropriate credit, provide a link to the license, and indicate if changes were made)",
+        "Term 2: NonCommercial (may not use the material for commercial purposes)",
+        "Term 3: ShareAlike (if you remix, transform, or build upon the material, you must distribute contributions under the same license as the original)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic (CC BY-NC-SA 2.0)",
+        "Logic Proof: The tutorial by M. Stonebank is explicitly licensed under this specific version (2.0), distinct from the newer 4.0 version often recommended on the deed page."
+      ],
+      "rationale": "The question uses deep reasoning by requiring the agent to locate a specific legacy tutorial (M. Stonebank, 2001) to determine which license version applies to it (CC BY-NC-SA 2.0). It then uses wide aggregation by asking for the specific breakdown of 'Freedoms' and 'Terms' found in the legal deed of that license, requiring the agent to parse the license details rather than just naming it.",
+      "source_nodes": [
+        "Deed - Attribution-NonCommercial-ShareAlike 2.0 Generic\n - Creative Commons"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Notice This is an older version of this license. Compared to previous versions, the 4.0 versions of all CC licenses are more user-friendly and more internationally robust . If",
+      "judge_max_limit": 300,
+      "answer_a": "The \"UNIX Tutorial for Beginners\" by M. Stonebank, originally published by the University of Surrey in October 2001, is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic License (CC BY-NC-SA 2.0) [1, 2].\n\nBased on the official deed for this specific license version, users are granted two primary freedoms [2]:\n1.  **Share:** You are free to copy and redistribute the material in any medium or format. This freedom allows for widespread, non-commercial dissemination and sharing of the original tutorial.\n2.  **Adapt:** You are free to remix, transform, and build upon the material. This allows for the creation of new works, such as updated versions or translations, based on the original tutorial.\n\nThese freedoms are contingent upon following three specific terms [2]:\n1.  **Attribution (BY):** You must provide appropriate credit to the original author (M. Stonebank) and the University of Surrey, include a link to the CC BY-NC-SA 2.0 license, and indicate if any changes were made to the original work.\n2.  **NonCommercial (NC):** The material cannot be used for commercial purposes. This explicitly prohibits selling the tutorial or using it in any context intended for commercial advantage or monetary compensation.\n3.  **ShareAlike (SA):** If you create a derivative work by remixing, transforming, or building upon the tutorial, you must distribute your new contribution under the exact same CC BY-NC-SA 2.0 license. This ensures that any subsequent works remain as open and non-commercial as the original.\n\n## References\n[1] Stonebank, M. (2001). *UNIX Tutorial for Beginners*. Department of Electronic Engineering, University of Surrey. Retrieved from www.ee.surrey.ac.uk/Teaching/Unix/\n[2] Creative Commons. (n.d.). *Attribution-NonCommercial-ShareAlike 2.0 Generic (CC BY-NC-SA 2.0) Deed*. Retrieved from creativecommons.org/licenses/by-nc-sa/2.0/",
+      "answer_b": "Creative Commons licence for “UNIX Tutorial for Beginners” (M. Stonebank, University of Surrey, Oct 2001):  \nCreative Commons Attribution–NonCommercial–ShareAlike 2.0 UK: England & Wales (CC BY-NC-SA 2.0 UK) [1].\n\nTwo primary freedoms granted by this licence version  \n1. Share – you may copy and redistribute the material in any medium or format.  \n2. Adapt – you may remix, transform and build upon the material.  \n\nThree specific terms that must be respected  \n1. Attribution – you must give appropriate credit, provide a link to the licence and indicate if changes were made.  \n2. Non-Commercial – you may not use the material for commercial purposes.  \n3. ShareAlike – if you remix, transform or build upon the material, you must distribute your contributions under the same licence as the original.  \n\n## References  \n[1] Creative Commons. “Attribution-NonCommercial-ShareAlike 2.0 UK: England & Wales deed.” https://creativecommons.org/licenses/by-nc-sa/2.0/uk/",
+      "duration_a_seconds": 13.6,
+      "duration_b_seconds": 8.5,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the core license (CC BY-NC-SA 2.0). Agent B was technically more precise regarding the specific 'UK: England & Wales' port used on the live website, while Agent A aligned perfectly with the prompt's provided Ground Truth (Generic). However, Agent A won on User Experience and Completeness. The prompt asked to list terms 'particularly regarding commercial use and derivative works,' and Agent A provided helpful context and explanations for these terms, whereas Agent B simply pasted the brief text from the deed. Agent A's formatting (bolding, clear structure) was also superior.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Deed'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "UNIX / Linux Tutorial for Beginners",
+        "Deed",
+        "Deed"
+      ],
+      "question": "Locate the 'UNIX Tutorial for Beginners' authored by M. Stonebank (University of Surrey) and identify the specific open license under which it is distributed. The digital deed for this legacy license contains a notice strongly recommending the use of a newer, 'more internationally robust' version 4.0 suite instead. \n\nBased on the documentation for this recommended 4.0 version, provide a detailed explanation of the improvements it introduces regarding 'sui generis database rights', 'moral rights', and the 'cure period' for license violations. Furthermore, list the specific 'Freedoms' and 'Terms' (conditions) defined in the legal code of this recommended 4.0 license.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Sui Generis Database Rights: Explicitly brought within scope/waived to prevent confusion (Target 1)",
+        "Moral Rights: Waived to the limited extent necessary to enable reuse (Target 1)",
+        "Cure Period: Rights reinstated automatically if breach is corrected within 30 days (Target 1)",
+        "International Robustness: Ready-to-use worldwide without porting (Target 1)",
+        "Freedoms: Share (copy and redistribute) and Adapt (remix, transform, build upon) (Target 0)",
+        "Terms: Attribution, NonCommercial, and ShareAlike (Target 0 - Must match the specific lineage of Stonebank's license)"
+      ],
+      "checklist_depth": [
+        "Identified Entity: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)",
+        "Logic Proof: Traced Stonebank's tutorial to CC BY-NC-SA 2.0, then followed the deed's recommendation to the 4.0 version."
+      ],
+      "rationale": "The question requires Deep Reasoning to link a specific educational resource (Stonebank's Tutorial) to its license (CC 2.0) and then to the recommended upgrade (CC 4.0) found in the license deed's notice. It requires Wide Aggregation to synthesize the 'Improvements' found in the explanatory text (Target 1) with the specific 'Freedoms and Terms' found in the actual license deed (Target 0).",
+      "source_nodes": [
+        "Deed - Attribution-NonCommercial-ShareAlike 4.0 International\n - Creative Commons",
+        "What's New in 4.0 - Creative Commons",
+        "Deed - Attribution 4.0 International\n - Creative Commons"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Canonical URL https://creativecommons.org/licenses/by-nc-sa/4.0/ See the legal code You are free to: Share — copy and redistribute the material in any medium or format Adapt —",
+      "judge_max_limit": 350,
+      "answer_a": "The \"UNIX Tutorial for Beginners\" by M. Stonebank is distributed under a Creative Commons license, such as the Attribution-NonCommercial-ShareAlike 2.0 license [1]. The digital deed for this legacy license contains a notice recommending the use of the 4.0 license suite, describing it as \"more user-friendly and more internationally robust\" [2].\n\nThe recommended Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0) introduces several key improvements over the 2.0 version [3, 4]:\n\n*   **Sui Generis Database Rights:** Version 4.0 explicitly covers sui generis database rights, which protect databases that may not qualify for traditional copyright but result from substantial investment. This was a legal gray area in previous versions, and its inclusion makes the 4.0 license more effective and legally sound, particularly within the European Union.\n*   **Moral Rights:** The 4.0 license includes a limited waiver of moral rights. This waiver is specifically to the extent necessary to allow reuse of the work in the manner intended by the license. It prevents authors from using moral rights claims (like the right to the integrity of the work) to block adaptations or other uses that the license would otherwise permit.\n*   **Cure Period:** The 4.0 license introduces a formal 30-day \"cure period.\" If a user violates a term of the license (e.g., fails to provide attribution), their rights are automatically reinstated if they correct the error within 30 days of discovering it. This change makes the license more forgiving of inadvertent mistakes.\n\nBased on the legal code and official deed for the recommended CC BY-NC-SA 4.0 license, the following freedoms and conditions apply [4]:\n\n**Freedoms:**\n1.  **Share:** You are free to copy and redistribute the material in any medium or format.\n2.  **Adapt:** You are free to remix, transform, and build upon the material.\n\n**Terms:**\n1.  **Attribution (BY):** You must give appropriate credit, provide a link to the license, and indicate if changes were made.\n2.  **NonCommercial (NC):** You may not use the material for commercial purposes.\n3.  **ShareAlike (SA):** If you remix, transform, or build upon the material, you must distribute your contributions under the same CC BY-NC-SA 4.0 license.\n\n## References\n[1] Stonebank, M. (2001). *UNIX Tutorial for Beginners*. Department of Electronic Engineering, University of Surrey. Retrieved from www.ee.surrey.ac.uk/Teaching/Unix/\n[2] Creative Commons. (n.d.). *Attribution-NonCommercial-ShareAlike 2.0 Generic (CC BY-NC-SA 2.0) Deed*. Retrieved from creativecommons.org/licenses/by-nc-sa/2.0/\n[3] Creative Commons. (n.d.). *What's New in 4.0*. Creative Commons Wiki. Retrieved from wiki.creativecommons.org/wiki/What%27s_New_in_4.0\n[4] Creative Commons. (n.d.). *Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) Deed*. Retrieved from creativecommons.org/licenses/by-nc-sa/4.0/",
+      "answer_b": "The “UNIX Tutorial for Beginners” is released under the Creative Commons Attribution–NonCommercial–ShareAlike 2.0 UK: England & Wales licence (CC BY-NC-SA 2.0 UK) [1]. Its deed recommends migrating to the Creative Commons 4.0 suite.\n\nImprovements introduced in the recommended CC BY-NC-SA 4.0 International licence:\n\n• Sui generis database rights – 4.0 expressly grants permission to extract, reuse and adapt data protected by the EU-style database right, and waives the licensor’s ability to assert that right against licensees. Earlier versions were silent, leaving re-users exposed to separate database claims [2].\n\n• Moral rights – 4.0 directly addresses moral rights worldwide. Licensors agree, to the extent allowed by law, not to assert moral rights (e.g., the right of integrity) that would conflict with the licence, provided users meet attribution and non-disparagement requirements. This creates a predictable, international baseline absent from 2.0 [2][3].\n\n• Cure period – Under Section 6(a) the licence terminates automatically upon violation, but rights are fully reinstated if the breach is corrected within thirty days of discovery. Previous licences offered no automatic reinstatement, so even minor, promptly-fixed errors caused permanent termination [2][4].\n\nFreedoms granted by CC BY-NC-SA 4.0:  \n1. Share – copy and redistribute the material in any medium or format.  \n2. Adapt – remix, transform and build upon the material (non-commercially).\n\nTerms (conditions) that must be honoured:  \n1. Attribution – give appropriate credit, link to the licence, and indicate changes.  \n2. NonCommercial – no commercial use.  \n3. ShareAlike – licence adaptations under identical terms.  \n4. No additional restrictions – do not apply legal or technological measures that restrict others from exercising the licence freedoms [2].\n\n## References  \n[1] Creative Commons. “Attribution-NonCommercial-ShareAlike 2.0 UK: England & Wales deed.” https://creativecommons.org/licenses/by-nc-sa/2.0/uk/  \n[2] Creative Commons. “Attribution-NonCommercial-ShareAlike 4.0 International deed & legal code.” https://creativecommons.org/licenses/by-nc-sa/4.0/  \n[3] Creative Commons Wiki. “4.0 – Overview of Moral Rights.” https://wiki.creativecommons.org/wiki/4.0  \n[4] CC BY-NC-SA 4.0 International legal code, §6(a) Term and Termination. https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+      "duration_a_seconds": 29.8,
+      "duration_b_seconds": 35.3,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B is the winner primarily due to higher precision in identifying the specific license. The target document (Stonebank's tutorial from the University of Surrey) is licensed under the **UK: England & Wales** port of CC BY-NC-SA 2.0, which Agent B correctly identified. Agent A defaulted to the Generic 2.0 license. Additionally, Agent B included the 'No additional restrictions' clause in the Terms section, which is part of the standard deed, making it more comprehensive. Agent B also referenced specific sections of the legal code (e.g., Section 6(a)), demonstrating deeper grounding.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 4,
+      "logic_chain": [
+        "UNIX / Linux Tutorial for Beginners",
+        "Deed",
+        "Deed"
+      ],
+      "question": "Identify the specific Creative Commons license version originally applied to M. Stonebank's 'UNIX Tutorial for Beginners' (published October 2001). Based on the licensing organization's documentation for the successor 'Version 4.0' suite, provide a detailed summary of the improvements introduced in this new version. Specifically, explain the 4.0 suite's approach to: (1) international jurisdiction and 'porting', (2) 'sui generis' database rights, (3) the mechanism and timeframe for correcting license violations (the 'cure period'), and (4) the flexibility regarding where attribution information can be provided.",
+      "word_limit_instruction": "Answer length: 280-380 words.",
+      "checklist_width": [
+        "International/Porting: States that 4.0 is ready-to-use worldwide without the need for 'porting' to local laws (unlike 3.0).",
+        "Database Rights: Explains that 4.0 explicitly includes/waives 'sui generis' database rights to remove confusion present in earlier versions.",
+        "Cure Period: Mentions the 30-day window to correct license breaches for automatic reinstatement of rights.",
+        "Attribution: Notes that 4.0 explicitly permits satisfying attribution requirements via a link to a separate page."
+      ],
+      "checklist_depth": [
+        "Original License Identification: Identifies the original license as Creative Commons Attribution-NonCommercial-ShareAlike 2.0 (CC BY-NC-SA 2.0).",
+        "Successor Identification: Identifies the target subject as the Creative Commons 4.0 License Suite (specifically the improvements therein)."
+      ],
+      "rationale": "The question requires Deep Reasoning to link a specific legacy document ('UNIX Tutorial for Beginners') to its specific license version (BY-NC-SA 2.0), and then trace the path to the 'recommended' successor (Version 4.0). It then applies Wide Aggregation by requiring the agent to synthesize four distinct technical legal improvements (porting, database rights, cure period, attribution) scattered throughout the explanatory text of the 4.0 license suite.",
+      "source_nodes": [
+        "Deed - Attribution-NonCommercial-ShareAlike 4.0 International\n - Creative Commons",
+        "What's New in 4.0 - Creative Commons",
+        "Chooser - Creative Commons",
+        "Deed - Attribution 4.0 International\n - Creative Commons"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Canonical URL https://creativecommons.org/licenses/by-nc-sa/4.0/ See the legal code You are free to: Share — copy and redistribute the material in any medium or format Adapt —",
+      "judge_max_limit": 380,
+      "answer_a": "M. Stonebank's 'UNIX Tutorial for Beginners', originally published in October 2001, is distributed under the Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic license (CC BY-NC-SA 2.0) [1, 2]. The recommended successor, the Creative Commons Version 4.0 license suite, introduced significant improvements to be more internationally robust and user-friendly [3].\n\nA key improvement in the 4.0 suite is its approach to international jurisdiction. Previous versions required \"porting,\" where separate licenses were drafted to align with the laws of specific countries. Version 4.0 is a single, global license designed to be enforceable worldwide without modification. This eliminates the confusion of multiple ported versions and creates a universal standard for open licensing [3, 4].\n\nThe 4.0 licenses were the first to explicitly account for 'sui generis' database rights. These rights, prominent in jurisdictions like the European Union, protect the substantial investment in creating a database, even if the database itself lacks the creativity for copyright protection. By including these rights, the 4.0 license ensures that all relevant intellectual property rights are covered, providing greater legal certainty for users who want to share and reuse data-intensive works [3, 4].\n\nFurthermore, Version 4.0 formally introduced a mechanism and timeframe for correcting license violations. If a user breaches a term, such as by failing to provide attribution, their rights under the license are automatically reinstated if they \"cure\" (correct) the violation within 30 days of discovering it. This 30-day cure period makes the licenses more forgiving of good-faith errors and encourages compliance over immediate termination of rights [3].\n\nFinally, the 4.0 suite offers greater flexibility regarding attribution placement. It clarifies that attribution can be provided in any manner \"reasonable to the means, medium, and context\" of the reuse. This acknowledges that it may be impractical to place detailed attribution information directly on some works and allows for practices like linking to a separate credits page, which is better suited for many digital formats [3].\n\n## References\n[1] Stonebank, M. (2001). *UNIX Tutorial for Beginners*. Department of Electronic Engineering, University of Surrey. Retrieved from www.ee.surrey.ac.uk/Teaching/Unix/\n[2] Creative Commons. (n.d.). *Attribution-NonCommercial-ShareAlike 2.0 Generic (CC BY-NC-SA 2.0) Deed*. Retrieved from creativecommons.org/licenses/by-nc-sa/2.0/\n[3] Creative Commons. (n.d.). *What's New in 4.0*. Creative Commons Wiki. Retrieved from wiki.creativecommons.org/wiki/What%27s_New_in_4.0\n[4] Vollmer, T. (2013, November 25). *CC’s Next Generation Licenses — Welcome Version 4.0!* Creative Commons Blog. Retrieved from creativecommons.org/2013/11/25/cc-next-generation-licenses-welcome-version-4-0/",
+      "answer_b": "Creative Commons Attribution–NonCommercial–ShareAlike 2.0 UK: England & Wales (CC BY-NC-SA 2.0 UK) was the licence originally applied to M. Stonebank’s “UNIX Tutorial for Beginners” (Oct 2001) [1].\n\nImprovements introduced in the recommended Version 4.0 International suite (e.g., CC BY-NC-SA 4.0) are:\n\n1. International jurisdiction / “porting”. Earlier CC licences were issued separately (“ported”) for many national legal systems, creating a mosaic of slightly different texts. Version 4.0 abandons porting in favour of a single, globally valid “International” licence drafted with neutral terminology and choice-of-law language that functions in all jurisdictions. This simplifies cross-border reuse and eliminates the need to select a country-specific version [2].\n\n2. Sui generis database rights. Unlike 2.0, the 4.0 text expressly covers databases protected by the EU-style database right. Licensors grant users permission to extract, reuse, adapt and share the contents, and waive their ability to assert that right to stop uses allowed by the licence. Users therefore receive the same freedoms for data as for copyright-protected material without negotiating separate permissions [3].\n\n3. Cure period for violations. Under §6(a) the licence terminates automatically when terms are breached, but rights are fully and automatically reinstated if the licensee remedies the breach within 30 days of discovering it. Earlier versions offered no automatic reinstatement, so even promptly fixed mistakes could cause permanent termination. The 30-day cure period gives re-users a predictable, low-risk path back to compliance [4].\n\n4. Flexible attribution. Section 3(a)(1) permits attribution “in any reasonable manner” and lets re-users place required credit, licence notice and change indication either within the work or “in a place where a user would reasonably expect to find such information” (e.g., a credits web-page, metadata, or accompanying documentation). This flexibility accommodates digital media, space-constrained formats and data sets while still ensuring that authors receive credit [5].\n\n## References  \n[1] CC BY-NC-SA 2.0 UK deed – https://creativecommons.org/licenses/by-nc-sa/2.0/uk/  \n[2] Creative Commons Wiki: 4.0 – International applicability – https://wiki.creativecommons.org/wiki/4.0  \n[3] Creative Commons. “Sui Generis Database Rights and CC 4.0” – https://creativecommons.org/about/cclicenses/  \n[4] CC BY-NC-SA 4.0 International legal code §6(a) – https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode  \n[5] CC BY-NC-SA 4.0 International legal code §3(a) – https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+      "duration_a_seconds": 26.9,
+      "duration_b_seconds": 28.9,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B is the clear winner for two main reasons. First, it correctly identifies the **specific** license applied to the tutorial (CC BY-NC-SA 2.0 **UK: England & Wales**). Agent A incorrectly identifies it as the 'Generic' version; given that the prompt explicitly asked for the 'specific' version, this precision is critical. Second, Agent B uses a numbered list to answer the four sub-points, making the response significantly more scannable and easier to read than Agent A's block paragraphs. Agent B also cites specific sections of the legal code, adding authority.",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0018_gemini25_vs_o3search_223"
+}

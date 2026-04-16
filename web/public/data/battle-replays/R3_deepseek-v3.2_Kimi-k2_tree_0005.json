@@ -1,0 +1,89 @@
+{
+  "id": "R3_deepseek-v3.2_Kimi-k2_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_deepseek-v3.2_Kimi-k2_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "Kimi-k2",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the organization that began donating its web crawl data to the Internet Archive in 1996. While the majority of this data flows into the Wayback Machine after a standard embargo period, what is the current public accessibility status of the specific collection subset labeled 'Alexa Crawls DR'?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "NONE",
+  "total_tokens": 155449,
+  "estimated_cost": 1.5545,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that began donating its web crawl data to the Internet Archive in 1996. While the majority of this data flows into the Wayback Machine after a standard embargo period, what is the current public accessibility status of the specific collection subset labeled 'Alexa Crawls DR'?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies the organization as Alexa Internet",
+        "Notes that general data is added to the Wayback Machine after an embargo period",
+        "Specifies the target collection as 'Alexa Crawls DR'",
+        "States that the 'Alexa Crawls DR' data is currently not publicly accessible"
+      ],
+      "checklist_depth": [
+        "Logic Proof: Matches the 1996 start date and Internet Archive donation partnership to Alexa Internet."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the entity 'Alexa Internet' based solely on its history of data donation starting in 1996 (masking the name). It then requires Wide aggregation to contrast the general data flow (embargoed availability) with the specific status of the 'Alexa Crawls DR' collection (not accessible), as found in the source text. Note: The provided topic 'Racing game' was disregarded as it conflicted entirely with the provided source text about Web Archiving; the 'Absolute Grounding' rule was prioritized.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Kart racing game - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The organization that began donating its web crawl data to the Internet Archive in 1996 was Alexa Internet, a subsidiary of Amazon that specialized in providing commercial web traffic data and analytics [1]. This pioneering donation established one of the largest continuous web archives in existence, forming the foundational collection for what would become the Wayback Machine. The majority of this crawl data flows into the Wayback Machine after a standard six-month embargo period, during which it is processed, de-duplicated, and made ready for public access through the archive's search interface [2].\n\nRegarding the specific collection subset labeled \"Alexa Crawls DR,\" this material remains in a restricted access status. The DR subset, which represents a specialized daily crawl collection, is currently preserved as a dark archive within the Internet Archive's systems. This means it is not publicly accessible through the Wayback Machine or any other public interface, despite being physically archived on their servers [3]. While the Internet Archive maintains this data for long-term preservation purposes, it has not been released for public browsing. The restricted status likely stems from specific donor agreements, technical processing requirements, or legal considerations that differ from the main Alexa crawl collection. As of now, there is no announced timeline for when or if the Alexa Crawls DR collection will become publicly available, and it remains accessible only to authorized researchers under special arrangements.\n\n## References\n\n[1] https://archive.org/about/web.php\n[2] https://archive.org/about/faqs.php\n[3] https://archive.org/donate/how-to-donate.php",
+      "answer_b": "The organization that began donating its web crawl data to the Internet Archive in 1996 is **Alexa Internet**, a web traffic analysis company founded by Brewster Kahle [1][2]. This longstanding donation comprises the immense and historically significant \"Alexa Crawls\" collection, which forms a foundational component of the Internet Archive's web archives alongside other major crawls like the \"Heritrix Crawls\" [1][2].\n\nThe specific subset labeled \"Alexa Crawls DR\" represents the \"domain rank\" crawls, which were designed to prioritize and capture content from the most popular websites according to Alexa's traffic metrics [1][3]. Regarding its current public accessibility status, this specific DR collection is **not directly and openly accessible to the general public for full browsing or search** via the main Wayback Machine interface. Its primary access pathway is through the Internet Archive's research-oriented **\"Research Scholar\" program**. Approved researchers can apply for access to conduct computational, non-consumptive analysis on the raw crawl data stored in the Internet Archive's Petabox storage systems [1][4]. This restricted access model is implemented due to the collection's immense scale, technical complexity (stored in raw ARC/WARC formats), and to manage computational load [1]. Therefore, while the vast majority of Alexa's general web crawl data eventually becomes publicly searchable on the Wayback Machine after an embargo period, the \"Alexa Crawls DR\" subset remains a distinct, large-scale dataset reserved for academic and research purposes under controlled conditions [1][4].\n\n## References\n[1] Internet Archive Blogs. (2019, July 11). *Understanding the Web Archive Data Set Donated by Alexa Internet*. Retrieved October 26, 2023, from https://blog.archive.org/2019/07/11/understanding-the-web-archive-data-set-donated-by-alexa-internet/\n[2] Wikipedia. (2023). *Alexa Internet*. Retrieved October 26, 2023, from https://en.wikipedia.org/wiki/Alexa_Internet\n[3] Archive-It Blog. (2020, January 14). *A Longitudinal Analysis of Accessibility and Use of Archived Web Pages*. Retrieved October 26, 2023, from https://archive-it.org/blog/post/longitudinal-analysis-accessibility-use-archived-web-pages/\n[4] Internet Archive. (n.d.). *About the Collections*. Retrieved October 26, 2023, from https://archive.org/about/collections.php",
+      "duration_a_seconds": 49.0,
+      "duration_b_seconds": 25.1,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identify the organization (Alexa Internet) and the restricted status of the 'Alexa Crawls DR' collection. However, Agent B provides a significantly better user experience. \n\n1. **Comprehensiveness**: Agent B correctly defines 'DR' as 'Domain Rank', whereas Agent A vaguely calls it a 'specialized daily crawl'. \n2. **Formatting**: Agent B uses bold text to highlight the direct answer ('not directly and openly accessible'), making it scannable. Agent A uses standard paragraphs which are harder to scan quickly.\n3. **Citations**: Agent B provides full citation details (Title, Date, URL), whereas Agent A only provides raw URLs. \n\nAgent B wins on depth, clarity, and presentation.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_Kimik2_vs_deepseekv_577"
+}

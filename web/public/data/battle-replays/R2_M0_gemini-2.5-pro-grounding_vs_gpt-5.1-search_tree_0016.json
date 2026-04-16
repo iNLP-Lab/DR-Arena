@@ -1,0 +1,216 @@
+{
+  "id": "R2_M0_gemini-2.5-pro-grounding_vs_gpt-5.1-search_tree_0016",
+  "source_group": "round2",
+  "source_log": "round2/R2_M0_gemini-2.5-pro-grounding_vs_gpt-5.1-search_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "gpt-5.1-search",
+  "winner": "gpt-5.1-search",
+  "final_score_a": 1.0,
+  "final_score_b": 3.0,
+  "total_rounds": 3,
+  "type": null,
+  "tournament_round": 2,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "Using the U.S. Bureau of Labor Statistics Occupational Outlook Handbook data projected for 2024–34, identify the management occupation that is functionally related to 'Software Developers, Quality Assurance Analysts, and Testers' but specifically requires '5 years or more' of work experience in a related occupation for entry. For this identified occupation, report the 2024 median annual pay, the projected numeric employment change over the decade, and the job outlook growth percentage.",
+    "Review the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period. Identify the two specific computer-related occupational profiles that are explicitly projected to grow by exactly 15% (described as 'Much faster than average'). For each of these two identified profiles, provide the 2024 median annual pay, the projected numeric employment change over the decade, and the estimated average number of annual openings.",
+    "According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook (2024–34 projections), identify the correct job titles for three specific computer-related occupations based on the following criteria: (1) the management role that 'plans, coordinates, and directs computer-related activities', (2) the analyst role that 'plans and carries out security measures' for networks, and (3) the support role that is projected to have a decline in employment of 3%. For each of these three occupations, report the 2024 Median Pay and the specific Job Outlook percentage for the 2024–34 decade."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 129350,
+  "estimated_cost": 1.2935,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Using the U.S. Bureau of Labor Statistics Occupational Outlook Handbook data projected for 2024–34, identify the management occupation that is functionally related to 'Software Developers, Quality Assurance Analysts, and Testers' but specifically requires '5 years or more' of work experience in a related occupation for entry. For this identified occupation, report the 2024 median annual pay, the projected numeric employment change over the decade, and the job outlook growth percentage.",
+      "word_limit_instruction": "Answer length: 100-150 words.",
+      "checklist_width": [
+        "2024 Median Annual Pay: $171,200",
+        "Employment Change (2024–34): 101,600",
+        "Job Outlook (2024–34): 15%"
+      ],
+      "checklist_depth": [
+        "Target Entity: Computer and Information Systems Managers",
+        "Logic Proof: Identified based on the requirement of '5 years or more' work experience (unlike Software Developers who require 'None') and the management/planning role description found in the OOH context."
+      ],
+      "rationale": "The question requires Deep reasoning to navigate from a starting entity (Software Developers) to a related target (Computer and Information Systems Managers) using specific criteria (experience requirements and role type) found in the OOH. It requires Wide aggregation to extract three distinct statistical data points (Pay, Change, Outlook) associated with that specific target.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "Based on the U.S. Bureau of Labor Statistics Occupational Outlook Handbook data for 2024–34, the management occupation functionally related to software developers that requires 5 years or more of related work experience is **Computer and Information Systems Managers** [1]. These professionals, also known as IT managers, plan and direct computer-related activities for organizations.\n\nThe 2024 median annual pay for this role was $174,740 [1]. Over the 2024–34 decade, the projected numeric employment change is an increase of 88,400 jobs [1]. This increase represents a job outlook growth rate of 15%, which the BLS classifies as much faster than the average for all occupations [1].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024, September 4). *Computer and Information Systems Managers*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm",
+      "answer_b": "The management occupation is **Computer and Information Systems Managers**, who plan and coordinate computing activities and often supervise teams of software developers and QA professionals, making them functionally related to “Software Developers, Quality Assurance Analysts, and Testers.” This occupation typically requires a **bachelor’s degree plus 5 years or more of work experience in a related occupation** for entry [1]. According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook projections for **2024–34**, Computer and Information Systems Managers have a **2024 median annual pay of about $175,000**, a **projected employment change of roughly +70,000 jobs**, and a **job outlook growth rate of about 15%**, which is faster than average for all occupations [1].  \n\n## References  \n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – Computer and Information Systems Managers.",
+      "duration_a_seconds": 11.6,
+      "duration_b_seconds": 50.2,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the entity as 'Computer and Information Systems Managers' (IT Managers), which fits the criteria of being a management role related to software development requiring 5+ years of experience. \n\nHowever, the prompt requests data for the '2024–34' projection period. Since the BLS has only released the 2023–33 projections (as of late 2024), a perfect agent would clarify this or use the 2023–33 data as the best proxy. \n\nAgent A provides the specific employment change number (88,400) found in the actual current BLS OOH (2023–33), whereas Agent B provides a vague and inaccurate estimate (70,000). Although neither agent matched the specific numbers in the provided Ground Truth checklist (which appear to differ from the current public BLS OOH data), Agent A is grounded in verifiable real-world data, while Agent B hallucinates the statistics. Agent A also uses better formatting with distinct paragraphs.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Review the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period. Identify the two specific computer-related occupational profiles that are explicitly projected to grow by exactly 15% (described as 'Much faster than average'). For each of these two identified profiles, provide the 2024 median annual pay, the projected numeric employment change over the decade, and the estimated average number of annual openings.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Software Developers/QA: 2024 Median Pay ($131,450)",
+        "Software Developers/QA: Projected Employment Change (287,900)",
+        "Software Developers/QA: Annual Openings (129,200)",
+        "Computer and Info Systems Managers: 2024 Median Pay ($171,200)",
+        "Computer and Info Systems Managers: Projected Employment Change (101,600)",
+        "Computer and Info Systems Managers: Annual Openings (55,600)"
+      ],
+      "checklist_depth": [
+        "Identify Entity 1: Software Developers, Quality Assurance Analysts, and Testers (Matched via 15% growth logic)",
+        "Identify Entity 2: Computer and Information Systems Managers (Matched via 15% growth logic)"
+      ],
+      "rationale": "The question uses Deep Logic by requiring the agent to scan the 2024-2034 BLS projections to find the specific '15%' growth attribute that links two distinct occupational groups (Software Developers/QA and IT Managers). It uses Wide Logic by demanding the aggregation of three separate data points (Pay, Employment Change, Openings) for both entities, which are located in separate sections of the source data.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 330,
+      "answer_a": "Based on the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period, two specific computer-related occupational profiles are projected to grow by exactly 15% [1, 2].\n\nThe first occupation is **Computer and Information Systems Managers**. These professionals, often called IT managers, are responsible for planning and directing the computer-related activities of an organization [1].\n*   **2024 Median Annual Pay:** $174,740\n*   **Projected Numeric Employment Change (2024–34):** 88,400 jobs\n*   **Estimated Average Annual Openings:** 56,100\n\nThese openings arise from growth in the industry and the need to replace workers who transfer to different occupations or exit the labor force [1]. The high demand is driven by the ongoing need for organizations to manage their technology infrastructure, implement new systems, and maintain cybersecurity [1].\n\nThe second occupational profile is **Market Research Analysts and Marketing Specialists**. This role is heavily computer-related, as these professionals use sophisticated data analysis and statistical software to examine market conditions, identify sales opportunities, and evaluate consumer preferences [2].\n*   **2024 Median Annual Pay:** $79,900\n*   **Projected Numeric Employment Change (2024–34):** 137,300 jobs\n*   **Estimated Average Annual Openings:** 125,500\n\nThe growth in this field is fueled by an increasing reliance on data to understand customer behavior and make informed business decisions [2]. The projected annual openings account for both employment growth and workers who leave the occupation permanently [2].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024, September 4). *Computer and Information Systems Managers*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm\n[2] U.S. Bureau of Labor Statistics. (2024, September 4). *Market Research Analysts*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/business-and-financial/market-research-analysts.htm",
+      "answer_b": "The two computer‑related occupations in the Occupational Outlook Handbook that are explicitly projected to grow **exactly 15%** over 2024–34 and labeled **“Much faster than average”** are:\n\n1. **Computer and Information Systems Managers**  \n   - **2024–34 growth rate:** 15% (“Much faster than average”). [1]  \n   - **2024 median annual pay:** about **$175,000**. [1]  \n   - **Projected numeric employment change (2024–34):** an increase of **about 70,000 jobs**. [1]  \n   - **Average annual openings:** roughly **56,000 openings per year**, including growth and replacements. [1]  \n   These managers plan, coordinate, and direct computer‑related activities in organizations and commonly oversee software development, systems implementation, and IT security efforts, linking them closely to software and other computer occupations. [1]\n\n2. **Computer and Information Research Scientists**  \n   - **2024–34 growth rate:** 15% (“Much faster than average”). [2]  \n   - **2024 median annual pay:** about **$152,000**. [2]  \n   - **Projected numeric employment change (2024–34):** an increase of roughly **7,000–8,000 jobs**. [2]  \n   - **Average annual openings:** approximately **2,000–3,000 openings per year** on average, combining new positions and replacement needs. [2]  \n   This occupation focuses on inventing and designing new approaches to computing, including advances in AI, machine learning, and other emerging technologies, which drives demand across many industries that require cutting‑edge computational solutions. [2]\n\nBoth occupations therefore share the same **15% projected growth rate**, qualify as **“Much faster than average”**, and command high median pay with solid projected numeric job gains and steady annual openings through 2034 according to the BLS Occupational Outlook Handbook. [1][2]  \n\n## References  \n\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer and Information Systems Managers,” 2024–2034 projections.  \n[2] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer and Information Research Scientists,” 2024–2034 projections.",
+      "duration_a_seconds": 28.4,
+      "duration_b_seconds": 77.1,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Both agents failed the primary 'Deep Logic' check by missing the 'Software Developers' entity explicitly required by the Ground Truth Checklist. Both agents also hallucinated that they were providing '2024–2034' data (which does not exist yet) while citing 2023–2033 data or hallucinated numbers. \n\nHowever, Agent B is better for two main reasons:\n1. **Domain Relevance**: Agent B's second choice ('Computer and Information Research Scientists') is a valid computer-related occupation, whereas Agent A's second choice ('Market Research Analysts') is a Business/Financial occupation, which violates the 'computer-related' constraint of the prompt.\n2. **Constraint Adherence**: Agent B explicitly included the requested label 'Much faster than average', whereas Agent A did not.\n\nAlthough Agent A's numeric data for the one correctly identified entity (IT Managers) was slightly closer to the Ground Truth than Agent B's, the category error of including a marketing role in a computer-related search makes Agent A's response less helpful to the user's core intent.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook (2024–34 projections), identify the correct job titles for three specific computer-related occupations based on the following criteria: (1) the management role that 'plans, coordinates, and directs computer-related activities', (2) the analyst role that 'plans and carries out security measures' for networks, and (3) the support role that is projected to have a decline in employment of 3%. For each of these three occupations, report the 2024 Median Pay and the specific Job Outlook percentage for the 2024–34 decade.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Computer and Information Systems Managers: 2024 Median Pay $171,200",
+        "Computer and Information Systems Managers: Job Outlook 15%",
+        "Information Security Analysts: 2024 Median Pay $124,910",
+        "Information Security Analysts: Job Outlook 29%",
+        "Computer Support Specialists: 2024 Median Pay $61,550",
+        "Computer Support Specialists: Job Outlook -3%"
+      ],
+      "checklist_depth": [
+        "Identify Entity 1: Computer and Information Systems Managers (Matched via 'plans, coordinates, and directs...' description)",
+        "Identify Entity 2: Information Security Analysts (Matched via 'security measures' description)",
+        "Identify Entity 3: Computer Support Specialists (Matched via 'decline in employment' condition)"
+      ],
+      "rationale": "The question requires Deep Reasoning by masking the names of the occupations behind their specific job duties (Deep Logic 1 & 2) or a unique statistical outlier (Deep Logic 3: negative growth). It requires Wide Aggregation by demanding the retrieval and consolidation of specific financial and projection data points (Pay and Outlook) from three separate occupational profiles.",
+      "source_nodes": [
+        "Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer Support Specialists :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Management Occupations :     Occupational Outlook Handbook : :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=cVZktAEtWE4. Quick Facts: Information Security Analysts 2024",
+      "judge_max_limit": 350,
+      "answer_a": "Based on the U.S. Bureau of Labor Statistics Occupational Outlook Handbook projections for 2024–34, the three specified computer-related occupations are identified as follows:\n\nThe management role that \"plans, coordinates, and directs computer-related activities\" is **Computer and Information Systems Managers** [1]. Also known as IT managers, these professionals are responsible for setting an organization's technology goals and overseeing the implementation and maintenance of its computer systems.\n*   **2024 Median Pay:** $174,740 per year [1]\n*   **Job Outlook (2024–34):** 15% growth (Much faster than average) [1]\n\nThe analyst role that \"plans and carries out security measures\" for networks is **Information Security Analysts** [2]. These specialists protect an organization's computer networks and systems by monitoring for security breaches, investigating violations, and installing protective software like firewalls. The strong demand is driven by the persistent and evolving threat of cyberattacks.\n*   **2024 Median Pay:** $124,740 per year [2]\n*   **Job Outlook (2024–34):** 29% growth (Much faster than average) [2]\n\nThe support role projected to have a 3% employment decline is **Computer Operators** [3]. These employees are tasked with monitoring and controlling computer and data processing equipment. The projected decline in this occupation is attributed to the widespread adoption of cloud computing services and increased automation, which have reduced the need for onsite staff to manage hardware and run routine tasks.\n*   **2024 Median Pay:** $51,190 per year [3]\n*   **Job Outlook (2024–34):** -3% decline [3]\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024, September 4). *Computer and Information Systems Managers*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm\n[2] U.S. Bureau of Labor Statistics. (2024, September 4). *Information Security Analysts*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm\n[3] U.S. Bureau of Labor Statistics. (2024, September 4). *Computer Operators*. Occupational Outlook Handbook. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/computer-operators.htm",
+      "answer_b": "1. **Management role that “plans, coordinates, and directs computer-related activities”**  \n   - **Correct job title:** *Computer and Information Systems Managers*.[1]  \n   - These managers plan, coordinate, and direct computer‑related activities in an organization, overseeing IT strategy, software projects, and systems operations.[1]  \n   - **2024 median pay:** about **$174,000 per year**.[1]  \n   - **Job outlook, 2024–34:** projected employment growth of **15%**, described as **“Much faster than average.”**[1]  \n\n2. **Analyst role that “plans and carries out security measures” for networks**  \n   - **Correct job title:** *Information Security Analysts*.[2]  \n   - Information security analysts plan and carry out security measures to protect an organization’s computer networks and systems, including monitoring for breaches, testing defenses, and developing security standards.[2]  \n   - **2024 median pay:** about **$121,000 per year**.[2]  \n   - **Job outlook, 2024–34:** employment is projected to grow **about 29%**, which the Occupational Outlook Handbook characterizes as **“Much faster than average.”**[2]  \n\n3. **Support role with a projected 3% employment decline**  \n   - **Correct job title:** *Network and Computer Systems Administrators*.[3]  \n   - These workers install, configure, and **support** an organization’s computer networks, including local area networks (LANs), wide area networks (WANs), and intranets, ensuring reliable day‑to‑day operation.[3]  \n   - **2024 median pay:** about **$98,000 per year**.[3]  \n   - **Job outlook, 2024–34:** employment is projected to **decline by about 3%** over the decade, reflecting slower growth in traditional on‑premises network administration as organizations adopt cloud and managed services.[3]  \n\nTogether, these profiles span leadership (CIS managers), cybersecurity (information security analysts), and infrastructure support (network and computer systems administrators), illustrating the varied pay levels and growth trajectories across computer‑related occupations in the 2024–34 BLS projections.  \n\n## References  \n\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, *Computer and Information Systems Managers*, 2024–34 projections.  \n[2] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, *Information Security Analysts*, 2024–34 projections.  \n[3] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, *Network and Computer Systems Administrators*, 2024–34 projections.",
+      "duration_a_seconds": 23.9,
+      "duration_b_seconds": 113.0,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B is the clear winner based on Deep Logic and Data Accuracy. \n\n1. **Entity Identification (The 'Decline' Role)**: The prompt asked for a support role with a **3% decline**. \n   - **Agent B** correctly identified **Network and Computer Systems Administrators**, which has a projected decline of exactly **3%** in the current BLS OOH (2023–33). \n   - **Agent A** identified **Computer Operators**, which typically has a much steeper decline (approx. -6% to -7% in recent projections), making it a poor match for the specific '3%' constraint.\n   - *Note*: The prompt's provided Ground Truth Checklist contained a factual error (listing 'Computer Support Specialists' as declining by 3%; in reality, they are projected to grow by ~6%). Agent B correctly ignored this potential trap/error and found the actual role that matches the statistical criteria.\n\n2. **Data Accuracy**: Agent B's pay and outlook figures were generally closer to the actual current BLS data (e.g., Network Admins at -3%). Agent A's pay figures appeared slightly less grounded (e.g., citing $174k for Managers vs the actual ~$169k, though both were high).\n\n3. **Formatting**: Agent B used a very clean structure with bolded 'Correct job title' fields, making it easier to scan than Agent A.",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_gemini25_vs_gpt51se_101"
+}

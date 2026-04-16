@@ -1,0 +1,161 @@
+{
+  "id": "R2_gemini-3.1-pro-grounding_vs_gpt-5.1-search_tree_0029",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_gemini-3.1-pro-grounding_vs_gpt-5.1-search_tree_0029.log",
+  "tree_id": "tree_0029",
+  "tree_title": "Handball",
+  "tree_topic": "Sports > Team Sports",
+  "tree_subtopic": "Handball",
+  "tree_crawled_at": "2025-11-22T00:49:21.808008",
+  "tree_url": "https://en.wikipedia.org/wiki/Handball",
+  "model_a": "gemini-3.1-pro-grounding",
+  "model_b": "gpt-5.1-search",
+  "winner": "gemini-3.1-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handball",
+  "questions": [
+    "Identify the top-tier men's national handball league in Russia that has been held annually since the early 1990s following the dissolution of the Soviet Union. Without naming any source document, describe its year of establishment, governing organization, number of participating teams in the top division, overall competition format (including how the champion is decided), and the official point system used in the regular stage. Additionally, specify the most successful club in the league’s history with its total number of titles, and name the reigning champion of the most recently completed season (2024/25) along with the city it represents.",
+    "Within the top-tier national men’s handball league established in Russia after the dissolution of the Soviet Union, identify the club that holds the record for the most championship titles and the club that most recently won the championship (2024/25 season). For each of these two clubs, provide their home city and total number of titles. Additionally, describe when this national championship was founded, which organization governs it, how many teams participate in the top division, and summarize the competition format (including points system and playoff structure)."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 300302,
+  "estimated_cost": 3.003,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Identify the top-tier men's national handball league in Russia that has been held annually since the early 1990s following the dissolution of the Soviet Union. Without naming any source document, describe its year of establishment, governing organization, number of participating teams in the top division, overall competition format (including how the champion is decided), and the official point system used in the regular stage. Additionally, specify the most successful club in the league’s history with its total number of titles, and name the reigning champion of the most recently completed season (2024/25) along with the city it represents.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Year of establishment (1992)",
+        "Governing body: Handball Federation of Russia",
+        "Number of participants in the top division (12)",
+        "Two-stage format: round-robin regular season + playoff stage",
+        "Point system: 2 points for a win, 1 for a draw, 0 for a loss",
+        "Most successful club: Chekhovskie Medvedi with 21 titles",
+        "Reigning champion (2024/25): Zenit Saint Petersburg"
+      ],
+      "checklist_depth": [
+        "Correct identification of the Russian Men's Handball Championship (Super League) founded in 1992 after the USSR dissolution",
+        "Chekhovskie Medvedi correctly identified as the most titled club with 21 championships",
+        "Zenit (Saint Petersburg) correctly identified as the 2024/25 champion"
+      ],
+      "rationale": "The question requires the agent to first infer the correct competition by using contextual clues (post-Soviet, top-tier Russian men’s league in handball), masking the entity name (Deep reasoning). It then demands aggregation of multiple distinct facts—organizational details, format rules, point system, historical records, and current champion—drawn from different sections of public sources (Wide aggregation). The combination ensures both correct identification and comprehensive information retrieval.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Kvindeligaen (handball) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "The top-tier men's national handball league in Russia is the Russian Men's Handball Super League (Superliga). Following the dissolution of the Soviet Union, the league was officially established in 1992 [1]. The competition is directly organized and governed by the Handball Federation of Russia (HFR) [2]. \n\nCurrently, the top domestic division features 12 participating teams [3]. The overall competition format is structured into two distinct phases. It opens with a regular season where clubs compete in a double round-robin system, playing each opponent both home and away. During this regular stage, the official point system awards two points for a victory, one point for a draw, and zero points for a loss [3]. Upon the conclusion of the regular season, the highest-ranked teams advance to the knockout playoffs. This playoff bracket includes quarter-finals, semi-finals, and a culminating finals series, which ultimately decides the national champion [3].\n\nHistorically, the most successful club in the league's existence is Chekhovskiye Medvedi (Chekhov Bears). The franchise holds an unparalleled record in Russian handball, having claimed a total of 21 Super League titles, which were won in an uninterrupted consecutive streak spanning from 2002 to 2022 [1][4]. \n\nWhile the 2024/25 season represents the active domestic calendar, the reigning champion from the most recently completed championship campaign is CSKA Moscow [5]. Representing the country's capital city of Moscow, the club successfully defeated their rivals in the finals to secure the national title and establish themselves as the preeminent team entering the current season [5].\n\n## References\n[1] Handball Federation of Russia (FGR). \"History of the Russian Men's Super League.\" \n[2] International Handball Federation (IHF). \"Handball Federation of Russia Profile.\" \n[3] Flashscore. \"Russian Superleague Men 2024/2025 Standings, Rules, and Format.\" \n[4] European Handball Federation (EHF). \"Chekhovskiye Medvedi Club Profile and Domestic Titles.\" \n[5] Handball Planet. \"CSKA Moscow defends the Russian Men's Super League title.\"",
+      "answer_b": "The top-tier men’s national handball league in Russia is the **Russian Handball Super League (Men)**. It was established in **1993** after the breakup of the Soviet Union, replacing the Soviet Championship as the top domestic competition.[1][2] The league is organized and governed by the **Handball Federation of Russia (HFR)**, which oversees competition regulations, calendars, and disciplinary matters.[1]\n\nIn recent seasons, the Super League’s top division has featured **12 participating clubs**.[2][3] The competition format is typically a **double round-robin regular season** in which each team plays all others home and away. After the regular stage, the highest-ranked teams advance to the **playoffs**, usually beginning with quarterfinals (best-of-series) followed by semifinals and finals; the **league champion is decided by the winner of the playoff final** rather than by regular-season standings alone.[2][3]\n\nThe official point system in the regular stage follows the standard handball model: teams receive **2 points for a win, 1 point for a draw, and 0 points for a loss**.[2]\n\nThe **most successful club** in league history is **Chekhovskie Medvedi**, with **over 20 national titles** since the league’s formation, dominating almost every season from the early 2000s onward.[1][3]\n\nFor the most recently completed **2024–25 season**, the **reigning champion** is **Chekhovskie Medvedi**, representing the city of **Chekhov** in Moscow Oblast.[3]\n\n## References  \n[1] General history and structure of the Russian Handball Super League (Men) – federation and league overviews.  \n[2] Season format, point system, and team numbers – current and recent Super League regulations and summaries.  \n[3] Championship records and 2024–25 title winner – club honours lists and latest season reports for Chekhovskie Medvedi.",
+      "duration_a_seconds": 25.4,
+      "duration_b_seconds": 6.5,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the Russian Men's Handball Super League (founded after the USSR dissolution) as the core entity, so both pass the DEEP logic check. However, on WIDTH/completeness: Agent A correctly states 1992 establishment, governing body (Handball Federation of Russia), 12 teams, two-stage format, 2-1-0 point system, and correctly identifies Chekhovskie Medvedi with 21 titles. Its only major error is naming CSKA Moscow instead of Zenit Saint Petersburg as the 2024/25 champion. Agent B has multiple factual errors: incorrect founding year (1993 instead of 1992), vague and imprecise title count (“over 20” instead of 21), and incorrect 2024/25 champion (Chekhovskie Medvedi instead of Zenit Saint Petersburg). Thus B fails several checklist items (WIDE failure). In presentation, Agent A is also slightly more structured and specific, with clearer detail and stronger citation grounding. Since Agent A contains a factual error, it cannot receive MUCH_BETTER, but it is clearly superior overall.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Within the top-tier national men’s handball league established in Russia after the dissolution of the Soviet Union, identify the club that holds the record for the most championship titles and the club that most recently won the championship (2024/25 season). For each of these two clubs, provide their home city and total number of titles. Additionally, describe when this national championship was founded, which organization governs it, how many teams participate in the top division, and summarize the competition format (including points system and playoff structure).",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Most titled club: total number of championship titles",
+        "Most titled club: home city",
+        "Most recent (2024/25) champion: club name",
+        "Most recent champion: home city",
+        "Most recent champion: total number of titles",
+        "Year the Russian men’s championship was founded",
+        "Governing organization of the championship",
+        "Number of teams in the top division",
+        "Description of two-stage format (regular season + playoffs)",
+        "Explanation of points system (win/draw/loss) and tie-breaking or overtime rules"
+      ],
+      "checklist_depth": [
+        "Chekhovskie Medvedi (Chekhov) — identified as the club with the highest number of Russian men’s championship titles (21), proving correct aggregation of historical winners",
+        "Zenit (Saint Petersburg) — identified as the 2024/25 champion with 2 total titles, confirming correct identification of the most recent season winner",
+        "Russian Men’s Handball Championship (founded 1992) — governed by the Handball Federation of Russia, confirming correct league identity after USSR dissolution"
+      ],
+      "rationale": "The question uses temporal and superlative logic (post-Soviet founding, most titled club, most recent champion) to force identification of the correct national competition and specific clubs (Deep reasoning). It then requires aggregation of multiple data points: titles, cities, founding year, governing body, team count, and competition format details (Wide scope), ensuring the respondent must synthesize historical, structural, and statistical information rather than retrieve a single fact.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Angola Men's Handball League - Wikipedia",
+        "Handball at the 2021 Junior Pan American Games - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 330,
+      "answer_a": "The Russian Men's Handball Super League, established in 1992 following the dissolution of the Soviet Union, serves as the top-tier domestic competition in the country [1]. The league is directly organized and governed by the Handball Federation of Russia (HFR) [2]. Currently, the top division features 12 participating teams competing for the national championship [3].\n\nThe club holding the all-time record for the most championship titles is Chekhovskiye Medvedi (Chekhov Bears). Based in the city of Chekhov, the franchise has dominated Russian handball history, securing an unprecedented 21 Super League titles [4]. Their remarkable run included an uninterrupted streak from 2002 to 2022. Conversely, the reigning champion entering the 2024/25 season is CSKA Moscow. Representing the capital city of Moscow, CSKA most recently captured the national title and currently holds a total of 2 Russian Super League championships (winning the 2022/23 and 2023/24 campaigns) [2][5]. \n\nThe overall competition format is divided into two main phases. The season begins with a regular-season stage operating on a double round-robin system, where every club plays all other opponents both home and away [3]. During this regular stage, the league employs a standard points system: teams are awarded two points for a victory, one point for a draw, and zero points for a loss. At the conclusion of the regular season, the top-ranked teams advance to the postseason knockout playoffs. This playoff structure features quarter-finals, semi-finals, and a final series to ultimately crown the national champion [3][5].\n\n## References\n[1] Handball Federation of Russia. \"History of the Russian Men's Super League.\" Available at: rushandball.ru\n[2] International Handball Federation. \"Handball Federation of Russia.\" Available at: ihf.info\n[3] Flashscore. \"Russian Superleague Men 2024/2025 Standings and Format.\" Available at: flashscore.com\n[4] European Handball Federation. \"Chekhovskiye Medvedi Club Profile.\" Available at: eurohandball.com\n[5] Handball Planet. \"CSKA Moscow defends the Russian Men's Super League title.\" Available at: handball-planet.com",
+      "answer_b": "The top-tier national men’s handball league in Russia is the **Russian Handball Super League (Men)**. It was founded in **1993**, following the dissolution of the Soviet Union and the end of the Soviet Men’s Handball Championship, as the new premier national competition.[1][2] The league is governed by the **Handball Federation of Russia (HFR)**, which sets regulations, calendar, and disciplinary rules for the championship.[1][3]\n\nThe **record champion** is **Chekhovskie Medvedi**, whose home city is **Chekhov** (Moscow Oblast). They have won **over 20 national titles**, typically listed as **around 24–26 Russian championships**, making them by far the most successful club in league history.[2][4]\n\nThe **most recent champion (2023/24 season – latest completed)** is also **Chekhovskie Medvedi of Chekhov**; no reliable evidence confirms completion of a 2024/25 season yet, so Chekhovskie Medvedi remain the reigning champions from the last fully concluded campaign.[3][4]\n\nIn recent seasons, the Super League’s top division has generally comprised **12 teams**.[2][3] The usual competition format is:\n\n- **Regular season**: double round-robin, each club playing all others home and away.  \n- **Points system**: **2 points for a win, 1 for a draw, 0 for a loss**; rankings are by total points, with goal difference and head‑to‑head often used as tiebreakers.[2]  \n- **Playoffs**: the highest‑placed teams after the regular season advance to a playoff bracket (typically quarterfinals, semifinals, and finals). Series are usually best‑of matches (e.g., best-of-three), and the **league champion is the winner of the playoff final**, not simply the regular‑season leader.[2][3]\n\n## References  \n[1] Overview of Russian Handball Super League history and founding – federation profiles.  \n[2] Super League format, number of clubs, and point system – recent season regulations and summaries.  \n[3] Governance by Handball Federation of Russia and competition structure – HFR competition pages.  \n[4] Chekhovskie Medvedi honours and title counts; confirmation as reigning champions – club records and latest season reports.",
+      "duration_a_seconds": 20.1,
+      "duration_b_seconds": 5.6,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic check: Agent A correctly identifies Chekhovskie Medvedi (21 titles) as the most successful club and correctly states the league was founded in 1992 and governed by the Handball Federation of Russia. However, A incorrectly names CSKA Moscow as the most recent champion instead of Zenit (Saint Petersburg) for 2024/25. Agent B fails Deep Logic more severely: it does not identify Zenit as the 2024/25 champion, incorrectly claims Chekhovskie Medvedi are still reigning champions, and gives an inflated/vague title count (24–26 instead of 21). It also lists the founding year as 1993 instead of 1992.\n\nWidth/Completeness: Agent A provides specific numbers (21 titles, 12 teams) and clearly explains the two-stage format and points system. Agent B is more vague (“over 20 titles,” “around 24–26”), avoids committing to the 2024/25 result, and is less precise overall.\n\nPresentation & UX: Agent B has slightly better formatting (bold labels, cleaner structure), but the factual inaccuracies outweigh this stylistic advantage. Agent A is more concrete and factually grounded on more checklist items.\n\nConclusion: Both have errors, but Agent A’s mistakes are narrower (primarily the most recent champion), whereas Agent B fails on founding year, title count, and most recent champion. Therefore, Agent A is better overall.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0029_gemini31_vs_gpt51se_1068"
+}

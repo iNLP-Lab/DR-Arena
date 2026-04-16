@@ -1,0 +1,155 @@
+{
+  "id": "R2_gemini-3.1-pro-grounding_vs_gpt-5.1-search_tree_0012",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_gemini-3.1-pro-grounding_vs_gpt-5.1-search_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "epguides.com * Main Menu Page",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "gemini-3.1-pro-grounding",
+  "model_b": "gpt-5.1-search",
+  "winner": "gemini-3.1-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "epguides.com * Main Menu Page",
+  "questions": [
+    "A long-running online television episode guide directs users to two separate third-party platforms for expanded episode information such as guest stars and plot summaries, and it advises users to send episode corrections to the editors of those same platforms. Identify these two external entertainment databases and, for each one, provide its founding year, headquarters location, and a brief description of its primary purpose in the television industry.",
+    "Identify a long-running online television-episode reference platform that began operating in the mid-1990s and is known for maintaining episode lists for more than ten thousand scripted and unscripted series. Using publicly available information, explain how this platform structures its episode data and external links, then aggregate the full range of tools and resources it offers to users. Your answer should cover: how episode titles and airdates are presented, how users can access detailed episode information and summaries, what options exist for printable or simplified viewing, how streaming availability is referenced, what kinds of schedule grids and regional listings are provided, and what additional features exist such as searchable catalogs, downloadable data formats, radio show listings, apps, merchandise links, FAQs, and policies for submitting corrections. Synthesize these elements into a coherent overview that demonstrates how the platform functions as both a reference database and a TV-scheduling hub."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 71823,
+  "estimated_cost": 0.7182,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "A long-running online television episode guide directs users to two separate third-party platforms for expanded episode information such as guest stars and plot summaries, and it advises users to send episode corrections to the editors of those same platforms. Identify these two external entertainment databases and, for each one, provide its founding year, headquarters location, and a brief description of its primary purpose in the television industry.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "TVmaze – Founding year",
+        "TVmaze – Headquarters location",
+        "TVmaze – Primary purpose as a TV database/platform",
+        "TV.com – Founding year",
+        "TV.com – Headquarters location",
+        "TV.com – Primary purpose as an entertainment/TV database platform"
+      ],
+      "checklist_depth": [
+        "TVmaze – Correctly identified as one of the external platforms linked for episode details and corrections",
+        "TV.com – Correctly identified as the other external platform linked for episode details and corrections"
+      ],
+      "rationale": "The question uses deep reasoning by describing the functional role (external platforms for episode details and corrections) rather than naming the entities, requiring the agent to infer the two specific databases. It then applies wide aggregation by requiring multiple factual attributes (founding year, headquarters, and purpose) for both entities, ensuring the answer cannot be derived from a single brief reference and must synthesize information from multiple reliable sources.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The long-running online television episode guide referenced is **epguides** (**epguides.com**). Since its early inception, the site has provided straightforward, text-based episode lists. To keep its interface streamlined, epguides explicitly directs users seeking expanded show information—such as comprehensive plot summaries, guest star rosters, and trivia—to two specific third-party entertainment databases. Furthermore, the website relies heavily on external platforms for ecosystem accuracy, actively advising its visitors to submit any episode-related corrections directly to the editors of those same two databases [1].\n\nThese two external databases are **IMDb** and **TVmaze** [2].\n\n**1. IMDb (Internet Movie Database)**\n* **Founding Year:** 1990 [3]\n* **Headquarters Location:** Seattle, Washington, USA [3]\n* **Primary Purpose:** Operated as a subsidiary of Amazon, IMDb is the premier digital registry for global entertainment metadata. Within the television industry, it catalogs complete series run details, actor filmographies, behind-the-scenes crew credits, and user-generated ratings. It functions simultaneously as a massive consumer discovery hub and, via its IMDbPro service, an essential networking, contact, and casting directory for entertainment professionals [3].\n\n**2. TVmaze**\n* **Founding Year:** 2014 [4]\n* **Headquarters Location:** The Netherlands [4]\n* **Primary Purpose:** TVmaze is a highly specialized, community-driven database dedicated strictly to television metadata and personalized show tracking. By utilizing crowdsourced contributions overseen by dedicated editors, it aggregates accurate broadcast schedules, episode synopses, and production statuses. In addition to consumer tools, TVmaze provides an extensively utilized open API. This technical infrastructure seamlessly supplies essential, up-to-date television metadata to countless third-party entertainment streaming websites and mobile tracking applications across the industry [4].\n\n## References\n[1] epguides. (n.d.). *General Disclaimer and Episode Guide Format*. Retrieved from epguides.com\n[2] Wikipedia Contributors. (n.d.). *Epguides*. Wikipedia, The Free Encyclopedia. Retrieved from en.wikipedia.org/wiki/Epguides\n[3] IMDb. (n.d.). *About IMDb / Company Information*. Retrieved from imdb.com\n[4] TVmaze. (n.d.). *About TVmaze*. Retrieved from tvmaze.com/about",
+      "answer_b": "The two external entertainment databases are **IMDb (Internet Movie Database)** and **TV.com**.\n\n**1. IMDb (Internet Movie Database)**  \n- **Founding year:** 1990 (originated as a Usenet list that evolved into a database site). [1][2]  \n- **Headquarters:** Seattle, Washington, USA (as part of Amazon, which is headquartered in Seattle; IMDb’s offices are in Seattle and Bristol, UK). [2][3]  \n- **Primary purpose in the television industry:**  \n  IMDb is a comprehensive, user-driven database of screen credits and information for films, television series, and other screen content. It catalogs detailed episode guides, cast and crew lists, guest stars, plot summaries, production details, and air dates. It serves as a central reference for professionals, journalists, and fans seeking authoritative credit information and background data for TV shows worldwide. [1][2]\n\n**2. TV.com**  \n- **Founding year:** 2005 (launched by CNET Networks as a replacement/expansion of TV Tome). [4][5]  \n- **Headquarters:** San Francisco, California, USA (CNET/Red Ventures operations; historically CNET Networks was based in San Francisco). [4]  \n- **Primary purpose in the television industry:**  \n  TV.com functioned as a TV-centric database and community site that provided detailed episode guides, cast lists, trivia, and user-contributed reviews and corrections. It focused heavily on episodic data—guest stars, synopses, and continuity notes—allowing users and editors to refine and correct show information, thus complementing simple schedule listings with rich editorial and community-generated content. [4][5]\n\n## References  \n[1] https://www.imdb.com/  \n[2] https://www.imdb.com/pressroom/about/  \n[3] https://www.aboutamazon.com/our-leadership-and-offices  \n[4] https://web.archive.org/web/20050601000000*/http://www.tv.com/  \n[5] https://en.wikipedia.org/wiki/TV.com",
+      "duration_a_seconds": 130.0,
+      "duration_b_seconds": 5.3,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: The correct two platforms are TVmaze and TV.com. Agent A identified IMDb and TVmaze (missing TV.com). Agent B identified IMDb and TV.com (missing TVmaze). Therefore, BOTH agents failed the core entity requirement.\n\nSecond, Width/Completeness: Agent A provided correct details for TVmaze but irrelevant details for IMDb. Agent B provided correct details for TV.com but irrelevant details for IMDb. Each answered only half of the required checklist correctly.\n\nSince both failed to identify the correct pair of external databases (core logical requirement), this results in a LOW QUALITY TIE. Neither response satisfies the foundational constraint despite otherwise solid formatting and detail quality.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page"
+      ],
+      "question": "Identify a long-running online television-episode reference platform that began operating in the mid-1990s and is known for maintaining episode lists for more than ten thousand scripted and unscripted series. Using publicly available information, explain how this platform structures its episode data and external links, then aggregate the full range of tools and resources it offers to users. Your answer should cover: how episode titles and airdates are presented, how users can access detailed episode information and summaries, what options exist for printable or simplified viewing, how streaming availability is referenced, what kinds of schedule grids and regional listings are provided, and what additional features exist such as searchable catalogs, downloadable data formats, radio show listings, apps, merchandise links, FAQs, and policies for submitting corrections. Synthesize these elements into a coherent overview that demonstrates how the platform functions as both a reference database and a TV-scheduling hub.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Description of episode lists showing titles and original airdates",
+        "Explanation of links from episode titles to external databases with guest stars and plot summaries",
+        "Explanation of printable or simplified episode guides with summaries",
+        "Description of links to streaming video sources at the bottom of show pages",
+        "Coverage of schedule grids including current week and seasonal schedules",
+        "Identification of regional schedules (e.g., U.S. and other countries)",
+        "Mention of search functionality and user cataloging or preferences",
+        "Inclusion of downloadable data formats such as CSV exports",
+        "Mention of radio show listings and recently added shows",
+        "Coverage of auxiliary resources such as FAQs, apps, TV themes, and merchandise",
+        "Explanation of how users can submit corrections or updates"
+      ],
+      "checklist_depth": [
+        "epguides.com identified as the platform, with logic proof: founded in 1995 and focused on comprehensive TV episode listings",
+        "Validation that the platform aggregates over 12,000 TV shows and emphasizes episode-level data rather than full reviews"
+      ],
+      "rationale": "The question masks the entity by describing its history, scope, and functional traits instead of naming it (Deep). It then requires the respondent to gather and synthesize many scattered features—episode data structure, external links, schedules, regional grids, downloads, and auxiliary tools—none of which are sufficient alone to answer fully (Wide).",
+      "source_nodes": [
+        "epguides.com * Main Menu Page"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: my shows | preferences Cataloging the opiate of the masses on the small screen since 1995. This site contains episode lists for over 12,400 TV shows. Each list displays only t",
+      "judge_max_limit": 280,
+      "answer_a": "**EPGuides** is a long-running online television reference platform launched in 1995 that catalogs episode lists for over 10,000 scripted and unscripted series [1]. The platform structures its data using a highly simplified, fast-loading HTML format, presenting users with a chronological list of production/episode numbers, original broadcast airdates, and official episode titles [2]. \n\nFor deeper research, EPGuides links individual episode titles to comprehensive external databases—primarily TVmaze—where users can access detailed episode summaries, cast lists, and production information [2]. To accommodate different user preferences, each series page includes options for a streamlined, ad-free \"printable\" view, as well as downloadable data formats (like CSV) for offline archiving and spreadsheet use [3]. The platform seamlessly references streaming availability, frequently incorporating icons or direct affiliate links for digital platforms like Amazon and Apple TV, alongside physical DVD merchandise links [3]. \n\nFunctioning comprehensively as a TV-scheduling hub, EPGuides provides robust primetime schedule grids across different regions, including detailed fall premiere and seasonal listings for US, UK, and Canadian broadcasts [4]. Beyond its massive, searchable A-Z catalog of television shows, the site uniquely features a dedicated index for classic radio show episode listings [4]. Users can also navigate the site's data on mobile devices via dedicated EPGuides app offerings [5]. \n\nTo meticulously maintain its vast database, the platform outlines a clear crowdsourcing policy within its FAQ section, providing specific contact forms and formatting instructions for users to submit missing information, upcoming airdates, or structural corrections [5]. Through these external integrations, regional grids, and accessible formats, EPGuides effectively operates as both a quick-reference database and an essential television tracking hub.\n\n## References\n[1] EPGuides. (n.d.). *About epguides.com*. Retrieved from http://epguides.com/about/\n[2] EPGuides. (n.d.). *TVmaze Partnership and Episode Data Structure*. Retrieved from http://epguides.com/\n[3] EPGuides. (n.d.). *Site Features: Printable Guides and Streaming Integrations*. Retrieved from http://epguides.com/menu/\n[4] EPGuides. (n.d.). *TV Schedules, Regional Grids, and Classic Radio Shows*. Retrieved from http://epguides.com/grid/\n[5] EPGuides. (n.d.). *Frequently Asked Questions and Corrections Policy*. Retrieved from http://epguides.com/FAQ/",
+      "answer_b": "The platform is **The Futon Critic**, founded in 1997 as an online television-episode and scheduling reference. It maintains episode lists for over ten thousand scripted and unscripted series across broadcast, cable, and streaming services.[1][2]\n\nEpisode lists are typically organized by series and season, with tables showing episode numbers, titles, original airdates, and basic status (e.g., “TBA” when unscheduled). Clicking an episode title leads to a dedicated page that may include loglines or summaries, cast/guest listings, network, time slot, production codes, and press-release text where available.[1][3]  \n\nFor simplified viewing, The Futon Critic offers text‑heavy, low-frills episode grids and printable-style pages, including long scrollable season lists and all‑episodes indexes (e.g., “the list” and series catalogs) that minimize graphics.[2][3]  \n\nStreaming availability is indicated in dedicated sections such as “Where to Watch”/“Streaming Options” and via links to network and platform pages (e.g., Netflix, Hulu, Amazon, Peacock). These are often surfaced in show records and news articles about licensing or premieres.[2]\n\nAs a scheduling hub, the site provides daily and weekly schedule grids, seasonal premiere calendars, network-by-network lineups, regional/US broadcast listings, and cable/streaming release slates.[1][3] Additional tools include a searchable catalog of shows, episode and series news archives, development and pilot trackers, downloadable or copyable listings, radio‑show listings for its audio content, mobile‑friendly layouts, FAQs, merchandise and partner links, and a corrections/feedback channel via contact forms or email for submitting updates and fixes.[1][2][3]\n\n## References\n[1] https://www.thefutoncritic.com/about.aspx  \n[2] https://www.thefutoncritic.com/guide.aspx  \n[3] https://www.thefutoncritic.com/listings/",
+      "duration_a_seconds": 33.2,
+      "duration_b_seconds": 5.1,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies EPGuides (epguides.com), founded in 1995 and widely known for maintaining episode-level listings for over 12,000 series. This matches the core identity and historical criteria. Agent B identifies The Futon Critic (1997), which is primarily a TV news, development, and press-release site—not a long-running episode-list reference platform structured around comprehensive episode guides. Thus, B fails the core entity check (DEEP failure).\n\nSecond, Width/Completeness: Agent A systematically covers nearly all checklist items—episode titles and original airdates, external database links (TVmaze), printable/simplified views, CSV downloads, streaming references, schedule grids (U.S., UK, Canada), searchable A–Z catalog, radio listings, apps/mobile access, merchandise links, FAQs, and correction submission policies. The explanation clearly synthesizes how EPGuides functions as both a reference archive and scheduling hub. Agent B includes some structural details, but since the platform itself is incorrect, its completeness is irrelevant.\n\nFinally, User Experience & Structure: Agent A uses strong formatting, clear structure, citations, and coherent synthesis. It reads like a polished search-engine summary. Because A is correct and comprehensive while B fails the core identification requirement, A decisively wins under the rubric.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_gemini31_vs_gpt51se_1052"
+}

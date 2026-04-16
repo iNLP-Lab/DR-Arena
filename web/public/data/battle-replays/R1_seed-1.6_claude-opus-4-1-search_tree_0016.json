@@ -1,0 +1,157 @@
+{
+  "id": "R1_seed-1.6_claude-opus-4-1-search_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_seed-1.6_claude-opus-4-1-search_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "claude-opus-4-1-search",
+  "model_b": "seed-1.6",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook (using the 2024–2034 projection data), identify the specific computer-related occupations—covering both technical specialists and management roles—that have a higher May 2024 median annual wage than the occupation category for 'Software Developers, Quality Assurance Analysts, and Testers'. For each of the higher-paying occupations identified, report the specific May 2024 median annual pay, the typical entry-level education required, and the projected job outlook percentage for the decade.",
+    "According to the Bureau of Labor Statistics Occupational Outlook Handbook projections for the 2024–2034 period, identify the specific computer and information technology occupation projected to grow 29 percent, and the management occupation responsible for planning, coordinating, and directing computer-related activities. For both of these identified roles, retrieve the 2024 median annual pay, the projected numeric employment change over the decade, and the typical entry-level education required."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 335980,
+  "estimated_cost": 3.3598,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics Occupational Outlook Handbook (using the 2024–2034 projection data), identify the specific computer-related occupations—covering both technical specialists and management roles—that have a higher May 2024 median annual wage than the occupation category for 'Software Developers, Quality Assurance Analysts, and Testers'. For each of the higher-paying occupations identified, report the specific May 2024 median annual pay, the typical entry-level education required, and the projected job outlook percentage for the decade.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies 'Computer and Information Systems Managers' median pay ($171,200)",
+        "Identifies 'Computer and Information Systems Managers' education (Bachelor's degree)",
+        "Identifies 'Computer and Information Systems Managers' job outlook (15%)",
+        "Identifies 'Computer and Information Research Scientists' median pay ($140,910)",
+        "Identifies 'Computer and Information Research Scientists' education (Master's degree)",
+        "Identifies 'Computer and Information Research Scientists' job outlook (Requires external lookup, typically ~26% for this period, or 'Much faster than average')"
+      ],
+      "checklist_depth": [
+        "Correctly identifies 'Computer and Information Systems Managers' as having a higher wage than Software Developers ($171,200 > $131,450)",
+        "Correctly identifies 'Computer and Information Research Scientists' as having a higher wage than Software Developers ($140,910 > $131,450)",
+        "Excludes 'Computer Network Architects' ($130,390 < $131,450)",
+        "Excludes 'Information Security Analysts' ($124,910 < $131,450)"
+      ],
+      "rationale": "The question requires **Deep Logic** by asking the agent to first determine the baseline wage of the anchor entity (Software Developers: $131,450) and then filter a broad domain of occupations (Computer/IT/Management) to find only those exceeding that specific threshold. It requires **Wide Aggregation** because the two correct answers (Managers and Research Scientists) are located in different sections of the handbook (Management vs. Computer & IT Occupations) and have distinct data points (Pay, Education, Outlook) that must be compiled accurately.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "I'll search for the specific BLS Occupational Outlook Handbook data for computer-related occupations and their May 2024 median wages.\n\n<search_quality_reflection>\nI need to find the official U.S. Bureau of Labor Statistics Occupational Outlook Handbook data for 2024-2034 projections, specifically focusing on computer-related occupations and their May 2024 median annual wages, comparing them to Software Developers, Quality Assurance Analysts, and Testers.\n</search_quality_reflection>\n\n<search_quality_score>4</search_quality_score>\n\n<search>\nBLS Occupational Outlook Handbook 2024-2034 computer occupations May 2024 median wage\n</search>\n\n<search>\n\"Software Developers, Quality Assurance Analysts, and Testers\" May 2024 median annual wage BLS\n</search>\n\n<search>\nBLS computer occupations higher median wage than software developers 2024\n</search>\n\n<search>\nComputer and Information Systems Managers May 2024 median wage BLS\n</search>\n\n<search>\nComputer Network Architects May 2024 median wage BLS Occupational Outlook\n</search>\n\nBased on the U.S. Bureau of Labor Statistics Occupational Outlook Handbook with 2024-2034 projection data, Software Developers, Quality Assurance Analysts, and Testers have a May 2024 median annual wage of $130,160 [1]. Several computer-related occupations exceed this threshold:\n\n**Computer and Information Systems Managers** earn a median annual wage of $169,510 (May 2024) [2]. This role typically requires a bachelor's degree for entry-level positions, though many employers prefer candidates with a master's degree in business administration or computer science. The projected job outlook shows 17% growth from 2024-2034, much faster than average [2].\n\n**Computer Network Architects** command a median annual wage of $133,840 (May 2024) [3]. Entry-level education requirements include a bachelor's degree in computer science, information systems, or related fields. The occupation projects 13% growth through 2034, faster than the average for all occupations [3].\n\n**Computer and Information Research Scientists** receive the highest median pay at $145,080 (May 2024) [4]. This specialized role typically requires a master's degree in computer science or a related field for entry-level positions, with many positions requiring doctoral degrees. The projected employment growth is 26% from 2024-2034, much faster than average [4].\n\nThese higher-paying positions reflect increased responsibilities in system architecture, management, and advanced research. The strong growth projections across all these occupations indicate robust demand for senior technical and management roles in the technology sector through 2034.\n\n## References\n\n[1] U.S. Bureau of Labor Statistics. Occupational Outlook Handbook: Software Developers, Quality Assurance Analysts, and Testers. 2024-2034 Edition.\n\n[2] U.S. Bureau of Labor Statistics. Occupational Outlook Handbook: Computer and Information Systems Managers. 2024-2034 Edition.\n\n[3] U.S. Bureau of Labor Statistics. Occupational Outlook Handbook: Computer Network Architects. 2024-2034 Edition.\n\n[4] U.S. Bureau of Labor Statistics. Occupational Outlook Handbook: Computer and Information Research Scientists. 2024-2034 Edition.",
+      "answer_b": "The 2024 median annual wage for “Software Developers, Quality Assurance Analysts, and Testers” is $124,200 [1]. Three higher-paying computer-related occupations (spanning management and technical roles) from BLS 2024–2034 projections follow. First, Computer and Information Systems Managers (management role): median $164,070 [1], typical entry-level education is a bachelor’s degree (plus several years of relevant technical experience) [1], projected 10% job growth (faster than the 5% average for all occupations) [1]. Second, Software Architects (technical specialist role): median $139,090 [1], entry-level education is a bachelor’s degree in computer science or a related field (often paired with 5–10 years of software development experience) [1], projected 15% growth [1]. Third, Computer and Information Research Scientists (technical specialist role): median $136,620 [1], entry-level education is a master’s degree in computer science or a related discipline [1], projected 23% growth (much faster than average) [1]. These roles exceed the software developer category’s wage due to specialized expertise, leadership responsibilities, or advanced research demands, with growth fueled by digital transformation and emerging technologies like AI and cloud computing [1].\n\n## References\n[1] U.S. Bureau of Labor Statistics. Occupational Outlook Handbook, 2024–2034 Projections. Computer and Information Systems Managers; Software Developers, Quality Assurance Analysts, and Testers; Software Architects; Computer and Information Research Scientists. https://www.bls.gov/ooh/",
+      "duration_a_seconds": 41.5,
+      "duration_b_seconds": 62.5,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Both agents failed to retrieve the exact 'May 2024' numbers specified in the Ground Truth checklist (likely due to the data being very new or the agents relying on May 2023 data). Agent A retrieved accurate May 2023 figures (e.g., $169,510 for Managers, $145,080 for Scientists) but mislabeled them as 2024. Agent B retrieved inaccurate numbers and hallucinated a non-existent OOH category ('Software Architects'). \n\nAgent A wins primarily on User Experience and Formatting. It used clear bold headers and spacing, making the information easy to scan, whereas Agent B provided a dense, difficult-to-read wall of text. Agent A also stuck to valid OOH occupational categories, whereas Agent B invented one. Agent A is not 'Much Better' because it included 'Computer Network Architects' which, according to the ground truth (and actual 2023 data), pays *less* than Software Developers, constituting a logic error.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the Bureau of Labor Statistics Occupational Outlook Handbook projections for the 2024–2034 period, identify the specific computer and information technology occupation projected to grow 29 percent, and the management occupation responsible for planning, coordinating, and directing computer-related activities. For both of these identified roles, retrieve the 2024 median annual pay, the projected numeric employment change over the decade, and the typical entry-level education required.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Information Security Analysts: 2024 Median Pay ($124,910)",
+        "Information Security Analysts: Employment Change (52,100)",
+        "Information Security Analysts: Entry-Level Education (Bachelor's degree)",
+        "Computer and Information Systems Managers: 2024 Median Pay ($171,200)",
+        "Computer and Information Systems Managers: Employment Change (101,600)",
+        "Computer and Information Systems Managers: Entry-Level Education (Bachelor's degree)"
+      ],
+      "checklist_depth": [
+        "Identification of Entity 1: Information Security Analysts (Verified via 29% growth rate)",
+        "Identification of Entity 2: Computer and Information Systems Managers (Verified via job duties)"
+      ],
+      "rationale": "The question utilizes Deep Logic by masking the identity of the two occupations behind specific statistical indicators (29% growth) and functional descriptions (planning/directing computer activities), requiring the agent to reason through the BLS descriptions to identify 'Information Security Analysts' and 'Computer and Information Systems Managers'. It then applies Wide Logic by requesting the aggregation of three distinct data points (pay, numeric change, education) for each entity, forcing the agent to synthesize information from different sections of the handbook.",
+      "source_nodes": [
+        "Information Security Analysts :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Management Occupations :     Occupational Outlook Handbook : :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=cVZktAEtWE4. Quick Facts: Information Security Analysts 2024",
+      "judge_max_limit": 320,
+      "answer_a": "<search>\nBLS Occupational Outlook Handbook 2024-2034 computer occupation 29 percent growth\n</search>\n\n<search>\nInformation Security Analysts BLS 2024-2034 29% growth median pay employment change\n</search>\n\n<search>\nComputer and Information Systems Managers BLS planning coordinating directing computer activities 2024 median pay\n</search>\n\n<search>\nComputer and Information Systems Managers 2024-2034 numeric employment change entry education BLS\n</search>\n\n<search>\nInformation Security Analysts 2024-2034 numeric job growth entry-level education requirements BLS\n</search>\n\nAccording to the Bureau of Labor Statistics Occupational Outlook Handbook for 2024-2034, **Information Security Analysts** is the specific computer and information technology occupation projected to grow 29 percent [1]. This occupation has a 2024 median annual pay of $120,360 [1]. The projected numeric employment change over the decade is 49,500 new jobs, reflecting the critical need for cybersecurity professionals as organizations increasingly prioritize protecting their digital infrastructure and sensitive data [1]. The typical entry-level education required is a bachelor's degree, usually in computer science, information technology, or a related field [1].\n\nThe management occupation responsible for planning, coordinating, and directing computer-related activities is **Computer and Information Systems Managers**, also known as IT managers or IT directors [2]. These professionals earn a 2024 median annual pay of $169,510, significantly higher than most computer occupations [2]. The projected numeric employment change from 2024-2034 is 103,700 new positions, representing a 17 percent growth rate that is much faster than the average for all occupations [2]. Entry-level education typically requires a bachelor's degree in computer science, information technology, or a related technical field, though many employers prefer candidates with a Master of Business Administration (MBA) or graduate degree in information systems [2].\n\nBoth occupations reflect the technology sector's robust growth trajectory, with Information Security Analysts experiencing exceptional demand due to escalating cybersecurity threats, while Computer and Information Systems Managers benefit from organizations' continued digital transformation initiatives requiring strategic technology leadership.\n\n## References\n\n[1] U.S. Bureau of Labor Statistics. Occupational Outlook Handbook: Information Security Analysts. 2024-2034 Edition.\n\n[2] U.S. Bureau of Labor Statistics. Occupational Outlook Handbook: Computer and Information Systems Managers. 2024-2034 Edition.",
+      "answer_b": "The computer and information technology occupation projected to grow 29 percent over the 2024–2034 decade (per BLS Occupational Outlook Handbook projections) is Database Administrators and Architects [1]. This role entails designing, implementing, and maintaining secure, accessible databases to support organizational data needs [1]. Its 2024 median annual pay is $112,120 [1], with a projected numeric employment change of 30,600 new jobs over the decade [1]; typical entry-level education requires a bachelor’s degree in computer science or a related field, though some employers prioritize candidates with relevant certifications or hands-on database management experience [1]. The management occupation responsible for planning, coordinating, and directing computer-related activities is Computer and Information Systems Managers [1]. This leadership role oversees organizational technology strategies, team operations, system upgrades, and cybersecurity initiatives [1]. Its 2024 median annual pay is $164,070 [1], with a projected numeric employment change of 56,400 new jobs from 2024 to 2034 [1]; typical entry-level education is a bachelor’s degree plus several years of relevant technical experience (e.g., in software development or network administration) to qualify for leadership responsibilities [1]. Both roles’ growth stems from rising demand for robust data management and organizational reliance on advanced digital infrastructures [1].\n\n## References\n[1] U.S. Bureau of Labor Statistics. Occupational Outlook Handbook, 2024–2034 Projections. Computer and Information Systems Managers; Database Administrators and Architects. https://www.bls.gov/ooh/",
+      "duration_a_seconds": 30.6,
+      "duration_b_seconds": 38.1,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified both entities requested in the prompt (Information Security Analysts and Computer and Information Systems Managers). Agent B failed the deep logic check for the first entity, incorrectly identifying it as 'Database Administrators' (which does not have the projected growth rate mentioned). Additionally, Agent A provided a much better user experience through the use of paragraph breaks, whereas Agent B presented a difficult-to-read wall of text. While Agent A's financial figures lagged slightly behind the specific 2024 Ground Truth (likely citing the 2023 dataset), it found the correct roles, making it the clear winner over Agent B which hallucinated the primary entity.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_claudeopu_vs_seed16_596"
+}

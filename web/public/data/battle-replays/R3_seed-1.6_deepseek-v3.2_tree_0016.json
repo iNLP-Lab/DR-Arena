@@ -1,0 +1,207 @@
+{
+  "id": "R3_seed-1.6_deepseek-v3.2_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_seed-1.6_deepseek-v3.2_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "seed-1.6",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 3.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "Referencing the U.S. Bureau of Labor Statistics Occupational Outlook Handbook (OOH) data for the 2024–34 projections, locate the profile for the occupational group primarily responsible for designing computer applications or identifying defects in software programs. Within the 'Similar Occupations' listed for this group, identify the specific management role that typically requires '5 years or more' of work experience in a related occupation.\n\nProvide a comparative analysis of these two occupational groups—the initial software/testing group and the identified management group—detailing the following specific metrics for each:\n1. The 2024 Median Pay (as listed in the Quick Facts).\n2. The projected numeric Employment Change from 2024 to 2034.\n3. The average number of projected Job Openings each year over the decade.",
+    "According to the U.S. Bureau of Labor Statistics' employment projections for the 2024–2034 decade, what is the projected percentage growth rate for the occupational group that encompasses both professionals who design computer applications and those who identify and report defects in such programs? Additionally, using the May 2024 wage data, determine the median annual salaries for the two distinct roles within this category and calculate the specific dollar difference between their earnings.",
+    "Based on the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–34 decade, identify the combined occupational group that encompasses professionals who design computer applications alongside those who identify and report defects in such programs. For this specific category, report the projected percentage growth rate and the total expected numeric change in employment over the decade. Additionally, extract the May 2024 median annual wages for the two distinct primary roles within this group (developers versus quality assurance analysts/testers) and calculate the monetary difference between their median earnings."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 3,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 2818229,
+  "estimated_cost": 28.1823,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Referencing the U.S. Bureau of Labor Statistics Occupational Outlook Handbook (OOH) data for the 2024–34 projections, locate the profile for the occupational group primarily responsible for designing computer applications or identifying defects in software programs. Within the 'Similar Occupations' listed for this group, identify the specific management role that typically requires '5 years or more' of work experience in a related occupation.\n\nProvide a comparative analysis of these two occupational groups—the initial software/testing group and the identified management group—detailing the following specific metrics for each:\n1. The 2024 Median Pay (as listed in the Quick Facts).\n2. The projected numeric Employment Change from 2024 to 2034.\n3. The average number of projected Job Openings each year over the decade.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Software Developers Group 2024 Median Pay: $131,450",
+        "Software Developers Group Employment Change (2024-34): 287,900",
+        "Software Developers Group Annual Openings: 129,200",
+        "Computer and Information Systems Managers 2024 Median Pay: $171,200",
+        "Computer and Information Systems Managers Employment Change (2024-34): 101,600",
+        "Computer and Information Systems Managers Annual Openings: 55,600"
+      ],
+      "checklist_depth": [
+        "Anchor Entity Identified: Software Developers, Quality Assurance Analysts, and Testers (based on design/defect duties)",
+        "Target Entity Identified: Computer and Information Systems Managers (based on Similar Occupations + Management role + 5 years experience logic)"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the starting entity based on job duties ('designing applications...') rather than its name. It then enforces a logical hop to a second entity ('Computer and Information Systems Managers') using a specific constraint ('Similar Occupations', 'Management', '5 years experience') that distinguishes it from other similar jobs. The Wide Aggregation phase ensures the agent must extract and align specific numerical data (Pay, Change, Openings) from two distinct source documents.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "The primary occupational group focused on designing computer applications and identifying software defects is Software Developers, Quality Assurance Analysts, and Testers [1]. Its “Similar Occupations” list includes Computer and Information Systems Managers, the management role requiring 5+ years of related work experience [1]. Comparative metrics: 1. 2024 Median Pay (Quick Facts): The software/testing group earns $124,200 annually, while the management group commands a higher $164,070 [1]. 2. Projected numeric Employment Change (2024–2034): The software/testing group sees substantial growth of +255,700 positions, dwarfing the management group’s +56,400 [1]. 3. Annual average projected Job Openings: The software/testing group has 188,400 yearly openings, far exceeding the management group’s 41,900 [1]. These disparities reflect the software/testing group’s larger, rapidly expanding technical workforce demand, while the management group’s higher pay aligns with its strategic oversight duties and strict experience barrier. The management group’s smaller growth and openings stem from its senior niche, where only seasoned technical professionals qualify for leadership roles driving organizational tech strategy [1].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Occupational Outlook Handbook: Software Developers, Quality Assurance Analysts, and Testers. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers-quality-assurance-analysts-and-testers.htm\n[2] U.S. Bureau of Labor Statistics. (2024). Occupational Outlook Handbook: Computer and Information Systems Managers. Retrieved from https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm",
+      "answer_b": "The initial occupational group is Software Developers, Quality Assurance Analysts, and Testers, which includes those designing applications and identifying software defects. The 'Similar Occupations' section for this group lists Computer and Information Systems Managers, the management role typically requiring 5 or more years of related experience [1][2].\n\nA comparative analysis shows:\n1. **2024 Median Pay**: For Software Developers, QA Analysts, and Testers, the median pay is $121,880 per year. For Computer and Information Systems Managers, it is $176,540 per year [1][2].\n2. **Projected Numeric Employment Change (2024-34)**: Software Developers, QA Analysts, and Testers are projected to see an increase of 451,200 jobs. Computer and Information Systems Managers are projected to see a much smaller increase of 81,800 jobs [1][2].\n3. **Average Annual Projected Job Openings**: For Software Developers, QA Analysts, and Testers, there are projected to be about 146,900 openings per year. For Computer and Information Systems Managers, there are projected to be about 25,500 openings per year [1][2].\n\nThe data illustrates a significant difference in scale, compensation, and required experience. While the software development group shows massive projected growth and a high volume of annual openings, reflecting strong demand, the management role commands a substantially higher median salary, correlating with the requirement for extensive prior work experience [1][2].\n\n## References\n[1] U.S. Bureau of Labor Statistics. \"Software Developers, Quality Assurance Analysts, and Testers.\" *Occupational Outlook Handbook*, [https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm).\n[2] U.S. Bureau of Labor Statistics. \"Computer and Information Systems Managers.\" *Occupational Outlook Handbook*, [https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm](https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm).",
+      "duration_a_seconds": 38.4,
+      "duration_b_seconds": 12.0,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents correctly identified the core entities (Software Developers group and Computer and Information Systems Managers). However, both agents failed significantly on the data retrieval component (WIDE failure). The prompt requested 2024–34 projections and provided a specific Ground Truth checklist. Both agents provided outdated statistics (Agent A used ~2022 data, Agent B used ~2021 data) and hallucinated that these figures applied to the 2024–34 period. Neither agent matched the specific Ground Truth metrics for Pay, Employment Change, or Openings. While Agent B had superior formatting, and Agent A had slightly more recent data/links, the failure of both to retrieve the correct requested statistics results in a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics' employment projections for the 2024–2034 decade, what is the projected percentage growth rate for the occupational group that encompasses both professionals who design computer applications and those who identify and report defects in such programs? Additionally, using the May 2024 wage data, determine the median annual salaries for the two distinct roles within this category and calculate the specific dollar difference between their earnings.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Projected Growth Rate (2024–34): 15%",
+        "Software Developers May 2024 Median Wage: $133,080",
+        "QA Analysts & Testers May 2024 Median Wage: $102,610",
+        "Calculated Wage Difference: $30,470"
+      ],
+      "checklist_depth": [
+        "Target Entity: Software Developers, Quality Assurance Analysts, and Testers",
+        "Logic Validation: Identified 'Designers' as Developers and 'Defect Reporters' as QA Analysts/Testers"
+      ],
+      "rationale": "The question uses 'Deep' reasoning by describing the job functions (designing vs. reporting defects) rather than naming the occupations, forcing the agent to identify the specific BLS grouping. It requires 'Wide' aggregation by asking for multiple distinct data points (growth rate, two separate sub-occupation wages) and a calculation based on those scattered details.",
+      "source_nodes": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=_WQ_VV4pXPc. Quick Facts: Software Developers, Quality Assur",
+      "judge_max_limit": 280,
+      "answer_a": "The U.S. Bureau of Labor Statistics’ 2024–2034 employment projections assign a 21% growth rate to the occupational group “Software Developers, Quality Assurance Analysts, and Testers,” which encompasses computer application designers and defect-reporting professionals [1]. This rate far outstrips the 5% average growth projected for all U.S. occupations. For May 2024, the median annual salary for the design-focused role (software developers, applications) is $124,200 [2]. The median annual salary for the defect-identifying role (software quality assurance analysts and testers) is $93,900 [2]. The specific dollar difference between their earnings is $30,300, with the design role’s median salary exceeding the defect-reporting role’s. This robust growth projection ties to surging demand for custom business software, mobile applications, and enhanced digital security measures. The wage gap reflects disparities in technical expertise demands, project leadership responsibilities, and direct influence on product development timelines and market competitiveness.\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Occupational Outlook Handbook: Software Developers, Quality Assurance Analysts, and Testers. Employment Projections (2024–2034). https://www.bls.gov/ooh/computer-and-information-technology/software-developers-quality-assurance-analysts-and-testers.htm\n[2] U.S. Bureau of Labor Statistics. (2024). Occupational Employment and Wage Statistics: Software Developers, Applications; Software Quality Assurance Analysts and Testers. May 2024 Wage Data. https://www.bls.gov/oes/current/oes151252.htm; https://www.bls.gov/oes/current/oes151253.htm",
+      "answer_b": "According to the U.S. Bureau of Labor Statistics (BLS) employment projections for 2024–2034, the occupational group encompassing both software developers and software quality assurance analysts and testers is projected to grow by 12.6%, which is much faster than the average for all occupations [1]. This category is officially classified as \"Software Developers, Quality Assurance Analysts, and Testers\" [1].\n\nUsing the BLS May 2024 Occupational Employment and Wage Statistics data, the median annual wages for the two distinct roles within this group are as follows [2]:\n*   **Software Developers**: $132,270 per year.\n*   **Software Quality Assurance Analysts and Testers**: $101,950 per year.\n\nThe specific dollar difference between their median annual earnings is $30,320, with software developers earning this amount more than software quality assurance analysts and testers. The 12.6% projected growth is driven by continued demand for new computer software, particularly in mobile and healthcare applications, and for increased cybersecurity measures [1]. It is important to note that while these roles are grouped together for projections, their specific duties and wages differ significantly, as reflected in the substantial salary gap.\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Occupational Outlook Handbook: Software Developers, Quality Assurance Analysts, and Testers. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm\n[2] U.S. Bureau of Labor Statistics. (2024). Occupational Employment and Wage Statistics, May 2024: 15-1252 Software Developers, 15-1253 Software Quality Assurance Analysts and Testers. Retrieved from https://www.bls.gov/oes/current/oes_stru.htm",
+      "duration_a_seconds": 26.1,
+      "duration_b_seconds": 17.5,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents failed to retrieve the exact figures specified in the Ground Truth Checklist (likely due to the specific/future nature of the requested 2024–2034 projections and May 2024 wage data). However, Agent B is the clear winner. \n\n1. **Data Proximity**: Agent B's numbers (e.g., $132k for developers) are much closer to the Ground Truth ($133k) than Agent A's outdated figures ($124k). Agent B appears to be using the most recent prior year data (May 2023), whereas Agent A is using data from 2021 or 2022.\n2. **Formatting**: Agent B uses bullet points to clearly separate the wage data, making it highly scannable. Agent A buries the numbers in a dense paragraph, resulting in a poor user experience.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 1,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Based on the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–34 decade, identify the combined occupational group that encompasses professionals who design computer applications alongside those who identify and report defects in such programs. For this specific category, report the projected percentage growth rate and the total expected numeric change in employment over the decade. Additionally, extract the May 2024 median annual wages for the two distinct primary roles within this group (developers versus quality assurance analysts/testers) and calculate the monetary difference between their median earnings.",
+      "word_limit_instruction": "Answer length: 210-310 words.",
+      "checklist_width": [
+        "Projected Growth Rate (2024–34): 15% (or 'Much faster than average')",
+        "Employment Change (2024–34): 287,900 jobs",
+        "Median Annual Wage (May 2024) for Software Developers: $133,080",
+        "Median Annual Wage (May 2024) for Quality Assurance Analysts/Testers: $102,610",
+        "Calculated Wage Difference: $30,470"
+      ],
+      "checklist_depth": [
+        "Target Entity: Software Developers, Quality Assurance Analysts, and Testers",
+        "Logic Validation: Identified group based on the description of 'designing applications' and 'reporting defects'."
+      ],
+      "rationale": "The question uses 'Deep' reasoning by describing the functional roles (designing vs. reporting defects) rather than naming the occupational group directly. It requires 'Wide' aggregation by demanding three distinct types of data: long-term projection stats (growth %), volume stats (numeric change), and a comparative breakdown of current wage data (sub-occupation median wages) which are located in different sections of the source text.",
+      "source_nodes": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=_WQ_VV4pXPc. Quick Facts: Software Developers, Quality Assur",
+      "judge_max_limit": 310,
+      "answer_a": "The combined occupational group encompassing computer application designers and defect-reporting professionals, per the U.S. Bureau of Labor Statistics’ (BLS) 2024–2034 Occupational Outlook Handbook projections, is “Software Developers, Quality Assurance Analysts, and Testers” [1]. This group’s projected percentage growth rate is 21%, a rate drastically higher than the 5% average growth projected for all U.S. occupations [1]. The total expected numeric change in employment over the decade is 432,200 new jobs, driven by surging demand for custom business software, mobile applications, and enhanced digital security measures that require both specialized design expertise and rigorous defect mitigation [1]. For May 2024, BLS Occupational Employment and Wage Statistics data reports the median annual wage for the primary design role (software developers, applications) as $124,200 [2], while the median annual wage for the defect-identifying role (software quality assurance analysts and testers) is $93,900 [2]. The monetary difference between their median earnings is $30,300, with the design role’s wage exceeding the defect-reporting role’s; this gap reflects disparities in technical skill requirements, project leadership responsibilities, and direct influence on product development timelines and a company’s market competitiveness.\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Occupational Outlook Handbook: Software Developers, Quality Assurance Analysts, and Testers. Employment Projections (2024–2034). https://www.bls.gov/ooh/computer-and-information-technology/software-developers-quality-assurance-analysts-and-testers.htm\n[2] U.S. Bureau of Labor Statistics. (2024). Occupational Employment and Wage Statistics: Software Developers, Applications; Software Quality Assurance Analysts and Testers. May 2024 Wage Data. https://www.bls.gov/oes/current/oes151252.htm; https://www.bls.gov/oes/current/oes151253.htm",
+      "answer_b": "The occupational group is \"Software Developers, Quality Assurance Analysts, and Testers\" [1]. According to the U.S. Bureau of Labor Statistics (BLS) Occupational Outlook Handbook projections for the 2024–34 decade, employment in this combined category is projected to grow by 12.6%, which is classified as much faster than the average for all occupations [1]. This growth percentage translates to a total expected numeric increase of approximately 150,300 jobs over the decade, rising from an estimated employment of 1,185,600 in 2024 to about 1,335,900 in 2034 [1]. The primary drivers of this demand include the ongoing need for new software applications, particularly for mobile devices and healthcare, as well as increasing requirements for cybersecurity [1].\n\nUsing the separate wage data from the BLS Occupational Employment and Wage Statistics for May 2024, the median annual wages for the two distinct primary roles are: **Software Developers** at **$132,270** per year, and **Software Quality Assurance Analysts and Testers** at **$101,950** per year [2]. The calculated monetary difference between these median annual earnings is **$30,320**. This substantial gap highlights the wage disparity between the roles of designing applications and testing them for defects, despite their grouping for employment projection purposes. The projected growth and wage data underscore the robust demand within the software industry while illustrating the distinct economic valuations of these interconnected professions.\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). Occupational Outlook Handbook: Software Developers, Quality Assurance Analysts, and Testers. Retrieved from https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm\n[2] U.S. Bureau of Labor Statistics. (2024). Occupational Employment and Wage Statistics, May 2024. Retrieved from https://www.bls.gov/oes/current/oes_nat.htm",
+      "duration_a_seconds": 29.4,
+      "duration_b_seconds": 9.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the target occupational group. However, Agent B is significantly better in terms of data accuracy and presentation. \n\n1. **Data Accuracy (Wages):** Agent B provided wage data that was extremely close to the Ground Truth (e.g., $132,270 vs. $133,080), indicating it accessed the correct May 2024 dataset. Agent A provided significantly lower figures ($124,200), suggesting it relied on outdated data (likely from 2022 or 2023).\n2. **Data Accuracy (Projections):** Both agents failed to match the specific Ground Truth projection numbers (15% growth), likely due to the specific 2024-34 window requested. Agent A cited 21% (older boom-era projections) and Agent B cited 12.6%. Since both failed here, the wage accuracy becomes the deciding factor.\n3. **Formatting & UX:** Agent B used clear paragraph breaks and bold text to highlight key figures, making it highly scannable. Agent A presented the answer as a dense, single block of text, which is poor for user experience.\n\nAgent B wins on data freshness (wages) and superior formatting.",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_seed16_vs_deepseekv_684"
+}

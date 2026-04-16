@@ -1,0 +1,90 @@
+{
+  "id": "R4_M1_claude-opus-4-1-search_vs_gpt-5.1-search_tree_0021",
+  "source_group": "round4",
+  "source_log": "round4/R4_M1_claude-opus-4-1-search_vs_gpt-5.1-search_tree_0021.log",
+  "tree_id": "tree_0021",
+  "tree_title": "Comparison of Internet forum software",
+  "tree_topic": "Online Communities",
+  "tree_subtopic": "Forum & Chat Providers",
+  "tree_crawled_at": "2025-11-21T16:17:25.090410",
+  "tree_url": "https://en.wikipedia.org/wiki/Comparison_of_Internet_forum_software",
+  "model_a": "claude-opus-4-1-search",
+  "model_b": "gpt-5.1-search",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 4,
+  "pairing_index": 1,
+  "mercy_rule": true,
+  "overall_topic": "Comparison of Internet forum software",
+  "questions": [
+    "Identify the open-source internet forum software that utilized the GNU Public License Version 3 (GPL3) for its early releases and the Lesser GNU Public License Version 3 (LGPL3) specifically for its 1.8 series. Regarding its transition to version 2.0, which 'extremely open' alternative license was considered but rejected in favor of the BSD 3-Clause license? Finally, list the three specific numbered conditions for redistribution and use (in source and binary forms) mandated by the BSD 3-Clause license adopted for the 2.0 release."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 203686,
+  "estimated_cost": 2.0369,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Comparison of Internet forum software",
+        "Change of license for MyBB 2.0"
+      ],
+      "question": "Identify the open-source internet forum software that utilized the GNU Public License Version 3 (GPL3) for its early releases and the Lesser GNU Public License Version 3 (LGPL3) specifically for its 1.8 series. Regarding its transition to version 2.0, which 'extremely open' alternative license was considered but rejected in favor of the BSD 3-Clause license? Finally, list the three specific numbered conditions for redistribution and use (in source and binary forms) mandated by the BSD 3-Clause license adopted for the 2.0 release.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Alternative license considered: MIT License",
+        "Condition 1: Redistributions of source code must retain the copyright notice, list of conditions, and disclaimer.",
+        "Condition 2: Redistributions in binary form must reproduce the copyright notice, list of conditions, and disclaimer in the documentation.",
+        "Condition 3: Neither the name of the copyright holder nor contributors may be used to endorse/promote derived products without specific written permission."
+      ],
+      "checklist_depth": [
+        "Target Entity: MyBB (or MyBulletinBoard)",
+        "Logic Proof: Matches the specific licensing history of GPL3 (early) -> LGPL3 (1.8) -> BSD-3 (2.0)."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific software (MyBB) based solely on its unique licensing evolution (GPL3 -> LGPL3 -> BSD-3) without naming it. The Wide aspect requires retrieving specific details about the decision-making process (the rejected MIT license) and parsing the specific legal text of the adopted license (the three conditions).",
+      "source_nodes": [
+        "Change of license for MyBB 2.0 | MyBB Blog",
+        "Slashdot - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: MyBB has historically used the Lesser GNU Public License Version 3 (LGPL3) for the MyBB 1.8 series, and the GNU Public License Version 3 (GPL3) in earlier releases. Both of th",
+      "judge_max_limit": 300,
+      "answer_a": "The open-source internet forum software is MyBB (MyBulletinBoard), which utilized GPL3 for its early releases and LGPL3 specifically for its 1.8 series. During the transition to MyBB 2.0, the development team considered adopting the MIT License as an \"extremely open\" alternative but ultimately rejected it in favor of the BSD 3-Clause license [1][2].\n\nThe BSD 3-Clause license adopted for MyBB 2.0 mandates three specific numbered conditions for redistribution and use in source and binary forms [3][4]:\n\n1. **Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.** This ensures that the original copyright holder receives proper attribution and that all recipients are aware of the licensing terms.\n\n2. **Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.** This condition extends the attribution requirement to compiled or binary distributions of the software.\n\n3. **Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.** This clause prevents unauthorized use of the project's name or contributors' names for promotional purposes.\n\nThe transition from LGPL3 to BSD 3-Clause represented MyBB's shift toward a more permissive licensing model, allowing greater flexibility for both commercial and non-commercial use while maintaining essential protections for the original developers and contributors [5].\n\n## References\n[1] MyBB Official Blog - License Changes for MyBB 2.0\n[2] MyBB GitHub Repository - License Documentation\n[3] Open Source Initiative - BSD 3-Clause License Text\n[4] MyBB 2.0 Development Updates - Licensing Decision\n[5] MyBB Community Forums - License Discussion Thread",
+      "answer_b": "The software in question is **MyBB**, an open‑source internet forum package. Earlier versions of MyBB were released under the **GNU General Public License version 3 (GPLv3)**, while the **1.8 series** was relicensed under the **GNU Lesser General Public License version 3 (LGPLv3)** to make integration and extension easier for third‑party developers.[1]  \n\nDuring planning for **MyBB 2.0**, the developers evaluated a more permissive licensing model. Among the candidates was the **ISC License**, described in their discussion as an “extremely open” option, but they ultimately rejected it and chose the more widely recognized **BSD 3‑Clause License** for the 2.0 codebase.[1]  \n\nUnder the adopted **BSD 3‑Clause License**, redistribution and use in source and binary forms are permitted provided that the following three numbered conditions are met:[2]  \n\n1. **Redistributions of source code must retain** the original copyright notice, this list of conditions, and the following disclaimer.  \n\n2. **Redistributions in binary form must reproduce** the original copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.  \n\n3. **Neither the name of the copyright holder nor the names of its contributors may be used** to endorse or promote products derived from this software without specific prior written permission.  \n\nThese conditions preserve attribution and prevent implied endorsement while allowing very broad commercial and non‑commercial reuse.  \n\n## References\n\n[1] MyBB Development Team. “MyBB 2.0 License Discussion / Announcement” – project licensing history and rationale.  \n[2] Open Source Initiative. “The BSD 3-Clause License (Revised BSD).”",
+      "duration_a_seconds": 12.9,
+      "duration_b_seconds": 36.7,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the software as MyBB and listed the BSD 3-Clause conditions accurately. However, Agent A correctly identified the 'extremely open' alternative license considered as the **MIT License**, which aligns with the official MyBB development blog posts regarding the 2.0 licensing decision. Agent B incorrectly identified this as the ISC license. Agent A is the only one to satisfy all specific fact-retrieval constraints.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0021_gpt51se_vs_claudeopu_295"
+}

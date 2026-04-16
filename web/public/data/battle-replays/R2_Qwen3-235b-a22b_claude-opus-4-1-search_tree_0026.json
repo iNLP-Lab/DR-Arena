@@ -1,0 +1,91 @@
+{
+  "id": "R2_Qwen3-235b-a22b_claude-opus-4-1-search_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_Qwen3-235b-a22b_claude-opus-4-1-search_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "claude-opus-4-1-search",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the statewide emergency response network in California, administered by the UCSF School of Pharmacy, that provides immediate, free, and expert treatment advice for exposure to poisonous or hazardous substances. Who is the current Executive Director of this system? Furthermore, list the four distinct university or hospital divisions (sites) that comprise this system and provide the name of the Medical Director for each of these four divisions."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 464760,
+  "estimated_cost": 4.6476,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the statewide emergency response network in California, administered by the UCSF School of Pharmacy, that provides immediate, free, and expert treatment advice for exposure to poisonous or hazardous substances. Who is the current Executive Director of this system? Furthermore, list the four distinct university or hospital divisions (sites) that comprise this system and provide the name of the Medical Director for each of these four divisions.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Current Executive Director: Stuart E. Heard (or current incumbent)",
+        "Division 1: UC Davis Health / Sacramento - Medical Director (e.g., Timothy Albertson)",
+        "Division 2: UCSF Health / San Francisco - Medical Director (e.g., Craig Smollin)",
+        "Division 3: Valley Children's Hospital / Fresno - Medical Director (e.g., Rais Vohra)",
+        "Division 4: UC San Diego Health / San Diego - Medical Director (e.g., Richard Clark or Alicia Minns)"
+      ],
+      "checklist_depth": [
+        "Target Entity: California Poison Control System (CPCS)",
+        "Logic Proof: The system is administered by the UCSF School of Pharmacy and consists of the four specified provider divisions."
+      ],
+      "rationale": "The question uses Deep Logic by describing the California Poison Control System through its administrative body (UCSF School of Pharmacy) and function rather than naming it directly. It requires Wide Aggregation by forcing the agent to locate the central Executive Director and then branch out to find the specific Medical Directors for all four geographically distinct divisions (Sacramento, San Francisco, Fresno, San Diego).",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The California Poison Control System (CPCS) is the statewide emergency response network administered by the UCSF School of Pharmacy that provides immediate, free, and expert treatment advice 24/7 for exposure to poisonous or hazardous substances [1][2]. The current Executive Director of CPCS is Dr. Stuart E. Heard [2][3].\n\nThe California Poison Control System comprises four distinct divisions that serve different regions of California [1][2]:\n\n1. **Sacramento Division** (UC Davis Medical Center): The Medical Director is Dr. Justin Lewis [3][4]. This division serves Northern and Central California counties.\n\n2. **San Francisco Division** (UCSF): The Medical Director is Dr. Craig Smollin [3][5]. This division covers the San Francisco Bay Area and surrounding regions.\n\n3. **Fresno/Madera Division** (UCSF Fresno): The Medical Director is Dr. Rais Vohra [3][6]. This division serves the Central Valley region.\n\n4. **San Diego Division** (UC San Diego Medical Center): The Medical Director is Dr. Lee Cantrell [3][7]. This division covers San Diego, Imperial, and surrounding Southern California counties.\n\nCPCS operates a single toll-free hotline (1-800-222-1222) that automatically routes callers to their regional division based on area code [1]. The system handles over 300,000 cases annually, providing expert consultation to both healthcare professionals and the general public regarding poisonings, drug overdoses, environmental exposures, and envenomations [2]. Each division maintains specialized staff including medical toxicologists, pharmacists, and nurses who are certified specialists in poison information. The system also conducts surveillance, education, and research activities to prevent poisonings and improve treatment outcomes [1][2].\n\n## References\n\n[1] California Poison Control System Official Website - https://calpoison.org/\n[2] UCSF School of Pharmacy - California Poison Control System - https://pharmacy.ucsf.edu/cpcs\n[3] CPCS Leadership and Medical Directors - https://calpoison.org/about/leadership\n[4] UC Davis Health - Poison Control - https://health.ucdavis.edu/poison-control/\n[5] UCSF Department of Emergency Medicine - Toxicology - https://emergency.ucsf.edu/divisions/medical-toxicology\n[6] UCSF Fresno - Emergency Medicine - https://www.fresno.ucsf.edu/emergency-medicine/\n[7] UC San Diego Health - Division of Medical Toxicology - https://health.ucsd.edu/specialties/poison-center/",
+      "answer_b": "The statewide emergency response network in California administered by the UCSF School of Pharmacy is the California Poison Control System (CPCS). The current Executive Director is Dr. Daniel D. Brooks [1]. The CPCS is composed of four regional divisions, each based at a university or hospital, with its own Medical Director. The Northern California Division is based at the UCSF School of Pharmacy and is led by Dr. Patricia C. Countway [2]. The South Bay Division operates from the Santa Clara Valley Medical Center in association with Stanford University, with Dr. G. Sam Wang serving as Medical Director [3]. The Southern California Division is headquartered at the University of California, San Diego (UCSD), where Dr. Richard F. Clark is the Medical Director [4]. The fourth division, the Greater Los Angeles Division, operates out of the Los Angeles General Medical Center and is affiliated with the University of Southern California (USC); its Medical Director is Dr. Amie Kreppel [5]. These four sites provide 24/7 poison control services across California, offering immediate, free, and expert advice for exposures to toxic or hazardous substances. The system supports healthcare providers, emergency responders, and the public through evidence-based guidance and toxicology expertise [6].\n\n## References  \n[1] https://cpcs.ucsf.edu/about-leadership  \n[2] https://cpcs.ucsf.edu/northern-california-division  \n[3] https://cpcs.ucsf.edu/south-bay-division  \n[4] https://cpcs.ucsf.edu/southern-california-division  \n[5] https://cpcs.ucsf.edu/greater-los-angeles-division  \n[6] https://cpcs.ucsf.edu/services-overview",
+      "duration_a_seconds": 31.8,
+      "duration_b_seconds": 4.0,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A correctly identified the Executive Director and the four specific divisions (sites) that make up the California Poison Control System. It also correctly listed leadership figures associated with those sites (though it conflated the title of 'Director' and 'Medical Director' for the Sacramento and San Diego sites, listing the PharmD Directors rather than the MD Medical Directors, the individuals are actually the leaders of those specific centers). \n\nAgent B, however, failed catastrophically. It provided the wrong Executive Director (naming a director from an Arizona center). It also hallucinated the division structure, inventing 'South Bay' and 'Greater Los Angeles' divisions which do not exist within the CPCS network (CPCS consists of sites at UC Davis, UCSF, UCSF Fresno, and UCSD). Furthermore, the names provided for these hallucinated divisions were incorrect (e.g., listing a political scientist as a Medical Director). Agent A is the only useful response.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_claudeopu_vs_Qwen3235b_385"
+}

@@ -1,0 +1,157 @@
+{
+  "id": "R2_glm-4.7_Kimi-k2_tree_0001",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_glm-4.7_Kimi-k2_tree_0001.log",
+  "tree_id": "tree_0001",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Arts & Entertainment > Movies > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T00:04:13.514767",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "glm-4.7",
+  "model_b": "Kimi-k2",
+  "winner": "Kimi-k2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Consult 1984 newspaper archives to locate information on two specific video rental businesses. The first business was the site of a police standoff on Airport Highway where a suspect named Robert McCloud surrendered after wielding an M-16 rifle. The second business was profiled in late December 1984, located in Butterfield Village (Chino Valley), and owned by Maggie and Harry Williams. For the first business, provide the specific street address (number and street). For the second business, provide the full business name and the specific type of non-video hardware they sold, installed, and serviced.",
+    "Consult newspaper archives from 1984 to identify two specific video rental businesses based on the following historical descriptions. The first business, located in Butterfield Village, was operated by a husband and wife team who had been in business for three years and also specialized in selling and installing satellite dishes. The second business, located on Airport Highway, was the site of a 90-minute incident involving a 35-year-old man armed with an M-16 rifle. Provide the full name of each business, the full names of the key individuals involved (the owners for the first business; the armed suspect for the second), and the specific publication dates of the newspaper articles reporting these details."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 889151,
+  "estimated_cost": 8.8915,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "Google Search"
+      ],
+      "question": "Consult 1984 newspaper archives to locate information on two specific video rental businesses. The first business was the site of a police standoff on Airport Highway where a suspect named Robert McCloud surrendered after wielding an M-16 rifle. The second business was profiled in late December 1984, located in Butterfield Village (Chino Valley), and owned by Maggie and Harry Williams. For the first business, provide the specific street address (number and street). For the second business, provide the full business name and the specific type of non-video hardware they sold, installed, and serviced.",
+      "word_limit_instruction": "Answer length: 100-150 words.",
+      "checklist_width": [
+        "Street Address for the first shop: 6936 Airport Hwy (or Highway)",
+        "Business Name for the second shop: Video Shoot Satellite Systems",
+        "Additional Services for the second shop: Selling, installing, and servicing satellite dishes"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the Toledo Blade (or similar source) incident involving Airport Video Rentals and Robert McCloud.",
+        "Correctly identifies The Courier (or similar source) profile on Maggie and Harry Williams in Chino Valley."
+      ],
+      "rationale": "The question utilizes Deep reasoning by anchoring the search to a specific year (1984) and unique, non-obvious identifiers (Robert McCloud/M-16 and Maggie & Harry/Butterfield Village) found in historical newspaper scraps. It requires Wide aggregation by demanding distinct attributes (a street address from one document and a business name/service description from a completely different document) that cannot be answered by a single source.",
+      "source_nodes": [
+        "Google Search",
+        "\"Video rental shop\" - Google Search"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: If you're having trouble accessing Google Search, please click here , or send feedback . [Wide Logic - Target 1]: Filters and topics AI Mode All Images Videos News Shopping Bo",
+      "judge_max_limit": 300,
+      "answer_a": "Search 1: Robert McCloud Airport Highway M-16 1984 video rental standoff\nSearch 2: Maggie and Harry Williams video rental Butterfield Village Chino Valley December 1984",
+      "answer_b": "The Airport Highway standoff occurred at Video Scene, located at 5230 Airport Highway [1]. In November 1984, Robert McCloud barricaded himself inside wielding an M-16 rifle before surrendering to police after several hours. The second business, profiled December 30, 1984, was Butterfield Video at 2565 N. Highway 89 in Chino Valley's Butterfield Village, owned by Maggie and Harry Williams. In addition to video rentals, they specialized in satellite dish systems, selling, installing, and servicing both C-band and Ku-band hardware for residential customers throughout the Prescott area [2].\n\n## References\n[1] The Daily Courier, November 15, 1984: \"Standoff ends peacefully at video store.\"\n[2] The Daily Courier, December 30, 1984: \"Couple brings video, satellite service to Chino Valley.\"",
+      "duration_a_seconds": 3.8,
+      "duration_b_seconds": 9.8,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent A failed to generate a response, outputting only the search queries (a 'crash' or failure to execute). Agent B provided a structured, readable response with citations. However, Agent B is capped at 'Better' rather than 'Much Better' because it failed the specific Ground Truth accuracy checks. It provided the wrong address for the first business (5230 vs 6936 Airport Hwy) and the wrong name for the second business ('Butterfield Video' vs 'Video Shoot Satellite Systems'), likely hallucinating details or conflating entities. Despite these errors, Agent B is the winner because it provided a functional attempt with correct context (satellite dishes, correct owners, correct events), whereas Agent A provided zero utility.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 821 nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Video rental shop",
+        "Google Search"
+      ],
+      "question": "Consult newspaper archives from 1984 to identify two specific video rental businesses based on the following historical descriptions. The first business, located in Butterfield Village, was operated by a husband and wife team who had been in business for three years and also specialized in selling and installing satellite dishes. The second business, located on Airport Highway, was the site of a 90-minute incident involving a 35-year-old man armed with an M-16 rifle. Provide the full name of each business, the full names of the key individuals involved (the owners for the first business; the armed suspect for the second), and the specific publication dates of the newspaper articles reporting these details.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Business Name 1: Video Shoot Satellite Systems",
+        "Owners 1: Maggie and Harry Williams",
+        "Additional Service 1: Satellite dishes (sales, installation, service)",
+        "Publication Date 1: December 30, 1984 (The Courier)",
+        "Business Name 2: Airport Video Rentals",
+        "Location Detail 2: 6936 Airport Hwy",
+        "Suspect Name 2: Robert McCloud",
+        "Publication Date 2: August 17, 1984 (Toledo Blade)"
+      ],
+      "checklist_depth": [
+        "Correctly identifies 'Video Shoot Satellite Systems' using the Butterfield Village/Satellite dish logic.",
+        "Correctly identifies 'Airport Video Rentals' using the Airport Highway/M-16 incident logic."
+      ],
+      "rationale": "The question utilizes 'Deep' reasoning by describing entities through unique historical context (location, business model, and specific police incident) rather than names, forcing the agent to search through archival content to find the correct matches. The 'Wide' component requires the agent to extract and aggregate specific attributes (business names, personal names, dates) across two distinct and unrelated primary sources (The Courier and Toledo Blade) found in the archives.",
+      "source_nodes": [
+        "Google Search",
+        "Blockbuster (retailer) - Wikipedia",
+        "\"Video rental shop\" - Google Search"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: If you're having trouble accessing Google Search, please click here , or send feedback . [Wide Logic - Target 1]:  [Wide Logic - Target 2]: Filters and topics AI Mode All Imag",
+      "judge_max_limit": 330,
+      "answer_a": "The first business identified from the December 1984 records is Satellite Video, owned by husband and wife Harry and Maggie Williams. Located in the Butterfield Village shopping center in Chino Valley, the couple had operated the rental store for three years. Their business model was unique because they also specialized in the sales, installation, and service of satellite television dishes, capitalizing on the then-booming home satellite market. This profile was published in the *Daily Democrat* on December 26, 1984 [1].\n\nThe second business is Video West, situated on Airport Highway. This location became the focal point of a dangerous police standoff in late 1984. The incident involved a 35-year-old suspect named Robert McCloud, who barricaded himself inside the video rental shop armed with an M-16 rifle. The tense situation lasted for 90 minutes before McCloud eventually surrendered to law enforcement authorities. This event was covered by the *Oakland Tribune*, with the specific reporting appearing in the November 20, 1984 edition [2]. These two distinct establishments highlight the diverse nature of the early video rental market, ranging from family-run integrated tech services to urban retail locations facing serious security challenges.\n\n## References\n[1] *Daily Democrat*, \"Satellite Video Offers Rentals, Dishes,\" December 26, 1984.\n[2] *Oakland Tribune*, \"Standoff Ends at Video Store,\" November 20, 1984.",
+      "answer_b": "Butterfield Video, operated by the husband-and-wife team of Maggie and Harry Williams, was featured in a December 30, 1984 newspaper profile detailing their three-year-old business in Butterfield Village, Chino Valley. The couple had established their store at 2565 N. Highway 89, combining video rental services with a specialized focus on satellite dish technology. Beyond the typical VHS rental offerings that were becoming standard in American households, the Williamses distinguished themselves by selling, installing, and servicing both C-band and Ku-band satellite systems for residential customers throughout the Prescott area and surrounding Yavapai County. Their technical expertise in satellite hardware allowed them to tap into the early home satellite television market during a period when cable television had not yet reached many rural areas. The business provided complete turnkey solutions from initial equipment sales and on-site installation to ongoing technical support and maintenance contracts for customers seeking alternatives to limited broadcast options [1].\n\nVideo Scene, located at 5230 Airport Highway in the Prescott area, became the site of a tense 90-minute police standoff reported on November 15, 1984. The incident involved 35-year-old Robert McCloud, who entered the business armed with an M-16 rifle and subsequently barricaded himself inside the video rental store. Police responded to emergency calls reporting an armed man in the commercial establishment, quickly establishing a perimeter and evacuating adjacent businesses along the busy highway corridor. Traffic along Airport Highway was significantly disrupted during the afternoon standoff as emergency vehicles blocked lanes and officers positioned themselves around the building. After careful negotiations with trained law enforcement negotiators, McCloud surrendered peacefully without any shots fired or injuries to civilians or officers, bringing the 90-minute incident to a safe conclusion [2].\n\n## References\n[1] The Daily Courier, December 30, 1984: \"Couple brings video, satellite service to Chino Valley.\"\n[2] The Daily Courier, November 15, 1984: \"Standoff ends peacefully at video store.\"",
+      "duration_a_seconds": 7.1,
+      "duration_b_seconds": 54.8,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents successfully identified the key individuals (Maggie/Harry Williams and Robert McCloud), indicating they found the correct underlying stories. However, both failed to accurately retrieve the specific business names required by the Ground Truth (Agent B said 'Butterfield Video' vs GT 'Video Shoot Satellite Systems'; Agent A said 'Satellite Video'). Agent B wins because it correctly identified the publication newspaper and date for the first event (*The Daily Courier*, Dec 30, 1984), whereas Agent A provided incorrect metadata (hallucinating *Daily Democrat*, Dec 26). Both agents failed significantly on the metadata for the second event, but Agent B's partial success on the first event's source makes it the superior response.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0001_glm47_vs_Kimik2_780"
+}

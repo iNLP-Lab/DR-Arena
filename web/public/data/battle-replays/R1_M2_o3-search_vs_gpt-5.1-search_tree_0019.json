@@ -1,0 +1,288 @@
+{
+  "id": "R1_M2_o3-search_vs_gpt-5.1-search_tree_0019",
+  "source_group": "round1",
+  "source_log": "round1/R1_M2_o3-search_vs_gpt-5.1-search_tree_0019.log",
+  "tree_id": "tree_0019",
+  "tree_title": "Heavy metal music",
+  "tree_topic": "Arts & Entertainment > Music & Audio > Rock Music",
+  "tree_subtopic": "Metal (Music)",
+  "tree_crawled_at": "2025-11-21T15:54:39.581178",
+  "tree_url": "https://en.wikipedia.org/wiki/Heavy_metal_music",
+  "model_a": "o3-search",
+  "model_b": "gpt-5.1-search",
+  "winner": "gpt-5.1-search",
+  "final_score_a": 1.0,
+  "final_score_b": 3.0,
+  "total_rounds": 4,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "Heavy metal music",
+  "questions": [
+    "In an October 1988 Rolling Stone review, critic Steve Pond drew an unlikely comparison between a rising Los Angeles hard-rock band and an established 44-year-old pop songwriter, arguing that despite their differences, both artists 'paint their very different pictures with similarly vivid strokes' and possess the power to shock. Identify these two artists and the respective albums being reviewed. According to the critique, which classic rock legend is the L.A. band considered the 'true heir' to, and which of their songs is described as an 'acid-etched portrait of an addict'? Conversely, for the songwriter, identify the track described as a 'chilling, coldblooded moment' in which he delivers a harsh message to his son.",
+    "Analyze the collection history of the Internet Archive to identify the specific 'Wide Crawl' iteration that commenced operations on August 3rd, 2018. Once this specific archival effort is identified, report the exact number of URLs contained in its 'Total Domains' seed list, the name of the organization that provided this index on June 26th, and the specific configuration values used for 'max-hops' and de-duplication.",
+    "Identify the specific 'Wide Crawl' collection initiated by the Internet Archive on August 3rd, 2018. Once identified, extract the technical specifications for this crawl, including the name of the organization that provided the seed list, the exact count of URLs in that seed list, and the specific configuration settings used for 'max-hops' and 'de-duplication'.",
+    "Identify the specific Internet Archive 'Wide Crawl' collection that commenced operations on August 3, 2018. According to the collection's metadata, which external organization provided the 'Total Domains' seed list used for this crawl, on what date was that list supplied, and exactly how many URLs did the list contain? Additionally, specify the configuration values used for 'max-hops' and 'de-duplication' during this capture."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 4,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 2.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 4,
+      "depth": 2,
+      "width": 5,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 1134109,
+  "estimated_cost": 11.3411,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Heavy metal music",
+        "Index of /"
+      ],
+      "question": "In an October 1988 Rolling Stone review, critic Steve Pond drew an unlikely comparison between a rising Los Angeles hard-rock band and an established 44-year-old pop songwriter, arguing that despite their differences, both artists 'paint their very different pictures with similarly vivid strokes' and possess the power to shock. Identify these two artists and the respective albums being reviewed. According to the critique, which classic rock legend is the L.A. band considered the 'true heir' to, and which of their songs is described as an 'acid-etched portrait of an addict'? Conversely, for the songwriter, identify the track described as a 'chilling, coldblooded moment' in which he delivers a harsh message to his son.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Artist 1 Album: Nothing's Shocking",
+        "Artist 1 Heir Comparison: Led Zeppelin",
+        "Artist 1 Song ('acid-etched portrait'): 'Jane Says'",
+        "Artist 2 Album: Land of Dreams",
+        "Artist 2 Song ('chilling/coldblooded' message to son): 'I Want You to Hurt Like I Do'"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Jane's Addiction (identified via the 1988 Steve Pond review comparison)",
+        "Target Entity 2: Randy Newman (identified via the 1988 Steve Pond review comparison)"
+      ],
+      "rationale": "The question requires Deep reasoning to identify the two specific artists based on a unique critical comparison made in a specific 1988 review (Steve Pond, Rolling Stone). It then enforces Wide aggregation by requiring specific qualitative details about songs and comparisons ('true heir', 'acid-etched portrait', 'coldblooded moment') scattered throughout the text for both subjects.",
+      "source_nodes": [
+        "Index of /",
+        "Jane's Addiction: Nothing's Shocking : Music Reviews : Rolling Stone"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Internet Archive The Internet Archive discovers and captures web pages through many different web crawls. At any given time several distinct crawls are running, ",
+      "judge_max_limit": 300,
+      "answer_a": "• The “rising Los Angeles hard-rock band” is Jane’s Addiction, reviewed for their major-label debut album “Nothing’s Shocking.”  \n• The 44-year-old pop songwriter is Randy Newman, reviewed for his album “Land of Dreams.”  \n\nIn Steve Pond’s October 1988 Rolling Stone critique, Jane’s Addiction are hailed as the “true heirs to Led Zeppelin,” and their harrowing track “Jane Says” is singled out as “an acid-etched portrait of an addict.”[1]  \n\nConversely, Pond writes that Randy Newman delivers a “chilling, coldblooded moment” on the song “Shame,” in which the narrator (Newman) cruelly tells his teenage son, “I can’t say your name without feeling like I’m swallowing broken glass.”[2]  \n\nThus, despite the gulf between Jane’s Addiction’s psychedelic hard-rock assault and Newman’s sardonic piano pop, Pond argues both artists “paint their very different pictures with similarly vivid strokes” and retain the power to shock.  \n\n## References  \n[1] Rolling Stone, Album Reviews section, Steve Pond, 20 Oct 1988 issue – review of Jane’s Addiction “Nothing’s Shocking.”  \n[2] Rolling Stone, Album Reviews section, Steve Pond, 20 Oct 1988 issue – review of Randy Newman “Land of Dreams.”",
+      "answer_b": "The review pairs Guns N’ Roses’ breakthrough album *Appetite for Destruction* with Billy Joel’s 1989 album *Storm Front*, discussed in advance while Joel was 44 years old.[1][2] Critic Steve Pond argues that, despite their stylistic distance, both artists “paint their very different pictures with similarly vivid strokes” and retain the capacity to shock listeners.[1]\n\nGuns N’ Roses, the rising Los Angeles hard‑rock band, are described as the “true heirs” to the Rolling Stones, inheriting the Stones’ mix of sleaze, danger, and swagger rather than just musical style.[1] Within this context, the song “Mr. Brownstone” from *Appetite for Destruction* is singled out as an “acid‑etched portrait of an addict,” a brutally frank depiction of heroin dependence that exemplifies the band’s graphic realism.[1]\n\nBy contrast, Pond focuses on Billy Joel as a veteran pop craftsman whose storytelling has grown darker and more confrontational on *Storm Front*.[2] The track “Leningrad,” in which Joel reflects on the Cold War and addresses his young son, is highlighted as a “chilling, coldblooded moment” where the singer delivers a stark, unsentimental message about fear, history, and inherited trauma.[2] In Pond’s view, both Guns N’ Roses and Joel shock not with superficial provocation, but through sharply drawn, emotionally unsettling narratives.\n\n## References\n\n[1] Rolling Stone archives – Steve Pond review of Guns N’ Roses, October 1988.  \n[2] Rolling Stone archives – Steve Pond review of Billy Joel’s *Storm Front*, October 1988.",
+      "duration_a_seconds": 9.5,
+      "duration_b_seconds": 6.8,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the specific and obscure Rolling Stone review comparing Jane's Addiction and Randy Newman (Deep Logic Pass). It correctly answered most sub-points, including the 'heir to Led Zeppelin' and 'Jane Says'. However, it hallucinated the second song, citing 'Shame' (a song from 1999) instead of the correct 1988 track 'I Want You to Hurt Like I Do'. Agent B failed completely, hallucinating a review between Guns N' Roses and Billy Joel that does not exist in this context (Deep Logic Failure). Agent A wins, but is capped at 'Better' due to the factual error on the second song.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 27 nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Heavy metal music",
+        "Index of /"
+      ],
+      "question": "Analyze the collection history of the Internet Archive to identify the specific 'Wide Crawl' iteration that commenced operations on August 3rd, 2018. Once this specific archival effort is identified, report the exact number of URLs contained in its 'Total Domains' seed list, the name of the organization that provided this index on June 26th, and the specific configuration values used for 'max-hops' and de-duplication.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Seed List Provider: Domains Index",
+        "Seed List Date: June 26th",
+        "Seed List URL Count: 256,796,456",
+        "Max-hops setting: 3",
+        "De-duplication setting: on"
+      ],
+      "checklist_depth": [
+        "Target Entity: Wide Crawl Number 17",
+        "Logic Proof: Identified via the unique start date of August 3rd, 2018 within Internet Archive records."
+      ],
+      "rationale": "The question utilizes Deep reasoning by masking the specific entity name ('Wide Crawl Number 17') behind its unique start date attribute. It requires Wide aggregation by demanding the retrieval of scattered technical details (seed counts, provider dates, and configuration settings) that are typically found in the specific metadata documentation for that crawl. Note: The provided source text was exclusively about the Internet Archive; the 'Heavy metal music' topic label in the prompt appeared to be an error/mismatch, so the question was grounded in the actual provided text to ensure solvability.",
+      "source_nodes": [
+        "Index of /",
+        "Poseur - Wikipedia",
+        "Bill Ward (musician) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Internet Archive The Internet Archive discovers and captures web pages through many different web crawls. At any given time several distinct crawls are running, ",
+      "judge_max_limit": 330,
+      "answer_a": "2018 Mid-Year “Wide Crawl” (Archive-It’s Domain Crawl)  \n• Seed list: “Total Domains” contained exactly 10,742,689 distinct URLs.  \n• Index provider (26 June 2018): The British Library.  \n• Configuration: max-hops = 1; de-duplication = on (default IA/Archive-It policy, meaning URLs already captured in earlier crawls were skipped).  \n\n## References  \n[1] Archive-It Help Center: “2018 Mid-Year Wide Crawl” (posted July 2018; specifies August 3 start, seed‐list details, provider, and crawl parameters).  \n[2] Archive-It Help Center: “Wide Crawl Configuration FAQ” (explains default one-hop scope and deduplication settings applied to all Wide Crawls).",
+      "answer_b": "The wide crawl that began on August 3, 2018 is the Internet Archive’s **“Wide Crawl Number 17 (Aug 2018–Jan 2019)”** (sometimes labeled in internal IDs as a 2018‑08 wide crawl) within the general *Wide Crawl* series of global web crawls.[1][2]\n\nFor this crawl, the **“Total Domains” seed list**—the master list of starting URLs used to launch the job—contained **2,910,511 URLs**.[1] This list was supplied on **26 June 2018** by the domain‑intelligence company **DomainTools, LLC**, which periodically provided large, deduplicated domain indexes to the Internet Archive for use as seeds in its wide crawls.[1][3]\n\nIn the crawl configuration used for the August 3, 2018 start, the **`max-hops`** parameter was explicitly set to **0**, meaning the crawler fetched only the seed URLs themselves and did **not** follow any outlinks beyond those starting addresses.[1][2] This design is consistent with the “Total Domains”–style jobs, which are intended to take a broad census-style snapshot of many domains rather than perform deep site exploration.\n\nFor content de‑duplication, the crawl used the Archive’s standard web‑wide deduplication policy at the time, configured as **“global de‑duplication enabled with an infinite (full‑history) look‑back window,”** effectively instructing the crawler to avoid re‑storing any byte‑identical pages that already existed in prior Internet Archive collections.[2][3] In practical terms, this meant that only genuinely new or changed content discovered at the seed URLs would be written as fresh captures during the August 3, 2018 wide crawl instance.\n\n## References\n\n[1] Internet Archive – Wide Crawl collection metadata for Aug 2018 iteration.  \n[2] Internet Archive Heritrix crawl configuration and job description for 2018 “Total Domains” crawl.  \n[3] DomainTools – description of domain index feeds supplied to Internet Archive, June 2018.",
+      "duration_a_seconds": 41.4,
+      "duration_b_seconds": 14.0,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the core entity ('Wide Crawl Number 17') requested by the query, satisfying the Deep Logic criteria. Agent A failed this step, identifying a different or hallucinated 'Archive-It' specific crawl. However, Agent B is not 'Much Better' because it failed significant portions of the Wide Checklist (hallucinating the URL count as ~2.9M instead of ~256M, and the max-hops as 0 instead of 3). Agent B is the 'Flawed Winner'—it found the right event but got the specific statistics wrong.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 57 nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 4,
+      "logic_chain": [
+        "Heavy metal music",
+        "Index of /"
+      ],
+      "question": "Identify the specific 'Wide Crawl' collection initiated by the Internet Archive on August 3rd, 2018. Once identified, extract the technical specifications for this crawl, including the name of the organization that provided the seed list, the exact count of URLs in that seed list, and the specific configuration settings used for 'max-hops' and 'de-duplication'.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Seed List Provider: Domains Index",
+        "Seed List Count: 256,796,456 URLs",
+        "Max-hops setting: 3",
+        "De-duplication setting: on"
+      ],
+      "checklist_depth": [
+        "Target Entity: Wide Crawl Number 17",
+        "Logic Proof: The crawl is identified by the specific start date of August 3rd, 2018, as described in the source text."
+      ],
+      "rationale": "The question utilizes a specific temporal fact (August 3rd, 2018) to mask the target entity (Wide Crawl Number 17), requiring logical filtering (Deep). It then demands the aggregation of distinct technical parameters (seed source, count, hops, de-duplication) to ensure a comprehensive answer (Wide). Note: The provided source text describes Internet Archive metadata and is unrelated to the 'Heavy metal music' domain label; the question adheres to the source text provided.",
+      "source_nodes": [
+        "Index of /",
+        "Poseur - Wikipedia",
+        "Megadeth - Wikipedia",
+        "Blues rock - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Internet Archive The Internet Archive discovers and captures web pages through many different web crawls. At any given time several distinct crawls are running, ",
+      "judge_max_limit": 360,
+      "answer_a": "Archive-It’s “2018 Mid-Year Domain Crawl” (classified as a Wide Crawl) began on 3 August 2018. The seed list—labelled “Total Domains”—was furnished on 26 June 2018 by DomainTools. It contained exactly 10,742,689 unique domain-level URLs.  \n\nTechnical configuration  \n• max-hops: 1 (the crawler followed at most one hyperlink beyond each seed).  \n• de-duplication: enabled (IA’s standard revisit/duplicate suppression prevented storage of URLs already archived in earlier crawls).  \n\nThese settings produced a broad, single-hop sweep of more than ten million domains while minimizing redundant captures.  \n\n## References  \n[1] Archive-It Help Center. “2018 Mid-Year Domain Crawl: Technical Details,” 26 Jun 2018.  \n[2] Archive-It Blog. “2018 Mid-Year Domain Crawl to Launch August 3,” 9 Jul 2018.",
+      "answer_b": "The Internet Archive “Wide Crawl” that began on **3 August 2018** is the collection titled **“Wide Crawl Number 17: Started August 3rd, 2018”** (sometimes abbreviated as “wide17” in internal/job metadata).[1]\n\nAccording to the collection’s documentation and attached seed‑list description, this crawl used a **“Total Domains”**–style seed list supplied by **DomainTools, LLC** on **26 June 2018**.[1][2] The seed set contained exactly **2,910,511 URLs**, each representing a distinct domain to be fetched in a shallow, census‑like pass rather than a deep site crawl.[1]\n\nIn the Heritrix configuration for this job, the **`max-hops`** parameter was set to **0**, meaning the crawler only requested the seed URLs themselves and did **not** follow outlinks from those pages.[1][2] For storage optimization, the crawl ran with **global de‑duplication enabled**, using the Internet Archive’s then‑standard cross‑crawl dedup policy: previously stored, byte‑identical content (as determined by hashing) was skipped rather than re‑archived, effectively applying a full‑history deduplication window across earlier wide crawls and related collections.[2][3]\n\n## References\n\n[1] Internet Archive – “Wide Crawl Number 17: Started August 3rd, 2018” collection metadata.  \n[2] Internet Archive Heritrix job configuration notes for 2018 “Total Domains” wide crawls.  \n[3] DomainTools – description of domain index feed provided to Internet Archive, June 26, 2018.",
+      "duration_a_seconds": 26.5,
+      "duration_b_seconds": 8.5,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the core entity requested ('Wide Crawl Number 17') based on the date provided. Agent A identified an incorrect or hallucinated entity ('Archive-It’s 2018 Mid-Year Domain Crawl'). However, Agent B is not 'Much Better' because it failed significantly on the specific technical details (Wide Accuracy). It stated the seed count was ~2.9 million with 0 hops, whereas the Ground Truth specifies ~256 million seeds with 3 hops. Agent B is the 'Flawed Winner'—it found the right book but read the wrong page, whereas Agent A went to the wrong library entirely.",
+      "score_a": 1.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 128 nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 2,
+      "width": 5,
+      "logic_chain": [
+        "Heavy metal music",
+        "Index of /"
+      ],
+      "question": "Identify the specific Internet Archive 'Wide Crawl' collection that commenced operations on August 3, 2018. According to the collection's metadata, which external organization provided the 'Total Domains' seed list used for this crawl, on what date was that list supplied, and exactly how many URLs did the list contain? Additionally, specify the configuration values used for 'max-hops' and 'de-duplication' during this capture.",
+      "word_limit_instruction": "Answer length: 290-390 words.",
+      "checklist_width": [
+        "Seed List Provider: Domains Index",
+        "Seed List Date: June 26th",
+        "Seed List URL Count: 256,796,456",
+        "Max-hops setting: 3",
+        "De-duplication setting: on"
+      ],
+      "checklist_depth": [
+        "Target Entity: Wide Crawl Number 17 (or Wide17)",
+        "Logic Proof: Identified by the start date of August 3rd, 2018"
+      ],
+      "rationale": "The question uses a specific temporal identifier (August 3, 2018) to isolate the correct crawl entity (Deep Logic) and requires aggregating distinct technical parameters—provider, date, count, and settings—from the collection's description (Wide Scope). Note: The provided source text was unrelated to the requested 'Heavy metal music' topic; the question adheres strictly to the provided Internet Archive facts.",
+      "source_nodes": [
+        "Index of /",
+        "Megadeth - Wikipedia",
+        "Napalm Records - Wikipedia",
+        "Bill Ward (musician) - Wikipedia",
+        "Poseur - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Internet Archive The Internet Archive discovers and captures web pages through many different web crawls. At any given time several distinct crawls are running, ",
+      "judge_max_limit": 390,
+      "answer_a": "2018 Mid-Year Domain Crawl (Archive-It “Wide Crawl” that began 3 August 2018)  \n\nSeed-list details  \n• External compiler: DomainTools, LLC. [1]  \n• Delivery date: 26 June 2018. [2]  \n• “Total Domains” list size: exactly 10,742,689 host-level URLs. [2]  \n\nCrawl configuration  \n• max-hops: 1 – the harvester fetched only each seed and one link beyond it. [2][3]  \n• de-duplication: enabled (standard IA revisit/duplicate suppression), so any URL whose payload already existed in the Archive was logged as a lightweight revisit instead of being re-stored. [3]  \n\nThis configuration produced an extremely broad yet shallow sweep of the live web. Starting 3 August 2018, Archive-It’s Heritrix 3 cluster processed the 10.74-million-domain list from DomainTools, capturing every seed homepage and a single layer of out-links while skipping content held in earlier crawls. The resulting WARC set, internally tagged “widecrawl_aug2018,” quickly fed into the Wayback Machine and has since underpinned numerous longitudinal studies. The one-hop scope curtailed crawler traps and bandwidth use, while aggressive deduplication cut storage by roughly a third compared with earlier multi-hop, no-dedup jobs—illustrating the Internet Archive’s strategy of balancing breadth, depth and cost in its large-scale preservation programme. [1][2][3]\n\n## References  \n[1] Archive-It Blog. “2018 Mid-Year Domain Crawl to Launch August 3,” 9 Jul 2018.  \n[2] Archive-It Help Center. “2018 Mid-Year Domain Crawl: Technical Details,” 26 Jun 2018.  \n[3] Archive-It Help Center. “Wide Crawl Configuration FAQ,” accessed 14 Dec 2025.",
+      "answer_b": "The Internet Archive “Wide Crawl” that began on **August 3, 2018** is the collection titled **“Wide Crawl Number 17: Started August 3rd, 2018”** (often labeled internally as a 2018‑08 “wide” crawl). According to the collection’s own metadata page, this job used a **“Total Domains”**-style seed list rather than a topic‑focused or deep site list.[1]\n\nThe **external organization** that supplied this Total Domains seed list is explicitly credited in the collection notes as **DomainTools**. The same notes state that DomainTools provided the list on **June 26, 2018**, as part of its periodic delivery of large‑scale domain indexes to the Internet Archive for wide‑crawl seeding.[1] The seed file associated with Wide Crawl Number 17 is recorded as containing **exactly 2,910,511 URLs**, representing individual domains to be fetched in a shallow pass.[1]\n\nThe technical configuration section of the collection description further documents the crawler behavior for this job. The Heritrix setting for **`max-hops`** is listed as **0** for this crawl, meaning the crawler was configured to request only the seed URLs themselves and **not** to follow any outlinks discovered on those pages.[1] This is consistent with the “Total Domains” census approach, which aims for maximal breadth (many domains) rather than depth (many pages per domain).\n\nFor storage policy, the metadata specifies that **de‑duplication** was **enabled** using the Internet Archive’s cross‑crawl dedup system.[1][2] In practical terms, this meant that if a fetched resource matched an already‑archived item at the byte level (based on hashing), it would not be stored again, thereby reducing redundant captures. The description notes that this deduplication applied across prior and concurrent crawls, effectively giving this wide crawl a **global, full‑history deduplication window** rather than a limited or crawl‑local one.[1][2]\n\nTogether, these parameters define Wide Crawl Number 17 as a broad, one‑hop‑only domain census seeded from a DomainTools list dated June 26, 2018, with aggressive cross‑collection de‑duplication enabled.\n\n## References\n\n[1] Internet Archive – “Wide Crawl Number 17: Started August 3rd, 2018” collection description and seed‑list notes.  \n[2] Internet Archive / Heritrix documentation on global de‑duplication for wide crawls.",
+      "duration_a_seconds": 29.4,
+      "duration_b_seconds": 9.3,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent B correctly identifies the specific entity requested ('Wide Crawl Number 17'), satisfying the primary Deep Logic constraint. Agent A fails to identify the correct collection, instead fabricating a '2018 Mid-Year Domain Crawl'. However, Agent B is a flawed winner; it hallucinates nearly all the specific metadata details (URL count, max-hops, and provider) compared to the provided ground truth. Since Agent A failed both the entity identification and the details, Agent B wins on the basis of finding the correct subject.",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0019_gpt51se_vs_o3search_48"
+}

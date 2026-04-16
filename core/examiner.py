@@ -20,18 +20,26 @@ class ExaminerAgent:
         return resp
 
     def generate_question(self, context_struct, depth_level, width_count, past_questions=[],root_topic="General Knowledge"):
+        """Generates 'Deep & Wide' Search Evaluation questions."""
+        # 1. Unpack Context
         reasoning_nodes = context_struct.get("reasoning_chain", [])
         target_nodes = context_struct.get("aggregation_pool", [])
+        
+        # 2. Calculate Word Constraint dynamically
         raw_min = 100 + (width_count * 30) + (depth_level * 20)
         final_min = min(raw_min, 300)
         final_max = min(final_min + 100, 400)
         constraint_str = f"Answer length: {final_min}-{final_max} words."
+
+        # 3. Format Context
         reasoning_str = "\n".join([f"[Deep Logic - Ancestor {i}]: {(n.get('content') or '')}" for i, n in enumerate(reasoning_nodes)])
         target_str = "\n".join([f"[Wide Logic - Target {i}]: {(n.get('content') or '')}" for i, n in enumerate(target_nodes)])
+        
         past_q_str = "None"
         if past_questions:
             past_q_str = "\n".join([f"Turn {i+1}: {q}" for i, q in enumerate(past_questions)])
 
+        # 4. Construct Prompt
         prompt = f"""
         # TASK: Generate a "Deep & Wide" Search Evaluation Query
 
@@ -100,6 +108,7 @@ class ExaminerAgent:
         }}
 
         """
+        
         resp = self._call_llm(prompt)
         try:
             clean_resp = json_repair.loads(re.search(r'\{.*\}', resp, re.DOTALL).group(0))
@@ -190,15 +199,19 @@ class ExaminerAgent:
         """
         max_retries = 3
         for i in range(max_retries):
-            resp = self._call_llm(prompt, temp=0.1) 
+            resp = self._call_llm(prompt, temp=0.1) # Low temp for consistency
             try:
                 json_match = re.search(r'\{.*\}', resp, re.DOTALL)
                 if not json_match:
                     raise ValueError("No JSON found in response")
+                
                 result = json_repair.loads(json_match.group(0))
+                
                 if "verdict" not in result:
                     raise ValueError("Missing 'verdict' field")
+                
                 return result
+            
             except Exception as e:
                 logging.warning(f"[JUDGE] Parsing failed (Attempt {i+1}/{max_retries}): {e}")
                 if i == max_retries - 1:

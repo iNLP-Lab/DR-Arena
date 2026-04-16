@@ -1,0 +1,91 @@
+{
+  "id": "R1_glm-4.7_ppl-sonar-pro-high_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_glm-4.7_ppl-sonar-pro-high_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "glm-4.7",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "According to the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook data for the 2024–2034 projection period, specifically within the 'Computer and Information Technology Occupations' group, there are exactly three occupations listed with a 2024 median annual wage exceeding $130,000. Identify these three occupations. For each, provide the exact 2024 median annual pay and the typical entry-level education required."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 330277,
+  "estimated_cost": 3.3028,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook data for the 2024–2034 projection period, specifically within the 'Computer and Information Technology Occupations' group, there are exactly three occupations listed with a 2024 median annual wage exceeding $130,000. Identify these three occupations. For each, provide the exact 2024 median annual pay and the typical entry-level education required.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Computer and Information Research Scientists: $140,910, Master's degree",
+        "Computer Network Architects: $130,390, Bachelor's degree",
+        "Software Developers, Quality Assurance Analysts, and Testers: $131,450, Bachelor's degree"
+      ],
+      "checklist_depth": [
+        "Identify 'Computer and Information Research Scientists' as one of the high-earning roles.",
+        "Identify 'Computer Network Architects' as one of the high-earning roles.",
+        "Identify 'Software Developers, Quality Assurance Analysts, and Testers' as one of the high-earning roles.",
+        "Exclude 'Computer and Information Systems Managers' (This role earns >$130k but falls under Management Occupations, not the requested IT group)."
+      ],
+      "rationale": "The question requires Deep reasoning to filter a list of occupations based on two logical constraints: categorical membership ('Computer and Information Technology Occupations', which excludes Managers) and a numerical threshold (Median Pay > $130,000). It requires Wide aggregation to retrieve specific data points (Pay and Education) for each of the three resulting entities found in the source table.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "Based on the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook data for the 2024–2034 projection period, the \"Computer and Information Technology Occupations\" group includes exactly three occupations with a 2024 median annual wage exceeding $130,000. These figures represent the median earnings for workers in these fields, with half earning more and half earning less.\n\nThe first is **Computer and Information Research Scientists**, which reports a 2024 median annual wage of $145,080. This role, focused on the innovation of computing technologies and research methodologies, requires the highest level of education among the group: a doctoral or professional degree is the typical entry-level requirement [1].\n\nThe second high-earning occupation is **Software Developers, Quality Assurance Analysts, and Testers**. These professionals, responsible for designing and running software applications and systems, have a median annual pay of $132,270. The typical entry-level education for this occupation is a bachelor's degree [2].\n\nThe third occupation is **Computer Network Architects**. With a 2024 median annual wage of $132,210, these individuals design and implement data communication networks. The typical entry-level education required is a bachelor's degree [3]. These three roles lead the category in terms of compensation during the projected decade.\n\n## References\n[1] U.S. Bureau of Labor Statistics, Computer and Information Research Scientists, https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm\n[2] U.S. Bureau of Labor Statistics, Software Developers, Quality Assurance Analysts, and Testers, https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm\n[3] U.S. Bureau of Labor Statistics, Computer Network Architects, https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm",
+      "answer_b": "**Within the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook for Computer and Information Technology Occupations (2024–2034 projections), exactly three occupations have a 2024 median annual wage exceeding $130,000: Computer and Information Research Scientists ($140,910; **Master's degree**), Computer Network Architects ($130,390; **Bachelor's degree**), and Software Developers, Quality Assurance Analysts, and Testers ($131,450; **Bachelor's degree**).** [1]\n\nThese figures come directly from the BLS summary table listing 10 occupations in this group, where wages are based on May 2024 data. Computer and Information Research Scientists top the list at **$140,910**, reflecting their role in innovating computing technologies; entry requires a **Master's degree** in computer science or related fields.[1][5] Computer Network Architects earn **$130,390**, designing LANs, WANs, and intranets; a **Bachelor's degree** is typical.[1] Software Developers, Quality Assurance Analysts, and Testers command **$131,450**, creating and testing applications; also needing a **Bachelor's degree**.[1]\n\nNo other listed occupation exceeds $130,000—e.g., Database Administrators and Architects at $123,100 and Information Security Analysts at $124,910 fall short.[1] Note that Computer and Information Systems Managers ($171,200) appear separately under Management Occupations, not this group.[2] Group median is $105,990.[1] (198 words)\n\n## References\n[1] https://www.bls.gov/ooh/computer-and-information-technology/  \n[2] https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm  \n[5] https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm",
+      "duration_a_seconds": 54.6,
+      "duration_b_seconds": 3.9,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B followed the Ground Truth checklist perfectly, providing the exact wage figures and education levels specified. Agent A failed on multiple counts: it provided different wage figures (likely referencing May 2023 data rather than the specific '2024' data requested in the prompt's ground truth) and incorrectly identified the entry-level education for Research Scientists as a Doctoral degree (OOH lists it as a Master's). Agent B also offered superior formatting with a direct answer summary at the start.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_glm47_vs_pplsonar_765"
+}

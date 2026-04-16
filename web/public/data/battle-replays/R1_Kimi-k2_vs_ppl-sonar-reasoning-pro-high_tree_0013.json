@@ -1,0 +1,152 @@
+{
+  "id": "R1_Kimi-k2_vs_ppl-sonar-reasoning-pro-high_tree_0013",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_Kimi-k2_vs_ppl-sonar-reasoning-pro-high_tree_0013.log",
+  "tree_id": "tree_0013",
+  "tree_title": "History of swimwear",
+  "tree_topic": "Shopping > Apparel",
+  "tree_subtopic": "Swimwear",
+  "tree_crawled_at": "2025-11-21T14:23:33.700598",
+  "tree_url": "https://en.wikipedia.org/wiki/History_of_swimwear",
+  "model_a": "Kimi-k2",
+  "model_b": "ppl-sonar-reasoning-pro-high",
+  "winner": "Kimi-k2",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "History of swimwear",
+  "questions": [
+    "Scholars researching the history of swimwear often rely on archived fashion brand websites and defunct retail catalogs preserved in large-scale web archives. Identify the web analytics company that began donating its web crawl data in 1996 to the nonprofit organization that operates the Wayback Machine. Additionally, name the specific 2008 crawl collection contributed by this company and describe its current public accessibility status, including any embargo practices associated with how the data are incorporated into the archive.",
+    "A historian researching the evolution of swimwear marketing online relies on large-scale web archives to examine how brand websites looked in the late 1990s and 2000s. Identify the private web analytics company that, beginning in 1996, has donated its web crawl data to the Internet Archive, where the data are incorporated into the Wayback Machine after an embargo period. Then, name the specific 2008 web crawl collection donated by this company and explain its current public accessibility status. In your answer, include the start year of the donations, how the data flow into the Internet Archive, the name of the 2008 crawl collection, and whether researchers can directly access that dataset today."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 502706,
+  "estimated_cost": 5.0271,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "History of swimwear",
+        "Little wonder that bikinis have fit in almost from the start"
+      ],
+      "question": "Scholars researching the history of swimwear often rely on archived fashion brand websites and defunct retail catalogs preserved in large-scale web archives. Identify the web analytics company that began donating its web crawl data in 1996 to the nonprofit organization that operates the Wayback Machine. Additionally, name the specific 2008 crawl collection contributed by this company and describe its current public accessibility status, including any embargo practices associated with how the data are incorporated into the archive.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "States that the company began donating crawl data in 1996",
+        "Explains that the data are donated to the nonprofit organization that operates the Wayback Machine (Internet Archive)",
+        "Mentions that crawl data flow in regularly and are added after an embargo period",
+        "Correctly names the 2008 crawl collection",
+        "Clearly states that the 2008 crawl collection is not publicly accessible"
+      ],
+      "checklist_depth": [
+        "Alexa Internet + Identified as the web analytics company donating crawl data since 1996 to the Internet Archive",
+        "Alexa Web 2008 Crawl + Identified as the specific 2008 collection donated by Alexa Internet and noted as not publicly accessible"
+      ],
+      "rationale": "The question anchors itself in the domain of swimwear history by framing the need for archived fashion websites, but the solver must use logical reasoning to identify the web analytics company known for donating crawl data to the Internet Archive (Deep). It then requires aggregating multiple details: the start year of donations, the recipient organization, the embargo process, and the name and access status of a specific 2008 crawl collection (Wide). The entities are not named directly, ensuring the respondent must discover and verify them through external research.",
+      "source_nodes": [
+        "Little wonder that bikinis have fit in almost from the start | The San Diego Union-Tribune",
+        "Victorian era - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The web analytics company that began donating its crawl data to the Internet Archive in 1996 is **Alexa Internet** (later acquired by Amazon in 1999) [1]. The specific 2008 collection contributed by Alexa is known as the \"Alexa 2008 Web Crawl\" or \"alexa2008\" within Archive-It partnerships [2]. \n\nAs of 2024, this collection remains **publicly accessible** through the Wayback Machine, though with significant embargo and access restrictions that affect how scholars can retrieve data [3]. The Internet Archive implements a **6-month embargo period** for Alexa crawl data, meaning the most recent six months of crawls are not immediately available to public users [4]. Additionally, data from the Alexa crawls are incorporated into the Wayback Machine through **selective sampling** rather than complete ingestion; only a fraction of the crawled URLs are made browsable, while the full dataset requires special researcher access agreements and is subject to **robots.txt retroactive removal policies** [5]. These practices reflect the Archive's compromise between preserving corporate-donated data and managing server capacity while respecting publisher rights.\n\n## References\n1. Internet Archive. (2023). *Alexa Internet Donations*. Retrieved from https://archive.org/about/donations.php\n2. Archive-It. (2008). *Collection: Alexa 2008 Web Crawl*. Retrieved from https://archive-it.org/collections/6466\n3. Kahle, B. (2024). *Balancing Access and Embargo in Web Archives*. *D-Lib Magazine*, 30(1/2). https://doi.org/10.1045/january2024-kahle\n4. Internet Archive. (2024). *Access Policies for Third-Party Crawls*. Retrieved from https://archive.org/help/wayback_api.php\n5. Dougherty, M. (2023). *Retroactive Robots.txt and Embargo Practices at the Internet Archive*. *Web Archiving Conference Proceedings*, 12, 45-52. https://doi.org/10.1145/3623509.3623523",
+      "answer_b": "The provided search results do not contain the specific information needed to answer this query about which web analytics company began donating crawl data to the Internet Archive in 1996, the identity of a particular 2008 collection, or its current accessibility status and embargo practices.\n\nWhile the search results reference the Wayback Machine and general web archiving resources[8], they lack details about the Internet Archive's data donation partnerships, specific crawl collection identifiers, or the technical policies governing how contributed datasets are integrated and made publicly available.\n\nTo accurately answer this question, a search focused on the Internet Archive's organizational history, donor partnerships, and collection documentation would be necessary. This would require access to the Internet Archive's detailed records about corporate data contributions, specific crawl collection metadata from 2008, and current policies regarding embargoed or restricted access to contributed materials.\n\nThe query asks for highly specific historical and technical information that requires sources directly addressing the Internet Archive's data acquisition timeline and governance practices—information not present in the current search results.\n\n## References\n\n[8] Wayback Machine - Internet Archive. http://wayback.archive.org",
+      "duration_a_seconds": 13.2,
+      "duration_b_seconds": 8.6,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies **Alexa Internet** as the web analytics company donating crawl data since 1996 to the Internet Archive and names the **Alexa 2008 Web Crawl**. Agent B fails to identify any entity and refuses to answer, so it fails DEEP logic entirely.\n\nSecond, Width/Completeness: Agent A addresses most checklist items (1996 donation, Internet Archive, 2008 crawl name, embargo practices, incorporation into Wayback). However, it incorrectly states that the 2008 collection is publicly accessible, whereas the ground truth specifies it is not publicly accessible. This is a significant factual error on a key sub-point. Agent B provides none of the required details.\n\nFinally, User Experience & Presentation: Agent A provides a structured, citation-rich, informative answer with clear formatting and contextual explanation. Agent B offers a minimal refusal with little utility.\n\nBecause Agent A gets the core entity and most details correct but makes a major factual mistake about accessibility, it cannot receive MUCH_BETTER. However, since Agent B fails the core entity entirely (DEEP failure), Agent A is the flawed but clearly superior response.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'UTads.com: San Diego Advertising from The Union-Tribune'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "History of swimwear",
+        "Little wonder that bikinis have fit in almost from the start",
+        "UTads.com: San Diego Advertising from The Union-Tribune"
+      ],
+      "question": "A historian researching the evolution of swimwear marketing online relies on large-scale web archives to examine how brand websites looked in the late 1990s and 2000s. Identify the private web analytics company that, beginning in 1996, has donated its web crawl data to the Internet Archive, where the data are incorporated into the Wayback Machine after an embargo period. Then, name the specific 2008 web crawl collection donated by this company and explain its current public accessibility status. In your answer, include the start year of the donations, how the data flow into the Internet Archive, the name of the 2008 crawl collection, and whether researchers can directly access that dataset today.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "States that donations of crawl data began in 1996",
+        "Explains that the crawl data are donated to the Internet Archive and added to the Wayback Machine after an embargo period",
+        "Correctly names the Alexa Web 2008 Crawl collection",
+        "Clarifies that the Alexa Web 2008 Crawl data are currently not publicly accessible"
+      ],
+      "checklist_depth": [
+        "Identifies Alexa Internet as the company that has donated crawl data since 1996 to the Internet Archive (logic: private web analytics company donating crawl data used by Wayback Machine)",
+        "Identifies the Alexa Web 2008 Crawl as the specific 2008 collection donated by Alexa Internet (logic: 2008 crawl dataset associated with the same donating organization)"
+      ],
+      "rationale": "The question is anchored in the domain of swimwear history by framing the need for archived fashion and brand websites, but it uses logical filtering (a company donating crawl data since 1996 to the Internet Archive) to identify the correct organization without naming it directly. It then requires broad aggregation of multiple facts: donation start year, embargo process, integration into the Wayback Machine, the specific 2008 crawl collection name, and its access status. This ensures both deep identification and wide factual retrieval.",
+      "source_nodes": [
+        "UTads.com: San Diego Advertising from The Union-Tribune",
+        "SignOnSanDiego.com"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 320,
+      "answer_a": "The private web analytics company that began donating its web crawl data to the Internet Archive in 1996 is **Alexa Internet**, which Amazon acquired in 1999 [1]. This pioneering partnership established a sustainable model for corporate web archiving contributions. The data flow follows a clear embargo protocol: Alexa's crawls are transferred to the Internet Archive and quarantined for six months before selective integration into the Wayback Machine's public-facing index [2]. This embargo period balances publisher rights with the Archive's preservation mission, ensuring that recent content is not immediately exposed while building a comprehensive historical record.\n\nThe specific 2008 collection is officially titled the \"Alexa 2008 Web Crawl\" (Archive-It Collection ID 6466) [3]. Current public accessibility presents a mixed landscape for researchers. While individual URLs from the 2008 crawl are retrievable through the standard Wayback Machine interface, enabling historians to view specific swimwear brand websites from that era, bulk access to the complete dataset requires special researcher credentials and formal data use agreements [4]. The Internet Archive also enforces retroactive robots.txt compliance, which can render portions of the archived content inaccessible if site owners update their robots.txt files [5]. Consequently, scholars can conduct targeted investigations of individual marketing campaigns but face barriers to large-scale automated analysis of the entire 2008 collection's 85 terabytes of data, reflecting ongoing tensions between open access and resource constraints.\n\n## References\n1. Internet Archive. (2023). *About | Our History*. https://archive.org/about/\n2. Internet Archive. (2024). *Access Policies for Third-Party Crawls*. https://archive.org/help/wayback_api.php\n3. Archive-It. (2008). *Collection 6466: Alexa 2008 Web Crawl*. https://archive-it.org/collections/6466\n4. Dougherty, M. (2023). *Retroactive Robots.txt and Embargo Practices at the Internet Archive*. Web Archiving Conference Proceedings, 12, 45-52. https://doi.org/10.1145/3623509.3623523\n5. Kahle, B. (2024). *Balancing Access and Embargo in Web Archives*. D-Lib Magazine, 30(1/2). https://doi.org/10.1045/january2024-kahle",
+      "answer_b": "I need to search for specific information about the Internet Archive's data donation partnerships to answer this question accurately.\n\n**Alexa Internet**, a web analytics company, began donating its web crawl data to the Internet Archive in **1996**[1]. The company's crawl data flows into the Internet Archive after an **embargo period**, during which the data are processed and integrated before becoming publicly available through the Wayback Machine[1].\n\nThe specific **2008 collection contributed by Alexa Internet is the \"alexa_archive_2008\" crawl dataset**[2]. This collection contains millions of web pages captured during 2008 and represents a significant portion of that year's web archiving efforts by Alexa.\n\nRegarding current public accessibility, the 2008 Alexa crawl collection is **publicly accessible through the Internet Archive**, though with important caveats[2]. Researchers can access snapshots from this collection via the Wayback Machine by searching for specific URLs and dates corresponding to 2008[3]. However, direct bulk access to the raw crawl dataset may be restricted compared to accessing individual preserved web pages through the standard interface[2].\n\nThe embargo practice established by the Internet Archive for Alexa donations typically involved a delay between when Alexa captured web pages and when those captures became fully integrated and searchable in the Wayback Machine[1]. This allowed the Internet Archive time to process, deduplicate, and index the vast volume of data before public release.\n\nFor historians examining swimwear brand websites from the late 1990s and 2000s, the Alexa-contributed collections represent invaluable primary sources, though researchers should note that coverage varies by website, and some commercial sites may have requested exclusion from archiving[3].\n\n## References\n\n[1] Internet Archive. \"About the Archive: Alexa Internet Partnership.\" https://archive.org/about/\n\n[2] Internet Archive Crawl Collections. \"Alexa Archive 2008 Dataset.\" https://archive.org/details/crawl-data-2008\n\n[3] Wayback Machine Help. \"Searching the Archive.\" https://help.archive.org/help/using-the-wayback-machine/",
+      "duration_a_seconds": 32.5,
+      "duration_b_seconds": 10.3,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identify Alexa Internet as the private web analytics company and correctly state that donations began in 1996, satisfying the DEEP logic requirement. Agent A correctly explains that the crawl data are donated to the Internet Archive and incorporated into the Wayback Machine after an embargo period. It also appropriately identifies the 2008 collection as the Alexa 2008 Web Crawl and clarifies that bulk access is restricted, meaning researchers cannot directly access the full dataset—consistent with the ground truth that it is not publicly accessible. \n\nAgent B, however, misnames the dataset as \"alexa_archive_2008\" (failing the specific collection naming requirement) and incorrectly states that the 2008 crawl is publicly accessible, which contradicts the ground truth that it is not directly accessible today. These are significant WIDTH (detail aggregation) failures. \n\nIn addition, Agent A provides clearer structure, richer contextual explanation (e.g., embargo process, robots.txt implications), and better formatting, enhancing user experience. Therefore, Agent A is MUCH BETTER.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0013_Kimik2_vs_pplsonar_1109"
+}

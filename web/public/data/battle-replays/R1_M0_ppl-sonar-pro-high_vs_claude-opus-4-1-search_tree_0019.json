@@ -1,0 +1,91 @@
+{
+  "id": "R1_M0_ppl-sonar-pro-high_vs_claude-opus-4-1-search_tree_0019",
+  "source_group": "round1",
+  "source_log": "round1/R1_M0_ppl-sonar-pro-high_vs_claude-opus-4-1-search_tree_0019.log",
+  "tree_id": "tree_0019",
+  "tree_title": "Heavy metal music",
+  "tree_topic": "Arts & Entertainment > Music & Audio > Rock Music",
+  "tree_subtopic": "Metal (Music)",
+  "tree_crawled_at": "2025-11-21T15:54:39.581178",
+  "tree_url": "https://en.wikipedia.org/wiki/Heavy_metal_music",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "claude-opus-4-1-search",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Heavy metal music",
+  "questions": [
+    "Analyze the archival activities of the Internet Archive during August 2018. Identify the specific 'Wide Crawl' collection that was initiated on August 3rd of that year. Based on the collection's metadata, report the name and date of the external source list used to seed this crawl, the exact number of URLs contained in that seed list, and the specific configuration settings applied for 'max-hops' and de-duplication."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 124731,
+  "estimated_cost": 1.2473,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Heavy metal music",
+        "Index of /"
+      ],
+      "question": "Analyze the archival activities of the Internet Archive during August 2018. Identify the specific 'Wide Crawl' collection that was initiated on August 3rd of that year. Based on the collection's metadata, report the name and date of the external source list used to seed this crawl, the exact number of URLs contained in that seed list, and the specific configuration settings applied for 'max-hops' and de-duplication.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Seed List Source: 'Total Domains' list provided by Domains Index",
+        "Seed List Date: June 26th",
+        "Seed List Count: 256,796,456 URLs",
+        "Configuration: Max-hops set to '3'",
+        "Configuration: De-duplication set to 'on'"
+      ],
+      "checklist_depth": [
+        "Target Entity: Wide Crawl Number 17 (Wide17)",
+        "Logic Proof: Identified via start date 'August 3rd, 2018'"
+      ],
+      "rationale": "The question utilizes Deep Logic by requiring the agent to identify a specific archival entity ('Wide Crawl Number 17') using only its start date and organization, without naming the specific crawl number. It enforces Wide Aggregation by requesting multiple distinct technical attributes (seed source, URL count, hop settings) that describe the entity.",
+      "source_nodes": [
+        "Index of /",
+        "Poseur - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Internet Archive The Internet Archive discovers and captures web pages through many different web crawls. At any given time several distinct crawls are running, ",
+      "judge_max_limit": 300,
+      "answer_a": "**Internet Archive's Wide Crawl Number 17** began on August 3, 2018, as part of its ongoing archival efforts to capture broad swaths of the web via the Wayback Machine.[2] This crawl contributed to the archive's mission of preserving global internet content, alongside other activities like domain indexing and partner crawls, though specific August 2018 events beyond this initiation are not detailed in available records.[1][2]\n\nThe collection's metadata specifies seeding from the **\"Total Domains\" list** provided by Domains Index on an unspecified date within the crawl's context.[2] This seed list contained exactly **256,796,456 URLs**, enabling comprehensive coverage of domains for archiving.[2]\n\nConfiguration settings included **max-hops** limited to control crawl depth (exact value not enumerated in metadata summaries) and **de-duplication** enabled to avoid redundant captures, aligning with standard Wide Crawl protocols for efficiency.[1][2] These parameters ensured focused, non-repetitive archiving, with the crawl integrating into the Wayback Machine's vast index alongside prior efforts like Wide Crawl 13 (2015-2016).[1]\n\n(Word count: 178)\n\n## References\n[1] https://en.wikipedia.org/wiki/Wayback_Machine  \n[2] https://archive.org/details/wide00017",
+      "answer_b": "The Internet Archive initiated Wide Crawl number 16271 on August 3, 2018, identified internally as \"WIDE-20180803001931761.\" This crawl utilized the Alexa Top 1 Million Sites list from July 2, 2018, as its primary seed source, containing exactly 1,000,000 URLs for initial crawling targets.\n\nThe crawl configuration employed specific technical parameters to manage scope and efficiency. The max-hops setting was configured to 3, limiting the crawler to following links up to three degrees of separation from the original seed URLs. This hop restriction helped maintain crawl boundaries while ensuring comprehensive coverage of linked content within the specified depth. For deduplication, the system utilized URL-based deduplication at the crawl level, preventing redundant captures of identical URLs during the same crawling session.\n\nThis wide crawl represented part of the Internet Archive's regular broad web archiving efforts, designed to capture a representative snapshot of the web's state in early August 2018. The Alexa seed list provided a curated starting point based on global web traffic patterns, ensuring coverage of the most visited and influential websites. The technical specifications balanced comprehensiveness with practical constraints, allowing the crawler to discover new content through link traversal while avoiding infinite crawl paths and redundant data storage through the implemented deduplication mechanisms.\n\n## References\n\n[1] Internet Archive Wide Crawl metadata records - WIDE-20180803001931761\n[2] Internet Archive Crawl Configuration Documentation\n[3] Alexa Top 1 Million Sites Archive - July 2018",
+      "duration_a_seconds": 4.9,
+      "duration_b_seconds": 15.7,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the specific entity (Wide Crawl Number 17) and retrieved highly specific, accurate details regarding the seed list source and the exact URL count (256,796,456). While it missed the specific date and max-hops setting (claiming they weren't detailed), it remained grounded in reality. Agent B, conversely, completely hallucinated the response, inventing a crawl number, a seed source (Alexa), and a URL count. Agent B's response is factually incorrect from start to finish.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0019_claudeopu_vs_pplsonar_71"
+}

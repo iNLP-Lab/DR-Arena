@@ -18,12 +18,13 @@ if script_dir not in sys.path:
 from core.evolvement_loop import EvolvementLoop
 from core.score_utils import compute_mle_elo
 SEEDED_MODELS = [
-    "gpt-5.1-search",
-    "gemini-2.5-pro-grounding",
-    "o3-search",
-    "grok-4-search",
-    "ppl-sonar-pro-high",
-    "claude-opus-4-1-search",
+    "claude-opus-4.6-search",
+    "gemini-3.1-pro-grounding",
+    "gpt-5.4-search",
+    "grok-4.20-multi-agent-beta",
+    "sonar-deep-research",
+    "Kimi-k2.5",
+    "glm-5.1",
 ]
 TOURNAMENT_ROOT = "./tournament_results"
 TREE_DIR = os.path.join(script_dir, "web_tree/data/dataset/trees")

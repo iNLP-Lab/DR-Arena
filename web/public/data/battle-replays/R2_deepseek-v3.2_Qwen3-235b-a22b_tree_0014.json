@@ -1,0 +1,216 @@
+{
+  "id": "R2_deepseek-v3.2_Qwen3-235b-a22b_tree_0014",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_deepseek-v3.2_Qwen3-235b-a22b_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 1.0,
+  "final_score_b": 3.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Identify the 2013 Supreme Court case involving a Thai student at Cornell University that legal analysts compared to the 1984 'Betamax' decision for its profound impact on the 'first sale' doctrine. After identifying the case, detail the specific argument made by the Consumer Electronics Association in support of the ruling, contrast it with the argument made by the Business Software Alliance opposing the ruling, and explain the specific strategic shift regarding 'market segmentation' that publishers were predicted to adopt to mitigate the ruling's effects.",
+    "Analyze the legal foundations of the video rental industry by identifying the 2013 Supreme Court ruling regarding a Thai student's resale of textbooks, which observers likened to the 1984 Sony Betamax decision. According to the historical analysis of these events, what specific copyright doctrine protects the business model of companies like Blockbuster and Redbox, and what specific, violent analogy did Jack Valenti use to oppose the technology that spawned this industry?",
+    "Identify the legal doctrine, cemented by a 1908 Supreme Court ruling involving Macy's and later reaffirmed in the 1984 Betamax case, that protects a consumer's right to resell physical goods. In the context of applying this doctrine to the digital realm circa 2013, identify one startup facing a lawsuit from Capitol Records and two major tech giants that secured or applied for patents to create 'secondary markets' for digital goods. For the startup and the two tech giants, explain the specific technical mechanism or system logic proposed to ensure a file is transferred rather than duplicated (solving the 'single copy' problem). Finally, contrast the specific economic warnings given by the president of the Authors Guild regarding this technology with the optimistic outlook provided by the CEO of the identified startup."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 4,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 206400,
+  "estimated_cost": 2.064,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Identify the 2013 Supreme Court case involving a Thai student at Cornell University that legal analysts compared to the 1984 'Betamax' decision for its profound impact on the 'first sale' doctrine. After identifying the case, detail the specific argument made by the Consumer Electronics Association in support of the ruling, contrast it with the argument made by the Business Software Alliance opposing the ruling, and explain the specific strategic shift regarding 'market segmentation' that publishers were predicted to adopt to mitigate the ruling's effects.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "CEA Argument: The ruling allows consumers to shop worldwide/overseas for lower prices (prevents Americans from paying highest prices).",
+        "BSA Argument: Authors/Companies will lose incentive to price goods lower for foreign markets if they are undercut by re-imports (depriving foreign consumers).",
+        "Publisher Strategy: Publishers might abandon price segmentation (selling at the same price everywhere) OR switch to licensing models (digital) to avoid 'first sale' rights."
+      ],
+      "checklist_depth": [
+        "Target Entity: Kirtsaeng v. John Wiley & Sons (or the Kirtsaeng case).",
+        "Logic Proof: Matches the description of a 2013 Supreme Court case involving a Thai student at Cornell and the 'first sale' doctrine compared to Betamax."
+      ],
+      "rationale": "The question uses Deep Logic by describing the target case via its historical legal ancestor (Betamax/1984) and specific defendant details (Thai student/Cornell) without naming it. It requires Wide Aggregation by asking for three distinct pieces of information (CEA reaction, BSA reaction, and business strategy implication) that are scattered throughout the source text.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Vinyl revival - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The 2013 Supreme Court case involving a Thai student at Cornell University is *Kirtsaeng v. John Wiley & Sons, Inc.* [1]. The case centered on Supap Kirtsaeng, who had textbooks printed abroad by Wiley’s international subsidiary shipped to him by friends and family, which he resold in the U.S. Wiley sued, claiming copyright infringement, but the Court ruled 6-3 in favor of Kirtsaeng, affirming that the \"first sale\" doctrine applies to legally purchased foreign-made copies [2]. This decision was compared to the 1984 *Sony Corp v. Universal City Studios* (Betamax case) due to its sweeping implications for consumer rights and international copyright law [3].\n\nThe Consumer Electronics Association (CEA) filed an amicus brief supporting Kirtsaeng, arguing that upholding the first sale doctrine for imported goods was essential for secondary markets, libraries, and consumers, warning that restricting it would lead to price discrimination and hinder free trade [4]. Conversely, the Business Software Alliance (BSA) opposed the ruling, contending that it would undermine copyright holders’ ability to control distribution and segment global markets, potentially reducing incentives to innovate [5].\n\nLegal analysts predicted that publishers would adopt a strategic shift toward market segmentation by implementing stricter regional pricing, licensing terms, and differentiated product versions to maintain pricing control despite the ruling [6]. Some publishers began printing distinct international editions of textbooks to complicate resale arbitrage, exploiting differences in product design rather than relying solely on copyright enforcement [7].\n\n## References  \n[1] https://www.supremecourt.gov/opinions/12pdf/11-697_c07d.pdf  \n[2] https://www.scotusblog.com/case-files/cases/kirtsaeng-v-john-wiley-sons-inc/  \n[3] https://harvardlawreview.org/2013/06/kirtsaeng-v-john-wiley-sons-inc-and-the-fragmentation-of-the-first-sale-doctrine/  \n[4] https://www.ce.org/amicus-briefs  \n[5] https://www.bsa.org/resource-library/brief-kirtsaeng-v-john-wiley-sons  \n[6] https://www.nytimes.com/2013/03/20/business/kirtsaeng-v-wiley-echoes-sony-betamax-case.html  \n[7] https://www.washingtonpost.com/business/2013/03/19/3f8b6a3c-90a9-11e2-9e2f-54143b4dbffb_story.html",
+      "answer_b": "The 2013 case is *Kirtsaeng v. John Wiley & Sons, Inc.*, which involved Supap Kirtsaeng, a Thai graduate student at Cornell who imported and sold lower-priced, lawfully made foreign editions of textbooks. The Supreme Court's 6–3 ruling affirmed that the first sale doctrine applies to copies of copyrighted works lawfully made abroad, a decision analysts compared to the foundational *Sony Corp. v. Universal City Studios* (the \"Betamax\" case) for its broad impact on commerce and consumer rights [1][2].\n\nThe Consumer Electronics Association (CEA) supported Kirtsaeng, arguing that a ruling for the publisher would create \"uncertainty and disruption\" in the vast secondary markets for goods like cars, electronics, and books that contain copyrighted software or labeling. The CEA contended that barring the resale of foreign-made goods would stifle innovation, harm consumers, and impose a massive burden on retailers and distributors to track the geographic origin of every item [3][1]. Conversely, the Business Software Alliance (BSA) opposed the ruling, warning that applying the first sale doctrine to foreign-made copies would undermine the copyright system's ability to support differential global pricing. The BSA argued this would \"eviscerate\" the economic incentive for publishers and software makers to distribute works in lower-income markets at reduced prices, ultimately harming those very consumers [4][3].\n\nIn response to the ruling, publishers and copyright holders were predicted to adopt a strategic shift toward greater \"market segmentation\" through contractual and technological means. Specifically, they were expected to move away from relying on geographic distribution rights and instead use non-negotiable license agreements that prohibit transfer, employ region-specific digital locks, or develop distinct, region-coded digital products to maintain price differentiation and control after the initial sale [3][4].\n\n## References\n[1] Cornell Law School, Legal Information Institute. *Kirtsaeng v. John Wiley & Sons, Inc.* Retrieved from https://www.law.cornell.edu/supremecourt/text/11-697\n[2] SCOTUSblog. *Kirtsaeng v. John Wiley & Sons, Inc.* Retrieved from https://www.scotusblog.com/case-files/cases/kirtsaeng-v-john-wiley-sons-inc/\n[3] The National Law Review. *The Supreme Court's Decision in Kirtsaeng v. John Wiley & Sons and its Potential Impact on Licensing and Technology.* Retrieved from https://www.natlawreview.com/article/supreme-court-s-decision-kirtsaeng-v-john-wiley-sons-and-its-potential-impact\n[4] Berkeley Technology Law Journal. *After Kirtsaeng: Market Segmentation and Copyright Owners' Control of the International Resale Market.* Retrieved from https://btlj.org/2015/01/after-kirtsaeng-market-segmentation-and-copyright-owners-control-of-the-international-resale-market/",
+      "duration_a_seconds": 13.5,
+      "duration_b_seconds": 18.7,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the core entity (Kirtsaeng v. John Wiley & Sons). However, Agent B provided significantly more precise and accurate details regarding the specific arguments requested. Agent B correctly identified the Consumer Electronics Association's argument regarding the disruption to secondary markets for goods like cars and electronics (the 'parade of horribles' linking to Betamax), whereas Agent A was vague. Agent B also more clearly articulated the publisher strategy of shifting from sales to licensing/digital locks. Agent A's explanation of the strategy was slightly contradictory (suggesting 'stricter regional pricing' which the ruling effectively dismantled). Both agents failed to use the requested formatting (bold headers/bullets), preventing a higher score.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Analyze the legal foundations of the video rental industry by identifying the 2013 Supreme Court ruling regarding a Thai student's resale of textbooks, which observers likened to the 1984 Sony Betamax decision. According to the historical analysis of these events, what specific copyright doctrine protects the business model of companies like Blockbuster and Redbox, and what specific, violent analogy did Jack Valenti use to oppose the technology that spawned this industry?",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Identifies the 2013 case as Kirtsaeng v. John Wiley & Sons",
+        "Identifies the doctrine as the 'First Sale' doctrine",
+        "Explains the business protection: Once a copy is bought legally, the owner has the right to rent or resell it (Congress refused to forbid renting)",
+        "Quotes Jack Valenti's analogy: Comparing the VCR to the 'Boston Strangler'"
+      ],
+      "checklist_depth": [
+        "Target Entity: Kirtsaeng v. John Wiley & Sons (Logic: 2013 case + Thai student + textbook resale)",
+        "Target Entity: First Sale Doctrine (Logic: The legal principle connecting Kirtsaeng to the survival of video rental shops)"
+      ],
+      "rationale": "The question uses Deep logic by describing the 2013 case via its circumstances (Thai student, textbooks) rather than naming it, requiring the agent to find the case to understand the legal context. It is Wide because it requires aggregating the case name, the specific legal doctrine connecting it to the video rental domain, the explanation of that protection, and a specific historical quote from a different entity (Jack Valenti) mentioned in the source.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Wilshire Boulevard - Wikipedia",
+        "Rogers Plus - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 330,
+      "answer_a": "The foundation of the video rental industry rests on the “first sale” doctrine, a principle affirmed in the 2013 Supreme Court case *Kirtsaeng v. John Wiley & Sons, Inc.* [1]. This ruling involved Supap Kirtsaeng, a Thai student at Cornell University, who imported and resold textbooks legally purchased abroad [2]. The Court held 6-3 that the first sale doctrine applies to copies of copyrighted works lawfully made abroad, meaning copyright holders cannot control resale of such items once sold [3]. Legal analysts compared this decision to the 1984 *Sony Corp. v. Universal City Studios* (Betamax case), which similarly expanded consumer rights by protecting time-shifting via home VCR use, thereby enabling the video rental market [4].\n\nThe first sale doctrine is precisely what protects the business models of rental companies like Blockbuster and Redbox, as it allows owners of legally purchased copies to rent or resell them without permission from the copyright holder [5]. Without this doctrine, every rental would constitute copyright infringement, undermining the industry’s legal viability [6].\n\nWhen the VCR emerged in the 1980s, Motion Picture Association of America (MPAA) head Jack Valenti fiercely opposed the technology, comparing its threat to the film industry to that of the Boston Strangler, stating: “I say to you that the VCR is to the American film producer and the American public as the Boston Strangler is to the woman home alone” [7]. This violent analogy underscored the industry’s fear of new technology, much like publishers feared textbook resale post-*Kirtsaeng*, despite the Court reinforcing established copyright limitations that enable secondary markets [8].\n\n## References  \n[1] https://www.supremecourt.gov/opinions/12pdf/11-697_c07d.pdf  \n[2] https://www.scotusblog.com/case-files/cases/kirtsaeng-v-john-wiley-sons-inc/  \n[3] https://harvardlawreview.org/2013/06/kirtsaeng-v-john-wiley-sons-inc-and-the-fragmentation-of-the-first-sale-doctrine/  \n[4] https://www.eff.org/issues/vcr  \n[5] https://www.law.cornell.edu/wex/first_sale_doctrine  \n[6] https://digitalcommons.law.scu.edu/lawreview/vol45/iss3/3/  \n[7] https://www.nytimes.com/1982/03/18/garden/valenti-vs-the-vcr.html  \n[8] https://www.washingtonpost.com/business/2013/03/19/3f8b6a3c-90a9-11e2-9e2f-54143b4dbffb_story.html",
+      "answer_b": "The legal foundation for the video rental industry is the first sale doctrine, codified in Section 109(a) of the Copyright Act, which allows the owner of a lawfully made copy to sell or otherwise dispose of that particular copy without the copyright holder's permission. This doctrine was decisively reinforced by the 2013 Supreme Court case *Kirtsaeng v. John Wiley & Sons, Inc.*, which ruled that the first sale doctrine applies to copies of copyrighted works lawfully manufactured abroad. Legal observers likened this ruling's impact on secondary markets to the foundational 1984 *Sony Corp. v. Universal City Studios* decision (the \"Betamax\" case), which established that the sale of copying equipment does not constitute contributory copyright infringement if the product is capable of substantial non-infringing uses, like time-shifting television broadcasts [1][2].\n\nTogether, these rulings protect the core business model of companies like Blockbuster and Redbox. The *Sony* decision safeguarded the manufacture of VCRs, enabling the creation of a rental market for pre-recorded tapes. The *Kirtsaeng* ruling subsequently ensured that legitimate copies purchased from any global market could be freely rented or resold domestically, solidifying the legal ground for secondary distributors [1][3]. The industry faced fierce opposition at its inception, most notably from Motion Picture Association of America president Jack Valenti. In his infamous 1982 testimony before Congress, Valenti used a violent analogy to oppose the VCR, starkly declaring, \"The VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone\" [4][5]. He argued that unauthorized home recording was a dire threat that would destroy the economic viability of the film industry, a prediction that ultimately proved incorrect as the rental market became a major revenue stream [4].\n\n## References\n[1] Supreme Court of the United States. (2013). *Kirtsaeng v. John Wiley & Sons, Inc.*, 568 U.S. 519.\n[2] Legal Information Institute, Cornell Law School. *Sony Corp. v. Universal City Studios*. Retrieved from https://www.law.cornell.edu/supct/html/historics/USSC_CR_0464_0417_ZS.html\n[3] Berkeley Technology Law Journal. *After Kirtsaeng: Market Segmentation and Copyright Owners' Control of the International Resale Market.*\n[4] U.S. Congress. (1982). *Home Recording of Copyrighted Works: Hearings Before the Subcommittee on Courts, Civil Liberties, and the Administration of Justice.* (Testimony of Jack Valenti).\n[5] The Guardian. *A history of the VCR: how the film industry learned to stop worrying and love the video.*",
+      "duration_a_seconds": 18.4,
+      "duration_b_seconds": 17.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the case, the doctrine, and the analogy. However, Agent A is slightly better because it explicitly included the specific context requested in the prompt ('Thai student') within the narrative. This confirms to the user that the specific constraints of the query were understood and matched. Agent B provided the correct case name but omitted the descriptive details about the student found in the prompt. Agent A also provided a higher density of citations.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Revolution in Resale of Digital Books and Music'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 4,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax",
+        "Revolution in Resale of Digital Books and Music"
+      ],
+      "question": "Identify the legal doctrine, cemented by a 1908 Supreme Court ruling involving Macy's and later reaffirmed in the 1984 Betamax case, that protects a consumer's right to resell physical goods. In the context of applying this doctrine to the digital realm circa 2013, identify one startup facing a lawsuit from Capitol Records and two major tech giants that secured or applied for patents to create 'secondary markets' for digital goods. For the startup and the two tech giants, explain the specific technical mechanism or system logic proposed to ensure a file is transferred rather than duplicated (solving the 'single copy' problem). Finally, contrast the specific economic warnings given by the president of the Authors Guild regarding this technology with the optimistic outlook provided by the CEO of the identified startup.",
+      "word_limit_instruction": "Answer length: 280-380 words.",
+      "checklist_width": [
+        "Identified the 'First Sale Doctrine' (or right of first sale) as the legal framework.",
+        "Amazon's mechanism: A personalized 'data store' where items are deleted from the seller's account upon transfer (described as a swap meet).",
+        "Apple's mechanism: A system to transfer files directly between users without reproduction, ensuring only one user holds the copy.",
+        "ReDigi's mechanism: Verifies only one copy exists at a time (upload/delete process); requires proceeds to be spent on new songs (optional detail).",
+        "Authors Guild President (Scott Turow) Warning: Resale would crash new book prices; consumers won't buy new if used is a penny; authors lose incentive.",
+        "ReDigi CEO (John Ossenmacher) Outlook: Believes digital resale adds value for consumers (buy now, resell later); heartened by Amazon's entry/fearlessness."
+      ],
+      "checklist_depth": [
+        "Target Entity 1: ReDigi (The startup sued by Capitol Records).",
+        "Target Entity 2: Amazon (Received patent for digital exchange/data store).",
+        "Target Entity 3: Apple (Applied for patent for digital marketplace).",
+        "Logic Validation: Connection of all entities to the 'First Sale Doctrine' debate regarding digital goods."
+      ],
+      "rationale": "The question is Deep because it requires identifying the 'First Sale Doctrine' and using that legal context to locate specific companies (ReDigi, Amazon, Apple) based on their patent activity or legal battles mentioned in the source. It is Wide because the answer requires aggregating distinct technical details (how each company proposed to handle digital transfers) and contrasting specific viewpoints (Turow vs. Ossenmacher) found in different sections of the text.",
+      "source_nodes": [
+        "Revolution in Resale of Digital Books and Music - The New York Times",
+        "",
+        "- YouTube",
+        "History of Copyright: Statute of Anne, 1710"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Technology | Imagining a Swap Meet for E-Books and Music https://www.nytimes.com/2013/03/08/technology/revolution-in-the-resale-of-digital-books-and-music.html Advertisement C",
+      "judge_max_limit": 380,
+      "answer_a": "The legal doctrine protecting a consumer's right to resell physical goods is the “first sale” doctrine, established in *Bobbs-Merrill Co. v. Straus* (1908), where the Supreme Court ruled that once a copyrighted item is lawfully sold, the copyright holder’s control over its distribution ends [1]. This principle was later reaffirmed in the 1984 *Sony Corp. v. Universal City Studios* (Betamax) decision, which extended user rights in secondary use [2]. In the digital realm circa 2013, the startup ReDigi faced a lawsuit from Capitol Records over its platform enabling users to resell legally purchased digital music [3]. Meanwhile, Apple and Microsoft pursued patents for systems to create digital secondary markets [4][5]. ReDigi’s 1.0 system used a “verification and deletion” protocol, claiming files were transferred through a secure upload process that simultaneously deleted the original from the user’s device, ensuring only one copy existed [6]. Apple’s patented method involved a centralized server that would validate ownership and deregister a file from one user’s account before assigning it to another, effectively limiting duplication through cloud-based control [7]. Microsoft proposed a blockchain-like digital rights transfer system where ownership authentication and revocation were managed through a trusted service, preventing concurrent access [8]. The president of the Authors Guild, Richard Russo, warned that digital resale could erode creative incentives by reducing primary sales, arguing that “used bookstores don’t copy books, but digital systems inherently risk reproduction” [9]. In contrast, ReDigi CEO John Ossenmacher expressed optimism, stating their technology “preserves the first sale doctrine in the digital age” and empowers consumers while compensating artists through resale royalties [10].\n\n## References  \n[1] https://supreme.justia.com/cases/federal/us/210/339/  \n[2] https://www.oyez.org/cases/1983/83-1615  \n[3] https://www.courtlistener.com/ca2/1766278/capitol-records-v-redigi/  \n[4] https://patents.google.com/patent/US9292875B2/en  \n[5] https://patents.google.com/patent/US20120303533A1/en  \n[6] https://redder.com/2013/04/05/what-is-redigis-technology/  \n[7] https://appleinsider.com/articles/13/01/10/apple-patents-digital-resale-market-for-licensed-content  \n[8] https://www.freepatentsonline.com/y2012/0303533.html  \n[9] https://www.publishersweekly.com/pw/by-topic/industry-news/publisher-news/article/50769-authors-guild-opposes-digital-resale.html  \n[10] https://techcrunch.com/2012/04/26/redigi-digital-resale/",
+      "answer_b": "The legal doctrine is the **first sale doctrine**, established in the 1908 Supreme Court case *Bobbs-Merrill Co. v. Straus*, which involved Macy's. The Court ruled a copyright owner's control over a particular copy ends with its initial sale, a principle later reaffirmed in the 1984 *Sony v. Universal* (Betamax) decision [1]. Applying this to digital goods around 2013, the startup **ReDigi** was sued by Capitol Records for creating a marketplace to resell \"used\" digital music files [2]. Two major tech giants, **Apple** and **Amazon**, secured or applied for patents for digital secondary markets. Apple's 2013 patent described a system where a digital file's license and associated user account data are transferred to a new owner in a \"consignment model,\" disabling the original user's access [3][4]. Amazon's earlier patent proposed a digital marketplace where resold content is removed from the seller's \"personalized data store\" and its access key reassigned to the buyer [3][5].\n\nReDigi's specific mechanism, \"Verification Technology,\" aimed to ensure transfer by scanning a user's computer to confirm a file's legitimacy, encrypting it during upload, and deleting the original file from the seller's device [2][6].\n\nThe economic warnings were stark. Authors Guild president Scott Turow argued that a digital first sale right would \"obliterate\" authors' income by destroying the primary market, as a single purchased e-book could be resold an infinite number of times without degradation, collapsing the value of new works [7][8]. In contrast, ReDigi's then-CEO John Ossenmacher offered an optimistic outlook, framing the platform as empowering consumers with true ownership rights over their digital purchases. He argued it would create new value and competition, suggesting it could even boost primary sales by making consumers more willing to buy digital goods if they knew they could later recoup some value [6][8].\n\n## References\n[1] Legal Information Institute, *Bobbs-Merrill Co. v. Straus*, 210 U.S. 339 (1908).\n[2] Reuters, \"Capitol Records sues ReDigi over resale of digital music,\" 2012.\n[3] Ars Technica, \"Apple patents ‘consignment’ system for selling your used iTunes songs,” 2013.\n[4] US Patent 8,364,595, Apple Inc., \"Managing access to digital content items,\" 2013.\n[5] US Patent 8,656,048, Amazon Technologies, Inc., \"Secondary market for digital objects,\" 2014.\n[6] The New York Times, \"A Digital Marketplace for ‘Used’ Tunes, and Now Books,\" 2013.\n[7] The Authors Guild, \"The Slow Death of the American Author,\" 2013.\n[8] The Wall Street Journal, \"The Battle Over the 'First Sale' Doctrine in the Digital World,\" 2013.",
+      "duration_a_seconds": 21.4,
+      "duration_b_seconds": 31.4,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B is superior in accuracy, entity selection, and formatting. \n\n1. **Entity Accuracy**: The prompt asks for two tech giants in the context of 2013 patents for digital resale. Agent B correctly identifies **Amazon** and Apple. Amazon's 2013 patent grant was a major news event alongside Apple's application. Agent A selects Microsoft and describes a 'blockchain-like' system, which is anachronistic for 2013 and likely a hallucination in this specific context.\n\n2. **Factual Accuracy**: Agent B correctly identifies **Scott Turow** as the President of the Authors Guild in 2013. Agent A incorrectly names Richard Russo, who served as president much later (2017).\n\n3. **Formatting**: Agent B uses bolding and paragraph breaks to make the information scannable. Agent A presents a dense wall of text.",
+      "score_a": 1.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_Qwen3235b_vs_deepseekv_553"
+}

@@ -1,0 +1,145 @@
+{
+  "id": "R2_M2_ppl-sonar-pro-high_vs_grok-4-search_tree_0012",
+  "source_group": "round2",
+  "source_log": "round2/R2_M2_ppl-sonar-pro-high_vs_grok-4-search_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "Attention-Deficit/Hyperactivity Disorder: What You Need to Know",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "grok-4-search",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": null,
+  "tournament_round": 2,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "Attention-Deficit/Hyperactivity Disorder: What You Need to Know",
+  "questions": [
+    "In the context of educational rights and support for children with Attention-Deficit/Hyperactivity Disorder (ADHD), identify the specific U.S. federal law that governs how states and public agencies provide early intervention, special education, and related services to children with disabilities. Provide the full formal name of this legislation and its common acronym.",
+    "Identify the primary United States federal statute that governs how states and public agencies provide early intervention, special education, and related services to eligible children with disabilities, ensuring they receive a 'free appropriate public education' (FAPE). Once identified, specify the particular disability category under this law that is most commonly used to classify students with Attention-Deficit/Hyperactivity Disorder (ADHD) for eligibility, and name the mandatory written document that must be developed to outline the specific educational goals and services for a qualifying student."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "NONE",
+  "total_tokens": 161601,
+  "estimated_cost": 1.616,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Attention-Deficit/Hyperactivity Disorder: What You Need to Know",
+        "Individuals with Disabilities Education Act (IDEA)"
+      ],
+      "question": "In the context of educational rights and support for children with Attention-Deficit/Hyperactivity Disorder (ADHD), identify the specific U.S. federal law that governs how states and public agencies provide early intervention, special education, and related services to children with disabilities. Provide the full formal name of this legislation and its common acronym.",
+      "word_limit_instruction": "Answer length: 50-100 words.",
+      "checklist_width": [
+        "Full Name: Individuals with Disabilities Education Act",
+        "Acronym: IDEA"
+      ],
+      "checklist_depth": [
+        "Target Entity: Individuals with Disabilities Education Act (IDEA) + Logic: Identified as the specific law governing special education for disabilities/ADHD."
+      ],
+      "rationale": "The question uses Deep Logic by defining the entity by its function (governing special education/early intervention for ADHD/disabilities) without naming it, requiring the agent to identify the specific act. It satisfies the Wide requirement by asking for precise nomenclature (Full Name and Acronym) derived from the target entity.",
+      "source_nodes": [
+        "Individuals with Disabilities Education Act (IDEA)",
+        "FindTreatment.gov"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Individuals with Disabilities Education Act (IDEA) [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The governing U.S. federal law is the **Individuals with Disabilities Education Act**, commonly known by its acronym **IDEA**.[1][2] This statute requires states and public agencies to provide early intervention (Part C), special education, and related services (Part B) to eligible children with disabilities, including those with ADHD, to ensure a Free Appropriate Public Education in the least restrictive environment.[1][6][7]  \n\n## References  \n[1] Individuals with Disabilities Education Act – Wikipedia  \n[2] NEA – Important Disability Terminology, Acronyms, and Definitions  \n[6] ECTA Center – The Individuals with Disabilities Education Act (IDEA)  \n[7] INCLUDEnyc – Federal Special Education Law",
+      "answer_b": "The Individuals with Disabilities Education Act (IDEA) is the key U.S. federal law governing how states and public agencies deliver early intervention, special education, and related services to children with disabilities, including ADHD [1]. Originally enacted as the Education for All Handicapped Children Act in 1975 and renamed in 1990, IDEA mandates free appropriate public education (FAPE) in the least restrictive environment for eligible children from birth to age 21 [2]. It emphasizes individualized education programs (IEPs) and early intervention to address developmental delays, ensuring support for academic, behavioral, and functional needs [3].\n\n## References\n[1] https://sites.ed.gov/idea/about-idea/  \n[2] https://www2.ed.gov/about/offices/list/osers/osep/osep-idea.html  \n[3] https://www.understood.org/en/articles/idea-what-you-need-to-know",
+      "duration_a_seconds": 3.5,
+      "duration_b_seconds": 20.6,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the Individuals with Disabilities Education Act (IDEA) and adhered to the constraints. Agent A is preferred because it utilized bold formatting to highlight the specific answer (Full Name and Acronym), making it immediately scannable for the user. Additionally, Agent A explicitly mapped the prompt's components ('early intervention' and 'special education') to the specific parts of the law (Part C and Part B), demonstrating higher precision. Agent B provided a solid answer but lacked the formatting emphasis and specific legal breakdown found in A.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'About IDEA'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Attention-Deficit/Hyperactivity Disorder: What You Need to Know",
+        "Individuals with Disabilities Education Act (IDEA)",
+        "About IDEA"
+      ],
+      "question": "Identify the primary United States federal statute that governs how states and public agencies provide early intervention, special education, and related services to eligible children with disabilities, ensuring they receive a 'free appropriate public education' (FAPE). Once identified, specify the particular disability category under this law that is most commonly used to classify students with Attention-Deficit/Hyperactivity Disorder (ADHD) for eligibility, and name the mandatory written document that must be developed to outline the specific educational goals and services for a qualifying student.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Identification of the specific disability category used for ADHD: 'Other Health Impairment' (OHI)",
+        "Explanation that the condition must adversely affect the child's educational performance to qualify",
+        "Identification of the mandatory document: Individualized Education Program (IEP)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Individuals with Disabilities Education Act (IDEA)"
+      ],
+      "rationale": "The question uses Deep logic by describing the function of the law (FAPE, special education governance) without naming it, requiring the agent to deduce 'IDEA'. It uses Wide logic by requiring the agent to retrieve specific implementation details relevant to the domain (ADHD eligibility categories and IEP requirements) that are part of the broader knowledge surrounding the entity.",
+      "source_nodes": [
+        "About IDEA - Individuals with Disabilities Education Act"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: About IDEA - Individuals with Disabilities Education Act",
+      "judge_max_limit": 350,
+      "answer_a": "**The Individuals with Disabilities Education Act (IDEA)** is the primary U.S. federal statute governing how states and public agencies provide early intervention (Part C), special education, and related services (Part B) to eligible children with disabilities, ensuring a **free appropriate public education (FAPE)** in the least restrictive environment.[1][3][5]\n\nUnder IDEA, students with **Attention-Deficit/Hyperactivity Disorder (ADHD)** are most commonly classified under the disability category **Other Health Impairment (OHI)**, which covers chronic or acute health problems like ADHD that limit alertness in the educational environment due to issues such as inattention or hyperactivity adversely affecting educational performance.[1][3][4] Eligibility requires the condition to impact the child's need for special education services; ADHD alone does not automatically qualify, but many students do under OHI rather than Specific Learning Disabilities unless co-occurring conditions apply.[1][4]\n\nFor qualifying students, the mandatory written document is the **Individualized Education Program (IEP)**, developed collaboratively by a team including parents, educators, and specialists. The IEP outlines present levels of performance, measurable annual goals, special education services, related services, accommodations, modifications, and progress monitoring to address the child's unique needs and ensure FAPE.[3][9]\n\n## References  \n[1] ADHD - Learning Disabilities Association of America  \n[3] Educational Rights for Children With ADHD  \n[4] Is a Child with ADD/ADHD Eligible for Special Education? - Wrightslaw  \n[5] ADHD in the Classroom: Helping Children Succeed in School - CDC  \n[9] The Individuals with Disabilities Education Act (IDEA), Part B",
+      "answer_b": "The primary U.S. federal statute governing how states and public agencies provide early intervention, special education, and related services to eligible children with disabilities is the Individuals with Disabilities Education Act (IDEA) [1]. Enacted in 1975 as the Education for All Handicapped Children Act and reauthorized multiple times, including in 2004, IDEA ensures that children with disabilities receive a free appropriate public education (FAPE) in the least restrictive environment from birth through age 21 [2]. This includes individualized support for developmental, academic, and functional needs, with states required to identify, evaluate, and serve qualifying children without cost to families [1].\n\nUnder IDEA, students with Attention-Deficit/Hyperactivity Disorder (ADHD) are most commonly classified under the disability category of \"Other Health Impairment\" (OHI) [3]. This category applies when ADHD adversely affects a child's educational performance due to limited strength, vitality, or alertness, including heightened alertness to environmental stimuli that results in limited attention span [3]. Eligibility under OHI requires documentation that the condition impairs learning and cannot be addressed solely through general education accommodations [4].\n\nThe mandatory written document developed for a qualifying student is the Individualized Education Program (IEP) [2]. Created by a team including parents, teachers, and specialists, the IEP outlines specific, measurable educational goals, accommodations, related services (such as counseling or occupational therapy), and progress monitoring methods tailored to the student's unique needs [5]. It must be reviewed annually and ensures accountability for FAPE delivery [1].\n\n(Word count: 248)\n\n## References\n[1] https://sites.ed.gov/idea/about-idea/  \n[2] https://www2.ed.gov/about/offices/list/osers/osep/osep-idea.html  \n[3] https://www.understood.org/en/articles/adhd-and-school-law  \n[4] https://www.cdc.gov/ncbddd/adhd/school-success.html  \n[5] https://www.parentcenterhub.org/iep-overview/",
+      "duration_a_seconds": 4.0,
+      "duration_b_seconds": 26.0,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents provided accurate, comprehensive, and well-cited answers that met all ground truth criteria (IDEA, OHI, IEP). Agent A is rated better solely due to superior formatting; it used **bold text** to highlight the specific answers requested by the user, making the response significantly more scannable and user-friendly compared to Agent B's wall of text.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_pplsonar_vs_grok4sea_162"
+}

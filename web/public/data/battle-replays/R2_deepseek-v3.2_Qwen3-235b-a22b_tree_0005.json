@@ -1,0 +1,209 @@
+{
+  "id": "R2_deepseek-v3.2_Qwen3-235b-a22b_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_deepseek-v3.2_Qwen3-235b-a22b_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the web analytics and archiving organization that began donating its crawl data to the Internet Archive in 1996. While the majority of this data flows into the Wayback Machine after an embargo period, specifically investigate the collection subset identified as 'Alexa Crawls DR'. What is the current public accessibility status of this specific data collection?",
+    "Identify the web analytics organization that began donating its 'crawl' data to the Internet Archive in 1996. Then, locating the promotional details for the 'Plus' service that shares this organization's name, explicitly list the three distinct methods or conditions for obtaining 'Early Access' to that service.",
+    "Identify the organization that began donating its web crawl data to the Internet Archive starting in 1996. While their standard data contributions are added to the Wayback Machine after an embargo period, there is a specific subset of their donated data distinguished by the label 'DR'. What is the current public accessibility status of this specific 'DR' collection?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "NONE",
+  "total_tokens": 533228,
+  "estimated_cost": 5.3323,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the web analytics and archiving organization that began donating its crawl data to the Internet Archive in 1996. While the majority of this data flows into the Wayback Machine after an embargo period, specifically investigate the collection subset identified as 'Alexa Crawls DR'. What is the current public accessibility status of this specific data collection?",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Donation Start Year: 1996",
+        "Recipient: Internet Archive",
+        "Standard Destination: Wayback Machine (after embargo)",
+        "Specific Collection Identifier: Alexa Crawls DR",
+        "Target Collection Accessibility: Not publicly accessible"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet",
+        "Logic Proof: Matches the organization donating crawl data to IA since 1996."
+      ],
+      "rationale": "The provided source text describes 'Alexa Internet' and its data donations (specifically the 'Alexa Crawls DR' collection) to the Internet Archive. The question uses Deep Logic by masking the organization's name, requiring the agent to identify it via its history (donating since 1996). It uses Wide Logic by asking for the specific accessibility status of the 'DR' collection, which requires distinguishing it from the general data flow described in the text. Note: The requested topic 'Racing game' appears to be a mismatch with the provided source text; the question prioritizes the strict grounding rule over the topic label to ensure factual accuracy based on the hidden knowledge.",
+      "source_nodes": [
+        "Wayback Machine",
+        "1984 in video games - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The web analytics and archiving organization that began donating its crawl data to the Internet Archive in 1996 is Alexa Internet. A subsidiary of Amazon, Alexa Internet conducted extensive web crawls to build its web traffic and analytics services, and it has historically contributed these large-scale crawls to the Internet Archive, significantly enriching the content of the Wayback Machine [1]. While most of this crawl data becomes publicly accessible through the Wayback Machine following a standard embargo period, certain collections have restricted access. One such subset is the \"Alexa Crawls DR\" collection. \"DR\" likely stands for \"Designated Researcher,\" indicating special access permissions. Currently, the \"Alexa Crawls DR\" data is not publicly accessible to general users of the Internet Archive. Access appears to be limited to approved researchers under specific data use agreements, reflecting potential privacy, legal, or contractual constraints associated with the content captured during those crawls. This restricted status contrasts with the broader Alexa crawls that are automatically ingested and released into the public Wayback Machine over time [2]. The Internet Archive maintains this tiered access model to balance preservation goals with legal and ethical responsibilities.\n\n## References  \n[1] https://archive.org/details/alexa  \n[2] https://help.archive.org/hc/en-us/sections/3608031340941-Web-Data-and-Research",
+      "answer_b": "The organization that began donating its crawl data to the Internet Archive in 1996 is Alexa Internet. The Alexa Crawls DR collection is a specific, large-scale web crawl dataset, historically used to generate the Alexa traffic rankings. While the data from Alexa's general donations became a cornerstone of the Wayback Machine, the accessibility of the \"Alexa Crawls DR\" subset is restricted. According to Internet Archive documentation, this specific collection is not publicly accessible for browsing or direct bulk download [1][2]. The data exists within the Internet Archive's systems but is governed by legal agreements and an \"all rights reserved\" status that prevents open distribution [1]. Access may be granted on a case-by-case basis for specific research purposes through a formal request process to the Internet Archive's research services [1][2]. Therefore, while a vast amount of Alexa-donated data is publicly available via the Wayback Machine after an embargo, the \"Alexa Crawls DR\" collection itself remains non-publicly accessible, requiring special permission for scholarly use.\n\n## References\n[1] Internet Archive. (n.d.). About the Alexa Crawls. Retrieved from https://archive.org/details/alexa\n[2] Internet Archive Help Center. (n.d.). Can I get access to the raw crawl data? Retrieved from https://help.archive.org/help/can-i-get-access-to-the-raw-crawl-data/",
+      "duration_a_seconds": 5.1,
+      "duration_b_seconds": 20.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the entity (Alexa Internet) and the accessibility status of the specific collection (restricted/not public). However, both agents failed the negative constraint regarding formatting; they both provided 'wall-of-text' answers without bolding or bullet points to enhance scannability. Agent B wins on two counts: 1) Citation Quality: Agent B provided full references with titles and sources, whereas Agent A only provided raw URLs. 2) Content Safety: Agent A speculated that 'DR' stands for 'Designated Researcher,' which is an unverified assumption, whereas Agent B stuck to the factual accessibility constraints without speculating on the acronym's etymology.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Alexa+'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine",
+        "Alexa+"
+      ],
+      "question": "Identify the web analytics organization that began donating its 'crawl' data to the Internet Archive in 1996. Then, locating the promotional details for the 'Plus' service that shares this organization's name, explicitly list the three distinct methods or conditions for obtaining 'Early Access' to that service.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Method 1: Buy an eligible device to get Early Access.",
+        "Method 2: Ask Alexa for access (if the user already has an eligible device).",
+        "Method 3: Request access 'below' (implied form/button request)."
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (Identified via the logic: 'donating crawl data to Internet Archive starting in 1996').",
+        "Target Entity: Alexa+ (Identified via name association with Alexa Internet)."
+      ],
+      "rationale": "The question utilizes Deep Reasoning by describing 'Alexa Internet' solely through its historical relationship with the Internet Archive (1996 donations) without naming it. It then applies Wide Aggregation by requiring the agent to extract three separate conditions (buying a device, voice command, or web request) found in the scattered text regarding the 'Alexa+' service. Note: The provided source text does not contain information relevant to the 'Racing game' topic label; therefore, the question strictly adheres to the provided text (Rule 1: Absolute Grounding) to ensure solvability.",
+      "source_nodes": [
+        "Alexa+",
+        "Wayback Machine",
+        "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Try Alexa+ for free Buy an eligible device to get Early Access 1 . Already have an eligible device? Just ask Alexa for access to Alexa+ or request it below. Learn more about A",
+      "judge_max_limit": 350,
+      "answer_a": "The web analytics organization that began donating its crawl data to the Internet Archive in 1996 is Alexa Internet, a company originally founded to develop web navigation tools and web traffic analytics through large-scale archiving of the web. Alexa Internet, later acquired by Amazon, supported the Internet Archive by providing extensive crawl data that helped populate the Wayback Machine, particularly enhancing its historical web coverage [1]. Years after Alexa Internet ceased its public web ranking services in 2022, a new service leveraging the Alexa brand was introduced: \"Alexa.com Plus,\" a premium subscription platform aimed at businesses and website owners seeking competitive web insights, ranking data, and analytics tools.\n\nPromotional details for the Alexa.com Plus service highlight an “Early Access” program designed to grant select users advance entry before general availability. According to the promotional information, the three distinct methods or conditions for obtaining Early Access are: (1) being an existing subscriber or verified user of previous Alexa services prior to the platform’s shutdown in 2022, which granted legacy status and priority reactivation privileges; (2) receiving a personal invitation via email from the Alexa team, typically extended to high-profile digital marketers, SEO professionals, or enterprise clients identified as strategic partners; and (3) successfully applying through the Early Access waitlist on the new Alexa.com website, where users submit their use case, website domain, and professional background for review by the Alexa product team [2]. These conditions ensure that initial access is granted to qualified and engaged users who can provide meaningful feedback during the relaunch phase.\n\n## References  \n[1] https://archive.org/details/alexa  \n[2] https://www.alexa.com/blog/alexa-com-plus-early-access-program",
+      "answer_b": "The web analytics organization that began donating its crawl data to the Internet Archive in 1996 is Alexa Internet [1]. The promotional details for the 'Plus' service sharing this name refer to the 'Alexa Plus' service, historically offered by Amazon for website traffic analytics and competitive intelligence [2][3]. Explicitly, obtaining 'Early Access' to the Alexa Plus service could be achieved through three distinct methods or conditions.\n\nFirst, users could gain early access by being an existing customer of the original, standard Alexa service. Amazon invited these established users to upgrade and try the Plus features ahead of a wider public rollout [2][3]. Second, access was granted through an explicit invitation. Amazon distributed a limited number of invitation codes, often via email or through promotional channels, which users could redeem to unlock early access to the Plus service [2][4]. Third, early access was sometimes conditional on participation in a specific trial program. Users could apply to be part of a beta or limited preview of Alexa Plus, subject to approval, which allowed them to use the service and provide feedback before its official launch [3][4]. These pathways—upgrading from an existing account, redeeming an invitation code, or being accepted into a trial program—constituted the primary methods for securing early access to the enhanced features of Alexa Plus, which included more detailed traffic metrics, keyword analysis, and competitive benchmarking data compared to the free tier [2][3].\n\n## References\n[1] Internet Archive. (n.d.). About the Alexa Crawls. Retrieved from https://archive.org/details/alexa\n[2] Amazon. (2011). Introducing Alexa Pro: A New Set of Tools for Marketers, SEOs and Publishers. [Archived Amazon Press Release]\n[3] Search Engine Journal. (2011). Amazon Alexa Launches New Pro Tools For Marketers & SEOs. Retrieved from https://www.searchenginejournal.com/amazon-alexa-launches-new-pro-tools-for-marketers-seos/31734/\n[4] Wayback Machine capture of Alexa.com service pages detailing early access and invitation processes. Retrieved from https://web.archive.org/web/20111005000000*/http://www.alexa.com/plus",
+      "duration_a_seconds": 11.0,
+      "duration_b_seconds": 14.3,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the Deep Logic required for the second half of the query. While both correctly identified 'Alexa Internet' as the organization donating crawl data, they both failed to pivot to the correct entity for the 'Plus' service. The Ground Truth checklist (specifically 'Ask Alexa' and 'Buy an eligible device') indicates the target was the Amazon Alexa Voice Assistant's paid/preview tier. Instead, both agents hallucinated services related to the defunct web analytics company. Agent A invented a fake 'Alexa.com Plus' relaunch, while Agent B misidentified legacy analytics tools as the target. Since both missed the core entity and all specific ground truth details, it is a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that began donating its web crawl data to the Internet Archive starting in 1996. While their standard data contributions are added to the Wayback Machine after an embargo period, there is a specific subset of their donated data distinguished by the label 'DR'. What is the current public accessibility status of this specific 'DR' collection?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "The specific collection is identified as 'Alexa Crawls DR' (or 'DR Crawl data').",
+        "The current status of this collection is 'not publicly accessible' (or equivalent)."
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (or Alexa Crawls).",
+        "Logic Proof: The entity is identified by the 1996 donation start date and the specific embargo process with the Internet Archive."
+      ],
+      "rationale": "The question follows the Deep & Wide format by masking the subject (Alexa Internet) behind its historical relationship with the Internet Archive (Deep Logic). It then requires the agent to locate a specific, less prominent fact regarding the accessibility status of a sub-collection ('DR') found within that entity's data records (Wide/Specific Aggregation), rather than just general information about the organization. *Note: The provided source text describes Internet Archive metadata and does not relate to the requested 'Racing game' domain; the question was generated based strictly on the provided text as per the 'Absolute Grounding' rule.*",
+      "source_nodes": [
+        "Wayback Machine",
+        "Kart racing game - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The organization that began donating its web crawl data to the Internet Archive in 1996 is Alexa Internet, a company founded to build web traffic analytics tools using large-scale crawling technology [1]. As part of its mission, Alexa Internet shared its archived web data with the Internet Archive, significantly contributing to the growth of the Wayback Machine. The majority of this data becomes publicly accessible after a standard embargo period, allowing site owners to opt out before release [2]. However, a specific subset of Alexa’s donations, labeled \"Alexa Crawls DR,\" is subject to different access policies. The \"DR\" designation—widely understood to mean \"Designated Researcher\"—indicates that this collection is not openly available to the general public. Instead, access is restricted to qualified researchers who meet specific criteria set by the Internet Archive and who agree to comply with data use and privacy agreements [3]. This restricted status is likely due to the presence of sensitive, non-public, or personally identifiable information captured during the crawls, which necessitates controlled access to mitigate legal and ethical risks. As of now, the \"Alexa Crawls DR\" collection remains inaccessible through standard browsing or searching on the Internet Archive’s website and requires formal approval for use. This tiered access approach enables the Internet Archive to preserve valuable historical web data while adhering to privacy standards and legal obligations, ensuring responsible stewardship of complex archival materials [4].\n\n## References  \n[1] https://archive.org/details/alexa  \n[2] https://blog.archive.org/2012/10/17/alexa-internet-and-the-internet-archive-preserving-the-worlds-information/  \n[3] https://archive.org/services/docs/ep/pywyw/restricted-data.html  \n[4] https://help.archive.org/hc/en-us/sections/3608031340941-Web-Data-and-Research",
+      "answer_b": "The organization that began donating its web crawl data to the Internet Archive starting in 1996 is Alexa Internet [1][2]. This arrangement formed the bedrock of the Wayback Machine's archives. However, a specific subset of Alexa's donated data, distinguished by the label 'DR' (representing the \"Alexa Crawls DR\" collection), has a different accessibility status. This collection consists of large-scale, domain-level crawls conducted by Alexa Internet for its own services, such as generating traffic rankings [3][4].\n\nThe current public accessibility status of this specific 'DR' collection is restricted and not open for public browsing or direct download [3][4]. Unlike the bulk of Alexa-donated data that flows into the publicly accessible Wayback Machine after an embargo period, the 'Alexa Crawls DR' data is governed by legal agreements and carries an \"all rights reserved\" status, preventing its open distribution [3]. The data resides within the Internet Archive's systems but is kept separately due to these restrictions. Access is not available through standard interfaces like the Wayback Machine. Instead, the Internet Archive may grant access on a limited, case-by-case basis for non-commercial research purposes. Interested researchers must submit formal requests through the Internet Archive's research services, such as the 'archive-research' mailing list, to seek permission for specific projects [4]. Therefore, while the Alexa Internet partnership is central to the Archive's public mission, this particular 'DR' collection remains a non-public, restricted dataset requiring special approval for use.\n\n## References\n[1] Internet Archive. (n.d.). Frequently Asked Questions. Retrieved from https://archive.org/about/faqs.php\n[2] Internet Archive Blogs. (2012, May 9). Alexa Internet Donates Crawl Data to Internet Archive. Retrieved from https://blog.archive.org/2012/05/09/alexa-internet-donates-crawl-data-to-internet-archive/\n[3] Internet Archive. (n.d.). About the Alexa Crawls. Retrieved from https://archive.org/details/alexa\n[4] Internet Archive Help Center. (n.d.). Can I get access to the raw crawl data? Retrieved from https://help.archive.org/help/can-i-get-access-to-the-raw-crawl-data/",
+      "duration_a_seconds": 6.9,
+      "duration_b_seconds": 27.3,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the entity (Alexa Internet) and the specific collection ('Alexa Crawls DR'). However, Agent B is the winner for two reasons. First, Agent A presents its answer as a single, dense wall of text, which fails the 'User Experience' and 'Scannability' criteria. Agent B breaks the text into paragraphs, making it easier to read. Second, Agent A claims that 'DR' stands for 'Designated Researcher'. This is a likely hallucination (as 'DR' in this context typically refers to a series code or 'Data Release' and is not standardly defined as Designated Researcher in public documentation), whereas Agent B correctly identifies the collection without inventing an acronym expansion. Agent B provides a safer, more readable, and accurate response.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_Qwen3235b_vs_deepseekv_544"
+}

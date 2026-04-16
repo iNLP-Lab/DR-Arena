@@ -1,0 +1,219 @@
+{
+  "id": "R3_M1_gemini-2.5-pro-grounding_vs_o3-search_tree_0014",
+  "source_group": "round3",
+  "source_log": "round3/R3_M1_gemini-2.5-pro-grounding_vs_o3-search_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "o3-search",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 3.0,
+  "final_score_b": 1.0,
+  "total_rounds": 3,
+  "type": null,
+  "tournament_round": 3,
+  "pairing_index": 1,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Analyze the legal and historical parallels between a 2013 U.S. Supreme Court case involving a Thai student's resale of textbooks and the landmark 1984 Supreme Court ruling regarding the Sony Betamax. In your answer: 1) Identify the 2013 case by name and the specific copyright doctrine (the 'right') that the court upheld to allow the student's actions. 2) Identify the President of the Motion Picture Association of America (MPAA) during the VCR era and provide his famous, hyperbolic quote comparing the VCR to a specific type of violent criminal. 3) Explain how the judicial and legislative outcomes surrounding the 1984 technology dispute legally protected the business model of video rental chains like Blockbuster.",
+    "Following the Supreme Court ruling in Kirtsaeng v. John Wiley & Sons regarding the resale of imported textbooks, industry attention turned to the application of the 'first sale' doctrine to digital goods. Identify the Massachusetts-based startup that was already operating a secondary market for digital music during this period, and the two major technology companies that had either recently received or applied for patents for similar digital resale systems around early 2013.\n\nProvide a comparative analysis of these three entities by answering the following:\n1. What specific technical mechanism did each entity propose or utilize to ensure that a digital file is not retained by the seller after a transaction (addressing the 'infinite reproduction' issue)?\n2. What specific concession did the startup make regarding how sellers could utilize the funds earned from their sales to appease music companies?\n3. What was the outcome of the request for a preliminary injunction filed by Capitol Records against the startup as of March 2013?",
+    "Drawing parallels to the 1984 Sony Betamax ruling, the 2013 Supreme Court decision in *Kirtsaeng v. John Wiley & Sons* reinvigorated discussions around the 'first sale' doctrine for digital media. In the timeframe surrounding this decision, three specific entities were prominent for their efforts to create a 'used' digital marketplace: a Massachusetts-based startup already entrenched in a lawsuit with Capitol Records, an e-commerce titan that secured a patent for a digital exchange, and a Cupertino-based hardware giant that published a patent application for digital transfers. Identify these three entities. Then, provide the following specific details regarding their respective systems as described in reports from that period:\n\n1. For the e-commerce titan, list the full title of the 'Ghost Rider' movie and the specific subject of the autobiography explicitly mentioned as examples of items 'available for movement' in their patent description.\n2. For the Massachusetts startup, what specific restriction was placed on how sellers could utilize the funds or credits generated from their sales?\n3. For the Cupertino company, what fundamental technical constraint did their patent propose to ensure the digital transfer mimicked a physical exchange rather than an unauthorized reproduction?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 4,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 92278,
+  "estimated_cost": 0.9228,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Analyze the legal and historical parallels between a 2013 U.S. Supreme Court case involving a Thai student's resale of textbooks and the landmark 1984 Supreme Court ruling regarding the Sony Betamax. In your answer: 1) Identify the 2013 case by name and the specific copyright doctrine (the 'right') that the court upheld to allow the student's actions. 2) Identify the President of the Motion Picture Association of America (MPAA) during the VCR era and provide his famous, hyperbolic quote comparing the VCR to a specific type of violent criminal. 3) Explain how the judicial and legislative outcomes surrounding the 1984 technology dispute legally protected the business model of video rental chains like Blockbuster.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies the 2013 case as Kirtsaeng v. John Wiley & Sons",
+        "Identifies the legal principle as the 'First Sale' doctrine (or doctrine of first sale)",
+        "Identifies the MPAA President as Jack Valenti",
+        "Includes the quote comparing the VCR to the 'Boston Strangler'",
+        "Explains that the ruling/laws allowed renting or reselling videotapes for profit without copyright holder consent (protecting the rental industry)"
+      ],
+      "checklist_depth": [
+        "Correctly links the 'Thai student/textbook' description to Kirtsaeng v. John Wiley & Sons",
+        "Correctly links the 1984 Betamax context to Jack Valenti's opposition"
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific 2013 case based on the description of the plaintiff (Thai student) and the subject matter (textbooks), rather than naming the case directly. It then requires Wide aggregation to retrieve specific historical details (Jack Valenti's name, the specific 'Boston Strangler' quote) and synthesize the legal impact on the video rental industry ('First Sale' doctrine) as described in the source text.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Williamsburg, Brooklyn - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The 2013 Supreme Court case was *Kirtsaeng v. John Wiley & Sons, Inc.* In this ruling, the court upheld the **first-sale doctrine**, a copyright principle that allows the owner of a lawfully made copy of a work to sell or otherwise dispose of that particular copy without the copyright holder's permission [1]. This doctrine permitted the student to resell textbooks legally purchased abroad in the United States.\n\nHistorically, this mirrors the home video dispute of the 1980s. The President of the Motion Picture Association of America (MPAA) during that era was Jack Valenti. In a 1982 congressional hearing, he made the hyperbolic statement, \"I say to you that the VCR is to the American film producer and the American public as the Boston Strangler is to the woman home alone\" [2].\n\nThe landmark 1984 Supreme Court ruling, *Sony Corp. of America v. Universal City Studios, Inc.* (the \"Betamax case\"), countered this view. The Court decided that recording television shows for later personal viewing (\"time-shifting\") was a protected \"fair use,\" which legalized the VCR technology itself and shielded Sony from liability for contributory infringement [3]. While the *Sony* decision protected the device and the act of home recording, the business model of video rental chains like Blockbuster was legally protected by the **first-sale doctrine**—the very same right central to the *Kirtsaeng* textbook case. Once studios sold physical VHS tapes to rental stores, the first-sale doctrine allowed those stores to freely rent out their legally acquired copies to customers without infringing copyright, creating a multi-billion dollar industry the movie studios originally fought to prevent [4].\n\n## References\n[1] Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013). supremecourt.gov.\n[2] Rosen, R. (2012, April 19). The Boston Strangler and the VCR. *The Atlantic*.\n[3] Sony Corp. of America v. Universal City Studios, Inc., 464 U.S. 417 (1984). supreme.justia.com.\n[4] Wu, T. (2016). *The Attention Merchants: The Epic Scramble to Get Inside Our Heads*. Alfred A. Knopf.",
+      "answer_b": "Kirtsaeng v. John Wiley & Sons, Inc. (2013) concerned Thai graduate student Supap Kirtsaeng, who bought cheaper foreign-edition textbooks abroad and resold them in the United States.  The Court sided with him, holding that the first-sale doctrine—the right of an owner of a lawful copy to dispose of it “without the authority of the copyright owner” (§109(a))—applies to works made overseas, so his resale was legal [1].\n\nThree decades earlier, in Sony Corp. of America v. Universal City Studios, Inc. (1984) the Court ruled 5-4 that home “time-shifting” with the Betamax VCR constituted fair use and that a device capable of substantial non-infringing uses could not render its maker secondarily liable [2].  During the run-up to that case, MPAA president Jack Valenti warned Congress, “the VCR is to the American film producer and the American public as the Boston Strangler is to the woman home alone” [3].\n\nThe combination of the Sony decision and Congress’s refusal to curtail the first-sale rule for videos (while later imposing rental royalties only on sound recordings) meant that once a video store bought a legitimate cassette it could repeatedly rent it without paying additional fees.  Because manufacturers were safe from contributory-infringement suits and retailers were shielded by first sale, an ecosystem of video-rental chains—most famously Blockbuster—grew explosively through the late 1980s and 1990s.  Content owners ultimately embraced the new market, selling high-priced “rental” editions and later cheaper sell-through tapes, but they lacked the legal leverage to shut the stores down after Sony [4].\n\n## References list  \n[1] Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013).  \n[2] Sony Corp. of America v. Universal City Studios, Inc., 464 U.S. 417 (1984).  \n[3] Testimony of Jack Valenti before House Judiciary Committee, 12 Apr 1982.  \n[4] Ulin, J., “The Business of Media Distribution,” 4th ed., 2019, pp. 80-85.",
+      "duration_a_seconds": 21.4,
+      "duration_b_seconds": 20.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents provided excellent, factually accurate responses that met all constraints and checklist items. Agent A is rated slightly higher due to superior formatting (using bold text to highlight the specific answers requested: the case name, the doctrine, and the quote). This makes the response more scannable and improves the user experience. Agent A also explicitly drew the parallel between the two eras by noting that the doctrine in the 2013 case was the 'very same right' that protected Blockbuster, whereas Agent B treated them slightly more separately.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Revolution in Resale of Digital Books and Music'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax",
+        "Revolution in Resale of Digital Books and Music"
+      ],
+      "question": "Following the Supreme Court ruling in Kirtsaeng v. John Wiley & Sons regarding the resale of imported textbooks, industry attention turned to the application of the 'first sale' doctrine to digital goods. Identify the Massachusetts-based startup that was already operating a secondary market for digital music during this period, and the two major technology companies that had either recently received or applied for patents for similar digital resale systems around early 2013.\n\nProvide a comparative analysis of these three entities by answering the following:\n1. What specific technical mechanism did each entity propose or utilize to ensure that a digital file is not retained by the seller after a transaction (addressing the 'infinite reproduction' issue)?\n2. What specific concession did the startup make regarding how sellers could utilize the funds earned from their sales to appease music companies?\n3. What was the outcome of the request for a preliminary injunction filed by Capitol Records against the startup as of March 2013?",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Amazon Mechanism: Uses a personalized 'data store' where selling an item automatically deletes it from the seller's store.",
+        "Apple Mechanism: Transferring files rather than reproducing them, ensuring only one user has a copy at any one time.",
+        "ReDigi Mechanism: System verifies only one copy exists at any moment (file transfer without reproduction).",
+        "ReDigi Concession: Money gained from selling songs must be spent on purchasing new songs.",
+        "ReDigi Legal Status: The judge declined/refused to grant the preliminary injunction to shut down the service (ruling on merits pending)."
+      ],
+      "checklist_depth": [
+        "Startup: ReDigi",
+        "Tech Giant 1: Amazon (Patent received)",
+        "Tech Giant 2: Apple (Patent application published)",
+        "Context: Connection to the 'First Sale' doctrine discussions post-Kirtsaeng ruling."
+      ],
+      "rationale": "The question requires Deep reasoning to connect the 'Kirtsaeng' Supreme Court case (mentioned in the background logic) to the specific companies (ReDigi, Amazon, Apple) working on digital resale at that time. It requires Wide aggregation to retrieve technical mechanisms for all three entities, a specific financial concession made by the startup, and the specific legal outcome of an injunction hearing, all of which are scattered throughout the source text.",
+      "source_nodes": [
+        "Revolution in Resale of Digital Books and Music - The New York Times",
+        "Wayback Machine",
+        "Supreme Court Gives American Consumers Victory Over Copyright Owners in Kirtsaeng vs. John Wiley &amp; Sons"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Technology | Imagining a Swap Meet for E-Books and Music https://www.nytimes.com/2013/03/08/technology/revolution-in-the-resale-of-digital-books-and-music.html Advertisement C",
+      "judge_max_limit": 350,
+      "answer_a": "Following the *Kirtsaeng* ruling, the Massachusetts-based startup operating a secondary market for digital music was **ReDigi**. Around the same time, both **Apple** and **Amazon** secured patents for similar digital resale systems in early 2013 [1, 3].\n\n1.  **Technical Mechanisms:** The three entities proposed distinct methods to prevent sellers from retaining copies. ReDigi employed a \"Media Mover\" software that verified a music file's legal origin (e.g., from iTunes) and then transferred the file block-by-block to its cloud servers, ensuring the original was deleted from the seller's device in an \"atomic transaction\" [2]. Apple's patent described a system where, upon sale, the access rights and associated file key for the digital content would be transferred from the seller's account to the buyer's, and the original file would be deleted or access would be blocked on the seller's devices [4]. Amazon’s patent envisioned a \"personalized data store\" for each user; when a digital item was sold, it would be moved from the seller’s store to the buyer's, making it inaccessible to the seller [5].\n\n2.  **Seller Concession:** To attract support from music companies, ReDigi initially designed its system so that users could not cash out their earnings. Instead, credits earned from selling \"used\" digital tracks could only be used to purchase *new* music from the record labels through the ReDigi platform, creating a new revenue stream for the copyright holders [1].\n\n3.  **Injunction Outcome:** Capitol Records filed a lawsuit against ReDigi seeking an injunction. However, the outcome was more decisive. On March 30, 2013, the U.S. District Court for the Southern District of New York denied ReDigi's motion to dismiss and instead granted summary judgment in favor of Capitol Records. The judge ruled that ReDigi's service was a violation of copyright law, finding that the process of transferring a digital file necessarily created a new copy, and therefore the 'first sale' doctrine did not apply [2, 6].\n\n## References\n[1] King, R. (2012, October 25). ReDigi, a TripAdvisor for music, finds fans and foes. *Fortune*.\n\n[2] *Capitol Records, LLC v. ReDigi Inc.*, 934 F. Supp. 2d 640 (S.D.N.Y. 2013). CourtListener.\n\n[3] Mac, R. (2013, February 7). Amazon Wins Patent For A 'Secondary Market For Digital Objects'. *Forbes*.\n\n[4] Slivka, E. (2013, January 29). Apple Granted Patent for System for Reselling 'Used' Digital Content. *MacRumors*.\n\n[5] U.S. Patent No. 8,364,595. (2013, January 29). Secondary market for digital objects. United States Patent and Trademark Office.\n\n[6] Sisario, B. (2013, April 1). Judge Rules Against a Service for Reselling Digital Music. *The New York Times*.",
+      "answer_b": "ReDigi Inc., a Cambridge, Massachusetts startup, was already running a “used-MP3” marketplace when Kirtsaeng was decided.  Around the same time Amazon and Apple were pursuing patent protection for comparable schemes.\n\n1. Anti-retention mechanism  \n• ReDigi: Users installed “ReDigi Media Manager,” which verified that a track had been lawfully bought from iTunes, then “migrated” the file to ReDigi’s cloud in small data blocks while simultaneously deleting every local copy and performing periodic scans to be sure no duplicates remained on the seller’s computer or connected drives [1].  \n• Amazon: U.S. Patent 8,364,595 describes a marketplace server that moves a digital object from the seller’s personal data store to the buyer’s.  The act is a server-side relocation, not duplication; once the transfer flag is set, the file is automatically erased or access is revoked for the first user, and the system can limit the number or frequency of subsequent resales [2].  \n• Apple: Patent application 20130085961 proposes attaching a transferable “usage-rights token” to each file.  During resale the token is reassigned through a central rights-management node; upon confirmation, the seller’s device is instructed to disable or delete its copy, thereby eliminating simultaneous possession [3].\n\n2. Concession on sale proceeds  \nTo mollify record labels, ReDigi required that the 60 % credit a user earned from selling a track could be spent only on purchasing new music within ReDigi’s store; it could not be cashed out directly, ensuring that money flowed back into licensed music sales [1].\n\n3. Preliminary-injunction outcome  \nCapitol Records sought to shut ReDigi down, but on 5 October 2012 Judge Richard J. Sullivan of the U.S. District Court (S.D.N.Y.) denied Capitol’s motion for a preliminary injunction, allowing the service to continue operating while the case proceeded; that denial was still in place as of March 2013 [4].\n\n## References list  \n[1] Eriq Gardner, “Judge Refuses to Shutter Used Digital Music Store ReDigi,” The Hollywood Reporter, 5 Oct 2012.  \n[2] U.S. Patent No. 8,364,595, “Secondary market for digital objects,” issued to Amazon Technologies, 29 Jan 2013.  \n[3] U.S. Patent App. 20130085961, “Managing access to digital content items,” filed by Apple Inc., published 4 Apr 2013.  \n[4] Capitol Records, LLC v. ReDigi Inc., No. 12-cv-95 (S.D.N.Y.), Order denying preliminary injunction, 5 Oct 2012.",
+      "duration_a_seconds": 18.6,
+      "duration_b_seconds": 21.0,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B is the winner because it correctly answers the specific legal question regarding the 'preliminary injunction' (which was denied), whereas Agent A answers with the outcome of the 'summary judgment' (which is a different legal phase). Agent B also employs superior formatting (bullet points) for the technical comparison in Question 1, making the complex details much easier to scan. Agent A's answer to Q1 is a dense wall of text. Note: Agent B slightly misdates the PI denial (citing the Oct 2012 Motion to Dismiss date rather than the Feb 2012 PI hearing), but it correctly captures the status (Denied) required by the Ground Truth, while Agent A misses it entirely.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 4,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax",
+        "Revolution in Resale of Digital Books and Music"
+      ],
+      "question": "Drawing parallels to the 1984 Sony Betamax ruling, the 2013 Supreme Court decision in *Kirtsaeng v. John Wiley & Sons* reinvigorated discussions around the 'first sale' doctrine for digital media. In the timeframe surrounding this decision, three specific entities were prominent for their efforts to create a 'used' digital marketplace: a Massachusetts-based startup already entrenched in a lawsuit with Capitol Records, an e-commerce titan that secured a patent for a digital exchange, and a Cupertino-based hardware giant that published a patent application for digital transfers. Identify these three entities. Then, provide the following specific details regarding their respective systems as described in reports from that period:\n\n1. For the e-commerce titan, list the full title of the 'Ghost Rider' movie and the specific subject of the autobiography explicitly mentioned as examples of items 'available for movement' in their patent description.\n2. For the Massachusetts startup, what specific restriction was placed on how sellers could utilize the funds or credits generated from their sales?\n3. For the Cupertino company, what fundamental technical constraint did their patent propose to ensure the digital transfer mimicked a physical exchange rather than an unauthorized reproduction?",
+      "word_limit_instruction": "Answer length: 280-380 words.",
+      "checklist_width": [
+        "Amazon Detail: Movie title is 'Ghost Rider: Spirit of Vengeance'",
+        "Amazon Detail: Autobiography subject is Lance Armstrong",
+        "ReDigi Detail: Funds/Proceeds must be spent on new songs/media (cannot be cashed out)",
+        "Apple Detail: Only one user can possess the copy at a time (files are transferred/deleted, not copied)"
+      ],
+      "checklist_depth": [
+        "Entity 1: ReDigi (identified via Massachusetts startup / Capitol Records lawsuit)",
+        "Entity 2: Amazon (identified via e-commerce titan / patent for digital exchange)",
+        "Entity 3: Apple (identified via Cupertino / patent application)"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the three companies (Amazon, Apple, ReDigi) based on their specific legal situations (lawsuits vs patents) and timing relative to the 2013 Kirtsaeng case. It requires Wide Aggregation to retrieve distinct, granular details about each of their proposed digital resale systems (specific example titles, financial restrictions, and technical transfer mechanisms) found in different parts of the source text.",
+      "source_nodes": [
+        "Revolution in Resale of Digital Books and Music - The New York Times",
+        "History of Copyright: Statute of Anne, 1710",
+        "",
+        "Costco v. Omega - SCOTUSblog"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Technology | Imagining a Swap Meet for E-Books and Music https://www.nytimes.com/2013/03/08/technology/revolution-in-the-resale-of-digital-books-and-music.html Advertisement C",
+      "judge_max_limit": 380,
+      "answer_a": "The three entities prominent for developing 'used' digital marketplaces around the time of the 2013 *Kirtsaeng* ruling were the Massachusetts-based startup **ReDigi**, the e-commerce titan **Amazon**, and the Cupertino-based hardware giant **Apple** [1, 2, 4]. Each proposed a distinct system for managing the resale of digital goods, with specific mechanisms and rules detailed in reports and patent filings from the period.\n\n1.  Amazon's patent for a \"Secondary market for digital objects,\" granted in January 2013, explicitly used two examples to describe content that would be \"available for movement\" between users. The full movie title mentioned was the **\"Ghost Rider\" movie starring Nicolas Cage**, and the autobiography subject was described as **\"the autobiography of the rock and roll singer\"** [3]. These examples were used to illustrate the types of transferable digital objects—such as movies, e-books, and music—that could be managed within a user's personalized data store and moved to a buyer's store upon sale.\n\n2.  The Massachusetts startup, ReDigi, attempted to appease copyright holders by placing a significant restriction on sellers. When a user sold a \"used\" digital music file on the platform, they did not receive cash. Instead, the seller was issued credits that could only be spent within the ReDigi ecosystem to purchase **brand new music** directly from the labels [1]. This model was designed to ensure that a portion of the value from the secondary market flowed back to the original music companies, creating an ongoing revenue stream for them.\n\n3.  Apple's patent application, published in early 2013, proposed a fundamental technical constraint to ensure a digital transfer would function like a physical exchange. The system's core principle was to enforce a rule that **the transferor is not allowed to retain a copy** of the digital content item after the transaction is complete [4]. To achieve this, Apple’s proposed system would transfer the right to access the content to the new owner while simultaneously deleting the original file from the seller's devices and removing it from their list of authorized content, thereby preventing unauthorized reproduction by the original owner [4, 5].\n\n## References\n\n[1] King, R. (2012, October 25). ReDigi, a TripAdvisor for music, finds fans and foes. *Fortune*.\n\n[2] Mac, R. (2013, February 7). Amazon Wins Patent For A 'Secondary Market For Digital Objects'. *Forbes*.\n\n[3] U.S. Patent No. 8,364,595. (2013, January 29). Secondary market for digital objects. United States Patent and Trademark Office.\n\n[4] Slivka, E. (2013, January 29). Apple Granted Patent for System for Reselling 'Used' Digital Content. *MacRumors*.\n\n[5] U.S. Patent Application Publication No. 2013/0031627 A1. (2013, January 31). Systems and methods for transferring ownership of a digital content item. United States Patent and Trademark Office.",
+      "answer_b": "ReDigi Inc. (Cambridge, MA); Amazon.com, Inc.; and Apple Inc. were the three entities pursuing “used” digital-goods systems in the Kirtsaeng timeframe.\n\n1. Amazon (e-commerce titan)  \n   • Patent No. 8,364,595 describes a “secondary market for digital objects.”  \n   • In the exemplary list of titles “available for movement,” Amazon names:  \n     – Movie: “Ghost Rider: Spirit of Vengeance” (the full sequel title)  \n     – Book: “Steve Jobs” — the Walter Isaacson autobiography of the late Apple co-founder [1].\n\n2. ReDigi (Massachusetts startup)  \n   • Sellers received 60 percent of a track’s resale price, but the credit could only be spent on purchasing new music within ReDigi’s own store; users could not cash the money out or apply it to non-music items, a concession meant to keep revenue flowing back to record labels [2].\n\n3. Apple (Cupertino hardware giant)  \n   • Patent application 20130085961 proposes attaching a transferable usage-rights token to each file; on resale the system invalidates the seller’s token and reassigns a single active token to the buyer, thereby guaranteeing that only one authenticated, playable copy exists at any moment—mimicking the exclusivity of handing over a physical disc rather than creating a duplicate [3].\n\nThese parallel approaches all sought to square the “first sale” concept with the non-rivalrous nature of bits: Amazon by server-side relocation of the content object, ReDigi by file-migration plus periodic duplicate scans, and Apple by rights-token extinction and reassignment. Each system thus attempted, through different technical levers, to ensure that ownership—and lawful access—travels while the seller is left empty-handed, echoing the legal logic that safeguarded VCR time-shifting and Blockbuster rentals three decades earlier.\n\n## References list  \n[1] U.S. Patent 8,364,595, “Secondary market for digital objects,” Amazon Technologies, Fig. 5 item list, issued 29 Jan 2013.  \n[2] Capitol Records LLC v. ReDigi Inc., 12-cv-95 (S.D.N.Y.), Order denying prelim. injunction, 5 Oct 2012; ReDigi FAQ (2012).  \n[3] U.S. Patent App. 20130085961, “Managing access to digital content items,” Apple Inc., published 4 Apr 2013.",
+      "duration_a_seconds": 18.4,
+      "duration_b_seconds": 13.7,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the three entities (ReDigi, Amazon, Apple). However, Agent A demonstrated superior accuracy regarding the specific details requested from the Amazon patent. The prompt asked for the examples 'explicitly mentioned' in the patent description. Agent A correctly identified that the patent uses the generic placeholder text 'the autobiography of the rock and roll singer' and the movie 'Ghost Rider'. Agent B hallucinated specific titles ('Steve Jobs' and 'Ghost Rider: Spirit of Vengeance') which do not appear in the patent text (and in the case of the Steve Jobs biography, did not exist when the patent was filed in 2009). Agent A's adherence to the ground truth of the source document makes it the clear winner.",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_gemini25_vs_o3search_219"
+}

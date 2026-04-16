@@ -1,0 +1,89 @@
+{
+  "id": "R4_deepseek-v3.2_ppl-sonar-pro-high_tree_0012",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_deepseek-v3.2_ppl-sonar-pro-high_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "epguides.com * Main Menu Page",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "deepseek-v3.2",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "epguides.com * Main Menu Page",
+  "questions": [
+    "Identify the television reference website, established in 1995, that characterizes its mission with the slogan \"Cataloging the opiate of the masses on the small screen.\" Once this site is identified, consult its main menu or introductory guidelines to answer the following: Which specific external database is linked to provide detailed plot summaries and guest star information for episodes? Which two distinct platforms are listed as the designated recipients for user-submitted corrections regarding individual episodes? Finally, in what specific file format does the site offer a downloadable list of \"all shows\"?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 29465,
+  "estimated_cost": 0.2947,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "Identify the television reference website, established in 1995, that characterizes its mission with the slogan \"Cataloging the opiate of the masses on the small screen.\" Once this site is identified, consult its main menu or introductory guidelines to answer the following: Which specific external database is linked to provide detailed plot summaries and guest star information for episodes? Which two distinct platforms are listed as the designated recipients for user-submitted corrections regarding individual episodes? Finally, in what specific file format does the site offer a downloadable list of \"all shows\"?",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "External source for plot summaries/guest stars: TVmaze",
+        "Correction destination 1: TVmaze",
+        "Correction destination 2: TV.com",
+        "Downloadable file format: .csv (or Comma Separated Values)"
+      ],
+      "checklist_depth": [
+        "Target Entity: epguides.com",
+        "Logic Proof: Identified via the unique slogan \"Cataloging the opiate of the masses on the small screen since 1995\"."
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the specific website 'epguides.com' using its unique historical slogan rather than its name. It then demands Wide Aggregation by asking for three distinct types of operational information (external content partners, correction workflows, and data export formats) that are scattered within the site's introductory text.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 300,
+      "answer_a": "**epguides.com** is the television reference website established in 1995, with the mission slogan \"Cataloging the opiate of the masses on the small screen.\"[1]\n\nFrom its main menu and introductory guidelines, **TVmaze** is the specific external database linked for detailed plot summaries and guest star information; episode titles on epguides.com pages direct users there.[1] The two distinct platforms designated for user-submitted corrections regarding individual episodes are **TVmaze** and **TV.com**.[1] The site offers a downloadable list of \"all shows\" in **PDF** file format, accessible via the \"Printable Guide\" option on show pages, which provides summaries for all episodes.[1]\n\nThis resource catalogs over 12,500 TV shows, focusing on episode titles and airdates, with links to streaming sources at the bottom of each show's page. Users are directed to the FAQ for general questions and email instructions.[1]\n\n(Word count: 162)\n\n## References\n[1] https://epguides.com - epguides.com Main Menu Page",
+      "answer_b": "The television reference website is Epguides.com, established in 1996 (with development beginning in 1995). It is characterized by the mission slogan \"Cataloging the opiate of the masses on the small screen\" [1]. According to the site's informational guidelines, the specific external database linked to provide detailed plot summaries and guest star information for episodes is the Internet Movie Database (IMDb) [2]. For user-submitted corrections regarding individual episodes, two distinct platforms are designated: submissions via email to corrections@epguides.com and submissions through an online correction form available on each episode page [3]. The site offers a downloadable list of \"all shows\" in a plain text file format (a .txt file), which is accessible from its comprehensive shows listing page [4].\n\n## References\n[1] Epguides.com. (n.d.). [Homepage title tag]. Retrieved from https://www.epguides.com/\n[2] Epguides.com. (n.d.). Information page. Retrieved from https://www.epguides.com/info.shtml\n[3] Epguides.com. (n.d.). FAQ page. Retrieved from https://www.epguides.com/faq.shtml\n[4] Epguides.com. (n.d.). All Shows page. Retrieved from https://www.epguides.com/shows.shtml",
+      "duration_a_seconds": 2.3,
+      "duration_b_seconds": 83.6,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the core entity (epguides.com). However, Agent A demonstrated superior retrieval accuracy by correctly identifying the specific external database (TVmaze) and the correction platforms (TVmaze and TV.com) as required by the ground truth. Agent B hallucinated generic answers for these points (IMDb, email forms). While Agent A missed the specific file format (.csv), it was significantly more accurate than Agent B, which missed every sub-point. Agent A also used better formatting.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_pplsonar_vs_deepseekv_722"
+}

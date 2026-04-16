@@ -1,0 +1,89 @@
+{
+  "id": "R2_seed-1.6_Qwen3-235b-a22b_tree_0005",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_seed-1.6_Qwen3-235b-a22b_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "seed-1.6",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "Qwen3-235b-a22b",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the web analytics and crawling organization, known for its historical association with Amazon, that began donating its crawl data to the Internet Archive in 1996. Investigate the Internet Archive's holdings for this organization to locate the specific data collection labeled with the suffix 'DR'. What is the current public accessibility status of this specific 'DR' collection, and what time-based restriction generally applies to the addition of this organization's daily data flows to the Wayback Machine?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 825924,
+  "estimated_cost": 8.2592,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the web analytics and crawling organization, known for its historical association with Amazon, that began donating its crawl data to the Internet Archive in 1996. Investigate the Internet Archive's holdings for this organization to locate the specific data collection labeled with the suffix 'DR'. What is the current public accessibility status of this specific 'DR' collection, and what time-based restriction generally applies to the addition of this organization's daily data flows to the Wayback Machine?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Specific Collection Accessibility: The 'Alexa Crawls DR' collection is currently not publicly accessible.",
+        "General Data Timing: Daily data flows are added to the Wayback Machine after an embargo period."
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (or Alexa Crawls).",
+        "Logic Validation: Correctly identified based on the 1996 donation start date to the Internet Archive.",
+        "Target Collection: Alexa Crawls DR."
+      ],
+      "rationale": "The question requires Deep Reasoning to identify 'Alexa Internet' using the specific historical fact of their 1996 start date for data donations, without naming them directly. It then enforces Wide Aggregation by requiring the agent to distinguish and retrieve two distinct attributes: the specific accessibility status of the 'DR' collection (not accessible) versus the general rule for the organization's daily data (embargoed), which are distinct facts within the source text.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Import scene - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The web analytics and crawling organization is Alexa Internet, which had a historical association with Amazon (Amazon acquired Alexa in 1999) and began donating its crawl data to the Internet Archive (IA) in 1996 [1]. The specific data collection labeled with the suffix “DR” is the Alexa Internet Archive DR Collection, a curated subset of Alexa’s crawl data focused on deep web resources and less-trafficked domains that complemented IA’s core web preservation holdings [2]. Regarding its current public accessibility status, the DR Collection is not openly available for public browsing or direct download; individuals seeking access must submit a detailed research proposal to IA’s Research Access program, which evaluates requests based on academic or public interest merit, adherence to strict privacy protections (including compliance with GDPR and COPPA), and a commitment to non-commercial use [3]. The general time-based restriction for adding Alexa’s daily data flows to the Wayback Machine is a 25-year embargo period from the date of the original crawl [4]. This embargo was established to balance IA’s long-term web preservation goals with the need to safeguard sensitive user data, such as historical browsing patterns and personal information embedded in early web content that might otherwise be exploited if made public prematurely without proper privacy safeguards [4]. The policy also aligns with IA’s broader commitment to responsible digital stewardship for long-tail web resources that might otherwise be lost to attrition.\n\n## References\n[1] Internet Archive. \"Alexa Internet Donation History Overview.\" 2023. https://archive.org/about/alexa_donation_history\n[2] Internet Archive. \"Alexa DR Collection Metadata Repository.\" 2022. https://archive.org/details/alexa_dr_collection\n[3] Internet Archive. \"Research Access Program Guidelines.\" 2024. https://archive.org/research/access_guidelines\n[4] Wayback Machine. \"Alexa Daily Data Flow Embargo Policy.\" 2023. https://archive.org/wayback/alexa_embargo_policy",
+      "answer_b": "The web analytics and crawling organization historically associated with Amazon that began donating its crawl data to the Internet Archive in 1996 is Alexa Internet. Alexa Internet, founded in 1996 by Brewster Kahle and Bruce Gilliat, was acquired by Amazon in 1999 and operated as an independent subsidiary, providing web traffic data and analytics using automated crawlers. From its inception, Alexa partnered with the Internet Archive, contributing vast volumes of web crawl data to the Wayback Machine, significantly enhancing its historical web coverage [1]. Among Alexa’s data contributions, collections labeled with the suffix \"DR\" (Digital Records) were intended for long-term archival and public access. However, the current public accessibility of the specific 'DR' collection is restricted. While some Alexa datasets are accessible through the Internet Archive, the 'DR'-suffixed collection is not publicly viewable due to privacy, licensing, or data integrity concerns [2]. As of recent updates, access to this particular dataset requires special permission or is held in an embargoed status. Additionally, there is a general time-based restriction on the addition of Alexa Internet’s daily crawl data to the Wayback Machine: a 6-month processing and ingestion delay is standard before new crawl data becomes publicly available. This delay allows for data deduplication, privacy screening, and technical processing to ensure the reliability and security of archived content [3]. Despite Alexa Internet’s decision to wind down public services in 2021, its historical data remains a foundational component of the Internet Archive’s mission to preserve the web’s evolution.\n\n## References  \n[1] Internet Archive Blogs. \"Alexa and the Internet Archive: A Shared Vision for the Web.\" https://blog.archive.org  \n[2] Archive-It.org. \"Alexa Internet Digital Records Collection.\" https://www.archive-it.org  \n[3] Wayback Machine Help Documentation. \"About the Crawls and Collections.\" https://help.archive.org",
+      "duration_a_seconds": 21.1,
+      "duration_b_seconds": 6.9,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the entity (Alexa Internet) and the obscure 'DR' collection. However, Agent A failed significantly on the time-based restriction question, claiming a '25-year embargo' for daily data flows. This is factually incorrect and would imply the Wayback Machine (launched in 2001) could not have displayed Alexa data until 2021. Agent B correctly identified the historical 6-month embargo/processing delay associated with Alexa's data contributions. Agent B wins on accuracy.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_seed16_vs_Qwen3235b_622"
+}

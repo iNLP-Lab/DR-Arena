@@ -1,0 +1,89 @@
+{
+  "id": "R2_M2_grok-4-search_vs_ppl-sonar-pro-high_tree_0005",
+  "source_group": "round2",
+  "source_log": "round2/R2_M2_grok-4-search_vs_ppl-sonar-pro-high_tree_0005.log",
+  "tree_id": "tree_0005",
+  "tree_title": "Racing game",
+  "tree_topic": "Games > Computer & Video Games",
+  "tree_subtopic": "Driving & Racing Games",
+  "tree_crawled_at": "2025-11-21T13:40:57.408356",
+  "tree_url": "https://en.wikipedia.org/wiki/Racing_game",
+  "model_a": "grok-4-search",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "grok-4-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 2,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "Racing game",
+  "questions": [
+    "Identify the organization that began donating its crawl data to the Internet Archive starting in 1996. While much of this data is added to the Wayback Machine after an embargo, locate the specific data collection from this donor designated with the suffix 'DR'. According to the collection's details, what is the current public accessibility status of this specific 'DR' dataset?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 14216,
+  "estimated_cost": 0.1422,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Racing game",
+        "Wayback Machine"
+      ],
+      "question": "Identify the organization that began donating its crawl data to the Internet Archive starting in 1996. While much of this data is added to the Wayback Machine after an embargo, locate the specific data collection from this donor designated with the suffix 'DR'. According to the collection's details, what is the current public accessibility status of this specific 'DR' dataset?",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identification of the donor organization (Alexa Internet)",
+        "Identification of the specific collection (Alexa Crawls DR)",
+        "The specific accessibility status of the DR collection (Not publicly accessible)"
+      ],
+      "checklist_depth": [
+        "Alexa Internet + Identified via 1996 donation start date and Internet Archive partnership",
+        "Alexa Crawls DR + Identified via the 'DR' suffix mentioned in the query"
+      ],
+      "rationale": "The question follows the Deep & Wide structure by first requiring Logical Reasoning to identify the subject 'Alexa Internet' without naming it, using the '1996 donation' fact (Deep). It then forces Broad Information Aggregation by asking for the status of a specific sub-collection ('DR'), which requires distinguishing between the general rule (data added to Wayback Machine) and the specific exception found in the source text (DR data is not publicly accessible). Note: The provided source text was exclusively about Web Archiving; despite the 'Racing game' domain label in the prompt, the question adheres to the 'Absolute Grounding' rule based on the actual text provided.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Import scene - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The organization that began donating its web crawl data to the Internet Archive in 1996 is Alexa Internet, a subsidiary of Amazon founded that year to analyze and archive internet content [1]. Alexa Internet conducted large-scale web crawls, capturing snapshots of websites worldwide, and donated this data to support the Internet Archive's mission of preserving digital history. Much of Alexa's donated crawl data is integrated into the Wayback Machine after a typical six-month embargo period, allowing time for processing and to respect any donor-imposed restrictions before public availability [2]. This embargo ensures that recent crawls are not immediately accessible, balancing preservation with privacy and legal considerations.\n\nThe specific data collection from this donor designated with the suffix 'DR' is the \"Alexa Crawls DR\" collection, which refers to a subset of Alexa's crawl datasets archived at the Internet Archive [3]. This collection includes web crawl files from various periods, often in formats like WARC (Web ARChive), capturing domain-level data and metadata. The 'DR' suffix likely denotes a particular crawl series or processing batch, distinct from other Alexa collections like 'IE' or 'WB' series, which vary in scope and embargo terms [4].\n\nAccording to the collection's details on the Internet Archive's platform, the current public accessibility status of the \"Alexa Crawls DR\" dataset is restricted. It is not available for direct public download or viewing due to donor-imposed limitations, which may include intellectual property concerns or data usage agreements [3]. Researchers or institutions can request access through the Internet Archive's permissions process, but general users cannot access the raw files without approval. This status aligns with broader policies for sensitive crawl data, where embargoed or restricted collections prioritize controlled access over open availability [2][5]. As of the latest updates, no changes to this restricted status have been announced, though portions may eventually feed into the Wayback Machine post-embargo.\n\n(Word count: 278)\n\n## References\n[1] https://en.wikipedia.org/wiki/Alexa_Internet  \n[2] https://archive.org/about/faqs.php  \n[3] https://archive.org/details/alexacrawls-dr  \n[4] https://blog.archive.org/2018/10/29/internet-archive-and-alexa-internet/  \n[5] https://commoncrawl.org/the-data/get-started/ (Note: Comparative reference for crawl data access policies)",
+      "answer_b": "**Alexa Internet** began donating its crawl data to the **Internet Archive** starting in 1996, with much of this data added to the **Wayback Machine** after an embargo period.[1][2]\n\nAlexa Internet, founded by Brewster Kahle around the same time as the Internet Archive, provided web crawls, technology, and expertise that supported early archiving efforts. By 2001, after over a dozen crawls and 100 terabytes of data, the Wayback Machine launched publicly, crediting these donations explicitly.[1] The collaboration enabled systematic web preservation from the web's nascent days, with Alexa's crawls forming a foundational dataset alongside the Internet Archive's own efforts.[2]\n\nThe specific data collection from Alexa designated with the suffix **'DR'** is the **AlexaDR** dataset (e.g., crawls like ia_archived_web_1996-11_http_DR). These represent early crawls from November 1996, capturing initial web snapshots.[7] According to the collection's details on the Internet Archive, the **current public accessibility status** of this 'DR' dataset is **fully public and unrestricted**. It is available for direct download as part of released early web datasets for researchers, with no embargo remaining; users can access WARC files via archive.org without borrowing or restrictions.[7]\n\nThis release aligns with broader initiatives to share archived collections post-embargo, promoting research while ensuring long-term preservation. The 'DR' suffix likely denotes a processing or crawl variant, integrated into the Wayback Machine after initial holds.[1][7]\n\n(Word count: 248)\n\n## References\n[1] https://help.archive.org/help/wayback-machine-general-information/  \n[2] https://en.wikipedia.org/wiki/Internet_Archive  \n[7] https://blog.archive.org/2021/03/12/early-web-datasets-researcher-opportunities/",
+      "duration_a_seconds": 37.8,
+      "duration_b_seconds": 6.9,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the organization (Alexa Internet) and the specific collection subset (Alexa Crawls DR/AlexaDR). However, the prompt explicitly requested the current public accessibility status of this specific 'DR' dataset. \n\nAgent A correctly identified that the 'Alexa Crawls DR' collection is **restricted** and not available for public download (aligning with the Ground Truth: 'Not publicly accessible'). \n\nAgent B hallucinated that the collection is 'fully public and unrestricted' and available for direct download. This is a critical factual error regarding the primary constraint of the query. While Agent B had slightly better formatting (bolding), the misinformation regarding data access makes it a failed response compared to Agent A's accurate assessment.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0005_pplsonar_vs_grok4sea_148"
+}

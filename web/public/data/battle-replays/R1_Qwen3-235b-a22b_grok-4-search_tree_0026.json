@@ -1,0 +1,91 @@
+{
+  "id": "R1_Qwen3-235b-a22b_grok-4-search_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_Qwen3-235b-a22b_grok-4-search_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "grok-4-search",
+  "winner": "grok-4-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the statewide organization in California designated to provide immediate, expert treatment advice for poison exposures to both the public and healthcare professionals. This system is administratively managed by a specific university's School of Pharmacy. Provide the name of the managing university and list the four specific medical centers or hospitals that host the organization's regional operating divisions."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 675878,
+  "estimated_cost": 6.7588,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the statewide organization in California designated to provide immediate, expert treatment advice for poison exposures to both the public and healthcare professionals. This system is administratively managed by a specific university's School of Pharmacy. Provide the name of the managing university and list the four specific medical centers or hospitals that host the organization's regional operating divisions.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Managing University: University of California, San Francisco (UCSF) School of Pharmacy",
+        "Sacramento Division Host: UC Davis Medical Center",
+        "San Francisco Division Host: Zuckerberg San Francisco General Hospital",
+        "Fresno/Madera Division Host: Valley Children's Hospital",
+        "San Diego Division Host: UC San Diego Medical Center"
+      ],
+      "checklist_depth": [
+        "Target Entity: California Poison Control System (CPCS)",
+        "Logic Proof: Correctly identified the system managed by UCSF School of Pharmacy with 4 regional sites."
+      ],
+      "rationale": "The question uses Deep Logic by describing the function ('statewide organization... for poison exposures') rather than naming the 'California Poison Control System' directly. It requires Wide Aggregation by demanding the identification of five distinct entities: the central managing university and the four separate hospital partners acting as regional divisions.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The statewide organization in California responsible for providing immediate, expert treatment advice for poison exposures is the California Poison Control System (CPCS). It serves both the public and healthcare professionals through 24/7 access to toxicology specialists. The CPCS is administratively managed by the University of California, San Francisco (UCSF) through its School of Pharmacy [1]. The system operates via four regional divisions, each hosted by a designated medical center located strategically across the state to ensure comprehensive coverage. The Northern California division is based at UCSF Medical Center in San Francisco. The South Bay division operates out of Santa Clara Valley Medical Center in San Jose. The Southern California division is hosted by Los Angeles General Medical Center (LAC+USC Medical Center) in Los Angeles. The fourth division, serving the Central California region, is located at the University of California, Davis Medical Center in Sacramento [2]. These centers collaborate to deliver unified, evidence-based poison management guidance, including treatment protocols, prevention education, and surveillance for public health threats. Each center employs medical toxicologists, pharmacists, and nurses trained in poison information, ensuring timely and accurate responses to emergencies. The centralized administration at UCSF’s School of Pharmacy oversees operations, quality assurance, data management, and statewide outreach programs [3]. By integrating clinical expertise with academic leadership, the CPCS maintains a robust network that enhances patient safety and supports emergency response across California’s diverse populations and geographic regions.\n\n## References  \n[1] https://www.ucsf.edu/news/2017/04/406686/california-poison-control-system-ucsf  \n[2] https://www.calpoison.org/about-us/regions  \n[3] https://pharmacy.ucsf.edu/poison-control",
+      "answer_b": "The statewide organization in California designated to provide immediate, expert treatment advice for poison exposures to both the public and healthcare professionals is the California Poison Control System (CPCS) [1]. This system operates a toll-free hotline (1-800-222-1222) available 24/7, handling over 300,000 calls annually, including emergencies related to medications, household products, environmental toxins, and more [2]. CPCS offers guidance on symptom management, decontamination, and antidote recommendations, serving as a critical resource for preventing unnecessary hospital visits and reducing healthcare costs [1].\n\nThe CPCS is administratively managed by the University of California, San Francisco (UCSF) School of Pharmacy [1][3]. This management structure ensures oversight by pharmacy experts, integration with academic research, and training programs for poison specialists. UCSF's involvement dates back to the system's establishment in 1997, consolidating previously fragmented services into a unified statewide network [2].\n\nThe organization's regional operating divisions are hosted at four specific medical centers or hospitals across California, each staffed by certified poison information specialists, pharmacists, and physicians [1][4]:\n\n1. **UC Davis Medical Center** in Sacramento, serving Northern California and handling a high volume of rural and agricultural exposure cases [2].\n\n2. **Zuckerberg San Francisco General Hospital and Trauma Center** in San Francisco, focusing on urban poisonings and integrating with emergency departments [3].\n\n3. **Valley Children's Hospital** in Madera (near Fresno), specializing in pediatric cases and Central Valley exposures, including pesticides [4].\n\n4. **UC San Diego Health** in San Diego, covering Southern California with expertise in marine toxins and border-related incidents [1].\n\nThese centers collaborate to provide seamless statewide coverage, with data sharing for public health surveillance and outbreak responses [2]. The system's effectiveness is evidenced by its role in managing events like the 2020 wildfires' smoke inhalation risks and ongoing opioid crisis interventions [3].\n\n(Word count: 278)\n\n## References\n[1] California Poison Control System official website: https://calpoison.org/\n\n[2] UCSF School of Pharmacy - Poison Control: https://pharmacy.ucsf.edu/topics-expertise/california-poison-control-system\n\n[3] American Association of Poison Control Centers: https://aapcc.org/centers/california\n\n[4] Valley Children's Hospital Poison Control page: https://www.valleychildrens.org/emergency-department/poison-control",
+      "duration_a_seconds": 3.9,
+      "duration_b_seconds": 19.4,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B correctly identified all four specific medical centers that host the regional divisions of the California Poison Control System. Agent A hallucinated three of the four locations (listing Santa Clara Valley Medical Center, LAC+USC, and UCSF Medical Center instead of Valley Children's, UC San Diego, and Zuckerberg San Francisco General). Agent B also used superior formatting.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_Qwen3235b_vs_grok4sea_355"
+}

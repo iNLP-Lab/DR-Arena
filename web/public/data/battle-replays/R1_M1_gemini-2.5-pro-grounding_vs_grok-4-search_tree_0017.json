@@ -1,0 +1,92 @@
+{
+  "id": "R1_M1_gemini-2.5-pro-grounding_vs_grok-4-search_tree_0017",
+  "source_group": "round1",
+  "source_log": "round1/R1_M1_gemini-2.5-pro-grounding_vs_grok-4-search_tree_0017.log",
+  "tree_id": "tree_0017",
+  "tree_title": "Handheld game console",
+  "tree_topic": "Computers & Electronics > Consumer Electronics > Gadgets & Portable Electronics",
+  "tree_subtopic": "Handheld Game Consoles",
+  "tree_crawled_at": "2025-11-21T15:27:37.988167",
+  "tree_url": "https://en.wikipedia.org/wiki/Handheld_game_console",
+  "model_a": "gemini-2.5-pro-grounding",
+  "model_b": "grok-4-search",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 1,
+  "mercy_rule": true,
+  "overall_topic": "Handheld game console",
+  "questions": [
+    "Identify the 8-bit handheld game console released in 1989 that secured market dominance by bundling the puzzle game 'Tetris'. Contrast this device with its two primary competitors—the Atari Lynx and the Sega Game Gear—specifically regarding their screen technology (color/backlight capabilities), battery requirements (number of AA batteries), and estimated battery life. Additionally, provide the specific sales figures for the identified monochrome console for the years 1989, 1990, and 1991, and explain the specific visual improvement made to the display in its 1996 'Pocket' model revision."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 125692,
+  "estimated_cost": 1.2569,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handheld game console",
+        "Game Boy — Nintendo dominates the portable market"
+      ],
+      "question": "Identify the 8-bit handheld game console released in 1989 that secured market dominance by bundling the puzzle game 'Tetris'. Contrast this device with its two primary competitors—the Atari Lynx and the Sega Game Gear—specifically regarding their screen technology (color/backlight capabilities), battery requirements (number of AA batteries), and estimated battery life. Additionally, provide the specific sales figures for the identified monochrome console for the years 1989, 1990, and 1991, and explain the specific visual improvement made to the display in its 1996 'Pocket' model revision.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Competitor Comparison: The target (Game Boy) had a monochrome/non-backlit screen vs. competitors' color/backlit screens.",
+        "Battery Comparison: Target used 4 AA batteries (approx. 30 hours life) vs. competitors using 6 AA batteries (significantly lower life).",
+        "Price Context: Target launched at ~$90 (approx. half the price of the Lynx).",
+        "Sales Figures: 1 million (1989), 3.2 million (1990), 4.4 million (1991).",
+        "1996 Revision Detail: The Game Boy Pocket featured 'true' black and white graphics (replacing the original green tint)."
+      ],
+      "checklist_depth": [
+        "Target Entity: Nintendo Game Boy (identified via 1989 release + Tetris bundle).",
+        "Competitor Entities: Atari Lynx and Sega Game Gear.",
+        "Logic Validation: Acknowledges the trade-off where lower tech (screen) led to better battery life/price, securing dominance."
+      ],
+      "rationale": "The question uses deep logic by requiring the agent to identify the 'Game Boy' through its launch year and pack-in game rather than naming it directly. It uses wide logic by requiring the aggregation of specific comparative specs (batteries, screens) against named competitors and extracting a precise three-year sales trend and a specific hardware revision detail found in the source text.",
+      "source_nodes": [
+        "Game Boy — Nintendo dominates the portable market | First Arkansas News (FAN) - reporting from across the Natural State",
+        "List of best-selling game consoles - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home » Headline , Retrogaming , Technology Game Boy — Nintendo dominates the portable market By: Ethan C. Nobles 22 January 2011 One Comment Kirby was popular on the Super Nin",
+      "judge_max_limit": 300,
+      "answer_a": "The 8-bit handheld game console released in 1989 that secured market dominance by bundling the puzzle game 'Tetris' was the Nintendo Game Boy [1].\n\nThe Game Boy's success was partly due to its practical design choices when contrasted with its two primary competitors. The Atari Lynx (1989) and Sega Game Gear (1991) both featured technologically superior backlit, full-color LCD screens [2, 3]. However, this advanced technology came at a cost to battery life. Both the Lynx and Game Gear required six AA batteries, providing only about 3-5 hours of gameplay [2, 4]. In contrast, the monochrome, non-backlit Game Boy required only four AA batteries and offered an estimated 10-30 hours of playtime, a critical advantage for a portable device [1, 5].\n\nNintendo's strategy prioritized accessibility and battery longevity over graphical power, which translated directly into commercial success. In its first year (1989), Game Boy sold over 1 million units in North America alone following its late July launch [6]. By the end of 1990, cumulative worldwide sales had reached 9.61 million units, and by the end of 1991, that figure had climbed to 20.32 million units [7]. This indicates approximate sales of over 8 million units in 1990 and over 10 million in 1991.\n\nThe 1996 Game Boy \"Pocket\" revision offered a significant visual upgrade. While still monochrome and non-backlit, its new display was a true black-and-white screen, eliminating the blurry green-and-yellow tint of the original model. This new screen also featured a faster pixel response time, which significantly reduced motion blur, providing a much clearer and sharper image during gameplay [5, 8].\n\n## References\n\n[1] Hiner, K. (2019, April 20). 30 years of the Nintendo Game Boy: A look back. *CNET*.\n\n[2] Loguidice, B. (2008, August 28). A History of Gaming Platforms: The Atari Lynx. *Gamasutra*.\n\n[3] Buchanan, L. (2008, October 7). Remember Game Gear? *IGN*.\n\n[4] Kent, S. L. (2001). *The Ultimate History of Video Games: From Pong to Pokémon and Beyond*. Three Rivers Press.\n\n[5] Oxford, N. (2018, December 4). The History of Handheld Gaming. *Lifewire*.\n\n[6] Sheff, D. (1993). *Game Over: How Nintendo Zapped an American Industry, Captured Your Dollars, and Enslaved Your Children*. Random House.\n\n[7] Nintendo Co., Ltd. (1998). *Consolidated Sales Transition by Region* [Data file].\n\n[8] Byford, S. (2016, August 29). The Game Boy Pocket is a monument to beautiful, practical design. *The Verge*.",
+      "answer_b": "The Nintendo Game Boy, an 8-bit handheld console released in 1989, achieved market dominance partly by bundling the puzzle game Tetris, which appealed to a broad audience and drove massive sales [1]. This monochrome device featured a reflective LCD screen without color or backlight, relying on ambient light for visibility, which contributed to its efficiency [2]. It required 4 AA batteries and offered an estimated battery life of 30-35 hours, making it far more portable and cost-effective for extended play [3].\n\nIn contrast, the Atari Lynx, also released in 1989, boasted a color backlit screen—the first handheld with color capabilities—but this came at the expense of power efficiency [4]. It demanded 6 AA batteries and provided only 4-5 hours of battery life, limiting its appeal due to frequent battery changes and higher costs [5]. Similarly, the Sega Game Gear, launched in 1990, featured a color backlit display, enhancing visual quality over the Game Boy's greyscale [6]. However, it also required 6 AA batteries with a shorter estimated battery life of 3-5 hours, exacerbating portability issues and contributing to its lower market share [7].\n\nSales figures for the Game Boy highlight its rapid success: approximately 4 million units in 1989, surging to 10 million in 1990, and reaching 15 million by the end of 1991, reflecting strong demand fueled by Tetris and affordability [8].\n\nThe 1996 Game Boy Pocket revision introduced a specific visual improvement: a higher-contrast LCD screen with reduced ghosting and better clarity, achieved through an upgraded dot-matrix display that minimized blurring during fast-motion gameplay while maintaining the monochrome format [9].\n\n(Word count: 278)\n\n## References\n[1] Nintendo Official History - Game Boy Launch  \n[2] Retro Gamer Magazine - Handheld Console Comparisons  \n[3] Wikipedia - Nintendo Game Boy Specifications  \n[4] Atari Museum - Lynx Technical Specs  \n[5] IGN - Atari Lynx Retrospective  \n[6] Sega Retro - Game Gear Overview  \n[7] Digital Trends - Sega Game Gear Battery Analysis  \n[8] Statista - Nintendo Game Boy Sales Data 1989-1991  \n[9] Nintendo Life - Game Boy Pocket Improvements",
+      "duration_a_seconds": 25.3,
+      "duration_b_seconds": 30.8,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A provides a superior response in terms of accuracy, detail, and grounding. \n\n1. **Specific Details**: Agent A correctly identifies the specific visual improvement of the Game Boy Pocket (changing from the green tint to true black and white), whereas Agent B is vague ('higher-contrast'). \n2. **Data Accuracy**: Agent A provides precise sales figures derived from credible sources, whereas Agent B provides round numbers that appear estimated or inaccurate (e.g., citing 15 million for 1991 where historical data suggests higher cumulative totals). \n3. **Citations**: Agent A uses proper, verifiable citations (Author, Publication, Date). Agent B uses generic, likely hallucinated citation titles (e.g., 'Wikipedia - Nintendo Game Boy Specifications', 'Retro Gamer Magazine - Handheld Console Comparisons'). \n4. **Conciseness**: Agent A conveys the necessary information more efficiently.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0017_grok4sea_vs_gemini25_8"
+}

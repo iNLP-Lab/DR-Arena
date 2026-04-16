@@ -1,0 +1,160 @@
+{
+  "id": "R2_seed-1.6_vs_ppl-sonar-reasoning-pro-high_tree_0014",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_seed-1.6_vs_ppl-sonar-reasoning-pro-high_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "seed-1.6",
+  "model_b": "ppl-sonar-reasoning-pro-high",
+  "winner": "ppl-sonar-reasoning-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Two U.S. Supreme Court decisions—one in the 1980s involving a home video recording device opposed by major film studios, and another in the 2010s involving an international student reselling lower-priced foreign textbooks in the United States—significantly shaped the scope of the “first sale” doctrine. Identify both cases and explain: (1) the core legal dispute in each, (2) the vote split of the Court, (3) how the ruling in the earlier case affected the growth of video rental businesses, and (4) how the later decision extended or reinforced similar principles regarding resale and importation. In your answer, compare the broader economic implications of both rulings for media distribution and secondary markets.",
+    "In the evolution of the home video and media rental market—shaped by the Supreme Court’s recognition of the “first sale” doctrine that enabled businesses like video rental shops to legally rent purchased copies—new debates have emerged over whether similar rights should apply to digital goods. Identify the two major technology companies that, in the early 2010s, sought patents for online marketplaces allowing users to resell digital media (such as e-books, music, movies, or software). Additionally, identify the start-up that enabled users to resell digital music files and was sued by a major record label. For each of the two large companies, describe how their proposed systems would technically prevent multiple simultaneous copies of a resold digital item and explain how each company positioned itself in relation to publishers or rights holders. For the start-up, explain the specific lawsuit it faced, the record label involved, the court’s initial response to a request for an injunction, and one measure the company implemented to make its service more acceptable to copyright owners. Conclude by briefly discussing how these developments echo the earlier legal principles that protected physical video rental stores."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 464480,
+  "estimated_cost": 4.6448,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Two U.S. Supreme Court decisions—one in the 1980s involving a home video recording device opposed by major film studios, and another in the 2010s involving an international student reselling lower-priced foreign textbooks in the United States—significantly shaped the scope of the “first sale” doctrine. Identify both cases and explain: (1) the core legal dispute in each, (2) the vote split of the Court, (3) how the ruling in the earlier case affected the growth of video rental businesses, and (4) how the later decision extended or reinforced similar principles regarding resale and importation. In your answer, compare the broader economic implications of both rulings for media distribution and secondary markets.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Description of the 1984 case’s dispute over home video recording and copyright infringement",
+        "5–4 vote split in the 1984 decision",
+        "Explanation that the ruling enabled VCR use and supported the legality of video rental businesses under first sale doctrine",
+        "Description of the 2013 case involving resale of foreign-purchased textbooks in the U.S.",
+        "6–3 vote split in the 2013 decision",
+        "Explanation that the later ruling upheld the right to resell legally purchased goods, including imported copies",
+        "Comparison of economic implications for media markets and secondary resale markets"
+      ],
+      "checklist_depth": [
+        "Sony Corp. of America v. Universal City Studios (1984) + identified as the Supreme Court case that upheld legality of the Betamax VCR and protected time-shifting",
+        "Kirtsaeng v. John Wiley & Sons, Inc. (2013) + identified as the Supreme Court case involving a Thai student reselling foreign textbooks under first sale doctrine"
+      ],
+      "rationale": "The question uses logical descriptors (home video recording device opposed by film studios; international student reselling foreign textbooks) to indirectly reference Sony v. Universal and Kirtsaeng v. Wiley without naming them (Deep). It then requires aggregation of multiple details—vote splits, legal disputes, effects on video rental shops, and broader economic consequences—across both cases (Wide), ensuring the respondent must synthesize information from both rulings rather than rely on a single fact.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Wilshire Boulevard - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The two cases are Sony Corp. of America v. Universal City Studios, Inc. (1984) and Kirtsaeng v. John Wiley & Sons, Inc. (2013) [1][2]. (1) Core disputes: Sony: Major film studios sued Sony over its Betamax home video recorder, arguing it enabled unauthorized copyright infringement via broadcast recording; Sony defended the device as a fair use tool [1]. Kirtsaeng: A Thai international student was sued by Wiley for reselling lower-priced foreign-edition textbooks in the U.S.; he invoked the first sale doctrine to challenge the publisher’s import restriction [2]. (2) Vote splits: Sony 5-4; Kirtsaeng 6-3 [1][2]. (3) Sony’s ruling validated home recording as fair use, legalizing video rental businesses (e.g., Blockbuster) to resell or rent purchased/videotaped content, spurring their explosive 1980s–1990s growth [1]. (4) Kirtsaeng extended the first sale doctrine to foreign-made copyrighted goods, reinforcing resale rights for imported items and rejecting publishers’ price segmentation strategies [2]. Economic implications: Sony expanded media distribution secondary markets, boosting rental revenues and consumer access but weakening studios’ broadcast control; Kirtsaeng strengthened global textbook secondary markets, lowering student costs but limiting publishers’ U.S. price premium profits [1][2].\n\n## References\n[1] Cornell Law School Legal Information Institute, Sony Corp. of America v. Universal City Studios, Inc., https://www.law.cornell.edu/supremecourt/text/464/417 (accessed October 26, 2024)\n[2] Cornell Law School Legal Information Institute, Kirtsaeng v. John Wiley & Sons, Inc., https://www.law.cornell.edu/supremecourt/text/11-697 (accessed October 26, 2024)",
+      "answer_b": "The two landmark cases are **Sony Corp. of America v. Universal City Studios, Inc.** (1984, the \"Betamax case\") and **Kirtsaeng v. John Wiley & Sons, Inc.** (2013).\n\n**The Betamax Case (1984):**\nThe core dispute centered on whether manufacturers of home video recording devices could be held liable for copyright infringement when consumers used VCRs to record television programs.[2][3] Universal Studios and other studios sought to restrict VCRs from the market, arguing they facilitated illegal copying.[1] The Supreme Court ruled 5-4 in favor of Sony, establishing that **time-shifting**—recording programs for personal, noncommercial viewing—constituted fair use and that manufacturers cannot be liable for contributory infringement if devices have substantial non-infringing uses.[2][3]\n\nThe ruling catalyzed explosive growth in the home video market. By 2001, U.S. consumers spent over $11.9 billion annually on video rentals and purchases, fundamentally transforming home entertainment distribution.[2]\n\n**The Kirtsaeng Case (2013):**\nSupap Kirtsaeng, an international student, purchased cheaper textbooks abroad and resold them in the United States at lower prices. John Wiley & Sons claimed this violated copyright law. The Supreme Court ruled 6-3 that the first-sale doctrine protected resale rights, meaning copyright holders could not restrict secondary-market sales of legitimately purchased goods—even when imported.\n\n**Comparative Impact:**\nBoth rulings reinforced the first-sale doctrine, protecting secondary markets from copyright restrictions. Betamax legalized time-shifting, enabling rental businesses that generated billions in economic activity. Kirtsaeng extended similar principles to international resale, preventing copyright owners from controlling downstream markets. Together, these decisions established that purchasing rights include resale rights, fundamentally protecting consumer access to affordable media and information, whether through rentals or textbook resales, while limiting copyright holders' ability to segment markets geographically or temporally.\n\n## References\n\n[1] YouTube - 1984: SCOTUS Issues Decision in Betamax Case\n[2] Sound and Vision - Flashback 1984: Supreme Court Upholds Right to Tape\n[3] Wikipedia - Sony Corp. of America v. Universal City Studios, Inc.\n[4] Justia - Sony Corp. of America v. Universal City Studios, Inc., 464 U.S. 417\n Supreme Court Opinion - Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013)",
+      "duration_a_seconds": 13.9,
+      "duration_b_seconds": 12.7,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "First, Deep Logic: Both agents correctly identified Sony Corp. of America v. Universal City Studios (1984) and Kirtsaeng v. John Wiley & Sons (2013), and accurately described the core disputes and vote splits (5–4 and 6–3). Both pass the entity check.\n\nWidth/Completeness: Both answers cover all required elements—legal disputes, vote splits, impact on video rental growth, extension to imported textbook resale, and broader economic implications. Neither contains major factual errors. Agent A is concise and accurate, but slightly compressed in its economic comparison. Agent B provides more contextual detail (e.g., explanation of “time-shifting,” contributory infringement, and concrete economic figures), making the implications clearer and more vivid.\n\nUser Experience & Presentation: Agent B is more structured and scannable, with bold section headers and clearer segmentation. The comparative impact section is especially well synthesized and user-friendly. Agent A is accurate but more compact and less visually structured.\n\nConclusion: Since both are factually sound and complete, Agent B wins on formatting, depth, and overall user experience. Hence, [[B_BETTER]].",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Revolution in Resale of Digital Books and Music'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax",
+        "Revolution in Resale of Digital Books and Music"
+      ],
+      "question": "In the evolution of the home video and media rental market—shaped by the Supreme Court’s recognition of the “first sale” doctrine that enabled businesses like video rental shops to legally rent purchased copies—new debates have emerged over whether similar rights should apply to digital goods. Identify the two major technology companies that, in the early 2010s, sought patents for online marketplaces allowing users to resell digital media (such as e-books, music, movies, or software). Additionally, identify the start-up that enabled users to resell digital music files and was sued by a major record label. For each of the two large companies, describe how their proposed systems would technically prevent multiple simultaneous copies of a resold digital item and explain how each company positioned itself in relation to publishers or rights holders. For the start-up, explain the specific lawsuit it faced, the record label involved, the court’s initial response to a request for an injunction, and one measure the company implemented to make its service more acceptable to copyright owners. Conclude by briefly discussing how these developments echo the earlier legal principles that protected physical video rental stores.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Description of first company’s patent for a digital resale marketplace",
+        "Explanation that the first company’s system deletes the seller’s copy upon transfer",
+        "Description of the second company’s patent application for transferring (not reproducing) digital files",
+        "Explanation that the second company’s system allows only one user to possess a copy at a time",
+        "Identification of the start-up enabling resale of digital music files",
+        "Name of the record label that sued the start-up",
+        "Note that the judge declined to grant a preliminary injunction shutting the service down",
+        "Description of at least one protective measure (e.g., requiring resale proceeds to be spent on new songs)"
+      ],
+      "checklist_depth": [
+        "Amazon + Patent for a digital exchange marketplace + automatic deletion from user’s ‘data store’ upon resale",
+        "Apple + Patent application describing file transfer system ensuring single-copy possession",
+        "ReDigi + Sued by Capitol Records for copyright infringement over resale of iTunes songs"
+      ],
+      "rationale": "The question uses the historical logic of the first sale doctrine that enabled video rental shops (Deep reasoning anchor) to frame a modern digital parallel without naming the target entities. It requires identifying specific companies and a start-up involved in digital resale efforts and aggregating technical, legal, and procedural details about each (Wide aggregation), ensuring the respondent must consult multiple sources and synthesize dispersed facts.",
+      "source_nodes": [
+        "Revolution in Resale of Digital Books and Music - The New York Times",
+        "Wayback Machine",
+        "History of Copyright: Statute of Anne, 1710"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Technology | Imagining a Swap Meet for E-Books and Music https://www.nytimes.com/2013/03/08/technology/revolution-in-the-resale-of-digital-books-and-music.html Advertisement C",
+      "judge_max_limit": 350,
+      "answer_a": "The two large tech companies that sought early 2010s patents for digital media resale marketplaces are Amazon (2011 patent) and Apple (2012 patent) [1][2]. The start-up enabling digital music resales and facing a major record label lawsuit is ReDigi [3]. Amazon’s proposed system used a centralized database to track digital item ownership; upon resale, the seller’s copy was immediately disabled, preventing simultaneous access by multiple users [1]. It positioned itself as a collaborative partner to publishers, suggesting the marketplace could generate new revenue via resale commissions while addressing rights holder concerns about unauthorized distribution [1]. Apple’s token-based system transferred a unique ownership token during resale, revoking the seller’s access and restricting the buyer to one active copy [2]. It framed the system as balancing consumer resale rights with rights holders’ intellectual property protections, initiating preliminary talks with media companies to refine its approach [2]. ReDigi was sued by Capitol Records in 2011 for copyright infringement over its digital music resale service, which the label argued created unauthorized copies during file transfers [3]. The court denied ReDigi’s request for a preliminary injunction, finding it likely violated copyright laws [3]. ReDigi later implemented a \"verified transfer\" system to ensure only original, unmodified files were resold and permanently deleted from sellers’ devices [3]. These developments echo Sony’s first-sale doctrine protections: they center on consumer resale rights but confront digital’s inherent copyability, mirroring 1980s tensions between physical rental freedom and rights holders’ efforts to control distribution and revenue.\n\n## References\n[1] TechCrunch, \"Amazon’s 2011 Digital Resale Patent Details Ownership Tracking for E-Books and Media,\" https://techcrunch.com/2011/05/12/amazon-digital-resale-patent/ (accessed October 26, 2024)\n[2] Wired, \"Apple’s 2012 Token-Based Patent Seeks to Balance Digital Resale Rights for Consumers and Publishers,\" https://www.wired.com/2012/03/apple-digital-resale-patent/ (accessed October 26, 2024)\n[3] Bloomberg, \"ReDigi’s 2011 Capitol Records Lawsuit and Post-Injunction Service Revisions,\" https://www.bloomberg.com/news/articles/2011/08/04/redigi-sued-by-capitol-records-over-digital-music-resales (accessed October 26, 2024)",
+      "answer_b": "# Digital Media Resale and First-Sale Doctrine Extension\n\n**Amazon and Apple** emerged as the two major technology companies pursuing digital resale patents in the early 2010s. Amazon filed patents for systems enabling Kindle e-book resale, designing technology that would deactivate the original owner's access upon transfer, ensuring no simultaneous copies existed.[1] Apple similarly explored digital resale mechanisms for iTunes content, proposing blockchain-like transfer protocols. Both positioned themselves as mediating platforms rather than opposing publishers directly, framing resale as consumer benefit while building rights-holder safeguards into their technical architecture.\n\n**ReDigi** represented the startup attempting to commercialize digital music resale. The company created a platform allowing users to resell previously purchased digital music files, positioning itself as extending physical CD resale principles to the digital realm. Capitol Records sued ReDigi in 2012, alleging massive copyright infringement.[2] When Capitol petitioned for a preliminary injunction to shut down the service, the federal district court initially **declined to grant it**, finding ReDigi had raised substantial fair-use questions meriting trial consideration.[3] However, the court ultimately ruled against ReDigi on the merits, finding its service infringed reproduction rights.\n\nIn response, ReDigi implemented several compromises: it developed technology attempting to verify file deletion from original devices, employed watermarking to track ownership history, and offered licensing discussions with major labels seeking authorization.[4] These measures reflected industry recognition that digital resale could coexist with copyright protection through transparency and rights-holder involvement.\n\nThese developments directly echo the Betamax principle: devices with substantial non-infringing uses deserve legal protection, even when rights-holders fear market impact. Where Betamax legitimized rental businesses by protecting the hardware manufacturer, the 2010s digital initiatives sought to extend first-sale protections to intangible goods while accommodating rights-holder concerns through technological controls. The tension persists—courts continue grappling with whether first-sale doctrine, fundamentally designed for physical goods, adequately addresses digital media's reproducibility, illustrating ongoing evolution of intellectual property law in technology markets.\n\n## References\n\n[1] Amazon patents for Kindle digital resale technology, USPTO filings early 2010s\n[2] Capitol Records v. ReDigi, Inc., 934 F. Supp. 2d 640 (S.D.N.Y. 2013)\n[3] ReDigi preliminary injunction denial, federal district court ruling 2012\n[4] ReDigi compliance measures and licensing negotiations with record labels, 2012-2013",
+      "duration_a_seconds": 23.1,
+      "duration_b_seconds": 14.6,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly pass the Deep Logic check: they identify Amazon and Apple as the major companies with digital resale patents and ReDigi as the startup sued by Capitol Records. However, Agent A contains a key factual error on a required checklist item: it incorrectly states that the court denied ReDigi’s request for a preliminary injunction, when in fact Capitol Records sought the injunction. This is a Width/Completeness failure because it misstates a specific procedural detail explicitly required by the prompt. Agent B correctly describes Capitol seeking the injunction and the court declining to grant it. \n\nOn user experience, Agent B is more structured, uses clearer sectioning, and provides stronger contextual framing (e.g., linking to Betamax/first-sale evolution). While Agent B includes a slightly speculative phrase (“blockchain-like transfer protocols”), this is minor and does not undermine the core technical explanation (single-copy transfer system). \n\nTherefore, Agent B wins on both accuracy of key sub-points and presentation quality. The loser’s failure type is WIDE (missed/misstated required procedural detail).",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_seed16_vs_pplsonar_1169"
+}

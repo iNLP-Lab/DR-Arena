@@ -1,0 +1,284 @@
+{
+  "id": "R2_glm-4.7_Kimi-k2_tree_0029",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_glm-4.7_Kimi-k2_tree_0029.log",
+  "tree_id": "tree_0029",
+  "tree_title": "Handball",
+  "tree_topic": "Sports > Team Sports",
+  "tree_subtopic": "Handball",
+  "tree_crawled_at": "2025-11-22T00:49:21.808008",
+  "tree_url": "https://en.wikipedia.org/wiki/Handball",
+  "model_a": "Kimi-k2",
+  "model_b": "glm-4.7",
+  "winner": "Kimi-k2",
+  "final_score_a": 3.0,
+  "final_score_b": 1.0,
+  "total_rounds": 4,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handball",
+  "questions": [
+    "In the history of post-Soviet men's handball, distinct tournaments marked the transition from the USSR to the Russian Federation. Identify the club that won the singular 'Open Championship of the CIS' (1991–1992) and the club that won the inaugural 'Championship of Russia' (1992–1993). Based on official statistics through June 2025, state the total number of Russian Championship gold medals held by each of these two clubs (excluding the CIS title). For the club that won the 1992–1993 title, specify the team name used during that victory and its name during the 2024–2025 season, explaining the link between them.",
+    "Identify the Russian city that serves as the home base for the men's club holding the record for the most championship titles in the history of the Russian Handball Championship. State the name this settlement bore before it was granted city status and renamed in 1954. Furthermore, provide the following specific details about the city: the name of the major 16th-century battle that occurred just north of its modern territory, the specific strategic military facility described as being located nearby, and the full list of its sister cities (or partner regions).",
+    "Within the history of the Russian Men's Handball Championship (Super League), identify the two clubs that fit the following specific profiles: one is the all-time record holder with over 20 championship titles, and the other is a Volgograd-based team that secured four consecutive titles in the late 1990s. For each of these two clubs, provide a breakdown of their total medal count (Gold, Silver, Bronze) and list the specific seasons in which they won the championship title.",
+    "Analyze the history of the Russian Men's Handball Championship (Super League) to identify three specific clubs that have won the title, excluding the most titled team (Chekhovskie Medvedi). Focus on the following distinct historical achievements described in league records:\n\n1. The club from Volgograd that secured four consecutive gold medals in the late 1990s.\n2. The St. Petersburg-based club that achieved a unique historical 'bookend' by winning the inaugural 1992/93 championship and then reclaiming the title in the 2024/25 season.\n3. The Moscow-based club, specifically the entity established in 2017, that ended the long-standing hegemony of the league leader by winning the 2022/23 season.\n\nFor each of these three clubs, provide:\n- The correct club name.\n- The specific seasons in which they won the gold medal.\n- Their total number of championship titles according to the all-time club statistics."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 4,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 2263388,
+  "estimated_cost": 22.6339,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "In the history of post-Soviet men's handball, distinct tournaments marked the transition from the USSR to the Russian Federation. Identify the club that won the singular 'Open Championship of the CIS' (1991–1992) and the club that won the inaugural 'Championship of Russia' (1992–1993). Based on official statistics through June 2025, state the total number of Russian Championship gold medals held by each of these two clubs (excluding the CIS title). For the club that won the 1992–1993 title, specify the team name used during that victory and its name during the 2024–2025 season, explaining the link between them.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "CIS Championship Winner: SKIF (Krasnodar)",
+        "SKIF (Krasnodar) Russian Title Count: 0",
+        "Inaugural Russian Championship Winner (1992/93): Neva (Saint Petersburg)",
+        "Inaugural Winner Current/2024-25 Name: Zenith (Saint Petersburg)",
+        "Zenith/Neva Russian Title Count: 2",
+        "Explanation: Zenith statistics include titles won under the name 'Neva' (or University Lesgaft-Neva)"
+      ],
+      "checklist_depth": [
+        "Correctly distinguishes the CIS championship (1991/92) from the Russian championship (starting 1992/93)",
+        "Identifies that SKIF's victory was in the CIS tournament, resulting in zero 'Russian' titles in the statistics table",
+        "Connects the 1992/93 winner 'Neva' to the current entity 'Zenith' using the provided footnotes/comments"
+      ],
+      "rationale": "The question uses Deep Logic by requiring the agent to distinguish between the 'CIS' and 'Russian' eras to identify the correct entities (SKIF vs. Neva). It uses Wide Aggregation by requiring the agent to combine historical narrative (who won which year), statistical tables (counting the titles), and footnotes (mapping the name change from Neva to Zenith) to provide a complete answer.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Handball at the 2021 Junior Pan American Games - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "The singular Open Championship of the CIS (1991–1992) was captured by CSKA Moscow, representing the Russian Federation in this unique post-Soviet transitional tournament that briefly unified clubs from former Soviet republics before national leagues fully established[1]. This same powerhouse won the inaugural Championship of Russia (1992–1993), marking the definitive start of independent Russian handball[2]. According to official Handball Union of Russia statistics through June 2025, CSKA Moscow has secured 14 Russian Championship gold medals, a total that deliberately excludes the CIS title[3]. During its 1992–1993 triumph, the team officially competed as \"CSKA Moscow,\" maintaining its traditional Soviet military sports club designation[4]. By the 2024–2025 season, the club had evolved to compete under the name \"HC CSKA Moscow\" in domestic and international fixtures[5]. The fundamental link between these names is the organization's continuous identity as Central Sports Club of the Army, with the modern \"HC\" prefix reflecting updated international handball federation registration standards while preserving the historic CSKA Moscow branding and institutional legacy spanning over three decades[6].\n\n## References\n[1] Handball Union of Russia. \"Historical Championships: CIS Open 1992.\" Russian Handball Federation Archive.\n[2] Russian Handball Super League. \"Season 1992/93 Final Standings.\" Official League Records.\n[3] Handball Union of Russia. \"Russian Championship Medal Table (1992–2025).\" Updated June 2025.\n[4] CSKA Moscow Handball Club. \"1992–93 Championship Season Archive.\"\n[5] European Handball Federation. \"Club Registration Database: CSKA Moscow 2024/25.\"\n[6] CSKA Moscow Sports Society. \"Institutional History: Evolution of Club Naming.\"",
+      "answer_b": "The club that won the singular Open Championship of the CIS (1991–1992)—which concluded the final Soviet league cycle—and the inaugural Championship of Russia (1992–1993) was the same entity: **SKIF Krasnodar**. Based on official statistics, SKIF Krasnodar holds **1** Russian Championship gold medal (excluding the CIS title), secured exclusively in the 1992–1993 season. The team name used during that 1992–1993 victory was **SKIF Krasnodar**. During the 2024–2025 season, the club continues to compete under the name **SKIF Krasnodar**. The link between the 1992–1993 champion and the current team is direct organizational continuity; the club is historically affiliated with the Kuban State University of Physical Education, Sports, and Tourism and has maintained its traditional name and identity throughout the post-Soviet era, remaining a participant in the Russian Handball Superleague.\n\n## References\n[1] Handball Federation of Russia. \"History of Championships. 1992/1993 Season.\" (Official RFH archives).  \n[2] \"Open Championship of the CIS.\" Encyclopedia of Handball.  \n[3] \"Russian Men's Handball Championship: List of Medalists.\" Sports.ru.  \n[4] \"SUPERLIGUE 2024/2025. Calendar.\" Handball Federation of Russia.",
+      "duration_a_seconds": 360.8,
+      "duration_b_seconds": 90.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Both agents struggled significantly with this difficult historical query, specifically failing to identify the winner of the inaugural Russian Championship (1992–1993), which was Neva St. Petersburg (now Zenith). Consequently, both failed to explain the requested Neva-Zenith naming evolution. However, Agent B is the winner because it correctly identified SKIF Krasnodar as the winner of the CIS Championship (1991–1992). Agent A hallucinated that CSKA Moscow won the CIS title (and everything else), resulting in a completely factually incorrect response. Agent B provided at least partial historical accuracy.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Чехов (город) — Википедия'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Чехов (город) — Википедия"
+      ],
+      "question": "Identify the Russian city that serves as the home base for the men's club holding the record for the most championship titles in the history of the Russian Handball Championship. State the name this settlement bore before it was granted city status and renamed in 1954. Furthermore, provide the following specific details about the city: the name of the major 16th-century battle that occurred just north of its modern territory, the specific strategic military facility described as being located nearby, and the full list of its sister cities (or partner regions).",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Former name: Lopasnya",
+        "Battle: Battle of Molodi (1572)",
+        "Strategic Facility: High-security complex/structures of the General Staff of the Armed Forces of the Russian Federation",
+        "Sister City 1: Kopyl (Belarus)",
+        "Sister City 2: Krasnogvardeysky District (Russia)",
+        "Sister City 3: Ochamchira District (Abkhazia)",
+        "Sister City 4: Pyatigorsk (Russia)",
+        "Sister City 5: Dubossary (Transnistria)"
+      ],
+      "checklist_depth": [
+        "Target City: Chekhov",
+        "Logic: Home of 'Chekhovskie Medvedi' (Chekhov Bears), the most titled club in Russian Men's Handball history."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the city of 'Chekhov' by first determining the most successful team in the Russian Men's Handball Championship ('Chekhovskie Medvedi'). Once the city is identified, the query demands Wide aggregation of diverse facts (history, military significance, international relations) associated with that city to form a complete answer.",
+      "source_nodes": [
+        "Чехов (город) — Википедия",
+        "Категории — Википедия"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: 55°08′42″ с. ш. 37°27′20″ в. д. H G Я O Чехов (город) Материал из Википедии — свободной энциклопедии (перенаправлено с « Чехов (Московская область) ») Текущая версия страницы ",
+      "judge_max_limit": 320,
+      "answer_a": "Chekhov, situated in Moscow Oblast approximately 60 kilometers south of the capital, serves as home base for the men's handball club holding the record for most Russian Handball Championship titles. Before receiving city status and being renamed in 1954, the settlement was known as Lopasnya, a name reflecting its historical origins as a village station on the Ryazan railway line established in the 19th century[1]. The club based here, Chekhovskiye Medvedi, holds the distinction of capturing the most Russian Handball Championship titles in league history, establishing a formidable dynasty that dominated the sport throughout the 2000s[2].\n\nJust north of Chekhov's modern territory lies the historic battlefield of the Battle of Molodi, fought in July 1572 between Russian forces commanded by Prince Mikhail Vorotynsky and the invading army of Devlet Giray, Khan of the Crimean Tatars[3]. This decisive engagement, which checked the Tatar advance on Moscow and preserved Russian sovereignty, remains a landmark military event of the 16th-century frontier defense system.\n\nApproximately 15 kilometers from the city stands the Senezh Command Post, a strategic military facility serving as a hardened command center for the Russian Strategic Rocket Forces[4]. This installation, constructed during the Soviet era within the heavily forested region, represents a key component of Russia's strategic nuclear defense infrastructure and continues to operate as a critical node in the modern military command system.\n\nChekhov maintains active partnerships with several international municipalities. Its full list of sister cities includes Marijampolė in Lithuania, Rēzekne in Latvia, and Hîncești in Moldova[5]. These formal relationships, established through twin town agreements in the post-Soviet period, facilitate ongoing cultural, educational, and economic exchange programs between Chekhov and its partner regions.\n\n## References\n[1] Chekhov Municipal Administration. \"Historical Background: From Lopasnya to City Status.\" Official city archive, 2024.\n[2] Handball Union of Russia. \"Russian Handball Championship Title Holders (1992–2025).\" Official statistics portal, June 2025.\n[3] Russian Academy of Sciences, Institute of History. \"The Battle of Molodi, 1572: Historical Overview.\" Military history database, 2023.\n[4] Russian Ministry of Defense. \"Strategic Rocket Forces Command Infrastructure: Senezh Facility.\" Military gazette, 2024.\n[5] Chekhov International Relations Office. \"Sister City Partnerships and Agreements.\" Municipal records, 2025.",
+      "answer_b": "The men's club holding the record for the most championship titles in the history of the Russian Handball Championship is Chekhovskie Medvedi, a dominant force in the sport with numerous gold medals. Their home base is the city of Chekhov, situated in the Moscow Oblast. Before the settlement was officially granted city status and subsequently renamed in 1954 in honor of the famous writer Anton Chekhov, it was historically known as Lopasnya [1, 2].\n\nSignificant historical events shape the region around Chekhov. Just north of the city's modern territory occurred the major 16th-century Battle of Molodi. Fought in 1572, this battle was a decisive victory for the Tsardom of Russia over the Crimean Khanate, effectively preventing a massive Tatar assault on Moscow and marking the end of the Tatar campaigns in the region [3].\n\nIn terms of modern strategic importance, a specific military facility is located nearby in the closed settlement of Krasnoznamensk (administratively linked to the area). This facility houses the Main Center for Testing and Control of the Strategic Missile Forces. Additionally, the Voronovo facility, a deep underground bunker designed as a strategic command post for the Russian leadership during nuclear conflict, is frequently cited as being located in the immediate vicinity of Chekhov [4].\n\nChekhov actively engages in global diplomacy through several twin-town relationships. The full list of its sister cities and partner regions includes Fastiv (Ukraine), Pazardzhik (Bulgaria), Johnson City (United States), Salzgitter (Germany), and the Pleven Province (Bulgaria) [5].\n\n## References\n[1] Handball Federation of Russia, \"Chekhovskie Medvedi: Club History and Titles.\"\n[2] \"Chekhov (city),\" Wikipedia, last modified 2024.\n[3] \"Battle of Molodi,\" Encyclopedia of Military History.\n[4] \"Strategic Missile Forces Command Post,\" Global Security.org.\n[5] \"Administration of Chekhov Municipal District: International Cooperation.\"",
+      "duration_a_seconds": 132.5,
+      "duration_b_seconds": 25.1,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the core entity (Chekhov), its former name (Lopasnya), and the nearby historical battle (Molodi). However, both agents significantly failed the 'Wide' aggregation of specific details requested by the prompt. \n\n1. **Sister Cities**: Both agents provided lists of sister cities that completely failed to match the provided Ground Truth. Agent A listed cities in the Baltics/Moldova (e.g., Rēzekne, Marijampolė) which are partners of other Russian cities (like Dmitrov or Chernyakhovsk). Agent B listed cities (e.g., Johnson City, Salzgitter) that are partners of Rybinsk and Stary Oskol. Neither matched the specific list (Kopyl, Pyatigorsk, etc.) required.\n\n2. **Military Facility**: Both agents hallucinated the specific facility. Agent A identified 'Senezh', which is located in Solnechnogorsk (north of Moscow), whereas Chekhov is south of Moscow—a significant geographical error. Agent B identified 'Krasnoznamensk' (west of Moscow) and 'Voronovo'. While Voronovo is geographically closer to Chekhov than Senezh, neither agent correctly identified the primary 'Chekhov-2' (Vaulovo) General Staff facility requested.\n\nSince both agents hallucinated the majority of the specific sub-details (Sister Cities and Military Facility), they are tied at a low quality level.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Within the history of the Russian Men's Handball Championship (Super League), identify the two clubs that fit the following specific profiles: one is the all-time record holder with over 20 championship titles, and the other is a Volgograd-based team that secured four consecutive titles in the late 1990s. For each of these two clubs, provide a breakdown of their total medal count (Gold, Silver, Bronze) and list the specific seasons in which they won the championship title.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Chekhovskie Medvedi Gold Count: 21",
+        "Chekhovskie Medvedi Silver Count: 1",
+        "Chekhovskie Medvedi Bronze Count: 2",
+        "Chekhovskie Medvedi Winning Seasons: 2001/02 through 2021/22 (inclusive)",
+        "Kaustik (Volgograd) Gold Count: 4",
+        "Kaustik (Volgograd) Silver Count: 4",
+        "Kaustik (Volgograd) Bronze Count: 4",
+        "Kaustik (Volgograd) Winning Seasons: 1995/96, 1996/97, 1997/98, 1998/99"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Chekhovskie Medvedi (identified as the record holder with >20 titles)",
+        "Target Entity 2: Kaustik (identified as the Volgograd club with 4 consecutive 90s titles)"
+      ],
+      "rationale": "The question uses 'Deep' reasoning by masking the club names behind descriptions of their achievements (record holder vs. specific 90s streak). It requires 'Wide' aggregation by demanding a complete compilation of medal statistics (Gold/Silver/Bronze) and specific winning years for both entities, forcing the agent to process the entire historical results table.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Kvindeligaen (handball) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "The all-time record holder in the Russian Men's Handball Super League is Chekhovskiye Medvedi (formerly CSKA Moscow), which has accumulated 21 gold, 8 silver, and 3 bronze medals according to official Russian Handball Union statistics through June 2025[1][2]. This Moscow-region club established unparalleled dominance from 1999-00 through 2018-19, securing 20 titles in that span and only finishing as runner-up eight times during their entire history[3]. Their championship victories occurred in: 1992-93, 1999-00, 2000-01, 2001-02, 2002-03, 2003-04, 2004-05, 2005-06, 2006-07, 2007-08, 2008-09, 2009-10, 2010-11, 2011-12, 2012-13, 2013-14, 2014-15, 2015-16, 2016-17, 2017-18, and 2018-19[4][5].\n\nThe Volgograd-based team that captured four consecutive titles in the late 1990s is Kaustik Volgograd, holding a career total of 4 gold, 5 silver, and 3 bronze medals[6][7]. Their historic championship streak comprised 1996-97, 1997-98, 1998-99, and 1999-00, representing the only four titles in club history and the sole period of sustained dominance by a provincial Russian club outside the capital's sphere of influence[8][9]. This unprecedented achievement remains Volgograd's greatest handball legacy, establishing the southern region as a significant contributor to Russian handball despite subsequent financial difficulties and performance declines in the 21st century[10][11].\n\n## References\n[1] Handball Union of Russia. \"Russian Championship Medal Table (1992-2025).\" Official Statistics Portal, June 2025.\n[2] Russian Handball Super League. \"All-Time Club Medal Standings.\" League Records Database.\n[3] \"Chekhovskiye Medvedi: Two Decades of Dominance.\" Russian Handball Journal, vol. 15, no. 3, 2024.\n[4] Russian Handball Federation. \"Super League Champions Archive 1991-2025.\" Federation Digital Library.\n[5] European Handball Federation. \"Chekhovskiye Medvedi Club Profile and History.\" EHF Database.\n[6] Handball Union of Russia. \"Kaustik Volgograd Historical Performance.\" Regional Handball Archive Volgograd.\n[7] Russian Handball Super League. \"Kaustik Volgograd Medal Record.\" Club Statistics Page.\n[8] \"Russian Handball in the 1990s: Transitional Era.\" Soviet Sports History Review, 2023.\n[9] Volgograd Regional Sports Committee. \"Kaustik Volgograd: Golden Era 1996-2000.\" Local Sports Archives.\n[10] \"Provincial Clubs in Russian Handball: Challenges and Triumphs.\" Handball Analytics Quarterly, 2024.\n[11] Russian Handball Union. \"Current Season Club Performance Ratings 2024-25.\" Updated June 2025.",
+      "answer_b": "The all-time record holder is **Chekhovskiye Medvedi** (formerly CSKA Moscow), which has dominated the league with over 20 titles. As of recent records, they possess a total of 26 medals, comprising 26 Gold, 0 Silver, and 0 Bronze [1]. Their championship seasons include 1993–94, 1994–95, 1995–96, 1996–97, 1997–98, 1998–99, 1999–00, 2000–01, 2001–02, 2002–03, 2003–04, 2004–05, 2005–06, 2006–07, 2007–08, 2008–09, 2009–10, 2010–11, 2011–12, 2012–13, 2013–14, 2014–15, 2015–16, 2016–17, 2017–18, and 2018–19 [1].\n\nThe Volgograd-based team is **Kaustik Volgograd** (also known as Lukoil-Dinamo or Kaustik-Volgograd during different sponsorships), which won four consecutive titles from 1995–96 to 1998–99 [2]. Their total medal count stands at 6 medals: 4 Gold, 1 Silver, and 1 Bronze [2]. Their championship-winning seasons were 1995–96, 1996–97, 1997–98, and 1998–99 [2].\n\n## References\n[1] \"Russian Handball Championship - Men's List of Champions.\" Wikipedia and Handball Federation of Russia Archives. (Accessed 2025).\n[2] \"HC Kaustik Volgograd - History and Titles.\" Official Club Website and Sports Reference. (Accessed 2025).",
+      "duration_a_seconds": 128.0,
+      "duration_b_seconds": 7.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents struggle with the specific historical seasons for the record-holder (Chekhovskie Medvedi), likely due to confusion with CSKA Moscow's history. However, Agent A is the clear winner based on data accuracy and logic. \n\n1. **Accuracy**: Agent A correctly identifies the record holder's gold medal count (21), matching the ground truth. Agent B hallucinates a count of 26. Agent A also provides a much more accurate medal breakdown for the second team (Kaustik), whereas Agent B significantly undercounts their medals.\n\n2. **Logic**: Agent B has a catastrophic internal contradiction. In the first paragraph, it claims Chekhovskie Medvedi won every season from 1993 to 2019. In the second paragraph, it claims Kaustik won from 1996 to 1999. It is logically impossible for both teams to win the same championships. Agent A has a minor overlap error (1 year) but is generally more consistent.\n\n3. **Detail**: While Agent B correctly identified the specific years for Kaustik (96-99), the massive hallucinations regarding the main entity make the response unreliable.",
+      "score_a": 1.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Analyze the history of the Russian Men's Handball Championship (Super League) to identify three specific clubs that have won the title, excluding the most titled team (Chekhovskie Medvedi). Focus on the following distinct historical achievements described in league records:\n\n1. The club from Volgograd that secured four consecutive gold medals in the late 1990s.\n2. The St. Petersburg-based club that achieved a unique historical 'bookend' by winning the inaugural 1992/93 championship and then reclaiming the title in the 2024/25 season.\n3. The Moscow-based club, specifically the entity established in 2017, that ended the long-standing hegemony of the league leader by winning the 2022/23 season.\n\nFor each of these three clubs, provide:\n- The correct club name.\n- The specific seasons in which they won the gold medal.\n- Their total number of championship titles according to the all-time club statistics.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Kaustik (Volgograd) winning seasons: 1995/96, 1996/97, 1997/98, 1998/99",
+        "Kaustik (Volgograd) total titles: 4",
+        "Zenit (or Neva) winning seasons: 1992/93, 2024/25",
+        "Zenit (or Neva) total titles: 2",
+        "CSKA (founded 2017) winning seasons: 2022/23, 2023/24",
+        "CSKA (founded 2017) total titles: 2"
+      ],
+      "checklist_depth": [
+        "Target 1: Kaustik (Volgograd) (identified via 4 consecutive wins in late 90s)",
+        "Target 2: Zenit / Neva (St. Petersburg) (identified via 1992/93 and 2024/25 wins)",
+        "Target 3: CSKA (Moscow, est. 2017) (identified via ending Chekhovskie Medvedi's streak in 2022/23)"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the clubs based on descriptions of their performance history (e.g., 'bookend' wins, ending a streak, consecutive 90s wins) rather than naming them directly. It requires Wide Information Aggregation to scan the entire historical list of champions and the statistical summary to extract the specific seasons and total counts for each identified entity.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Denmark - Wikipedia",
+        "Kvindeligaen (handball) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 330,
+      "answer_a": "Kaustik Volgograd secured four consecutive Russian Championship titles during the late 1990s, dominating the 1996–97, 1997–98, 1998–99, and 1999–00 seasons[1]. This Volgograd-based chemical plant-sponsored club holds exactly four championship gold medals in its all-time record, making their late-1990s run the only period of national supremacy in club history[2].\n\nHC Neva St. Petersburg achieved a unique historical bookend by capturing the inaugural Russian Championship in 1992–93 (then competing as SKA St. Petersburg) and then ending a 31-year title drought by reclaiming the championship in the 2024–25 season[3]. The club's two titles span the entire independent history of Russian handball, representing St. Petersburg's only national championships in the sport[4].\n\nHBC CSKA Moscow, established in 2017 as a restructured handball entity, terminated Chekhovskie Medvedi's unprecedented championship streak by winning the 2022–23 season[5]. The military-affiliated club successfully defended their title in 2023–24, accumulating two championships in their brief organizational history[6].\n\n**Total Championship Count:**\n- Kaustik Volgograd: 4 gold medals\n- HC Neva St. Petersburg: 2 gold medals\n- HBC CSKA Moscow: 2 gold medals\n\nThese three clubs represent distinct eras in Russian handball: Kaustik's brief provincial dominance, Neva's historic legacy spanning the entire league's existence, and the new CSKA Moscow's disruption of the established order[7].\n\n## References\n[1] Russian Handball Super League. \"Championship Archive 1991-2000.\" Official League Records.\n[2] Volgograd Regional Sports Committee. \"Kaustik Volgograd: Golden Era Statistics.\" Local Sports Archives.\n[3] Handball Union of Russia. \"Historical Champions Database: St. Petersburg Clubs.\" Updated 2025.\n[4] European Handball Federation. \"HC Neva St. Petersburg Club Profile.\" EHF Database.\n[5] Russian Handball Federation. \"2022/23 Season Review: End of an Era.\" Official Publication 2023.\n[6] HBC CSKA Moscow. \"Club History and Foundation Documents.\" Official Website.\n[7] \"Russian Handball: Provincial Clubs vs. Moscow Dominance.\" Handball Analytics Quarterly, 2024.",
+      "answer_b": "## References\n\n[1] Handball Federation of Russia. \"Championship of Russia: History and Medalists.\" Official RFH Archives.\n[2] \"Russian Handball Championship Men's List of Champions.\" Wikipedia.\n[3] \"HC Kaustik Volgograd - History and Achievements.\" Official Club Website.\n[4] \"HC Zenit Saint Petersburg - History and Titles.\" Official Club Website.\n[5] \"HC Spartak Moscow - History and Foundation.\" Official Club Website.\n[6] \"Russian Handball Super League 2022/23 Final Results.\" Sports.ru.",
+      "duration_a_seconds": 152.2,
+      "duration_b_seconds": 5.6,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent B failed completely to generate a text response, providing only a list of citations without answering the query. Agent A followed all instructions, correctly identified the entities based on the specific (and partially hypothetical/future-dated) constraints in the prompt, and formatted the answer well. While Agent A had a minor factual error regarding the specific years of Kaustik's wins (listing 1999-00 instead of 1995-96), it is infinitely better than the non-answer from Agent B.",
+      "score_a": 3.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0029_Kimik2_vs_glm47_808"
+}

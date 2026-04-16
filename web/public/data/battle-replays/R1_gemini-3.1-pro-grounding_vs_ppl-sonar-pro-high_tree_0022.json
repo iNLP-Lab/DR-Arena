@@ -1,0 +1,98 @@
+{
+  "id": "R1_gemini-3.1-pro-grounding_vs_ppl-sonar-pro-high_tree_0022",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_gemini-3.1-pro-grounding_vs_ppl-sonar-pro-high_tree_0022.log",
+  "tree_id": "tree_0022",
+  "tree_title": "Orchestral Sample Libraries: A Beginner's Guide (+ Recommendations)",
+  "tree_topic": "Arts & Entertainment > Music & Audio > Music Equipment & Technology",
+  "tree_subtopic": "Samples & Sound Libraries",
+  "tree_crawled_at": "2025-11-21T16:19:46.467919",
+  "tree_url": "https://www.becomeaprocomposer.com/guide/sample-libraries",
+  "model_a": "gemini-3.1-pro-grounding",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "gemini-3.1-pro-grounding",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Orchestral Sample Libraries: A Beginner's Guide (+ Recommendations)",
+  "questions": [
+    "In the context of beginner-friendly orchestral music production tools and workflows, identify the entry-level choir sample library that is described as covering individual SATB sections, full ensembles, and a children’s choir, featuring polyphonic true legato, running on the free Native Instruments Kontakt Player, and requiring roughly 23GB of free disk space. Summarize its key technical and performance features, including microphone setup and playability functions. Additionally, outline the recommended approach for building a personal orchestral template in a DAW as presented by the same author: describe the suggested folder hierarchy, how sample libraries and instrument patches are organized, how negative track delay and purging are handled, and the preferred strategy for applying reverb and articulation switching within the template."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 288980,
+  "estimated_cost": 2.8898,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Orchestral Sample Libraries: A Beginner's Guide (+ Recommendations)",
+        "Choir Essentials"
+      ],
+      "question": "In the context of beginner-friendly orchestral music production tools and workflows, identify the entry-level choir sample library that is described as covering individual SATB sections, full ensembles, and a children’s choir, featuring polyphonic true legato, running on the free Native Instruments Kontakt Player, and requiring roughly 23GB of free disk space. Summarize its key technical and performance features, including microphone setup and playability functions. Additionally, outline the recommended approach for building a personal orchestral template in a DAW as presented by the same author: describe the suggested folder hierarchy, how sample libraries and instrument patches are organized, how negative track delay and purging are handled, and the preferred strategy for applying reverb and articulation switching within the template.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Choir library includes individual SATB sections, full ensembles, and a children’s choir",
+        "Features polyphonic true legato playable within one patch",
+        "Runs on free Kontakt Player (no full version required)",
+        "Requires ~23GB free space and Kontakt 5.7.1+",
+        "Includes three microphone positions recorded in a concert hall",
+        "Performance patches with velocity-based dynamic control and modwheel crossfading",
+        "Template uses top-level instrument section folders (Strings, Brass, etc.)",
+        "Subfolders organized by sample library, containing individual instrument patches (e.g., Violins 1, Violas)",
+        "Negative track delay applied to compensate for sample delay (e.g., around -60ms for certain libraries)",
+        "Purging recommended if system has under 64GB RAM",
+        "One reverb insert per instrument section via bus channel",
+        "Preference for multi-articulation patches with articulation switching via expression maps/sound variations"
+      ],
+      "checklist_depth": [
+        "Choir Essentials by Strezov Sampling + matches SATB, children’s choir, polyphonic true legato, free Kontakt Player requirement",
+        "Author’s orchestral template-building method (Kevin Kuschel) + logic of structured folders, negative delay, purging, and section-based reverb routing"
+      ],
+      "rationale": "The question uses deep logic by describing the choir library only through its functional and technical traits (SATB, children’s choir, polyphonic true legato, free Kontakt Player, storage size), requiring identification without naming it directly. It also links to the author’s DAW workflow philosophy, forcing aggregation of scattered procedural details (hierarchy, delay compensation, RAM purging, reverb routing, articulation management). The task is wide because it requires synthesizing product specifications and workflow methodology from separate but related sections of the same broader topic.",
+      "source_nodes": [
+        "Choir Essentials",
+        "Create an Orchestral Template in 10 Easy Steps (+ Free Checklist)"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home All products Choir Essentials Coronation by Jean-Gabriel Raynaud Holidays Excitement by Nathan Einhorn Music Box by Henri Vartio The Unsinkable by Andrew Morgan Smith Des",
+      "judge_max_limit": 300,
+      "answer_a": "The entry-level choir library matching these specifications is **Strezov Sampling’s Choir Essentials** [1]. Serving as an accessible iteration of their flagship choral collections, it covers individual SATB (Soprano, Alto, Tenor, Bass) sections, full ensembles, and an integrated children’s choir [2]. Key technical features include Strezov's Syllabuilder engine for custom phonetic phrasing, alongside polyphonic true legato that reliably links chord transitions in real time. It requires exactly 23GB of temporary free disk space for its free Native Instruments Kontakt Player installation [1]. Maximizing playability for beginners, its microphone setup provides a straightforward, mix-ready default array (derived from Close, Decca, and Hall perspectives) rather than exhaustive, CPU-heavy routing [2]. \n\nRegarding the author’s recommended orchestral template workflow:\n* **Folder Hierarchy:** The DAW session should be categorized systematically by standard orchestral families (Woodwinds, Brass, Percussion, Choir, Keyboards/Synths, and Strings) sequentially down the project window [3].\n* **Organization:** Sample libraries and instrument patches must be consolidated as multi-articulation instances on single tracks, grouped by section to maintain a clean, navigable workspace [3]. \n* **Negative Track Delay (Pre-Delay):** Because true legato scripts introduce inherent sample latency, a negative track delay must be applied in the DAW inspector. This shifts MIDI data earlier, ensuring visual notes remain rigidly quantized to the grid while delayed legato transitions sound precisely in tempo [4].\n* **Purging:** To aggressively conserve RAM, Kontakt instruments must be saved and loaded \"purged.\" The DAW opens with a minimal footprint, dynamically loading only the individual samples triggered during real-time playback [4].\n* **Reverb & Articulations:** Rather than individual track inserts, reverb is applied via shared auxiliary buses (e.g., short, long, hall) to glue instruments into a unified acoustic space. Finally, articulation switching adopts native DAW systems (like Cubase Expression Maps or Logic Articulation Sets) to trigger key-switches natively, efficiently bypassing the cluttered \"one-track-per-articulation\" method [3, 4].\n\n## References\n[1] Strezov Sampling. \"Choir Essentials - Overview & Specifications.\" *Strezov Sampling Official Website*.\n[2] Sample Library Review. \"Review: Strezov Sampling Choir Essentials - Performance and Features.\" \n[3] Siu, C. \"Beginner Orchestral Template Workflow & Folder Hierarchy Best Practices.\"\n[4] ThinkSpace Education & Standard DAW Guidelines. \"Orchestral Setup: Negative Track Delay, RAM Purging, and Auxiliary Reverbs.\"",
+      "answer_b": "**Choir Essentials by Native Instruments** is the entry-level choir sample library matching the description, covering individual **SATB sections**, full ensembles, and a children’s choir, with polyphonic true legato, compatibility with the free **Native Instruments Kontakt Player**, and approximately **23GB** disk space requirement[1][4].\n\nKey features include realistic **polyphonic true legato** for natural vocal transitions, extensive articulations (sustains, legatos, staccatos, dynamics), and a children’s choir for versatile layering. It offers **three microphone positions**—close, decca tree, and hall—for mixing flexibility, balancing intimacy and ambiance. Playability includes intuitive keyswitches for articulation switching, mod wheel for dynamic swells, velocity layers for expressivity, and syllable/wordbuilder modes for custom phrases, making it beginner-friendly in DAWs like Ableton or Logic[1][4].\n\nFor building a personal orchestral template, the author recommends a **folder hierarchy** in the DAW: root \"Orchestral Template\" > subfolders by section (Strings, Brass, Woodwinds, Percussion, Choir) > instrument type (e.g., Violins > Legato, Shorts) > mic positions. Organize sample libraries by loading core patches (e.g., sustains/legatos) into multi-instruments, grouping similar articulations on tracks. Apply **negative track delay** (-10ms to -50ms) on tracks post-reverb sends to align samples with dry signals. Use **purging** via Kontakt's script to unload unused samples after sessions, saving RAM. Preferred reverb strategy: single **algorithmic hall reverb** (e.g., Valhalla) on aux bus with all instruments sent dry, EQ'd high-pass at 100Hz; articulation switching via MIDI CC1/mod wheel or snapshots for seamless control[1].\n\n(Word count: 248)\n\n## References\n[1] YouTube: \"Comparing ALL traditional choir sample libraries in my arsenal\" (vfE8IVexbPE)  \n[4] The Pro Audio Files: \"13 of the Best Choir Sample Libraries\"",
+      "duration_a_seconds": 186.1,
+      "duration_b_seconds": 7.3,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies **Strezov Sampling’s Choir Essentials**, which matches all core constraints (SATB + children’s choir, polyphonic true legato, free Kontakt Player, ~23GB requirement). Agent B incorrectly attributes the product to “Native Instruments,” which is factually wrong and fails the Core Entity check. This alone disqualifies B on foundational accuracy.\n\nSecond, Width/Completeness: Agent A covers most checklist items—SATB + children’s choir, polyphonic true legato, Kontakt Player requirement, ~23GB space, three mic positions, velocity/modwheel dynamics, structured folder hierarchy, negative track delay rationale, purging, section-based reverb buses, and articulation switching via expression maps. While A omits the explicit “Kontakt 5.7.1+” and “under 64GB RAM” detail, coverage is largely complete and logically consistent. Agent B includes some correct surface details (three mics, articulation switching, reverb bus), but introduces inaccuracies (wrong developer, questionable negative delay placement “post-reverb sends”) and weaker structural alignment with the author’s method.\n\nThird, Presentation & UX: Agent A is clearer, more structured, and more faithful to the described workflow. It uses strong formatting and logical sequencing. Agent B is readable but less authoritative and undermined by the incorrect product identification.\n\nBecause Agent B fails the Deep Logic (wrong entity), and Agent A is substantially accurate and comprehensive, the result is A_MUCH_BETTER.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0022_gemini31_vs_pplsonar_1036"
+}

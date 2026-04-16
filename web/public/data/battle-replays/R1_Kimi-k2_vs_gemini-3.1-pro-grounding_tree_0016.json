@@ -1,0 +1,156 @@
+{
+  "id": "R1_Kimi-k2_vs_gemini-3.1-pro-grounding_tree_0016",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_Kimi-k2_vs_gemini-3.1-pro-grounding_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "Kimi-k2",
+  "model_b": "gemini-3.1-pro-grounding",
+  "winner": "gemini-3.1-pro-grounding",
+  "final_score_a": 0.0,
+  "final_score_b": 3.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "Professionals who design computer applications and those who test and assure the quality of software typically need a bachelor’s degree in a computing-related discipline. Using this educational requirement as your starting point, identify the corresponding academic major category that aligns most directly with this preparation. Then, drawing from publicly available labor-market resources, provide the following: (1) a brief description of what pages for that academic field are intended to show about graduates and their careers, (2) the most recent listed modification date for that field’s overview page, (3) the projected average number of annual openings for the broader occupational group associated with this field from 2024 to 2034, (4) the median annual wage for that occupational group in May 2024, and (5) the names and 2024 median pay of at least three specific occupations included within that group.",
+    "An occupation in the computer and information technology field typically requires a bachelor’s degree for entry, had about 1.9 million jobs in 2024, is projected to grow roughly 15 percent from 2024 to 2034 (much faster than average), and includes roles focused on both creating applications and testing them for defects. Using official U.S. federal labor statistics sources, identify the specific statistical programs or databases you would use to obtain the following for this occupation: (1) detailed occupational wage estimates, (2) national employment projections including projected 2034 employment and job openings, (3) monthly national employment levels and earnings data, (4) consumer price data to adjust wages for inflation over time, and (5) direct API-based access to raw time series data. For each program, provide its official name and briefly describe the type of data it supplies."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 98865,
+  "estimated_cost": 0.9886,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Professionals who design computer applications and those who test and assure the quality of software typically need a bachelor’s degree in a computing-related discipline. Using this educational requirement as your starting point, identify the corresponding academic major category that aligns most directly with this preparation. Then, drawing from publicly available labor-market resources, provide the following: (1) a brief description of what pages for that academic field are intended to show about graduates and their careers, (2) the most recent listed modification date for that field’s overview page, (3) the projected average number of annual openings for the broader occupational group associated with this field from 2024 to 2034, (4) the median annual wage for that occupational group in May 2024, and (5) the names and 2024 median pay of at least three specific occupations included within that group.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Purpose description of the Computer and Information Technology field-of-degree pages (data on workers with the degree, occupations, outlook, links to profiles)",
+        "Last modified date: August 28, 2025",
+        "Projected annual openings: about 317,700 per year (2024–2034) for the broader occupational group",
+        "Median annual wage for the group: $105,990 (May 2024)",
+        "Occupation 1: Computer and Information Research Scientists — $140,910",
+        "Occupation 2: Computer Network Architects — $130,390",
+        "Occupation 3: Software Developers, Quality Assurance Analysts, and Testers — $131,450"
+      ],
+      "checklist_depth": [
+        "Correct Field of Degree: Computer and Information Technology — logically derived from the stated bachelor’s-level computing education requirement",
+        "Correct Occupational Group: Computer and Information Technology Occupations — the broader category encompassing software developers and related roles"
+      ],
+      "rationale": "The question uses the educational requirement (bachelor’s degree in a computing-related field) as a logical filter to lead the solver to the correct academic major category without naming it directly (Deep). It then requires aggregating multiple data points from both the academic field overview and the associated occupational group page—purpose, modification date, projections, wages, and specific occupations—ensuring comparison and synthesis across more than one source (Wide).",
+      "source_nodes": [
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Occupational Outlook Handbook > Field of Degree > Field of degree Field of degree (FOD) pages highlight data and information from the U.S. Bureau of Labor Statistics and the U",
+      "judge_max_limit": 300,
+      "answer_a": "The corresponding academic major category is **Computer and Information Sciences**, which prepares graduates for software development and quality assurance roles. BLS Occupational Outlook Handbook pages for this field are designed to provide data on job outlook, median pay, required education, and typical duties for technology occupations [1].\n\nThe BLS \"Computer and Information Technology Occupations\" overview page was last modified on **September 5, 2024** [1].\n\nFor the 2024-2034 period, this occupational group is projected to have approximately **356,700 average annual openings** [2].\n\nThe median annual wage for Computer and Information Technology Occupations was **$104,420 in May 2024** [1].\n\nThree specific occupations within this group include:\n- **Software Developers**: $132,270 median pay (2024)\n- **Information Security Analysts**: $120,360 median pay (2024)\n- **Database Administrators**: $105,240 median pay (2024) [3]\n\n## References\n[1] Bureau of Labor Statistics, U.S. Department of Labor. (2024, September 5). *Computer and Information Technology Occupations*. Occupational Outlook Handbook. https://www.bls.gov/ooh/computer-and-information-technology/home.htm\n[2] Bureau of Labor Statistics, U.S. Department of Labor. (2025). *Employment Projections: 2024-2034*. Computer and Mathematical Occupations. https://www.bls.gov/emp/tables/occupational-projections.htm\n[3] Bureau of Labor Statistics, U.S. Department of Labor. (2025). *Occupational Employment and Wage Statistics*. May 2024 National Occupational Employment and Wage Estimates. https://www.bls.gov/oes/current/oes_nat.htm",
+      "answer_b": "The academic major category that most directly aligns with the preparation for software developers and quality assurance analysts is **Computer and Information Technology** [1]. \n\nAccording to the U.S. Bureau of Labor Statistics (BLS), the intention of the Field of Degree pages is to show the variety of occupations that professional workers who hold a bachelor’s degree in a specific academic field have successfully attained. These pages also highlight relevant demographic and economic indicators, such as degree attainment levels, employment trends, and salaries [1]. The most recent listed modification date for the BLS \"Computer and Information Technology\" field overview page is September 6, 2023 [1]. \n\nGraduates typically enter the broader occupational group known as **Computer and Information Technology Occupations**. Currently, the public labor-market projections published by the BLS cover the standard 2023–2033 decade, as the 2024–2034 data cycle has not yet been collected or released. For this current period, the BLS projects an average of roughly 356,700 annual job openings across these roles [2]. \n\nRegarding compensation, the latest finalized wage statistics cover May 2023 (which are published and standardly utilized throughout 2024). The officially recorded median annual wage for this entire occupational group was $104,420 [2]. This robust baseline pay reflects strict educational requirements and strong industry demand. \n\nThree specific occupations included within this broader group, along with their most recently reported median annual pay, include:\n1. **Software Developers, Quality Assurance Analysts, and Testers:** $132,270 [3].\n2. **Information Security Analysts:** $120,360 [2].\n3. **Computer Systems Analysts:** $103,800 [2].\n\nTogether, these publicly available figures indicate a highly favorable economic outlook and stable labor-market environment for collegiate graduates entering the modern diverse computing sector [2].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2023, September 6). *Field of degree: Computer and information technology*. Occupational Outlook Handbook. https://www.bls.gov/ooh/field-of-degree/computer-and-information-technology/home.htm\n[2] U.S. Bureau of Labor Statistics. (2024, August 29). *Computer and Information Technology Occupations*. Occupational Outlook Handbook. https://www.bls.gov/ooh/computer-and-information-technology/home.htm\n[3] U.S. Bureau of Labor Statistics. (2024, August 29). *Software Developers, Quality Assurance Analysts, and Testers*. Occupational Outlook Handbook. https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+      "duration_a_seconds": 23.1,
+      "duration_b_seconds": 118.7,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent B correctly identifies the field as \"Computer and Information Technology\" and links it to the broader \"Computer and Information Technology Occupations\" group. Agent A instead names \"Computer and Information Sciences,\" which does not match the required field-of-degree category, weakening its core alignment. Thus, A partially fails DEEP logic while B passes.\n\nSecond, Width/Completeness: Both agents miss key checklist facts. Neither provides the correct last modified date (August 28, 2025), projected annual openings (317,700 for 2024–2034), median wage ($105,990 in May 2024), nor the required three specific occupations with their correct 2024 median wages. Both instead cite outdated 2023–2024 figures and incorrect wage/opening numbers. Therefore, both fail WIDE aggregation significantly.\n\nSince both contain substantial factual inaccuracies, neither qualifies for MUCH_BETTER. However, Agent B is less incorrect overall: it identifies the correct academic field and more clearly explains the purpose of the Field of Degree pages. Agent A misidentifies the field category and provides similarly incorrect statistics. On balance, B delivers slightly stronger logical alignment and contextual explanation, making it BETTER despite shared factual errors.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Databases, Tables & Calculators by Subject'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Databases, Tables & Calculators by Subject"
+      ],
+      "question": "An occupation in the computer and information technology field typically requires a bachelor’s degree for entry, had about 1.9 million jobs in 2024, is projected to grow roughly 15 percent from 2024 to 2034 (much faster than average), and includes roles focused on both creating applications and testing them for defects. Using official U.S. federal labor statistics sources, identify the specific statistical programs or databases you would use to obtain the following for this occupation: (1) detailed occupational wage estimates, (2) national employment projections including projected 2034 employment and job openings, (3) monthly national employment levels and earnings data, (4) consumer price data to adjust wages for inflation over time, and (5) direct API-based access to raw time series data. For each program, provide its official name and briefly describe the type of data it supplies.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Correct identification and description of Occupational Employment and Wage Statistics (OEWS) for occupational wage estimates",
+        "Correct identification and description of the National Employment Matrix (Employment Projections) for 2024–2034 projections and job openings",
+        "Correct identification and description of Current Employment Statistics (CES) for monthly national employment, hours, and earnings data",
+        "Correct identification and description of the Consumer Price Index (CPI) for inflation adjustment",
+        "Correct identification and description of the BLS Public Data API for raw time series access"
+      ],
+      "checklist_depth": [
+        "Occupation identified as Software Developers, Quality Assurance Analysts, and Testers (computer and IT field; bachelor’s degree entry; ~1.9 million jobs in 2024; 15% projected growth 2024–2034; includes development and testing roles)",
+        "Logical connection made between the occupation’s characteristics (growth, wages, employment size) and the need to consult multiple distinct BLS statistical programs"
+      ],
+      "rationale": "The question uses labor market characteristics (education requirement, employment size, growth rate, and job functions) to indirectly identify the specific occupation without naming it (Deep reasoning). It then requires aggregation across multiple distinct federal statistical programs—wages, projections, monthly employment data, inflation measures, and API access—ensuring the respondent must synthesize information from several separate data systems rather than a single source (Wide aggregation).",
+      "source_nodes": [
+        "Databases, Tables & Calculators by Subject",
+        "Challenge Validation",
+        "Publications : Office of Publications and Special Studies: U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: On This Page: Inflation & Prices Employment Unemployment Employment Projections Pay & Benefits Spending & Time Use Productivity Workplace Injuries Occupational Requirements Re",
+      "judge_max_limit": 350,
+      "answer_a": "For detailed occupational wage estimates, use the **Occupational Employment and Wage Statistics (OEWS)** program, which provides annual mean, median, and percentile wage estimates for over 800 occupations by industry and geographic area, including national, state, and metropolitan data derived from employer surveys [1].\n\nFor national employment projections, the **Employment Projections (EP)** program supplies 10-year occupational forecasts including projected 2034 employment levels, percentage growth rates, and average annual job openings attributed to both industry expansion and replacement needs [2].\n\nFor monthly employment levels and earnings data, the **Current Population Survey (CPS)**—a monthly household survey conducted with the Census Bureau—reports national employment counts and median usual weekly earnings by detailed occupation, along with labor force participation rates [3].\n\nTo adjust wages for inflation, the **Consumer Price Index (CPI)** program provides monthly indexes measuring price changes in a fixed market basket of goods and services purchased by urban consumers, enabling calculation of inflation-adjusted wages [4].\n\nFor direct API access to raw time series data, the **BLS Public Data API** offers a RESTful web service returning JSON-formatted economic data from CPS, CES, CPI, and other BLS programs, supporting automated retrieval of employment, unemployment, price, and earnings series [5].\n\n## References\n[1] Bureau of Labor Statistics. (n.d.). *Occupational Employment and Wage Statistics*. https://www.bls.gov/oes/\n[2] Bureau of Labor Statistics. (n.d.). *Employment Projections*. https://www.bls.gov/emp/\n[3] Bureau of Labor Statistics. (n.d.). *Current Population Survey*. https://www.bls.gov/cps/\n[4] Bureau of Labor Statistics. (n.d.). *Consumer Price Index*. https://www.bls.gov/cpi/\n[5] Bureau of Labor Statistics. (n.d.). *BLS Public Data API*. https://www.bls.gov/developers/",
+      "answer_b": "To obtain comprehensive economic metrics for Software Developers, Quality Assurance Analysts, and Testers, researchers must utilize several specific statistical programs and databases administered by the U.S. Bureau of Labor Statistics (BLS).\n\nFirst, to access detailed occupational wage estimates and current employment totals, the **Occupational Employment and Wage Statistics (OEWS)** program is used. This program produces authoritative annual estimates of wages and employment for over 800 occupations across national, state, and metropolitan levels, allowing for granular geographic and occupational pay comparisons [1]. \n\nSecond, to obtain national employment projections, including anticipated job growth percentages, projected 2034 employment levels, and average annual job openings over a ten-year cycle, the **Employment Projections (EP)** program is required. The EP program thoroughly analyzes broader labor market trends to forecast long-term occupational demand and structural employment shifts [2]. \n\nThird, for exact monthly national employment levels and earnings data, researchers rely on the **Current Employment Statistics (CES)** program. Often referred to as the establishment survey, the CES provides highly timely, high-frequency monthly data on nonfarm payrolls, working hours, and average earnings categorized directly by industry sector [3]. \n\nFourth, to properly adjust occupational wages for inflation over time, the **Consumer Price Index (CPI)** is utilized. This vital program measures the average monthly change in prices paid by urban consumers for a representative basket of goods and services, enabling accurate calculations of real wage variations and genuine purchasing power [4]. \n\nFinally, for direct API-based access to raw time series data, the **BLS Public Data Application Programming Interface (API)** is the official federal tool. It allows developers and data scientists to programmatically query, extract, and integrate extensive economic time-series data across nearly all BLS surveys using specific alphanumeric series identifiers [5].\n\n## References\n[1] U.S. Bureau of Labor Statistics. (2024). *Occupational Employment and Wage Statistics*. https://www.bls.gov/oes/\n[2] U.S. Bureau of Labor Statistics. (2024). *Employment Projections*. https://www.bls.gov/emp/\n[3] U.S. Bureau of Labor Statistics. (2024). *Current Employment Statistics - CES (National)*. https://www.bls.gov/ces/\n[4] U.S. Bureau of Labor Statistics. (2024). *Consumer Price Index*. https://www.bls.gov/cpi/\n[5] U.S. Bureau of Labor Statistics. (2024). *Public Data API*. https://www.bls.gov/developers/",
+      "duration_a_seconds": 86.4,
+      "duration_b_seconds": 33.8,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent B correctly identifies the occupation as Software Developers, Quality Assurance Analysts, and Testers and aligns it with the growth, degree requirement, and job size characteristics. Agent A never identifies the occupation explicitly, failing the DEEP requirement.\n\nSecond, Width/Completeness: Both agents correctly identify OEWS, Employment Projections (National Employment Matrix), CPI, and the BLS Public Data API. However, for monthly national employment and earnings data, Agent A incorrectly cites the Current Population Survey (CPS), while the checklist requires Current Employment Statistics (CES). Agent B correctly identifies CES. Therefore, Agent A fails WIDE completeness.\n\nFinally, Presentation & UX: Both responses are well-structured and readable, but Agent B provides slightly clearer framing and tighter alignment to the query. Since Agent B satisfies both Deep and Wide requirements with no factual errors, and Agent A fails both, Agent B is MUCH_BETTER.",
+      "score_a": 0.0,
+      "score_b": 3.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_Kimik2_vs_gemini31_970"
+}

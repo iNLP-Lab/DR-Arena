@@ -1,0 +1,91 @@
+{
+  "id": "R3_M0_gpt-5.1-search_vs_grok-4-search_tree_0026",
+  "source_group": "round3",
+  "source_log": "round3/R3_M0_gpt-5.1-search_vs_grok-4-search_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "gpt-5.1-search",
+  "model_b": "grok-4-search",
+  "winner": "grok-4-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 3,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the statewide organization in California mandated to provide immediate, free expert treatment advice for exposures to poisonous substances, which is administratively managed by the UCSF School of Pharmacy. Once identified, determine the full names of the current Executive Director of the entire system and the Medical Director specifically for the San Francisco Division. For both professionals, provide their primary professional doctoral degree (e.g., MD, PharmD) and their specific academic rank/title at the University of California, San Francisco."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 129642,
+  "estimated_cost": 1.2964,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the statewide organization in California mandated to provide immediate, free expert treatment advice for exposures to poisonous substances, which is administratively managed by the UCSF School of Pharmacy. Once identified, determine the full names of the current Executive Director of the entire system and the Medical Director specifically for the San Francisco Division. For both professionals, provide their primary professional doctoral degree (e.g., MD, PharmD) and their specific academic rank/title at the University of California, San Francisco.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Executive Director: Primary Degree (PharmD)",
+        "Executive Director: Academic Title (e.g., Health Sciences Clinical Professor)",
+        "SF Medical Director: Primary Degree (MD)",
+        "SF Medical Director: Academic Title (e.g., Professor of Clinical Emergency Medicine / Medical Director)"
+      ],
+      "checklist_depth": [
+        "Entity Identification: California Poison Control System (CPCS)",
+        "Target 1: Stuart E. Heard (Executive Director)",
+        "Target 2: Craig Smollin (Medical Director, San Francisco Division)"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify the 'California Poison Control System' based on its function and administrative host (UCSF School of Pharmacy) without naming it. It then demands Wide Information Aggregation by requiring the agent to navigate the organization's leadership structure to find two distinct individuals (Executive Director vs. Divisional Medical Director) and extract specific, comparable professional details (Degrees and Academic Titles) for each.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The statewide organization is the **California Poison Control System (CPCS)**, which is mandated to provide immediate, free treatment advice for poison exposures in California and is administered by the UCSF School of Pharmacy.[1][2]\n\nThe **Executive Director** of the California Poison Control System is **Stuart E. Heard, PharmD, FCSHP**.[1] His primary professional doctoral degree is **Doctor of Pharmacy (PharmD)**.[1] At the University of California, San Francisco, he holds the academic title of **Clinical Professor of Pharmacy** in the UCSF School of Pharmacy’s Department of Clinical Pharmacy, in addition to serving as Executive Director of CPCS.[1][3]\n\nThe **Medical Director for the San Francisco Division** of the California Poison Control System is **Ilene B. Anderson, PharmD, DABAT** (often referenced as Ilene Anderson, PharmD).[2][4] Her primary professional doctoral degree is also **Doctor of Pharmacy (PharmD)**.[2][4] At UCSF, she is identified as a **Clinical Professor of Pharmacy** (or equivalent clinical faculty title) associated with the Department of Clinical Pharmacy while serving as Medical Director for the San Francisco Division of CPCS.[2][4]\n\nThese roles place both Dr. Heard and Dr. Anderson within UCSF’s academic and clinical infrastructure while overseeing statewide and regional poison control operations.\n\n## References\n\n[1] California Poison Control System – “About” / leadership pages, UCSF School of Pharmacy.  \n[2] UCSF California Poison Control System – divisional leadership/medical director listings.  \n[3] UCSF School of Pharmacy – faculty profile for Stuart E. Heard, PharmD.  \n[4] UCSF / CPCS profile for Ilene B. Anderson, PharmD, DABAT.",
+      "answer_b": "The statewide organization in California mandated to provide immediate, free expert treatment advice for exposures to poisonous substances is the California Poison Control System (CPCS) [1]. Established in 1997, CPCS operates as a unified statewide service under the administrative management of the University of California, San Francisco (UCSF) School of Pharmacy. It delivers 24/7 emergency consultations via a toll-free hotline (1-800-222-1222), handling over 300,000 calls annually related to poison exposures, including household chemicals, medications, and environmental toxins. CPCS integrates four regional divisions—Sacramento, San Francisco, Fresno/Madera, and San Diego—ensuring comprehensive coverage across the state. This system is funded through state appropriations and collaborates with public health agencies to promote poison prevention education and research [1][2].\n\nThe current Executive Director of the entire CPCS is Stuart E. Heard, whose primary professional doctoral degree is PharmD. At UCSF, he holds the academic rank and title of Clinical Professor in the Department of Clinical Pharmacy [3]. In this role, Heard oversees the system's strategic operations, including policy development, funding management, and integration with academic programs at UCSF. His expertise in toxicology and pharmacy practice has been instrumental in advancing CPCS's mission since his appointment.\n\nThe Medical Director specifically for the San Francisco Division is Craig G. Smollin, with a primary professional doctoral degree of MD. At UCSF, his academic rank and title are Professor of Emergency Medicine in the Department of Emergency Medicine [4]. Smollin leads clinical oversight for the division, focusing on toxicology consultations, resident training, and research in poison management. His work emphasizes evidence-based treatment protocols for complex exposures, contributing to national guidelines on antidote usage and emergency response.\n\nCPCS's structure ensures rapid, expert advice, reducing unnecessary hospital visits and improving outcomes for poison-related incidents statewide [2].\n\n(Word count: 298)\n\n## References\n[1] California Poison Control System official website: https://calpoison.org/about  \n[2] UCSF School of Pharmacy: https://pharmacy.ucsf.edu/california-poison-control-system  \n[3] UCSF Faculty Profile - Stuart E. Heard: https://profiles.ucsf.edu/stuart.heard  \n[4] UCSF Faculty Profile - Craig G. Smollin: https://profiles.ucsf.edu/craig.smollin",
+      "duration_a_seconds": 7.0,
+      "duration_b_seconds": 24.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B correctly identified all entities requested. Agent A failed to correctly identify the Medical Director for the San Francisco Division, incorrectly naming a PharmD toxicologist instead of the actual physician Medical Director (Dr. Craig Smollin). Agent B also adhered to the word count constraint while providing excellent context.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_gpt51se_vs_grok4sea_200"
+}

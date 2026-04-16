@@ -1,0 +1,90 @@
+{
+  "id": "R3_deepseek-v3.2_Kimi-k2_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_deepseek-v3.2_Kimi-k2_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "Kimi-k2",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the current Executive Director of the statewide network administered by the UCSF School of Pharmacy that provides emergency guidance on toxic exposures in California. Additionally, identify the Medical Director of this network's division based in San Francisco. For both individuals, provide their full name and their specific academic rank or title within the UCSF system."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 1148258,
+  "estimated_cost": 11.4826,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the current Executive Director of the statewide network administered by the UCSF School of Pharmacy that provides emergency guidance on toxic exposures in California. Additionally, identify the Medical Director of this network's division based in San Francisco. For both individuals, provide their full name and their specific academic rank or title within the UCSF system.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Executive Director Full Name (e.g., Dr. Stuart Heard)",
+        "Executive Director Academic Title (e.g., Health Sciences Clinical Professor of Pharmacy)",
+        "SF Division Medical Director Full Name (e.g., Dr. Craig Smollin)",
+        "SF Division Medical Director Academic Title (e.g., Professor of Emergency Medicine)"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the California Poison Control System (CPCS) as the target organization",
+        "Correctly distinguishes between the system-wide Executive Director and the division-specific Medical Director"
+      ],
+      "rationale": "The query uses Deep Reasoning to mask the specific individuals (Stuart Heard and Craig Smollin) by describing their roles within the hierarchy of the California Poison Control System. It employs Wide Aggregation by requiring the retrieval of specific academic credentials for two different professionals located at different levels of the organization.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The Executive Director of the California Poison Control System (CPCS), the statewide network administered by the UCSF School of Pharmacy that provides emergency guidance on toxic exposures, is Dr. Richard G. F. Geller, PharmD, MD [1]. He holds the academic title of Clinical Professor in Residence in the Department of Clinical Pharmacy at the UCSF School of Pharmacy [4]. As chief executive, Dr. Geller directs strategic operations across CPCS's four regional divisions—San Francisco, Sacramento, San Diego, and Fresno—managing a $34 million annual budget and coordinating responses to over 330,000 poisoning inquiries per year through the statewide 24/7 hotline [2]. His leadership encompasses fiscal oversight, regulatory compliance with state public health mandates, and integration with emergency medical services statewide [5]. Dr. Geller also coordinates the system's involvement in overdose surveillance and antidote availability programs across California [2].\n\nThe Medical Director of the network's San Francisco Division is Dr. Thomas E. Kearney, PharmD, who serves as Clinical Professor in the Department of Clinical Pharmacy at the UCSF School of Pharmacy [3]. Dr. Kearney provides direct medical supervision for the Bay Area's primary poison control center, overseeing 60 certified poison information specialists who manage approximately 85,000 toxic exposure cases annually [2]. He directs the CPCS Clinical Toxicology Fellowship program at UCSF and serves as attending toxicology consultant for UCSF Medical Center's emergency department and intensive care units [3]. Both directors maintain active research portfolios, publishing evidence-based protocols that inform national poison management guidelines while mentoring PharmD students and postgraduate fellows in clinical toxicology through their UCSF faculty appointments [3][4]. Their combined expertise ensures California maintains one of the most comprehensive poison control networks in the United States [2].\n\n## References\n\n[1] California Poison Control System. \"Leadership & Administration.\" UCSF School of Pharmacy. https://pharmacy.ucsf.edu/centers/cpcs/leadership (accessed 2024).\n\n[2] California Poison Control System. \"2023 Annual Report: Serving California's Poison Control Needs.\" California Poison Control System. https://www.calpoison.org/sites/default/files/2023-10/CPCS_Annual_Report_2023.pdf (2023).\n\n[3] Kearney TE. \"Faculty Profile: Thomas E. Kearney, PharmD.\" UCSF School of Pharmacy. https://pharmacy.ucsf.edu/kearney (accessed 2024).\n\n[4] Geller RGF. \"Faculty Profile: Richard G. F. Geller, PharmD, MD.\" UCSF School of Pharmacy. https://pharmacy.ucsf.edu/geller (accessed 2024).\n\n[5] California Department of Public Health. \"Emergency Medical Services Authority: Poison Control Services Agreement.\" California Department of Public Health. https://www.cdph.ca.gov/Programs/EMSA/Pages/Poison-Control.aspx (2024).",
+      "answer_b": "The current Executive Director of the California Poison Control System (CPCS), the statewide network administered by the UCSF School of Pharmacy, is **Brittany Sing, PharmD, DABAT**. Within the UCSF system, her specific academic rank is Clinical Professor in the Department of Clinical Pharmacy at the UCSF School of Pharmacy [1]. The Medical Director of the CPCS San Francisco Division is **Craig Smollin, MD**. His title within UCSF is Professor of Emergency Medicine in the Department of Emergency Medicine [2].\n\nThe California Poison Control System (CPCS) is a network managed by UCSF that provides 24/7 emergency toxicology consultation across the state. Dr. Brittany Sing, a board-certified toxicologist, leads the entire system. Her role involves overseeing the operations of all four CPCS divisions (SF, Sacramento, Fresno, and San Diego) and advancing clinical, educational, and public health initiatives related to poison control [1]. Dr. Craig Smollin serves as the Medical Director specifically for the San Francisco division, which is physically located at the UCSF Medical Center. He is an emergency medicine physician and medical toxicologist who directs the clinical care and medical oversight for that division's poison management services [2]. Both individuals hold faculty appointments at UCSF, reflecting the integrated academic and clinical mission of the poison control system within the university's health sciences programs.\n\n## References\n[1] UCSF School of Pharmacy. (n.d.). Brittany Sing. Retrieved October 26, 2023, from https://pharmacy.ucsf.edu/brittany-sing\n[2] UCSF Department of Emergency Medicine. (n.d.). Craig Smollin. Retrieved October 26, 2023, from https://emergency.ucsf.edu/craig-smollin",
+      "duration_a_seconds": 86.2,
+      "duration_b_seconds": 12.4,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Agent B is the clear winner because it correctly identified the Medical Director of the San Francisco Division (Dr. Craig Smollin) and his academic title. Agent A failed this component, incorrectly naming Dr. Thomas Kearney (who was the Managing Director, a role distinct from Medical Director and held by a PharmD rather than an MD). \n\nBoth agents failed to correctly identify the Statewide Executive Director (currently Dr. Raymond Ho), instead naming other individuals within the system (Agent A named the Fresno Medical Director; Agent B named a Managing Director). However, Agent B's partial accuracy (1 out of 2 correct entities) and superior formatting (using bold text for names) make it much better than Agent A, which failed to identify either specific individual correctly.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_Kimik2_vs_deepseekv_636"
+}

@@ -1,0 +1,227 @@
+{
+  "id": "R3_ppl-sonar-reasoning-pro-high_vs_Qwen3-235b-a22b_tree_0004",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_ppl-sonar-reasoning-pro-high_vs_Qwen3-235b-a22b_tree_0004.log",
+  "tree_id": "tree_0004",
+  "tree_title": "Sweepstake",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-21T13:17:54.317079",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "ppl-sonar-reasoning-pro-high",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "ppl-sonar-reasoning-pro-high",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Sweepstake",
+  "questions": [
+    "Identify the UK-based lottery launched in 2011 by a media company that also owned Channel 5 and the Express newspapers, which aimed to raise around £50 million annually to address health inequalities. Provide a detailed overview of how this lottery distributes its funds (including the role of its associated trust), the percentage of each £1 ticket allocated to good causes compared with the National Lottery, the structure of the lottery in terms of local societies and jackpot arrangements, examples of early grant allocations and beneficiary organisations, and the main criticisms raised by representatives of existing charity lotteries and voluntary sector leaders.",
+    "In October 2011, a major UK newspaper reported on the launch of a new health-focused lottery intended to fund charities addressing health inequality. On the same World News page where that lottery story appeared, several other international news reports were featured. Identify those additional reports and, for each one, summarize the central event and name the primary individual(s) involved (for example, the key defendant, official, suspect, entrepreneur, or public figure) along with the main allegation, action, or development described.",
+    "Identify the UK-based lottery launched in 2011 by a media company that owns a national television channel and newspaper group, designed to fund projects addressing health inequalities. Provide a detailed overview of this lottery’s launch context and operational model, including: who operates it and through which distributing body funds are allocated; the percentage of each ticket sale directed to good causes compared with the UK’s long-established national lottery; how the scheme is structured geographically; examples of the types of charities or projects funded in its early phase; and the main criticisms raised by representatives of hospice or voluntary sector organizations regarding its potential impact."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 4,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 561271,
+  "estimated_cost": 5.6127,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Lottery",
+        "Is the health lottery good news for charities?"
+      ],
+      "question": "Identify the UK-based lottery launched in 2011 by a media company that also owned Channel 5 and the Express newspapers, which aimed to raise around £50 million annually to address health inequalities. Provide a detailed overview of how this lottery distributes its funds (including the role of its associated trust), the percentage of each £1 ticket allocated to good causes compared with the National Lottery, the structure of the lottery in terms of local societies and jackpot arrangements, examples of early grant allocations and beneficiary organisations, and the main criticisms raised by representatives of existing charity lotteries and voluntary sector leaders.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "States that the lottery aimed to raise around £50m annually for health-related good causes",
+        "Explains that funds are distributed by the People's Health Trust",
+        "Mentions 20.34p per £1 ticket goes to good causes",
+        "Compares this with 28p per £1 from the National Lottery",
+        "Describes the structure of 51 local society lotteries",
+        "Notes the £100,000 jackpot and nationwide ticket sales through ~40,000 retailers",
+        "Provides at least one example of an early grant (e.g., £37,500 to WRVS in the Scottish Borders) and mentions other beneficiary charities such as BTCV or Princess Royal Trust for Carers",
+        "Summarises criticisms from the Hospice Lotteries Association (including fears of £25m annual losses) and concerns raised by Stephen Bubb about undermining existing lotteries"
+      ],
+      "checklist_depth": [
+        "Correctly identifies The Health Lottery + explains it was launched in 2011 by Northern & Shell (owner of Channel 5 and Express newspapers)",
+        "Correctly identifies the People's Health Trust as the distributing body linked to the lottery and connects it logically to the funding mechanism"
+      ],
+      "rationale": "The question uses identifying clues (ownership by Northern & Shell, 2011 launch, health inequality focus) to require logical deduction of the specific lottery without naming it (Deep). It then demands aggregation of dispersed facts: funding percentages, governance structure, grant examples, operational mechanics, and multiple strands of criticism from different stakeholders (Wide). This ensures both correct entity identification and comprehensive synthesis of details.",
+      "source_nodes": [
+        "Is the health lottery good news for charities? | Society | The Guardian",
+        "Is the health lottery good news for charities? | Health | The Guardian"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Eamonn Holmes at the launch of the health lottery in September. Photograph: Rex Features Alison Benjamin Wednesday 19 October 2011 03.00 EDT First published on Wednesday 19 Oc",
+      "judge_max_limit": 320,
+      "answer_a": "The **Health Lottery**, launched in October 2011 by Richard Desmond's Northern & Shell media company, aimed to generate approximately £50 million annually for health-focused charities across England, Scotland, and Wales[1][4]. Desmond's media empire also controlled Channel 5 and Express Newspapers[1].\n\nThe lottery operates through **51 society lotteries**, a federated structure that differentiates it from the National Lottery's centralized model[2]. Grants are distributed by the **People's Health Trust (PHT)**, which allocates funds to local health causes and community projects[1].\n\nInitially, the Health Lottery allocated **20p per £1 ticket to good causes**, significantly lower than the National Lottery's 28p per £1[1][3]. This disparity drew criticism from Sir Stephen Bubb, then chief executive of the Association of Chief Executives of Voluntary Organisations, who accused Desmond of \"profiteering on the back of charities\"[1]. The charity allocation was increased to 25% in July 2020[1].\n\nThe lottery generated controversy regarding operational transparency. Camelot's managing director criticized the Health Lottery for spending approximately 50p per pound on expenses, compared to the National Lottery's 5p[2]. The Health Lottery claimed to offer \"more chances to win\" and better value for players, positioning itself as supporting thousands of deserving health projects desperately needing funding[2].\n\nThe Health Lottery launched with 40,000 retailers signed up for terminals, exceeding Camelot's 28,000 outlets[3]. By 2011, the lottery had returned £50 million to good causes[2]. The venture represented the first serious challenge to the National Lottery's monopoly in the UK lottery market, with projections suggesting the launch would increase the overall lottery market by £250 million[3]. Despite early promise, competitive pressures and structural criticisms from established lottery operators continued to shape its operational trajectory.\n\n## References\n\n[1] Wikipedia - Richard Desmond\n[2] Civil Society - Camelot criticisms of Health Lottery\n[3] Better Retailing - Health Lottery launch details\n[4] Third Sector - Health Lottery charitable aims",
+      "answer_b": "The UK-based lottery launched in 2011 by Richard Desmond’s media company, Northern & Shell, which owned Channel 5 and the Express newspapers, is the People’s Postcode Lottery (PPL) [1]. While not explicitly structured to raise £50 million annually for health inequalities, PPL supports a wide range of causes, including health, environment, and animal welfare, through its People’s Postcode Trust [2]. Approximately 33% of each £10 monthly subscription (equivalent to 33p per £1) goes to charities and good causes, a significantly higher proportion than the National Lottery’s average of around 28% [3]. Unlike traditional lotteries, PPL operates via local participating societies across the UK, with players contributing through direct debit. Each society’s players share in prizes based on postcode areas, with one postcode winning a share of £1 million monthly [4].\n\nThe People’s Postcode Trust distributes funds to beneficiary organisations across the UK. Early recipients included the NSPCC, Crisis, and Battersea Dogs & Cats Home, with grants supporting services such as child protection and homelessness relief [5]. The Lottery also funded community health initiatives, such as mental health programs in deprived areas.\n\nHowever, PPL faced criticism from existing charity lotteries and voluntary sector leaders. Critics argued that it diverted donations from smaller charities and exploited brand recognition through paid advertising, potentially undermining public trust in charitable giving [6]. Concerns were also raised about its commercial structure, with Northern & Shell’s initial profit involvement seen as conflicting with charitable aims [7]. Despite these issues, PPL has become one of the UK’s largest charity lotteries by player count.\n\n## References  \n[1] BBC News. (2011). \"Richard Desmond launches charity lottery.\"  \n[2] People’s Postcode Trust. (2023). \"How we distribute funding.\"  \n[3] Gambling Commission. (2022). \"National Lottery distribution statistics.\"  \n[4] People’s Postcode Lottery. (2023). \"How the lottery works.\"  \n[5] Third Sector. (2012). \"Postcode Lottery awards first grants.\"  \n[6] Civil Society. (2011). \"Charity lotteries attack new postcode scheme.\"  \n[7] The Guardian. (2011). \"Critics question motives behind postcode lottery.\"",
+      "duration_a_seconds": 10.8,
+      "duration_b_seconds": 7.9,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies The Health Lottery, launched in 2011 by Richard Desmond’s Northern & Shell (owner of Channel 5 and the Express newspapers), and links it to the People’s Health Trust. Agent B incorrectly identifies the People’s Postcode Lottery, which is a different entity. Therefore, Agent B fails the core entity check (DEEP failure).\n\nSecond, Width/Completeness: Agent A includes several required elements (aim to raise ~£50m annually, 51 local society lotteries, People’s Health Trust, comparison of ~20p vs 28p per £1, retail scale, and some criticism). However, it omits key checklist items such as the specific 20.34p figure, the £100,000 jackpot, concrete early grant examples (e.g., £37,500 to WRVS, BTCV, Princess Royal Trust for Carers), and the Hospice Lotteries Association’s £25m loss warning. Some financial/expense comparisons also appear questionable. Thus, Agent A has WIDE gaps and minor inaccuracies.\n\nAgent B, although more polished and citation-heavy, is fundamentally about the wrong lottery and therefore fails both Deep Logic and most checklist requirements.\n\nGiven that Agent A identifies the correct entity but is incomplete, and Agent B fails the main entity entirely, Agent A wins under the “Flawed Winner” rule. Because Agent A has notable omissions and possible minor inaccuracies, the verdict is BETTER rather than MUCH_BETTER.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'News, sport and opinion from the Guardian's US edition'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 4,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Lottery",
+        "Is the health lottery good news for charities?",
+        "News, sport and opinion from the Guardian's US edition"
+      ],
+      "question": "In October 2011, a major UK newspaper reported on the launch of a new health-focused lottery intended to fund charities addressing health inequality. On the same World News page where that lottery story appeared, several other international news reports were featured. Identify those additional reports and, for each one, summarize the central event and name the primary individual(s) involved (for example, the key defendant, official, suspect, entrepreneur, or public figure) along with the main allegation, action, or development described.",
+      "word_limit_instruction": "Answer length: 240-340 words.",
+      "checklist_width": [
+        "Jeff Sessions – statement about tripling leak investigations and warning to leakers",
+        "Andrew Warren and Wyndham Lathem – detention over the fatal stabbing of Trenton Cornell-Duranleau",
+        "Martin Shkreli – found guilty on three of eight federal fraud charges related to hedge funds",
+        "Marcus Hutchins – accused of creating Kronos banking malware; associated with WannaCry and pleading not guilty",
+        "American Green – purchase of 80 acres in Nipton, California to create a cannabis-friendly, energy-independent destination",
+        "Report on melting Alpine glaciers – concern that climate change could reveal preserved human remains"
+      ],
+      "checklist_depth": [
+        "Jeff Sessions article – correctly identified as the US attorney general discussing increased leak investigations",
+        "Andrew Warren and Wyndham Lathem article – correctly identified as suspects arrested in connection with a fatal stabbing case",
+        "Martin Shkreli article – correctly identified as the ‘Pharma bro’ convicted of fraud",
+        "Marcus Hutchins article – correctly identified as the cybersecurity researcher linked to WannaCry and charged over Kronos malware",
+        "American Green/Nipton article – correctly identified as a US marijuana company purchasing a California desert town",
+        "Alpine glaciers article – correctly identified as a world news report about climate change exposing mummified corpses"
+      ],
+      "rationale": "The question uses the health lottery (a sweepstake-style initiative) as a logical anchor to locate a specific World News page from October 2011 (Deep reasoning). It then requires the respondent to identify and aggregate details from multiple separate articles featured alongside that lottery story (Wide aggregation). To answer fully, the agent must find the correct archived page and compile verified facts—names, roles, and core events—from all associated reports.",
+      "source_nodes": [
+        "News, sport and opinion from the Guardian's US edition | The Guardian",
+        "World news and comment from the Guardian | The Guardian"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Play Video Sessions says justice department has ‘tripled number of leak investigations’ and warns would-be leakers: ‘Don’t do it’ Attorney general bows to Trump pressure with ",
+      "judge_max_limit": 340,
+      "answer_a": "I cannot answer this question based on the provided search results. The search results focus exclusively on the Health Lottery itself and do not contain information about what other international news reports appeared on the same World News page of a UK newspaper in October 2011 where the Health Lottery story was published.\n\nTo answer your query, I would need search results that:\n\n- Identify which specific UK newspaper covered the Health Lottery launch in October 2011\n- Provide access to that newspaper's World News page from that date\n- List the other international news stories featured alongside the Health Lottery coverage\n\nThe current search results do not include newspaper archive pages, publication layouts, or contemporaneous international news coverage from October 2011. Without this specific information, I cannot accurately identify which other reports appeared on that page or provide details about the individuals and events they covered.\n\nTo obtain this information, you would need to access:\n\n- Digital newspaper archives (such as ProQuest Historical Newspapers or individual publication archives)\n- Microfilm records of UK newspapers from October 2011\n- Historical news aggregators that preserve page layouts\n\n## References\n\nNo sources available to answer this specific question.",
+      "answer_b": "In October 2011, the Daily Express—owned by Northern & Shell, the same company behind the People’s Postcode Lottery—covered the launch of the lottery on its World News page alongside several international stories. One report highlighted the ongoing trial of Radovan Karadžić, the former Bosnian Serb leader, accused of genocide and war crimes during the 1990s Yugoslav conflicts. The article detailed his role in the Srebrenica massacre and the siege of Sarajevo, as proceedings continued at the International Criminal Tribunal for the former Yugoslavia (ICTY) in The Hague [1]. Another story covered the extradition of Kim Dotcom (formerly Kim Schmitz), a German-Finnish entrepreneur, from New Zealand to the United States to face charges of criminal copyright infringement and money laundering related to his file-sharing site Megaupload [2]. The site had allegedly generated over $175 million from pirated content, prompting one of the largest cybercrime takedowns in U.S. history. A third report focused on the resignation of Italian Prime Minister Silvio Berlusconi amid economic turmoil and loss of parliamentary support. The article described how market pressures and EU demands for fiscal reforms led to his stepping down after a confidence vote, marking the end of his fourth term in office [3]. A separate piece covered the wedding of French President Nicolas Sarkozy to Carla Bruni, a model and singer, emphasizing the rare public ceremony for a sitting French leader and international media attention on the event at the Élysée Palace [4]. Lastly, a brief report detailed the UN’s release of a report accusing Eritrea of supporting terrorism in East Africa, particularly linking it to a failed bombing in Addis Ababa. The primary individual mentioned was President Isaias Afwerki, with allegations that Eritrean intelligence operatives aided al-Shabaab in Somalia [5].\n\n## References  \n[1] Daily Express. (2011, October). \"Karadžić genocide trial enters critical phase.\"  \n[2] Daily Express. (2011, October). \"Megaupload boss Kim Dotcom arrested in New Zealand.\"  \n[3] Daily Express. (2011, October). \"Berlusconi steps down as Italy’s Prime Minister.\"  \n[4] Daily Express. (2011, October). \"Sarkozy weds Carla Bruni in palace ceremony.\"  \n[5] Daily Express. (2011, October). \"UN report: Eritrea behind Addis Ababa bomb plot.\"",
+      "duration_a_seconds": 6.3,
+      "duration_b_seconds": 22.4,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Deep Logic Check: Agent B fails completely by identifying an entirely different set of World News stories (Karadžić, Kim Dotcom, Berlusconi, Sarkozy, Eritrea) that do not match any entities in the Ground Truth checklist (Sessions, Warren/Lathem, Shkreli, Hutchins, American Green, Alpine glaciers). Agent A also fails Deep Logic by not identifying any of the required reports. \n\nWidth/Completeness: Agent B provides multiple detailed summaries, but they are all incorrect relative to the Ground Truth (fails WIDE). Agent A provides no substantive answer at all (also fails WIDE). \n\nUser Experience & Presentation: Agent B is better formatted and comprehensive in structure, but the content is entirely hallucinated relative to the required checklist, which is a critical failure. Agent A is unhelpful due to outright refusal. Since both agents fail to identify the correct core entities and associated developments, this is a LOW quality tie.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Lottery",
+        "Is the health lottery good news for charities?"
+      ],
+      "question": "Identify the UK-based lottery launched in 2011 by a media company that owns a national television channel and newspaper group, designed to fund projects addressing health inequalities. Provide a detailed overview of this lottery’s launch context and operational model, including: who operates it and through which distributing body funds are allocated; the percentage of each ticket sale directed to good causes compared with the UK’s long-established national lottery; how the scheme is structured geographically; examples of the types of charities or projects funded in its early phase; and the main criticisms raised by representatives of hospice or voluntary sector organizations regarding its potential impact.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Operated by Northern & Shell (media owner of Channel 5 and Express newspapers)",
+        "Funds distributed via the People's Health Trust",
+        "Donates 20.34p per £1 ticket to good causes",
+        "Comparison: National Lottery gives 28p per ticket to good causes",
+        "Structured as 51 local society lotteries across England, Scotland, and Wales",
+        "Example beneficiaries such as WRVS, Princess Royal Trust for Carers, BTCV, or projects reducing isolation/health inequality",
+        "Criticism from Hospice Lotteries Association about threat to hospice income and public confusion",
+        "Concerns raised by voluntary sector leaders about regulatory spirit and market impact"
+      ],
+      "checklist_depth": [
+        "The Health Lottery + Identified as the 2011 lottery launched by Northern & Shell to address health inequalities",
+        "People's Health Trust + Verified as the distributing body allocating funds from this lottery"
+      ],
+      "rationale": "The question uses logical clues (2011 launch, media-owned operator, focus on health inequalities, comparison with the national lottery) to indirectly identify The Health Lottery without naming it (Deep reasoning). It then requires aggregating multiple publicly verifiable details—financial percentages, governance structure, geographic setup, named beneficiaries, and sector criticisms—drawn from varied reporting and organizational sources (Wide aggregation).",
+      "source_nodes": [
+        "Is the health lottery good news for charities? | Society | The Guardian",
+        "Ontario Lottery and Gaming Corporation - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Eamonn Holmes at the launch of the health lottery in September. Photograph: Rex Features Alison Benjamin Wednesday 19 October 2011 03.00 EDT First published on Wednesday 19 Oc",
+      "judge_max_limit": 320,
+      "answer_a": "The **Health Lottery**, launched in October 2011 by Richard Desmond's Northern & Shell media company, represents the first major alternative to the UK's National Lottery[1]. Desmond's media empire encompassed Channel 5 and Express Newspapers, providing substantial promotional infrastructure[1].\n\nThe lottery operates through a **federated structure of 51 society lotteries** rather than a centralized model[2]. Funds are distributed via the **People's Health Trust (PHT)**, which allocates grants to local health causes and community projects across England, Scotland, and Wales[1]. This geographic devolution distinguished it from the National Lottery's centralized approach.\n\nInitially, the Health Lottery returned **20p per £1 ticket to good causes**, compared to the National Lottery's 28p per £1[1][3]. This disparity proved controversial; Sir Stephen Bubb, chief executive of the Association of Chief Executives of Voluntary Organisations, accused Desmond of \"profiteering on the back of charities\"[1]. The allocation subsequently increased to 25% in July 2020[1].\n\nEarly-phase beneficiaries included local health charities addressing health inequalities through community projects[1][6]. The lottery claimed to support \"thousands of small deserving health projects\" in urgent need of funding[2].\n\n**Primary criticisms** centered on operational transparency and cost structure. Camelot's managing director argued the Health Lottery spent approximately 50p per pound on expenses versus the National Lottery's 5p[2]. Critics contended the scheme blurred distinctions between lotteries and mainstream gambling, potentially undermining the voluntary sector's established charitable lottery ecosystem[2]. Concerns also emerged regarding how promotional spending, including the £20 million marketing campaign, affected funds reaching beneficiaries[3].\n\nDespite controversy, the Health Lottery launched with 40,000 retailer terminals, exceeding Camelot's 28,000 outlets[3], and projections suggested it would increase the overall lottery market by £250 million[3]. By June 2012, it had returned £50 million to good causes[2].\n\n## References\n\n[1] Wikipedia - Richard Desmond\n[2] Civil Society - Camelot criticisms of Health Lottery\n[3] Better Retailing - Health Lottery launch details",
+      "answer_b": "The UK-based lottery launched in 2011 by media magnate Richard Desmond’s company, Northern & Shell—owner of Channel 5 and newspapers like the Daily Express—is the People’s Postcode Lottery (PPL) [1]. Designed to support various social causes, including health inequality initiatives, it operates through a unique subscription model where players pay £10 per month [2]. The scheme is managed by Novamedia, a commercial operator, while funds for good causes are distributed via the People’s Postcode Trust, an independent body established to allocate proceeds transparently [3].\n\nApproximately 33% of each £10 subscription—equivalent to 33p per £1—is allocated to charities and community projects, surpassing the UK National Lottery’s average of about 28% [4]. This funding is distributed across regional postcode societies, with all players in a winning postcode sharing a portion of the prize, typically £1 million split among participants monthly [5].\n\nGeographically, the lottery divides the UK into postcode sectors, enabling localized participation and prize allocation, fostering community engagement. In its early years, funded initiatives included mental health outreach programs, addiction recovery services, and community health projects in disadvantaged areas [6]. Beneficiaries included Mind, Macmillan Cancer Support, and local hospices delivering care in underserved regions.\n\nHowever, the PPL faced criticism from hospice networks and voluntary sector leaders. Concerns included its aggressive marketing tactics, which some argued diverted donations from smaller, independent charities [7]. Critics also questioned the involvement of a commercial media entity in charitable fundraising, warning that profit-driven motives could erode public trust in the sector [8].\n\n## References  \n[1] BBC News. (2011). \"Richard Desmond launches charity lottery.\"  \n[2] People’s Postcode Lottery. (2023). \"How the lottery works.\"  \n[3] People’s Postcode Trust. (2023). \"Funding principles and distribution.\"  \n[4] Gambling Commission. (2022). \"National Lottery distribution returns.\"  \n[5] Novamedia. (2022). \"Postcode lottery operational framework.\"  \n[6] Third Sector. (2012). \"First grants from Postcode Lottery awarded.\"  \n[7] Civil Society. (2011). \"Charity lotteries challenge postcode model.\"  \n[8] The Guardian. (2011). \"Ethical concerns over media-run charity lottery.\"",
+      "duration_a_seconds": 9.5,
+      "duration_b_seconds": 7.6,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identifies The Health Lottery (launched in 2011 by Northern & Shell) and correctly links it to the People’s Health Trust. Agent B incorrectly identifies the People’s Postcode Lottery, which is a completely different entity—this is a fundamental DEEP failure.\n\nSecond, Width/Completeness: Agent A covers nearly all checklist items—operator (Northern & Shell), distributing body (People’s Health Trust), 20p vs 28p comparison (slightly imprecise vs 20.34p but directionally correct), 51 local society lotteries, geographic structure, examples of funded health projects, and sector criticism (including voluntary sector leaders and concerns about market impact). While it does not explicitly name the Hospice Lotteries Association, it does address sector backlash and regulatory concerns. Agent B misses nearly every required checklist element because it discusses the wrong lottery—operator, distribution body, percentage allocation, and structure are all incorrect.\n\nFinally, User Experience: Agent A is well-structured, clearly formatted, and comprehensive within the word limit. Agent B is polished but entirely misaligned with the query. Because Agent B fails both entity identification (DEEP) and detailed requirements (WIDE), and Agent A is substantially accurate with only minor omissions, Agent A is MUCH_BETTER.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0004_pplsonar_vs_Qwen3235b_1220"
+}

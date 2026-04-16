@@ -1,0 +1,159 @@
+{
+  "id": "R1_ppl-sonar-pro-high_vs_gemini-3.1-pro-grounding_tree_0012",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_ppl-sonar-pro-high_vs_gemini-3.1-pro-grounding_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "epguides.com * Main Menu Page",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "gemini-3.1-pro-grounding",
+  "winner": "gemini-3.1-pro-grounding",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "epguides.com * Main Menu Page",
+  "questions": [
+    "A long-running online television episode catalog that has operated since the mid-1990s features a \"New Episodes Today\" section organized by country abbreviations: US, UK, CA, AU, NZ, JP, and KR. Identify the full country names represented by these abbreviations. For each country, name one major public broadcasting organization and state the year it was founded.",
+    "A long-running online television reference project, active since the mid-1990s, provides episode title-and-airdate listings for over 12,000 series. However, it relies on several external platforms and supplementary features to expand beyond its minimalist lists. Identify all third-party websites explicitly used for expanded episode information and user-submitted corrections, and explain the distinct role each plays. Additionally, describe the site’s built-in feature for accessing full-episode summaries in a consolidated format, and outline how it helps users find streaming availability and region-specific broadcast schedules. Your answer should clearly differentiate between external resources and the site’s own internal tools and navigation features."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 166080,
+  "estimated_cost": 1.6608,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "A long-running online television episode catalog that has operated since the mid-1990s features a \"New Episodes Today\" section organized by country abbreviations: US, UK, CA, AU, NZ, JP, and KR. Identify the full country names represented by these abbreviations. For each country, name one major public broadcasting organization and state the year it was founded.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "United States – Name of a major public broadcaster (e.g., PBS) and its founding year (1969)",
+        "United Kingdom – Name of a major public broadcaster (e.g., BBC) and its founding year (1922)",
+        "Canada – Name of a major public broadcaster (e.g., CBC/Radio-Canada) and its founding year (1936)",
+        "Australia – Name of a major public broadcaster (e.g., ABC) and its founding year (1932)",
+        "New Zealand – Name of a major public broadcaster (e.g., TVNZ or RNZ) and its founding year (e.g., RNZ 1925 as NZBS predecessor / TVNZ 1980)",
+        "Japan – Name of a major public broadcaster (e.g., NHK) and its founding year (1926)",
+        "South Korea – Name of a major public broadcaster (e.g., KBS) and its founding year (1927 as JODK precursor / 1961 as KBS)"
+      ],
+      "checklist_depth": [
+        "United States – Correct expansion of US from the specified country list in the TV schedule section",
+        "United Kingdom – Correct expansion of UK from the specified country list",
+        "Canada – Correct expansion of CA from the specified country list",
+        "Australia – Correct expansion of AU from the specified country list",
+        "New Zealand – Correct expansion of NZ from the specified country list",
+        "Japan – Correct expansion of JP from the specified country list",
+        "South Korea – Correct expansion of KR from the specified country list"
+      ],
+      "rationale": "The question uses deep reasoning by requiring identification of countries based on abbreviated labels found within a television episode catalog’s country-organized schedule section, without naming the source. It then applies wide aggregation by requiring separate factual research (public broadcaster and founding year) for each of the seven countries, ensuring the respondent must compile and verify information across multiple distinct entities rather than relying on a single source.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 300,
+      "answer_a": "**US (United States), UK (United Kingdom), CA (Canada), AU (Australia), NZ (New Zealand), JP (Japan), KR (Korea).**\n\nThese abbreviations in the \"New Episodes Today\" section of the long-running online TV episode catalog—likely epguides.com, operational since 1995—represent standard ISO country codes for English-language and major Asian broadcasters[1][2]. For each:\n\n- **United States (US)**: Public Broadcasting Service (**PBS**), founded in 1970 as a non-commercial network distributing educational programming nationwide[3].\n- **United Kingdom (UK)**: British Broadcasting Corporation (**BBC**), founded in 1922 as the world's first national public service broadcaster, offering TV via BBC One and Two[4].\n- **Canada (CA)**: Canadian Broadcasting Corporation (**CBC**), founded in 1936 (radio origins), with television starting in 1952; it provides English and French public service content[5].\n- **Australia (AU)**: Australian Broadcasting Corporation (**ABC**), founded in 1932 (radio), with TV from 1956; it's the independent national public broadcaster.\n- **New Zealand (NZ)**: Television New Zealand (**TVNZ**), founded in 1960 as the state-owned public service broadcaster, though partially privatized since 2011.\n- **Japan (JP)**: Nippon Hōsō Kyōkai (**NHK**), founded in 1926 (radio), with TV broadcasting from 1953; it's Japan's public broadcaster funded by fees.\n- **Korea (KR)**: Korean Broadcasting System (**KBS**), founded in 1927 (radio), with TV from 1961; it's South Korea's public broadcaster.\n\nThis setup tracks new episodes from key public networks, reflecting the site's focus on global TV schedules since the mid-1990s[1].\n\n(Word count: 248)\n\n## References\n[1] epguides.com/about.html  \n[2] en.wikipedia.org/wiki/List_of_ISO_3166_country_codes  \n[3] pbs.org/about/  \n[4] bbc.co.uk/historyofthebbc  \n[5] cbc.ca/aboutcbc  \n abc.net.au/corporate/  \n tvnz.co.nz/about  \n nhk.or.jp/about/  \n kbs.co.kr/english/",
+      "answer_b": "The abbreviations listed on the long-running television episode catalog (such as epguides.com) represent the following countries, alongside one of their major public broadcasting organizations and its founding year:\n\n**US - United States:** \nA major public broadcaster is the Public Broadcasting Service (PBS). It was founded in 1969 to provide educational and public television programming across the country, succeeding the National Educational Television network [1].\n\n**UK - United Kingdom:** \nThe British Broadcasting Corporation (BBC) is the world's oldest national broadcaster. It was founded in 1922 as a private company and later established by a Royal Charter in 1927 to operate as a public corporation [2]. \n\n**CA - Canada:** \nThe Canadian Broadcasting Corporation (CBC/Radio-Canada) serves as the national public radio and television broadcaster. It was officially founded in 1936, superseding the earlier Canadian Radio Broadcasting Commission [3].\n\n**AU - Australia:** \nThe Australian Broadcasting Corporation (ABC) is the primary national public broadcaster. Originating from earlier radio operations, it was officially founded in 1932 as the Australian Broadcasting Commission before transitioning to a Corporation in 1983 [4].\n\n**NZ - New Zealand:** \nTelevision New Zealand (TVNZ) is a major state-owned, commercially funded public broadcasting network. It was formally established in 1980 following the merger of Television One and South Pacific Television [5]. \n\n**JP - Japan:** \nThe Japan Broadcasting Corporation, known globally as NHK (Nippon Hoso Kyokai), is Japan's national public broadcasting organization. It was founded in 1926 under the guidance of the Ministry of Communications [6].\n\n**KR - South Korea:** \nThe Korean Broadcasting System (KBS) is the national public broadcaster of South Korea. Its origins trace back to the establishment of the Gyeongseong Broadcasting Corporation in 1927, evolving over the decades into its current modern public media structure [7]. \n\n## References \n[1] PBS. (n.d.). \"About PBS - History.\" Public Broadcasting Service. https://www.pbs.org/about/about-pbs/history/\n[2] BBC. (n.d.). \"BBC History - The BBC takes to the airwaves.\" British Broadcasting Corporation. https://www.bbc.com/historyofthebbc/research/general/early-years/\n[3] The Canadian Encyclopedia. (2006). \"Canadian Broadcasting Corporation (CBC/Radio-Canada).\" https://www.thecanadianencyclopedia.ca/en/article/canadian-broadcasting-corporation\n[4] National Museum of Australia. (n.d.). \"Australian Broadcasting Commission.\" https://www.nma.gov.au/defining-moments/resources/australian-broadcasting-commission\n[5] NZ On Screen. (n.d.). \"Television New Zealand - History.\" https://www.nzonscreen.com/\n[6] NHK. (n.d.). \"Profile - History.\" Japan Broadcasting Corporation. https://www.nhk.or.jp/corporateinfo/english/profile/index.html\n[7] KBS. (n.d.). \"About KBS - History.\" Korean Broadcasting System. https://english.kbs.co.kr/about/History.html",
+      "duration_a_seconds": 8.2,
+      "duration_b_seconds": 24.4,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly expand the country abbreviations (US, UK, CA, AU, NZ, JP, KR), so both pass the DEEP logic check. However, Agent A contains factual inaccuracies in key sub-points: PBS is listed as founded in 1970 (correct year is 1969), and TVNZ is listed as founded in 1960 (it was formally established in 1980). These are WIDTH/completeness factual errors. Agent B provides correct founding years for all listed broadcasters and gives slightly richer historical context (e.g., BBC charter details, ABC transition in 1983, PBS succession from NET). In formatting, both are clear and well-structured, but Agent B is more precise and historically accurate overall. Therefore, Agent B provides the better user experience due to superior factual accuracy and completeness.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "A long-running online television reference project, active since the mid-1990s, provides episode title-and-airdate listings for over 12,000 series. However, it relies on several external platforms and supplementary features to expand beyond its minimalist lists. Identify all third-party websites explicitly used for expanded episode information and user-submitted corrections, and explain the distinct role each plays. Additionally, describe the site’s built-in feature for accessing full-episode summaries in a consolidated format, and outline how it helps users find streaming availability and region-specific broadcast schedules. Your answer should clearly differentiate between external resources and the site’s own internal tools and navigation features.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "TVmaze – provides detailed episode pages including guest stars and plot summaries",
+        "TVmaze – accepts corrections and updates via its editors",
+        "TV.com – accepts corrections and updates via its editors",
+        "Printable Guide feature – generates a simple guide with summaries for all episodes of a show",
+        "Streaming video links – located at the bottom of each show’s page",
+        "Schedule Grids – includes U.S. schedule grid and international grids (US, UK, CA, AU, NZ, JP, KR)"
+      ],
+      "checklist_depth": [
+        "TVmaze – correctly identified as the primary external site linked for expanded episode details and editorial updates",
+        "TV.com – correctly identified as an additional external site where corrections can be submitted",
+        "Printable Guide – correctly identified as an internal feature for consolidated episode summaries",
+        "Streaming links and Schedule Grids – correctly identified as internal navigation tools for availability and regional broadcast information"
+      ],
+      "rationale": "The question requires deep reasoning to infer that the minimalist episode-listing site depends on specific third-party databases for expanded content and corrections, without naming them directly. It also requires wide aggregation by compelling the respondent to gather and distinguish multiple scattered elements: two external databases, editorial correction pathways, a printable summary feature, streaming links, and multiple regional schedule grids. This ensures both entity identification (depth) and comprehensive feature comparison (width).",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 330,
+      "answer_a": "# Answer\n\nThe long-running online television reference project, most likely TheTVDB (founded 1998) or similar episode databases, integrates multiple external platforms and internal features to provide comprehensive episode information.[1][2]\n\n**External Third-Party Platforms:**\n\n**IMDb** serves as a primary source for expanded episode summaries, ratings, and user reviews, allowing viewers to access detailed plot descriptions beyond basic title-and-airdate listings.[2][3] **TheTVDB's** community submissions enable user-contributed episode information, corrections, and translations, creating a crowdsourced database that supplements official data.[1]\n\n**Trakt.tv** functions as an external tracking and discovery tool, helping users maintain personal watchlists while providing streaming availability information across multiple platforms.[2] **Rotten Tomatoes** offers critical ratings and audience scores for individual episodes, helping users identify highly-rated content.[3]\n\n**Wikipedia** provides supplementary episode guides and series overviews, particularly for well-established shows, offering cultural context and production details.[2]\n\n**Internal Site Features:**\n\nThe site's built-in **Episode Guides** feature consolidates full episode summaries, air dates, and production details in structured formats, allowing users to browse complete series information within a single interface.[1] **Search and Filter Functions** enable viewers to locate episodes by title, air date, or season, streamlining navigation across the 12,000+ series catalog.[2]\n\n**Streaming Links** integrated directly within episode pages direct users to available platforms offering that episode in their region, addressing fragmented streaming landscapes.[1][3] **Region-Specific Broadcast Schedule** tools display original air dates, international broadcast information, and regional availability, helping users understand when and where episodes aired or currently stream.[2]\n\n**Watchlist Integration** allows users to mark episodes as watched, upcoming, or to-watch, synchronizing across the platform and notifying them of new releases.[1] These combined internal and external resources transform the minimalist episode database into a comprehensive entertainment reference platform.\n\n## References\n\n[1] TheTVDB - Episode Information and Community Features\n[2] Trakt.tv - Streaming Integration and Episode Tracking\n[3] IMDb and Rotten Tomatoes - Episode Ratings and Summaries",
+      "answer_b": "Epguides combines external partnerships with specialized internal navigation to manage its catalog of over 12,000 television series [1]. \n\n**External Platforms:**\nThe primary third-party website epguides explicitly relies on for expanded episode metadata and user-submitted corrections is **TVmaze** [2]. Because epguides maintains a minimalist, text-heavy layout, it redirects visitors directly to TVmaze's crowd-sourced database for robust cast lists, crew information, and extended multimedia [2]. Crucially, epguides does not process database errors locally. Every list features a prominent disclaimer explicitly instructing users that all database corrections regarding air dates, spellings, summaries, or general omissions must be submitted strictly through TVmaze [3].\n\n**Built-In Site Features:**\nTo explore content internally, epguides provides a built-in **\"Show Episode Summaries\"** toggle on its show pages [2]. This internal scripted tool allows users to instantly expand and read full-episode synopses directly beneath the basic airdates. The immediate result is a consolidated, single-page format that allows fans to scroll through seasons of summaries without navigating away to external wikis or loading individual episode pages [1].\n\n**Streaming and Schedule Navigation:**\nTo help users track shows across a fragmented media ecosystem, epguides relies on specialized internal directories. For **streaming availability**, the site features dedicated index navigation menus that categorize shows by major original streaming platforms—such as Netflix, Amazon Prime, Hulu, and Apple TV+—allowing users to quickly locate platform-exclusive series [1]. For **region-specific broadcast schedules**, epguides pairs its localized \"New Episodes Today\" hubs (separated by country abbreviations) with built-in \"Primetime Grids\" [1] [2]. These visual scheduling grids map out weekly network television airings by day and time slot, providing users with a clear, standalone regional viewing schedule without needing to consult third-party platforms [1].\n\n## References\n[1] Epguides. (n.d.). \"Epguides Main Menu and Primetime Grids.\" Retrieved from https://epguides.com/menu/\n[2] Epguides. (n.d.). \"Television Shows by Title.\" Retrieved from https://epguides.com/\n[3] TVmaze. (n.d.). \"TVmaze Database Features and Contributions.\" Retrieved from https://www.tvmaze.com/",
+      "duration_a_seconds": 11.8,
+      "duration_b_seconds": 46.2,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Deep Logic: Agent A fails completely by misidentifying the site (discusses TheTVDB, IMDb, Trakt, etc.), while Agent B correctly identifies epguides and its reliance on TVmaze. ✅ B passes; ❌ A fails.\n\nWidth/Completeness: Agent A hallucinates multiple external services not mentioned in the checklist and omits all required items (TVmaze corrections role, TV.com, Printable Guide, streaming links location, schedule grids). Agent B correctly explains TVmaze’s role for expanded details and corrections, and distinguishes internal tools (summaries, grids, streaming navigation). However, B misses TV.com as an additional correction site and misidentifies the specific “Printable Guide” feature, instead describing a summaries toggle. It also generalizes streaming access rather than noting the bottom-of-page streaming links, and does not fully enumerate the international grids. Thus B is partially incomplete but directionally correct.\n\nPresentation & UX: Agent B is clearly structured, uses headers, separates external vs internal tools, and directly answers the query in a scannable way. Agent A is well-formatted but fundamentally incorrect, which outweighs formatting.\n\nConclusion: Agent B is substantially more accurate and useful, but because it contains notable omissions and minor inaccuracies, the verdict is capped at B_BETTER rather than MUCH_BETTER.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_pplsonar_vs_gemini31_1024"
+}

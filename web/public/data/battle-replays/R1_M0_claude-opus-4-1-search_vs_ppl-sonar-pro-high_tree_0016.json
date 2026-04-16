@@ -1,0 +1,91 @@
+{
+  "id": "R1_M0_claude-opus-4-1-search_vs_ppl-sonar-pro-high_tree_0016",
+  "source_group": "round1",
+  "source_log": "round1/R1_M0_claude-opus-4-1-search_vs_ppl-sonar-pro-high_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "claude-opus-4-1-search",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "According to the 2024 wage data in the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook, identify the specific computer-related occupations that have a higher median annual wage than 'Software Developers, Quality Assurance Analysts, and Testers'. For each of these higher-earning occupations, provide the 2024 median annual pay and the typical entry-level education required."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 204307,
+  "estimated_cost": 2.0431,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "According to the 2024 wage data in the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook, identify the specific computer-related occupations that have a higher median annual wage than 'Software Developers, Quality Assurance Analysts, and Testers'. For each of these higher-earning occupations, provide the 2024 median annual pay and the typical entry-level education required.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Computer and Information Systems Managers: 2024 Median Pay ($171,200)",
+        "Computer and Information Systems Managers: Entry-Level Education (Bachelor's degree)",
+        "Computer and Information Research Scientists: 2024 Median Pay ($140,910)",
+        "Computer and Information Research Scientists: Entry-Level Education (Master's degree)"
+      ],
+      "checklist_depth": [
+        "Identify Computer and Information Systems Managers (Pay > $131,450)",
+        "Identify Computer and Information Research Scientists (Pay > $131,450)",
+        "Exclude Computer Network Architects (Pay $130,390 < $131,450)"
+      ],
+      "rationale": "The question uses Deep Logic by anchoring the search to a specific entity ('Software Developers...') and requiring a comparative filter (finding occupations with higher wages) rather than asking for a simple list. It employs Wide Information Aggregation by requiring the agent to scan across different occupational profiles (Management vs. Research/IT) to find the two specific roles that meet the criteria and extract distinct details (Pay and Education) for each.",
+      "source_nodes": [
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Technology Occupations :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Summary Please enable javascript to play this video. Video transcript available at https://www.youtube.com/watch?v=WQmsKH7mIqo. Quick Facts: Computer and Information Systems M",
+      "judge_max_limit": 300,
+      "answer_a": "According to the 2024 U.S. Bureau of Labor Statistics' Occupational Outlook Handbook, several computer-related occupations earn higher median annual wages than Software Developers, Quality Assurance Analysts, and Testers ($130,160)[1].\n\n**Computer and Information Research Scientists** lead with a median annual wage of $145,080, requiring a master's degree for entry-level positions[1]. These professionals invent and design new computing technologies and find innovative uses for existing technology.\n\n**Computer Network Architects** earn $129,840 annually, though this is slightly below the software developer category. However, **Information Security Analysts** command $120,360 per year with a bachelor's degree requirement[1].\n\n**Database Architects** earn $134,700 annually and typically need a bachelor's degree[2]. They design and build data systems for organizations, ensuring efficient data storage and retrieval.\n\n**Computer and Information Systems Managers** significantly exceed the baseline with $169,510 median annual pay, requiring a bachelor's degree and typically 5+ years of related work experience[1][2].\n\n**Data Scientists** earn $108,020 annually with a bachelor's degree requirement, falling below the software developer threshold[1]. Similarly, **Web Developers** at $84,960 and **Computer Support Specialists** at $60,810 earn less[1].\n\nThe highest-earning positions consistently require advanced education or substantial experience. Computer and Information Systems Managers and Computer and Information Research Scientists represent the top tier of computer occupation earnings, reflecting their strategic and innovative roles in organizations. Database Architects also surpass the software developer benchmark, highlighting the value of specialized data management expertise in today's data-driven economy.\n\n## References\n[1] U.S. Bureau of Labor Statistics - Occupational Outlook Handbook, Computer and Information Technology Occupations (2024)\n[2] U.S. Bureau of Labor Statistics - Occupational Employment and Wage Statistics, May 2024",
+      "answer_b": "According to the 2024 Occupational Outlook Handbook table for **Computer and Information Technology Occupations**, the median annual wage for **Software Developers, Quality Assurance Analysts, and Testers** is **$131,450** with **bachelor’s degree** as typical entry-level education.[1] Only the following computer‑related OOH occupations have a **higher** median annual wage:\n\n- **Computer and Information Systems Managers** – **$171,200**; **bachelor’s degree** is typical entry-level education (plus about 5 years or more related work experience).[5]  \n- **Computer and Information Research Scientists** – **$140,910**; **master’s degree** is typical entry-level education.[1][6]  \n\nOther computer occupations listed in the same 2024 OOH table—including **Computer Network Architects ($130,390)**, **Information Security Analysts ($124,910)**, **Database Administrators and Architects ($123,100)**, **Computer Systems Analysts ($103,790)**, **Network and Computer Systems Administrators ($96,800)**, **Web Developers and Digital Designers ($95,380)**, **Computer Programmers ($98,670)**, and **Computer Support Specialists ($61,550)**—all have **lower** median annual wages than Software Developers, Quality Assurance Analysts, and Testers in 2024.[1][2][3]  \n\nThus, based strictly on the 2024 OOH wage table, **only**:  \n- **Computer and Information Systems Managers** – $171,200 – bachelor’s degree.  \n- **Computer and Information Research Scientists** – $140,910 – master’s degree.  \nearn more, on a median basis, than **Software Developers, Quality Assurance Analysts, and Testers** in computer-related OOH occupations.\n\n## References\n\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – Computer and Information Technology Occupations  \n[2] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – Computer Systems Analysts  \n[3] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – Computer Support Specialists  \n[5] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – Computer and Information Systems Managers  \n[6] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – Computer and Information Research Scientists",
+      "duration_a_seconds": 15.9,
+      "duration_b_seconds": 5.2,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B followed the prompt's constraint to use '2024 wage data' (which corresponds to the May 2023 statistics published in the 2024 OOH). Its numbers perfectly match the provided Ground Truth Checklist (e.g., Managers at $171,200). Agent A used outdated data from the previous year (Managers at $169,510, Developers at $130,160), leading to incorrect conclusions. Agent B also correctly interpreted the OOH occupational groupings, whereas Agent A cherry-picked a sub-occupation (Database Architects) that is normally grouped with Administrators in the OOH, creating a misleading comparison against the handbook's structure.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_claudeopu_vs_pplsonar_81"
+}

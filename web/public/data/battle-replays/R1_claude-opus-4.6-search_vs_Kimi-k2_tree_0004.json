@@ -1,0 +1,163 @@
+{
+  "id": "R1_claude-opus-4.6-search_vs_Kimi-k2_tree_0004",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_claude-opus-4.6-search_vs_Kimi-k2_tree_0004.log",
+  "tree_id": "tree_0004",
+  "tree_title": "Sweepstake",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-21T13:17:54.317079",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "claude-opus-4.6-search",
+  "model_b": "Kimi-k2",
+  "winner": "Kimi-k2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Sweepstake",
+  "questions": [
+    "In a hypothetical digital-age “sweepstake” where volunteers race to rescue endangered websites before they disappear, identify the volunteer collective formed in 2009 that is dedicated to preserving rapidly dying or deleted online content for historical purposes. Then, name and describe the IRC-based automated crawling tool developed by this collective to archive smaller websites. In your answer, explain the organization’s founding purpose, structure, and collaboration model, and detail how the tool functions, how users interact with it, and where its source code and monitoring interface can be found.",
+    "Identify three government-run national sweepstakes that were established before 1950 and were explicitly created to raise funds for public or charitable purposes. For each sweepstake, provide: (1) its year of establishment, (2) the original public or charitable objective it was intended to support, and (3) one distinctive feature of its prize structure or drawing format that differentiates it from typical modern lotteries. Conclude by briefly comparing how their public-benefit missions influenced their historical development."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 19634,
+  "estimated_cost": 0.1963,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "Canada Post chief seeks to boost profit"
+      ],
+      "question": "In a hypothetical digital-age “sweepstake” where volunteers race to rescue endangered websites before they disappear, identify the volunteer collective formed in 2009 that is dedicated to preserving rapidly dying or deleted online content for historical purposes. Then, name and describe the IRC-based automated crawling tool developed by this collective to archive smaller websites. In your answer, explain the organization’s founding purpose, structure, and collaboration model, and detail how the tool functions, how users interact with it, and where its source code and monitoring interface can be found.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Organization founded in 2009",
+        "Organization is a volunteer collective dedicated to preserving dying or deleted websites",
+        "Mission includes safeguarding digital history and enabling continued debate/conversation",
+        "Collaboration with the Internet Archive for storage and Wayback Machine access",
+        "Name of the IRC-based crawling tool",
+        "Tool automates archiving of smaller websites into WARC files",
+        "Interaction occurs via IRC channel on EFNet with operator permissions required",
+        "Dashboard/monitoring interface location",
+        "Public source code repository location"
+      ],
+      "checklist_depth": [
+        "Archive Team + Identified as the 2009-founded volunteer collective focused on rescuing endangered websites",
+        "ArchiveBot + Identified as the IRC-based automated crawler developed by Archive Team for archiving smaller sites"
+      ],
+      "rationale": "The question uses the metaphor of a \"sweepstake\" (a race to rescue sites) to mask the identity of Archive Team, requiring logical inference about a 2009-founded volunteer digital preservation collective (Deep). It then requires aggregation of multiple operational and structural details about both Archive Team and ArchiveBot—mission, structure, partnerships, technical workflow, interface, and code repository—ensuring broad information retrieval across both entities (Wide).",
+      "source_nodes": [
+        "Canada Post chief seeks to boost profit | CBC News",
+        "Wayback Machine"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: Organization: Archive Team Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective",
+      "judge_max_limit": 320,
+      "answer_a": "The volunteer collective is **Archive Team**, founded in 2009 by Jason Scott, a digital historian and archivist also affiliated with the Internet Archive. Archive Team was established with the explicit purpose of rescuing endangered digital content—websites, services, and online communities—that face imminent deletion or shutdown. The group emerged in response to the frequent loss of culturally and historically significant web content when companies discontinued services without adequate preservation efforts [1][2].\n\nArchive Team operates as a loosely organized, decentralized collective of volunteers. There is no formal membership structure; anyone can participate. Volunteers coordinate primarily through IRC channels, a wiki, and various online forums. The collaboration model is open and community-driven: when a website or service announces closure, Archive Team mobilizes volunteers to rapidly crawl and download as much content as possible before the deadline. Archived data is typically uploaded to the Internet Archive's Wayback Machine for long-term public access [1][3].\n\nThe IRC-based automated crawling tool developed by Archive Team is called **Warrior** (also known as **ArchiveTeam Warrior**). However, the tool most directly described as IRC-based for archiving smaller websites is **Grab-Site** and the broader pipeline known as **ArchiveBot**. **ArchiveBot** is an IRC-based tool that allows users to issue archiving commands directly within IRC channels. A user simply types a command with a URL, and ArchiveBot automatically begins crawling and archiving the specified website using `wget`-based infrastructure under the hood [4][5].\n\nArchiveBot's source code is publicly available on GitHub at the Archive Team's repository (github.com/ArchiveTeam/ArchiveBot). Its real-time monitoring dashboard, which displays active crawling jobs, progress, and statistics, can be accessed at **archivebot.com**. This transparency allows volunteers to track operations and coordinate rescue efforts efficiently [4][5].\n\n## References\n1. Archive Team Wiki – \"About Archive Team.\" https://wiki.archiveteam.org/\n2. Jason Scott's blog and Archive Team founding history. https://ascii.textfiles.com/\n3. Internet Archive collaboration details. https://archive.org/about/\n4. ArchiveBot GitHub Repository. https://github.com/ArchiveTeam/ArchiveBot\n5. ArchiveBot Dashboard and Documentation. https://www.archivebot.com/",
+      "answer_b": "The volunteer collective formed in 2009 is **Archive Team**, established by digital historian Jason Scott after Geocities' announced closure to rescue endangered websites and preserve digital culture for historical purposes [1]. This \"rogue archivist\" organization operates on a fully decentralized, non-hierarchical model without formal funding, paid staff, or legal incorporation, mobilizing global volunteers through IRC channels (notably #archiveteam on EFnet), a comprehensive project wiki for documentation, and targeted \"Archive Team Wars\"—coordinated flash-mob-style campaigns focusing on specific dying platforms before they vanish [2]. Their collaborative ethos emphasizes rapid response and technical improvisation over bureaucratic process, with anyone able to join and contribute computational resources.\n\nArchive Team created **ArchiveBot**, an IRC-based automated crawling tool designed specifically to capture smaller, vulnerable websites often overlooked by institutional archiving efforts [3]. Functioning as a distributed system, volunteers run ArchiveBot worker nodes that connect to a central Redis job queue, awaiting archiving tasks issued through IRC commands. Users interact with the tool by typing `!archive <URL>` or `!a <URL>` in the control channel, which immediately queues the target site for crawling [4]. The bot employs a customized wget-lua engine to generate WARC (Web ARChive) files, performs automated Quality Assurance checks, uploads validated archives to the Internet Archive's Wayback Machine, and reports real-time progress, statistics, and errors back to IRC [5].\n\nThe complete open-source codebase is publicly available on GitHub at `ArchiveTeam/ArchiveBot` [6], and the real-time web dashboard displaying active jobs, queue depth, worker status, and upload progress is accessible at `http://dashboard.at.ninjawedding.org` [7].\n\n## References\n[1] Archive Team wiki. \"Main Page.\" https://www.archiveteam.org\n[2] Archive Team wiki. \"Archive Team:About.\" https://www.archiveteam.org/index.php?title=Archive_Team:About\n[3] Archive Team wiki. \"ArchiveBot.\" https://www.archiveteam.org/index.php?title=ArchiveBot\n[4] Archive Team wiki. \"ArchiveBot/Commands.\" https://www.archiveteam.org/index.php?title=ArchiveBot/Commands\n[5] Archive Team wiki. \"ArchiveBot/Technical Details.\" https://www.archiveteam.org/index.php?title=ArchiveBot\n[6] GitHub. \"ArchiveTeam/ArchiveBot.\" https://github.com/ArchiveTeam/ArchiveBot\n[7] ArchiveBot Dashboard. http://dashboard.at.ninjawedding.org",
+      "duration_a_seconds": 14.0,
+      "duration_b_seconds": 122.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both Agent A and Agent B correctly identify the core entities (Archive Team and ArchiveBot), so both pass the DEEP logic check. However, Agent A misses several WIDTH checklist elements: it does not clearly mention EFNet as the IRC network, omits operator permission requirements, fails to explicitly explain WARC file generation, and introduces confusion by discussing Warrior and Grab-Site before settling on ArchiveBot. While it does mention GitHub and a dashboard, the technical explanation is thinner and less precise. Agent B, by contrast, covers the founding context, decentralized structure, collaboration model, EFnet IRC coordination, command syntax, WARC generation, Redis job queue, QA process, Internet Archive uploads, GitHub repository, and a specific monitoring dashboard URL. It is more comprehensive, technically detailed, and better aligned with the checklist. Formatting and clarity are strong in both, but B delivers greater information density and precision, making it the superior user experience. Therefore, Agent B wins on WIDTH and overall utility.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "Canada Post chief seeks to boost profit"
+      ],
+      "question": "Identify three government-run national sweepstakes that were established before 1950 and were explicitly created to raise funds for public or charitable purposes. For each sweepstake, provide: (1) its year of establishment, (2) the original public or charitable objective it was intended to support, and (3) one distinctive feature of its prize structure or drawing format that differentiates it from typical modern lotteries. Conclude by briefly comparing how their public-benefit missions influenced their historical development.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Spanish Christmas Lottery – Year of establishment (1812)",
+        "Spanish Christmas Lottery – Original purpose (raising state/public funds)",
+        "Spanish Christmas Lottery – Distinctive prize structure feature (multiple large prizes shared across many ticket holders, including 'El Gordo')",
+        "Irish Hospitals' Sweepstakes – Year of establishment (1930)",
+        "Irish Hospitals' Sweepstakes – Original purpose (funding Irish hospitals)",
+        "Irish Hospitals' Sweepstakes – Distinctive prize structure feature (international ticket sales and hospital-based fundraising model)",
+        "Mexican National Lottery (Lotería Nacional) – Year of establishment (1770)",
+        "Mexican National Lottery – Original purpose (funding public works and charitable causes in New Spain/Mexico)",
+        "Mexican National Lottery – Distinctive prize structure feature (numbered ticket sheets and large-scale public drawings)"
+      ],
+      "checklist_depth": [
+        "Spanish Christmas Lottery + Proof it is government-run, established in 1812, and designed to raise public funds for the Spanish state",
+        "Irish Hospitals' Sweepstakes + Proof it was state-sanctioned in 1930 to fund public hospitals in Ireland",
+        "Mexican National Lottery (Lotería Nacional) + Proof it was established in 1770 under colonial government authority to support public/charitable financing"
+      ],
+      "rationale": "The question applies a logical filter (government-run national sweepstakes established before 1950 for public benefit) to mask the specific entities, requiring the search agent to identify qualifying sweepstakes through reasoning about founding date, governance, and mission (Deep). It then demands multiple distinct attributes—founding year, public-purpose mission, and unique prize structure—for all three entities, requiring aggregation of information from separate historical and institutional sources (Wide).",
+      "source_nodes": [
+        "Canada Post chief seeks to boost profit | CBC News",
+        "Loyalty marketing - Wikipedia",
+        "Prize (marketing) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]:  [Wide Logic - Target 2]: ",
+      "judge_max_limit": 350,
+      "answer_a": "Three notable government-run national sweepstakes established before 1950 with explicit public-benefit mandates are the **Irish Hospitals' Sweepstake**, the **Australian Lottery (Tattersall's)**, and the **Swedish National Lottery (Svenska Penninglotteriet)**.\n\n**1. Irish Hospitals' Sweepstake (1930)**\n\nEstablished in 1930 by the Irish Free State under the Public Hospitals Act of 1930, this sweepstake was created specifically to fund the construction and maintenance of public hospitals across Ireland [1]. Its most distinctive feature was tying prize draws to major international horse races, such as the Epsom Derby and the Grand National. Ticket holders were randomly assigned a horse, and prizes depended on race outcomes—blending gambling with sporting events in a format rarely seen in modern lotteries [1][2].\n\n**2. Tattersall's Lottery, Australia (1881)**\n\nFounded in 1881 by George Adams in Tasmania, this government-sanctioned lottery was originally designed to raise revenue for public infrastructure and charitable purposes, including hospitals [3]. A distinctive feature was its \"consultation\" format, where lottery draws were also linked to horse races, similar to the Irish model but predating it. Prize pools were extraordinarily large for the era, and the lottery operated under shifting state jurisdictions as various Australian states alternately banned and permitted it, reflecting ongoing tensions between public benefit and moral opposition [3][4].\n\n**3. Swedish National Lottery — Svenska Penninglotteriet (1897)**\n\nEstablished in 1897 by the Swedish government, this lottery was explicitly created to generate funds for public welfare, cultural institutions, and charitable organizations [5]. Unlike horse-race-linked sweepstakes, it used a straightforward numbered-ticket drawing format, but distinctively allocated fixed percentages of revenue directly to specific cultural and social programs, making the public-benefit allocation transparent and predetermined rather than discretionary [5].\n\n**Comparative Reflection**\n\nAll three sweepstakes were born from government recognition that traditional taxation was insufficient for specific public needs—hospitals, infrastructure, and cultural welfare. Their public-benefit missions shaped their regulatory frameworks and public legitimacy, enabling them to survive moral opposition to gambling. The Irish and Australian models innovated by linking draws to horse racing, generating international excitement, while Sweden's model prioritized transparent revenue allocation. Over time, their charitable mandates provided political justification for expanding state-run gambling, laying the groundwork for modern national lotteries worldwide [1][3][5].\n\n## References\n1. \"Irish Hospitals' Sweepstake,\" Encyclopedia Britannica. https://www.britannica.com/topic/Irish-Sweepstakes\n2. Cooney, J. \"The Irish Sweep: A History.\" Dublin Historical Record.\n3. \"Tattersall's History,\" Tattersall's Official Site. https://www.tatts.com/tattersalls/about/history\n4. O'Hara, J. \"A Mug's Game: A History of Gaming and Betting in Australia.\" UNSW Press.\n5. \"Svenska Spel – History.\" https://www.svenskaspel.se/om-svenska-spel/historia",
+      "answer_b": "**Irish Hospitals' Sweepstakes** (1930): Established to fund Irish hospitals and healthcare infrastructure, which were severely underfunded in the early Free State period, by creating a national fundraising mechanism. Distinctive feature: Prize winners were determined by the results of horse races (e.g., the Cambridgeshire Handicap), allowing massive international ticket sales that circumvented strict anti-lottery laws in Britain and America by framing it as a \"sweepstake\" rather than a pure chance lottery. This hybrid skill-chance model generated enormous revenue but also attracted legal challenges and moral controversy, eventually operating through a private trust structure that distributed substantial funds to voluntary hospitals throughout Ireland [1].\n\n**France's National Lottery (Loterie Nationale)** (1933): Created by the French government to support WWI veterans' welfare, disability pensions, and agricultural recovery programs during the Depression era, addressing pressing post-war social needs. Distinctive feature: Drawings were traditionally performed by children from state orphanages (pupilles de l'assistance publique), physically linking charitable beneficiaries to the process and generating powerful public sympathy. The lottery was explicitly framed as a patriotic duty for national reconstruction, with early drawings ceremonially held at the Palais de l'Assistance Publique and broadcast nationally to emphasize its social mission over commercial gambling [2].\n\n**Spain's National Lottery (Lotería Nacional)** (1812): Founded during the Napoleonic Wars to finance the public treasury, military defense, and later public works, making it one of the oldest continuously operating lotteries. Distinctive feature: Employed a unique two-stage drawing system—the first raffle selected winning ticket numbers, and a second draw determined which prizes those numbers won. This format, particularly in the famous Christmas \"El Gordo\" draw, created prolonged national suspense and communal viewing traditions that transformed it from a fiscal tool into a shared cultural institution, with entire towns pooling ticket purchases and schoolchildren singing the winning numbers in televised events [3].\n\nThese sweepstakes' explicit public-benefit missions made them politically defensible and legally viable during eras of strong anti-gambling sentiment. Rather than maximizing profit, their prize structures—tied to sporting events, charitable ceremonies, and cultural rituals—built broad national consensus and institutional longevity, distinguishing them fundamentally from modern commercial lotteries focused on revenue extraction and individual enrichment [4].\n\n## References\n[1] \"Irish Hospitals' Sweepstake,\" Wikipedia, https://en.wikipedia.org/wiki/Irish_Hospitals%27_Sweepstake (accessed 2024).\n[2] \"History of the French National Lottery,\" La Française des Jeux, https://www.fdj.fr/about-us/our-history (accessed 2024).\n[3] \"Lotería Nacional,\" Spanish State Lotteries, https://www.loteriasyapuestas.es/en/loteria-nacional (accessed 2024).\n[4] V. A. Dickerson, \"Charitable Lotteries and State Formation,\" *International Gambling Studies* 15, no. 2 (2015): 223-240.",
+      "duration_a_seconds": 19.7,
+      "duration_b_seconds": 163.6,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A correctly identified the Irish Hospitals' Sweepstakes (1930), but failed to include the Spanish Christmas Lottery (1812) and the Mexican National Lottery (1770), both required by the checklist. Instead, it substituted Tattersall's (a privately founded lottery, not clearly a government-run national sweepstake at inception) and the Swedish National Lottery, neither of which matches the expected entities. Agent B correctly included the Irish Hospitals' Sweepstakes (1930) and Spain’s National Lottery (1812, with reference to El Gordo and its public-funding origin), satisfying two of the three required entities. However, it omitted the Mexican National Lottery (1770), substituting France’s 1933 lottery. Thus, Agent A fails both DEEP (wrong core entities) and WIDE (missing required details), while Agent B partially satisfies Deep Logic but fails WIDE by omitting one required case.\n\nWidth/Completeness: Agent B covers two of the three ground-truth sweepstakes with accurate establishment dates, original purposes, and distinctive structural features. Agent A only fully satisfies one (Irish) and misses two checklist entities entirely. Therefore, B is substantially more complete.\n\nPresentation & User Experience: Both responses are well-structured with bold headings and clear explanations. Agent A is slightly more segmented and formally structured, but this stylistic advantage does not outweigh its major factual omissions. Agent B provides rich contextual detail and a strong comparative conclusion, enhancing user understanding.\n\nFinal Judgment: Agent B is factually closer to the ground truth and more aligned with the required entities, making it the better overall response despite one omission.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0004_claudeopu_vs_Kimik2_845"
+}

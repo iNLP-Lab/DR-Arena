@@ -1,0 +1,91 @@
+{
+  "id": "R1_glm-4.7_ppl-sonar-pro-high_tree_0013",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_glm-4.7_ppl-sonar-pro-high_tree_0013.log",
+  "tree_id": "tree_0013",
+  "tree_title": "History of swimwear",
+  "tree_topic": "Shopping > Apparel",
+  "tree_subtopic": "Swimwear",
+  "tree_crawled_at": "2025-11-21T14:23:33.700598",
+  "tree_url": "https://en.wikipedia.org/wiki/History_of_swimwear",
+  "model_a": "glm-4.7",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "History of swimwear",
+  "questions": [
+    "Identify the software company described in digital archival records as having 'generously donated' a set of web crawl snapshots. According to the description of this company's 'Insight Discovery' solutions, what specific transition process do they help companies speed up, and what four specific industry sectors are listed as examples of their diverse client base?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 113626,
+  "estimated_cost": 1.1363,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "History of swimwear",
+        "Skirting the Skirts at the Bathing Beach"
+      ],
+      "question": "Identify the software company described in digital archival records as having 'generously donated' a set of web crawl snapshots. According to the description of this company's 'Insight Discovery' solutions, what specific transition process do they help companies speed up, and what four specific industry sectors are listed as examples of their diverse client base?",
+      "word_limit_instruction": "Answer length: 100-200 words.",
+      "checklist_width": [
+        "Transition Process: Move from 'innovation idea' to 'product reality' (faster/with more success)",
+        "Industry 1: Consumer packaged goods",
+        "Industry 2: High tech",
+        "Industry 3: Foods",
+        "Industry 4: Chemicals"
+      ],
+      "checklist_depth": [
+        "Target Entity: Accelovation",
+        "Logic Proof: The entity is identified by the unique description of donating web crawl snapshots and pioneering 'Insight Discovery' software."
+      ],
+      "rationale": "The question applies Deep Reasoning by masking the entity 'Accelovation' behind its specific actions (donating snapshots) and product name ('Insight Discovery'). It requires Wide Aggregation by asking for the specific functional claim and the exact list of four industries mentioned in the source text, ensuring the agent retrieves the full context of the provided description.",
+      "source_nodes": [
+        "Skirting the Skirts at the Bathing Beach",
+        "French Riviera - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Collection: Accelovation Crawl Web crawl snapshots generously donated from Accelovation . This data is currently not publicly accessible. From the site : Accelovation is pione",
+      "judge_max_limit": 300,
+      "answer_a": "The software company described is Common Crawl. Their Insight Discovery solutions help companies speed up the \"data-to-insight\" transition process. The four specific industry sectors listed as examples of their diverse client base are financial services, healthcare, retail, and technology [1].\n\n## References\n[1] https://commoncrawl.org/",
+      "answer_b": "I cannot identify the software company described in the search results provided. While the results mention Common Crawl, a nonprofit organization that maintains web crawl archives, and Scrapus, an AI-based lead generation system, neither is described as having \"generously donated\" web crawl snapshots in digital archival records, nor do either have documented \"Insight Discovery\" solutions with the specific characteristics you describe.\n\nThe search results do not contain information about a company offering \"Insight Discovery\" solutions, nor do they list four specific industry sectors as examples of their client base in the manner your query describes. To accurately answer this question, I would need search results that specifically reference the company's archival donation records and their documented Insight Discovery service offerings with the particular industry sectors you mention.\n\n## References\n\nThe provided search results do not contain sufficient information to answer this query accurately.",
+      "duration_a_seconds": 14.9,
+      "duration_b_seconds": 4.6,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A failed the fundamental 'Deep Logic' check by identifying the wrong entity. The query describes 'Accelovation' (a company that donated a crawl to the Internet Archive and offered 'Insight Discovery' solutions), but Agent A incorrectly identified 'Common Crawl' (the non-profit organization). Consequently, Agent A hallucinated the transition process and the list of industries to fit its incorrect answer, resulting in total factual failure. Agent B correctly analyzed that the specific details requested (Insight Discovery, specific industry list) were not present in the context regarding Common Crawl or other entities, and rightly refused to answer rather than fabricating data. In a search scenario, a reasoned refusal is far superior to a confident hallucination.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0013_glm47_vs_pplsonar_762"
+}

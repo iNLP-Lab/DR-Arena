@@ -1,0 +1,92 @@
+{
+  "id": "R3_M0_gpt-5.1-search_vs_grok-4-search_tree_0008",
+  "source_group": "round3",
+  "source_log": "round3/R3_M0_gpt-5.1-search_vs_grok-4-search_tree_0008.log",
+  "tree_id": "tree_0008",
+  "tree_title": "Health Policy 101 Introduction",
+  "tree_topic": "Law & Government > Public Safety > Public Health",
+  "tree_subtopic": "Health Policy",
+  "tree_crawled_at": "2025-11-21T13:52:05.123140",
+  "tree_url": "https://www.kff.org/other-health/health-policy-101-introduction/",
+  "model_a": "gpt-5.1-search",
+  "model_b": "grok-4-search",
+  "winner": "gpt-5.1-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 3,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Health Policy 101 Introduction",
+  "questions": [
+    "Identify the health policy organization that reports 8% of adults are uninsured, with 55% of that group delaying care due to cost. Using this organization's specific data and recent reporting, answer the following: First, what percentage of these uninsured adults lack a 'usual source of care' compared to their insured counterparts? Second, summarize two specific coverage issues highlighted by this organization's newsroom: the frequency of federal enforcement regarding 'network gaps' in Medicare Advantage plans, and the circumstances surrounding a 'surprise bill' received by a walk-in patient seeking preventative treatment for Lyme disease."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 44563,
+  "estimated_cost": 0.4456,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Health Policy 101 Introduction",
+        "Private Insurance"
+      ],
+      "question": "Identify the health policy organization that reports 8% of adults are uninsured, with 55% of that group delaying care due to cost. Using this organization's specific data and recent reporting, answer the following: First, what percentage of these uninsured adults lack a 'usual source of care' compared to their insured counterparts? Second, summarize two specific coverage issues highlighted by this organization's newsroom: the frequency of federal enforcement regarding 'network gaps' in Medicare Advantage plans, and the circumstances surrounding a 'surprise bill' received by a walk-in patient seeking preventative treatment for Lyme disease.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Uninsured statistic: 38% lack a usual source of care",
+        "Comparison statistic: vs 8% of insured adults",
+        "Medicare Advantage issue: Complaints about network gaps are common",
+        "Medicare Advantage enforcement: Federal enforcement is rare",
+        "Surprise Bill context: Patient avoided Lyme disease (tick bite)",
+        "Surprise Bill cause: Issues with preauthorization/billing despite avoiding the disease"
+      ],
+      "checklist_depth": [
+        "Target Entity: KFF (Kaiser Family Foundation) or KFF Health News",
+        "Logic Proof: Matched the 8% uninsured / 55% delayed care fingerprint to KFF data"
+      ],
+      "rationale": "The question uses Deep Logic by masking the source (KFF) behind specific statistical fingerprints (8% uninsured, 55% delay care) found in the 'Uninsured' topic data. It requires Wide Aggregation by forcing the agent to traverse from those statistics to a different topic section ('Private Insurance' news) to retrieve details about Medicare Advantage network gaps and a specific anecdotal story about Lyme disease billing.",
+      "source_nodes": [
+        "Private Insurance - Research and Data from KFF",
+        "Uninsured - Research and Data from KFF"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home Topics Private Insurance What the Health? From KFF Health News: The GOP Circles the Wagons on ACA Complaints About Gaps in Medicare Advantage Networks Are Common. Federal",
+      "judge_max_limit": 300,
+      "answer_a": "The organization is KFF (KFF – formerly Kaiser Family Foundation). Its 2023/2024 coverage statistics show that among nonelderly adults, **about half of uninsured adults – roughly 48–50% – report having no usual source of care**, compared with **about 11–13% of adults with private or public insurance** who lack a usual source of care.[1]\n\nKFF’s newsroom also highlights specific coverage issues. Regarding Medicare Advantage, KFF reports that **federal regulators rarely take formal enforcement actions over “network adequacy” or “network gap” problems**, even though beneficiaries and clinicians frequently report that MA plan networks are too narrow or inaccurate. Few civil monetary penalties or sanctions are issued relative to the scale of the MA market and the volume of complaints, indicating that meaningful enforcement is infrequent.[2]\n\nA separate KFF newsroom story examines a **“surprise bill” involving a walk‑in patient who sought preventive treatment for Lyme disease after a tick bite**. The patient went to an in‑network urgent care clinic, received a short course of doxycycline and basic evaluation, and reasonably expected minimal charges. Instead, she later received a large, unexpected out‑of‑network bill tied to how the visit was coded and how her plan processed the claim—illustrating how patients can be hit with sizable surprise medical bills even when they intentionally choose in‑network care for straightforward preventive services.[3]\n\n## References\n\n[1] KFF, “Key Facts about the Uninsured Population” and related coverage data tables.  \n[2] KFF, newsroom/analysis on Medicare Advantage network adequacy and federal enforcement.  \n[3] KFF Health News (KFF), surprise-billing case study on urgent care visit for Lyme disease prophylaxis.",
+      "answer_b": "The health policy organization is KFF (Kaiser Family Foundation), which reports that 8% of U.S. adults ages 19-64 were uninsured in 2022, with 55% of this group delaying or forgoing needed care due to cost [1].\n\nRegarding the first query, KFF data indicates that 59% of uninsured adults lack a usual source of care, such as a doctor's office or clinic for routine health needs, compared to just 15% of insured adults. This disparity highlights how uninsurance exacerbates barriers to consistent primary care, leading to poorer health outcomes and higher reliance on emergency services [1].\n\nFor the second query, KFF's newsroom has highlighted two key coverage issues. First, on federal enforcement of \"network gaps\" in Medicare Advantage (MA) plans, a 2024 KFF analysis found that the Centers for Medicare & Medicaid Services (CMS) rarely imposes penalties despite widespread violations of network adequacy rules. From 2018 to 2022, CMS identified network deficiencies in about 10% of MA plan audits annually but enforced sanctions in fewer than 1% of cases, allowing gaps in provider access for specialties like psychiatry and oncology to persist without meaningful accountability [2].\n\nSecond, in a \"Bill of the Month\" feature from July 2024, KFF detailed a surprise bill case involving a walk-in patient who sought preventive treatment after a tick bite to avoid Lyme disease. The patient visited an in-network urgent care clinic for doxycycline, expecting no-cost coverage under preventive care rules. However, the clinic coded the visit as diagnostic rather than preventive, resulting in a $400 out-of-pocket bill. This stemmed from ambiguous federal guidelines on what qualifies as \"preventive\" for tick bites, despite the treatment aligning with CDC recommendations, underscoring gaps in the No Surprises Act's protections for such scenarios [3].\n\n(Word count: 298)\n\n## References\n[1] KFF. (2023, December 18). Key Facts About the Uninsured Population. https://www.kff.org/uninsured/issue-brief/key-facts-about-the-uninsured-population/  \n[2] KFF. (2024, May 30). Federal Oversight of Medicare Advantage Networks Rarely Leads to Penalties for Inadequate Networks. https://www.kff.org/medicare/issue-brief/federal-oversight-of-medicare-advantage-networks-rarely-leads-to-penalties-for-inadequate-networks/  \n[3] KFF Health News. (2024, July 25). Bill of the Month: Tick Bite Leads to Hefty Doctor Bill. https://kffhealthnews.org/news/article/bill-of-the-month-tick-bite-lyme-disease-prevention-doxycycline/",
+      "duration_a_seconds": 8.2,
+      "duration_b_seconds": 25.6,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A correctly identifies the specific statistics requested from the KFF report (48-50% vs 11-13% lacking a usual source of care). Agent B provides incorrect statistics (59% vs 15%) that do not match the '8% uninsured' report context. Furthermore, Agent B hallucinates a specific date (July 2024) and dollar amount ($400) for the 'Bill of the Month' story, whereas Agent A correctly summarizes the circumstances of the well-known KFF Lyme disease story (out-of-network billing issues) without fabricating recent dates.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0008_gpt51se_vs_grok4sea_185"
+}

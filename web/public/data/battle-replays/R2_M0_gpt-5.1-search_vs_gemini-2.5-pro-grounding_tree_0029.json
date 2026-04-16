@@ -1,0 +1,90 @@
+{
+  "id": "R2_M0_gpt-5.1-search_vs_gemini-2.5-pro-grounding_tree_0029",
+  "source_group": "round2",
+  "source_log": "round2/R2_M0_gpt-5.1-search_vs_gemini-2.5-pro-grounding_tree_0029.log",
+  "tree_id": "tree_0029",
+  "tree_title": "Handball",
+  "tree_topic": "Sports > Team Sports",
+  "tree_subtopic": "Handball",
+  "tree_crawled_at": "2025-11-22T00:49:21.808008",
+  "tree_url": "https://en.wikipedia.org/wiki/Handball",
+  "model_a": "gpt-5.1-search",
+  "model_b": "gemini-2.5-pro-grounding",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 2,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Handball",
+  "questions": [
+    "In the history of the Russian Men's Handball Championship (Super League), identify the two clubs that achieved the following specific historical milestones prior to the dominance of 'Chekhovskie Medvedi': \n\n1. The club that secured the inaugural Russian championship title in the 1992/93 season, distinguishing itself as the first winner after the dissolution of the USSR (and the singular CIS championship).\n2. The club that established a brief dynasty in the late 1990s by winning four consecutive national titles immediately before the rise of the 'CSKA-Sportakadem' / Chekhov lineage.\n\nFor both identified entities, provide the team name used during those specific victories. Additionally, for the club from Saint Petersburg, trace its nomenclature history by listing the subsequent names it adopted, ending with its current identity as of the 2020s."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 285444,
+  "estimated_cost": 2.8544,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "In the history of the Russian Men's Handball Championship (Super League), identify the two clubs that achieved the following specific historical milestones prior to the dominance of 'Chekhovskie Medvedi': \n\n1. The club that secured the inaugural Russian championship title in the 1992/93 season, distinguishing itself as the first winner after the dissolution of the USSR (and the singular CIS championship).\n2. The club that established a brief dynasty in the late 1990s by winning four consecutive national titles immediately before the rise of the 'CSKA-Sportakadem' / Chekhov lineage.\n\nFor both identified entities, provide the team name used during those specific victories. Additionally, for the club from Saint Petersburg, trace its nomenclature history by listing the subsequent names it adopted, ending with its current identity as of the 2020s.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Identifies Club 1 (Inaugural Winner) as 'Neva' (or 'Neva St. Petersburg').",
+        "Identifies Club 2 (Four-peat Winner) as 'Kaustik' (or 'Kaustik Volgograd').",
+        "Lists the specific winning seasons for Kaustik: 1995/96, 1996/97, 1997/98, 1998/99.",
+        "Lists the name evolution of the St. Petersburg club: 'Stepan Razin - Neva', 'University Lesgafta - Neva', and 'Zenith'."
+      ],
+      "checklist_depth": [
+        "Correctly distinguishes the 1992/93 Russian champion (Neva) from the 1991/92 CIS champion (SKIF).",
+        "Correctly identifies Kaustik as the team with four consecutive titles immediately preceding the 2000s Chekhov era."
+      ],
+      "rationale": "The question requires **Deep Reasoning** to filter the list of champions based on temporal logic (first post-USSR winner vs. the specific late-90s four-peat streak) without naming the clubs. It requires **Wide Aggregation** to retrieve the specific seasons for the second club and the full history of name changes for the first club (Neva -> Zenith) which are scattered throughout the text/historical records.",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Sweden - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "1. **First Russian champion after the USSR (1992/93)**  \n   The inaugural Russian Men’s Handball Championship title in the 1992/93 season was won by the Saint Petersburg club **“Neva”** (Нева). Contemporary and retrospective histories of the club and of the national championship note that Neva became the first champion of Russia after the single CIS season that followed the USSR’s dissolution.[1][2]\n\n2. **Late‑1990s four‑title dynasty before CSKA‑Sportakadem/Chekhov**  \n   The brief pre‑Chekhov dynasty was created by the Astrakhan club **“Zarya Kaspiya”** (Заря Каспия). Zarya Kaspiya captured **four consecutive Russian titles** in the mid‑to‑late 1990s (1994/95, 1995/96, 1996/97 and 1997/98 seasons), immediately preceding the era in which the CSKA‑Sportakadem / Chekhovskie Medvedi lineage began its long‑term dominance of the Super League.[3][4]\n\n3. **Name evolution of the Saint Petersburg club (Neva)**  \n   After winning the 1992/93 title as **“Neva”**, the Saint Petersburg club went through several sponsor‑driven renamings:  \n   - **“Neva”** – original name and 1992/93 champion.[1][5]  \n   - **“Stepan Razin–Neva”** – following the early‑2000s sponsorship by the Stepan Razin brewery.[5]  \n   - **“Universitet Lesgafta–Neva”** – when integrated with the Lesgaft National State University of Physical Education, Sport and Health (mid‑2000s).[5]  \n   - From around 2010 the team has competed again simply as **“Handball Club Neva (Saint Petersburg)” / ГК «Нева» (Санкт‑Петербург)**, which remains its identity in the 2020s.[1][5][6]  \n\n## References\n\n[1] HC Neva official site – club history.  \n[2] Russian handball historical overview listing 1992/93 champions.  \n[3] “Заря Каспия (гандбольный клуб)” – Russian Wikipedia, honours section.  \n[4] “Чемпионат России по гандболу среди мужчин” – Russian Wikipedia, list of champions.  \n[5] “Гандбольный клуб «Нева»” – Russian Wikipedia, history and names.  \n[6] Super League/club registration documents showing current name “ГК «Нева» (Санкт‑Петербург)”.",
+      "answer_b": "Prior to the long-standing dominance of Chekhovskie Medvedi in Russian men's handball, two other clubs achieved significant historical milestones.\n\nThe first club to win the Russian Men's Handball Championship was **Neva Saint Petersburg**. They secured this inaugural title in the 1992/93 season, the first championship held after the collapse of the Soviet Union and the single Commonwealth of Independent States (CIS) championship season [1, 2]. This victory established them as the first-ever national champions of the Russian Federation.\n\nThe club that established a brief dynasty immediately preceding the Chekhov era was **Kaustik Volgograd**. This team dominated the latter half of the 1990s, winning four consecutive national titles [1, 3]. Their championship streak ran from the 1995/96 season through the 1998/99 season. This run of four straight victories was the most significant period of supremacy by any club before CSKA-Sportakadem (the predecessor to Chekhovskie Medvedi) won its first title in 2000 [3].\n\nThe club from Saint Petersburg has undergone several name changes since its inaugural victory. Its nomenclature has evolved as follows:\n*   **Neva Saint Petersburg** (name during its 1993 championship)\n*   **Stepan Razin-Neva** (from 2001)\n*   **Universitet Lesgafta-Neva**\n*   **Zenit Saint Petersburg** (current name since 2017) [2, 4]\n\n## References\n[1] European Handball Federation. (n.d.). *Russia Super League Men - List of Champions*. Retrieved from history.eurohandball.com.\n[2] Handball Club Zenit. (n.d.). *Istoriya kluba* [Club History]. Zenit Handball. Retrieved from hczenit.ru/club/history.\n[3] Sports-Express.ru. (2018, May 29). *\"Chekhovskie medvedi\" - 17-kratnye chempiony Rossii* [\"Chekhovskie Medvedi\" - 17-time champions of Russia]. sport-express.ru.\n[4] TASS Russian News Agency. (2017, August 9). *Gandbol'nyy klub \"Neva\" pereimenovan v \"Zenit\"* [Handball club \"Neva\" renamed to \"Zenit\"]. tass.ru.",
+      "duration_a_seconds": 79.3,
+      "duration_b_seconds": 21.7,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identifies the second club as 'Kaustik Volgograd', which won four consecutive titles in the late 1990s. Agent A incorrectly identifies 'Zarya Kaspiya' (Astrakhan) as the dynasty winner; Zarya Kaspiya was a strong contender but did not achieve the four-peat championship streak described. Furthermore, Agent B correctly identifies that the St. Petersburg club has been rebranded as 'Zenit' (a major change occurring in 2022), whereas Agent A fails to mention this current identity, stating the club is still 'Neva'. Although Agent B gets the specific year of the Zenit rebranding wrong (citing 2017 instead of 2022), it found the correct entities for all parts of the prompt, whereas Agent A failed on a core entity.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0029_gemini25_vs_gpt51se_120"
+}

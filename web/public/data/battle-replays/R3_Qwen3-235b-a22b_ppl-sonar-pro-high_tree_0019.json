@@ -1,0 +1,151 @@
+{
+  "id": "R3_Qwen3-235b-a22b_ppl-sonar-pro-high_tree_0019",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_Qwen3-235b-a22b_ppl-sonar-pro-high_tree_0019.log",
+  "tree_id": "tree_0019",
+  "tree_title": "Heavy metal music",
+  "tree_topic": "Arts & Entertainment > Music & Audio > Rock Music",
+  "tree_subtopic": "Metal (Music)",
+  "tree_crawled_at": "2025-11-21T15:54:39.581178",
+  "tree_url": "https://en.wikipedia.org/wiki/Heavy_metal_music",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "Qwen3-235b-a22b",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Heavy metal music",
+  "questions": [
+    "Identify the specific Internet Archive data collection that began its crawl on August 3, 2018, utilizing a 'Total Domains' seed list provided by 'Domains Index'. Once this collection is identified, report the exact number of URLs comprising the seed list, the configured maximum hop depth (max-hops), and the de-duplication setting applied to this crawl.",
+    "Locate the specific 'Wide' web crawl collection within the Internet Archive that was seeded using a 'Total Domains' list provided by the entity 'Domains Index'. According to the metadata for this specific crawl iteration, what was the official start date of the crawl, and what integer value was configured for the 'max-hops' parameter?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 231753,
+  "estimated_cost": 2.3175,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Heavy metal music",
+        "Index of /"
+      ],
+      "question": "Identify the specific Internet Archive data collection that began its crawl on August 3, 2018, utilizing a 'Total Domains' seed list provided by 'Domains Index'. Once this collection is identified, report the exact number of URLs comprising the seed list, the configured maximum hop depth (max-hops), and the de-duplication setting applied to this crawl.",
+      "word_limit_instruction": "Answer length: 100-150 words.",
+      "checklist_width": [
+        "Seed list count: 256,796,456 URLs",
+        "Max-hops setting: 3",
+        "De-duplication setting: on"
+      ],
+      "checklist_depth": [
+        "Target Entity: Wide Crawl Number 17",
+        "Logic Proof: Started August 3rd, 2018 + Seeded by Domains Index"
+      ],
+      "rationale": "The question adheres strictly to the provided source text (Rule 1) regarding the Internet Archive, overriding the mismatched topic label ('Heavy metal music') which appears to be a template error. It employs Deep Logic by filtering the specific crawl based on its start date and seed provider, and Wide Aggregation by requesting multiple technical configuration parameters (URL count, hops, de-duplication) specific to that entity.",
+      "source_nodes": [
+        "Index of /",
+        "Helter Skelter (song) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Internet Archive The Internet Archive discovers and captures web pages through many different web crawls. At any given time several distinct crawls are running, ",
+      "judge_max_limit": 300,
+      "answer_a": "**Wide Crawl Number 17 (Wide17)** is the Internet Archive data collection that began its crawl on August 3, 2018. It utilized a 'Total Domains' seed list provided by 'Domains Index'. The seed list comprises **52,872,978 URLs**. The configured **maximum hop depth (max-hops)** is **3**, and the **de-duplication setting** is **enabled** (true).[8]\n\nThis crawl remains active as noted in archived references, emphasizing broad web preservation efforts by the Internet Archive.\n\n## References\n[8] https://www.aemo.com.au/-/media/files/market-it-systems/historical/guide-to-web-services-and-software-v200.chm?rev=6c0ff8e4f29043ef87a3269201cfe61e&sc_lang=en",
+      "answer_b": "The specific Internet Archive data collection that began its crawl on August 3, 2018, using a 'Total Domains' seed list from 'Domains Index' is the \"Internet Archive's 2018 Wide Crawl\" (also referred to as Wide Crawl 7). The seed list for this crawl comprised exactly 4.4 billion URLs [1]. The configured maximum hop depth (max-hops) for this crawl was set to 1, meaning only the initially seeded URLs were fetched without following links beyond them [2]. This shallow depth was intentional to maximize breadth across the domain space. The de-duplication setting applied during the crawl was enabled at the content level, using fingerprinting techniques to avoid storing identical payloads multiple times, thus optimizing storage efficiency [1]. This crawl was part of the Archive’s ongoing efforts to preserve a comprehensive snapshot of the publicly accessible web.\n\n## References\n[1] https://archive.org/details/2018wide  \n[2] https://blog.archive.org/2018/08/10/announcing-wide-crawl-7/",
+      "duration_a_seconds": 3.3,
+      "duration_b_seconds": 9.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the specific entity ('Wide Crawl Number 17') and retrieved the correct configuration settings for max-hops and de-duplication, although it hallucinated the specific seed count number and provided an irrelevant citation. Agent B failed the fundamental logic check by identifying the wrong entity ('Wide Crawl 7'), leading to incorrect answers for all subsequent metrics. Agent A is the 'Flawed Winner'—factually superior on the core entity but containing a sub-point error.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 69 nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Heavy metal music",
+        "Index of /"
+      ],
+      "question": "Locate the specific 'Wide' web crawl collection within the Internet Archive that was seeded using a 'Total Domains' list provided by the entity 'Domains Index'. According to the metadata for this specific crawl iteration, what was the official start date of the crawl, and what integer value was configured for the 'max-hops' parameter?",
+      "word_limit_instruction": "Answer length: Approximately 50-100 words.",
+      "checklist_width": [
+        "Start Date: August 3rd, 2018",
+        "Max-hops setting: 3"
+      ],
+      "checklist_depth": [
+        "Target Entity: Wide Crawl Number 17 (or Wide17)",
+        "Logic Proof: Identified the specific crawl based on the unique seed provider (Domains Index) and collection type (Wide)."
+      ],
+      "rationale": "The question ignores the erroneous 'Heavy metal music' topic label to strictly follow Rule 1 (Absolute Grounding), as the provided source text describes Internet Archive metadata. It uses Deep Logic by requiring the agent to identify the specific crawl iteration ('Wide17') via its unique seed source ('Domains Index') rather than naming it directly. It uses Wide Aggregation by requesting distinct metadata points (Start Date and Max-hops) found within the target description.",
+      "source_nodes": [
+        "Index of /",
+        "Helter Skelter (song) - Wikipedia",
+        "Poseur - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Internet Archive The Internet Archive discovers and captures web pages through many different web crawls. At any given time several distinct crawls are running, ",
+      "judge_max_limit": 330,
+      "answer_a": "**Wide Crawl Number 17 (Wide17)** is the specific 'Wide' web crawl collection in the Internet Archive seeded using a 'Total Domains' list from 'Domains Index'. Its official start date was **August 3, 2018**, and the 'max-hops' parameter was configured to the integer value **3**.[1]\n\n## References\n[1] https://www.aemo.com.au/-/media/files/market-it-systems/historical/guide-to-web-services-and-software-v200.chm?rev=6c0ff8e4f29043ef87a3269201cfe61e&sc_lang=en",
+      "answer_b": "The specific 'Wide' web crawl collection seeded with the 'Total Domains' list from 'Domains Index' is Internet Archive's Wide Crawl 7. According to its metadata, the crawl officially began on August 3, 2018 [1]. The 'max-hops' parameter was configured with an integer value of 1, limiting the crawl to only the initially seeded URLs without following subsequent links [2]. This configuration prioritized broad coverage of the domain space over depth, supporting the goal of capturing a wide snapshot of the web.\n\n## References  \n[1] https://archive.org/details/2018wide  \n[2] https://blog.archive.org/2018/08/10/announcing-wide-crawl-7/",
+      "duration_a_seconds": 3.0,
+      "duration_b_seconds": 13.3,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified the specific entity (Wide Crawl Number 17) based on the unique seed provider constraint ('Domains Index') and provided the correct metadata for the start date and max-hops parameter as per the ground truth. Agent B failed the Deep Logic check by misidentifying the collection as 'Wide Crawl 7' (which uses different seeds) and subsequently provided incorrect metadata (max-hops 1) and a hallucinated date for that incorrect entity.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0019_pplsonar_vs_Qwen3235b_408"
+}

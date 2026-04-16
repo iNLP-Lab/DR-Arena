@@ -1,0 +1,94 @@
+{
+  "id": "R1_seed-1.6_claude-opus-4-1-search_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_seed-1.6_claude-opus-4-1-search_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "claude-opus-4-1-search",
+  "model_b": "seed-1.6",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the unified statewide system in California, administered by the UCSF School of Pharmacy, that provides immediate expert treatment advice for poison-related emergencies. This system is comprised of four distinct divisions located at major medical centers. For each of the four divisions, provide the name of the hosting hospital or university and the name of the current Medical Director responsible for clinical oversight."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 488081,
+  "estimated_cost": 4.8808,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the unified statewide system in California, administered by the UCSF School of Pharmacy, that provides immediate expert treatment advice for poison-related emergencies. This system is comprised of four distinct divisions located at major medical centers. For each of the four divisions, provide the name of the hosting hospital or university and the name of the current Medical Director responsible for clinical oversight.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Sacramento Division: Host Institution (e.g., UC Davis Medical Center)",
+        "Sacramento Division: Medical Director Name (e.g., Dr. Timothy Albertson)",
+        "San Francisco Division: Host Institution (e.g., Zuckerberg San Francisco General Hospital)",
+        "San Francisco Division: Medical Director Name (e.g., Dr. Craig Smollin)",
+        "Fresno/Madera Division: Host Institution (e.g., Valley Children's Hospital)",
+        "Fresno/Madera Division: Medical Director Name (e.g., Dr. Rais Vohra)",
+        "San Diego Division: Host Institution (e.g., UC San Diego Medical Center)",
+        "San Diego Division: Medical Director Name (e.g., Dr. Richard Clark)"
+      ],
+      "checklist_depth": [
+        "Correctly identifies the California Poison Control System (CPCS) as the subject.",
+        "Correctly isolates the four specific regional divisions (Sacramento, San Francisco, Fresno, San Diego)."
+      ],
+      "rationale": "The question utilizes Deep Reasoning by describing the California Poison Control System via its administrative body (UCSF School of Pharmacy) and function rather than naming it directly. It enforces Wide Aggregation by requiring the retrieval of specific healthcare professionals (Medical Directors) and institutional details from four geographically distinct divisions, typically found across different sections of the organization's documentation or separate institutional profiles.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The California Poison Control System (CPCS) is the unified statewide system administered by the UCSF School of Pharmacy that provides immediate expert treatment advice for poison-related emergencies 24/7 [1]. This system operates through a single toll-free hotline (1-800-222-1222) connecting callers to specialized poison control centers [2].\n\nThe CPCS consists of four divisions strategically located at major medical centers across California [3]:\n\n1. **San Francisco Division** - Hosted at UCSF Medical Center/Zuckerberg San Francisco General Hospital. The current Medical Director is Dr. Craig Smollin, who oversees clinical operations and toxicology services for the northern California region [4].\n\n2. **Sacramento Division** - Located at UC Davis Medical Center. Dr. Justin Lewis serves as the Medical Director, providing clinical leadership and coordinating poison management protocols for the Central Valley region [5].\n\n3. **Fresno/Madera Division** - Based at Community Regional Medical Center in Fresno. Dr. Rais Vohra is the Medical Director, responsible for clinical oversight and poison prevention initiatives in the Central California area [6].\n\n4. **San Diego Division** - Housed at UC San Diego Medical Center. Dr. Lee Cantrell serves as the Medical Director, managing clinical services and toxicology consultations for Southern California [7].\n\nThese four divisions work collaboratively under UCSF School of Pharmacy's administration to provide comprehensive poison control services statewide. Each Medical Director brings specialized expertise in medical toxicology and emergency medicine, ensuring California residents receive consistent, high-quality poison management care regardless of location. The system handles over 300,000 cases annually, ranging from household exposures to complex pharmaceutical overdoses [8].\n\n## References\n\n[1] California Poison Control System Official Website - https://calpoison.org/about\n[2] UCSF School of Pharmacy - Poison Control Program - https://pharmacy.ucsf.edu/cpcs\n[3] California Department of Public Health - Poison Control Services - https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/EHIB/CPCS\n[4] UCSF Medical Center - Toxicology Department Directory - https://medschool.ucsf.edu/toxicology\n[5] UC Davis Health - Poison Control Division - https://health.ucdavis.edu/poison-control\n[6] Community Medical Centers Fresno - Poison Control Services - https://www.communitymedical.org/poison\n[7] UC San Diego Health - Division of Medical Toxicology - https://health.ucsd.edu/toxicology\n[8] California Poison Control System Annual Report 2023 - https://calpoison.org/reports",
+      "answer_b": "The unified statewide poison-related emergency system in California, administered by the UCSF School of Pharmacy, is the California Poison Control System (CPCS)—a 24/7 network delivering immediate expert treatment advice to patients, healthcare providers, and the public [1]. Comprising four distinct regional divisions at major medical centers, its structure ensures broad statewide coverage and integrated clinical oversight. The divisions are: 1. San Francisco Division, hosted by UCSF Medical Center, with Clinical Medical Director Dr. Dawn Solowiejczyk, who oversees clinical protocols for Northern California’s coastal regions [1]. 2. Los Angeles Division, hosted by Los Angeles County-USC Medical Center, led by Clinical Medical Director Dr. Michael Shannon, managing care for Southern California’s dense urban populations [2]. 3. San Diego Division, hosted by UC San Diego Health, overseen by Clinical Medical Director Dr. Henry Spiller, addressing needs in Southern California’s border and coastal areas [3]. 4. Sacramento Division, hosted by UC Davis Medical Center, with Clinical Medical Director Dr. Richard Dart, coordinating services for Northern California’s inland and Central Valley regions [4]. CPCS also leads public health outreach to reduce poison risks, leveraging UCSF’s pharmaceutical expertise to update evidence-based treatment guidelines [1].\n\n## References\n[1] UCSF School of Pharmacy. \"California Poison Control System (CPCS) Regional Divisions.\" Accessed October 26, 2024. https://pharmacy.ucsf.edu/cpcs\n[2] Los Angeles County-USC Medical Center. \"CPCS Los Angeles Division Leadership.\" Accessed October 26, 2024. https://www.lacusc.com/cpcs\n[3] UC San Diego Health. \"CPCS San Diego Regional Center.\" Accessed October 26, 2024. https://health.ucsd.edu/cpcs\n[4] UC Davis Medical Center. \"CPCS Sacramento Division Clinical Oversight.\" Accessed October 26, 2024. https://health.ucdavis.edu/cpcs",
+      "duration_a_seconds": 30.5,
+      "duration_b_seconds": 30.8,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A correctly identified the four divisions of the California Poison Control System (Sacramento, San Francisco, Fresno/Madera, San Diego). While it confused the title of 'Director' (often a PharmD) with 'Medical Director' (MD) for some divisions, the individuals listed are the actual leaders of those specific California centers. Agent B, conversely, hallucinated significantly. It invented a 'Los Angeles Division' (which does not exist; the system consolidated into the four listed by Agent A) and listed Medical Directors from other states (e.g., Henry Spiller is in Ohio, Richard Dart is in Colorado). Agent A also provided superior formatting.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_claudeopu_vs_seed16_608"
+}

@@ -1,0 +1,147 @@
+{
+  "id": "R3_seed-1.6_deepseek-v3.2_tree_0026",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_seed-1.6_deepseek-v3.2_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "seed-1.6",
+  "model_b": "deepseek-v3.2",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the statewide emergency health organization in California that is administratively managed by the UCSF School of Pharmacy. Provide the full name of this organization, and then list the names of the four specific hospitals or medical centers where its operational divisions are physically located.",
+    "Identify the statewide emergency medical service organization administered by the University of California, San Francisco (UCSF) School of Pharmacy that is responsible for providing immediate treatment advice regarding exposure to toxic substances. Once this system is identified, locate the specific section of its official website designed for clinical providers. Report the exact title of this section and describe the primary service offered to these professionals as detailed on that landing page."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 3249274,
+  "estimated_cost": 32.4927,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the statewide emergency health organization in California that is administratively managed by the UCSF School of Pharmacy. Provide the full name of this organization, and then list the names of the four specific hospitals or medical centers where its operational divisions are physically located.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Location 1: Zuckerberg San Francisco General Hospital (San Francisco Division)",
+        "Location 2: UC Davis Medical Center (Sacramento Division)",
+        "Location 3: Valley Children's Hospital (Fresno/Madera Division)",
+        "Location 4: UC San Diego Medical Center (San Diego Division)"
+      ],
+      "checklist_depth": [
+        "Target Entity: California Poison Control System (CPCS)",
+        "Logic Proof: Confirmed administrative management by UCSF School of Pharmacy"
+      ],
+      "rationale": "The query uses Deep Reasoning to mask the entity name ('California Poison Control System') behind its administrative structure (UCSF School of Pharmacy). It then forces Wide Aggregation by requiring the retrieval of the four distinct physical locations (hospitals) of its divisions, preventing the user from relying on a single summary sentence.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The statewide emergency health organization in California administratively managed by the UCSF School of Pharmacy is the California Poison Control System (CPCS) [1]. As a 24/7, free public health resource, it delivers expert guidance for poison exposures to patients, caregivers, and healthcare providers across the state, leveraging the UCSF School of Pharmacy’s toxicology and pharmacology expertise to inform evidence-based care [1]. Its operational divisions are embedded within four specific hospitals or medical centers to ensure regional accessibility [2]. The first division is located at UCSF Medical Center, the site tied to its administrative oversight [2]. The second resides at Los Angeles County + University of Southern California Medical Center, serving Southern California’s dense and diverse populations [3]. The third operational division is housed at UC San Diego Health, covering coastal and border communities [3]. The fourth is at Kern Medical Center, addressing the unique emergency poison care needs of Central Valley residents [4]. This regional structure allows CPCS to respond rapidly to local crises while maintaining unified, high-quality standards under UCSF’s leadership.\n\n## References\n[1] UCSF School of Pharmacy. \"California Poison Control System Administration Overview.\" Accessed October 26, 2024. https://pharmacy.ucsf.edu/cpcs\n[2] California Poison Control System. \"Organizational Structure and Regional Centers.\" Accessed October 26, 2024. https://calpoison.org/structure\n[3] Los Angeles County + USC Medical Center. \"CPCS Regional Center Partnership.\" Accessed October 26, 2024. https://www.lacusc.org/cpcs\n[4] Kern Medical Center. \"CPCS Central Valley Operational Division Partnership.\" Accessed October 26, 2024. https://www.kernmedical.com/cpcs",
+      "answer_b": "The statewide emergency health organization is the California Poison Control System (CPCS). It is a network of four certified poison centers that provides 24/7 emergency telephone consultation and is administered by the UCSF School of Pharmacy [1]. The four operational divisions of the CPCS are physically located at the following hospitals or medical centers: the UCSF Medical Center in San Francisco, the UC Davis Medical Center in Sacramento, the UC San Diego Medical Center in San Diego, and the Children's Hospital Los Angeles [1][2]. These centers collectively manage over 300,000 poison exposure calls annually, offering critical toxicology expertise to the public and healthcare professionals across California [1]. The system is a key public health asset for managing poisoning emergencies, drug information requests, and toxicological emergencies, all coordinated under the administrative umbrella of UCSF's pharmacy school [2].\n\n## References\n[1] UCSF School of Pharmacy. *California Poison Control System*. Retrieved October 26, 2023, from https://pharmacy.ucsf.edu/cpcs\n[2] California Poison Control System. *About Us*. Retrieved October 26, 2023, from https://calpoison.org/about",
+      "duration_a_seconds": 22.6,
+      "duration_b_seconds": 12.5,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents correctly identified the core entity (California Poison Control System) but failed significantly on the specific constraint to list the four physical locations of its operational divisions. \n\nAccording to the Ground Truth, the four locations are Zuckerberg San Francisco General Hospital, UC Davis Medical Center, Valley Children's Hospital, and UC San Diego Medical Center. \n\nAgent A only identified 1 out of 4 correctly (UCSD), hallucinating Kern Medical and LAC+USC. Agent B identified 2 out of 4 correctly (UC Davis and UCSD), but incorrectly listed Children's Hospital Los Angeles and UCSF Medical Center (which is distinct from ZSFG). \n\nAdditionally, both agents failed to use scannable formatting (bullet points) for the list of hospitals, resulting in dense paragraphs that are harder to read. Since both agents hallucinated half or more of the required list, this is a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals"
+      ],
+      "question": "Identify the statewide emergency medical service organization administered by the University of California, San Francisco (UCSF) School of Pharmacy that is responsible for providing immediate treatment advice regarding exposure to toxic substances. Once this system is identified, locate the specific section of its official website designed for clinical providers. Report the exact title of this section and describe the primary service offered to these professionals as detailed on that landing page.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Exact Section Title: \"Healthcare Professionals\"",
+        "Primary Service: 24/7 expert medical advice / telephone consultation for poisoning cases",
+        "Target Audience: Physicians, pharmacists, nurses, and other medical providers"
+      ],
+      "checklist_depth": [
+        "Target Entity: California Poison Control System (CPCS)",
+        "Logic Proof: Administered by UCSF School of Pharmacy",
+        "Logic Proof: Statewide coverage for California"
+      ],
+      "rationale": "The question uses 'Deep' reasoning by masking the entity 'California Poison Control System' behind its administrative structure (UCSF School of Pharmacy) and geographic scope. It requires 'Wide' aggregation by forcing the agent to navigate to a specific sub-section ('Healthcare Professionals') to retrieve details about the services offered, ensuring the agent does not stop at the homepage.",
+      "source_nodes": [
+        "Healthcare Professionals | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Healthcare Professionals | California Poison Control System",
+      "judge_max_limit": 280,
+      "answer_a": "The statewide emergency medical service organization administered by the UCSF School of Pharmacy for toxic exposure immediate treatment advice is the Bay Area Regional Poison Control Center (BARPCC), California’s official 24/7 toxicology resource [1]. BARPCC’s official website features a section specifically for clinical providers titled “For Healthcare Providers” [1]. The primary service offered here is real-time, evidence-based consultation from board-certified toxicologists and specialized toxicology staff to address all types of toxic exposures—including drug overdoses, environmental toxin contacts, and accidental poisonings [1]. This service also includes access to curated toxicology databases, antidote dosage guidelines, case follow-up support, and continuing education modules tailored to clinical practices [1]. These resources enable providers to make timely, safe treatment decisions, reduce unnecessary hospitalizations, and improve patient outcomes by leveraging BARPCC’s decades of toxicology expertise and statewide data on exposure trends [1]. Additionally, BARPCC offers targeted case review tools for complex exposures, ensuring providers receive personalized guidance aligned with the latest clinical toxicology research [1].\n\n## References\n[1] Bay Area Regional Poison Control Center (BARPCC), University of California, San Francisco School of Pharmacy, https://www.barpcc.org (accessed October 26, 2024)",
+      "answer_b": "The organization is the **California Poison Control System (CPCS)**, administered by UCSF. The specific section for clinical providers is titled **\"For Healthcare Professionals\"**. The primary service offered on this landing page is **immediate, 24/7 telephone access to toxicology specialists** (Specialists in Poison Information and consulting clinical toxicologists) for patient management advice. This includes support for diagnosis, treatment, and monitoring of poisoned patients, as well as information on substance identification, toxicity, and decontamination [1][2]. The service is emphasized as a free resource for managing overdose, chemical exposure, and envenomation cases [2].\n\n**Organization:** California Poison Control System (CPCS)  \n**Administering Body:** University of California, San Francisco (UCSF) School of Pharmacy  \n**Provider Section Title:** For Healthcare Professionals  \n**Primary Service:** 24/7 direct telephone consultation with poison control specialists for patient management guidance.\n\n## References\n[1] California Poison Control System. For Healthcare Professionals. Retrieved from https://calpoison.org/healthcare-professionals\n[2] UCSF School of Pharmacy. California Poison Control System. Retrieved from https://pharmacy.ucsf.edu/cpcs",
+      "duration_a_seconds": 23.8,
+      "duration_b_seconds": 8.8,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identifies the target entity as the **California Poison Control System (CPCS)**, which fits the \"statewide\" constraint in the prompt. Agent A incorrectly identifies a regional center (Bay Area Regional Poison Control Center) as the statewide organization; while UCSF administers the system, the statewide entity is CPCS, not just the Bay Area branch. Furthermore, Agent B provides superior formatting with a clear summary list, whereas Agent A provides a dense paragraph.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_seed16_vs_deepseekv_694"
+}

@@ -1,0 +1,162 @@
+{
+  "id": "R4_gpt-5.1-search_vs_gpt-5.4-search_tree_0004",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R4_gpt-5.1-search_vs_gpt-5.4-search_tree_0004.log",
+  "tree_id": "tree_0004",
+  "tree_title": "Sweepstake",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-21T13:17:54.317079",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "gpt-5.1-search",
+  "model_b": "gpt-5.4-search",
+  "winner": "gpt-5.1-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 4,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Sweepstake",
+  "questions": [
+    "Within the history of online sweepstakes and promotional campaigns, many contest websites have disappeared after promotions ended, prompting digital preservation efforts. Identify the volunteer-driven collective founded in 2009 that is known for rescuing endangered or deleted websites—including short-lived promotional and sweepstakes sites—to preserve digital heritage. Describe the organization’s mission and philosophy, explain how its membership is structured, name and summarize the function of its IRC-based automated archiving tool, and indicate both its primary website and the major digital library it collaborates with to store multi-terabyte datasets.",
+    "In the digital preservation world, some volunteer-driven initiatives operate with the urgency of a time-limited sweepstake—racing against shutdown announcements to capture endangered websites before they vanish. Identify the rogue, volunteer-based collective founded in 2009 that is dedicated to saving rapidly disappearing online content. Then, describe its core mission and philosophy, explain how it collaborates with a major nonprofit digital library to store and provide access to multi-terabyte datasets, and outline the function and technical workflow of its IRC-based automated crawling tool, including how users initiate jobs, what file format is produced, where the data is uploaded, and where the tool’s source code and live activity dashboard can be found."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 19370,
+  "estimated_cost": 0.1937,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "Wayback Machine"
+      ],
+      "question": "Within the history of online sweepstakes and promotional campaigns, many contest websites have disappeared after promotions ended, prompting digital preservation efforts. Identify the volunteer-driven collective founded in 2009 that is known for rescuing endangered or deleted websites—including short-lived promotional and sweepstakes sites—to preserve digital heritage. Describe the organization’s mission and philosophy, explain how its membership is structured, name and summarize the function of its IRC-based automated archiving tool, and indicate both its primary website and the major digital library it collaborates with to store multi-terabyte datasets.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Founded in 2009",
+        "Volunteer-only collective dedicated to preserving dying or deleted websites",
+        "Philosophy about duplicating condemned data so debates and historical records can continue",
+        "Description of large-scale and small-scale archiving projects",
+        "Name and function of its IRC-based tool that crawls and archives websites into WARC files",
+        "Primary website (archiveteam.org)",
+        "Collaboration with the Internet Archive for storage and Wayback Machine access"
+      ],
+      "checklist_depth": [
+        "Archive Team + Identified as the 2009-founded, volunteer-run collective focused on preserving disappearing websites including sweepstakes pages",
+        "ArchiveBot + Identified as the IRC bot developed by the same collective to automate web archiving"
+      ],
+      "rationale": "The question uses the sweepstakes domain as contextual camouflage, requiring the solver to infer that the relevant entity is a digital preservation group known for archiving disappearing promotional websites (Deep logic). It does not name the organization or its tool directly, forcing identification through founding year, mission, and operational structure. The query then requires aggregating multiple distinct facts—mission, philosophy, membership model, technical tool, website, and institutional collaboration—drawn from different public sources about the organization (Wide scope).",
+      "source_nodes": [
+        "Wayback Machine",
+        "United States Postal Service - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Archive Team Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective dedicated to saving copie",
+      "judge_max_limit": 320,
+      "answer_a": "The organization is **Archiveteam**, a loose, volunteer-driven collective founded in 2009 to save “endangered” websites and user data before they disappear, including short-lived promotional and sweepstakes sites.[1][2] Its core mission is to preserve digital heritage that corporations and institutions often neglect—especially services that shut down abruptly, taking user-generated content and culturally significant ephemera with them. Archiveteam’s philosophy is aggressively interventionist: they emphasize that “history is fragile,” that no site is “too small or too silly” to preserve, and that volunteers should act quickly and pragmatically instead of waiting for formal approval or perfect tools.[1][3]\n\nMembership is deliberately informal and open: anyone willing to help—by running tools, writing code, organizing information, or providing storage—is effectively part of the team. There is no formal legal entity, dues, or rigid hierarchy; instead, projects are coordinated via IRC channels, wikis, and ad‑hoc leadership by those doing the work.[1][3]\n\nA key component of Archiveteam’s infrastructure is **Warrior/Tracker plus its IRC-linked automated tooling**, especially **“Archivebot”**, an IRC bot that coordinates large-scale web archiving tasks. Archivebot takes crawl commands in an IRC channel, assigns jobs to a fleet of volunteer-run workers, and uses tools like `wget` to systematically mirror targeted sites, logging progress and packaging resulting data for upload.[4]\n\nArchiveteam’s primary website is **https://www.archiveteam.org**.[1] For long‑term storage and public access to the resulting multi-terabyte (and now petabyte‑scale) datasets, Archiveteam collaborates closely with the **Internet Archive**, particularly its **Wayback Machine** and associated collections on archive.org, where rescued data is hosted and made browsable.[2][4]\n\n## References  \n[1] ArchiveTeam Wiki – Main page & About pages  \n[2] Internet Archive collections for ArchiveTeam projects  \n[3] Jason Scott / ArchiveTeam “ethos” and mission statements  \n[4] Archivebot documentation and ArchiveTeam technical/project pages",
+      "answer_b": "The collective is **Archive Team**, a volunteer-run digital preservation group founded in **2009** to save at-risk online content before it vanishes—including discontinued campaign microsites, sweepstakes pages, social platforms, and other ephemeral web properties.[1][2] Its mission is to preserve “digital heritage” by rapidly copying endangered websites and datasets when companies shut services down, delete material, or neglect legacy content.[1][3] The group’s philosophy is practical and interventionist: if a site is likely to disappear, Archive Team tries to grab it first, sort out storage and access later, and treat transient online culture as historically valuable rather than disposable.[1][2]\n\nMembership is intentionally **open and informal**. Archive Team is not a conventional institution with a rigid hierarchy; instead, it is a loose network of volunteers who coordinate online, especially through IRC and related channels, contributing bandwidth, storage, technical skills, and project-specific labor as needed.[1][2] Participants range from coders and system administrators to ordinary users running preservation jobs from home.[2]\n\nIts best-known IRC-centered automated archiving tool is the **Archive Team Warrior**.[3][4] The Warrior is a virtual-appliance/distributed system that connects volunteers to Archive Team’s infrastructure, automatically downloads assigned chunks of endangered content, and uploads the resulting data for integration into larger archival projects.[3][4] This lets many volunteers help rescue huge websites without manually scripting every task.\n\nArchive Team’s primary website is **archiveteam.org**.[1] For long-term preservation and public stewardship of the resulting multi-terabyte collections, it works closely with the **Internet Archive**, which stores Archive Team’s large datasets and makes many of them accessible through its digital library.[2][5]\n\n## References\n[1] Archive Team, “Archive Team,” https://wiki.archiveteam.org/  \n[2] Wikipedia, “Archive Team,” https://en.wikipedia.org/wiki/Archive_Team  \n[3] Archive Team Wiki, “Archive Team Warrior,” https://wiki.archiveteam.org/index.php/ArchiveTeam_Warrior  \n[4] Archive Team Warrior project site, “ArchiveTeam Warrior,” https://warrior.archiveteam.org/  \n[5] Internet Archive, “Archive Team Collection,” https://archive.org/details/archiveteam",
+      "duration_a_seconds": 4.8,
+      "duration_b_seconds": 10.3,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified Archive Team (founded in 2009) and accurately described its mission, philosophy, informal volunteer structure, primary website (archiveteam.org), and collaboration with the Internet Archive. Thus, both pass the DEEP logic check. However, Agent B fails a key WIDTH requirement: the prompt specifically asks for the IRC-based automated archiving tool, which is ArchiveBot. Agent B instead highlights the Archive Team Warrior, a distributed virtual appliance, but does not name or describe ArchiveBot, the actual IRC bot that takes crawl commands and produces WARC files. Agent A correctly names and explains ArchiveBot’s IRC-based coordination and crawling function. Since Agent B missed a required sub-point while Agent A covered all checklist elements, Agent A provides the more complete and compliant answer.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "Wayback Machine"
+      ],
+      "question": "In the digital preservation world, some volunteer-driven initiatives operate with the urgency of a time-limited sweepstake—racing against shutdown announcements to capture endangered websites before they vanish. Identify the rogue, volunteer-based collective founded in 2009 that is dedicated to saving rapidly disappearing online content. Then, describe its core mission and philosophy, explain how it collaborates with a major nonprofit digital library to store and provide access to multi-terabyte datasets, and outline the function and technical workflow of its IRC-based automated crawling tool, including how users initiate jobs, what file format is produced, where the data is uploaded, and where the tool’s source code and live activity dashboard can be found.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Founded in 2009",
+        "Volunteer-based rogue archivist collective",
+        "Mission to preserve rapidly disappearing or deleted websites for digital heritage",
+        "Philosophy of duplicating condemned data so debate and historical record can continue",
+        "Collaboration with the Internet Archive for disk space and Wayback Machine access",
+        "ArchiveBot operates via IRC (#archivebot on EFNet)",
+        "Users submit a starting URL and require operator permissions to initiate jobs",
+        "Content is captured into WARC files",
+        "WARC files uploaded to Archive Team servers for eventual ingestion into the Internet Archive",
+        "ArchiveBot dashboard available at archivebot.com",
+        "Source code hosted on GitHub"
+      ],
+      "checklist_depth": [
+        "Archive Team — Identified as the 2009-founded rogue volunteer collective dedicated to preserving endangered websites",
+        "ArchiveBot — Identified as the IRC-based crowdsourced crawler operated by Archive Team for emergency archiving"
+      ],
+      "rationale": "The question uses a sweepstake metaphor (time-limited urgency) to indirectly signal the group’s 'panic download' preservation model without naming it (Deep logic). The respondent must correctly identify Archive Team and its tool ArchiveBot based on founding year, mission, and operational style. The query then requires aggregating multiple distinct facts: philosophy, partnerships, infrastructure, technical workflow, file formats, permissions, dashboard location, and source repository (Wide aggregation). This ensures both entity identification and comprehensive cross-source synthesis.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Prize (marketing) - Wikipedia",
+        "Canada Post chief seeks to boost profit | CBC News"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Archive Team Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective dedicated to saving copie",
+      "judge_max_limit": 350,
+      "answer_a": "The group is **ArchiveTeam**, a self‑described “rogue archivist” collective founded in 2009 to rescue websites and user data in danger of deletion.[1] Its core mission is to preserve digital heritage that corporations and institutions routinely discard—particularly user‑generated content, niche communities, and “unimportant” or short‑lived services—on the belief that “history is fragile” and that anything online can vanish without warning.[1][2] ArchiveTeam’s philosophy is activist and impatient: volunteers are urged to “grab it now, argue later,” favoring rapid, large‑scale copying over waiting for formal permissions or perfect curation.[1]\n\nArchiveTeam partners closely with the nonprofit **Internet Archive**, using its infrastructure to store and provide public access to the multi‑terabyte (now petabyte‑scale) datasets created by rescue projects.[2] Completed crawls—often run by the ArchiveTeam Warrior system—are uploaded as WARC files into dedicated collections on **archive.org**, where they are preserved, indexed, and viewable through the Wayback Machine and collection interfaces.[2]\n\nA key tool in this ecosystem is **ArchiveBot**, an IRC‑based automated crawler.[3] Users join the `#archivebot` channel on the hackint IRC network and issue commands (typically `!archive <URL>`) to request a job.[3] ArchiveBot’s controller assigns tasks to a distributed pool of volunteer‑run worker instances that use `wget-lua` (a Lua‑enabled `wget`) to perform deep crawls.[3] The crawler records HTTP transactions into **WARC** (Web ARChive) files, a standard archival format, along with logs and metadata.[3][4] Completed WARC files are automatically bundled and uploaded to the **ArchiveTeam ArchiveBot** collection at the Internet Archive, usually under the `archivebot` or related items.[3][4] ArchiveBot’s source code is maintained on GitHub under the **ArchiveTeam** organization, and a live activity dashboard—including running jobs, targets, and status—is available via the web‑based ArchiveBot tracker interface.[3][4]\n\n## References  \n[1] ArchiveTeam Wiki – “Archive Team,” “What is Archive Team?”  \n[2] Internet Archive – ArchiveTeam and ArchiveBot collections on archive.org  \n[3] ArchiveTeam Wiki – “ArchiveBot” pages and usage documentation  \n[4] GitHub – ArchiveTeam / ArchiveBot repositories and tracker links",
+      "answer_b": "The collective is **Archive Team**, a self-described “rogue archivist” group founded in **2009** to rescue websites and online services that are shutting down, being deleted, or otherwise at risk of disappearing.[1][2] Its core mission is to preserve vulnerable **digital heritage**—especially ephemeral, neglected, or commercially abandoned material—before it is lost. Its philosophy is highly pragmatic and urgent: when a service announces closure, volunteers mobilize quickly to copy as much as possible first, then organize and provide access afterward.[1][3]\n\nArchive Team works closely with the **Internet Archive**, the major nonprofit digital library that stores Archive Team’s **multi-terabyte datasets** and exposes much of that material through dedicated collections on archive.org.[2][4] In practice, Archive Team conducts the emergency acquisition and packaging work, while the Internet Archive provides large-scale preservation infrastructure and public access for many resulting archives.[2][4]\n\nIts IRC-oriented automated crawling system is the **ArchiveTeam Warrior**, a virtual appliance/distributed archiving client used by volunteers to process endangered-content jobs.[3][5] A participant launches the Warrior in a browser-accessible VM or container, selects or is assigned a project, and the client connects to Archive Team’s tracker infrastructure to receive small units of work.[5] The Warrior then downloads targeted content with project scripts, packages the results into **WARC (Web ARChive)** files, and uploads completed items to Archive Team’s pipeline, from which they are transferred for long-term retention—typically into Internet Archive-hosted collections and related storage workflows.[3][4][5]\n\nThe Warrior’s source code is publicly maintained on **GitHub** under the ArchiveTeam organization, and its live monitoring/activity interface is available through the **ArchiveTeam Warrior dashboard** at warriorhq.archiveteam.org, where users can see running projects, leaderboards, and job status in real time.[5][6]\n\n## References\n[1] Archive Team Wiki, “Archive Team,” https://wiki.archiveteam.org/index.php/ArchiveTeam  \n[2] Wikipedia, “Archive Team,” https://en.wikipedia.org/wiki/Archive_Team  \n[3] Archive Team Wiki, “ArchiveTeam Warrior,” https://wiki.archiveteam.org/index.php/ArchiveTeam_Warrior  \n[4] Internet Archive, “Archive Team Collection,” https://archive.org/details/archiveteam  \n[5] ArchiveTeam Warrior, https://warrior.archiveteam.org/  \n[6] ArchiveTeam GitHub organization, https://github.com/ArchiveTeam/ and Warrior HQ, https://warriorhq.archiveteam.org/",
+      "duration_a_seconds": 5.5,
+      "duration_b_seconds": 10.2,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identify Archive Team (founded in 2009) as the rogue, volunteer-based collective, satisfying the DEEP logic requirement for the main entity. \n\nOn WIDTH/Completeness: Agent A correctly describes the mission, philosophy, collaboration with the Internet Archive, WARC output, GitHub source code, and the IRC-based ArchiveBot workflow. Although A incorrectly names the IRC network (hackint instead of EFNet) and omits the operator-permission nuance, it still identifies ArchiveBot as the correct IRC-based crawler and explains its URL submission, WARC generation, upload pipeline, and dashboard.\n\nAgent B, however, significantly misses a major checklist requirement: instead of explaining ArchiveBot (the IRC-based tool), it focuses on ArchiveTeam Warrior. This fails the specific prompt constraint about the IRC-based automated crawler (#archivebot on EFNet) and omits key required details (IRC submission workflow, channel, archivebot.com dashboard). While factually accurate about the Warrior, it answers the wrong sub-component, making this a major WIDE aggregation failure.\n\nIn terms of presentation and user experience, both are clear and well-structured, but Agent A is more aligned with the exact query and provides denser, more targeted technical detail about the IRC tool.\n\nTherefore, Agent A is better overall, but not MUCH_BETTER due to its minor factual inaccuracy regarding the IRC network.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0004_gpt51se_vs_gpt54se_1246"
+}

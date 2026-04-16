@@ -1,0 +1,91 @@
+{
+  "id": "R1_M1_grok-4-search_vs_gemini-2.5-pro-grounding_tree_0026",
+  "source_group": "round1",
+  "source_log": "round1/R1_M1_grok-4-search_vs_gemini-2.5-pro-grounding_tree_0026.log",
+  "tree_id": "tree_0026",
+  "tree_title": "Healthcare Professionals",
+  "tree_topic": "Health > Public Health",
+  "tree_subtopic": "Poisons & Overdoses",
+  "tree_crawled_at": "2025-11-21T16:33:08.262133",
+  "tree_url": "https://calpoison.org/pros",
+  "model_a": "grok-4-search",
+  "model_b": "gemini-2.5-pro-grounding",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 1,
+  "mercy_rule": true,
+  "overall_topic": "Healthcare Professionals",
+  "questions": [
+    "Identify the unified statewide emergency response network in California dedicated to providing immediate, free, and expert treatment advice for exposures to poisonous or hazardous substances. Once identified, specify the university school responsible for its administrative management and list the four specific hospital-based divisions (regional sites) that comprise this system."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 611244,
+  "estimated_cost": 6.1124,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Healthcare Professionals",
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store"
+      ],
+      "question": "Identify the unified statewide emergency response network in California dedicated to providing immediate, free, and expert treatment advice for exposures to poisonous or hazardous substances. Once identified, specify the university school responsible for its administrative management and list the four specific hospital-based divisions (regional sites) that comprise this system.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Administrative Manager: UCSF School of Pharmacy (University of California, San Francisco)",
+        "Division 1: UC Davis Medical Center (Sacramento)",
+        "Division 2: Zuckerberg San Francisco General Hospital",
+        "Division 3: Valley Children’s Hospital (Fresno/Madera)",
+        "Division 4: UC San Diego Medical Center"
+      ],
+      "checklist_depth": [
+        "Target Entity: California Poison Control System (CPCS)",
+        "Logic Proof: Identified as the single statewide provider for poison/toxic exposure advice in California."
+      ],
+      "rationale": "The question uses Deep Logic by describing the function and scope (statewide poison advice) without naming the 'California Poison Control System' directly. It requires Wide Aggregation by asking for the specific administrative body and the locations of its four distinct operational divisions, forcing the agent to synthesize organizational structure details.",
+      "source_nodes": [
+        "Amazon.com: Poisoning and Drug Overdose, Eighth Edition eBook : Anderson, Ilene B., Benowitz, Neal L., Blanc, Paul D., Kim-Katz, Susan Y., Lewis, Justin C., Wu, Alan H. B., Olson, Kent R., Smollin, Craig: Kindle Store",
+        "Who We Serve | California Poison Control System"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The unified statewide emergency response network in California dedicated to providing immediate, free, and expert treatment advice for exposures to poisonous or hazardous substances is the California Poison Control System (CPCS) [1]. Established in 1997, CPCS operates as a single, integrated system that serves all 58 counties in California, handling over 300,000 calls annually through a toll-free hotline (1-800-222-1222) available 24/7 [2]. It connects callers—ranging from the public to healthcare professionals—with certified poison specialists, pharmacists, and physicians who offer real-time guidance on poisonings, overdoses, chemical exposures, and hazardous material incidents. This network prevents unnecessary emergency room visits by providing evidence-based recommendations, reducing healthcare costs and improving outcomes [1][3]. CPCS also conducts public education, toxicology research, and disaster response coordination, such as during wildfires or chemical spills, ensuring rapid dissemination of critical information [2].\n\nThe system is administratively managed by the University of California, San Francisco (UCSF) School of Pharmacy, which oversees operations, funding, and integration with academic and clinical resources [1][4]. This affiliation allows for advanced toxicology training and research integration, enhancing the expertise of its staff.\n\nCPCS comprises four specific hospital-based divisions, each serving as a regional site with specialized teams:\n\n1. **San Francisco Division**: Located at Zuckerberg San Francisco General Hospital, it covers the Bay Area and focuses on urban poisonings and research [1][2].\n\n2. **Sacramento Division**: Based at UC Davis Medical Center, it serves Northern California, emphasizing agricultural and environmental exposures [1][3].\n\n3. **Fresno/Madera Division**: Housed at Community Regional Medical Center in Fresno, it addresses Central Valley issues like pesticide poisonings and pediatric cases [1][4].\n\n4. **San Diego Division**: Situated at UC San Diego Medical Center, it handles Southern California, including border-related and marine toxin exposures [1][2].\n\nThese divisions collaborate seamlessly via a unified database, ensuring consistent, high-quality care statewide [3].\n\n(Word count: 278)\n\n## References\n[1] California Poison Control System. (n.d.). About CPCS. Retrieved from https://calpoison.org/about  \n[2] University of California, San Francisco School of Pharmacy. (2023). California Poison Control System. Retrieved from https://pharmacy.ucsf.edu/california-poison-control-system-cpcs  \n[3] American Association of Poison Control Centers. (2023). California Poison Control System Overview. Retrieved from https://aapcc.org/centers/california  \n[4] California Health and Human Services Agency. (2022). Poison Control Services in California. Retrieved from https://www.chhs.ca.gov/poison-control/",
+      "answer_b": "The unified statewide emergency response network in California dedicated to providing expert treatment advice for poison exposures is the California Poison Control System (CPCS) [1]. Operating continuously, the CPCS offers a single, toll-free hotline that connects callers—including the general public and healthcare professionals—to specialists in poison information, such as pharmacists, nurses, and physicians, for immediate guidance on exposures to hazardous substances [1, 2].\n\nAdministrative management for this entire system is provided by the University of California, San Francisco (UCSF) School of Pharmacy [3]. The UCSF School of Pharmacy's Department of Clinical Pharmacy is specifically responsible for overseeing the operations, quality assurance, data collection, and educational initiatives of the statewide network, ensuring a standardized, high-quality response for all Californians [3, 4].\n\nThe CPCS is structured around four distinct, hospital-based regional divisions that work collaboratively to provide comprehensive coverage across the state. These divisions are strategically located to handle calls from their specific geographic areas, ensuring localized knowledge and rapid consultation [5]. The four divisions are:\n\n1.  **Sacramento Division:** Located at UC Davis Health [5].\n2.  **San Francisco Division:** Based at Zuckerberg San Francisco General Hospital and Trauma Center [5].\n3.  **Fresno/Madera Division:** Hosted by Valley Children’s Healthcare [5].\n4.  **San Diego Division:** Situated within UC San Diego Health [5].\n\n## References\n\n[1] California Poison Control System. (n.d.). *About Us*. Retrieved from https://calpoison.org/about-us\n\n[2] State of California Emergency Medical Services Authority. (n.d.). *Poison Control*. Retrieved from https://emsa.ca.gov/poison_control/\n\n[3] UCSF School of Pharmacy. (n.d.). *California Poison Control System*. Retrieved from https://pharmacy.ucsf.edu/california-poison-control-system\n\n[4] County of Santa Clara Public Health Department. (n.d.). *Poison Control*. Retrieved from https://publichealth.sccgov.org/services/poison-control\n\n[5] California Poison Control System. (n.d.). *For Health Care Professionals*. Retrieved from https://calpoison.org/health-professionals\n\n[6] UC Davis Health. (n.d.). *California Poison Control System - Sacramento Division*. Retrieved from https://health.ucdavis.edu/children/services/poison-control",
+      "duration_a_seconds": 38.2,
+      "duration_b_seconds": 13.5,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the California Poison Control System (CPCS) and its administrative manager (UCSF School of Pharmacy). However, Agent A failed on the specific checklist item regarding the Fresno/Madera division. Agent A listed 'Community Regional Medical Center', which is outdated information. The division is currently located at 'Valley Children's Hospital', which Agent B correctly identified. Since accuracy is paramount and Agent B provided the correct current locations for all four divisions, it is the clear winner.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0026_grok4sea_vs_gemini25_36"
+}

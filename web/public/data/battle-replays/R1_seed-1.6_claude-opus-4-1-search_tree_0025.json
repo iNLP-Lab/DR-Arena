@@ -1,0 +1,160 @@
+{
+  "id": "R1_seed-1.6_claude-opus-4-1-search_tree_0025",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_seed-1.6_claude-opus-4-1-search_tree_0025.log",
+  "tree_id": "tree_0025",
+  "tree_title": "Cosmetology",
+  "tree_topic": "Beauty & Fitness",
+  "tree_subtopic": "Cosmetology & Beauty Professionals",
+  "tree_crawled_at": "2025-11-21T16:29:30.387253",
+  "tree_url": "https://everettcc.libguides.com/c.php?g=626470&p=4369779",
+  "model_a": "seed-1.6",
+  "model_b": "claude-opus-4-1-search",
+  "winner": "claude-opus-4-1-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Cosmetology",
+  "questions": [
+    "Identify the educational institution located at 1001 N. Broadway that houses the 'Cascade Learning Resource Center'. Consult this institution's library resources regarding 'Cosmetology', specifically the 'Career Collection', to find the local call numbers listed for the books authored by Susan Wood Gearhart and Edward J. Tezak. Additionally, provide the email address listed for personalized research help.",
+    "Locate the specific academic library subject guide for 'Cosmetology' that curates resources including the books 'Guide to Good Hairdressing' by Julie Handley and 'Successful Salon Management' by Edward J. Tezak, alongside licensing information for the Washington State Department of Licensing (DOL). Identify the specific Subject Guide Contact listed for this collection. Then, providing a comprehensive list, detail all other academic subjects or departments this individual is explicitly listed as supporting within the library's contact section."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 481261,
+  "estimated_cost": 4.8126,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Cosmetology",
+        "Specific Career Fields"
+      ],
+      "question": "Identify the educational institution located at 1001 N. Broadway that houses the 'Cascade Learning Resource Center'. Consult this institution's library resources regarding 'Cosmetology', specifically the 'Career Collection', to find the local call numbers listed for the books authored by Susan Wood Gearhart and Edward J. Tezak. Additionally, provide the email address listed for personalized research help.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Call Number for Susan Wood Gearhart's book: HF5382.O62 B3841 2005",
+        "Call Number for Edward J. Tezak's book: TT965 .T493 2002",
+        "Library Contact Email: library@everettcc.edu"
+      ],
+      "checklist_depth": [
+        "Target Entity: Everett Community College (EvCC)",
+        "Logic Proof: Identified institution via the specific address '1001 N. Broadway' and the facility 'Cascade Learning Resource Center'.",
+        "Context Proof: Located the specific 'Career Collection' or Subject Guide to retrieve the library-specific call numbers rather than generic ISBNs."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific institution (Everett Community College) using only its physical address and the name of a resource center. It then requires Wide aggregation by forcing the agent to locate a specific subject guide (Cosmetology) within that institution's library system to retrieve three distinct data points: two specific library call numbers (which proves the agent found the specific library collection and not just generic book data) and a contact email.",
+      "source_nodes": [
+        "Specific Career Fields - Careers Subject Guide - LibGuides at Everett Community College",
+        "Home - Careers Subject Guide - LibGuides at Everett Community College"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Career eBooks Guides for Specific Career Fields: A-C Accounting Anthropology Art Aviation Biology Business Chemistry Communications & Speech Computer Science Cosmetology Crimi",
+      "judge_max_limit": 300,
+      "answer_a": "The educational institution at 1001 N. Broadway housing the Cascade Learning Resource Center is Portland Community College (PCC) Cascade Campus [1]. PCC’s Cascade Learning Resource Center includes a specialized Career Collection with targeted cosmetology resources for students and aspiring professionals. A review of the center’s online catalog for this collection identifies two key books by the specified authors. Susan Wood Gearhart’s \"Milady’s Standard Cosmetology\" (2020), a foundational text covering core cosmetology techniques, industry safety protocols, and licensing exam prep, has a local call number of TX831 .M54 2020 [2]. Edward J. Tezak’s \"Cosmetology Career Guide: Launching Your Professional Journey\" (2022), which focuses on career planning, workplace etiquette, and networking strategies for cosmetology graduates, carries a local call number of TX831 .T49 2022 [2]. These call numbers enable direct location of the books within the Career Collection’s organized cosmetology section. For personalized research help—including assistance accessing these books, locating additional cosmetology resources, navigating licensing application materials, or refining research topics related to the field—the Cascade Learning Resource Center provides a dedicated email address: cascade.library@pcc.edu [3]. Students can reach out via this address to schedule one-on-one consultations or ask targeted questions about the Career Collection’s offerings.\n\n## References\n[1] Portland Community College. \"Cascade Campus Location & Hours.\" Accessed October 26, 2024. https://www.pcc.edu/campus/cascade/\n[2] Portland Community College Library Catalog. \"Cosmetology Career Collection Search Results.\" Accessed October 26, 2024. https://library.pcc.edu/\n[3] Portland Community College. \"Cascade Learning Resource Center Research Help.\" Accessed October 26, 2024. https://www.pcc.edu/library/cascade/help/",
+      "answer_b": "The educational institution located at 1001 N. Broadway that houses the Cascade Learning Resource Center is Everett Community College in Everett, Washington [1]. This community college serves students throughout Snohomish County and provides comprehensive educational resources through its library system.\n\nThe Cascade Learning Resource Center at Everett Community College maintains extensive library resources organized by subject areas, including Cosmetology materials within their Career Collection [2]. According to the library's catalog system, materials related to Cosmetology careers are classified under specific call numbers for easy access by students and researchers.\n\nFor the book authored by Susan Wood Gearhart, the local call number listed in the Career Collection is TT958.G43 [3]. This classification follows the Library of Congress system used by the institution for organizing cosmetology-related career resources. Edward J. Tezak's work in the Cosmetology section of the Career Collection is cataloged under the call number TT957.T49 [4]. These call numbers enable students to locate these specific resources within the physical library collection efficiently.\n\nStudents and researchers seeking personalized research assistance can contact the library's reference services directly. The email address provided for personalized research help at the Cascade Learning Resource Center is library@everettcc.edu [5]. This service connects users with professional librarians who can provide guidance on accessing resources, conducting research, and navigating the library's collections. The reference librarians are available to assist with questions about the Career Collection, including locating specific cosmetology resources and understanding how to effectively use the library's materials for career research and academic purposes.\n\n## References\n[1] Everett Community College Official Website - Campus Location\n[2] Cascade Learning Resource Center - Subject Guides\n[3] EvCC Library Catalog - Cosmetology Career Collection\n[4] EvCC Library Database - Career Resources\n[5] Everett Community College Library - Contact Information",
+      "duration_a_seconds": 24.3,
+      "duration_b_seconds": 26.5,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the target entity (Everett Community College) based on the address and facility name. Agent A incorrectly identified Portland Community College, likely triggered by the name 'Cascade', ignoring the specific address provided in the prompt. Because Agent A failed the Deep Logic (Wrong Entity), all its subsequent information (email, call numbers) is incorrect for the user's specific query. Agent B is the winner, but it is capped at 'BETTER' rather than 'MUCH BETTER' because it appears to have hallucinated the specific call numbers compared to the Ground Truth (providing generic TT classifications instead of the specific HF/TT numbers listed in the GT checklist).",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Crawler returned 0 new nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Cosmetology",
+        "Specific Career Fields"
+      ],
+      "question": "Locate the specific academic library subject guide for 'Cosmetology' that curates resources including the books 'Guide to Good Hairdressing' by Julie Handley and 'Successful Salon Management' by Edward J. Tezak, alongside licensing information for the Washington State Department of Licensing (DOL). Identify the specific Subject Guide Contact listed for this collection. Then, providing a comprehensive list, detail all other academic subjects or departments this individual is explicitly listed as supporting within the library's contact section.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Business",
+        "Careers",
+        "Education",
+        "Human Development",
+        "Nursing & Health Sciences",
+        "Nutrition",
+        "Philosophy",
+        "Political Science",
+        "Psychology",
+        "Religion",
+        "Sociology"
+      ],
+      "checklist_depth": [
+        "Institution: Everett Community College (EvCC) / Cascade Learning Resource Center",
+        "Subject Guide Contact: Marianne Le"
+      ],
+      "rationale": "The question uses Deep Logic by requiring the agent to identify a specific institution (Everett Community College) based on a unique fingerprint of holdings (specific book titles by Handley and Tezak) combined with a geographic constraint (Washington State licensing). It uses Wide Aggregation by requiring the agent to locate the specific profile of the librarian (Marianne Le) and extract a long list of other supported disciplines found in the 'Target Answers' section.",
+      "source_nodes": [
+        "Specific Career Fields - Careers Subject Guide - LibGuides at Everett Community College",
+        "Home - Careers Subject Guide - LibGuides at Everett Community College"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Career eBooks Guides for Specific Career Fields: A-C Accounting Anthropology Art Aviation Biology Business Chemistry Communications & Speech Computer Science Cosmetology Crimi",
+      "judge_max_limit": 330,
+      "answer_a": "The Portland Community College Cascade Learning Resource Center’s \"Cosmetology: Career & Licensing Guide\" is the specific academic library subject guide curating resources that include Julie Handley's \"Guide to Good Hairdressing,\" Edward J. Tezak's \"Successful Salon Management,\" and Washington State Department of Licensing (DOL) cosmetology licensing information (e.g., application portals, requirement checklists, and exam registration links) [1]. This guide integrates these resources with the center’s Career Collection materials, bridging textbook access and regulatory compliance support for students pursuing cosmetology credentials [1]. The Subject Guide Contact listed for this collection is Maria Gonzalez [2]. Per the library’s official contact section, Gonzalez is explicitly listed as supporting four additional academic subjects and departments beyond cosmetology: Dental Assisting, Esthetics, Massage Therapy, and Vocational Nursing [2]. For each of these areas, she provides tailored research assistance—including locating program-specific textbooks, navigating industry licensing requirements, refining research topics for class assignments, and accessing peer-reviewed journal articles [2]. She also oversees streamlined sub-guides for each supported subject, ensuring consistent access to curated resources and scheduling options for one-on-one consultations [3]. This cross-subject support aligns with the center’s focus on elevating resource accessibility for vocational and career-focused academic programs [3].\n\n## References\n[1] Portland Community College Library. \"Cosmetology: Career & Licensing Guide.\" Accessed October 26, 2024. https://library.pcc.edu/cascade/subguides/cosmetology-career-licensing\n[2] Portland Community College Cascade Learning Resource Center. \"Subject Guide Contacts & Support Areas.\" Accessed October 26, 2024. https://www.pcc.edu/library/cascade/contacts/subject-guides\n[3] Portland Community College. \"Vocational Program Resource Oversight.\" Accessed October 26, 2024. https://www.pcc.edu/campus/cascade/academics/vocational-support",
+      "answer_b": "The Cosmetology subject guide at Everett Community College's Cascade Learning Resource Center curates specialized resources for students in the cosmetology program, including key texts like \"Guide to Good Hairdressing\" by Julie Handley and \"Successful Salon Management\" by Edward J. Tezak [1]. This guide also provides essential licensing information and direct links to the Washington State Department of Licensing (DOL) requirements for cosmetology professionals [2].\n\nThe designated Subject Guide Contact for the Cosmetology collection is Christine Jeffers, who serves as the liaison librarian for this specialized area [3]. Ms. Jeffers provides targeted support for cosmetology students and faculty, helping them navigate both academic resources and professional licensing materials within the collection.\n\nChristine Jeffers supports multiple academic departments beyond Cosmetology at Everett Community College. According to the library's contact directory, she explicitly serves as the subject specialist for Business and Accounting programs, providing research assistance and collection development for these areas [4]. She is also listed as the primary contact for Early Childhood Education, supporting students pursuing careers in child development and education [5]. Additionally, Jeffers oversees library resources for the Paralegal Studies program, curating legal databases and materials essential for paralegal education [6].\n\nHer responsibilities extend to supporting the college's Health Sciences programs, where she assists nursing and allied health students with accessing medical databases and evidence-based practice resources [7]. Furthermore, she serves as the liaison for Human Services programs, helping students access social services and counseling-related materials [8]. This multi-disciplinary expertise allows Jeffers to provide comprehensive research support across various career-focused programs at the institution, making her a valuable resource for students pursuing diverse professional pathways.\n\n## References\n[1] Everett Community College Library - Cosmetology Subject Guide\n[2] EvCC Cosmetology Resources - DOL Licensing Information\n[3] Cascade Learning Resource Center - Subject Specialist Directory\n[4] EvCC Library - Business & Accounting Liaison Services\n[5] Everett Community College - Early Childhood Education Library Support\n[6] EvCC Paralegal Studies - Library Resources Contact\n[7] Cascade LRC - Health Sciences Research Support\n[8] EvCC Human Services - Library Subject Specialist",
+      "duration_a_seconds": 34.6,
+      "duration_b_seconds": 151.8,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the institution (Everett Community College) that aligns with the Washington State Department of Licensing constraint provided in the prompt. Agent A selected Portland Community College (Oregon), which contradicts the geographic constraint of the licensing information, likely getting confused by the 'Cascade Learning Resource Center' name (which exists at PCC). However, Agent B is only 'Better' rather than 'Much Better' because it failed to identify the correct contact person listed in the Ground Truth (Marianne Le), instead hallucinating a different name and list of subjects. Agent B also had better formatting (paragraphs vs. wall of text).",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0025_seed16_vs_claudeopu_607"
+}

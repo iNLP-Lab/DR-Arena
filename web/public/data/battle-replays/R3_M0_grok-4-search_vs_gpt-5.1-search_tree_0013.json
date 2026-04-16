@@ -1,0 +1,88 @@
+{
+  "id": "R3_M0_grok-4-search_vs_gpt-5.1-search_tree_0013",
+  "source_group": "round3",
+  "source_log": "round3/R3_M0_grok-4-search_vs_gpt-5.1-search_tree_0013.log",
+  "tree_id": "tree_0013",
+  "tree_title": "History of swimwear",
+  "tree_topic": "Shopping > Apparel",
+  "tree_subtopic": "Swimwear",
+  "tree_crawled_at": "2025-11-21T14:23:33.700598",
+  "tree_url": "https://en.wikipedia.org/wiki/History_of_swimwear",
+  "model_a": "grok-4-search",
+  "model_b": "gpt-5.1-search",
+  "winner": "gpt-5.1-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 3,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "History of swimwear",
+  "questions": [
+    "A digital historian researching the evolution of online swimwear retail is attempting to retrieve lost web pages from the late 2000s via the Internet Archive. Identify the organization that began donating its crawl data to the Archive in 1996. Regarding this organization's specific 'Web 2008 Crawl' collection, what is its current public accessibility status, and what specific temporal restriction applies to their daily data contributions before they become available in the Wayback Machine?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 65295,
+  "estimated_cost": 0.653,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "History of swimwear",
+        "Little wonder that bikinis have fit in almost from the start"
+      ],
+      "question": "A digital historian researching the evolution of online swimwear retail is attempting to retrieve lost web pages from the late 2000s via the Internet Archive. Identify the organization that began donating its crawl data to the Archive in 1996. Regarding this organization's specific 'Web 2008 Crawl' collection, what is its current public accessibility status, and what specific temporal restriction applies to their daily data contributions before they become available in the Wayback Machine?",
+      "word_limit_instruction": "Answer length: 100-200 words.",
+      "checklist_width": [
+        "Current Status of 2008 Crawl: Not publicly accessible",
+        "Daily Data Restriction: Added after an embargo period"
+      ],
+      "checklist_depth": [
+        "Target Entity: Alexa Internet (or Alexa Crawls)",
+        "Logic Proof: Identified as the organization that started donating data to the Internet Archive in 1996."
+      ],
+      "rationale": "The question adheres to the 'History of swimwear' domain by framing the search as a historian's inquiry into past retail trends (Context). It utilizes Deep Reasoning by masking the entity 'Alexa Internet' behind its historical donation start date (1996). It requires Wide Aggregation by asking for two distinct facts located in the source text: the specific accessibility of the 2008 dataset and the general policy (embargo) regarding daily data flows.",
+      "source_nodes": [
+        "Little wonder that bikinis have fit in almost from the start | The San Diego Union-Tribune",
+        "Chaperone (social) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Alexa Crawls Starting in 1996, Alexa Internet has been donating their crawl data to the Internet Archive. Flowing in every day, these data are added to the Wayba",
+      "judge_max_limit": 300,
+      "answer_a": "The organization that began donating its web crawl data to the Internet Archive in 1996 is Alexa Internet, a subsidiary of Amazon founded that year to archive and analyze web content [1]. Alexa Internet has been a key contributor to the Wayback Machine, providing extensive snapshots of websites, which would aid a digital historian in retrieving late-2000s pages related to online swimwear retail evolution, such as early e-commerce sites for brands like Speedo or Victoria's Secret.\n\nRegarding Alexa Internet's specific \"Web 2008 Crawl\" collection, it is currently fully publicly accessible through the Internet Archive's Wayback Machine, with no ongoing restrictions, allowing users to browse archived web pages from that year without barriers [2]. However, for Alexa Internet's ongoing daily data contributions to the Archive, a specific temporal restriction applies: the data is subject to a 6-month embargo period before it becomes available in the Wayback Machine, ensuring a delay for processing and privacy considerations [3].\n\nThis setup enables historical research while maintaining controlled access to recent crawls.\n\n## References\n[1] Internet Archive. \"About the Internet Archive.\" https://archive.org/about/  \n[2] Wayback Machine. \"Alexa Crawls Collection.\" https://archive.org/details/alexacrawls  \n[3] Alexa Internet. \"Web Crawling and Data Donation Policies.\" https://www.alexa.com/about (archived via Wayback Machine)",
+      "answer_b": "The organization is **Alexa Internet**, which began donating its web crawl data to the Internet Archive in 1996.[1]  \n\nFor Alexa Internet’s **“Web 2008 Crawl”** collection at the Internet Archive, the data itself is **not publicly accessible**; only descriptive information and high‑level metadata are available to general users, while the crawl data is restricted.[1][2]  \n\nRegarding Alexa’s ongoing daily crawl donations, there is a **time‑delay restriction** before they surface in the public Wayback Machine: newly contributed data does **not become accessible immediately**, but only after an embargo period of **about six months** (i.e., pages must be at least roughly half a year old before appearing as replayable captures).[2]\n\n## References\n\n[1] Internet Archive collection description for Alexa Internet crawls (including Web 2008 Crawl).  \n[2] Internet Archive / Wayback Machine documentation and FAQs on Alexa Internet contributions and access delay.",
+      "duration_a_seconds": 29.9,
+      "duration_b_seconds": 54.3,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the organization as Alexa Internet. However, Agent A hallucinated regarding the accessibility status of the 'Web 2008 Crawl' collection. The Ground Truth explicitly states this collection is 'Not publicly accessible,' whereas Agent A claimed it is 'fully publicly accessible.' Agent B correctly identified that the collection data is restricted and also correctly noted the 6-month embargo period for daily contributions. Agent B also utilized better formatting (bolding) for scannability.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0013_gpt51se_vs_grok4sea_197"
+}

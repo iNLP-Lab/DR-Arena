@@ -1,0 +1,151 @@
+{
+  "id": "R3_M0_grok-4-search_vs_gpt-5.1-search_tree_0001",
+  "source_group": "round3",
+  "source_log": "round3/R3_M0_grok-4-search_vs_gpt-5.1-search_tree_0001.log",
+  "tree_id": "tree_0001",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Arts & Entertainment > Movies > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T00:04:13.514767",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "grok-4-search",
+  "model_b": "gpt-5.1-search",
+  "winner": "grok-4-search",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": null,
+  "tournament_round": 3,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Identify the filmmaker who secured financing for his debut film, *Reservoir Dogs*, from LIVE Entertainment after using his time working in a video rental shop as a self-education in cinema. In the context of the video rental industry's history, explain the specific copyright royalty anomaly described regarding the commercial exploitation of purchased copies, and detail the specific set of human failures—involving both shop staff and parents—cited as necessary conditions for the media panic surrounding children's access to violent videos.",
+    "Identify two non-fiction authors who have used the specific business model or setting of a 'video rental shop' to illustrate concepts within their respective fields of Software Engineering and Film Studies. \n\n1. The first author, in a co-authored textbook regarding professional issues in software engineering, uses the video rental shop to explain the concept where a copyright owner receives no further royalties after a shop purchases a copy for rental. This author is also distinctively known for works on industrial relations, including a directory of trade unions and a book on human resource management in the airline industry.\n\n2. The second author, in a book analyzing 'video nasties' and anti-film propaganda, recounts a personal memory of visiting a video rental shop and feeling that the specific environment was 'devaluing' horror films. This author is also known for works on the history of death on film and the cinema of Jörg Buttgereit.\n\nFor each identified author, provide their name and list two specific book titles they have written that are NOT the books containing the video rental shop anecdotes described above."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 24288,
+  "estimated_cost": 0.2429,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "\"Video rental shop\" -wikipedia"
+      ],
+      "question": "Identify the filmmaker who secured financing for his debut film, *Reservoir Dogs*, from LIVE Entertainment after using his time working in a video rental shop as a self-education in cinema. In the context of the video rental industry's history, explain the specific copyright royalty anomaly described regarding the commercial exploitation of purchased copies, and detail the specific set of human failures—involving both shop staff and parents—cited as necessary conditions for the media panic surrounding children's access to violent videos.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "The economic anomaly is that a video rental shop could buy a single copy of a film and rent it repeatedly to the public for profit.",
+        "The copyright owner would receive no further royalties beyond the initial purchase of the copy.",
+        "The media panic regarding children and violent videos required specific conditions: shop staff usually had to knowingly and willingly rent the video to an unsupervised child.",
+        "Additionally, the panic scenario relied on parents failing to monitor what their children were watching and only discovering the content later."
+      ],
+      "checklist_depth": [
+        "Target Entity: Quentin Tarantino (identified via *Reservoir Dogs*, LIVE Entertainment financing, and video store background)."
+      ],
+      "rationale": "The question utilizes Deep Logic by describing a famous director (Quentin Tarantino) through specific biographical details found in the source text (financing source, specific film, background) without naming him. It then applies Wide Logic by requiring the agent to aggregate distinct, unconnected facts about the video rental industry—specifically a legal copyright issue and a sociological 'moral panic' scenario—that are scattered across different source snippets.",
+      "source_nodes": [
+        "\"Video rental shop\" -wikipedia - Google Search",
+        "Blockbuster (retailer) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: AI Mode All Images Videos News Shopping Maps More Search Results Veni, Vidi, Video: The Hollywood Empire and the VCR - Page 198 books.google.com.sg › books books.google.com.sg",
+      "judge_max_limit": 300,
+      "answer_a": "Quentin Tarantino is the filmmaker who secured financing for his debut film, *Reservoir Dogs* (1992), from LIVE Entertainment, following his self-education in cinema while working at Video Archives, a video rental shop in Manhattan Beach, California [1]. There, he immersed himself in a vast array of films, from classics to exploitation genres, honing his storytelling style without formal training. This hands-on experience directly influenced his screenplay for *Reservoir Dogs*, which attracted producer Lawrence Bender and ultimately led to LIVE Entertainment providing the $1.5 million budget after actor Harvey Keitel joined the project [2].\n\nIn the history of the video rental industry, a key copyright royalty anomaly pertains to the \"first sale doctrine\" under U.S. copyright law (17 U.S.C. § 109). This allows video rental stores to purchase physical copies of films (e.g., VHS tapes or DVDs) outright and rent them repeatedly for profit without paying additional royalties to copyright holders per rental [3]. Unlike music licensing or theatrical exhibitions, where performance rights mandate ongoing fees, this doctrine treats rented videos as exhausted sales, enabling commercial exploitation without further compensation to creators. This anomaly fueled the industry's explosive growth in the 1980s but sparked debates over fair compensation, leading to failed legislative attempts like the 1983 Video Recordings Act proposal to impose rental royalties [4].\n\nThe media panic over children's access to violent videos, particularly during the UK's \"Video Nasties\" scare in the early 1980s, stemmed from a chain of human failures. Video shop staff often neglected to enforce age restrictions or verify renters' identities, allowing minors to obtain uncertified horror films like *The Driller Killer* or *Cannibal Holocaust*. Parents contributed by failing to monitor their children's rentals or viewing habits, sometimes even renting inappropriate content themselves. These lapses—coupled with sensational media reports of behavioral impacts—created necessary conditions for moral outrage, culminating in the Video Recordings Act 1984, which mandated classifications and stricter controls [5].\n\n(Word count: 287)\n\n## References\n[1] Britannica - Quentin Tarantino Biography.  \n[2] IMDb - Reservoir Dogs Production Details.  \n[3] U.S. Copyright Office - First Sale Doctrine Overview.  \n[4] The Atlantic - The Rise and Fall of Video Rental Stores (2020 article).  \n[5] BBC History - The Video Nasties Moral Panic (archived report).",
+      "answer_b": "The filmmaker is Quentin Tarantino, who treated his years working at the Video Archives rental store as a personal film school and then secured financing for his debut feature, *Reservoir Dogs* (1992), from LIVE Entertainment (later Artisan) after the script circulated in Hollywood.[1][2]\n\nIn accounts of the video rental industry’s evolution, a key “copyright royalty anomaly” is highlighted: once a videocassette had been sold into the retail market, the purchaser—whether an individual or a rental shop—could commercially exploit that physical copy (principally by renting it out) without paying any further royalties or license fees to the rightsholder. Unlike cinemas (which needed public-performance licenses) or broadcasters (which paid for transmission rights), video shops could lawfully derive repeated commercial income from a single legitimately purchased cassette under the first‑sale (exhaustion) doctrine.[3][4]\n\nThe same histories note that the moral panic about children accessing violent videos depended on a very specific chain of human failures. For an underage child to see such material via a rental shop, staff had to ignore or circumvent age classifications; parents had to allow children to rent or watch material unsupervised; and, often, parents had to fail again by not monitoring what was being played at home or by delegating selection to older siblings or friends. Only when shop clerks failed to enforce restrictions and parents failed both at gatekeeping and supervision could the feared scenario of children routinely viewing violent “video nasties” actually occur.[3][5]\n\n## References\n\n[1] Interviews and profiles of Quentin Tarantino and *Reservoir Dogs* production histories.  \n[2] Company and production background on LIVE Entertainment/Artisan and its role financing *Reservoir Dogs*.  \n[3] Historical analyses of the video rental business and copyright law (first‑sale/exhaustion doctrine).  \n[4] Legal commentary on home video rentals and the absence of additional royalty obligations.  \n[5] Media and cultural studies accounts of the 1980s–1990s “video nasties” panic and child‑access narratives.",
+      "duration_a_seconds": 33.6,
+      "duration_b_seconds": 13.9,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the entity (Tarantino), the economic anomaly (First Sale Doctrine/no royalties on rentals), and the human failures (staff and parents). Agent A is rated better because it provided richer specific details (mentioning the Video Recordings Act 1984, specific 'video nasty' titles, and key figures like Harvey Keitel) while remaining within the word count. Additionally, Agent A's citations simulate actual sources, whereas Agent B's citations are generic descriptions of source types.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'inauthor:\"Jack Eaton\"'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Video rental shop",
+        "\"Video rental shop\" -wikipedia",
+        "inauthor:\"Jack Eaton\""
+      ],
+      "question": "Identify two non-fiction authors who have used the specific business model or setting of a 'video rental shop' to illustrate concepts within their respective fields of Software Engineering and Film Studies. \n\n1. The first author, in a co-authored textbook regarding professional issues in software engineering, uses the video rental shop to explain the concept where a copyright owner receives no further royalties after a shop purchases a copy for rental. This author is also distinctively known for works on industrial relations, including a directory of trade unions and a book on human resource management in the airline industry.\n\n2. The second author, in a book analyzing 'video nasties' and anti-film propaganda, recounts a personal memory of visiting a video rental shop and feeling that the specific environment was 'devaluing' horror films. This author is also known for works on the history of death on film and the cinema of Jörg Buttgereit.\n\nFor each identified author, provide their name and list two specific book titles they have written that are NOT the books containing the video rental shop anecdotes described above.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Jack Eaton: Globalization and Human Resource Management in the Airline Industry",
+        "Jack Eaton: The British Trade Union Directory (or Comparative Employment Relations)",
+        "David Kerekes: Killing for Culture",
+        "David Kerekes: Sex Murder Art (or Mezzogiorno / Funhouse)"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Jack Eaton (Identified via 'Professional Issues in Software Engineering' copyright anecdote)",
+        "Target Entity 2: David Kerekes (Identified via 'Cannibal Error' / 'Video Nasties' shop anecdote)"
+      ],
+      "rationale": "The question utilizes 'Deep' logic by extracting obscure anecdotes about video rental shops found in specific snippets (Reasoning Chain) to identify two authors. It masks the authors' names, requiring the agent to search for the specific context (copyright royalties vs. devaluing horror). It then enforces 'Wide' aggregation by requiring the retrieval of *other* specific books from the authors' bibliographies (Target Answers), ensuring the agent validates the identity through broader publication history (Industrial Relations vs. Underground Film).",
+      "source_nodes": [
+        "inauthor:\"Jack Eaton\" - Google Search",
+        "inauthor:\"Frank Bott\" - Google Search",
+        "inauthor:\"David Kerekes\" - Google Search"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Filters and topics AI Mode All Images Videos News Shopping Books More Search Results Search Results Globalization and Human Resource Management in the Airline ... books.google",
+      "judge_max_limit": 350,
+      "answer_a": "The first non-fiction author is Jack Eaton, a scholar in industrial relations and co-author of the textbook *Professional Issues in Software Engineering* (third edition, 2000, with Frank Bott, Allison Coleman, and Diane Rowland). In this work, he uses the video rental shop as an example to explain the \"first sale doctrine\" in U.S. copyright law, highlighting how a shop can purchase a video copy and rent it indefinitely without paying additional royalties to the copyright owner, treating it as an exhausted sale rather than a licensed performance [1]. This illustration underscores ethical and legal issues in software intellectual property, drawing parallels to how physical media distribution avoids ongoing fees unlike digital or broadcast models. Eaton's background in industrial relations includes analyses of labor dynamics and union structures. Two specific book titles he has written, excluding the software engineering textbook, are *Globalization and Human Resource Management in the Airline Industry* (1999), which examines HRM strategies amid global deregulation in aviation, and *Trade Unions and the Card Vote: A Guide to Negotiating and a Directory of Major UK Trade Unions* (1987), a practical resource detailing union operations and negotiation tactics [2].\n\nThe second non-fiction author is David Kerekes, a film historian and publisher specializing in exploitation and horror cinema. In his book *Killing for Culture: An Illustrated History of Death Film from Mondo to Snuff* (original 1995, expanded 2015), he analyzes the \"video nasties\" moral panic of the 1980s in the UK, critiquing anti-film propaganda that linked violent videos to societal harm, while recounting a personal visit to a seedy video rental shop where the cluttered, commercial environment—mixing horror with pornography—made him feel the genre was being devalued and stripped of artistic merit [3]. This anecdote illustrates broader themes of censorship and cultural perception in film studies. Kerekes is renowned for exploring death representations in cinema and the works of German director Jörg Buttgereit. Two specific book titles he has written, excluding the one with the video shop anecdote, are *Sex Murder Art: The Films of Jörg Buttgereit* (1994), a detailed study of Buttgereit's controversial nekro-themed films like *Nekromantik*, and *Creeping Flesh: The Horror Fantasy Film Book* (2003), a collection of essays on obscure horror and fantasy cinema [4].\n\n(Word count: 348)\n\n## References\n[1] CRC Press - Professional Issues in Software Engineering (book description and excerpts).  \n[2] Routledge - Jack Eaton Author Profile and Bibliography.  \n[3] Headpress - Killing for Culture Official Page and Reviews.  \n[4] Amazon - David Kerekes Books List and Summaries.",
+      "answer_b": "1. The software engineering / industrial relations author  \n\nThe author is **John Gennard**. In the co‑authored textbook on professional issues in software engineering, Gennard uses the case of a video rental shop buying a tape outright, after which the copyright owner receives no further royalties from repeated rentals, to illustrate first‑sale / exhaustion and related professional-ethical questions in software practice.[1]  \n\nTwo other books by John Gennard (not the software‑engineering text) are:  \n- **“A Guide to the UK’s Higher Education Institutions and Their Trade Unions”** (often cited alongside his work compiling trade‑union directories and reference material).[2]  \n- **“Human Resource Management in the Airline Industry”** (a specialized study of employment relations, labour flexibility and HR strategy in airlines).[3]  \n\n2. The film studies / “video nasties” author  \n\nThe author is **Mark Goodall**. In his book on “video nasties” and anti‑film propaganda, Goodall recounts going into a local video rental shop as a young horror fan and feeling that the shop’s layout, categories and general atmosphere “devalued” horror films, using this memory to explore how commercial contexts frame moral panics about horror on video.[4]  \n\nTwo other books by Mark Goodall (not the “video nasties” volume) are:  \n- **“Sweet and Savage: The World Through the Shockumentary Film Lens”** – a study of death, atrocity and documentary/fictional borders in mondo and shockumentary cinema.[5]  \n- **“Cultural Excavation and Formal Expression in the Cinema of Jörg Buttgereit”** – a monograph on Buttgereit’s work, death imagery and German underground horror.[6]  \n\nBoth authors thus use the mundane setting of the video shop—one to exemplify copyright economics in software-related professional practice, the other to unpack cultural value, censorship and horror film reception.  \n\n## References  \n\n[1] Gennard et al., professional issues in software engineering text (Google Books excerpts).  \n[2] J. Gennard, higher‑education / trade‑union reference works.  \n[3] J. Gennard, *Human Resource Management in the Airline Industry*.  \n[4] M. Goodall, book on video nasties and anti‑film propaganda.  \n[5] M. Goodall, *Sweet and Savage: The World Through the Shockumentary Film Lens*.  \n[6] M. Goodall, *Cultural Excavation and Formal Expression in the Cinema of Jörg Buttgereit*.",
+      "duration_a_seconds": 146.2,
+      "duration_b_seconds": 25.3,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified both authors based on the specific bibliographic clues provided in the prompt (Jack Eaton and David Kerekes). Agent B failed the core logic puzzle, hallucinating the names of the authors (John Gennard and Mark Goodall) and incorrectly attributing the books and anecdotes to these wrong entities. Agent A also followed the negative constraint to list books *other* than the ones containing the anecdotes.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0001_gpt51se_vs_grok4sea_181"
+}

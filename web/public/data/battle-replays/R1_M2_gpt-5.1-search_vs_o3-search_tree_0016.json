@@ -1,0 +1,156 @@
+{
+  "id": "R1_M2_gpt-5.1-search_vs_o3-search_tree_0016",
+  "source_group": "round1",
+  "source_log": "round1/R1_M2_gpt-5.1-search_vs_o3-search_tree_0016.log",
+  "tree_id": "tree_0016",
+  "tree_title": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "tree_topic": "Jobs & Education > Jobs",
+  "tree_subtopic": "Developer Jobs",
+  "tree_crawled_at": "2025-11-21T15:03:35.229939",
+  "tree_url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+  "model_a": "gpt-5.1-search",
+  "model_b": "o3-search",
+  "winner": "gpt-5.1-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": null,
+  "tournament_round": 1,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+  "questions": [
+    "Using the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period, identify two distinct computer-related occupations that share a projected job outlook growth rate of exactly 15% ('Much faster than average'). These two occupations must be distinguished by their required work experience in a related occupation: one lists 'None' while the other lists '5 years or more'. For each of these two identified occupations, provide the 2024 median annual pay, the total projected numeric employment change over the decade, and the estimated average number of annual openings.",
+    "Identify the specific combined occupational group monitored by the U.S. Bureau of Labor Statistics that reported an overall 2024 median pay of $131,450 and is projected to experience an employment change of exactly 287,900 jobs from 2024 to 2034. After identifying this group, consult the bureau's data retrieval tools to list the full official names of the specific surveys or programs designated for tracking 'Spending', 'Time Use', and 'International Prices'."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "verdict": "A_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 1033236,
+  "estimated_cost": 10.3324,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "question": "Using the U.S. Bureau of Labor Statistics' Occupational Outlook Handbook projections for the 2024–2034 period, identify two distinct computer-related occupations that share a projected job outlook growth rate of exactly 15% ('Much faster than average'). These two occupations must be distinguished by their required work experience in a related occupation: one lists 'None' while the other lists '5 years or more'. For each of these two identified occupations, provide the 2024 median annual pay, the total projected numeric employment change over the decade, and the estimated average number of annual openings.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Software Developers/QA: 2024 Median Pay is approx $131,450",
+        "Software Developers/QA: Projected Employment Change is approx 287,900",
+        "Software Developers/QA: Annual Openings is approx 129,200",
+        "CIS Managers: 2024 Median Pay is approx $171,200",
+        "CIS Managers: Projected Employment Change is approx 101,600",
+        "CIS Managers: Annual Openings is approx 55,600"
+      ],
+      "checklist_depth": [
+        "Identify Entity 1: Software Developers, Quality Assurance Analysts, and Testers (matches 15% growth, 0 experience)",
+        "Identify Entity 2: Computer and Information Systems Managers (matches 15% growth, 5+ years experience)"
+      ],
+      "rationale": "The question requires Deep reasoning to filter occupations within the BLS handbook based on a specific combination of shared attributes (15% growth) and contrasting attributes (experience level). It requires Wide aggregation to retrieve three distinct statistical data points (pay, change, openings) for both identified entities.",
+      "source_nodes": [
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Computer and Information Systems Managers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Occupational Outlook Handbook > Field of Degree > Field of degree Field of degree (FOD) pages highlight data and information from the U.S. Bureau of Labor Statistics and the U",
+      "judge_max_limit": 300,
+      "answer_a": "Computer and information research scientists are projected to grow 15 percent from 2024 to 2034, a rate BLS characterizes as “much faster than average.” The occupation requires no prior work experience in a related occupation (entry usually follows a master’s or Ph.D. program). The 2024 median annual pay is about $151,580. Employment is projected to increase by roughly 7,700 jobs over the decade, from about 51,600 to 59,300 positions, with an estimated 2,100 openings per year on average, including both growth and replacements.[1]\n\nComputer and information systems managers also have a projected 15 percent job growth from 2024 to 2034, likewise labeled “much faster than average,” but they typically require five years or more of work experience in a related occupation before moving into management roles.[2] Their 2024 median annual pay is about $174,210. Total employment is projected to rise by around 92,600 jobs over the decade, from about 612,000 to 704,600 positions, with approximately 51,800 average annual openings when accounting for both new positions and turnover.[2]\n\nThese two occupations therefore share the same strong projected growth rate yet represent different career stages: one is an advanced technical research role accessible without prior industry experience, while the other is a high-level managerial role that generally builds on substantial prior work in computer or information technology fields.[1][2]  \n\n## References\n\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer and Information Research Scientists,” https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm  \n\n[2] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer and Information Systems Managers,” https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm",
+      "answer_b": "Computer and Information Systems Managers  \n• 2024 median annual pay: $174,790 [1]  \n• Projected employment change, 2024-34: +86,000 jobs [1]  \n• Average annual openings: 34,700 [1]  \n• Work experience in a related occupation: 5 years or more.  \n• Job outlook, 2024-34: 15 percent growth (“Much faster than average”).  \n\nComputer User Support Specialists  \n• 2024 median annual pay: $64,340 [2]  \n• Projected employment change, 2024-34: +104,700 jobs [2]  \n• Average annual openings: 68,600 [2]  \n• Work experience in a related occupation: None.  \n• Job outlook, 2024-34: 15 percent growth (“Much faster than average”).  \n\nBoth occupations share an identical 15 percent projected growth rate for 2024-34, but differ markedly in their experience requirements: user support specialists offer an entry pathway with no prior related work, whereas computer and information systems managers presuppose substantial industry experience. Their pay and opportunity profiles also diverge. Managers command a median salary roughly 2.7 times higher, yet generate fewer annual openings because the role is more senior and supervisory. Conversely, support specialists, while earning far less, present a larger numeric employment gain and nearly double the yearly openings, reflecting widespread demand for hands-on technical assistance across industries. For career planners, these figures illustrate how experience requirements shape compensation and labor-market dynamics even within the same overall growth category.  \n\n## References  \n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer and Information Systems Managers,” 2024-34 projections page.  \n[2] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook, “Computer Support Specialists — Computer User Support Specialists,” 2024-34 projections page.",
+      "duration_a_seconds": 76.4,
+      "duration_b_seconds": 24.3,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "Both agents failed the 'Deep Logic' check by missing the first entity specified in the Ground Truth Checklist (Software Developers) and instead substituting other occupations (Research Scientists for Agent A, Support Specialists for Agent B). Both agents appeared to hallucinate the '15%' growth rate for these substitutes to fit the prompt's constraint.\n\nHowever, Agent A is the clear winner based on Data Accuracy for the second entity (CIS Managers), which both agents correctly identified. Agent A's reported figures for CIS Managers (e.g., ~51,800 annual openings) were much closer to the Ground Truth Checklist (~55,600) than Agent B's figures (34,700 openings, a significant error). Furthermore, Agent A's substitute for the first entity (Research Scientists) is a high-growth role in reality (aligning with the 'Much faster than average' label), whereas Agent B's substitute (Support Specialists) is typically a moderate-growth role, making Agent B's claim of 'Much faster than average' a qualitative hallucination. Agent B had better formatting, but the data inaccuracies make it the loser.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: BOTH.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Successfully added 3 nodes.",
+          "[EVOLUTION] Descended to: 'Databases, Tables & Calculators by Subject'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 3,
+      "width": 3,
+      "logic_chain": [
+        "Software Developers, Quality Assurance Analysts, and Testers :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Field of degree  :     Occupational Outlook Handbook: :     U.S. Bureau of Labor Statistics",
+        "Databases, Tables & Calculators by Subject"
+      ],
+      "question": "Identify the specific combined occupational group monitored by the U.S. Bureau of Labor Statistics that reported an overall 2024 median pay of $131,450 and is projected to experience an employment change of exactly 287,900 jobs from 2024 to 2034. After identifying this group, consult the bureau's data retrieval tools to list the full official names of the specific surveys or programs designated for tracking 'Spending', 'Time Use', and 'International Prices'.",
+      "word_limit_instruction": "Answer length: 250-350 words.",
+      "checklist_width": [
+        "Spending Survey: Consumer Expenditure Survey (CE)",
+        "Time Use Survey: American Time Use Survey (ATUS)",
+        "International Prices Program: Import/Export Price Indexes (International Price Program - IPP)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Software Developers, Quality Assurance Analysts, and Testers",
+        "Logic Proof: Validated against the specific combined median pay ($131,450) and employment change projection (287,900) which differs from the individual sub-occupations."
+      ],
+      "rationale": "The question uses 'Deep' logic by citing the median pay for the *combined* group ($131,450) rather than the individual roles (Developers: $133k, Testers: $102k), forcing the agent to identify the exact aggregate category. The 'Wide' component requires the agent to navigate the agency's (BLS) broader data catalog to find specific survey names for three distinct economic indicators (Spending, Time Use, International Prices).",
+      "source_nodes": [
+        "Databases, Tables & Calculators by Subject",
+        "Challenge Validation",
+        "Subject Area Categories :  U.S. Bureau of Labor Statistics"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: On This Page: Inflation & Prices Employment Unemployment Employment Projections Pay & Benefits Spending & Time Use Productivity Workplace Injuries Occupational Requirements Re",
+      "judge_max_limit": 350,
+      "answer_a": "The combined occupational group is the Occupational Outlook Handbook major group **“Computer and Information Technology Occupations.”** BLS reports that workers in this group had a **2024 median annual wage of $131,450**, substantially higher than the median for all occupations.[1] Over the 2024–2034 decade, employment in this group is **projected to increase by exactly 287,900 jobs**, reflecting strong demand for computer and IT workers across industries.[1]\n\nWithin BLS’s **Data Retrieval: Databases, Tables & Calculators by Subject**, the bureau identifies specific survey or program names associated with the requested topical headings:\n\n- Under **“Spending”**, the data are provided by the **_Consumer Expenditure Surveys (CE)_**, BLS’s program that collects detailed information on the buying habits, income, and demographic characteristics of consumers in the United States.[2]\n\n- Under **“Time Use”**, the data are produced by the **_American Time Use Survey (ATUS)_**, which measures how people in the United States allocate their time among various activities such as work, childcare, household activities, leisure, and sleep.[2]\n\n- Under **“International Prices”**, BLS lists the **_International Price Program (IPP)_**, which produces the official U.S. **Import and Export Price Indexes** and related measures of prices for goods and some services traded between the United States and the rest of the world.[3]\n\nThus, the occupational group meeting the specified pay and growth conditions is the **Computer and Information Technology Occupations** major group, and the corresponding BLS survey/program names for the requested subject areas are **Consumer Expenditure Surveys (CE)** for spending, **American Time Use Survey (ATUS)** for time use, and the **International Price Program (IPP)** for international prices.[1][2][3]  \n\n## References  \n\n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook – *Computer and Information Technology Occupations*, summary table for 2024–34.  \n\n[2] U.S. Bureau of Labor Statistics, “Databases, Tables & Calculators by Subject – Spending & Time Use,” program descriptions for Consumer Expenditure Surveys (CE) and American Time Use Survey (ATUS).  \n\n[3] U.S. Bureau of Labor Statistics, “Databases, Tables & Calculators by Subject – International Prices,” program description for the International Price Program (IPP).",
+      "answer_b": "Management Occupations  \n\n• Combined occupational group: “Management occupations” as defined in the Occupational Outlook Handbook. It shows a 2024 median annual pay of $131,450 and a projected employment change of +287,900 jobs from 2024 to 2034 [1].  \n\nBLS surveys/programs for data retrieval  \n\n• Spending: Consumer Expenditure Surveys (CE) [2]  \n• Time Use: American Time Use Survey (ATUS) [2]  \n• International Prices: International Price Program (IPP) [2]  \n\nThese three programs are the Bureau’s official sources for, respectively, detailed household spending patterns, how Americans allocate their time each day, and monthly import and export price indexes used to gauge international price movements.  \n\n## References  \n[1] U.S. Bureau of Labor Statistics, Occupational Outlook Handbook — “Management Occupations,” 2024–34 projections page.  \n[2] U.S. Bureau of Labor Statistics, Data Retrieval Tools & Programs overview page (sections: Spending – Consumer Expenditure Surveys; Time Use – American Time Use Survey; International Prices – International Price Program).",
+      "duration_a_seconds": 44.9,
+      "duration_b_seconds": 16.3,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Both agents failed the Deep Logic check by misidentifying the specific occupational group. The correct entity, based on the specific statistics provided ($131,450 median pay and +287,900 jobs), is 'Software Developers, Quality Assurance Analysts, and Testers'. \n\nAgent A incorrectly attributed these statistics to the broader 'Computer and Information Technology Occupations' major group. \nAgent B incorrectly attributed them to the 'Management Occupations' major group.\n\nAgent A is the winner because its answer is semantically much closer to the truth (identifying the correct parent category), whereas Agent B selected a completely different field. Additionally, Agent A followed the user's preference for comprehensiveness by providing helpful descriptions for the BLS survey programs, whereas Agent B was very brief. Agent A provides a better user experience despite the attribution error common to both.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0016_gpt51se_vs_o3search_46"
+}

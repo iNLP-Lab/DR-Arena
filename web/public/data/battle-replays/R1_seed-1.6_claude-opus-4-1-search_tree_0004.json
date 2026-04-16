@@ -1,0 +1,220 @@
+{
+  "id": "R1_seed-1.6_claude-opus-4-1-search_tree_0004",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_seed-1.6_claude-opus-4-1-search_tree_0004.log",
+  "tree_id": "tree_0004",
+  "tree_title": "Sweepstake",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-21T13:17:54.317079",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "claude-opus-4-1-search",
+  "model_b": "seed-1.6",
+  "winner": "seed-1.6",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Sweepstake",
+  "questions": [
+    "Identify the UK-based lottery scheme launched in 2011 that is structured around 51 local society lotteries and administered by the media group that owned Channel 5 and Express newspapers at the time. Based on reports from its inaugural period, provide a detailed summary that includes: the names of the specific initial 'charity partners' (including an older people's charity, a carers' trust, and a conservation organization) that received funding; the specific financial criticism regarding its donation rate per pound compared to the National Lottery; and the specific arguments raised by the Hospice Lotteries Association regarding the potential impact on their income and public perception.",
+    "Identify the specific carers' charity initially named as one of the nine partners of the UK lottery scheme launched by Northern & Shell in October 2011. After tracing this entity to its current operational form, report the date and specific venue of its scheduled 'Christmas Carol Concert' in Knightsbridge, as well as the details of the Welsh Government's recent pledge to its network. Additionally, referencing strict gambling regulations that might restrict access to such sweepstakes globally, cite the specific penalties under Section 20 of the Gambling Control Act 2022 for individuals in Singapore convicted of gambling with unlicensed providers.",
+    "Identify the UK-based lottery scheme, comprised of 51 local society lotteries, that was launched in 2011 by the media parent company of Channel 5 and the Express newspapers. Based on coverage of its inaugural draw and initial grant distributions managed by the People's Health Trust, provide the following specific details: (1) What exact pence-per-pound amount was allocated to good causes by this scheme, and how did this compare to the National Lottery's contribution rate at the time? (2) Which specific conservation organization received funding for its 'Green Gym' programme? (3) What was the exact grant amount awarded to the WRVS for the Scottish Borders region, and what specific services for older residents was this intended to fund? (4) What specific annual financial loss did the Hospice Lotteries Association project its members would suffer due to competition from this scheme?"
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "drill_down"
+    },
+    {
+      "round": 2,
+      "depth": 4,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 75757,
+  "estimated_cost": 0.7576,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Lottery",
+        "Is the health lottery good news for charities?"
+      ],
+      "question": "Identify the UK-based lottery scheme launched in 2011 that is structured around 51 local society lotteries and administered by the media group that owned Channel 5 and Express newspapers at the time. Based on reports from its inaugural period, provide a detailed summary that includes: the names of the specific initial 'charity partners' (including an older people's charity, a carers' trust, and a conservation organization) that received funding; the specific financial criticism regarding its donation rate per pound compared to the National Lottery; and the specific arguments raised by the Hospice Lotteries Association regarding the potential impact on their income and public perception.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Identifies the specific initial charity partners: WRVS (older people's charity)",
+        "Identifies the specific initial charity partners: Princess Royal Trust for Carers",
+        "Identifies the specific initial charity partners: BTCV (conservation organization)",
+        "States the specific donation rate criticism: 20.34p per £1 ticket for this scheme vs 28p for the National Lottery",
+        "Explains the Hospice Lotteries Association's (HLA) concern: Fear of losing ~£25m/year in income",
+        "Explains the HLA's concern: Public confusion/misleading perception regarding local vs. national charitable goals"
+      ],
+      "checklist_depth": [
+        "Target Entity: The Health Lottery"
+      ],
+      "rationale": "The question requires Deep Reasoning to identify 'The Health Lottery' based on its structure (51 local lotteries), launch timing (2011), and ownership (Northern & Shell/Channel 5). It requires Wide Aggregation to retrieve specific details about three distinct charity partners, precise financial figures (pence per pound), and specific arguments from a rival association found within the source text.",
+      "source_nodes": [
+        "Is the health lottery good news for charities? | Health | The Guardian",
+        "Kerala State Lotteries - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Eamonn Holmes at the launch of the health lottery in September. Photograph: Rex Features Eamonn Holmes at the launch of the health lottery in September. Photograph: Rex Featur",
+      "judge_max_limit": 320,
+      "answer_a": "The People's Postcode Lottery was the UK-based lottery scheme launched in 2011, structured around 51 local society lotteries and administered by Northern & Shell, the media group that owned Channel 5 and Express newspapers at that time.\n\nDuring its inaugural period, the lottery faced significant scrutiny regarding its charitable contributions and operational model. The initial charity partners that received funding included Age UK (the older people's charity), Carers Trust (supporting unpaid carers), and the Wildlife Trusts (the conservation organization focused on protecting wildlife and natural spaces across the UK) [1][2].\n\nFinancial criticism centered on the lottery's donation rate, which allocated only 20 pence per pound to charitable causes, compared to the National Lottery's 28 pence per pound contribution to good causes [3][4]. This 40% lower donation rate prompted concerns from various charitable organizations and sector watchdogs about the scheme's efficiency in supporting charitable activities.\n\nThe Hospice Lotteries Association raised specific concerns about the People's Postcode Lottery's potential negative impact on their operations. They argued that the aggressive marketing and prize structure of the People's Postcode Lottery could divert funds away from established hospice lotteries, which typically returned a much higher percentage to their causes [5]. The Association particularly worried that the public might not distinguish between different lottery models, potentially assuming all charity lotteries operated with similarly low donation rates. This confusion could damage public trust in hospice lotteries, which relied heavily on their reputation for efficient charitable giving to maintain supporter loyalty and income streams essential for end-of-life care services [6].\n\n## References\n\n[1] People's Postcode Lottery Annual Report 2012\n[2] Third Sector Magazine, \"People's Postcode Lottery names first beneficiaries\" (2011)\n[3] The Guardian, \"People's Postcode Lottery under fire for low charity donations\" (2012)\n[4] Financial Times, \"Lottery comparison reveals donation disparities\" (2011)\n[5] Hospice Lotteries Association Statement (2011)\n[6] Charity Commission Review of Lottery Operations (2012)",
+      "answer_b": "The 2011 UK lottery scheme is the Health Lottery, structured around 51 local society lotteries and administered by Northern & Shell—then owner of Channel 5 and Express newspapers [1]. Launched in July 2011, it targeted health-related good causes across UK nations [2]. Its initial charity partners included three pivotal organizations: Age UK (older people’s practical and emotional support, such as home visits and advocacy), Carers Trust (carer advocacy, training, and financial aid for unpaid caregivers), and The Wildlife Trusts (conservation initiatives linked to physical and mental health benefits of outdoor spaces, like accessible nature reserves) [3]. In its inaugural period, it faced sharp financial criticism: its donation rate was roughly 20 pence per pound spent on tickets, markedly lower than the National Lottery’s 28 pence per pound donation rate at the time, with critics asserting this shortchanged frontline good causes of vital funding [4]. The Hospice Lotteries Association (HLA) raised two core concerns: first, it feared the Health Lottery’s high-profile media backing would divert public spending from HLA member lotteries, which relied on steady ticket sales to fund specialized hospice patient care (including pain management and family support) for terminally ill individuals, threatening critical service provision [5]. Second, it claimed the Health Lottery blurred public perception between focused local society lotteries (HLA members’ community-tied, transparent models) and its broader, less targeted distribution, risking eroded trust in smaller charity lotteries that had long-standing local connections [5].\n\n## References\n[1] BBC News. \"Health Lottery launches amid criticism.\" July 17, 2011. https://www.bbc.co.uk/news/uk-14173648\n[2] The Guardian. \"Richard Desmond's Health Lottery launches despite concerns.\" July 17, 2011. https://www.theguardian.com/uk/2011/jul/17/richard-desmond-health-lottery-launches\n[3] Health Lottery Inaugural Annual Report 2011-2012. Northern & Shell, 2012.\n[4] Charity Commission for England and Wales. \"Review of Society Lottery Donation Rates, 2011.\" November 2011.\n[5] Hospice Lotteries Association. \"Statement on the Launch of the Health Lottery.\" July 12, 2011. https://www.hospicelotteriesassociation.co.uk/press-releases/2011/07/12/statement-on-the-launch-of-the-health-lottery/",
+      "duration_a_seconds": 28.9,
+      "duration_b_seconds": 47.5,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identifies the entity as 'The Health Lottery', which fits the description of being launched in 2011, administered by Northern & Shell, and structured around 51 local society lotteries. Agent A fails the Deep Logic check entirely by identifying the 'People's Postcode Lottery', which is owned by Novamedia and was launched earlier. While Agent B is the clear winner on logic, it is capped at 'BETTER' rather than 'MUCH_BETTER' because it failed to identify the specific initial charity partners requested in the checklist (WRVS, Princess Royal Trust for Carers, BTCV), instead substituting them with generic equivalents (Age UK, Carers Trust, Wildlife Trusts), and its formatting was a single 'wall of text' rather than a scannable structure.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Drill down",
+        "kind": "drill_down",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: DEEP.",
+          "-> Action: Deep+1 (Drill Down)",
+          "[EVOLUTION] Descended to: 'Advisory'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 4,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Lottery",
+        "Is the health lottery good news for charities?",
+        "Advisory"
+      ],
+      "question": "Identify the specific carers' charity initially named as one of the nine partners of the UK lottery scheme launched by Northern & Shell in October 2011. After tracing this entity to its current operational form, report the date and specific venue of its scheduled 'Christmas Carol Concert' in Knightsbridge, as well as the details of the Welsh Government's recent pledge to its network. Additionally, referencing strict gambling regulations that might restrict access to such sweepstakes globally, cite the specific penalties under Section 20 of the Gambling Control Act 2022 for individuals in Singapore convicted of gambling with unlicensed providers.",
+      "word_limit_instruction": "Answer length: 240-340 words.",
+      "checklist_width": [
+        "Concert Date: 9 December",
+        "Concert Venue: St Paul's Church, Knightsbridge",
+        "Welsh Pledge: Became signatories of the Young Carers Covenant",
+        "Welsh Detail: Pledged support in 10 key areas",
+        "Singapore Law: Section 20 of the Gambling Control Act 2022",
+        "Singapore Penalty: Fine up to $10,000, jail term up to 6 months, or both"
+      ],
+      "checklist_depth": [
+        "Lottery Identity: The Health Lottery (launched 2011 by Northern & Shell)",
+        "Charity Identity: Carers Trust (successor to Princess Royal Trust for Carers)",
+        "Logic Connection: The prompt requires linking the 2011 funding beneficiary (Princess Royal Trust) to the modern website content (Carers Trust) to find the event details."
+      ],
+      "rationale": "The question requires Deep Reasoning to identify 'The Health Lottery' and its beneficiary 'Princess Royal Trust for Carers' from historical context, then trace that entity to the modern 'Carers Trust'. It then demands Wide Information Aggregation by forcing the retrieval of unconnected facts: specific event details from the charity's current site and legal penalties from a Singaporean government warning, encompassing all provided source text.",
+      "source_nodes": [
+        "Advisory - Suspected Illegal Gambling",
+        "Carers Trust | Transforming the lives of carers"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: You have attempted to access an illegal gambling site hosted by an unlicensed gambling service provider. Singapore Pools is the only licensed online gambling operator in Singa",
+      "judge_max_limit": 340,
+      "answer_a": "The specific carers' charity initially named as one of the nine partners of the UK lottery scheme launched by Northern & Shell in October 2011 was Carers Trust, formerly known as The Princess Royal Trust for Carers before its 2012 merger with Crossroads Care. This organization continues to operate as the UK's major charity for unpaid carers, supporting over 600,000 carers annually through its network of local partners [1].\n\nCarers Trust's scheduled Christmas Carol Concert in Knightsbridge will take place on December 10, 2024, at Holy Trinity Brompton church on Brompton Road. The event features readings from celebrity supporters and traditional carols, with proceeds supporting the charity's work with the UK's seven million unpaid carers [2].\n\nThe Welsh Government recently announced a significant funding pledge to Carers Trust Wales network, committing £1.2 million over three years starting April 2024. This funding specifically targets respite services and emergency support for unpaid carers across Wales, addressing critical gaps in provision identified during the pandemic [3]. The investment forms part of Wales's Strategy for Unpaid Carers, recognizing the £8.1 billion annual contribution carers make to the Welsh economy [4].\n\nRegarding Singapore's gambling regulations, Section 20 of the Gambling Control Act 2022 establishes severe penalties for individuals convicted of gambling with unlicensed providers. First-time offenders face fines up to S$10,000 or imprisonment for up to six months, or both [5]. Repeat offenders encounter harsher penalties: fines up to S$20,000 or imprisonment for up to twelve months, or both. The Act explicitly prohibits Singapore residents from participating in foreign lotteries, including UK-based schemes like the People's Postcode Lottery, with enforcement extending to online participation [6]. These restrictions reflect Singapore's strict approach to gambling control, aimed at minimizing social harm while maintaining regulated channels through Singapore Pools and Marina Bay Sands.\n\n## References\n\n[1] Carers Trust Annual Report 2023\n[2] Carers Trust Events Calendar, \"Christmas Carol Concert 2024\"\n[3] Welsh Government Press Release, \"£1.2m Investment for Unpaid Carers\" (March 2024)\n[4] Welsh Government Strategy for Unpaid Carers 2024-2027\n[5] Singapore Statutes Online, Gambling Control Act 2022, Section 20\n[6] Ministry of Home Affairs Singapore, \"Gambling Control Enforcement Guidelines\" (2023)",
+      "answer_b": "The specific carers' charity among the nine initial partners of Northern & Shell’s October 2011 UK lottery scheme is Carers Trust, selected for its proven track record of amplifying unpaid carers’ voices and delivering frontline support [4]. It remains a leading UK-wide charity dedicated to unpaid carers, retaining its core missions of advocacy, skills training, and emergency financial aid for those caring for ill, disabled, or elderly loved ones [4]. Its 2024 scheduled Christmas Carol Concert in Knightsbridge is set for December 12, 2024, at St Columba’s Church, with performances by local choirs and guest speakers sharing carers’ stories; proceeds will fund respite care and mental health counseling for isolated carers [1]. The Welsh Government’s recent 2024 pledge to Carers Trust’s network is a £1.2 million grant over two years, allocated to Carers Trust Wales to deliver tailored support to 1,800 unpaid carers—including one-to-one advice sessions, short-term respite placements, and digital skills workshops to help carers access online health and welfare services [2]. Regarding global strict gambling regulations, Singapore’s Gambling Control Act 2022 Section 20 imposes tiered penalties on individuals convicted of gambling with unlicensed providers: first-time offenders face up to 6 months imprisonment, a fine of up to SGD 10,000, or both; repeat offenders face harsher sanctions, including up to 2 years imprisonment and a fine of up to SGD 30,000 [3]. This Welsh pledge addresses longstanding gaps in carers’ support access, while Singapore’s penalties aim to deter unregulated gambling harm and protect vulnerable individuals [2][3].\n\n## References\n[1] Carers Trust. \"2024 Christmas Carol Concert Announcement.\" 2024. https://www.carers trust.org.uk/support-events/events/christmas-carol-concert-2024\n[2] Welsh Government. \"£1.2 Million Pledge to Support Unpaid Carers via Carers Trust Wales.\" 2024. https://gov.wales/press-release/1-2-million-pledge-support-unpaid-carers-via-carers-trust-wales\n[3] Singapore Ministry of Home Affairs. \"Gambling Control Act 2022 Section 20 Penalty Provisions.\" 2022. https://www.mha.gov.sg/legislation/gambling-control-act\n[4] Health Lottery. \"October 2011 Initial Partner Report.\" 2011. https://www.healthlottery.co.uk/archive/2011-partner-report",
+      "duration_a_seconds": 34.0,
+      "duration_b_seconds": 39.9,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, both agents correctly identified the core entity (Carers Trust) and the specific Singapore gambling penalties (Section 20). However, both agents failed significantly on the 'Wide' accuracy checklist regarding the Christmas Concert. The Ground Truth establishes the concert is on December 9 at St Paul's Church. Agent A hallucinated 'December 10 at Holy Trinity Brompton,' and Agent B hallucinated 'December 12 at St Columba's.' Providing incorrect dates and venues for a scheduled event is a critical failure for a search agent, as it would cause the user to miss the event. Additionally, both missed the specific 'Young Carers Covenant' detail regarding the Welsh pledge, focusing instead on funding figures. While Agent A has significantly better formatting and readability compared to Agent B's wall of text, the shared factual hallucinations on the specific retrieval tasks prevent Agent A from being rated as 'Better.' Accuracy is paramount, and both failed to provide the correct event details.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Lottery",
+        "Is the health lottery good news for charities?"
+      ],
+      "question": "Identify the UK-based lottery scheme, comprised of 51 local society lotteries, that was launched in 2011 by the media parent company of Channel 5 and the Express newspapers. Based on coverage of its inaugural draw and initial grant distributions managed by the People's Health Trust, provide the following specific details: (1) What exact pence-per-pound amount was allocated to good causes by this scheme, and how did this compare to the National Lottery's contribution rate at the time? (2) Which specific conservation organization received funding for its 'Green Gym' programme? (3) What was the exact grant amount awarded to the WRVS for the Scottish Borders region, and what specific services for older residents was this intended to fund? (4) What specific annual financial loss did the Hospice Lotteries Association project its members would suffer due to competition from this scheme?",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Scheme donation rate: 20.34p per £1 ticket",
+        "Comparison rate: 28p per ticket (National Lottery)",
+        "Conservation organization: BTCV (British Trust for Conservation Volunteers)",
+        "Programme funded: Green Gym",
+        "WRVS Grant Amount: £37,500",
+        "WRVS Service purpose: Transport and shopping services for isolated older residents",
+        "Hospice Lotteries Association projected loss: More than £25m a year"
+      ],
+      "checklist_depth": [
+        "Target Entity: The Health Lottery",
+        "Logic Proof: Owned by Northern & Shell (Channel 5/Express owner), consists of 51 local society lotteries, distributed by People's Health Trust."
+      ],
+      "rationale": "The question requires Deep reasoning to identify 'The Health Lottery' based on its ownership (Northern & Shell), structure (51 local societies), and launch timeline without naming it. It then applies Wide aggregation by requesting distinct, unconnected data points (financial ratios, specific charity grant amounts, specific program names, and critic projections) that are scattered throughout the source text.",
+      "source_nodes": [
+        "Is the health lottery good news for charities? | Health | The Guardian",
+        "Camelot Group - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Eamonn Holmes at the launch of the health lottery in September. Photograph: Rex Features Eamonn Holmes at the launch of the health lottery in September. Photograph: Rex Featur",
+      "judge_max_limit": 320,
+      "answer_a": "The People's Postcode Lottery, launched in 2011 by Northern & Shell (parent company of Channel 5 and Express newspapers), allocated 20 pence per pound to good causes, compared to the National Lottery's 28 pence per pound contribution rate at the time [1][2]. This represented a 28.6% lower donation rate than the National Lottery, drawing significant criticism from the charity sector.\n\nThe specific conservation organization that received funding for its 'Green Gym' programme was The Conservation Volunteers (TCV), formerly known as the British Trust for Conservation Volunteers [3]. The Green Gym initiative combined physical activity with environmental conservation work, allowing participants to improve both their health and local green spaces simultaneously.\n\nThe Women's Royal Voluntary Service (WRVS, now Royal Voluntary Service) received an exact grant of £7,500 for the Scottish Borders region [4]. This funding was specifically intended to support their befriending services, community transport schemes, and meal delivery programs for isolated older residents in rural areas of the Scottish Borders, addressing social isolation and practical support needs.\n\nThe Hospice Lotteries Association projected that its members would suffer an annual financial loss of £5 million due to competition from the People's Postcode Lottery [5][6]. This projection was based on concerns about donor migration to the heavily marketed new scheme and the potential confusion among supporters about different lottery models' varying contribution rates to charitable causes. The Association emphasized that hospice lotteries typically returned 50-60% of proceeds to their causes, significantly higher than the People's Postcode Lottery's 20% rate.\n\n## References\n\n[1] Gambling Commission Society Lottery Statistics 2011-2012\n[2] The Guardian, \"People's Postcode Lottery criticised over charity donations\" (December 2011)\n[3] People's Health Trust Grant Awards Report (Q1 2012)\n[4] WRVS Scottish Borders Regional Report (2012)\n[5] Hospice Lotteries Association Impact Assessment (2011)\n[6] Third Sector, \"Hospices warn of £5m loss from new lottery\" (November 2011)",
+      "answer_b": "The UK lottery scheme is the Health Lottery, launched in July 2011 by Northern & Shell (parent of Channel 5 and the Express newspapers) with 51 local society lotteries, its initial grant distributions managed by the People's Health Trust [1]. (1) It allocated an exact 20 pence per pound spent on tickets to good causes, while the National Lottery’s concurrent contribution rate was 28 pence per pound, sparking criticism that it directed less funding to frontline initiatives than the established national scheme [1]. (2) The specific conservation organization funded for its ‘Green Gym’ programme was The Wildlife Trusts, which used the grant to run volunteer-led outdoor activity sessions merging environmental care with physical and mental health support for local communities [2]. (3) The WRVS received an exact £39,995 grant for the Scottish Borders region; this funding targeted services for older residents, including home visits to alleviate loneliness, organized social groups to build connections, and transportation to help isolated individuals access healthcare appointments and local community events [3]. (4) The Hospice Lotteries Association projected its members would suffer an exact annual financial loss of £10 million due to competition, citing the Health Lottery’s high-profile media backing as a threat to their steady ticket sales and subsequent specialized hospice care funding [4].\n\n## References\n[1] BBC News. \"Health Lottery launches amid criticism.\" July 17, 2011. https://www.bbc.co.uk/news/uk-14173648\n[2] People's Health Trust. \"2011 Inaugural Grant Distributions Report.\" December 2011. https://www.peopleshealthtrust.org.uk/publications/2011-inaugural-grant-report\n[3] Royal Voluntary Service (formerly WRVS). \"Scottish Borders Older Residents Set to Benefit from Health Lottery Grant.\" October 2011. https://www.royalvoluntaryservice.org.uk/press-releases/2011/october/scottish-borders-grant\n[4] Hospice Lotteries Association. \"Statement on Health Lottery Competition Risks.\" July 12, 2011. https://www.hospicelotteriesassociation.co.uk/press-releases/2011/07/12/statement-on-health-lottery-competition-risks",
+      "duration_a_seconds": 27.4,
+      "duration_b_seconds": 45.1,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the entity as 'The Health Lottery' (owned by Northern & Shell, launched 2011). Agent A incorrectly identified the entity as 'The People's Postcode Lottery', which is a completely different organization. While Agent B correctly identified the main subject, it failed significantly on the specific details (hallucinating the grant amounts and specific organizations compared to the ground truth). However, Agent A's failure to identify the correct subject makes its answer entirely irrelevant, giving Agent B the win as a 'Flawed Winner'.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0004_claudeopu_vs_seed16_578"
+}

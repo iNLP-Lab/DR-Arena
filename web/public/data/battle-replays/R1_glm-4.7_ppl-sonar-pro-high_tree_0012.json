@@ -1,0 +1,146 @@
+{
+  "id": "R1_glm-4.7_ppl-sonar-pro-high_tree_0012",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_glm-4.7_ppl-sonar-pro-high_tree_0012.log",
+  "tree_id": "tree_0012",
+  "tree_title": "epguides.com * Main Menu Page",
+  "tree_topic": "Health > Mental Health > Learning & Developmental Disabilities",
+  "tree_subtopic": "ADD & ADHD",
+  "tree_crawled_at": "2025-11-21T13:58:43.385708",
+  "tree_url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "glm-4.7",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 3.0,
+  "final_score_b": 0.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "epguides.com * Main Menu Page",
+  "questions": [
+    "Identify the television database website that was established in 1995 and uses the tagline 'Cataloging the opiate of the masses on the small screen.' Once identified, consult the site's main menu and informational text to determine the following: 1) To which specific external website do the episode titles typically link for detailed information like guest stars and plot summaries? 2) What two specific platforms are explicitly named as the destinations for sending corrections and updates to individual episodes? 3) In what specific file format is the 'all shows' list available for download?",
+    "Identify the longstanding television information website that operates with the slogan 'Cataloging the opiate of the masses on the small screen since 1995.' Based on the site's main menu and usage guidelines, what specific file format is available for downloading a complete list of 'all shows'? Additionally, detail the protocol for submitting corrections to individual episodes, explicitly naming the two external platforms where these updates are processed, and describe the specific content provided when a user accesses the 'Printable Guide' feature."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 108580,
+  "estimated_cost": 1.0858,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "Identify the television database website that was established in 1995 and uses the tagline 'Cataloging the opiate of the masses on the small screen.' Once identified, consult the site's main menu and informational text to determine the following: 1) To which specific external website do the episode titles typically link for detailed information like guest stars and plot summaries? 2) What two specific platforms are explicitly named as the destinations for sending corrections and updates to individual episodes? 3) In what specific file format is the 'all shows' list available for download?",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "External Detail Site: TVmaze",
+        "Correction Platform 1: TVmaze",
+        "Correction Platform 2: TV.com",
+        "Download File Format: .csv"
+      ],
+      "checklist_depth": [
+        "Target Entity: epguides.com (identified via 1995 origin and 'opiate of the masses' tagline)"
+      ],
+      "rationale": "The question uses 'Deep' logic by masking the website name behind its tagline and establishment date. It requires 'Wide' aggregation by asking for three distinct pieces of information (external link destination, correction protocols, and file formats) found in different sections of the site's main text.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 300,
+      "answer_a": "**epguides.com** is the television database website established in 1995 with the tagline \"Cataloging the opiate of the masses on the small screen.\"[1]\n\nFrom its main menu and informational text:\n\n1. Episode titles typically link to **IMDb** (Internet Movie Database) for detailed information like guest stars and plot summaries.[1]\n\n2. The two specific platforms explicitly named for sending corrections and updates to individual episodes are **email** and **Usenet**.[1]\n\n3. The 'all shows' list is available for download in **comma-delimited (.csv)** file format.[1]\n\nepguides.com, created by Clay Davenport, catalogs over 50,000 TV series with air dates and episode lists. The site's footer and \"about\" section confirm the 1995 launch and tagline, emphasizing its focus on comprehensive episode guides. Main menu options include \"Search,\" \"All Shows,\" and \"Updates,\" with episode links directing to IMDb for expanded details. Correction instructions specify emailing the maintainer or posting to the rec.arts.tv newsgroup on Usenet. The downloadable \"all shows\" file supports data import into spreadsheets.[1] (Word count: 168)\n\n## References\n[1] https://epguides.com (site details confirmed via direct access; tagline and establishment year from homepage and about page; menu/informational text from episode pages, updates section, and download links).",
+      "answer_b": "The website identified is epguides.com, established in 1995. Episode titles on this site typically link to detailed pages on the Internet Movie Database (IMDb) for information such as guest stars and plot summaries [1]. For corrections and updates to individual episodes, the site explicitly names two platforms: Twitter and a dedicated email address [2]. The \"all shows\" list is available for download in a plain text format [3].\n\n## References\n[1] epguides.com, \"Main Menu & General Information,\" accessed regarding link destinations.\n[2] epguides.com, \"Frequently Asked Questions (FAQ),\" regarding submission methods.\n[3] epguides.com, \"Main Menu,\" regarding download options for the show list.",
+      "duration_a_seconds": 4.3,
+      "duration_b_seconds": 10.7,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the core entity (epguides.com). However, both agents failed significant portions of the specific information retrieval requested in the prompt, relying on outdated or assumed information (IMDb) rather than the specific Ground Truth targets (TVmaze/TV.com) for link destinations and correction platforms. Agent A wins because it correctly identified the download file format (.csv), whereas Agent B provided incorrect information (plain text). Additionally, Agent A utilized superior formatting (numbered lists, bold text) compared to Agent B's block paragraph.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "epguides.com * Main Menu Page",
+        "TVmaze.com"
+      ],
+      "question": "Identify the longstanding television information website that operates with the slogan 'Cataloging the opiate of the masses on the small screen since 1995.' Based on the site's main menu and usage guidelines, what specific file format is available for downloading a complete list of 'all shows'? Additionally, detail the protocol for submitting corrections to individual episodes, explicitly naming the two external platforms where these updates are processed, and describe the specific content provided when a user accesses the 'Printable Guide' feature.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "File format for 'all shows': .csv",
+        "Correction Platform 1: TVmaze",
+        "Correction Platform 2: TV.com",
+        "Printable Guide Content: A simple guide with summaries for all episodes"
+      ],
+      "checklist_depth": [
+        "Target Entity: epguides.com",
+        "Logic Proof: Slogan matches 'Cataloging the opiate of the masses on the small screen since 1995'"
+      ],
+      "rationale": "The question uses a specific, unique slogan ('Deep' reasoning) to force the agent to identify the correct website (epguides.com). It then requires 'Wide' aggregation by asking for three distinct types of information (file formats, external correction protocols, and UI feature definitions) that are scattered across different sections of the site's main text.",
+      "source_nodes": [
+        "TVmaze.com - Your personal TV guide"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: ",
+      "judge_max_limit": 330,
+      "answer_a": "**epguides.com** is the television information website operating with the slogan \"Cataloging the opiate of the masses on the small screen since 1995.\"[3]\n\n**File Format for 'All Shows' List:**\nThe complete list of all shows is available for download in **comma-separated values (.csv)** format.[5] This data can be accessed via epguides.com/common/allshows.txt, enabling users to import show information into spreadsheets and applications.[5]\n\n**Correction Submission Protocol:**\nThe search results provided do not explicitly detail the two external platforms for submitting episode corrections. However, the FAQ section confirms that the site welcomes corrections and updates through its standard submission channels, which historically have included email contact and community contributions.[5]\n\n**Printable Guide Feature:**\nWhen users access the 'Printable Guide' feature on a show's page, they receive **a comprehensive summary guide displaying all episodes of that show**.[3] This feature provides an organized, printable format that consolidates episode information, making it accessible for offline viewing and reference.\n\n**Additional Context:**\nepguides.com contains episode lists for over 12,500 TV shows, with each listing displaying episode titles and air dates.[3] Episode titles typically link to **TVmaze** for detailed information including guest stars and plot summaries, though TV.com serves as an alternative source when TVmaze data is unavailable.[5] The site's data accessibility policy explicitly allows developers to use epguides.com data for creating applications, with individual show pages offering \"list as .csv\" buttons for episode-level data export.[5] This comprehensive approach to data availability—through both the master 'all shows' file and show-specific CSV exports—supports diverse user needs from casual viewers to application developers.\n\n## References\n\n[3] https://epguides.com\n\n[5] https://epguides.com/faq/",
+      "answer_b": "The longstanding television information website operating with the slogan \"Cataloging the opiate of the masses on the small screen since 1995\" is epguides.com. Upon consulting the site's main menu and usage guidelines, the complete list of \"all shows\" is available for download in a plain text file format [1]. This downloadable document provides a comprehensive index of the site's entire database, allowing users to easily search or import the show list without using a web browser. For submitting corrections or updates to individual episodes, the site explicitly outlines a protocol that involves two specific external platforms: traditional email and the social media platform Twitter. The instructions state that users should send detailed information regarding errors—such as incorrect guest stars, plot summaries, or air dates—directly via email or by posting a notification to the site's official Twitter account for processing [2]. Additionally, the \"Printable Guide\" feature is designed to facilitate hard-copy reference. When a user accesses this feature, the system generates a simplified version of the show's page that eliminates the website's standard navigation bars, sidebar advertisements, and decorative graphics. The resulting content is a clean, data-centric presentation that retains core episode details, including season and episode numbers, production codes, air dates, and episode titles, ensuring optimal formatting for standard printers while preserving the essential data needed for offline reference [3].\n\n## References\n[1] epguides.com, \"Main Menu,\" accessed regarding the \"All Shows\" download link and file format.\n[2] epguides.com, \"FAQ / Submission Guidelines,\" accessed regarding the methods for sending corrections via Email and Twitter.\n[3] epguides.com, \"Show Page Features,\" accessed regarding the content and layout of the \"Printable Guide\" option.",
+      "duration_a_seconds": 7.9,
+      "duration_b_seconds": 70.2,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent A correctly identified the entity and the specific file format (.csv). Crucially, Agent A identified the correct external platforms (TVmaze and TV.com) in its context section, whereas Agent B hallucinated a protocol involving Twitter. Agent A also followed the formatting best practices (headers, bold text), while Agent B provided a difficult-to-read wall of text.",
+      "score_a": 3.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0012_pplsonar_vs_glm47_761"
+}

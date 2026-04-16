@@ -1,0 +1,155 @@
+{
+  "id": "R2_M0_gpt-5.1-search_vs_gemini-2.5-pro-grounding_tree_0017",
+  "source_group": "round2",
+  "source_log": "round2/R2_M0_gpt-5.1-search_vs_gemini-2.5-pro-grounding_tree_0017.log",
+  "tree_id": "tree_0017",
+  "tree_title": "Handheld game console",
+  "tree_topic": "Computers & Electronics > Consumer Electronics > Gadgets & Portable Electronics",
+  "tree_subtopic": "Handheld Game Consoles",
+  "tree_crawled_at": "2025-11-21T15:27:37.988167",
+  "tree_url": "https://en.wikipedia.org/wiki/Handheld_game_console",
+  "model_a": "gpt-5.1-search",
+  "model_b": "gemini-2.5-pro-grounding",
+  "winner": "gemini-2.5-pro-grounding",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": null,
+  "tournament_round": 2,
+  "pairing_index": 0,
+  "mercy_rule": true,
+  "overall_topic": "Handheld game console",
+  "questions": [
+    "Which 8-bit portable gaming console, released in 1989 by the company previously known for the 'Game & Watch' series, achieved market dominance despite technologically trailing its competitors in screen capabilities? Identify this console and the specific 'block-stacking' pack-in game credited with driving its sales. Then, drawing from historical comparisons, contrast this system with the Atari Lynx and Sega Game Gear regarding their launch pricing strategies and battery specifications (specifically battery count and expected duration). Finally, describe the specific visual display and power source adjustments introduced in the console's 1996 'Pocket' revision.",
+    "Identify the 8-bit handheld console released in 1989 that leveraged a 'pack-in' block-stacking puzzle game to dominate the market despite lacking the color displays of rivals like the Atari Lynx and Sega Game Gear. Provide a comparative analysis of the power specifications for this console versus these two competitors, specifically detailing the number and size of batteries required and the resulting battery life. Additionally, explain how the console's 1996 'Pocket' revision altered its screen's visual characteristics and its power source requirements."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "increase_width"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "NONE",
+  "total_tokens": 170366,
+  "estimated_cost": 1.7037,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handheld game console",
+        "Game Boy — Nintendo dominates the portable market"
+      ],
+      "question": "Which 8-bit portable gaming console, released in 1989 by the company previously known for the 'Game & Watch' series, achieved market dominance despite technologically trailing its competitors in screen capabilities? Identify this console and the specific 'block-stacking' pack-in game credited with driving its sales. Then, drawing from historical comparisons, contrast this system with the Atari Lynx and Sega Game Gear regarding their launch pricing strategies and battery specifications (specifically battery count and expected duration). Finally, describe the specific visual display and power source adjustments introduced in the console's 1996 'Pocket' revision.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Pack-in game identified as 'Tetris'",
+        "Launch price identified as ~$90 (or noted as approximately half the price of the Atari Lynx)",
+        "Battery specs for Target: Uses 4 AA batteries, lasts ~30 hours",
+        "Battery specs for Competitors (Lynx/Game Gear): Uses 6 AA batteries, noted as draining faster",
+        "1996 Pocket Revision Display: Changed from green-tinted monochrome to 'true' black and white",
+        "1996 Pocket Revision Power: Switched to smaller AAA batteries"
+      ],
+      "checklist_depth": [
+        "Target Entity: Nintendo Game Boy (Original)",
+        "Logic Proof: Released in 1989, successor to Game & Watch, 8-bit, unlit monochrome screen."
+      ],
+      "rationale": "The question uses Deep Logic by describing the console's lineage (Game & Watch successor), release year (1989), and technical constraints (monochrome/unlit) without naming it. It requires Wide Aggregation by asking for specific comparative data points (price, battery count/hours) against two specific competitors (Lynx, Game Gear) and technical details of a later revision (Pocket), all of which are scattered throughout the source text.",
+      "source_nodes": [
+        "Game Boy — Nintendo dominates the portable market | First Arkansas News (FAN) - reporting from across the Natural State",
+        "WonderSwan - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home » Headline , Retrogaming , Technology Game Boy — Nintendo dominates the portable market By: Ethan C. Nobles 22 January 2011 One Comment Kirby was popular on the Super Nin",
+      "judge_max_limit": 300,
+      "answer_a": "Nintendo’s 8-bit **Game Boy**, released in 1989 by the company behind the earlier **Game & Watch** LCD line, became the dominant handheld despite its basic monochrome dot‑matrix screen. Its success was propelled by the bundled “block‑stacking” puzzle game **Tetris**, whose addictive gameplay and universal appeal drove hardware sales worldwide.[1][2]\n\nAt launch (1989 North America), Game Boy retailed around **US$89.99** and used **4 AA batteries**, typically providing **10–15 hours** of play depending on game and volume.[1][3] In contrast, Atari’s color handheld **Lynx** (1989) launched around **US$179–189**, used **6 AA batteries**, and commonly managed only about **4–5 hours** of gameplay.[3][4] Sega’s **Game Gear** (1990 Japan/1991 West) also featured a color backlit screen, launched near **US$149.99** in the U.S., and likewise required **6 AA batteries**, with real‑world runtimes often quoted around **3–5 hours**.[3][5] Thus, while competitors promoted superior color displays, their higher price and heavy power draw made them less practical as mass‑market portables.\n\nThe **Game Boy Pocket** revision in 1996 updated the original system with a **smaller, sharper reflective LCD** that remained monochrome but offered a clearer, more ghosting‑resistant image (initially without a backlight).[6] It also switched from 4 AA cells to just **2 AAA batteries**, extending practical battery life to roughly **10 hours** while reducing size and weight, reinforcing Nintendo’s focus on portability and efficiency over raw display technology.[6]\n\n## References\n\n[1] Nintendo Game Boy launch and specs – contemporary coverage and retrospectives.  \n[2] History of Tetris as Game Boy pack‑in title.  \n[3] Comparative handheld specs and prices: Game Boy, Lynx, Game Gear.  \n[4] Atari Lynx hardware and battery life analyses.  \n[5] Sega Game Gear launch pricing and power consumption reports.  \n[6] Game Boy Pocket announcement and technical specifications.",
+      "answer_b": "The 8-bit portable console released in 1989 by Nintendo, previously known for its \"Game & Watch\" series, was the Game Boy [1]. Despite its technologically inferior monochrome screen, it achieved market dominance, largely driven by its pack-in game, the block-stacking puzzle phenomenon *Tetris* [3].\n\nThe Game Boy's success was bolstered by a strategic launch price of $89.99 and remarkable battery efficiency [1, 4]. It required only 4 AA batteries to deliver between 10 and 30 hours of gameplay [2, 5]. In contrast, its competitors prioritized superior screen technology at a higher cost to both the wallet and battery life. The Atari Lynx, also released in 1989, launched at $179.99 and its full-color backlit screen drained 6 AA batteries in just 4-5 hours [4, 6]. Similarly, the Sega Game Gear (1991 in North America) was priced at $149.99 and offered a full-color screen but exhausted its 6 AA batteries in a brief 3-5 hours [5, 7].\n\nIn 1996, Nintendo released a significant revision, the Game Boy Pocket. This model introduced crucial upgrades to its visual display and power source. The \"pea-soup\" green screen was replaced with a larger, true black-and-white display that offered significantly better contrast and reduced motion blur [8, 9]. For power, the Pocket model became smaller and more efficient, switching from 4 AA batteries to just 2 AAA batteries while still providing around 10 hours of playtime [8, 9].\n\n## References\n[1] Edwards, B. (2009). The Nintendo Game Boy Turns 20. *PC World*.\n[2] \"The Game Boy.\" (2021). *Retro Dodo*.\n[3] Sheff, D. (1993). *Game Over: How Nintendo Zapped an American Industry, Captured Your Dollars, and Enslaved Your Children*. Random House.\n[4] Kent, S. (2001). *The Ultimate History of Video Games*. Three Rivers Press.\n[5] McFerran, D. (2014). \"Handheld Wars: The Official Nintendo Magazine Guide To Classic Handhelds.\" *Nintendo Magazine*.\n[6] \"Atari Lynx.\" (2023). *Retroconsoles*.\n[7] \"Sega Game Gear.\" (2023). *Consolevariations*.\n[8] Macy, S. (2016). \"Then and Now: A History of the Game Boy.\" *IGN*.\n[9] \"Game Boy Pocket is a smaller, lighter Game Boy.\" (n.d.). *Nintendo of Europe GmbH*.",
+      "duration_a_seconds": 12.3,
+      "duration_b_seconds": 13.6,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the core entity (Game Boy) and the pack-in game (Tetris). However, Agent B followed the Ground Truth Checklist significantly better regarding the specific details requested. \n\n1. **Display Revision**: The prompt asked for specific visual adjustments. The checklist looked for the shift from 'green-tinted' to 'true black and white'. Agent B explicitly stated this ('pea-soup green' to 'true black-and-white'), whereas Agent A only mentioned the screen was 'sharper' and 'ghosting-resistant', missing the crucial color-tint change.\n2. **Battery Life**: The checklist specified a target of ~30 hours. Agent B included this range (10-30 hours), whereas Agent A provided a more conservative estimate (10-15 hours).\n3. **Formatting**: Agent A had superior formatting (bolding, scannability), which is a strong UX feature. However, Agent B's superior content accuracy regarding the specific sub-points (Screen Tint, Battery Duration) makes it the more helpful answer for the specific query constraints.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Increase width",
+        "kind": "increase_width",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: WIDE.",
+          "-> Action: Wide+1 (Increase Context Width)",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Handheld game console",
+        "Game Boy — Nintendo dominates the portable market"
+      ],
+      "question": "Identify the 8-bit handheld console released in 1989 that leveraged a 'pack-in' block-stacking puzzle game to dominate the market despite lacking the color displays of rivals like the Atari Lynx and Sega Game Gear. Provide a comparative analysis of the power specifications for this console versus these two competitors, specifically detailing the number and size of batteries required and the resulting battery life. Additionally, explain how the console's 1996 'Pocket' revision altered its screen's visual characteristics and its power source requirements.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Subject (Game Boy) Battery Config: Uses four 'AA' batteries",
+        "Subject (Game Boy) Battery Life: Approximately 30 hours",
+        "Competitors (Lynx/Game Gear) Battery Config: Both use six 'AA' batteries",
+        "Competitors (Lynx/Game Gear) Battery Life: Described as draining batteries quickly/significantly less than the subject",
+        "1996 Revision (Pocket) Screen: Changed from green-tinted monochrome to 'true' black and white",
+        "1996 Revision (Pocket) Power: Switched to smaller 'AAA' batteries (and required fewer of them)"
+      ],
+      "checklist_depth": [
+        "Target Entity: Nintendo Game Boy (identified via 1989 release, Tetris bundle, and 8-bit specs)",
+        "Competitor Entities: Atari Lynx and Sega Game Gear",
+        "Revision Entity: Game Boy Pocket"
+      ],
+      "rationale": "The question uses deep logic by describing the Game Boy through its historical context (release year, specs, bundle) without naming it. The wide component requires aggregating specific technical comparisons (battery counts, sizes, lifespans) across three distinct devices (Game Boy, Lynx, Game Gear) and retrieving evolutionary details about a specific hardware revision (Pocket) mentioned later in the text.",
+      "source_nodes": [
+        "Game Boy — Nintendo dominates the portable market | First Arkansas News (FAN) - reporting from across the Natural State",
+        "AllMusic is being updated. | Music Search, Recommendations, Videos and Reviews",
+        "Game Boy - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Home » Headline , Retrogaming , Technology Game Boy — Nintendo dominates the portable market By: Ethan C. Nobles 22 January 2011 One Comment Kirby was popular on the Super Nin",
+      "judge_max_limit": 330,
+      "answer_a": "The console is Nintendo’s 8‑bit **Game Boy**, launched in 1989 and bundled in many regions with the block‑stacking puzzle game **Tetris**, whose inclusion is widely credited with driving massive hardware adoption.[1][2]\n\n**Power comparison**\n\n- **Game Boy (1989)** – Used **4 AA batteries**, with typical battery life reported around **10–15 hours** of gameplay depending on volume and game load.[1][3] Its reflective monochrome dot‑matrix screen consumed far less power than backlit color rivals, which was central to its portability advantage.\n\n- **Atari Lynx (1989)** – Required **6 AA batteries**. Contemporary reports and manuals typically cite around **4–5 hours** of play on fresh alkalines, sometimes less with heavy use of its backlit color LCD.[3][4] The larger, more power‑hungry hardware sharply reduced practical play time compared with the Game Boy.\n\n- **Sega Game Gear (1990/1991)** – Also used **6 AA batteries**, but its bright backlit color screen and relatively power‑hungry internals yielded only about **3–5 hours** of runtime in common use.[3][5] This made frequent battery replacement (or reliance on AC adapters) almost mandatory.\n\nThus, although the Lynx and Game Gear offered superior color visuals, their battery requirements and short runtimes were far less travel‑friendly than the cheaper, longer‑lasting Game Boy.\n\n**Game Boy Pocket (1996 revision)**\n\nThe **Game Boy Pocket** replaced the original’s pea‑green display with a **smaller, higher‑contrast reflective monochrome LCD** that showed darker sprites on a light gray background and reduced ghosting, greatly improving clarity even without a backlight.[6] Power requirements dropped from 4 AA to **2 AAA batteries**, while still providing roughly **10 hours** of play, further emphasizing compactness and efficiency.[6]\n\n## References\n\n[1] Game Boy launch specs and documentation.  \n[2] Tetris as Game Boy pack‑in and sales impact.  \n[3] Comparative handheld specs: Game Boy, Lynx, Game Gear.  \n[4] Atari Lynx manuals and contemporary battery‑life reports.  \n[5] Sega Game Gear technical notes and reviews on runtime.  \n[6] Game Boy Pocket announcement, specs, and reviews.",
+      "answer_b": "The 8-bit handheld console released in 1989 that leveraged a block-stacking puzzle game to achieve market dominance was Nintendo's Game Boy [1]. Its immense success was famously driven by its pack-in title, *Tetris*, which transformed the console into a cultural phenomenon [2]. Despite having a simple four-shade monochrome screen, the Game Boy vastly outsold its technologically superior, full-color rivals, the Atari Lynx and Sega Game Gear [3].\n\nA critical factor in its victory was a strategic focus on portability and power efficiency, which stood in stark contrast to its competitors' design philosophies [4]. The original Game Boy required 4 AA batteries, delivering a remarkable 10 to 30 hours of gameplay on a single set [5]. Conversely, the Atari Lynx demanded 6 AA batteries for just 4-5 hours of play to power its backlit color screen. The Sega Game Gear was similarly inefficient, consuming 6 AA batteries in only 3-5 hours, a significant practical and financial drain for players [4, 6]. This difference in longevity made the Game Boy the far more practical option for gaming on the go.\n\nIn 1996, Nintendo addressed the original model's primary drawbacks with the release of the Game Boy Pocket. This revision altered the screen’s visual characteristics significantly, replacing the blurry, green-tinted \"pea-soup\" display with a true black-and-white screen that offered far greater contrast and reduced motion blur [7, 8]. Furthermore, its power requirements were redesigned for a smaller form factor. The Pocket switched from four AA batteries to just two AAA batteries, yet still delivered approximately 10 hours of playtime due to its increased power efficiency [7, 8].\n\n## References\n[1] Edwards, B. (2009). The Nintendo Game Boy Turns 20. *PC World*.\n[2] Sheff, D. (1993). *Game Over: How Nintendo Zapped an American Industry, Captured Your Dollars, and Enslaved Your Children*. Random House.\n[3] Kent, S. (2001). *The Ultimate History of Video Games: The Story Behind the Craze that Touched Our Lives and Changed the World*. Three Rivers Press.\n[4] McFerran, D. (2014). Handheld Wars: The Official Nintendo Magazine Guide to Classic Handhelds. *Nintendo Magazine*.\n[5] Loguidice, B., & Barton, M. (2014). *Vintage Game Consoles: An Inside Look at Apple, Atari, Commodore, Nintendo, and the Greatest Gaming Platforms of All Time*. Focal Press.\n[6] Parish, J. (2018). The Game Boy, the Most Successful Flawed Console of All Time. *Polygon*.\n[7] Macy, S. (2016). Then and Now: A History of the Game Boy. *IGN*.\n[8] Nintendo of Europe GmbH. (n.d.). Game Boy Pocket is a smaller, lighter Game Boy. Retrieved from *Nintendo.co.uk*.",
+      "duration_a_seconds": 19.9,
+      "duration_b_seconds": 20.9,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the entities and addressed the core constraints of the prompt. Agent A utilized superior formatting (bullet points) for the comparative analysis, making the specifications easier to scan. However, Agent A included a factual error, stating that the Game Boy Pocket had a 'smaller' LCD screen (it was actually slightly larger). Agent B remained factually accurate throughout, captured the historically significant '30-hour' battery life figure (Agent A was more conservative), and provided significantly higher quality citations. Accuracy is paramount, so Agent B wins despite the denser formatting.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0017_gemini25_vs_gpt51se_115"
+}

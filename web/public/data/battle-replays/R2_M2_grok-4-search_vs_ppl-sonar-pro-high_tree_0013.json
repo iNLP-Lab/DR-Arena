@@ -1,0 +1,96 @@
+{
+  "id": "R2_M2_grok-4-search_vs_ppl-sonar-pro-high_tree_0013",
+  "source_group": "round2",
+  "source_log": "round2/R2_M2_grok-4-search_vs_ppl-sonar-pro-high_tree_0013.log",
+  "tree_id": "tree_0013",
+  "tree_title": "History of swimwear",
+  "tree_topic": "Shopping > Apparel",
+  "tree_subtopic": "Swimwear",
+  "tree_crawled_at": "2025-11-21T14:23:33.700598",
+  "tree_url": "https://en.wikipedia.org/wiki/History_of_swimwear",
+  "model_a": "grok-4-search",
+  "model_b": "ppl-sonar-pro-high",
+  "winner": "ppl-sonar-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": null,
+  "tournament_round": 2,
+  "pairing_index": 2,
+  "mercy_rule": true,
+  "overall_topic": "History of swimwear",
+  "questions": [
+    "Following the controversial East German dominance at the World Aquatic Games in Belgrade, a 'skinsuit' revolution transformed competitive swimming around 1974. Identify the specific German-designed suit brand that was imported to the U.S. by a swimmer's parent to counter this trend, as well as the two major rival manufacturers—one the existing market leader with Australian origins, and the other a new entrant owned by a famous German athletic shoe company—that immediately released competing lightweight suits. For each of these three suits, provide the reported weight (in ounces), the specific fabric name or composition used, and a distinctive visual or structural design feature described in reports from that era."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 229306,
+  "estimated_cost": 2.2931,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "History of swimwear",
+        "A mere ounce or so of miracle fabric makes up the new"
+      ],
+      "question": "Following the controversial East German dominance at the World Aquatic Games in Belgrade, a 'skinsuit' revolution transformed competitive swimming around 1974. Identify the specific German-designed suit brand that was imported to the U.S. by a swimmer's parent to counter this trend, as well as the two major rival manufacturers—one the existing market leader with Australian origins, and the other a new entrant owned by a famous German athletic shoe company—that immediately released competing lightweight suits. For each of these three suits, provide the reported weight (in ounces), the specific fabric name or composition used, and a distinctive visual or structural design feature described in reports from that era.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Entity 1 (Import/Belgrad) Weight: 1.5 ounces (latest model) or 4 ounces (standard)",
+        "Entity 1 (Import/Belgrad) Fabric: Lycra (rubberized knit)",
+        "Entity 1 (Import/Belgrad) Design: High-neck, 'second skin' fit, or bikini lining (US model)",
+        "Entity 2 (Market Leader/Speedo) Weight: 2 ounces",
+        "Entity 2 (Market Leader/Speedo) Fabric: 78% Nylon and 22% Lycra mix",
+        "Entity 2 (Market Leader/Speedo) Design: Racer-style back with fabric pared away",
+        "Entity 3 (New Entrant/Arena/Adidas) Weight: Less than 1 ounce",
+        "Entity 3 (New Entrant/Arena/Adidas) Fabric: Elastomere (woven with fine elastic thread)",
+        "Entity 3 (New Entrant/Arena/Adidas) Design: Multicolored diamond pattern (tricolors) for opacity"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Belgrad (or the suit by Dr. Conrad Dottinger)",
+        "Target Entity 2: Speedo",
+        "Target Entity 3: Arena (or Adidas)"
+      ],
+      "rationale": "The question uses Logical Reasoning (Deep) by describing the manufacturers through their origins and market positions (Australian market leader, German shoe company subsidiary, imported suit by a parent) rather than naming them. It requires Broad Information Aggregation (Wide) by asking for specific technical attributes (weight, fabric, design) for all three distinct entities found in the text.",
+      "source_nodes": [
+        "A mere ounce or so of miracle fabric makes up the new - 08.12.74 - SI Vault",
+        "Chemise - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Light, Tight and Right for Racing Jule Campbell August 12, 1974 A mere ounce or so of miracle fabric makes up the new skinsuit that is sweeping the swimming world PRINT EMAIL ",
+      "judge_max_limit": 300,
+      "answer_a": "The 'skinsuit' revolution in competitive swimming gained momentum after the East Germans' dominant performance at the 1973 World Aquatics Championships in Belgrade, where their tight-fitting nylon suits contributed to record-breaking times. To counter this, a U.S. swimmer's parent imported the German-designed Arena suit in 1974, sparking widespread adoption of lightweight, form-fitting swimwear [1]. Arena, founded by German sports executive Horst Dassler, featured a reported weight of 2 ounces, composed of a nylon-Lycra blend (typically 80% nylon and 20% Lycra elastane), and was distinguished by its seamless, one-piece construction that mimicked a \"second skin\" for reduced drag, often described in era reports as having a glossy, ultra-thin finish [2].\n\nThe existing market leader, Speedo—with Australian origins dating back to 1914—quickly responded by releasing its competing lightweight suit. This Speedo model weighed approximately 3 ounces, utilized a similar nylon-Lycra composition (around 85% nylon and 15% Lycra), and included a distinctive racerback design with thin shoulder straps for enhanced mobility, as highlighted in 1974 swimming publications for its hydrodynamic efficiency [3].\n\nThe new entrant, Adidas—owned by the famous German athletic shoe company Adidas AG—entered the market with its own rival suit shortly thereafter. It reportedly weighed 2.5 ounces, was made from a polyamide-elastane fabric (roughly 78% polyamide and 22% elastane), and featured the brand's iconic three-stripe motif along the sides, noted in contemporary reports for its structural reinforcement and aesthetic branding that appealed to competitive athletes [4]. These innovations rapidly transformed the sport, emphasizing reduced weight and drag over traditional heavier fabrics, leading to a surge in world records by the mid-1970s [1][3].\n\n## References\n[1] Swimming World Magazine archives, \"The Skinsuit Revolution: 1974 and Beyond,\" 2010.  \n[2] New York Times, \"Swimming's New Suits: Light and Tight,\" August 1974.  \n[3] Sports Illustrated, \"The Speedo Response to East German Dominance,\" September 1974.  \n[4] Adidas historical press release, \"Adidas Enters Competitive Swimwear,\" 1974.",
+      "answer_b": "The German-designed suit was the **Belgrad suit** by Dr. Conrad Döttinger, imported to the U.S. by the father of American swimmer **Shirley Babashoff** after the 1973 Belgrade World Aquatics Championships.[3][6] It reportedly weighed **about 2 ounces**, used a very fine **polyamide/Elastane tricot** (often described simply as a nylon‑Lycra blend), and featured a **high, closed neckline with zipper in back** that created a smooth “second‑skin” torso.[3][5][6]\n\nThe existing market leader with Australian origins was **Speedo**.[1][3] Its early mid‑1970s lightweight competition model in response to Belgrad weighed roughly **2.5–3 ounces**, used **nylon/elastane (Lycra) fabric** that Speedo had pioneered in racing suits, and was visually noted for its **low‑back women’s cut with narrow straps and minimal seam lines** to reduce drag.[1][2][3]\n\nThe new rival owned by a famous German shoe company was **Arena**, created and owned by **Adidas** founder Horst Dassler.[3] Arena’s first skinsuit‑style racer weighed about **2–2.5 ounces**, used a **very light nylon‑Lycra knit** comparable to Belgrad’s, and was distinguished by its **more sculpted, corset‑like paneling** and prominent **three‑diamond Arena logo** on the chest, intended both for compression and branding.[3][5]\n\n## References\n[1] History of competitive swimwear – Wikipedia  \n[2] Illumin USC – “How to Engineer a Record-Breaking Swimsuit”  \n[3] Sports Illustrated, “Light, Tight and Right for Racing” (Aug. 12, 1974)  \n[5] “How High-Technology Swimsuits Changed the Sport of Swimming” (PDF)  \n[6] Openwaterpedia – “Belgrad suit”",
+      "duration_a_seconds": 76.4,
+      "duration_b_seconds": 7.2,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent B correctly identified the three specific entities requested in the historical query: the 'Belgrad' suit (imported by the parent), Speedo (market leader), and Arena (new entrant owned by Adidas/Horst Dassler). Agent A failed the Deep Logic check by incorrectly identifying the imported suit as 'Arena' and then treating 'Adidas' as a separate third entity (Arena was the brand launched by the Adidas family). Agent B also provided better formatting with bolded key terms for scannability.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0013_pplsonar_vs_grok4sea_168"
+}

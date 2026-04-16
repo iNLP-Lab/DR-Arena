@@ -1,0 +1,90 @@
+{
+  "id": "R3_seed-1.6_deepseek-v3.2_tree_0029",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_seed-1.6_deepseek-v3.2_tree_0029.log",
+  "tree_id": "tree_0029",
+  "tree_title": "Handball",
+  "tree_topic": "Sports > Team Sports",
+  "tree_subtopic": "Handball",
+  "tree_crawled_at": "2025-11-22T00:49:21.808008",
+  "tree_url": "https://en.wikipedia.org/wiki/Handball",
+  "model_a": "deepseek-v3.2",
+  "model_b": "seed-1.6",
+  "winner": "deepseek-v3.2",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handball",
+  "questions": [
+    "Analyze the history of the Russian Men's Handball Championship (Super League) to identify three specific clubs defined by their eras of dominance. First, identify the club from Volgograd that secured four consecutive titles in the late 1990s (1996–1999). Second, identify the club from the Moscow region (Chekhov) that established a record-breaking dynasty by winning 21 consecutive championships starting in the 2001/02 season. Third, identify the Moscow-based club that finally ended this long winning streak in the 2022/23 season. For each of these three entities, provide their full official name and their total number of Russian championship titles won up through the 2023/24 season."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "A_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 3278545,
+  "estimated_cost": 32.7854,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handball",
+        "Чемпионат России по гандболу среди мужчин — Википедия"
+      ],
+      "question": "Analyze the history of the Russian Men's Handball Championship (Super League) to identify three specific clubs defined by their eras of dominance. First, identify the club from Volgograd that secured four consecutive titles in the late 1990s (1996–1999). Second, identify the club from the Moscow region (Chekhov) that established a record-breaking dynasty by winning 21 consecutive championships starting in the 2001/02 season. Third, identify the Moscow-based club that finally ended this long winning streak in the 2022/23 season. For each of these three entities, provide their full official name and their total number of Russian championship titles won up through the 2023/24 season.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Entity 1 (Volgograd): Listed as 'Kaustik' (or Kaustik Volgograd) with 4 total titles.",
+        "Entity 2 (Chekhov): Listed as 'Chekhovskie Medvedi' with 21 total titles.",
+        "Entity 3 (Streak Breaker): Listed as 'CSKA' (or CSKA Moscow) with 2 total titles (2022/23, 2023/24)."
+      ],
+      "checklist_depth": [
+        "Correctly identifies Kaustik based on the 'Volgograd' and 'late 90s' logic.",
+        "Correctly identifies Chekhovskie Medvedi based on the '21 consecutive titles' logic.",
+        "Correctly identifies CSKA Moscow as the specific team that defeated the dynasty in 2022/23."
+      ],
+      "rationale": "The question masks the target entities (Kaustik, Chekhovskie Medvedi, CSKA) behind logical descriptions of their historical achievements and geographical locations (Deep). To answer correctly, the agent must aggregate specific statistical data (total titles) and chronological events (streak breaking) across the entire history of the league (Wide).",
+      "source_nodes": [
+        "Чемпионат России по гандболу среди мужчин — Википедия",
+        "Sweden - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Чемпионат России по гандболу среди мужчин Материал из Википедии — свободной энциклопедии Перейти к навигации Перейти к поиску Чемпионат России по гандболу Основан 1992 Регион ",
+      "judge_max_limit": 300,
+      "answer_a": "The three clubs defining distinct eras of dominance in the Russian Men's Handball Championship (Super League) are: 1) The Volgograd club is **\"KAZANOC\" (Казано́к)**, now known as HC Kaustik Volgograd. It secured four consecutive championships from 1996 to 1999 [1]. According to available records, this club from Volgograd has won a total of **4 Russian championship titles** [1]. 2) The dynasty from the Moscow region (Chekhov) is **\"Chekhovskiye Medvedi\" (Чеховские Медведи)**. This club established an unparalleled record by winning 21 consecutive Russian championships starting from the 2001/02 season through the 2021/22 season [1][2]. Their historic run gives them a total of **21 Russian championship titles** as of the 2023/24 season [1][2]. 3) The Moscow-based club that ended Medvedi's streak by winning the 2022/23 title is **PFC CSKA Moscow (ПФК ЦСКА Москва)** [1][2]. Its victory in the 2022/23 season marked its first Russian championship, bringing its total title count to **1 Russian championship title** as of the 2023/24 season [1][2].\n\n## References\n[1] Russian Handball Federation. (2024). Champions of Russia (Men). Retrieved from https://rushandball.ru/history/champions\n[2] Wikipedia contributors. (2024, July 18). Russian Men's Handball Super League. In *Wikipedia, The Free Encyclopedia*. Retrieved from https://en.wikipedia.org/wiki/Russian_Men%27s_Handball_Super_League",
+      "answer_b": "The first era-defining club is Handball Club Lokomotiv Volgograd, the Volgograd-based team that secured four consecutive Russian Men's Handball Super League titles from 1996 to 1999 [1]. As of the 2023/24 season, its total championship titles stand at four, all concentrated in that dominant late-1990s stretch [1]. The second is Handball Club Dynamo Chekhov, the Moscow region (Chekhov) club that built a record-breaking dynasty with 21 consecutive titles spanning the 2001/02 to 2021/22 seasons [2]. This unbroken run cemented it as the league’s most dominant club, with a total of 21 titles up to 2023/24 [2]. The third is Handball Club Dynamo Moscow, the Moscow-based team that finally ended Dynamo Chekhov’s decades-long streak by claiming the 2022/23 title [3]. It retained the title in 2023/24, bringing its total championship count to two as of the 2023/24 season [3]. Each club marks a distinct phase of the Super League’s history: Lokomotiv’s late-1990s surge, Chekhov’s unprecedented long reign, and Dynamo Moscow’s recent breakthrough that reintroduced competitive balance to the league.\n\n## References\n[1] Russian Handball Federation. \"Russian Men's Super League Past Champions (1992–2024)\". Retrieved October 26, 2024.\n[2] European Handball Federation. \"HC Dynamo Chekhov: Dynasty Profile and Title History\". Retrieved October 26, 2024.\n[3] Sports.ru. \"2022/23 and 2023/24 Russian Men's Handball Super League Final Results Summary\". Retrieved October 26, 2024.",
+      "duration_a_seconds": 12.4,
+      "duration_b_seconds": 81.9,
+      "verdict": "A_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A correctly identified all three entities (Kaustik, Chekhovskie Medvedi, and CSKA Moscow), although it missed the most recent 2024 title for CSKA (listing 1 instead of 2). Agent B failed catastrophically on the 'Deep Logic' check, hallucinating the names of every single club (confusing them with Water Polo teams like Lokomotiv Volgograd or non-existent Handball entities like Dynamo Chekhov). Agent A is the only useful response.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0029_deepseekv_vs_seed16_697"
+}

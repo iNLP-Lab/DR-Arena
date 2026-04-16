@@ -1,0 +1,154 @@
+{
+  "id": "R3_Qwen3-235b-a22b_vs_ppl-sonar-reasoning-pro-high_tree_0030",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_Qwen3-235b-a22b_vs_ppl-sonar-reasoning-pro-high_tree_0030.log",
+  "tree_id": "tree_0030",
+  "tree_title": "Introduction to Criminal Law",
+  "tree_topic": "Law & Government > Legal",
+  "tree_subtopic": "Criminal Law",
+  "tree_crawled_at": "2025-11-22T00:50:19.378891",
+  "tree_url": "https://open.umn.edu/opentextbooks/textbooks/66",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "ppl-sonar-reasoning-pro-high",
+  "winner": "ppl-sonar-reasoning-pro-high",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Introduction to Criminal Law",
+  "questions": [
+    "An open-access introductory textbook on criminal law, published in 2015 and organized into 14 chapters beginning with an introduction to criminal law and the U.S. legal system, is issued by a university-based publishing program. On that publisher’s website, what instructions are provided to users who want to suggest an edit or additional content to a book record? Additionally, within the same publisher’s catalog of computer science or information systems titles, identify the relevant technology-focused book they publish and provide its copyright year, license type, and intended academic audience or course context.",
+    "Identify the open-access undergraduate criminal law textbook published in the mid-2010s by a university library publishing program that is distributed under a Creative Commons Attribution-NonCommercial-ShareAlike license and has received 19 faculty reviews on an open textbook platform. For this specific book, provide the following details: its copyright year, ISBN-13, publisher, language, license type, and total number of chapters. Additionally, summarize how the book is structurally organized (including how it divides general principles and specific offenses) and describe the two-step learning approach it uses to teach criminal law concepts."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "BOTH",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "BOTH",
+  "total_tokens": 883190,
+  "estimated_cost": 8.8319,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Introduction to Criminal Law",
+        "Suggest an Edit to a Book Record"
+      ],
+      "question": "An open-access introductory textbook on criminal law, published in 2015 and organized into 14 chapters beginning with an introduction to criminal law and the U.S. legal system, is issued by a university-based publishing program. On that publisher’s website, what instructions are provided to users who want to suggest an edit or additional content to a book record? Additionally, within the same publisher’s catalog of computer science or information systems titles, identify the relevant technology-focused book they publish and provide its copyright year, license type, and intended academic audience or course context.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Statement that users are welcome to suggest edits or additional content to a book record",
+        "Instruction to contact the author or publisher to improve a book",
+        "Reference to consulting the FAQ for questions about a book",
+        "Title: Information Systems: A Manager's Guide to Harnessing Technology",
+        "Copyright Year: 2015",
+        "License: CC BY-NC-SA",
+        "Intended for undergraduate and/or graduate courses in Management Information Systems and Information Technology"
+      ],
+      "checklist_depth": [
+        "University of Minnesota Libraries Publishing identified as the publisher of the 2015 open-access Introduction to Criminal Law textbook",
+        "Information Systems: A Manager's Guide to Harnessing Technology correctly identified as a computer science/information systems title published by the same university-based publisher"
+      ],
+      "rationale": "The question requires the agent to first identify the specific 2015 open-access criminal law textbook and, through it, determine its university-based publisher (Deep logic). Then, using that publisher as the anchor, the agent must retrieve two different types of information from separate sections of the publisher’s catalog: (1) procedural instructions about suggesting edits to book records and (2) detailed bibliographic and licensing information about a technology-related title in the same catalog (Wide aggregation). This ensures multi-step reasoning and cross-referencing across distinct but publisher-linked resources.",
+      "source_nodes": [
+        "Suggest an Edit to a Book Record - Open Textbook Library",
+        "Computer Science Textbooks - Open Textbook Library"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: You are offline and only viewing locally cached content. Suggest an Edit to a Book Record We welcome ways we can improve our book records. Please let us know if you would like",
+      "judge_max_limit": 300,
+      "answer_a": "The open-access introductory textbook on criminal law published in 2015 by a university-based publisher is *Criminal Law* by Robson, issued through the Open Textbook Library (OTL), hosted by the University of Minnesota. On the OTL website, users who wish to suggest edits or additional content are directed to click the “Request Subject Matter Expert Review” link on the book’s page and can also submit feedback via a provided form or by contacting the Open Textbook Library team directly to propose changes or supplementary material [1]. Within the same publisher’s catalog, a relevant technology-focused book in computer science or information systems is *Information Systems for Business and Beyond* by Bourgeois. This book was first published in 2014, with a copyright year of 2014, and is released under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license [2]. It is intended for undergraduate students enrolled in introductory information systems or business information technology courses, commonly used in first- or second-year college curricula. The text provides foundational knowledge in information systems concepts, hardware, software, databases, and networking, making it suitable for a semester-long introductory course. The Open Textbook Library supports accessibility and adaptability by enabling faculty and users to customize the content for specific course needs, provided they adhere to the licensing terms [3]. All books in the library are peer-reviewed, and the platform encourages continuous improvement through user contributions and expert reviews.\n\n## References  \n[1] Open Textbook Library. \"Criminal Law\" book page and contributor guidelines. https://open.umn.edu/opentextbooks/textbooks/criminal-law  \n[2] Open Textbook Library. \"Information Systems for Business and Beyond\" book page. https://open.umn.edu/opentextbooks/textbooks/information-systems-for-business-and-beyond  \n[3] University of Minnesota. Open Textbook Library accessibility and adaptation policy. https://open.umn.edu/about-otl",
+      "answer_b": "# Answer\n\nThe open-access criminal law textbook is published by **University of Minnesota Libraries Publishing through Pressbooks**[4]. The 2015 edition is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0[4]. However, the provided search results do not contain specific instructions regarding how users can suggest edits or additional content through the publisher's website.\n\nSimilarly, the search results do not include information about technology-focused books in computer science or information systems within University of Minnesota Libraries Publishing's catalog, including copyright year, license type, or intended academic audience.\n\nTo fully answer your multi-part query, additional searches targeting:\n1. University of Minnesota Libraries Publishing's editorial guidelines and contribution procedures\n2. Their complete catalog of computer science and information systems textbooks\n\nwould be necessary. The current search results focus primarily on the criminal law textbook's availability and metadata but lack the operational details about the publisher's submission/suggestion process and their broader disciplinary offerings beyond criminal law.\n\nResult [7] indicates that the original textbook location has been removed from the University of Minnesota Libraries collection, with alternate versions available through Saylor or LibreTexts, suggesting the publisher may have reorganized their offerings or redirected users to alternative platforms.\n\n## References\n\n[4] https://slcc.pressbooks.pub/criminallaw/ - Criminal Law textbook, University of Minnesota Libraries Publishing, 2015\n\n[7] https://open.lib.umn.edu/criminallaw/ - University of Minnesota Libraries Open Textbook notice",
+      "duration_a_seconds": 7.6,
+      "duration_b_seconds": 10.6,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: The correct publisher is University of Minnesota Libraries Publishing, and the relevant tech title is *Information Systems: A Manager's Guide to Harnessing Technology* (2015, CC BY-NC-SA, for MIS/IT courses). Agent A identifies the criminal law book via the Open Textbook Library (UMN-hosted) but selects the wrong technology title (*Information Systems for Business and Beyond*, 2014), failing the required entity match. Agent B correctly names University of Minnesota Libraries Publishing but does not identify the required technology book at all. Thus, both fail the DEEP checklist for the second half of the query.\n\nWidth/Completeness: Agent A provides some attempt at edit instructions, but they do not match the required details (suggesting edits/additional content, contacting author/publisher, consulting FAQ). Agent B provides no substantive details for either the edit instructions or the technology book metadata. Both fail major checklist items (WIDE).\n\nUser Experience: Agent A is more detailed and formatted, but contains significant factual errors (wrong book, wrong year). Agent B is structured but largely a refusal and lacks substantive answers. Because both miss core required facts and fail deep entity validation, this is a Low Quality Tie.",
+      "score_a": 0.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 1,
+      "width": 2,
+      "logic_chain": [
+        "Introduction to Criminal Law"
+      ],
+      "question": "Identify the open-access undergraduate criminal law textbook published in the mid-2010s by a university library publishing program that is distributed under a Creative Commons Attribution-NonCommercial-ShareAlike license and has received 19 faculty reviews on an open textbook platform. For this specific book, provide the following details: its copyright year, ISBN-13, publisher, language, license type, and total number of chapters. Additionally, summarize how the book is structurally organized (including how it divides general principles and specific offenses) and describe the two-step learning approach it uses to teach criminal law concepts.",
+      "word_limit_instruction": "Answer length: 180-280 words.",
+      "checklist_width": [
+        "Copyright year: 2015",
+        "ISBN-13: 9781946135087",
+        "Publisher: University of Minnesota Libraries Publishing",
+        "Language: English",
+        "License: CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)",
+        "Total chapters: 14 (including appendix)",
+        "Explanation of division between general principles (e.g., legal system, constitutional protections, elements, defenses, parties, inchoate offenses) and specific crimes (e.g., homicide, sex offenses, property crimes, public and government crimes)",
+        "Description of the two-step 'applied approach' (breaking crimes into components, then applying law to factual examples)"
+      ],
+      "checklist_depth": [
+        "Correct identification of the textbook 'Criminal Law' (commonly titled 'Introduction to Criminal Law') published in 2015 by University of Minnesota Libraries Publishing with 19 reviews and CC BY-NC-SA license",
+        "Logic proof: Must match mid-2010s publication, university library publisher, open-access status, Creative Commons Attribution-NonCommercial-ShareAlike license, and documented 19 reviews"
+      ],
+      "rationale": "The question uses identifying features (mid-2010s, university library publisher, CC BY-NC-SA license, 19 reviews) to require logical filtering among open criminal law textbooks (Deep). It then requires aggregation of bibliographic data, structural organization, and pedagogical method—details found across multiple sections of public book listings and descriptions (Wide).",
+      "source_nodes": [
+        "Introduction to Criminal Law - Open Textbook Library"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: You are offline and only viewing locally cached content. Introduction to Criminal Law (19 reviews) Copyright Year: 2015 ISBN 13: 9781946135087 Publisher: University of Minneso",
+      "judge_max_limit": 280,
+      "answer_a": "The open-access undergraduate criminal law textbook published in the mid-2010s by a university library publishing program is *Criminal Law* by Denis J. Baker and Margaret E. G. Smith. Copyrighted in 2016, this textbook carries the ISBN-13: 978-1-927356-62-5 and is published by the Thompson Rivers University Library Open Press [1]. The book is written in English and distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0), allowing free reuse and adaptation with proper attribution and non-commercial purpose [2]. The textbook comprises 14 chapters and has received exactly 19 faculty reviews on the BCcampus OpenEd platform, a leading open textbook repository in Canada [3].\n\nStructurally, the book is organized into two main parts: the first covers general principles of criminal liability, including elements of crimes, defenses, and mental states, while the second details specific offenses such as assault, theft, and homicide. This division supports a logical progression from foundational doctrines to applied criminal law [1]. The authors employ a two-step learning approach: first, students analyze case excerpts to identify legal principles, then they apply these principles through guided questions and hypothetical scenarios. This method promotes active learning and deepens comprehension of complex criminal law doctrines [4].\n\n## References  \n[1] https://opentextbc.ca/criminallaw/  \n[2] https://creativecommons.org/licenses/by-nc-sa/4.0/  \n[3] https://solr.bccampus.ca:8001/bcc/apidocs/#/public/oers/60773  \n[4] https://opentextbc.ca/criminallaw/back-matter/about-the-authors/",
+      "answer_b": "Based on the search results provided, I cannot fully identify the specific textbook matching all criteria, particularly the \"19 faculty reviews\" requirement. However, the search results reference **\"Criminal Law\"** from the **University of Minnesota Libraries Publishing** program that closely matches several specifications[3].\n\nThis textbook has a **copyright year of 2015**[3], placing it in the mid-2010s timeframe. It is licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License**[3], matching the CC BY-NC-SA requirement. The publisher is **University of Minnesota Libraries**[3], and the language is **English**.\n\nHowever, the search results do not provide:\n- The specific ISBN-13 number (9781946135087 appears associated with \"Introduction to Criminal Law\"[2] but details are incomplete)\n- Confirmation of exactly 19 faculty reviews\n- Total chapter count\n- Specific details about structural organization and how it divides general principles from specific offenses\n- Description of the \"two-step learning approach\" used\n\nThe textbook was removed from the University of Minnesota Libraries collection, though alternate versions are available through Saylor or LibreTexts[3].\n\nTo obtain the complete information requested—particularly the faculty review count, detailed chapter organization, ISBN-13, and pedagogical methodology—additional research beyond these search results would be necessary.\n\n## References\n\n[2] Open Textbook Library: Introduction to Criminal Law\n[3] University of Minnesota Libraries: Criminal Law Open Textbook",
+      "duration_a_seconds": 8.4,
+      "duration_b_seconds": 9.3,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic: Agent A identifies the wrong textbook (Thompson Rivers University, 2016, different ISBN), which does not match the University of Minnesota Libraries Publishing 2015 open-access book with 19 reviews. This is a core entity failure. Agent B correctly identifies the University of Minnesota Libraries Publishing textbook from 2015 under CC BY-NC-SA, aligning with the ground truth. Thus, B passes Deep Logic while A fails.\n\nSecond, Width/Completeness: Agent A provides many specific details, but they are about the wrong book, making them incorrect (hallucinated ISBN, publisher, year). Agent B omits several required checklist items (ISBN-13, chapter count, structure, two-step approach, confirmation of 19 reviews), so B fails WIDE completeness—but does not fabricate details.\n\nSince Agent A fails both DEEP (wrong entity) and WIDE (incorrect specifics), while Agent B correctly identifies the entity but incompletely aggregates details, Agent B is clearly superior.\n\nAlthough Agent B is less comprehensive and more hesitant, accuracy is foundational. Agent A’s confident but incorrect answer creates a misleading user experience. Therefore, Agent B wins decisively despite incompleteness.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0030_Qwen3235b_vs_pplsonar_1242"
+}

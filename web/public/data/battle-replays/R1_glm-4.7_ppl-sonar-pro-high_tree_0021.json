@@ -1,0 +1,91 @@
+{
+  "id": "R1_glm-4.7_ppl-sonar-pro-high_tree_0021",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_glm-4.7_ppl-sonar-pro-high_tree_0021.log",
+  "tree_id": "tree_0021",
+  "tree_title": "Comparison of Internet forum software",
+  "tree_topic": "Online Communities",
+  "tree_subtopic": "Forum & Chat Providers",
+  "tree_crawled_at": "2025-11-21T16:17:25.090410",
+  "tree_url": "https://en.wikipedia.org/wiki/Comparison_of_Internet_forum_software",
+  "model_a": "ppl-sonar-pro-high",
+  "model_b": "glm-4.7",
+  "winner": "glm-4.7",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Comparison of Internet forum software",
+  "questions": [
+    "Identify the open-source forum software that historically utilized the GNU Public License Version 3 (GPL3) for its early releases and the Lesser GNU Public License Version 3 (LGPL3) for its 1.8 series. Regarding the planned 2.0 version of this software, which specific license was ultimately selected for the core software and associated libraries, and which other 'extremely open' license was explicitly considered but rejected? Finally, detail the three basic limitations of the selected 2.0 license as summarized by the project's group in their announcement of this licensing shift."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "DEEP",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "DEEP",
+  "total_tokens": 448317,
+  "estimated_cost": 4.4832,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Comparison of Internet forum software",
+        "Change of license for MyBB 2.0"
+      ],
+      "question": "Identify the open-source forum software that historically utilized the GNU Public License Version 3 (GPL3) for its early releases and the Lesser GNU Public License Version 3 (LGPL3) for its 1.8 series. Regarding the planned 2.0 version of this software, which specific license was ultimately selected for the core software and associated libraries, and which other 'extremely open' license was explicitly considered but rejected? Finally, detail the three basic limitations of the selected 2.0 license as summarized by the project's group in their announcement of this licensing shift.",
+      "word_limit_instruction": "Answer length: 150-250 words.",
+      "checklist_width": [
+        "Selected License: BSD 3 Clause (BSD-3)",
+        "Rejected/Considered License: MIT License",
+        "Limitation 1: Cannot use the project group's trademark, names, or logos of contributors",
+        "Limitation 2: The project group cannot be held liable for any damages caused by the software",
+        "Limitation 3: The original copyright must be retained"
+      ],
+      "checklist_depth": [
+        "Target Entity: MyBB (MyBulletinBoard)",
+        "Logic Proof: Matches the history of using GPL3 (early), LGPL3 (1.8 series), and the specific shift to BSD-3 for version 2.0"
+      ],
+      "rationale": "The question requires Deep reasoning to identify 'MyBB' solely through its specific licensing history (GPL3 -> LGPL3 -> 2.0 transition) without naming it. It then requires Wide aggregation to retrieve specific details about the decision-making process (the rejected MIT license) and the specific summary of limitations provided by the developers.",
+      "source_nodes": [
+        "Change of license for MyBB 2.0 | MyBB Blog",
+        "Reddit - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: MyBB has historically used the Lesser GNU Public License Version 3 (LGPL3) for the MyBB 1.8 series, and the GNU Public License Version 3 (GPL3) in earlier releases. Both of th",
+      "judge_max_limit": 300,
+      "answer_a": "<function_calls>\n<invoke name=\"search\">\n<parameter name=\"input\">open source forum software GPL3 early LGPL3 1.8 2.0 license selected rejected extremely open limitations announcement</parameter>\n</invoke>\n</search>\n\n<function_calls>\n<invoke name=\"web_search\">\n<parameter name=\"query\">\"forum software\" \"GPLv3\" \"LGPLv3\" \"1.8\" \"2.0\" license change announcement</parameter>\n</invoke>\n</function_calls>\n\n<function_calls>\n<invoke name=\"web_search\">\n<parameter name=\"query\">\"open-source forum\" \"GPL 3\" LGPL \"1.8 series\" \"2.0\" license \"extremely open\"</parameter>\n</invoke>\n</function_calls>\n\n<function_calls>\n<invoke name=\"web_search\">\n<parameter name=\"query\">\"planned 2.0\" forum \"GPLv3\" OR \"LGPLv3\" \"license\" \"rejected\" limitations</parameter>\n</invoke>\n</function_calls>",
+      "answer_b": "The open-source forum software described is **MyBB**. For the planned 2.0 version, the **BSD 3-Clause License** was selected for the core software and associated libraries [1]. The project explicitly considered but rejected the **MIT License**, which they described as \"extremely open,\" in favor of the BSD option [2]. The project group summarized the three basic limitations of the selected BSD 3-Clause license as: (1) redistributions of source code must retain the copyright notice, (2) redistributions in binary form must reproduce the copyright notice and list of conditions, and (3) neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission [1].\n\n## References\n[1] MyBB Group. \"Licensing in MyBB 2.0.\" *MyBB Community*. https://community.mybb.com/thread-212751.html (Accessed 2024).\n[2] MyBB Group. \"MyBB 2.0 License Update.\" *MyBB Blog*. https://blog.mybb.com/ (Accessed 2024).",
+      "duration_a_seconds": 5.6,
+      "duration_b_seconds": 46.7,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "DEEP",
+      "judge_reasoning": "Agent A failed to generate a text response, outputting only raw function calls. Agent B correctly identified the entity (MyBB), the specific license history (GPL3 -> LGPL3 -> BSD-3), the rejected license (MIT), and provided a summary of the limitations. While Agent B's summary of the limitations reflected the standard legal clauses rather than the specific phrasing used in the MyBB announcement (which groups source/binary retention and includes liability as a limitation), it was factually accurate regarding the license itself and cited the correct source. Agent B wins by default due to Agent A's failure.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0021_pplsonar_vs_glm47_770"
+}

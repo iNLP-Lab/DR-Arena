@@ -1,0 +1,162 @@
+{
+  "id": "R3_glm-4.7_deepseek-v3.2_tree_0017",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R3_glm-4.7_deepseek-v3.2_tree_0017.log",
+  "tree_id": "tree_0017",
+  "tree_title": "Handheld game console",
+  "tree_topic": "Computers & Electronics > Consumer Electronics > Gadgets & Portable Electronics",
+  "tree_subtopic": "Handheld Game Consoles",
+  "tree_crawled_at": "2025-11-21T15:27:37.988167",
+  "tree_url": "https://en.wikipedia.org/wiki/Handheld_game_console",
+  "model_a": "deepseek-v3.2",
+  "model_b": "glm-4.7",
+  "winner": "glm-4.7",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 2,
+  "type": "onboarding",
+  "tournament_round": 3,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Handheld game console",
+  "questions": [
+    "Identify the three major handheld game consoles released in the US market between 1989 and 1991 that competed with the Game Boy by featuring color, backlit screens. Use the following descriptions to identify them: (1) The world's first handheld electronic game with a color LCD, developed by Epyx; (2) A handheld that functioned as a portable version of the TurboGrafx-16; and (3) A handheld based on the hardware architecture of the Sega Master System. For each of these three devices, provide the exact US launch price, the specific manufacturer and model number of its main Central Processing Unit (CPU), and the approximate battery life duration (in hours) typically cited in reviews for a set of 6 AA batteries.",
+    "Identify two 'hybrid' handheld game consoles from the 2000s that failed to gain market traction due to design and management controversies. The first device, released in 2003 by a Finnish telecommunications leader, was widely mocked for its 'taco' form factor and 'sidetalking' phone orientation. The second device, released in 2005, was produced by Tiger Telematics and became infamous due to a scandal involving an executive crashing a Ferrari Enzo in Malibu. \n\nProvide a comparative technical summary for these two consoles that includes:\n1. The full commercial name of each device.\n2. The original US launch price (MSRP) for the standard hardware configuration (excluding any ad-subsidized discounts).\n3. The specific CPU model name and its clock speed (in MHz) for each device.\n4. The specific physical flash memory card format used for their retail game distribution."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_BETTER",
+      "failure_type": "NONE",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "verdict": "B_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 3250815,
+  "estimated_cost": 32.5082,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Handheld game console",
+        "AllMusic is being updated."
+      ],
+      "question": "Identify the three major handheld game consoles released in the US market between 1989 and 1991 that competed with the Game Boy by featuring color, backlit screens. Use the following descriptions to identify them: (1) The world's first handheld electronic game with a color LCD, developed by Epyx; (2) A handheld that functioned as a portable version of the TurboGrafx-16; and (3) A handheld based on the hardware architecture of the Sega Master System. For each of these three devices, provide the exact US launch price, the specific manufacturer and model number of its main Central Processing Unit (CPU), and the approximate battery life duration (in hours) typically cited in reviews for a set of 6 AA batteries.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Atari Lynx: US Launch Price ($179.99 or $180)",
+        "Atari Lynx: CPU (WDC 65SC02 or 'Mikey' chip)",
+        "Atari Lynx: Battery Life (~4-5 hours)",
+        "NEC TurboExpress: US Launch Price ($249.99 or $250)",
+        "NEC TurboExpress: CPU (Hudson Soft HuC6280)",
+        "NEC TurboExpress: Battery Life (~3 hours)",
+        "Sega Game Gear: US Launch Price ($149.99 or $150)",
+        "Sega Game Gear: CPU (Zilog Z80)",
+        "Sega Game Gear: Battery Life (~3-5 hours)"
+      ],
+      "checklist_depth": [
+        "Identify Entity 1: Atari Lynx (Matches 'First color LCD' / 'Epyx')",
+        "Identify Entity 2: NEC TurboExpress (Matches 'Portable TurboGrafx-16')",
+        "Identify Entity 3: Sega Game Gear (Matches 'Sega Master System architecture')"
+      ],
+      "rationale": "The question uses 'Deep' logic by describing the consoles through their historical significance and hardware lineage (Epyx/First Color, TG16 equivalent, Master System equivalent) rather than naming them directly. It requires 'Wide' aggregation by demanding three distinct technical specifications (Price, CPU, Battery) for each of the three identified entities, forcing the agent to consult multiple technical specification sheets or historical reviews.",
+      "source_nodes": [
+        "AllMusic is being updated. | Music Search, Recommendations, Videos and Reviews",
+        "WonderSwan - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]: ",
+      "judge_max_limit": 300,
+      "answer_a": "The three competing handhelds were the Atari Lynx, NEC TurboExpress, and Sega Game Gear. The Atari Lynx (originally developed by Epyx) was first released in 1989 at a price of $179.99 [1]. Its main CPU was a custom 65C02 MOS processor, the Mikey (4 MHz) [2]. Reviews typically cited a battery life of approximately 4-5 hours on 6 AA batteries [3]. The NEC TurboExpress, a portable TurboGrafx-16, launched in 1990 for $249.99 [4]. It used an 8-bit HuC6280 CPU, a modified 65C02 core, running at 7.6 MHz for its graphics processor (the HuC6270) [5]. Its battery life was notably short, often reported as around 3 hours with 6 AA batteries [6]. The Sega Game Gear, based on the Master System architecture, launched in 1991 at $149.99 [7]. It was powered by an 8-bit Zilog Z80 CPU running at 3.58 MHz [8]. Its battery life was notoriously poor, with reviews consistently citing only about 3-4 hours of playtime on 6 AA batteries [9]. All three featured color, backlit LCD screens, but their high power consumption led to limited battery life compared to the monochrome, non-backlit Nintendo Game Boy.\n\n## References\n[1] \"Atari Lynx Price and Release,\" Retro Gamer Magazine archives.\n[2] \"Lynx Hardware Specifications,\" Atari Museum technical documents.\n[3] \"Atari Lynx Battery Life Review,\" Classic Game Room retrospective.\n[4] \"NEC TurboExpress Launch Price,\" IGN Retro feature.\n[5] \"TurboExpress Hardware Architecture,\" NEC PC Engine developer documentation.\n[6] \"TurboExpress Power Consumption,\" Electronic Gaming Monthly (1990).\n[7] \"Sega Game Gear US Launch,\" Sega Retro wiki.\n[8] \"Game Gear Technical Specifications,\" Sega Hardware Manual.\n[9] \"Game Gear Battery Life Tests,\" GamePro magazine (1991).",
+      "answer_b": "The three major handheld consoles released in the US between 1989 and 1991 featuring color and backlit screens are the Atari Lynx, the NEC TurboExpress, and the Sega Game Gear.\n\nThe Atari Lynx, developed by Epyx, launched at $189.99 [1]. It utilized a 6502-grade MOS Technology 65C02 CPU running at 4 MHz [2]. Reviews cited a battery life of approximately 4 to 5 hours using 6 AA batteries [3].\n\nThe NEC TurboExpress, a portable TurboGrafx-16, launched at a premium $249.99 [4]. Its CPU is the Hudson Soft HuC6280 (8-bit) [5]. This device was notorious for high power consumption, managing only about 2 to 3 hours on 6 AA batteries [6].\n\nThe Sega Game Gear, based on the Master System architecture, launched at $149.99 [7]. It runs on a Sega Custom Zilog Z80 clone [8]. Battery life typically lasted around 3 to 4 hours on a set of 6 AA batteries [9].\n\n## References\n[1] https://www.computerhistory.org/revolution/mobile-devices/19/300/2136/\n[2] https://www.nesdev.org/wiki/Lynx_Hardware\n[3] https://www.timeextension.com/features/10-secrets-you-didnt-know-about-the-atari-lynx\n[4] https://www.retrovideogamer.co.uk/retro-dates.php?sys=trb\n[5] https://pcengine.fandom.com/wiki/TurboExpress\n[6] https://www.hardcoregaming101.net/turbografx-16/turbografx-history.htm\n[7] https://www.sega.com/history\n[8] https://www.segaretro.org/Game_Gear_hardware\n[9] https://www.cnet.com/reviews/sega-game-gear-1991-review/",
+      "duration_a_seconds": 13.3,
+      "duration_b_seconds": 5.2,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identified the three entities (Atari Lynx, NEC TurboExpress, Sega Game Gear) and retrieved the necessary details (Price, CPU, Battery). Agent A was slightly more accurate on the historical launch price of the Lynx ($179.99 vs $189.99). However, Agent A failed significantly on the 'Presentation' dimension by providing a single, dense 'wall of text,' which the prompt explicitly discouraged. Agent B provided a much better User Experience by separating each console into its own paragraph, making the data easy to scan. Furthermore, Agent B provided actionable URL citations, whereas Agent A provided generic text descriptions.",
+      "score_a": 0.0,
+      "score_b": 1.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is B. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] No valid children. Expanding Depth...",
+          "--- [EXPANSION] Triggering Auto-Expansion: insufficient_depth (Need +1) ---",
+          "[EXPANSION] Crawler returned 0 new nodes.",
+          "[EVOLUTION] Stuck at leaf. Cannot descend.",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 2,
+      "width": 3,
+      "logic_chain": [
+        "Handheld game console",
+        "AllMusic is being updated."
+      ],
+      "question": "Identify two 'hybrid' handheld game consoles from the 2000s that failed to gain market traction due to design and management controversies. The first device, released in 2003 by a Finnish telecommunications leader, was widely mocked for its 'taco' form factor and 'sidetalking' phone orientation. The second device, released in 2005, was produced by Tiger Telematics and became infamous due to a scandal involving an executive crashing a Ferrari Enzo in Malibu. \n\nProvide a comparative technical summary for these two consoles that includes:\n1. The full commercial name of each device.\n2. The original US launch price (MSRP) for the standard hardware configuration (excluding any ad-subsidized discounts).\n3. The specific CPU model name and its clock speed (in MHz) for each device.\n4. The specific physical flash memory card format used for their retail game distribution.",
+      "word_limit_instruction": "Answer length: 230-330 words.",
+      "checklist_width": [
+        "Device 1 Launch Price: $299 (approximate, usually cited as $299.99)",
+        "Device 1 CPU: ARM920T (or derivative) @ 104 MHz",
+        "Device 1 Game Media: MultiMediaCard (MMC)",
+        "Device 2 Launch Price: $400 (Standard/Non-Smart Adds model)",
+        "Device 2 CPU: Samsung S3C2440 @ 400 MHz",
+        "Device 2 Game Media: SD Card (Secure Digital)"
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Nokia N-Gage (identified via Finnish/Taco/Sidetalking clues)",
+        "Target Entity 2: Gizmondo (identified via Tiger Telematics/Ferrari Enzo/Malibu clues)"
+      ],
+      "rationale": "This question requires 'Deep' reasoning to identify the consoles without their names being provided, relying on cultural cues (sidetalking, Ferrari crash) and manufacturer context. It requires 'Wide' information aggregation to retrieve specific technical specifications (CPU clock speeds, specific media formats) and pricing details that are often found in separate technical specification sheets or launch reviews rather than a single summary document.",
+      "source_nodes": [
+        "AllMusic is being updated. | Music Search, Recommendations, Videos and Reviews",
+        "Survival horror - Wikipedia",
+        "Handheld electronic game - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]:  [Wide Logic - Target 1]:  [Wide Logic - Target 2]: ",
+      "judge_max_limit": 330,
+      "answer_a": "The two failed hybrid consoles were the Nokia N-Gage and the Gizmondo. The Nokia N-Gage was released in 2003. Its awkward \"taco\" design required holding the device sideways to make phone calls, which was widely ridiculed [1]. Its original US launch MSRP was $299 [2]. It was powered by a 104 MHz ARM9 series CPU, specifically the Texas Instruments OMAP 1710 processor [3]. The system's primary physical media format was the MultiMediaCard (MMC) [4]. The Tiger Telematics Gizmondo, released in 2005, was mired in scandal when its executive, Stefan Eriksson, infamously crashed a rare Ferrari Enzo [5]. Its US launch price was notably high at $399 [6]. It utilized a Samsung S3C2440 CPU, an ARM9 core running at 400 MHz [7]. For its game distribution, the Gizmondo used standard Secure Digital (SD) memory cards for its game packs [8].\n\nTechnically, the Gizmondo was more advanced, with a faster CPU, built-in GPS, and a camera, but its exorbitant price and the associated corporate scandals doomed it. The N-Gage, despite Nokia's backing, suffered from its flawed ergonomics, a cumbersome game cartridge swapping process, and initial market confusion over its identity as a phone versus a gaming device. Both systems attempted to blend gaming with other functions (communication for the N-Gage, GPS/camera for the Gizmondo), but these hybrid approaches, combined with their specific controversies, led to critical and commercial failure against dedicated handhelds like the Nintendo DS and Sony PSP.\n\n## References\n[1] \"Nokia N-Gage 'Taco Phone' Mockery,\" CNET retrospective article.\n[2] \"Nokia N-Gage US Launch Price Announcement,\" Nokia press release, 2003.\n[3] \"Nokia N-Gage Technical Specifications: CPU,\" All About Symbian hardware guide.\n[4] \"N-Gage Uses MultiMediaCard (MMC) Format,\" IGN hardware profile.\n[5] \"Gizmondo Executive Ferrari Enzo Crash Scandal,\" Los Angeles Times report, 2006.\n[6] \"Gizmondo US Price Set at $399,\" GameSpot news article, 2005.\n[7] \"Gizmondo Hardware Specs: Samsung ARM9 CPU,\" Gizmondo.com archives via Wayback Machine.\n[8] \"Gizmondo Games on SD Cards,\" Eurogamer hardware review, 2005.",
+      "answer_b": "The two hybrid handheld consoles are the Nokia N-Gage and the Tiger Telematics Gizmondo. Released in 2003, the Nokia N-Gage faced ridicule for its \"taco\" shape and the awkward \"sidetalking\" orientation required for voice calls. Its standard US launch price was $299. Technically, the device was powered by a Texas Instruments OMAP 1510 system-on-chip, which incorporated an ARM925 processor core clocked at 104 MHz. For physical game software distribution, the N-Gage utilized MultiMediaCard (MMC) flash memory cards, which required removing the device's battery to swap games [1, 2].\n\nThe second device, the Gizmondo, arrived in 2005 and became infamous due to executive scandals, specifically a high-profile crash of a Ferrari Enzo involving a company director. The standard, non-ad-subsidized launch price was $399. It featured significantly more powerful hardware for the era, driven by a Samsung S3C2440 processor. This 32-bit ARM920T CPU was capable of a robust clock speed of 400 MHz. Regarding retail game distribution, the Gizmondo utilized standard Secure Digital (SD) flash memory cards rather than proprietary cartridges [3, 4].\n\nDespite the Gizmondo’s processing advantage with its 400 MHz CPU over the N-Gage's 104 MHz, both devices failed to gain market traction. The N-Gage was hampered by poor ergonomics and complex game swapping, while the Gizmondo was doomed by its high price point and the mismanagement of its leadership team.\n\n## References\n[1] https://en.wikipedia.org/wiki/N-Gage\n[2] https://www.nokia.com/en_US/phones/\n[3] https://en.wikipedia.org/wiki/Gizmondo\n[4] https://www.cnet.com/reviews/gizmondo/",
+      "duration_a_seconds": 12.5,
+      "duration_b_seconds": 179.8,
+      "verdict": "B_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Both agents correctly identified the two devices (Nokia N-Gage and Gizmondo). However, Agent A hallucinated the specific CPU model for the Nokia N-Gage, claiming it was an OMAP 1710 (it was an OMAP 1510). Agent B provided the correct technical specifications for both devices. Both agents failed to use optimal formatting (tables or bullet points) for a technical summary, relying on dense paragraphs instead, which prevented a higher score.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0017_deepseekv_vs_glm47_826"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "R1_Qwen3-235b-a22b_grok-4-search_tree_0014",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R1_Qwen3-235b-a22b_grok-4-search_tree_0014.log",
+  "tree_id": "tree_0014",
+  "tree_title": "Video rental shop",
+  "tree_topic": "Shopping > Entertainment Media > DVD & Video Shopping",
+  "tree_subtopic": "DVD & Video Rentals",
+  "tree_crawled_at": "2025-11-21T14:49:42.251140",
+  "tree_url": "https://en.wikipedia.org/wiki/Video_rental_shop",
+  "model_a": "Qwen3-235b-a22b",
+  "model_b": "grok-4-search",
+  "winner": "grok-4-search",
+  "final_score_a": 0.0,
+  "final_score_b": 2.0,
+  "total_rounds": 1,
+  "type": "onboarding",
+  "tournament_round": 1,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Video rental shop",
+  "questions": [
+    "Identify the landmark 1984 U.S. Supreme Court case that prevented a specific home recording device from being deemed an 'accessory to crime,' and the 2013 Supreme Court case involving a Cornell student named Supap Kirtsaeng. According to analyses of these events, what specific legal doctrine protects the business models of video rental companies like Blockbuster and Redbox? Additionally, provide the exact quote by MPAA head Jack Valenti comparing the 1984 device to a violent criminal, and explain the specific argument the publisher John Wiley & Sons made regarding 'market segmentation' that was rejected in the 2013 ruling."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "verdict": "B_MUCH_BETTER",
+      "failure_type": "WIDE",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "B_MUCH_BETTER",
+  "final_failure_type": "WIDE",
+  "total_tokens": 451836,
+  "estimated_cost": 4.5184,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 2,
+      "width": 2,
+      "logic_chain": [
+        "Video rental shop",
+        "In a Copyright Ruling, the Legacy of the Betamax"
+      ],
+      "question": "Identify the landmark 1984 U.S. Supreme Court case that prevented a specific home recording device from being deemed an 'accessory to crime,' and the 2013 Supreme Court case involving a Cornell student named Supap Kirtsaeng. According to analyses of these events, what specific legal doctrine protects the business models of video rental companies like Blockbuster and Redbox? Additionally, provide the exact quote by MPAA head Jack Valenti comparing the 1984 device to a violent criminal, and explain the specific argument the publisher John Wiley & Sons made regarding 'market segmentation' that was rejected in the 2013 ruling.",
+      "word_limit_instruction": "Answer length: 200-300 words.",
+      "checklist_width": [
+        "Jack Valenti's Quote: 'The VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone.'",
+        "Legal Doctrine: The doctrine of 'first sale' (or First Sale Doctrine).",
+        "Publisher's Argument (2013): Wiley argued that importing books without permission infringed copyright and short-circuited their ability to segment markets by price (selling expensively in the US vs. cheaper in Thailand).",
+        "Connection to Video Rental: The doctrine ensures that if companies (like Blockbuster/Redbox) buy a copy, they own it and can rent/resell it, preventing studios from controlling the secondary market."
+      ],
+      "checklist_depth": [
+        "Target Entity 1: Sony Corp. of America v. Universal City Studios, Inc. (or the 'Betamax case').",
+        "Target Entity 2: Kirtsaeng v. John Wiley & Sons."
+      ],
+      "rationale": "The question requires Deep reasoning to identify the specific Supreme Court cases based on the description of the technology and the litigants (Betamax/VCR and Kirtsaeng). It requires Wide aggregation to retrieve the specific violent metaphor used by Valenti, the legal doctrine connecting the cases to the video rental industry, and the specific economic argument regarding market segmentation used by the publisher in the later case.",
+      "source_nodes": [
+        "In a Copyright Ruling, the Legacy of the Betamax - The New York Times",
+        "Wilshire Boulevard - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Business | Copyright Ruling Rings With Echo of Betamax https://www.nytimes.com/2013/03/27/business/in-a-copyright-ruling-the-lingering-legacy-of-the-betamax.html Advertisement",
+      "judge_max_limit": 300,
+      "answer_a": "The landmark 1984 U.S. Supreme Court case was *Sony Corp v. Universal City Studios*, which ruled that the Betamax video recorder could not be held liable as an \"accessory to crime\" because it had substantial non-infringing uses, establishing the basis for the \"Betamax doctrine\" [1]. This doctrine became crucial in protecting technologies capable of lawful use, even if they could also be used for infringement. The legal principle derived from this case—commonly referred to as the \"substantial non-infringing use\" doctrine—protects business models like those of video rental companies Blockbuster and Redbox, as renting legally purchased copies falls under fair use and does not constitute copyright infringement [2]. In dissenting against the initial appellate ruling, MPAA head Jack Valenti notoriously compared the VCR to the Boston Strangler, stating, “I say to you that the VCR is to the American film industry as the Boston Strangler is to the woman home alone” [3]. The 2013 Supreme Court case *Kirtsaeng v. John Wiley & Sons, Inc.* involved Supap Kirtsaeng, a Cornell student who imported and resold lower-priced textbooks Wiley had published abroad, challenging the publisher’s copyright enforcement [4]. Wiley & Sons argued that \"market segmentation\" allowed them to control pricing in different geographic regions through distinct copyright licenses, asserting that the first sale doctrine did not apply to copies manufactured outside the U.S. However, the Court rejected this argument, holding that the first sale doctrine applies to lawfully made copies regardless of where they were manufactured, thus invalidating the use of copyright to enforce international price discrimination [5].\n\n## References  \n[1] Oyez, \"Sony Corp v. Universal City Studios\"  \n[2] Harvard Law Review, \"The Betamax Case and Its Legacy\"  \n[3] Congressional Quarterly, \"Valenti’s VCR Testimony, 1982\"  \n[4] Supreme Court of the United States, \"Kirtsaeng v. John Wiley & Sons, Inc. (2013)\"  \n[5] Stanford Copyright Center, \"First Sale Doctrine After Kirtsaeng\"",
+      "answer_b": "The landmark 1984 U.S. Supreme Court case was Sony Corp. of America v. Universal City Studios, Inc., which ruled that the Betamax VCR was not an accessory to copyright infringement, as it had substantial non-infringing uses like time-shifting TV recordings [1]. This decision protected home recording devices from being banned. The 2013 case was Kirtsaeng v. John Wiley & Sons, Inc., where Cornell student Supap Kirtsaeng resold cheaper foreign editions of textbooks in the U.S., leading the Court to affirm that the first-sale doctrine applies to copyrighted works lawfully made abroad [2].\n\nAnalyses of these cases highlight the first-sale doctrine as the key legal principle safeguarding video rental businesses like Blockbuster and Redbox. This doctrine, codified in 17 U.S.C. § 109, allows owners of lawfully acquired copies of copyrighted works to resell, rent, or dispose of them without the copyright holder's permission, enabling rental models by exhausting distribution rights after the initial sale [3]. Without it, such companies could face infringement claims for renting DVDs or videos.\n\nMPAA president Jack Valenti famously testified before Congress in 1982, comparing the VCR to a violent criminal: \"I say to you that the VCR is to the American film producer and the American public as the Boston strangler is to the woman home alone\" [4].\n\nIn the 2013 ruling, publisher John Wiley & Sons argued that the first-sale doctrine should not apply to foreign-manufactured goods, allowing \"market segmentation\" by selling editions at lower prices abroad (e.g., in Thailand) without U.S. resale risks, thus maximizing profits through geographic price discrimination. The Supreme Court rejected this, holding that the doctrine applies regardless of manufacture location, preventing such segmentation from blocking importation and resale [2][5].\n\n(Word count: 278)\n\n## References\n[1] Sony Corp. of America v. Universal City Studios, Inc., 464 U.S. 417 (1984). https://supreme.justia.com/cases/federal/us/464/417/\n\n[2] Kirtsaeng v. John Wiley & Sons, Inc., 568 U.S. 519 (2013). https://www.supremecourt.gov/opinions/12pdf/11-697_d1o2.pdf\n\n[3] Analysis from Cornell Law School: https://www.law.cornell.edu/wex/first_sale_doctrine\n\n[4] Congressional testimony archive: https://cryptome.org/hrcw-hear.htm\n\n[5] SCOTUSblog analysis: https://www.scotusblog.com/case-files/cases/kirtsaeng-v-john-wiley-sons-inc/",
+      "duration_a_seconds": 16.5,
+      "duration_b_seconds": 23.3,
+      "verdict": "B_MUCH_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "WIDE",
+      "judge_reasoning": "Agent B is much better because it correctly identifies the 'First Sale Doctrine' as the legal principle protecting video rental companies (Blockbuster/Redbox). Agent A incorrectly claims that the 'substantial non-infringing use' doctrine (which protects device manufacturers) or 'fair use' protects these rental models; in reality, rental shops rely specifically on First Sale to rent out physical copies without paying royalties per rental. Agent B also provides the exact quote (Agent A slightly misquotes 'film producer' as 'film industry') and uses superior formatting with paragraph breaks.",
+      "score_a": 0.0,
+      "score_b": 2.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0014_Qwen3235b_vs_grok4sea_343"
+}

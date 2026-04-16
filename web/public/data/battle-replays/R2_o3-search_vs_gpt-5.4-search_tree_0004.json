@@ -1,0 +1,223 @@
+{
+  "id": "R2_o3-search_vs_gpt-5.4-search_tree_0004",
+  "source_group": "onboarding_battles",
+  "source_log": "onboarding_battles/R2_o3-search_vs_gpt-5.4-search_tree_0004.log",
+  "tree_id": "tree_0004",
+  "tree_title": "Sweepstake",
+  "tree_topic": "Games > Computer & Video Games > Gaming Media & Reference",
+  "tree_subtopic": "Game Cheats & Hints",
+  "tree_crawled_at": "2025-11-21T13:17:54.317079",
+  "tree_url": "https://gamefaqs.gamespot.com/",
+  "model_a": "o3-search",
+  "model_b": "gpt-5.4-search",
+  "winner": "o3-search",
+  "final_score_a": 2.0,
+  "final_score_b": 0.0,
+  "total_rounds": 3,
+  "type": "onboarding",
+  "tournament_round": 2,
+  "pairing_index": null,
+  "mercy_rule": true,
+  "overall_topic": "Sweepstake",
+  "questions": [
+    "Within the broader online ecosystem where promotional campaigns and sweepstakes websites often appear and disappear quickly, identify the volunteer-run digital preservation collective founded in 2009 that is dedicated to saving copies of rapidly vanishing websites for historical purposes. Describe its founding year, mission and philosophy regarding data preservation, how it is structured in terms of membership, the role of its large-scale \"emergency\" site-saving efforts, and the name and function of the IRC-based crawler tool it uses to archive smaller websites, including how that tool submits archived data for long-term public access.",
+    "Imagine a digital-history “sweepstake” in which participants predict which major online platforms will disappear in 2025. Focusing on the volunteer rogue-archivist collective founded in 2009 that specializes in preserving endangered websites, identify all of its projects that explicitly list a 2025 shutdown or deletion date for a specific service. For each qualifying service, provide: (1) the name of the platform being archived, (2) the announced 2025 shutdown or deletion date, (3) the stated reason or nature of the shutdown (e.g., inactive blog deletion, full service closure, sunsetting), and (4) the dedicated IRC channel used for coordinating the archival effort. Your answer should synthesize information across all relevant projects and clearly distinguish each case.",
+    "Within the sweepstakes ecosystem, many promotional microsites and contest pages disappear shortly after campaigns end. Identify the volunteer-driven digital preservation collective founded in 2009 that is known for rescuing rapidly vanishing websites. Then, explain its core mission and philosophy, describe how it collaborates with a major nonprofit digital library to store multi-terabyte datasets, outline what its so-called “panic downloads” are intended to accomplish, and detail how its IRC-based automated crawler operates, including where its source code is publicly maintained and how users initiate archival jobs."
+  ],
+  "round_states": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "pressure_test"
+    },
+    {
+      "round": 2,
+      "depth": 4,
+      "width": 3,
+      "verdict": "Tie",
+      "failure_type": "BOTH",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution_kind": "backtrack"
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 2,
+      "verdict": "A_BETTER",
+      "failure_type": "NONE",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution_kind": "mercy_rule"
+    }
+  ],
+  "final_verdict": "A_BETTER",
+  "final_failure_type": "NONE",
+  "total_tokens": 32565,
+  "estimated_cost": 0.3256,
+  "rounds": [
+    {
+      "round": 1,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "Wayback Machine"
+      ],
+      "question": "Within the broader online ecosystem where promotional campaigns and sweepstakes websites often appear and disappear quickly, identify the volunteer-run digital preservation collective founded in 2009 that is dedicated to saving copies of rapidly vanishing websites for historical purposes. Describe its founding year, mission and philosophy regarding data preservation, how it is structured in terms of membership, the role of its large-scale \"emergency\" site-saving efforts, and the name and function of the IRC-based crawler tool it uses to archive smaller websites, including how that tool submits archived data for long-term public access.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Founded in 2009",
+        "Volunteer-run collective dedicated to preserving dying or deleted websites",
+        "Philosophy about duplicating condemned data to preserve debate/history",
+        "Conducts large-scale emergency or 'panic' downloads of at-risk sites",
+        "Uses an IRC-based crawler tool to archive smaller websites",
+        "Crawler creates WARC files and uploads them for ingestion into the Internet Archive",
+        "Tool name and its function clearly explained"
+      ],
+      "checklist_depth": [
+        "Archive Team + Identified as a volunteer digital preservation collective founded in 2009 focused on saving disappearing websites",
+        "ArchiveBot + Correctly identified as the IRC-based crawler operated by the same organization for archiving smaller sites"
+      ],
+      "rationale": "The question uses the sweepstakes context (rapidly disappearing promotional websites) as a logical entry point, requiring the agent to infer a preservation group that archives endangered web content (Deep reasoning). It then demands multiple distinct, verifiable details about the organization’s founding, philosophy, projects, and technical tools (Wide aggregation), ensuring the answer cannot be derived from a single brief reference.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Prize (marketing) - Wikipedia"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Archive Team Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective dedicated to saving copie",
+      "judge_max_limit": 320,
+      "answer_a": "Archive Team is a loose, all-volunteer digital preservation collective founded in 2009 by Jason Scott [1].  Its guiding ethic is that “digital history is disappearing faster than we can save it,” so volunteers should copy endangered data first and negotiate later, because “losing data is an unacceptable act of negligence” [2].  The group has no formal legal entity, officers, or dues: anyone who shows up on its public IRC channels or submits bandwidth and storage to the shared tool set is effectively “a member,” reflecting the project’s anarchic, do-ocracy structure [2][3].\n\nArchive Team operates two complementary preservation modes.  For high-profile shutdowns—such as GeoCities, Google+ or Tumblr adult content bans—it launches ad-hoc “emergency” or “project” drives that coordinate hundreds of volunteers running the Warrior/Tracker pipeline to capture terabytes before the final shutdown date [3].  These mass saves supplement the Internet Archive’s own crawls, ensuring whole communities, media files, and metadata survive.\n\nFor the long tail of smaller or suddenly at-risk sites, the collective relies on an IRC-controlled crawler called ArchiveBot.  A volunteer in the #archivebot channel issues a !grab command with a URL; distributed worker instances immediately begin a recursive wget-lua crawl, respecting per-site limits set by operators.  When a job finishes, ArchiveBot automatically packages the WARC files and uploads them to the Internet Archive’s “ArchiveBot” collection, where they are publicly browsable through the Wayback Machine for long-term access [4].  This lightweight, always-on tool lets the team preserve promotional microsites, short-lived sweepstakes pages, and other ephemera that would otherwise slip through the cracks between headline-grabbing shutdowns.\n\nBy combining a radical open-membership ethos, rapid-response mega-drives, and everyday micro-archiving via ArchiveBot, Archive Team has become a key safety net for the fleeting corners of the modern web.\n\n## References\n1. Wikipedia – “Archive Team.” https://en.wikipedia.org/wiki/Archive_Team  \n2. Archive Team – “About.” https://www.archiveteam.org/index.php?title=Archive_Team  \n3. Archive Team – “Projects.” https://www.archiveteam.org/index.php?title=Projects  \n4. GitHub – ArchiveTeam/ArchiveBot documentation. https://github.com/ArchiveTeam/ArchiveBot",
+      "answer_b": "The volunteer-run digital preservation collective is **Archive Team**, founded in **2009** by Jason Scott.[1][2] Its mission is to preserve copies of websites and online services that are in danger of disappearing, especially those neglected by mainstream institutions because they seem trivial, temporary, or commercially marginal.[1][3] Archive Team’s philosophy is strongly shaped by the belief that “history is our future,” and that even messy, low-status, or short-lived web content deserves preservation because researchers may later find cultural or historical value in it.[1][2]\n\nStructurally, Archive Team is not a formal membership organization with dues or a centralized bureaucracy. It is a loose, volunteer collective organized through wikis, IRC, shared scripts, and ad hoc coordination; people contribute by running tools, helping document targets, or participating in rescue operations.[1][4] A major part of its work involves large-scale **“emergency” archival efforts**—rapid-response campaigns launched when a platform announces shutdowns, deletions, or policy changes. In these efforts, volunteers mirror huge amounts of endangered material before it goes offline, making the group especially important for saving unstable corners of the web.[1][3]\n\nFor smaller websites, Archive Team uses an **IRC-based crawler called ArchiveBot**.[4][5] ArchiveBot lets volunteers queue URLs in IRC so distributed crawlers can fetch and package the targeted site.[4][5] The captured data is written into archival formats such as WARC and then uploaded to the **Internet Archive**, where it can be preserved for long-term public access through broader archival infrastructure and replay systems.[4][5]\n\n## References\n[1] Archive Team Wiki, “Archive Team.” https://wiki.archiveteam.org/index.php/ArchiveTeam  \n[2] Jason Scott, Archive Team / project background. https://www.archiveteam.org/  \n[3] Internet Archive blog and related descriptions of Archive Team rescue efforts. https://blog.archive.org/  \n[4] Archive Team Wiki, “ArchiveBot.” https://wiki.archiveteam.org/index.php/ArchiveBot  \n[5] GitHub / ArchiveTeam documentation for ArchiveBot and WARC submission workflow. https://github.com/ArchiveTeam/ArchiveBot",
+      "duration_a_seconds": 9.8,
+      "duration_b_seconds": 10.1,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "First, Deep Logic: Both agents correctly identify Archive Team (founded 2009) and ArchiveBot as the IRC-based crawler. Both pass the core entity requirement. \n\nWidth/Completeness: Both cover founding year, volunteer-run structure, preservation philosophy, emergency/panic downloads, IRC-based crawler, WARC creation, and upload to the Internet Archive. However, Agent A provides slightly deeper operational detail (e.g., do-ocracy structure, lack of legal entity, specific examples of emergency saves, the !grab command, wget-lua crawling, and explicit mention of the ArchiveBot collection and Wayback access). This results in higher information density.\n\nPresentation & UX: Agent B is more visually structured with bolded keywords and slightly cleaner formatting, making it more scannable. However, Agent A remains well organized, clear, and more technically comprehensive.\n\nConclusion: Since both are factually strong and complete, the decision hinges on depth and richness. Agent A delivers a more detailed and technically satisfying explanation without errors, so it wins on completeness and expertise, though only by a narrow margin.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Pressure test",
+        "kind": "pressure_test",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> WINNER is A. Targeting Loser Failure: NONE.",
+          "-> Action: Pressure Test (Deep+1 & Wide+1)",
+          "[EVOLUTION] Descended to: 'Archiveteam'",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "depth": 4,
+      "width": 3,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "Wayback Machine",
+        "Archiveteam"
+      ],
+      "question": "Imagine a digital-history “sweepstake” in which participants predict which major online platforms will disappear in 2025. Focusing on the volunteer rogue-archivist collective founded in 2009 that specializes in preserving endangered websites, identify all of its projects that explicitly list a 2025 shutdown or deletion date for a specific service. For each qualifying service, provide: (1) the name of the platform being archived, (2) the announced 2025 shutdown or deletion date, (3) the stated reason or nature of the shutdown (e.g., inactive blog deletion, full service closure, sunsetting), and (4) the dedicated IRC channel used for coordinating the archival effort. Your answer should synthesize information across all relevant projects and clearly distinguish each case.",
+      "word_limit_instruction": "Answer length: 270-370 words.",
+      "checklist_width": [
+        "Tistory – deletion of inactive blogs on 2025-09-22 – IRC channel #tatteredstory (on hackint)",
+        "SourceForge Developer Web – sunsetting on 2025-10-10 – IRC channel #sourceforget (on hackint)",
+        "Peing – shutdown slated for 2025-08-29 – IRC channel #peingpong (on hackint)",
+        "Goo Blog – closed on 2025-11-18 – IRC channel #itsgoone (on hackint)"
+      ],
+      "checklist_depth": [
+        "Tistory identified as a project with an explicit 2025 deletion date under the 2009-founded rogue archivist collective’s active projects",
+        "SourceForge Developer Web identified as a project with an explicit 2025 sunsetting date under the same collective",
+        "Peing identified as a project with an explicit 2025 shutdown date under the same collective",
+        "Goo Blog identified as a recently finished project with a 2025 closure date under the same collective"
+      ],
+      "rationale": "The question uses a sweepstake prediction scenario as a thematic frame (Deep), requiring identification of a specific 2009-founded digital preservation collective and filtering its projects to only those with explicit 2025 shutdown/deletion dates. It then demands aggregation of multiple scattered details—platform name, date, reason, and IRC coordination channel—across all qualifying projects (Wide), ensuring comprehensive cross-referencing rather than reliance on a single fact.",
+      "source_nodes": [
+        "Archiveteam",
+        "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+        "Wayback Machine"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Main Page From Archiveteam Jump to navigation Jump to search HISTORY IS OUR FUTURE And we've been trashing our history Archive Team is a loose collective of rogue archivists, ",
+      "judge_max_limit": 370,
+      "answer_a": "Archive Team currently lists three active or pending projects with a publicly announced 2025 deadline:\n\n1. Google Blogger purge  \n   • Platform: Blogger (Google) inactive‐content deletions  \n   • Date: 1 January 2025 (posts & blogs whose owners have been inactive two-plus years) [1]  \n   • Reason: Part of Google’s broader inactive-account policy; entire blogs without a recent sign-in will be permanently removed (sunsetting of dormant material, not the whole service) [1]  \n   • IRC: #googleblogger on hackint\n\n2. Google Photos inactive-account deletions  \n   • Platform: Google Photos  \n   • Date: 1 January 2025 (content tied to Google accounts inactive ≥ 24 months) [2]  \n   • Reason: Same Google policy—automatic deletion of all photos & videos belonging to dormant accounts; service itself continues, but user data disappears [2]  \n   • IRC: #googleinactive on hackint\n\n3. Tumblr inactive-blog purge  \n   • Platform: Tumblr  \n   • Date: 2 March 2025 (scheduled removal of blogs with no login activity since 1 Jan 2024) [3]  \n   • Reason: Verizon-owned Tumblr is reclaiming unused URLs and freeing storage; viewed by Archive Team as an “inactive blog deletion sweep,” not a full shutdown [3]  \n   • IRC: #tumblrinactive on hackint\n\nIn each case Archive Team is mounting a preventive crawl before the 2025 trigger dates, using its Warrior/Tracker pipeline coordinated through the listed channels; the aim is to copy at-risk user-generated content that would vanish even though the parent platforms remain online.\n\n## References  \n1. Archive Team Wiki – “Google Blogger inactive deletions 2025” project page. https://wiki.archiveteam.org/index.php?title=Google_Blogger_Inactive  \n2. Archive Team Wiki – “Google Inactive Account Deletion 2025” page (covers Google Photos). https://wiki.archiveteam.org/index.php?title=Google_Inactive_2025  \n3. Archive Team Wiki – “Tumblr Inactive Blog Purge 2025” project page. https://wiki.archiveteam.org/index.php?title=Tumblr_Inactive_Blogs",
+      "answer_b": "Across Archive Team’s current projects, the services that explicitly state a **2025** shutdown or deletion date are the following:\n\n**1) Tumblr** — Archive Team lists Tumblr as a project because the company announced deletion of **“dormant” blogs on 2025-02-15**.[1] The nature of the event is not a total platform shutdown, but a **targeted purge of inactive blogs**, meaning content could disappear even though Tumblr itself continues operating.[1] The dedicated coordination channel given for the project is **`#tumblr`** on Archive Team’s IRC network.[1]\n\n**2) gamejolt.com** — Archive Team’s project page says **gamejolt.com is shutting down on 2025-07-11**.[2] This is described as a **full service shutdown/closure**, not merely deletion of inactive accounts or a limited sunsetting of one feature.[2] The project’s IRC coordination channel is **`#gamejolt`**.[2]\n\n**3) mail2world** — The mail2world project page states that the service is **sunsetting on 2025-09-01**.[3] The wording frames this as a **service sunset**, i.e., a planned end of the platform rather than a one-off account cleanup.[3] Archive Team directs volunteers to **`#mail2world`** for coordination.[3]\n\nThese appear to be the Archive Team projects whose pages explicitly include a **specific 2025 disappearance date** for the targeted service.[1][2][3] They also represent different shutdown patterns: **selective deletion of dormant content (Tumblr)**, **complete closure of a site (gamejolt.com)**, and **formal sunsetting of a service (mail2world)**.[1][2][3]\n\nImportantly, this list is narrower than “all active Archive Team work in 2025.” Archive Team runs many rescues, but only some project pages spell out a **precise 2025 shutdown/deletion date** and pair it with a clearly named IRC channel on the project page itself.[1][2][3]\n\n## References\n[1] Archive Team Wiki, “Tumblr.” https://wiki.archiveteam.org/index.php/Tumblr  \n[2] Archive Team Wiki, “gamejolt.com.” https://wiki.archiveteam.org/index.php/Gamejolt.com  \n[3] Archive Team Wiki, “mail2world.” https://wiki.archiveteam.org/index.php/Mail2world  \n[4] Archive Team Wiki, “Deathwatch.” https://wiki.archiveteam.org/index.php/Deathwatch  \n[5] Archive Team Wiki, “Archive Team.” https://wiki.archiveteam.org/index.php/ArchiveTeam",
+      "duration_a_seconds": 6.0,
+      "duration_b_seconds": 10.1,
+      "verdict": "Tie",
+      "tie_quality": "LOW",
+      "failure_type": "BOTH",
+      "judge_reasoning": "First, Deep Logic check: Both agents correctly identify Archive Team as the 2009-founded rogue archivist collective, but neither identifies the correct qualifying projects. The ground truth requires Tistory, SourceForge Developer Web, Peing, and Goo Blog. Agent A instead lists Google Blogger, Google Photos, and Tumblr. Agent B lists Tumblr, gamejolt.com, and mail2world. None of these match the required four projects. Thus, both fail the core entity/project identification requirement.\n\nWidth/Completeness: Because both agents selected entirely incorrect projects, they also fail to provide the required specific 2025 dates, shutdown reasons, and IRC channels for the correct services. This is a complete miss on the WIDTH checklist.\n\nUser Experience & Presentation: Both answers are clearly formatted and readable, but formatting cannot compensate for selecting the wrong projects. Since both responses substantially hallucinate the qualifying cases and omit all required ground-truth entries, this is a Low Quality Tie.\n\nTherefore, both fail DEEP logic and WIDE aggregation, resulting in a LOW-quality tie.",
+      "score_a": 1.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Backtrack",
+        "kind": "backtrack",
+        "lines": [
+          "[EVOLUTION] Determining Next Step...",
+          "-> TIE (Both Bad): BACKTRACKING.",
+          ">>> [BACKTRACK] Moving up to Parent Node <<<",
+          "============================================================"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "depth": 3,
+      "width": 2,
+      "logic_chain": [
+        "Sweepstake",
+        "Advertising mail",
+        "Wayback Machine"
+      ],
+      "question": "Within the sweepstakes ecosystem, many promotional microsites and contest pages disappear shortly after campaigns end. Identify the volunteer-driven digital preservation collective founded in 2009 that is known for rescuing rapidly vanishing websites. Then, explain its core mission and philosophy, describe how it collaborates with a major nonprofit digital library to store multi-terabyte datasets, outline what its so-called “panic downloads” are intended to accomplish, and detail how its IRC-based automated crawler operates, including where its source code is publicly maintained and how users initiate archival jobs.",
+      "word_limit_instruction": "Answer length: 220-320 words.",
+      "checklist_width": [
+        "Founded in 2009",
+        "Volunteer-run rogue archivist collective dedicated to preserving dying or deleted websites",
+        "Philosophy about duplicating condemned data to preserve debate and digital heritage",
+        "Collaboration with the Internet Archive for storage and Wayback Machine access to multi-terabyte datasets",
+        "Explanation of ‘Panic Downloads’ as full-site emergency backups",
+        "Description of the IRC-based ArchiveBot that crawls sites into WARC files",
+        "Requirement of issuing commands in an IRC channel with operator permissions",
+        "Public source code hosted on GitHub"
+      ],
+      "checklist_depth": [
+        "Archive Team + Matches logic: founded in 2009, volunteer collective focused on archiving disappearing websites",
+        "ArchiveBot + Identified as the IRC-based crowdsourced crawler run by the same collective"
+      ],
+      "rationale": "The question uses the sweepstakes domain as contextual framing (ephemeral contest websites that vanish) while masking the entity behind logical descriptors: a 2009-founded volunteer collective preserving dying sites. This requires deep reasoning to identify the correct organization. It then demands wide aggregation by asking for mission, philosophy, collaboration details, emergency backup projects, and technical specifics about its IRC crawler and code repository—information that must be compiled from multiple public sources rather than a single sentence.",
+      "source_nodes": [
+        "Wayback Machine",
+        "Canada Post chief seeks to boost profit | CBC News"
+      ],
+      "meta_context_snippet": "[Wide Logic - Target 0]: Organization: Archive Team Formed in 2009, the Archive Team (not to be confused with the archive.org Archive-It Team) is a rogue archivist collective dedicated to saving copie",
+      "judge_max_limit": 320,
+      "answer_a": "Archive Team is an all-volunteer digital-preservation collective created in 2009 by historian Jason Scott to “rescue the history of our online culture before it disappears” [1].  Its guiding ethic is “copy first, ask questions later”; any loss of user-generated data is viewed as cultural vandalism, so volunteers aggressively mirror endangered sites while they still exist [2].\n\nThe team’s crawls are uploaded in multi-terabyte WARC bundles to the nonprofit Internet Archive, whose petabyte-scale storage and Wayback Machine provide public, perpetual access to everything Archive Team captures.  As of 2024, tens of millions of individual items saved by the collective reside in the Internet Archive’s “Archive Team” collections, from GeoCities to Google+ exports [3].\n\nWhen a large platform or popular web service announces a shutdown, Archive Team launches “panic downloads” (also called “emergency projects”): time-boxed, crowd-sourced campaigns that coordinate hundreds of volunteers running the Warrior/Tracker pipeline to vacuum down entire domains before their cutoff date.  These rapid-response drives can collect dozens of terabytes in days, preserving communities that would otherwise vanish overnight [4].\n\nFor smaller or suddenly threatened sites, the group keeps an always-on IRC bot called ArchiveBot.  Anyone who joins the public channel #archivebot on hackint or Libera.Chat can issue a “!grab URL” command; queue managers approve the request, after which distributed workers perform a recursive wget-lua crawl with adjustable speed limits.  Completed WARCs are automatically uploaded to the Internet Archive under the “ArchiveBot” collection, where they are immediately browsable through the Wayback Machine [5].  ArchiveBot’s source code, crawler logic, and deployment scripts are openly maintained on GitHub at github.com/ArchiveTeam/ArchiveBot, making it easy for new volunteers to run their own worker nodes and expand the preservation net [6].\n\n## References  \n1. Wikipedia – “Archive Team” (founded 2009).  \n2. Archive Team – “About: Philosophy & Goals.” archiveteam.org.  \n3. Internet Archive – “Archive Team Collection.” archive.org/details/archiveteam.  \n4. Archive Team – “Projects: Panic Downloads Explained.” archiveteam.org.  \n5. GitHub – ArchiveTeam/ArchiveBot “User Guide: Using !grab and IRC Workflow.”  \n6. GitHub – ArchiveTeam/ArchiveBot repository home page.",
+      "answer_b": "The collective is **Archive Team**, a volunteer-driven web preservation group founded in **2009** by Jason Scott.[1][2] Its mission is to save websites, online services, and digital ephemera that are at risk of disappearing—especially material that may seem trivial, commercial, or temporary today but could hold future historical value.[1][3] Its philosophy is that preservation should be aggressive and broad, because once data is gone, it is often gone permanently; Archive Team therefore treats “low-status” or fast-changing web content as worth rescuing rather than dismissing.[1]\n\nArchive Team works in tandem with the **Internet Archive**, the major nonprofit digital library that stores the huge datasets generated by its rescue operations.[1][4] The group’s distributed projects can collect **multi-terabyte** quantities of endangered material, package them in archival formats such as WARC, and transfer them for long-term public preservation and replay through Internet Archive infrastructure.[1][4]\n\nIts so-called **“panic downloads”** are emergency, rapid-response archiving campaigns launched when a site announces closure, deletion, migration, or other imminent loss.[1][3] The goal is to capture as much endangered content as possible before servers shut down or data becomes inaccessible, often using swarms of volunteers running coordinated tools.[1][3]\n\nFor smaller sites, Archive Team uses **ArchiveBot**, an **IRC-controlled automated crawler**.[5][6] Volunteers issue commands in IRC to queue a URL or site, after which distributed workers crawl it, follow links, and generate archival output.[5] ArchiveBot’s source code is publicly maintained on **GitHub** under the ArchiveTeam organization, and users typically initiate jobs by requesting a crawl in the relevant IRC channel with the bot’s command syntax.[5][6]\n\n## References\n[1] Archive Team Wiki, “Archive Team.” https://wiki.archiveteam.org/index.php/ArchiveTeam  \n[2] Archive Team official site. https://www.archiveteam.org/  \n[3] Jason Scott / Archive Team background materials. https://www.archiveteam.org/index.php?title=Main_Page  \n[4] Internet Archive, organizational and preservation resources. https://archive.org/  \n[5] Archive Team Wiki, “ArchiveBot.” https://wiki.archiveteam.org/index.php/ArchiveBot  \n[6] ArchiveTeam GitHub, “ArchiveBot.” https://github.com/ArchiveTeam/ArchiveBot",
+      "duration_a_seconds": 6.9,
+      "duration_b_seconds": 8.4,
+      "verdict": "A_BETTER",
+      "tie_quality": "N/A",
+      "failure_type": "NONE",
+      "judge_reasoning": "Both agents correctly identify Archive Team (founded in 2009) and accurately explain its mission, philosophy, collaboration with the Internet Archive, panic downloads, and the IRC-based ArchiveBot with GitHub-hosted source code. Both pass the DEEP and WIDE checklist requirements with no clear hallucinations. However, Agent A provides greater operational detail (e.g., specific IRC channels like #archivebot, the “!grab URL” command, queue manager approval, Warrior/Tracker pipeline, recursive wget-lua crawling, and WARC upload workflow). This added specificity improves user utility and technical completeness. While Agent B is cleanly formatted and readable, it is more general and less richly detailed. Therefore, Agent A offers a superior overall search-agent experience.",
+      "score_a": 2.0,
+      "score_b": 0.0,
+      "evolution": {
+        "summary": "Mercy rule",
+        "kind": "mercy_rule",
+        "lines": [
+          "[GAME OVER] Mercy Rule Triggered (Diff >= 2.0)!",
+          "============================================================"
+        ]
+      }
+    }
+  ],
+  "summary_id": "tree_0004_o3search_vs_gpt54se_1130"
+}
