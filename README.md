@@ -3,6 +3,11 @@
 
 **Project Website:** [https://inlp-lab.github.io/DR-Arena/](https://inlp-lab.github.io/DR-Arena/)
 
+## 📢 News
+
+- **2026.07.08**: DR-Arena received an **ACL 2026 SAC Highlight**.🌟
+- **2026.07.05**: DR-Arena was presented as an **oral presentation** at ACL 2026, San Diego.
+- **2026.03.11**: DR-Arena was accepted to the **ACL 2026 Main Conference** and recommended for an **oral presentation**.🎉
 
 **DR-Arena** is a dynamic, automated benchmarking framework designed to evaluate the limits of **Deep Research (DR) Agents**. Unlike static benchmarks, DR-Arena constructs real-time **Information Trees** from live web trends and employs an **Adaptive Evolvement Loop** to dynamically escalate task complexity, testing agents on both **Deep Reasoning** (deduction depth) and **Wide Coverage** (information aggregation).
 
